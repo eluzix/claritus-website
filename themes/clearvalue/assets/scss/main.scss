@@ -11,3 +11,22 @@ body {
 .column {
   background-color: antiquewhite;
 }
+
+.title {
+  //width: 477px;
+  //height: 56px;
+  //font-family: Raleway;
+  font-size: 44px;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.64;
+  letter-spacing: normal;
+}
+
+.green-title {
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(to top, #5bfecc, #1cc994);
+}
