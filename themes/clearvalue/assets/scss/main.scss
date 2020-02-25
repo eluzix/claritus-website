@@ -1,26 +1,68 @@
 @charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:400,800&display=swap');
 
 @import "../bulma/sass/utilities/_all.sass";
+
+$black: #28313c;
+$green: #24e3aa;
+$grey-lighter: #e0e0e0;
+
+$body-color: $black;
+$primary: $green;
+
+$family-sans-serif: 'Open Sans';
+$weight-bold: 800;
+$body-line-height: 1;
+$family-primary: 'Open Sans';
+$family-secondary: Raleway, sans-serif;
+$body-font-size: 20px;
+
+$button-text-color: $white;
+
+$input-border-color: $grey-lighter;
+$input-shadow: none;
+
 @import "../bulma/sass/base/_all.sass";
 @import "../bulma/sass/grid/columns";
+@import "../bulma/sass/form/all";
+@import "../bulma/sass/elements/button";
 
 body {
-  background-color: hotpink;
+  height: 100vh;
+  //background-color: hotpink;
 }
 
-.column {
-  background-color: antiquewhite;
+.root {
+  min-height: 100vh;
+}
+
+.header {
+  display: none;
+}
+
+.footer {
+  height: 250px;
+  background-image: linear-gradient(to top, #525453, #3e3e3e);
+}
+
+.button.is-primary {
+  font-family: $family-secondary;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 2.24px;
+}
+
+.input::placeholder {
+  color: #828282;
 }
 
 .title {
-  //width: 477px;
-  //height: 56px;
-  //font-family: Raleway;
+  font-family: $family-secondary;
   font-size: 44px;
   font-weight: 800;
   font-stretch: normal;
   font-style: normal;
-  line-height: 1.64;
+  line-height: 1.34;
   letter-spacing: normal;
 }
 
@@ -30,3 +72,17 @@ body {
   -webkit-text-fill-color: transparent;
   background-image: linear-gradient(to top, #5bfecc, #1cc994);
 }
+
+.has-bottom-margin-16 {
+  margin-bottom: 16px;
+}
+
+.has-bottom-margin-24 {
+  margin-bottom: 24px;
+}
+
+.is-centered {
+  text-align: center;
+}
+
+@import "home";
