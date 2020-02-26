@@ -1,6 +1,6 @@
 baseURL = "http://example.org/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Clear Value - A simple way to control your wealth"
 
 theme = "clearvalue"
 assetDir = 'themes/clearvalue/assets'

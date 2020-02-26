@@ -6,9 +6,11 @@
 $black: #28313c;
 $green: #24e3aa;
 $grey-lighter: #e0e0e0;
+$grey-bg: #f5f6f7;
 
 $body-color: $black;
 $primary: $green;
+$body-background-color: $grey-bg;
 
 $family-sans-serif: 'Open Sans';
 $weight-bold: 800;
@@ -41,8 +43,27 @@ body {
 }
 
 .footer {
+  padding-top: 75px;
   height: 250px;
   background-image: linear-gradient(to top, #525453, #3e3e3e);
+
+  .links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    a.link {
+      opacity: 0.6;
+      font-size: 20px;
+      line-height: 1.8;
+      color: $white;
+    }
+
+    .social a:not(:first-of-type) {
+      margin-left: 24px;
+    }
+  }
 }
 
 .button.is-primary {
@@ -83,6 +104,16 @@ body {
 
 .is-centered {
   text-align: center;
+}
+
+.v-align {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &.is-centered {
+    align-items: center;
+  }
 }
 
 @import "home";
