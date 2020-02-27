@@ -35,7 +35,8 @@
 
   .bg-home-4 {
     background: transparent url("/images/home4.svg") center right no-repeat;
-    background-size: 90% auto;
+    margin-top: -82px;
+    margin-right: 5px;
   }
 
   .bg-home-5 {
@@ -89,8 +90,6 @@
  }
 
   .early-access {
-    margin-top: 20px;
-
     .field.is-fullwidth .control {
       width: 290px;
 
@@ -131,6 +130,10 @@
 
   .hero {
     margin-top: 112px;
+
+    .early-access {
+      margin-top: 20px;
+    }
   }
 
   .track-wealth {
@@ -149,5 +152,10 @@
     .title {
       margin-top: -161px;
     }
+  }
+
+  .improve-wealth {
+    margin-top: -95px;;
+    margin-left: -10px;
   }
 }
