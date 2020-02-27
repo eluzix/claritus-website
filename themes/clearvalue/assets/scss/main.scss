@@ -1,33 +1,15 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:400,800&display=swap');
 
+@import "variables";
 @import "../bulma/sass/utilities/_all.sass";
-
-$black: #28313c;
-$green: #24e3aa;
-$grey-lighter: #e0e0e0;
-$grey-bg: #f5f6f7;
-
-$body-color: $black;
-$primary: $green;
-$body-background-color: $grey-bg;
-
-$family-sans-serif: 'Open Sans';
-$weight-bold: 800;
-$body-line-height: 1;
-$family-primary: 'Open Sans';
-$family-secondary: Raleway, sans-serif;
-$body-font-size: 20px;
-
-$button-text-color: $white;
-
-$input-border-color: $grey-lighter;
-$input-shadow: none;
 
 @import "../bulma/sass/base/_all.sass";
 @import "../bulma/sass/grid/columns";
 @import "../bulma/sass/form/all";
 @import "../bulma/sass/elements/button";
+@import "../bulma/sass/components/level";
+
 
 body {
   height: 100vh;
@@ -67,7 +49,7 @@ body {
 }
 
 .button.is-primary {
-  font-family: $family-secondary;
+  font-family: $green;
   font-size: 14px;
   font-weight: bold;
   letter-spacing: 2.24px;
@@ -78,7 +60,7 @@ body {
 }
 
 .title {
-  font-family: $family-secondary;
+  font-family: $green;
   font-size: 44px;
   font-weight: 800;
   font-stretch: normal;
