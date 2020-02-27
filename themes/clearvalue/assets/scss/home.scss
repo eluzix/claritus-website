@@ -17,17 +17,20 @@
 
   .bg-home-1 {
     background: transparent url("/images/home1.svg") center right no-repeat;
-    background-size: 90vw auto;
+    min-height: 62vh;
+    margin-right: 0;
   }
 
   .bg-home-2 {
     background: transparent url("/images/home2.svg") center right no-repeat;
-    background-size: 45% auto;
+    min-height: 100vh;
+    margin-right: 0;
   }
 
   .bg-home-3 {
     background: transparent url("/images/home3.svg") center left no-repeat;
-    //background-size: 50% auto;
+    min-height: 100vh;
+    margin-right: 0;
   }
 
   .bg-home-4 {
@@ -90,6 +93,10 @@
 
     .field.is-fullwidth .control {
       width: 290px;
+
+      &.email-input {
+        width: 295px;
+      }
     }
 
     .input {
@@ -120,5 +127,27 @@
     padding: 22px 122px;
     box-shadow: 0 4px 16px 0 $dark-shadow;
     background-color: $white;
+  }
+
+  .hero {
+    margin-top: 112px;
+  }
+
+  .track-wealth {
+    margin-top: -75px;
+    margin-right: 12px;
+
+    .title {
+      margin-top: -163px;
+    }
+  }
+
+  .understand-wealth {
+    margin-top: -262px;
+    margin-left: -3px;
+
+    .title {
+      margin-top: -161px;
+    }
   }
 }

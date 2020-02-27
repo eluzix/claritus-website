@@ -60,7 +60,7 @@ body {
 }
 
 .title {
-  font-family: $green;
+  font-family: $family-secondary;
   font-size: 44px;
   font-weight: 800;
   font-stretch: normal;
@@ -73,7 +73,7 @@ body {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-image: linear-gradient(to top, #5bfecc, #1cc994);
+  background-image: linear-gradient(to bottom, #5bfecc, #1cc994);
 }
 
 .has-bottom-margin-16 {
