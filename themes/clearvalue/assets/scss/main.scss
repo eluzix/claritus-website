@@ -9,6 +9,7 @@
 @import "../bulma/sass/form/all";
 @import "../bulma/sass/elements/button";
 @import "../bulma/sass/components/level";
+@import "../bulma/sass/components/navbar";
 
 
 body {
@@ -96,6 +97,10 @@ body {
   &.is-centered {
     align-items: center;
   }
+}
+
+.d-none {
+  display: none;
 }
 
 @import "home";

@@ -132,10 +132,11 @@
     padding: 22px 122px;
     box-shadow: 0 4px 16px 0 $dark-shadow;
     background-color: $white;
+    min-height: 92px;
   }
 
   .hero {
-    margin-top: 112px;
+    margin-top: 200px;
 
     .early-access {
       margin-top: 20px;
