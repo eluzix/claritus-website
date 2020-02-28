@@ -198,6 +198,13 @@
 @media screen and (max-width: 767px) {
   .home {
 
+    .field.has-addons .control:last-child:not(:only-child) .button,
+    .field.has-addons .control:last-child:not(:only-child) .input,
+    .field.has-addons .control:last-child:not(:only-child) .select select {
+      border-bottom-left-radius: 4px;
+      border-top-left-radius: 4px;
+    }
+
     .reverse-columns {
       flex-direction: column-reverse;
       display: flex;
@@ -282,6 +289,43 @@
       margin-top: -85px;
     }
 
+    .improve-wealth {
+      margin-top: -248px;
+      .column {
+        align-items: start;
+        justify-content: start;
+        text-align: start;
+      }
+      .content {
+        max-width: 88vw;
+        margin-top: -7px;
+      }
+      .email-input {
+        margin-bottom: 16px;
+      }
+    }
+
+    .loyalty {
+      margin-top: -170px;
+    }
+
+    .meet-the-platform {
+      margin-top: -130px;
+      .title {
+        line-height: 47px;
+      }
+    }
+
+    .privacy-security {
+      margin-top: -100px;
+    }
+
+    .get-early-access {
+      .early-access-box {
+        padding: 0;
+      }
+    }
+
     .bg-home-1 {
       min-height: 92vh;
       background-size: 127vw;
@@ -295,6 +339,39 @@
       background-size: 90vw;
       margin-top: -223px;
       margin-left: 0;
+    }
+
+    .bg-home-4 {
+      margin-right: -43px;
+      background-size: 93vw;
+      min-height: 44vh;
+      margin-top: -25px;
+      overflow: hidden;
+    }
+
+    .bg-home-5 {
+      background-size: 93vw;
+      margin-top: -270px;
+    }
+
+    .bg-home-6 {
+      margin-top: -118px;
+      margin-right: -2px;
+      min-height: 60vh;
+      background-size: 90vw;
+    }
+
+    .bg-home-7 {
+      margin: 0;
+      min-height: 25vh;
+      background-size: 90vw;
+    }
+
+    .bg-home-8 {
+      margin-right: -16px;
+      background-size: 90vw;
+      min-height: 45vh;
+      margin-top: -60px;
     }
   }
 }
