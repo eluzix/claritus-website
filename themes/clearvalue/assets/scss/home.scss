@@ -195,7 +195,7 @@
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 959px) {
   .home {
 
     .field.has-addons .control:last-child:not(:only-child) .button,
@@ -329,6 +329,12 @@
     .bg-home-1 {
       min-height: 92vh;
       background-size: 127vw;
+      margin: 0;
+
+      .column {
+        margin-left: 16px;
+        margin-right: 16px;
+      }
     }
 
     .bg-home-2 {
