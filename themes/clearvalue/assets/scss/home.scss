@@ -132,20 +132,18 @@
     background-color: $white;
     min-height: 92px;
 
-    .early-access-button {
-      opacity: 1;
-      visibility:visible;
-      transition: all 2s linear;
-      -webkit-transition: all 2s linear;
-    }
     .early-access-button.d-none {
-      opacity: 0;
-      visibility:hidden;
+      visibility: hidden;
+      transition: 1s linear;
+    }
+    .early-access-button {
+      visibility: visible;
+      transition: 1s linear;
     }
   }
 
   .hero {
-    margin-top: 200px;
+    margin-top: 110px;
 
     .early-access {
       margin-top: 20px;

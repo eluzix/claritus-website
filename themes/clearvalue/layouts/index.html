@@ -1,6 +1,13 @@
 {{ define "content" }}
 <div class="home has-navbar-fixed-top">
-    <nav class="cv-header level navbar is-fixed-top">
+    <nav class="cv-header level navbar">
+        <div class="level-left">
+            <div class="level-item">
+                <img src="/images/logo-color.svg" class="logo" />
+            </div>
+        </div>
+    </nav>
+    <nav class="cv-header level navbar is-fixed-top header-shadow d-none">
         <div class="level-left">
             <div class="level-item">
                 <img src="/images/logo-color.svg" class="logo" />
@@ -8,7 +15,7 @@
         </div>
         <div class="level-right">
             <div class="level-item">
-                <a class="button is-primary early-access-button d-none">
+                <a class="button is-primary early-access-button">
                     GET EARLY ACCESS <img src="/images/arrow.svg" />
                 </a>
             </div>
