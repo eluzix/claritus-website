@@ -197,6 +197,12 @@
 
 @media screen and (max-width: $desktop) {
   .home {
+    .field.has-addons .control:last-child:not(:only-child) .button,
+    .field.has-addons .control:last-child:not(:only-child) .input,
+    .field.has-addons .control:last-child:not(:only-child) .select select {
+      border-bottom-left-radius: 4px;
+      border-top-left-radius: 4px;
+    }
     .columns {
       padding-left: 15px;
       padding-right: 15px;
@@ -204,6 +210,18 @@
 
     .early-access-button {
       border-radius: 4px;
+    }
+
+    .hero {
+      .email-input {
+        margin-bottom: 16px;
+      }
+    }
+
+    .improve-wealth {
+      .email-input {
+        margin-bottom: 16px;
+      }
     }
 
     .early-access {
@@ -245,13 +263,6 @@
 @media screen and (max-width: $tablet) {
   .home {
 
-    .field.has-addons .control:last-child:not(:only-child) .button,
-    .field.has-addons .control:last-child:not(:only-child) .input,
-    .field.has-addons .control:last-child:not(:only-child) .select select {
-      border-bottom-left-radius: 4px;
-      border-top-left-radius: 4px;
-    }
-
     .reverse-columns {
       flex-direction: column-reverse;
       display: flex;
@@ -286,6 +297,8 @@
       margin-left: 16px;
       margin-right: 16px;
       overflow: hidden;
+      padding-right: 0;
+      padding-left: 0;
     }
 
     .column {
@@ -294,10 +307,6 @@
 
     .hero {
       margin-top: 44px;
-
-      .email-input {
-        margin-bottom: 16px;
-      }
     }
 
     .early-access {
@@ -325,7 +334,7 @@
     }
 
     .understand-wealth {
-      margin-top: -450px;
+      margin-top: -250px;
       padding-top: 165px;
     }
 
@@ -340,9 +349,6 @@
       .content {
         max-width: 88vw;
         margin-top: -7px;
-      }
-      .email-input {
-        margin-bottom: 16px;
       }
     }
 
@@ -381,8 +387,8 @@
     }
 
     .bg-home-2 {
-      background-size: 85vw;
-      padding-bottom: 830px;
+      background-size: 60vw;
+      padding-bottom: 700px;
       padding-top: 220px;
       display: block;
       min-height: 90vh;
@@ -397,7 +403,7 @@
     .bg-home-4 {
       margin-right: -43px;
       background-size: 50%;
-      min-height: 44vh;
+      min-height: 46vh;
       margin-top: 0;
       overflow: hidden;
     }
@@ -410,22 +416,45 @@
     .bg-home-6 {
       margin-top: -118px;
       margin-right: -2px;
-      min-height: 60vh;
+      min-height: 85vh;
       background-size: 90vw;
     }
 
     .bg-home-7 {
       margin: 0;
-      min-height: 25vh;
-      background-size: 90vw;
+      min-height: 50vh;
+      background-size: 100%;
     }
 
     .bg-home-8 {
       margin-right: -16px;
       background-size: 90vw;
-      min-height: 45vh;
       margin-top: -35px;
     }
 
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .home {
+    .bg-home-2 {
+      background-size: 100%;
+      padding-bottom: 865px;
+    }
+    .bg-home-3, .bg-home-4, .bg-home-5 {
+      background-size: 100%;
+    }
+    .bg-home-6 {
+      min-height: 55vh;
+    }
+    .bg-home-7 {
+      min-height: 30vh;
+    }
+    .bg-home-8 {
+      margin-top: -150px;
+    }
+    .understand-wealth {
+      margin-top: -450px;
+    }
   }
 }
