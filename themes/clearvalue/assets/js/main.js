@@ -26,10 +26,13 @@ function checkHeroVisibility() {
 
     // Only completely visible elements return true:
     let isVisible = (elemTop >= 0) && (elemBottom <= window.innerHeight);
+    let headerElement = document.querySelector('.cv-header');
     let headerButton = document.querySelector('.cv-header .early-access-button');
     if (isVisible) {
+        headerElement.classList.remove('header-shadow');
         headerButton.classList.add("d-none");
     } else {
+        headerElement.classList.add('header-shadow');
         headerButton.classList.remove("d-none");
     }
 }

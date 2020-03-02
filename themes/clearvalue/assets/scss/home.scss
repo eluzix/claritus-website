@@ -90,6 +90,10 @@
     }
  }
 
+  .header-shadow {
+    box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.08);
+  }
+
   .early-access {
     .field.is-fullwidth .control {
       width: 290px;
@@ -125,9 +129,19 @@
 
   .cv-header {
     padding: 22px 122px;
-    box-shadow: 0 4px 16px 0 $dark-shadow;
     background-color: $white;
     min-height: 92px;
+
+    .early-access-button {
+      opacity: 1;
+      visibility:visible;
+      transition: all 2s linear;
+      -webkit-transition: all 2s linear;
+    }
+    .early-access-button.d-none {
+      opacity: 0;
+      visibility:hidden;
+    }
   }
 
   .hero {
