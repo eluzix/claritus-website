@@ -197,6 +197,53 @@
 
 @media screen and (max-width: $desktop) {
   .home {
+    .columns {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    .early-access-button {
+      border-radius: 4px;
+    }
+
+    .early-access {
+      .field{
+        &.has-addons {
+          display: block;
+        }
+        &.is-fullwidth {
+          .control {
+            width: 390px;
+          }
+          .control.email-input {
+            width: 390px;
+          }
+        }
+      }
+      .control {
+        display: block;
+        min-width: 288px;
+      }
+    }
+
+    .bg-home-2 {
+      background-size: 50%;
+    }
+    .bg-home-3, .bg-home-4, .bg-home-5, .bg-home-6, .bg-home-7, .bg-home-8 {
+      background-size: 100%;
+    }
+    .get-early-access {
+      .early-access-box {
+        padding: inherit;
+      }
+    }
+  }
+}
+
+
+
+@media screen and (max-width: $tablet) {
+  .home {
 
     .field.has-addons .control:last-child:not(:only-child) .button,
     .field.has-addons .control:last-child:not(:only-child) .input,
@@ -213,10 +260,6 @@
     .logo {
       margin-top: 28px;
       margin-bottom: 120px;
-    }
-
-    .early-access-button {
-      border-radius: 4px;
     }
 
     .cv-header {
@@ -258,24 +301,19 @@
     }
 
     .early-access {
-      .field{
-        &.has-addons {
-          display: block;
-        }
+      .field {
         &.is-fullwidth {
+          .control {
+            width: 290px;
+          }
           .control.email-input {
             width: 290px;
           }
         }
       }
-      .control {
-        display: block;
-        min-width: 288px;
-      }
     }
-
     .track-wealth {
-      margin-top: -250px;
+      margin-top: -285px;
 
       p.content.is-half {
         min-width: 90vw;
@@ -287,7 +325,7 @@
     }
 
     .understand-wealth {
-      margin-top: -350px;
+      margin-top: -450px;
       padding-top: 165px;
     }
 
@@ -343,7 +381,7 @@
     }
 
     .bg-home-2 {
-      background-size: 65vw;
+      background-size: 85vw;
       padding-bottom: 830px;
       padding-top: 220px;
       display: block;
@@ -351,21 +389,21 @@
     }
 
     .bg-home-3 {
-      background-size: 55vw;
+      background-size: 60%;
       margin-top: -223px;
       margin-left: 0;
     }
 
     .bg-home-4 {
       margin-right: -43px;
-      //background-size: 93vw;
+      background-size: 50%;
       min-height: 44vh;
       margin-top: 0;
       overflow: hidden;
     }
 
     .bg-home-5 {
-      background-size: 60vw;
+      background-size: 60%;
       margin-top: -270px;
     }
 
@@ -373,53 +411,21 @@
       margin-top: -118px;
       margin-right: -2px;
       min-height: 60vh;
-      background-size: 60vw;
+      background-size: 90vw;
     }
 
     .bg-home-7 {
       margin: 0;
-      min-height: 35vh;
-      background-size: 60vw;
+      min-height: 25vh;
+      background-size: 90vw;
     }
 
     .bg-home-8 {
       margin-right: -16px;
-      background-size: 60vw;
-      min-height: 55vh;
-      margin-top: -35px;
-    }
-  }
-}
-
-@media screen and (max-width: $tablet - 10) {
-  .home {
-    .track-wealth {
-      margin-top: -285px;
-    }
-
-    .understand-wealth {
-      margin-top: -450px;
-    }
-
-    .bg-home-2 {
-      background-size: 85vw;
-    }
-    .bg-home-3 {
-      background-size: 90vw;
-    }
-    .bg-home-5 {
-      background-size: 93vw;
-    }
-    .bg-home-6 {
-      background-size: 90vw;
-    }
-    .bg-home-7 {
-      min-height: 25vh;
-      background-size: 90vw;
-    }
-    .bg-home-8 {
       background-size: 90vw;
       min-height: 45vh;
+      margin-top: -35px;
     }
+
   }
 }
