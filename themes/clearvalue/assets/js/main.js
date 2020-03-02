@@ -2,8 +2,6 @@ const app = {
     earlyAccessClick(e){
         const parent = e.target.closest('.early-access');
         const input = parent.querySelector('input.input');
-
-        console.log('!!!!!!!!!!!!!!!', e, input.value)
     },
 };
 
@@ -38,7 +36,6 @@ function checkHeroVisibility() {
 }
 
 document.addEventListener('DOMContentLoaded', function(){
-    console.log('DOMContentLoaded');
     window.addEventListener('scroll', checkHeroVisibility);
 }, false);
 
