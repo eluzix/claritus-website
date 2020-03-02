@@ -27,8 +27,10 @@ function checkHeroVisibility() {
     let headerElement = document.querySelector('.cv-header.header-shadow');
     if (!isVisible) {
         headerElement.classList.remove('d-none');
+        headerElement.classList.add('slide-in');
     } else {
         headerElement.classList.add('d-none');
+        headerElement.classList.remove('slide-in');
     }
 }
 
