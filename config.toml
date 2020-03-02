@@ -4,3 +4,5 @@ title = "Clear Value - A simple way to control your wealth"
 
 theme = "clearvalue"
 assetDir = 'themes/clearvalue/assets'
+[params]
+    gtagConfig = 'UA-159218662-2'

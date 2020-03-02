@@ -39,3 +39,8 @@ document.addEventListener('DOMContentLoaded', function(){
     window.addEventListener('scroll', checkHeroVisibility);
 }, false);
 
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-159218662-2');
