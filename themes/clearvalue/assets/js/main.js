@@ -25,13 +25,14 @@ function checkHeroVisibility() {
     // Only completely visible elements return true:
     let isVisible = (elemTop >= 0) && (elemBottom <= window.innerHeight);
     let headerElement = document.querySelector('.cv-header.header-shadow');
-    if (!isVisible) {
+    if (!isVisible && window.scrollY > 100) {
         headerElement.classList.remove('d-none');
         headerElement.classList.add('slide-in');
     } else {
         headerElement.classList.add('d-none');
         headerElement.classList.remove('slide-in');
     }
+
 }
 
 document.addEventListener('DOMContentLoaded', function(){

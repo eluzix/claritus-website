@@ -270,11 +270,12 @@
   }
 }
 
-
-
 @media screen and (max-width: $tablet) {
   .home {
 
+    .cv-header.header-shadow {
+      //display: none;
+    }
     .reverse-columns {
       flex-direction: column-reverse;
       display: flex;
@@ -302,6 +303,14 @@
 
       .level-right {
         display: none;
+      }
+    }
+
+    .cv-header.header-shadow {
+      position: fixed;
+
+      .level-left {
+        max-height: 70px;
       }
     }
 
