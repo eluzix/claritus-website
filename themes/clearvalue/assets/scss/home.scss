@@ -195,7 +195,7 @@
   }
 }
 
-@media screen and (max-width: 959px) {
+@media screen and (max-width: $desktop) {
   .home {
 
     .field.has-addons .control:last-child:not(:only-child) .button,
@@ -242,6 +242,7 @@
     .columns {
       margin-left: 16px;
       margin-right: 16px;
+      overflow: hidden;
     }
 
     .column {
@@ -274,7 +275,7 @@
     }
 
     .track-wealth {
-      margin-top: -330px;
+      margin-top: -250px;
 
       p.content.is-half {
         min-width: 90vw;
@@ -286,10 +287,12 @@
     }
 
     .understand-wealth {
-      margin-top: -85px;
+      margin-top: -350px;
+      padding-top: 165px;
     }
 
     .improve-wealth {
+      margin-right: 0;
       margin-top: -248px;
       .column {
         align-items: start;
@@ -321,8 +324,10 @@
     }
 
     .get-early-access {
+      margin-right: 0;
       .early-access-box {
         padding: 0;
+        margin-right: 16px;
       }
     }
 
@@ -338,25 +343,29 @@
     }
 
     .bg-home-2 {
-      background-size: 85vw;
+      background-size: 65vw;
+      padding-bottom: 830px;
+      padding-top: 220px;
+      display: block;
+      min-height: 90vh;
     }
 
     .bg-home-3 {
-      background-size: 90vw;
+      background-size: 55vw;
       margin-top: -223px;
       margin-left: 0;
     }
 
     .bg-home-4 {
       margin-right: -43px;
-      background-size: 93vw;
+      //background-size: 93vw;
       min-height: 44vh;
-      margin-top: -25px;
+      margin-top: 0;
       overflow: hidden;
     }
 
     .bg-home-5 {
-      background-size: 93vw;
+      background-size: 60vw;
       margin-top: -270px;
     }
 
@@ -364,20 +373,53 @@
       margin-top: -118px;
       margin-right: -2px;
       min-height: 60vh;
-      background-size: 90vw;
+      background-size: 60vw;
     }
 
     .bg-home-7 {
       margin: 0;
-      min-height: 25vh;
-      background-size: 90vw;
+      min-height: 35vh;
+      background-size: 60vw;
     }
 
     .bg-home-8 {
       margin-right: -16px;
+      background-size: 60vw;
+      min-height: 55vh;
+      margin-top: -35px;
+    }
+  }
+}
+
+@media screen and (max-width: $tablet - 10) {
+  .home {
+    .track-wealth {
+      margin-top: -285px;
+    }
+
+    .understand-wealth {
+      margin-top: -450px;
+    }
+
+    .bg-home-2 {
+      background-size: 85vw;
+    }
+    .bg-home-3 {
+      background-size: 90vw;
+    }
+    .bg-home-5 {
+      background-size: 93vw;
+    }
+    .bg-home-6 {
+      background-size: 90vw;
+    }
+    .bg-home-7 {
+      min-height: 25vh;
+      background-size: 90vw;
+    }
+    .bg-home-8 {
       background-size: 90vw;
       min-height: 45vh;
-      margin-top: -60px;
     }
   }
 }
