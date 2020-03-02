@@ -54,6 +54,12 @@ body {
   letter-spacing: 2.24px;
 }
 
+.button.is-primary:hover, .button.is-primary.is-hovered {
+  opacity: 0.7;
+  border-color: transparent;
+  color: $white;
+}
+
 .input::placeholder {
   color: #828282;
 }
