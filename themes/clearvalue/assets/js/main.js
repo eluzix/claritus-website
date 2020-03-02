@@ -38,3 +38,29 @@ function checkHeroVisibility() {
 document.addEventListener('DOMContentLoaded', function(){
     window.addEventListener('scroll', checkHeroVisibility);
 }, false);
+
+function focusOnEmail() {
+    setTimeout(() => {
+        document.querySelector('#early-access .early-access .email-input input').focus({preventScroll:false});
+    }, 500)
+}
+function getEarlyAccess(elem) {
+    let value = (elem && elem.parentElement && elem.parentElement.parentElement
+        && elem.parentElement.parentElement.querySelector('.email-input input')
+        && elem.parentElement.parentElement.querySelector('.email-input input').value)
+        || (elem.parentElement.parentElement.parentElement.querySelector('.email-input input')
+            && elem.parentElement.parentElement.parentElement.querySelector('.email-input input').value)
+    ;
+    console.log('elem',elem);
+    console.log('value',value);
+    if (value) {
+        let xhr = new XMLHttpRequest();
+        xhr.open('POST', `https://29iax1x5e5.execute-api.us-east-1.amazonaws.com/dev/waiting-list?email=${value}`, false);
+        xhr.send();
+
+        if (xhr.status = 200) {
+            elem.parentElement.parentElement.querySelector('.email-input input').value = '';
+            elem.parentElement.parentElement.parentElement.querySelector('.email-input input').value = '';
+        }
+    }
+}
