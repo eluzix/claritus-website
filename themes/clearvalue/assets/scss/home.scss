@@ -343,7 +343,7 @@
       }
     }
     .track-wealth {
-      margin-top: -285px;
+      margin-top: 0;
 
       p.content.is-half {
         min-width: 90vw;
@@ -351,6 +351,10 @@
         opacity: 0.9;
         font-size: 1.25rem;
         line-height: 1.5;
+      }
+
+      .title {
+        margin-top: 0;
       }
     }
 
@@ -361,7 +365,7 @@
 
     .improve-wealth {
       margin-right: 0;
-      margin-top: -248px;
+      margin-top: 0;
       .column {
         align-items: start;
         justify-content: start;
@@ -397,9 +401,10 @@
     }
 
     .bg-home-1 {
-      min-height: 92vh;
+      min-height: 860px;
       background-size: 127vw;
       margin: 0;
+      margin-bottom: -500px;
 
       .column {
         margin-left: 16px;
@@ -409,22 +414,24 @@
 
     .bg-home-2 {
       background-size: 60vw;
-      padding-bottom: 700px;
+      padding-bottom: 0;
+      min-height: 1400px;
       padding-top: 220px;
       display: block;
-      min-height: 90vh;
+      margin-bottom: -200px;
     }
 
     .bg-home-3 {
       background-size: 60%;
-      margin-top: -223px;
+      margin-top: 0;
       margin-left: 0;
+      min-height: 500px;
     }
 
     .bg-home-4 {
       margin-right: -43px;
       background-size: 50%;
-      min-height: 46vh;
+      min-height: 500px;
       margin-top: 0;
       overflow: hidden;
     }
@@ -459,8 +466,12 @@
 @media screen and (max-width: 425px) {
   .home {
     .bg-home-2 {
+      min-height: 1800px;
       background-size: 100%;
-      padding-bottom: 865px;
+      margin-bottom: -250px;
+    }
+    .bg-home-3 {
+      min-height: 400px;
     }
     .bg-home-3, .bg-home-4, .bg-home-5 {
       background-size: 100%;
