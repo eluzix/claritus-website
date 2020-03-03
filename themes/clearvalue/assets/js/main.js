@@ -57,8 +57,12 @@ async function getEarlyAccess(elem) {
         let response = await fetch(`https://29iax1x5e5.execute-api.us-east-1.amazonaws.com/dev/waiting-list?email=${encodeURIComponent(value)}`);
 
         if (response.ok) {
-            elem.parentElement.parentElement.querySelector('.email-input input').value = '';
-            elem.parentElement.parentElement.parentElement.querySelector('.email-input input').value = '';
+            if (elem.parentElement.parentElement.querySelector('.email-input input')) {
+                elem.parentElement.parentElement.querySelector('.email-input input').value = '';
+            }
+            if (elem.parentElement.parentElement.parentElement.querySelector('.email-input input')) {
+                elem.parentElement.parentElement.parentElement.querySelector('.email-input input').value = '';
+            }
         } else {
             console.log(response.status);
         }
