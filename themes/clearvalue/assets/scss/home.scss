@@ -18,13 +18,13 @@
 
   .bg-home-2 {
     background: transparent url("/images/home2.svg") center right no-repeat;
-    min-height: 100vh;
+    min-height: 850px;
     margin-right: 0;
   }
 
   .bg-home-3 {
     background: transparent url("/images/home3.svg") center left no-repeat;
-    min-height: 100vh;
+    min-height: 850px;
     margin-right: 0;
   }
 
@@ -36,20 +36,21 @@
 
   .bg-home-5 {
     background: transparent url("/images/home5.svg") center left no-repeat;
+    min-height: 850px;
   }
 
   .bg-home-6 {
     background: transparent url("/images/home6.png") center right no-repeat;
     margin-top: -45px;
     margin-right: 47px;
-    min-height: 60vh;
+    min-height: 600px;
   }
 
   .bg-home-7 {
     background: transparent url("/images/home7.svg") center left no-repeat;
-    margin-top: -245px;
     margin-left: 98px;
     margin-right: 22px;
+    min-height: 400px;
   }
 
   .bg-home-8 {
@@ -160,7 +161,7 @@
   }
 
   .understand-wealth {
-    margin-top: -300px;
+    margin-top: -150px;
     margin-left: -3px;
 
     .title {
@@ -169,21 +170,21 @@
   }
 
   .improve-wealth {
-    margin-top: -300px;
+    margin-top: -150px;
     margin-left: -10px;
   }
 
   .loyalty {
-    margin-top: -250px;
+    margin-top: -150px;
     margin-left: -5px;
   }
 
   .meet-the-platform {
-    margin-top: -275px;
+
   }
 
   .privacy-security {
-    margin-top: 100px;
+    
   }
 
   .get-early-access {
