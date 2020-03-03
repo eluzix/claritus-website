@@ -44,7 +44,7 @@ function focusOnEmail() {
         document.querySelector('#early-access .early-access .email-input input').focus({preventScroll:false});
     }, 500)
 }
-function getEarlyAccess(elem) {
+async function getEarlyAccess(elem) {
     let value = (elem && elem.parentElement && elem.parentElement.parentElement
         && elem.parentElement.parentElement.querySelector('.email-input input')
         && elem.parentElement.parentElement.querySelector('.email-input input').value)
@@ -54,13 +54,13 @@ function getEarlyAccess(elem) {
     console.log('elem',elem);
     console.log('value',value);
     if (value) {
-        let xhr = new XMLHttpRequest();
-        xhr.open('POST', `https://29iax1x5e5.execute-api.us-east-1.amazonaws.com/dev/waiting-list?email=${value}`, false);
-        xhr.send();
+        let response = await fetch(`https://29iax1x5e5.execute-api.us-east-1.amazonaws.com/dev/waiting-list?email=${encodeURIComponent(value)}`);
 
-        if (xhr.status = 200) {
+        if (response.ok) {
             elem.parentElement.parentElement.querySelector('.email-input input').value = '';
             elem.parentElement.parentElement.parentElement.querySelector('.email-input input').value = '';
+        } else {
+            console.log(response.status);
         }
     }
 }
