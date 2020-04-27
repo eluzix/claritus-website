@@ -21,12 +21,11 @@
     <link rel="icon" type="image/png" href="{{ "/images/favicon-32x32.png" | absURL }}" sizes="32x32">
     <link rel="icon" type="image/png" href="{{ "/images/favicon-16x16.png" | absURL }}" sizes="16x16">
 
-    {{ if .RSSLink }}
-    <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
-    <link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
+    {{ with .OutputFormats.Get "RSS" }}
+    <link href="{{ .RelPermalink }}" rel="alternate" type="application/rss+xml" />
+    <link href="{{ .RelPermalink }}" rel="feed" type="application/rss+xml" />
     {{ end }}
 
-<!--    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>-->
     {{ $js := resources.Get "js/main.js" }}
     <script src="{{ $js.Permalink }}"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id={{ .Site.Params.gtagConfig }}"></script>
@@ -37,7 +36,8 @@
 
         gtag('config', '{{ .Site.Params.gtagConfig }}');
     </script>
-    {{ .Hugo.Generator }}
+
+    {{ hugo.Generator }}
 </head>
 
 <body class="{{ if .Site.Params.rtl }}rtl{{ end }}">
