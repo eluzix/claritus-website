@@ -1,7 +1,6 @@
 ---
 title: "Clear Value End User License Agreement"
 date: 2020-04-27T09:30:01+03:00
-draft: true
 url: /terms
 ---
 Clear Value Ltd., ("Clear Value", "we", "us" or "our") operates a platform, 
