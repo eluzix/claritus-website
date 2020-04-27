@@ -1,6 +1,20 @@
 {{ define "content" }}
-    {{ .Title }}
-    {{ .Content }}
+<div class="content has-navbar-fixed-top">
+    <nav class="cv-header level navbar">
+        <div class="level-left column is-offset-1">
+            <div class="level-item">
+                <img src="/images/logo-color.svg" class="logo"/>
+            </div>
+        </div>
+    </nav>
+
+    <section class="column is-offset-1 is-10">
+        <h1 class="title">{{ .Title }}</h1>
+        <article>
+            {{ .Content }}
+        </article>
+    </section>
+</div>
 {{ end }}
 
 {{ define "title" }}{{ .Title }}{{ end }}

@@ -1,13 +1,15 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:400,800&display=swap');
+@import "../bulma/sass/utilities/all";
 @import "variables";
-@import "../bulma/sass/utilities/_all.sass";
-@import "../bulma/sass/base/_all.sass";
+
+@import "../bulma/sass/base/all";
 @import "../bulma/sass/grid/columns";
 @import "../bulma/sass/form/all";
 @import "../bulma/sass/elements/button";
 @import "../bulma/sass/components/level";
 @import "../bulma/sass/components/navbar";
+@import "../bulma/sass/elements/content";
 @import "../bulma/sass/base/minireset";
 
 body {
@@ -24,8 +26,8 @@ body {
 }
 
 .footer {
-  padding-top: 75px;
-  height: 250px;
+  padding-top: 4.6875rem;
+  height: 15.625rem;
   background-image: linear-gradient(to top, #525453, #3e3e3e);
 
   .links {
@@ -42,7 +44,7 @@ body {
     }
 
     .social a:not(:first-of-type) {
-      margin-left: 24px;
+      margin-left: 1.5rem;
     }
   }
 }
@@ -82,11 +84,11 @@ body {
 }
 
 .has-bottom-margin-16 {
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
 }
 
 .has-bottom-margin-24 {
-  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
 }
 
 .is-centered {
@@ -106,24 +108,25 @@ body {
 @media screen and (max-width: $tablet) {
   .title {
     font-size: 2.5rem;
-    line-height: 56px;
+    line-height: 3.5rem;
   }
 
   .footer {
-    height: 341px;
-    padding-top: 40px;
+    height: 21.3125rem;
+    padding-top: 2.5rem;
     .columns {
-      padding: 0 40px;
+      padding: 0 2.5rem;
     }
 
     .links {
       display: block;
       a.link {
         display: block;
-        margin-bottom: 19px;
+        margin-bottom: 1.1875rem;
       }
     }
   }
 }
 
 @import "home";
+@import "content";

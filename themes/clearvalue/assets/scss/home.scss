@@ -18,46 +18,46 @@
 
   .bg-home-2 {
     background: transparent url("/images/home2.svg") center right no-repeat;
-    min-height: 850px;
+    min-height: 53.125rem;
     margin-right: 0;
   }
 
   .bg-home-3 {
     background: transparent url("/images/home3.svg") center left no-repeat;
-    min-height: 850px;
+    min-height: 53.125rem;
     margin-right: 0;
   }
 
   .bg-home-4 {
     background: transparent url("/images/home4.svg") center right no-repeat;
-    margin-top: -82px;
-    margin-right: 5px;
+    margin-top: -5.125rem;
+    margin-right: 0.3125rem;
   }
 
   .bg-home-5 {
     background: transparent url("/images/home5.svg") center left no-repeat;
-    min-height: 850px;
+    min-height: 53.125rem;
   }
 
   .bg-home-6 {
     background: transparent url("/images/home6.png") center right no-repeat;
-    margin-top: -45px;
-    margin-right: 47px;
-    min-height: 600px;
+    margin-top: -2.8125rem;
+    margin-right: 2.9375rem;
+    min-height: 37.5rem;
   }
 
   .bg-home-7 {
     background: transparent url("/images/home7.svg") center left no-repeat;
-    margin-left: 98px;
-    margin-right: 22px;
-    min-height: 400px;
+    margin-left: 6.125rem;
+    margin-right: 1.375rem;
+    min-height: 25rem;
   }
 
   .bg-home-8 {
     background: transparent url("/images/home8.svg") center right no-repeat;
     min-height: 80vh;
-    margin-top: -127px;
-    margin-right: 10px;
+    margin-top:-7.9375rem;
+    margin-right: 0.625rem;
   }
 
   p.content {
@@ -75,8 +75,8 @@
     font-size: 1.25rem;
     line-height: 1.4;
     color: $dark;
-    margin-left: 16px;
-    text-indent: -16px;
+    margin-left: 1rem;
+    text-indent: -1rem;
     margin-bottom: 12px;
 
     &:before{
@@ -101,7 +101,7 @@
     }
 
     .input {
-      padding: 12px 16px;
+      padding: 12px 1rem;
       height: 46px;
     }
   }
@@ -111,7 +111,7 @@
     height: 48px;
     color: $white;
     img {
-      margin-left: 16px;
+      margin-left: 1rem;
       object-fit: contain;
     }
   }
@@ -125,7 +125,7 @@
   }
 
   .cv-header {
-    padding: 22px 122px 22px 0;
+    padding: 1.375rem 122px 1.375rem 0;
     background-color: $white;
     min-height: 92px;
   }
@@ -135,7 +135,7 @@
     &.slide-in {
       animation: slide-in .5s;
       animation-fill-mode:forwards;
-      box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.08);
+      box-shadow: 0 4px 1rem 0 rgba(0, 0, 0, 0.08);
     }
     &.d-none {
       animation: slide-out .3s;
@@ -161,7 +161,7 @@
   }
 
   .understand-wealth {
-    margin-top: -150px;
+    margin-top: -9.375rem;
     margin-left: -3px;
 
     .title {
@@ -170,12 +170,12 @@
   }
 
   .improve-wealth {
-    margin-top: -150px;
+    margin-top: -9.375rem;
     margin-left: -10px;
   }
 
   .loyalty {
-    margin-top: -150px;
+    margin-top: -9.375rem;
     margin-left: -5px;
   }
 
@@ -227,13 +227,13 @@
 
     .hero {
       .email-input {
-        margin-bottom: 16px;
+        margin-bottom: 1rem;
       }
     }
 
     .improve-wealth {
       .email-input {
-        margin-bottom: 16px;
+        margin-bottom: 1rem;
       }
     }
 
@@ -316,8 +316,8 @@
     }
 
     .columns {
-      margin-left: 16px;
-      margin-right: 16px;
+      margin-left: 1rem;
+      margin-right: 1rem;
       overflow: hidden;
       padding-right: 0;
       padding-left: 0;
@@ -360,7 +360,7 @@
     }
 
     .understand-wealth {
-      margin-top: -250px;
+      margin-top: -15.625rem;
       padding-top: 165px;
     }
 
@@ -385,7 +385,7 @@
     .meet-the-platform {
       margin-top: -130px;
       .title {
-        line-height: 47px;
+        line-height: 2.9375rem;
       }
     }
 
@@ -397,7 +397,7 @@
       margin-right: 0;
       .early-access-box {
         padding: 0;
-        margin-right: 16px;
+        margin-right: 1rem;
       }
     }
 
@@ -408,8 +408,8 @@
       margin-bottom: -500px;
 
       .column {
-        margin-left: 16px;
-        margin-right: 16px;
+        margin-left: 1rem;
+        margin-right: 1rem;
       }
     }
 
@@ -456,9 +456,9 @@
     }
 
     .bg-home-8 {
-      margin-right: -16px;
+      margin-right: -1rem;
       background-size: 90vw;
-      margin-top: -35px;
+      margin-top: -2.1875rem;
     }
 
   }
@@ -467,12 +467,12 @@
 @media screen and (max-width: 425px) {
   .home {
     .bg-home-2 {
-      min-height: 1800px;
+      min-height: 112.5rem;
       background-size: 100%;
-      margin-bottom: -250px;
+      margin-bottom: -15.625rem;
     }
     .bg-home-3 {
-      min-height: 400px;
+      min-height: 25rem;
     }
     .bg-home-3, .bg-home-4, .bg-home-5 {
       background-size: 100%;
@@ -484,10 +484,10 @@
       min-height: 30vh;
     }
     .bg-home-8 {
-      margin-top: -150px;
+      margin-top: -9.375rem;
     }
     .understand-wealth {
-      margin-top: -450px;
+      margin-top: -28.125rem;
     }
   }
 }

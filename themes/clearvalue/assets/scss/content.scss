@@ -1,0 +1,17 @@
+.content {
+  p {
+    line-height: 1.15;
+  }
+  
+  ol ol ol {
+    list-style-type: lower-latin !important;
+
+    ol {
+      list-style-type: lower-roman!important;
+    }
+  }
+
+  li:not(:last-of-type) {
+    margin-bottom: 1rem;
+  }
+}
