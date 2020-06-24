@@ -26,6 +26,11 @@
       line-height: 2.125rem;
       margin-right: 1.6rem;
 
+      &:hover {
+        color: $white;
+        opacity: 0.8;
+      }
+
       &:first-child {
         margin-right: 2rem;
       }
@@ -75,6 +80,10 @@
   &__section-flex {
     margin-bottom: 7rem;
 
+    &.understanding {
+      margin-bottom: 12rem;
+    }
+
     &-margin {
       margin-bottom: 12.5rem;
     }
@@ -102,6 +111,7 @@
       text-align: center;
       width: 40vw;
       margin-right: 3rem;
+      position: relative;
     }
 
     .home__left-content {
@@ -121,6 +131,17 @@
       margin-left: 0;
       text-align: center;
       width: 40vw;
+    }
+
+    .pricing-info {
+      position: absolute;
+      top: 30%;
+      right: 32%;
+
+      font-size: 1.25rem;
+      line-height: 1.875rem;
+      opacity: 0.9;
+      color: white;
     }
   }
 
