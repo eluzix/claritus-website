@@ -31,25 +31,22 @@ body {
 }
 
 .footer {
-  padding-top: 4.6875rem;
-  height: 15.625rem;
-  background-image: linear-gradient(to top, #525453, #3e3e3e);
+  background: #121212;
+  padding-top: 2.75rem;
+  padding-bottom: 2.75rem;
+  align-items: stretch;
+  display: flex;
 
-  .links {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-
-    a.link {
-      opacity: 0.6;
-      font-size: 1.25rem;
-      line-height: 1.8;
+  &__links {
+    .link {
       color: $white;
-    }
+      font-size: 1.25rem;
+      line-height: 1.875rem;
+      margin-right: 1.5rem;
 
-    .social a:not(:first-of-type) {
-      margin-left: 1.5rem;
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 }
@@ -130,6 +127,10 @@ body {
   margin-bottom: 1.5rem;
 }
 
+.has-right-margin-24 {
+  margin-right: 1.5rem;
+}
+
 .has-bottom-margin-20 {
   margin-bottom: 1.25rem;
 }
@@ -152,26 +153,18 @@ body {
   }
 }
 
+.w-100 {
+  width: 100%;
+}
+
 @media screen and (max-width: $tablet) {
   .title {
     font-size: 2.5rem;
     line-height: 3.5rem;
   }
 
-  .footer {
-    height: 21.3125rem;
-    padding-top: 2.5rem;
-    .columns {
-      padding: 0 2.5rem;
-    }
-
-    .links {
-      display: block;
-      a.link {
-        display: block;
-        margin-bottom: 1.1875rem;
-      }
-    }
+  .container {
+    padding: 0 1.75rem;
   }
 }
 

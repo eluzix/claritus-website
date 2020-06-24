@@ -74,6 +74,11 @@
 
   &__section-flex {
     margin-bottom: 7rem;
+
+    &-margin {
+      margin-bottom: 12.5rem;
+    }
+
     .container {
       display: flex;
       flex-direction: row;
