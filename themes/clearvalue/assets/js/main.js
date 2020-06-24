@@ -39,11 +39,6 @@ document.addEventListener('DOMContentLoaded', function(){
     window.addEventListener('scroll', checkHeroVisibility);
 }, false);
 
-function focusOnEmail() {
-    setTimeout(() => {
-        document.querySelector('#early-access .early-access .email-input input').focus({preventScroll:false});
-    }, 500)
-}
 async function getEarlyAccess(elem) {
     let value = (elem && elem.parentElement && elem.parentElement.parentElement
         && elem.parentElement.parentElement.querySelector('.email-input input')

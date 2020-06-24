@@ -1,143 +1,177 @@
 {{ define "content" }}
+
+
 <div class="home has-navbar-fixed-top">
     <nav class="cv-header level navbar">
-        <div class="level-left column is-offset-1">
+        <div class="level-left column">
             <div class="level-item">
-                <img src="/images/logo-color.svg" class="logo"/>
-            </div>
-        </div>
-    </nav>
-    <nav class="cv-header level navbar is-fixed-top header-shadow d-none">
-        <div class="level-left column is-offset-1">
-            <div class="level-item">
-                <img src="/images/logo-color.svg" class="logo"/>
+                <img src="/images/logo.svg" class="logo"/>
             </div>
         </div>
         <div class="level-right">
             <div class="level-item">
-                <a class="button is-primary early-access-button" href="#early-access" onclick="focusOnEmail()">
-                    GET EARLY ACCESS <img src="/images/arrow.svg"/>
+                <a class="nav-link text-white" href="#our-story">
+                    Our Story
                 </a>
+                <a class="nav-link text-white" href="#pricing">
+                    Pricing
+                </a>
+                <a class="nav-link text-white" href="#sign-in">
+                    Sign In
+                </a>
+                <button class="button btn-white-outline">Sign Up</button>
             </div>
         </div>
     </nav>
+    <nav class="cv-header level navbar is-fixed-top header-shadow d-none">
+        <div class="level-left column">
+            <div class="level-item">
+                <img src="/images/logo.svg" class="logo"/>
+            </div>
+        </div>
+        <div class="level-right">
+            <div class="level-item">
+                <a class="nav-link text-white" href="#our-story">
+                    Our Story
+                </a>
+                <a class="nav-link text-white" href="#pricing">
+                    Pricing
+                </a>
+                <a class="nav-link text-white" href="#sign-in">
+                    Sign In
+                </a>
+                <button class="button btn-white-outline">Sign Up</button>
+            </div>
+        </div>
+    </nav>
+
     <section class="hero container">
-        <div class="columns block bg-home-1">
-            <div class="column is-5 is-offset-1" title="A simple way to control your wealth" id="early-access">
-
-                <p class="title">A Simple Way</p>
-                <p class="title green-title">To Control</p>
-                <p class="title">Your Wealth</p>
-
-                {{ partial "early-access.html" . }}
+        <div class="hero-block">
+            <div class="hero-title has-bottom-margin-30">
+                <p class="text-white">A Simple Way</p>
+                <p class="text-orange">To Control </p>
+                <p class="text-white">Your Wealth</p>
+            </div>
+            <div class="hero-description text-white has-bottom-margin-20">
+                Get a clear and complete view of your wealth in one place, with minimum effort. Simple.
+            </div>
+            <button class="button btn-black has-bottom-margin-10">Get started</button>
+            <div class="hero-subtitle text-white">
+                Try it for 3 months free, no credit card needed.
             </div>
         </div>
     </section>
 
-    <section class="columns block track-wealth">
-        <div class="column is-10 is-offset-1 bg-home-2 v-align">
-
-            <p class="title has-bottom-margin-16"><span class="green-title">Track</span> Your Wealth</p>
-
-            <p class="content is-half">
-                Staying in control of your wealth is not an easy task. We understand that making sense of your finances
-                is time consuming and often difficult to maintain. We’re here to take the pressure off and enable you to
-                track and trace your assets without the usual headache. Meaning that you’ll get a clear and complete
-                overview of all your investments in one place, with minimum effort. Simple.
-            </p>
-        </div>
-    </section>
-
-    <section class="columns block understand-wealth reverse-columns">
-        <div class="column is-5 is-offset-1 bg-home-3">
-        </div>
-        <div class="column is-5 v-align">
-            <p class="title has-bottom-margin-16"><span class="green-title">Understand</span> Your Wealth</p>
-            <p class="content">
-                Whether you’ve invested your money into something specific or just want to understand your worth in
-                general, we’re here
-                to make it easy. You no longer need to go through endless numbers and reports to grasp the value and
-                progress of your investments. Instead, we’ll do the heavy lifting and you’ll gain clear insights and
-                comparisons in just a few clicks.
-            </p>
-        </div>
-    </section>
-
-    <section class="columns block improve-wealth">
-        <div class="column is-6 is-offset-3 is-centered v-align">
-            <p class="title has-bottom-margin-16"><span class="green-title">Improve</span> Your Wealth</p>
-            <p class="content has-bottom-margin-24">
-                We’re here to make it easier for you to make the right financial decisions. We believe that once you
-                understand the financial data, the horizon is clearer and making decisions becomes easier.
-            </p>
-            {{ partial "early-access.html" . }}
-        </div>
-        <div class="column bg-home-4">
-        </div>
-    </section>
-
-    <div class="columns block loyalty reverse-columns">
-        <div class="column is-5 is-offset-1 bg-home-5">
-        </div>
-        <div class="column is-5 v-align">
-            <p class="title has-bottom-margin-16"><span class="green-title">Loyalty</span> First And Foremost</p>
-            <p class="content">
-                Our loyalty is to you, to help you benefit and improve your wealth so we'll always show you the real
-                numbers, whether they're good or bad. </p>
-        </div>
-    </div>
-
-    <div class="columns block meet-the-platform">
-        <div class="column is-5 is-offset-1 v-align">
-            <p class="title has-bottom-margin-16"><span class="green-title">Meet</span> The Platform</p>
-            <ul class="content">
-                <li>A clear overview of your finances</li>
-                <li>Track, trace and control your finances over time</li>
-                <li>Simple yet detailed insights into your finances</li>
-                <li>Real time alerts of any changes you should be aware of</li>
-            </ul>
-        </div>
-        <div class="column bg-home-6">
-        </div>
-    </div>
-
-    <div class="columns block privacy-security reverse-columns">
-        <div class="column is-5 is-offset-1 bg-home-7">
-        </div>
-        <div class="column is-5">
-            <p class="title has-bottom-margin-16"><span class="green-title">Privacy & Security</span> Promise </p>
-            <p class="content">
-                We’re here to take the pressure off and enable you to track and trace your assets without the usual
-                headache. Meaning that you’ll get a clear and complete overview of all your investments in one place,
-                with minimum effort. Simple.
-            </p>
-        </div>
-    </div>
-
-    <div class="columns block get-early-access">
-        <div class="column is-5 is-offset-1 ">
-            <div class="early-access-box">
-                <p class="title has-bottom-margin-16">Get Early Access</p>
-                <p class="content has-bottom-margin-24">
-                    Be one of the first to experience the future of wealth control
-                </p>
-                <div class="field is-fullwidth">
-                    <div class="control email-input">
-                        <input class="input" type="email" placeholder="Your Email Address">
-                    </div>
+    <section class="home__section-flex">
+        <div class="container">
+            <div class="home__left-image">
+                <img src="/images/empty-image.svg" />
+            </div>
+            <div class="home__left-content">
+                <div class="home__section-title">
+                    Keep <span class="text-orange">Track</span> of Your Wealth
                 </div>
-                <div class="field is-fullwidth">
-                    <div class="control">
-                        <a class="button is-primary is-fullwidth early-access-button" onclick="getEarlyAccess(this)">
-                            SAVE MY SPOT<img src="/images/arrow.svg"/>
-                        </a>
-                    </div>
+                <div class="home__section-subtitle has-bottom-margin-30">
+                    Staying in control of your wealth is not an easy task. We’re here to take the pressure off and
+                    allow you to track and trace all your assets and investments without the usual headache.
+                    With Clarius you will get a clear and complete overview of all your investments in one place,
+                    with minimum effort. Simple.
+                </div>
+
+                <div class="home__section-description">
+                    Your wealth, simple & clear.
                 </div>
             </div>
         </div>
-        <div class="column bg-home-8">
+    </section>
+
+    <section class="home__section-flex">
+        <div class="container">
+            <div class="home__right-content">
+                <div class="home__section-title">
+                    Get a deeper <span class="text-orange">understanding</span> of your finance
+                </div>
+                <div class="home__section-subtitle has-bottom-margin-30">
+                    Make the right financial decisions. We believe that once you understand the financial data, the
+                    horizon is clearer and making decisions becomes easier.
+                </div>
+            </div>
+            <div class="home__right-image">
+                <img src="/images/empty-image.svg" />
+            </div>
         </div>
-    </div>
+    </section>
+
+    <section class="home__section-flex home__black">
+        <div class="container">
+            <div class="home__left-image">
+                <img src="/images/empty-image.svg" />
+            </div>
+            <div class="home__left-content">
+                <div class="home__section-title">
+                    Track your <span class="text-orange">real estate</span> portfolio in one place
+                </div>
+                <div class="home__section-subtitle has-bottom-margin-30">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed mollis magna. Fusce id iaculis lorem. Nunc velit lacus, elementum et rutrum ac, fermentum a nisi.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="home__section-flex">
+        <div class="container">
+            <div class="home__left-image">
+                <img src="/images/loyalty.svg" />
+            </div>
+            <div class="home__left-content">
+                <div class="home__section-title">
+                    <span class="text-orange">Loyalty</span> First and Foremost
+                </div>
+                <div class="home__section-subtitle has-bottom-margin-30">
+                    We believe the customer is in the center. Our loyalty is first and foremost to our customers, no
+                    hidden agenda and no dual loyalty, no matter what.
+                    Learn more about our <a href="#">core values</a>.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="home__section-flex">
+        <div class="container">
+            <div class="home__right-content">
+                <div class="home__section-title">
+                    Your <span class="text-orange">Privacy & Security</span>
+                </div>
+                <div class="home__section-subtitle has-bottom-margin-30">
+                    We take privacy and security very seriously, we know it's crucial to our potential customers. We
+                    are obligated to that, no matter what. our customers' information is safe and secured. It will
+                    never be sold or shared with any third parties.
+                </div>
+            </div>
+            <div class="home__right-image">
+                <img src="/images/privacy.svg" />
+            </div>
+        </div>
+    </section>
+
+    <section class="home__section-flex">
+        <div class="container">
+            <div class="home__left-image">
+                <img src="/images/pricing.svg" />
+            </div>
+            <div class="home__left-content">
+                <div class="home__section-title">
+                    <span class="text-orange">Plain and simple</span> pricing
+                </div>
+                <div class="home__section-subtitle has-bottom-margin-30">
+                    <p>We’ll never sell your data, and we’ll never show you ads.</p>
+                    <p class="has-bottom-margin-30">We have a plain and simple pricing cost.</p>
+                    <p class="has-bottom-margin-30">Try us for 3 months for free. No credit card is needed.</p>
+                    <p>Lets build the trust together ....</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
 </div>
 {{ end }}

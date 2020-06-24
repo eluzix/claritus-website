@@ -1,493 +1,148 @@
 .home {
-  min-height: 100vh;
+  background: url("/images/hero.jpg") no-repeat, url("/images/hero-background.svg") no-repeat;
 
-  .block {
-    height: auto;
-    min-height: 50vh;
-  }
-
-  & > .columns.block:first-of-type {
-    height: 100vh;
-  }
-
-  .bg-home-1 {
-    background: transparent url("/images/home1.svg") center right no-repeat;
-    min-height: 62vh;
-    margin-right: 0;
-  }
-
-  .bg-home-2 {
-    background: transparent url("/images/home2.svg") center right no-repeat;
-    min-height: 53.125rem;
-    margin-right: 0;
-  }
-
-  .bg-home-3 {
-    background: transparent url("/images/home3.svg") center left no-repeat;
-    min-height: 53.125rem;
-    margin-right: 0;
-  }
-
-  .bg-home-4 {
-    background: transparent url("/images/home4.svg") center right no-repeat;
-    margin-top: -5.125rem;
-    margin-right: 0.3125rem;
-  }
-
-  .bg-home-5 {
-    background: transparent url("/images/home5.svg") center left no-repeat;
-    min-height: 53.125rem;
-  }
-
-  .bg-home-6 {
-    background: transparent url("/images/home6.png") center right no-repeat;
-    margin-top: -2.8125rem;
-    margin-right: 2.9375rem;
-    min-height: 37.5rem;
-  }
-
-  .bg-home-7 {
-    background: transparent url("/images/home7.svg") center left no-repeat;
-    margin-left: 6.125rem;
-    margin-right: 1.375rem;
-    min-height: 25rem;
-  }
-
-  .bg-home-8 {
-    background: transparent url("/images/home8.svg") center right no-repeat;
-    min-height: 80vh;
-    margin-top:-7.9375rem;
-    margin-right: 0.625rem;
-  }
-
-  p.content {
-    opacity: 0.9;
-    font-size: 1.25rem;
-    line-height: 1.5;
-
-    &.is-half {
-      width: 50%;
-    }
-  }
-
-  ul.content li {
-    opacity: 0.9;
-    font-size: 1.25rem;
-    line-height: 1.4;
-    color: $dark;
-    margin-left: 1rem;
-    text-indent: -1rem;
-    margin-bottom: 12px;
-
-    &:before{
-      content: "";
-      width: 8px;
-      height: 8px;
-      display: inline-block;
-      border-radius: 50%;
-      background: $light-green-gradient;
-      margin-right: 8px;
-      vertical-align: middle;
-    }
- }
-
-  .early-access {
-    .field.is-fullwidth .control {
-      width: 290px;
-
-      &.email-input {
-        width: 295px;
-      }
-    }
-
-    .input {
-      padding: 12px 1rem;
-      height: 46px;
-    }
-  }
-
-  .early-access-button {
-    padding: 12px 32px;
-    height: 48px;
-    color: $white;
-    img {
-      margin-left: 1rem;
-      object-fit: contain;
-    }
-  }
-
-  .early-access-box {
-    padding: 88px 80px;
-    background-color: $white;
-    background: $white-grey-gradient;
-    box-shadow: 40px 40px 72px $dark-box-shadow;
-    border-radius: 8px;
+  .navbar {
+    background-color: inherit;
   }
 
   .cv-header {
-    padding: 1.375rem 122px 1.375rem 0;
-    background-color: $white;
-    min-height: 92px;
-  }
+    padding: 2.25rem 3.05rem;
+    margin-bottom: 3rem;
 
-  .cv-header.header-shadow {
-
-    &.slide-in {
-      animation: slide-in .5s;
-      animation-fill-mode:forwards;
-      box-shadow: 0 4px 1rem 0 rgba(0, 0, 0, 0.08);
+    &.is-fixed-top {
+      padding: 0.3rem 3.05rem 1.2rem 3.5rem;
+      background: $black;
     }
+
     &.d-none {
       animation: slide-out .3s;
       animation-fill-mode:forwards;
     }
+
+    .nav-link {
+      text-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+      font-weight: 500;
+      font-size: 1.25rem;
+      line-height: 2.125rem;
+      margin-right: 1.6rem;
+
+      &:first-child {
+        margin-right: 2rem;
+      }
+    }
+
+    .level-right {
+      margin-top: 1.25rem;
+      margin-right: -5px;
+
+      .level-item .button {
+        margin-left: 5px;
+      }
+    }
   }
 
   .hero {
-    margin-top: 110px;
+    min-height: 79.5vh;
 
-    .early-access {
-      margin-top: 20px;
-    }
-  }
-
-  .track-wealth {
-    margin-top: -75px;
-    margin-right: 12px;
-
-    .title {
-      margin-top: -163px;
-    }
-  }
-
-  .understand-wealth {
-    margin-top: -9.375rem;
-    margin-left: -3px;
-
-    .title {
-      margin-top: -161px;
-    }
-  }
-
-  .improve-wealth {
-    margin-top: -9.375rem;
-    margin-left: -10px;
-  }
-
-  .loyalty {
-    margin-top: -9.375rem;
-    margin-left: -5px;
-  }
-
-  .meet-the-platform {
-
-  }
-
-  .privacy-security {
-
-  }
-
-  .get-early-access {
-    .early-access-box {
-      max-width: 588px;
-      padding: 72px 105px 88px 105px;
-    }
-
-    p.content {
-      padding-right: 55px;
-    }
-  }
-
-  .email-input {
-    border-radius: 4px;
-    border: solid 1px $light-white;
-    background-color: $white;
-    input {
-      height: 46px;
-    }
-  }
-}
-
-@media screen and (max-width: $desktop) {
-  .home {
-    .field.has-addons .control:last-child:not(:only-child) .button,
-    .field.has-addons .control:last-child:not(:only-child) .input,
-    .field.has-addons .control:last-child:not(:only-child) .select select {
-      border-bottom-left-radius: 4px;
-      border-top-left-radius: 4px;
-    }
-    .columns {
-      padding-left: 15px;
-      padding-right: 15px;
-    }
-
-    .early-access-button {
-      border-radius: 4px;
-    }
-
-    .hero {
-      .email-input {
-        margin-bottom: 1rem;
-      }
-    }
-
-    .improve-wealth {
-      .email-input {
-        margin-bottom: 1rem;
-      }
-    }
-
-    .early-access {
-      .field{
-        &.has-addons {
-          display: block;
-        }
-        &.is-fullwidth {
-          .control {
-            width: 390px;
-          }
-          .control.email-input {
-            width: 390px;
-          }
-        }
-      }
-      .control {
-        display: block;
-        min-width: 288px;
-      }
-    }
-
-    .bg-home-2 {
-      background-size: 50%;
-    }
-    .bg-home-3, .bg-home-4, .bg-home-5, .bg-home-6, .bg-home-7, .bg-home-8 {
-      background-size: 100%;
-    }
-    .get-early-access {
-      .early-access-box {
-        padding: inherit;
-      }
-    }
-  }
-}
-
-@media screen and (max-width: $tablet) {
-  .home {
-
-    .cv-header.header-shadow {
-      //display: none;
-    }
-    .reverse-columns {
-      flex-direction: column-reverse;
-      display: flex;
-    }
-
-    .logo {
-      margin-top: 28px;
-      margin-bottom: 120px;
-    }
-
-    .cv-header {
-      padding: 0;
-      box-shadow: none;
-      position: initial;
-      margin-top: -18px;
-      min-height: unset;
-
-      .logo {
-        transform: scale(0.65);
+    .hero-block {
+      .hero-title {
+        font-style: normal;
+        font-weight: 800;
+        font-size: 3rem;
+        line-height: 3.6rem;
+        padding-top: 8px;
+        font-family: $family-secondary;
       }
 
-      .level-left {
-        max-height: 64px;
+      .hero-description {
+        font-weight: 500;
+        font-size: 1.5rem;
+        line-height: 2.125rem;
+        text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+
+        max-width: 33rem;
       }
 
-      .level-right {
-        display: none;
-      }
-    }
-
-    .cv-header.header-shadow {
-      position: fixed;
-
-      .level-left {
-        max-height: 70px;
-      }
-    }
-
-    .columns {
-      margin-left: 1rem;
-      margin-right: 1rem;
-      overflow: hidden;
-      padding-right: 0;
-      padding-left: 0;
-    }
-
-    .column {
-      padding: 0;
-    }
-
-    .hero {
-      margin-top: 44px;
-    }
-
-    .early-access {
-      .field {
-        &.is-fullwidth {
-          .control {
-            width: 290px;
-          }
-          .control.email-input {
-            width: 290px;
-          }
-        }
-      }
-    }
-    .track-wealth {
-      margin-top: 0;
-
-      p.content.is-half {
-        min-width: 90vw;
-
-        opacity: 0.9;
+      .hero-subtitle {
+        font-weight: 500;
         font-size: 1.25rem;
-        line-height: 1.5;
-      }
-
-      .title {
-        margin-top: 0;
+        line-height: 2.125rem;
+        text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
       }
     }
-
-    .understand-wealth {
-      margin-top: -15.625rem;
-      padding-top: 165px;
-    }
-
-    .improve-wealth {
-      margin-right: 0;
-      margin-top: 0;
-      .column {
-        align-items: start;
-        justify-content: start;
-        text-align: start;
-      }
-      .content {
-        max-width: 88vw;
-        margin-top: -7px;
-      }
-    }
-
-    .loyalty {
-      margin-top: -170px;
-    }
-
-    .meet-the-platform {
-      margin-top: -130px;
-      .title {
-        line-height: 2.9375rem;
-      }
-    }
-
-    .privacy-security {
-      margin-top: -100px;
-    }
-
-    .get-early-access {
-      margin-right: 0;
-      .early-access-box {
-        padding: 0;
-        margin-right: 1rem;
-      }
-    }
-
-    .bg-home-1 {
-      min-height: 860px;
-      background-size: 127vw;
-      margin: 0;
-      margin-bottom: -500px;
-
-      .column {
-        margin-left: 1rem;
-        margin-right: 1rem;
-      }
-    }
-
-    .bg-home-2 {
-      background-size: 60vw;
-      padding-bottom: 0;
-      min-height: 1400px;
-      padding-top: 220px;
-      display: block;
-      margin-bottom: -200px;
-    }
-
-    .bg-home-3 {
-      background-size: 60%;
-      margin-top: 0;
-      margin-left: 0;
-      min-height: 500px;
-    }
-
-    .bg-home-4 {
-      margin-right: -43px;
-      background-size: 50%;
-      min-height: 500px;
-      margin-top: 0;
-      overflow: hidden;
-    }
-
-    .bg-home-5 {
-      background-size: 60%;
-      margin-top: -270px;
-    }
-
-    .bg-home-6 {
-      margin-top: -118px;
-      margin-right: -2px;
-      min-height: 85vh;
-      background-size: 90vw;
-    }
-
-    .bg-home-7 {
-      margin: 0;
-      min-height: 50vh;
-      background-size: 100%;
-    }
-
-    .bg-home-8 {
-      margin-right: -1rem;
-      background-size: 90vw;
-      margin-top: -2.1875rem;
-    }
-
   }
-}
 
-@media screen and (max-width: 425px) {
-  .home {
-    .bg-home-2 {
-      min-height: 112.5rem;
-      background-size: 100%;
-      margin-bottom: -15.625rem;
+  &__section-flex {
+    margin-bottom: 7rem;
+    .container {
+      display: flex;
+      flex-direction: row;
+      align-content: stretch;
+      align-items: center;
+      vertical-align: top;
     }
-    .bg-home-3 {
-      min-height: 25rem;
+
+    &.home__black {
+      background: $black;
+
+      .home__section {
+        &-title, &-subtitle {
+          color: $white;
+        }
+      }
     }
-    .bg-home-3, .bg-home-4, .bg-home-5 {
-      background-size: 100%;
+
+    .home__left-image {
+      margin-left: 0;
+      text-align: center;
+      width: 40vw;
+      margin-right: 3rem;
     }
-    .bg-home-6 {
-      min-height: 55vh;
+
+    .home__left-content {
+      flex-grow: 1;
+      flex-basis: 50%;
+      width: 60vw;
     }
-    .bg-home-7 {
-      min-height: 30vh;
+
+    .home__right-content {
+      flex-grow: 1;
+      flex-basis: 50%;
+      width: 60vw;
+      margin-left: 0.5rem;
     }
-    .bg-home-8 {
-      margin-top: -9.375rem;
+
+    .home__right-image {
+      margin-left: 0;
+      text-align: center;
+      width: 40vw;
     }
-    .understand-wealth {
-      margin-top: -28.125rem;
+  }
+
+  .home__section {
+    &-title {
+      font-family: $family-secondary;
+      font-weight: 800;
+      font-size: 2.5rem;
+      line-height: 3.375rem;
+      text-transform: capitalize;
+      color: $black;
+      margin-bottom: 1rem;
+    }
+    &-subtitle {
+      font-size: 1.25rem;
+      line-height: 1.875rem;
+      opacity: 0.9;
+      color: $black;
+    }
+    &-description {
+      font-family: 'Open Sans';
+      font-style: italic;
+      font-size: 1.25rem;
+      line-height: 1.875rem;
+
+      align-items: center;
+      text-align: center;
     }
   }
 }
