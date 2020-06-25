@@ -37,6 +37,28 @@ function checkHeroVisibility() {
 
 document.addEventListener('DOMContentLoaded', function(){
     window.addEventListener('scroll', checkHeroVisibility);
+
+    let toggle = document.getElementById('nav-toggle');
+    let menu = document.getElementById('nav-menu');
+
+    toggle.onclick = function() {
+        toggle.classList.toggle('is-active');
+        menu.classList.toggle('is-active');
+        toggleFixed.classList.toggle('is-active');
+        menuFixed.classList.toggle('is-active');
+    };
+
+    let toggleFixed = document.getElementById('nav-toggle-fixed');
+    let menuFixed = document.getElementById('nav-menu-fixed');
+
+    toggleFixed.onclick = function() {
+        toggle.classList.toggle('is-active');
+        menu.classList.toggle('is-active');
+        toggleFixed.classList.toggle('is-active');
+        menuFixed.classList.toggle('is-active');
+    };
+
+
 }, false);
 
 async function getEarlyAccess(elem) {
