@@ -7,6 +7,7 @@
 @import "../bulma/sass/grid/columns";
 @import "../bulma/sass/form/all";
 @import "../bulma/sass/elements/button";
+@import "../bulma/sass/elements/container";
 @import "../bulma/sass/components/level";
 @import "../bulma/sass/components/navbar";
 @import "../bulma/sass/elements/content";
@@ -27,7 +28,7 @@ body {
 }
 
 .container {
-  padding: 0 7.75rem;
+  padding: 0 4.5rem;
 }
 
 .footer {
