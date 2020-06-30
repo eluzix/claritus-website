@@ -197,6 +197,10 @@
       margin-bottom: 12rem;
     }
 
+    &.section-slider {
+      padding: 2.5rem 0;
+    }
+
     &-margin {
       margin-bottom: 12.5rem;
     }
@@ -231,6 +235,10 @@
       flex-grow: 1;
       flex-basis: 50%;
       width: 60vw;
+
+      &.content-dots {
+        margin-left: auto;
+      }
     }
 
     .home__right-content {
