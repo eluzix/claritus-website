@@ -160,7 +160,7 @@
   }
 
   .hero {
-    min-height: 65vh;
+    min-height: 36rem;
 
     .hero-block {
       .hero-title {
@@ -343,15 +343,23 @@
   }
 }
 
+@media screen and (max-width: $desktop) {
+  .home {
+    background-size: 140%;
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .home {
+    background-size: initial;
+  }
+}
+
 
 
 @media screen and (min-width: $tablet + $desktop) {
   .home {
-
-    .hero {
-      min-height: 79.5vh;
-    }
-
+    background-position-y: -37rem;
     .home__section-flex {
       .home__right-image, .home__left-image {
         width: 45%;
