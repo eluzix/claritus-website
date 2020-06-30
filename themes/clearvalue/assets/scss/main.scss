@@ -164,6 +164,10 @@ body {
   margin-bottom: 1.875rem;
 }
 
+.has-top-margin-200 {
+  margin-top: 12.5rem;
+}
+
 .is-centered {
   text-align: center;
 }
@@ -195,3 +199,4 @@ body {
 
 @import "home";
 @import "content";
+@import "slider";

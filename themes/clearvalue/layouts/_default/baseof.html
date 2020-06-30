@@ -20,6 +20,10 @@
 
     <link rel="icon" type="image/png" href="{{ "/images/favicon-32x32.png" | absURL }}" sizes="32x32">
     <link rel="icon" type="image/png" href="{{ "/images/favicon-16x16.png" | absURL }}" sizes="16x16">
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/keen-slider@5.0.2/keen-slider.min.css"
+    />
 
     {{ with .OutputFormats.Get "RSS" }}
     <link href="{{ .RelPermalink }}" rel="alternate" type="application/rss+xml" />
@@ -28,6 +32,7 @@
 
     {{ $js := resources.Get "js/main.js" }}
     <script src="{{ $js.Permalink }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/keen-slider@5.0.2/keen-slider.min.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id={{ .Site.Params.gtagConfig }}"></script>
     <script>
         window.dataLayer = window.dataLayer || [];

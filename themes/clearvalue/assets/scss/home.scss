@@ -160,7 +160,7 @@
   }
 
   .hero {
-    min-height: 79.5vh;
+    min-height: 65vh;
 
     .hero-block {
       .hero-title {
@@ -247,14 +247,22 @@
     }
 
     .pricing-info {
-      position: absolute;
-      top: 30%;
-      right: 32%;
+      background: #323947;
+      box-shadow: 0 0 50px rgba(0, 0, 0, 0.25);
+      border-radius: 4px;
+      width: 18.75rem;
+      height: 20rem;
+      display: flex;
+      align-items: center;
+      margin: 0 auto;
 
-      font-size: 1.25rem;
-      line-height: 1.875rem;
-      opacity: 0.9;
-      color: white;
+      &__content {
+        font-size: 1.25rem;
+        line-height: 1.875rem;
+        opacity: 0.9;
+        color: white;
+        margin: 0 auto;
+      }
 
       @media screen and (max-width: $tablet) {
         top: 22%;
