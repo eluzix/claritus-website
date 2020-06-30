@@ -1,9 +1,20 @@
 .home {
-  background: url("/images/hero.jpg") no-repeat, url("/images/hero-background.svg") no-repeat;
-  background-size: 100%;
 
-  @media screen and (max-width: $tablet) {
-    background-size: initial;
+  .hero-container {
+    height: 100vh;
+    background: url("/images/hero.jpg") no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    margin-bottom: 12rem;
+
+    //@media screen and (max-width: $tablet) {
+    //  background-size: cover;
+    //  background-position: 50%;
+    //}
+
+    @include mobile {
+      margin-bottom: 6rem;
+    }
   }
 
 
@@ -160,7 +171,7 @@
   }
 
   .hero {
-    min-height: 36rem;
+    //min-height: 36rem;
 
     .hero-block {
       .hero-title {
@@ -343,23 +354,23 @@
   }
 }
 
-@media screen and (max-width: $desktop) {
-  .home {
-    background-size: 140%;
-  }
-}
+//@media screen and (max-width: $desktop) {
+//  .home {
+//    background-size: 140%;
+//  }
+//}
 
-@media screen and (max-width: $tablet) {
-  .home {
-    background-size: initial;
-  }
-}
+//@media screen and (max-width: $tablet) {
+//  .home {
+//    background-size: initial;
+//  }
+//}
 
 
 
 @media screen and (min-width: $tablet + $desktop) {
   .home {
-    background-position-y: -37rem;
+    //background-position-y: -37rem;
     .home__section-flex {
       .home__right-image, .home__left-image {
         width: 45%;

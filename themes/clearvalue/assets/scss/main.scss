@@ -12,7 +12,6 @@
 @import "../bulma/sass/components/navbar";
 @import "../bulma/sass/elements/content";
 @import "../bulma/sass/elements/table";
-@import "../bulma/sass/base/minireset";
 
 body {
   height: 100vh;
@@ -27,9 +26,9 @@ body {
   display: none;
 }
 
-.container {
-  padding: 0 4.5rem;
-}
+//.container {
+//  padding: 0 4.5rem;
+//}
 
 .footer {
   background: #121212;
@@ -162,6 +161,10 @@ body {
 
 .has-bottom-margin-30 {
   margin-bottom: 1.875rem;
+}
+
+.has-bottom-margin-200 {
+  margin-bottom: 12.5rem;
 }
 
 .has-top-margin-200 {
