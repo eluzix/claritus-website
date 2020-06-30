@@ -162,10 +162,6 @@
   .hero {
     min-height: 65vh;
 
-    @media screen and (min-width: $tablet + $desktop) {
-      min-height: 79.5vh;
-    }
-
     .hero-block {
       .hero-title {
         font-style: normal;
@@ -335,6 +331,23 @@
     .pricing-info {
       top: 25%;
       right: 30%;
+    }
+  }
+}
+
+
+
+@media screen and (min-width: $tablet + $desktop) {
+  .home {
+
+    .hero {
+      min-height: 79.5vh;
+    }
+
+    .home__section-flex {
+      .home__right-image, .home__left-image {
+        width: 45%;
+      }
     }
   }
 }
