@@ -1,6 +1,6 @@
-baseURL = "https://clearvalue.netlify.com/"
+baseURL = "https://claritus.netlify.com/"
 languageCode = "en-us"
-title = "Clear Value - A simple way to control your wealth"
+title = "Claritus - A simple way to control your wealth"
 
 theme = "clearvalue"
 assetDir = 'themes/clearvalue/assets'
