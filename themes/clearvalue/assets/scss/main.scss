@@ -79,6 +79,10 @@ body {
       color: $white;
       background: $black;
     }
+
+    @media screen and (max-width: $tablet) {
+      width: 100%;
+    }
   }
 
   &.btn-white-outline {
@@ -97,11 +101,6 @@ body {
 
   &:hover {
     opacity: 0.8;
-  }
-
-
-  @media screen and (max-width: $tablet) {
-    width: 100%;
   }
 }
 
