@@ -90,10 +90,11 @@ body {
   &.btn-white-outline {
     color: $white;
     text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
-    border: 2px solid $white;
+    border: 1px solid $white;
     box-sizing: border-box;
     padding: 0.688rem 2.313rem;
     background: none;
+    font-weight: 300;
     &:hover {
       opacity: 1;
       color: $black;
