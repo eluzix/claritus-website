@@ -56,3 +56,14 @@
 .arrow--disabled {
   fill: rgba(255, 255, 255, 0.5);
 }
+
+@media screen and (max-width: $tablet) {
+  [class^="number-slide"],
+  [class*=" number-slide"] {
+    height: initial;
+  }
+
+  .keen-slider {
+    width: 100%;
+  }
+}
