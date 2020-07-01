@@ -2,6 +2,8 @@
   margin-top: 12.5rem;
   padding-bottom: 12.5rem;
 
+  font-size: 1.5rem;
+
   @include tablet-only {
     margin-top: 8rem;
     padding-bottom: 4rem;
@@ -12,8 +14,14 @@
     padding-bottom: 4rem;
   }
 
+  .container {
+    max-width: 60rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
   p {
-    line-height: 1.15;
+    line-height: 1.5;
   }
   
   ol ol ol {
