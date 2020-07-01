@@ -96,7 +96,11 @@ function updateClasses(instance) {
 
 
 document.addEventListener('DOMContentLoaded', function(){
-    window.addEventListener('scroll', checkHeroVisibility);
+    let heroElement = document.querySelector('.hero');
+    if (heroElement) {
+        window.addEventListener('scroll', checkHeroVisibility);
+    }
+
 
     let toggle = document.getElementById('nav-toggle');
     let menu = document.getElementById('nav-menu');

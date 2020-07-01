@@ -4,5 +4,7 @@ title = "Claritus - A simple way to control your wealth"
 
 theme = "clearvalue"
 assetDir = 'themes/clearvalue/assets'
+
 [params]
     gtagConfig = 'UA-159218662-2'
+    appUrl = "https://clearvalue-dev.netlify.app"

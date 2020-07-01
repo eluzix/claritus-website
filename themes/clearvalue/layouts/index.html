@@ -1,6 +1,5 @@
 {{ define "content" }}
 
-
 <div class="home has-navbar-fixed-top">
     <div class="hero-container">
         <nav class="cv-header level navbar">
@@ -16,31 +15,32 @@
             </div>
             <div class="level-right">
                 <div class="level-item">
-                    <a class="nav-link text-white" href="#our-story">
+                    <a class="nav-link text-white" href="/our-story">
                         Our Story
                     </a>
                     <a class="nav-link text-white" href="#pricing">
                         Pricing
                     </a>
-                    <a class="nav-link text-white" href="#sign-in">
+                    <a class="nav-link text-white" href="{{ .Site.Params.appUrl }}/sign-in">
                         Sign In
                     </a>
-                    <button class="button btn-white-outline">Sign Up</button>
+                    <a href="{{ .Site.Params.appUrl }}/on-boarding" class="button btn-white-outline">Sign Up</a>
                 </div>
             </div>
             <div id='nav-menu' class="nav-right nav-menu">
-                <a class="nav-link text-white" href="#our-story">
+                <a class="nav-link text-white" href="/our-story">
                     Our Story
                 </a>
                 <a class="nav-link text-white" href="#pricing">
                     Pricing
                 </a>
-                <a class="nav-link text-white" href="#sign-in">
+                <a class="nav-link text-white" href="{{ .Site.Params.appUrl }}/sign-in">
                     Sign In
                 </a>
-                <button class="button btn-white-outline">Sign Up</button>
+                <a href="{{ .Site.Params.appUrl }}/on-boarding" class="button btn-white-outline">Sign Up</a>
             </div>
         </nav>
+
         <nav class="cv-header level navbar is-fixed-top header-shadow d-none">
             <div class="level-left column">
                 <div class="level-item">
@@ -54,29 +54,29 @@
             </div>
             <div class="level-right">
                 <div class="level-item">
-                    <a class="nav-link text-white" href="#our-story">
+                    <a class="nav-link text-white" href="/our-story">
                         Our Story
                     </a>
                     <a class="nav-link text-white" href="#pricing">
                         Pricing
                     </a>
-                    <a class="nav-link text-white" href="#sign-in">
+                    <a class="nav-link text-white" href="{{ .Site.Params.appUrl }}/sign-in">
                         Sign In
                     </a>
-                    <button class="button btn-white-outline">Sign Up</button>
+                    <a href="{{ .Site.Params.appUrl }}/on-boarding" class="button btn-white-outline">Sign Up</a>
                 </div>
             </div>
             <div id='nav-menu-fixed' class="nav-right nav-menu">
-                <a class="nav-link text-white" href="#our-story">
+                <a class="nav-link text-white" href="/our-story">
                     Our Story
                 </a>
                 <a class="nav-link text-white" href="#pricing">
                     Pricing
                 </a>
-                <a class="nav-link text-white" href="#sign-in">
+                <a class="nav-link text-white" href="{{ .Site.Params.appUrl }}/sign-in">
                     Sign In
                 </a>
-                <button class="button btn-white-outline">Sign Up</button>
+                <a href="{{ .Site.Params.appUrl }}/on-boarding" class="button btn-white-outline">Sign Up</a>
             </div>
         </nav>
 

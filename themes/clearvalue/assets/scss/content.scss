@@ -1,4 +1,17 @@
 .content {
+  margin-top: 12.5rem;
+  padding-bottom: 12.5rem;
+
+  @include tablet-only {
+    margin-top: 8rem;
+    padding-bottom: 4rem;
+  }
+
+  @include mobile {
+    margin-top: 8rem;
+    padding-bottom: 4rem;
+  }
+
   p {
     line-height: 1.15;
   }
