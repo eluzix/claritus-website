@@ -2,6 +2,7 @@
 title: "Our Story"
 date: 2020-07-01T09:30:01+03:00
 url: /our-story
+type: our-story
 ---
 My story is not one of privilege or position. I come from a middle class family and there was no silver spoon involved in my upbringing. I was able to achieve financial freedom and success through hard work, tenacity, persistence and I suppose, a bit of talent. It was always a humbling experience to evolve and to achieve new things.
 

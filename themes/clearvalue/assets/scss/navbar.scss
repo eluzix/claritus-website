@@ -21,6 +21,9 @@
     }
 
     .level-left {
+      flex-grow: 2;
+      display: block;
+      
       .level-item {
         justify-content: space-between;
       }
@@ -45,7 +48,7 @@
   }
 
   &.is-fixed-top {
-    padding: 0.3rem 3.05rem 1.2rem 3.5rem;
+    padding: 1.5rem 3.05rem;
     background: $black;
   }
 
@@ -72,8 +75,8 @@
   }
 
   .level-right {
-    margin-top: 1.25rem;
-    margin-right: -5px;
+    //margin-top: 1.25rem;
+    //margin-right: -5px;
 
     .level-item {
       .button {
@@ -157,6 +160,10 @@
     .button.btn-white-outline {
       font-weight: 500;
     }
+  }
+
+  @include desktop-only {
+    padding: 2.25rem 1rem;
   }
 }
 
