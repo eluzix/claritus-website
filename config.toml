@@ -1,4 +1,4 @@
-baseURL = "https://claritus.netlify.com/"
+baseURL = "https://app.claritus.io/"
 languageCode = "en-us"
 title = "Claritus - A simple way to control your wealth"
 
@@ -7,4 +7,4 @@ assetDir = 'themes/clearvalue/assets'
 
 [params]
     gtagConfig = 'UA-159218662-2'
-    appUrl = "https://clearvalue-dev.netlify.app"
+    appUrl = "https://app.claritus.io/"
