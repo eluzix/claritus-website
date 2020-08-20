@@ -3,8 +3,8 @@
 }
 
 .cv-header {
-  padding: 2.25rem 3.05rem;
-  margin-bottom: 3rem;
+  padding: 3rem 2.75rem 3rem 3.6rem;
+  margin-bottom: 2.95rem !important;
 
   @media screen and (max-width: $tablet) {
 
@@ -23,7 +23,7 @@
     .level-left {
       flex-grow: 2;
       display: block;
-      
+
       .level-item {
         justify-content: space-between;
       }
@@ -162,6 +162,11 @@
   &:not(.is-fixed-top) {
     .nav-link {
       font-weight: 500;
+      margin-top: 1rem;
+
+      &:nth-last-child {
+        margin-right: 0.9rem;
+      }
     }
 
     .button.btn-white-outline {
