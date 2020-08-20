@@ -69,12 +69,18 @@ body {
     color: $white;
     background: $black;
     border: none;
+    box-sizing: border-box;
     padding-right: 1.8rem;
     &:hover {
-      opacity: 1;
+      //opacity: 1;
       color: $black;
       background: $white;
+      border: 1px solid $black;
     }
+  }
+
+  &.btn-wide {
+    width: 20rem;
   }
 
   &.btn-black-outline {
