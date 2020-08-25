@@ -229,6 +229,51 @@ body {
   }
 }
 
+.faq {
+  article {
+    a {
+      color: $black;
+      border-bottom: 1px black solid;
+      &:hover {
+        border-bottom: none;
+        color: #3273dc;
+      }
+    }
+  }
+
+  .collapse {
+    .collapsible {
+      background: url("/icon-plus.svg") no-repeat left;
+      cursor: pointer;
+      padding: 1.125rem;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 1.25rem;
+      padding-left: 3.25rem;
+      line-height: 2.375rem;
+      border-bottom: 1px solid #D4DAE3;
+    }
+
+    .active {
+      background-image: url("/icon-minus.svg");
+      border-bottom: none;
+    }
+
+    .collapsible:hover {
+      text-decoration: underline;
+    }
+
+    .content {
+      margin-top: 0;
+      padding: 0.625rem 1.5rem 0 3.25rem;
+      display: none;
+      overflow: hidden;
+    }
+  }
+}
+
 @media screen and (max-width: $tablet) {
   .title {
     font-size: 2.5rem;
