@@ -207,6 +207,27 @@ body {
 .w-100 {
   width: 100%;
 }
+.our-story {
+  &.content {
+    font-size: 1.25rem;
+  }
+}
+
+.our-story-img {
+  display: inline-block;
+  width: 54%;
+
+  padding-bottom: 1rem;
+
+  &:first-of-type {
+    width: 44%;
+    margin-right: 0.5rem;
+  }
+
+  p {
+    display: inline-block;
+  }
+}
 
 @media screen and (max-width: $tablet) {
   .title {
@@ -217,6 +238,15 @@ body {
   .container {
     padding: 0 1.75rem;
   }
+
+  .our-story-img {
+    display: block;
+    width: 100%;
+    &:first-of-type {
+      width: 100%;
+    }
+  }
+
 }
 
 @include desktop-only {

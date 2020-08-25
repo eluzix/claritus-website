@@ -1,0 +1,10 @@
+{{ $htmlTable := .Inner | markdownify }}
+{{ $class := .Get 0 }}
+{{ $old := "<p>" }}
+{{ $new := printf "<p class=\"%s\">" $class }}
+{{ $htmlTable := replace $htmlTable $old $new }}
+{{ $htmlTable := replaceRE "align=\"([a-z]+)\"" "style=\"text-align: $1\"" $htmlTable}}
+
+<div class="our-story-img">
+{{ $htmlTable | safeHTML }}
+</div>
