@@ -274,6 +274,38 @@ body {
   }
 }
 
+.our-mission {
+  .cases {
+    margin-top: 5.25rem;
+
+    .case {
+      display: flex;
+      margin-bottom: 3.4rem;
+
+      .case-img {
+        flex: 1;
+        align-self: center;
+        text-align: center;
+      }
+
+      .case-content {
+        flex: 70%;
+        align-self: center;
+
+        .case-title, .case-description {
+          font-weight: 800;
+          font-size: 1.25rem;
+          line-height: 150%;
+        }
+
+        .case-description {
+          font-weight: initial;
+        }
+      }
+    }
+  }
+}
+
 @media screen and (max-width: $tablet) {
   .title {
     font-size: 2.5rem;
@@ -292,6 +324,16 @@ body {
     }
   }
 
+}
+
+@media screen and (max-width: 767px) {
+  .our-mission {
+    .cases {
+      .case {
+        flex-direction: column;
+      }
+    }
+  }
 }
 
 @include desktop-only {

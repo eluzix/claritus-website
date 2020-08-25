@@ -1,0 +1,15 @@
+{{ define "content" }}
+<div class="content our-mission has-navbar-fixed-top">
+
+    {{ partial "nav" . }}
+
+    <section class="container">
+        <h1 class="title" title="{{ .Title }}">{{ .Title }}</h1>
+        <article>
+            {{ .Content }}
+        </article>
+    </section>
+</div>
+{{ end }}
+
+{{ define "title" }}{{ .Title }}{{ end }}

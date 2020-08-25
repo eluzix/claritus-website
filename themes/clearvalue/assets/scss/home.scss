@@ -210,7 +210,7 @@
     &.section-reversed {
       .container {
         margin-left: auto;
-        grid-template-columns: 46vw 46vw;
+        grid-template-columns: 46% 46%;
       }
     }
 
@@ -219,24 +219,24 @@
         margin-left: 4rem;
       }
       .container {
-        grid-template-columns: 44vw 46vw;
+        grid-template-columns: 44% 46%;
       }
     }
 
     .container {
       display: grid;
-      grid-template-columns: 49vw 46vw;
+      grid-template-columns: 49% 46%;
       width: 100%;
       max-width: 1295px;
-      margin-left: 8rem;
-
-      .home__right-content {
-        width: 40vw;
-      }
+      margin-left: auto;
     }
 
     .home__left-image {
       max-width: 46vw;
+    }
+
+    .home__right-image {
+      justify-self: center;
     }
 
     .home__left-content {
