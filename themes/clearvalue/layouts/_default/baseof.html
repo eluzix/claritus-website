@@ -34,7 +34,6 @@
     {{ end }}
 
     {{ $js := resources.Get "js/main.js" }}
-    {{ $js := resources.Get "js/colored-title.js" }}
     <script src="{{ $js.Permalink }}"></script>
     <script src="https://cdn.jsdelivr.net/npm/keen-slider@5.0.2/keen-slider.min.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id={{ .Site.Params.gtagConfig }}"></script>
