@@ -1,5 +1,5 @@
 ---
-title: "Frequently Asked <span>Questions</span>"
+title: "Frequently Asked Questions"
 date: 2020-04-27T09:30:01+03:00
 url: /faq
 type: faq
