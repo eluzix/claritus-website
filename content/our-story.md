@@ -10,15 +10,19 @@ A few years back, being able to choose how to continue with my journey in life w
 
 With that said, I must add that being in an advantageous financial position was never part of my upbringing, I had to learn many new financial skills in order to handle this aspect of life.   While I don’t have a formal education in financing, I always wanted to lead our family wealth, carefully, responsibly, and with a fact-based attitude.
  
-{{< div-inline-block >}}
-I spent a long time on the web searching for a good tool that would allow me to have full clarity and control when it comes to my investments and assets.
+{{< rawhtml >}}
+<div class="our-story-img">
+    <p>I spent a long time on the web searching for a good tool that would allow me to have full clarity and control when it comes to my investments and assets.</p>
+    
+    <p>I remember that Excel was the first thing people would say when I asked for a good solution. Now, Excel fans, please don’t be upset, but in my honest opinion, it’s an unfriendly solution that is hard to master and quickly makes things monstrously big and complex. I know some people can work incredibly magic with it, but I can’t for some reason.</p>
+</div>
+{{< /rawhtml >}}
 
-I remember that Excel was the first thing people would say when I asked for a good solution. Now, Excel fans, please don’t be upset, but in my honest opinion, it’s an unfriendly solution that is hard to master and quickly makes things monstrously big and complex. I know some people can work incredibly magic with it, but I can’t for some reason.
-{{< /div-inline-block >}}
-
-{{< div-inline-block >}}
-![our story pic]({{< static "images/our-story-pic1.png">}})
-{{< /div-inline-block >}}
+{{< rawhtml >}}
+<div class="our-story-img">
+    <img src="images/our-story-pic1.png" alt="our story pic">
+</div>
+{{< /rawhtml >}}
  
 
 I remember that after seeing all of these options and feeling like nothing worked for me, I started to wonder just how many people were facing the same challenge I was facing. It was at this point that I met my partners, Shai and Uzi, and they both faced the challenge and shared the same passion to seek a solution, so we knew we made a perfect team.
@@ -29,7 +33,9 @@ Leading the family wealth is a complex area, there are many aspects to handle an
 
 We knew that we had to come up with a solution that could bring some order to such a complex process. As our very first step, we decided to create a simple solution that would give people full visibility of their wealth and a way to have an accurate measure of the quality of the investment portfolio.
 
-![our story pic]({{< static "images/our-story-pic-2.png" >}})
+{{< rawhtml >}}
+<img src="http://localhost:1313/images/our-story-pic-2.png" alt="our story pic" class="has-bottom-margin-16">
+{{< /rawhtml >}}
 
 Each of us, The founders of Claritus bring a combination of more than 20 years of experience in the process of building startups, platforms and companies. We remain humble because we know that there are many talented people out there who share our passion. This was a great challenge, but the creation of a precise and intuitive product was and remains of paramount importance to us in this venture.
 
