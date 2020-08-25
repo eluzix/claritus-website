@@ -210,7 +210,7 @@
     &.section-reversed {
       .container {
         margin-left: auto;
-        grid-template-columns: 46% 46%;
+        grid-template-columns: 50% 50%;
       }
     }
 
@@ -219,13 +219,13 @@
         margin-left: 4rem;
       }
       .container {
-        grid-template-columns: 44% 46%;
+        grid-template-columns: 50% 50%;
       }
     }
 
     .container {
       display: grid;
-      grid-template-columns: 49% 46%;
+      grid-template-columns: 50% 50%;
       width: 100%;
       max-width: 1295px;
       margin-left: auto;
