@@ -146,7 +146,7 @@ async function getEarlyAccess(elem) {
 }
 
 function coloredTitle() {
-    let pageTitle = document.querySelector('h1.title');
+    let pageTitle = document.querySelector('h1.title:not(.simple)');
 
     if (pageTitle && pageTitle.innerHTML) {
         let word_array = pageTitle.innerHTML.split(/\s+/); // split on spaces
