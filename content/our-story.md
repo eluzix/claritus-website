@@ -34,7 +34,7 @@ Leading the family wealth is a complex area, there are many aspects to handle an
 We knew that we had to come up with a solution that could bring some order to such a complex process. As our very first step, we decided to create a simple solution that would give people full visibility of their wealth and a way to have an accurate measure of the quality of the investment portfolio.
 
 {{< rawhtml >}}
-<img src="http://localhost:1313/images/our-story-pic-2.png" alt="our story pic" class="has-bottom-margin-16">
+<img src="images/our-story-pic-2.png" alt="our story pic" class="has-bottom-margin-16">
 {{< /rawhtml >}}
 
 Each of us, The founders of Claritus bring a combination of more than 20 years of experience in the process of building startups, platforms and companies. We remain humble because we know that there are many talented people out there who share our passion. This was a great challenge, but the creation of a precise and intuitive product was and remains of paramount importance to us in this venture.

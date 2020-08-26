@@ -16,7 +16,6 @@
 body {
   height: 100vh;
   font-size: 1.2rem;
-  font-weight: 300;
 }
 
 .root {
@@ -254,6 +253,7 @@ body {
       padding-left: 3.25rem;
       line-height: 2.375rem;
       border-bottom: 1px solid #D4DAE3;
+      font-weight: bold;
     }
 
     .active {
@@ -281,6 +281,7 @@ body {
     .case {
       display: flex;
       margin-bottom: 3.4rem;
+      height: 8rem;
 
       .case-img {
         flex: 1;
