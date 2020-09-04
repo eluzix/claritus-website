@@ -32,7 +32,7 @@ type: our-mission
     </div>
     
     <div class="case">
-        <div class="case-img"><img src="/images/icon-itegrity.png" ></div>
+        <div class="case-img"><img src="/images/icon-itegrity.svg" ></div>
         <div class="case-content">
             <div class="case-title">Integrity</div>
             <div class="case-description">We won't compromise on presenting our customer's actual numbers, whether good or bad.</div>
