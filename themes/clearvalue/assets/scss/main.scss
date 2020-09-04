@@ -69,7 +69,7 @@ body {
     background: $black;
     border: none;
     box-sizing: border-box;
-    padding-right: 1.8rem;
+    //padding-right: 1.8rem;
     &:hover {
       //opacity: 1;
       color: $black;
@@ -200,6 +200,16 @@ body {
 
   &.is-centered {
     align-items: center;
+  }
+}
+
+.v-leveled {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &.is-stretched {
+    align-self: stretch;
   }
 }
 

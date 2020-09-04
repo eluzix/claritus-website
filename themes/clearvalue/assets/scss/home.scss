@@ -44,6 +44,10 @@
   }
 
   .section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 25rem;
     margin-bottom: 16rem;
 
     .container {
@@ -51,6 +55,10 @@
       flex-direction: row;
       justify-content: space-between;
       align-items: flex-start;
+    }
+
+    .spacer {
+      flex-grow: 2;
     }
 
     .left {
@@ -160,12 +168,38 @@
       .hero-title {
         font-size: 4rem;
         line-height: 4.6rem;
+        margin-bottom: 4rem;
       }
 
       .hero-description {
         font-size: 2.5rem;
-        line-height: 3.125rem;
+        line-height: 3.5rem;
+        margin-bottom: 4.5rem;
         max-width: 65rem;
+      }
+
+      .button.btn-black {
+        font-size: 2.25rem;
+        padding-left: 3.25rem;
+        padding-right: 3.25rem;
+      }
+    }
+  }
+
+  @include desktop-only {
+    .hero .hero-block {
+      .hero-title {
+        margin-bottom: 2rem;
+      }
+
+      .hero-description {
+        margin-bottom: 2.5rem;
+        max-width: 42rem;
+      }
+
+      .button.btn-black {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
       }
     }
   }
