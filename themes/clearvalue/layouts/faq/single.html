@@ -4,14 +4,27 @@
     {{ partial "nav" . }}
 
     <section class="container">
-        <h1 class="title" title="{{ .Title }}">{{ .Title }}</h1>
+        <h1 class="title has-bottom-margin-32" title="{{ .Title }}">{{ .Title }}</h1>
         <article>
+            <p class="has-bottom-margin-32">Here some common questions about Claritus. Can't find an answer, contact us as <a href="mailto:help@claritus.io">help@claritus.io</a></p>
             {{ .Content }}
         </article>
     </section>
 </div>
 
 <script>
+
+    function collapseAll() {
+        let coll = document.getElementsByClassName("collapsible");
+        for (let i = 0; i < coll.length; i++) {
+            let content = coll[i].nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+                coll[i].classList.remove("active");
+            }
+        }
+    }
+
     let coll = document.getElementsByClassName("collapsible");
     let i;
 
@@ -22,6 +35,7 @@
             if (content.style.display === "block") {
                 content.style.display = "none";
             } else {
+                collapseAll();
                 content.style.display = "block";
             }
         });

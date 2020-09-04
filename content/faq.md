@@ -5,9 +5,6 @@ url: /faq
 type: faq
 ---
 
-Here some common questions about Claritus. Can't find an answer, contact us as help@claritus.io 
-
-
 {{< rawhtml >}}
 <div class="collapse">
   <button type="button" class="collapsible">What is Claritus?</button>
@@ -55,7 +52,7 @@ Here some common questions about Claritus. Can't find an answer, contact us as h
   
   <button type="button" class="collapsible">I have a question to ask you, what do I do?</button>
   <div class="content">
-    <p>You can always ask us directly at <a href="mailto:support@claritus.io">support@claritus.io</a>.</p>
+    <p>You can always ask us directly at <a href="mailto:help@claritus.io">help@claritus.io</a>.</p>
   </div>
 </div>
 {{< /rawhtml >}}
