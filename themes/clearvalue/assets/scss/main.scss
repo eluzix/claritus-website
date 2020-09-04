@@ -181,8 +181,16 @@ body {
   margin-bottom: 1.875rem;
 }
 
+.has-bottom-margin-32 {
+  margin-bottom: 2rem;
+}
+
 .has-bottom-margin-200 {
   margin-bottom: 12.5rem;
+}
+
+.has-top-margin-16 {
+  margin-top: 1rem;
 }
 
 .has-top-margin-200 {
@@ -216,27 +224,29 @@ body {
 .w-100 {
   width: 100%;
 }
-.our-story {
-  &.content {
-    font-size: 1.25rem;
-  }
+
+.wrapped-image-right {
+  width: 48%;
+  float: right;
+  margin-top: 5px;
+  margin-left: 1rem;
 }
 
-.our-story-img {
-  display: inline-block;
-  width: 54%;
-
-  padding-bottom: 1rem;
-
-  &:first-of-type {
-    width: 44%;
-    margin-right: 0.5rem;
-  }
-
-  p {
-    display: inline-block;
-  }
-}
+//.our-story-img {
+//  display: inline-block;
+//  width: 54%;
+//
+//  padding-bottom: 1rem;
+//
+//  &:first-of-type {
+//    width: 44%;
+//    margin-right: 0.5rem;
+//  }
+//
+//  p {
+//    display: inline-block;
+//  }
+//}
 
 .faq {
   article {
