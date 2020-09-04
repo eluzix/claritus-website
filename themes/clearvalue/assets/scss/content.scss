@@ -44,7 +44,53 @@
     background-color: $grey-bg;
   }
 
-  .our-story {
+  &.our-story {
     font-size: 1.25rem;
+  }
+
+  &.our-mission {
+    .article .title:first-of-type {
+      margin-bottom: 5rem;
+    }
+    .article .title:nth-child(2) {
+      margin-top: 0;
+      margin-bottom: 2rem;
+    }
+
+    .cases {
+      margin-top: 3rem;
+
+      .case {
+        display: flex;
+        margin-bottom: 3.4rem;
+        height: 8rem;
+
+        .case-img {
+          flex: 1;
+          align-self: center;
+          text-align: center;
+
+          img{
+            width: 100px;
+            height: 100px;
+          }
+        }
+
+        .case-content {
+          flex: 70%;
+          align-self: center;
+
+          .case-title, .case-description {
+            font-weight: 800;
+            font-size: 1.25rem;
+            line-height: 150%;
+          }
+
+          .case-description {
+            font-weight: initial;
+          }
+        }
+      }
+    }
   }
 }
