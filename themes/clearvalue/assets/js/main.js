@@ -1,4 +1,4 @@
-let sliderIntervalTime = 5000; // 5sec
+const sliderIntervalTime = 6000; // 5sec
 
 const app = {
     earlyAccessClick(e){
