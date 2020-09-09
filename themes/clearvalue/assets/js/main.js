@@ -154,7 +154,7 @@ function coloredTitle() {
         let first_part = word_array.join(' ');        // rejoin the first words together
 
 
-        pageTitle.innerHTML = [first_part, ' <span class="text-orange">', last_word, '</span>'].join('')
+        pageTitle.innerHTML = [first_part, ' <span class="text-green">', last_word, '</span>'].join('')
     }
 }
 

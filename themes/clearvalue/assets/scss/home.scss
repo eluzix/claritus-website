@@ -25,6 +25,10 @@
         line-height: 3.6rem;
         padding-top: 8px;
         font-family: $family-secondary;
+
+        & > p:first-of-type {
+          margin-bottom: 1rem;
+        }
       }
 
       .hero-description {
@@ -66,11 +70,11 @@
     }
 
     .left {
-      width: 50%;
+      width: 49%;
     }
 
     .right {
-      width: 50%;
+      width: 49%;
     }
 
     .is-centered {
@@ -176,6 +180,10 @@
   }
 
   @include fullhd {
+    .hero.container {
+      margin-top: 10rem;
+    }
+    
     .hero .hero-block {
       .hero-title {
         font-size: 4rem;
@@ -192,9 +200,18 @@
 
       .button.btn-black {
         font-size: 2.25rem;
-        padding-left: 3.25rem;
-        padding-right: 3.25rem;
+        padding: 0 3.25rem;
+        height: 4.5rem;
+        //padding-left: 3.25rem;
+        //padding-right: 3.25rem;
         border-radius: 0.5rem;
+      }
+    }
+
+    .section {
+      .subtitle {
+        font-size: 1.5rem;
+        line-height: 2rem;
       }
     }
   }
@@ -218,19 +235,19 @@
   }
 
 
-  @include tablet-only {
-    .section .right {
-      padding-left: 1.75rem;
-    }
-    .section-slider {
-      & > .container {
-        margin-left: 1.75rem;
-        margin-right: 1.75rem;
-      }
-    }
-  }
+  //@include tablet-only {
+  //  .section .right {
+  //    padding-left: 1.75rem;
+  //  }
+  //  .section-slider {
+  //    & > .container {
+  //      margin-left: 1.75rem;
+  //      margin-right: 1.75rem;
+  //    }
+  //  }
+  //}
 
-  @include mobile {
+  @include touch {
     .section {
       margin-bottom: 6rem;
 
@@ -244,6 +261,10 @@
 
         .right {
           width: 100%;
+        }
+
+        .has-image {
+          text-align: center;
         }
 
         &.mobile-reverse {

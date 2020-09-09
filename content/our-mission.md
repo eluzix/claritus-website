@@ -6,9 +6,9 @@ type: our-mission
 ---
 
 {{< rawhtml >}}
-<h1 class="title simple" title="Our Mission">Our <span class="text-orange">Mission</span> is to be an innovative, simple and professional personal wealth service</h1>
+<h1 class="title simple" title="Our Mission">Our <span class="text-green">Mission</span> is to be an innovative, simple and professional personal wealth service</h1>
 
-<h1 class="title simple" title="Our Values">Our <span class="text-orange">Values</span></h1>
+<h1 class="title simple" title="Our Values">Our <span class="text-green">Values</span></h1>
 
 <p>We believe that the company's success is tightly bound by providing value to our clients. Our core values play as big of a role in any decision we take.</p>
 

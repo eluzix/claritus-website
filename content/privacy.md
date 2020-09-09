@@ -7,7 +7,7 @@ This privacy policy ("**Privacy Policy**") governs how we, Clear Value Ltd.
 ("**Clear Value**" "**we**", "**our**" or "**us**") use Personal Information (defined below) that we collect, 
 receive and store pertaining to you ("**User**", "**you**") in connection with the following use cases:
 
-When you browse or visit our website, (https://clearvalue.io) ("Website")
+When you browse or visit our website, (https://claritus.io) ("Website")
 
 1. When you make use of, or interact with our platform which is available through our Website and mobile 
 application ("**Platform**"). 
@@ -59,7 +59,7 @@ we will notify you by posting a notice through our Services or by other means.
 
 2. ###### **TERMS OF USE** 
 
-    This Privacy Policy forms part of our End User License Agreement which is available at [https://clearvluae.io/terms](/terms) ("Terms"). 
+    This Privacy Policy forms part of our End User License Agreement which is available at [https://claritus.io/terms](/terms) ("Terms"). 
     Any capitalized but undefined term in this Privacy Policy shall have the meaning given to it in the Terms.
 
 3. ###### **CONSENT AND MODIFICATION** 
@@ -195,7 +195,7 @@ we will notify you by posting a notice through our Services or by other means.
     * Where you have provided your consent to us sharing the Personal Information (e.g., where you provide us with marketing consents or opt-in to optional additional Services or functionality); and
     * Where we receive requests for information from law enforcement or regulators, we carefully validate these requests before any Personal Information is disclosed.
     
-    If you want to receive the list of recipients of your Personal Information, please make your request by contacting us to [privacy@clearvalue.com](mailto:privacy@clearvalue.com)
+    If you want to receive the list of recipients of your Personal Information, please make your request by contacting us to [privacy@claritus.io](mailto:privacy@claritus.io)
     
 7. ###### **ADDITIONAL INFORMATION REGARDING TRANSFERS OF PERSONAL INFORMATION**
 
@@ -211,7 +211,7 @@ we will notify you by posting a notice through our Services or by other means.
     
 9. ###### **HOW CAN I DELETE MY ACCOUNT?**
 
-    Should you ever decide to delete your Account, you may do so by emailing [support@clearvalue.io](mailto:support@clearvalue.io). 
+    Should you ever decide to delete your Account, you may do so by emailing [help@claritus.io](mailto:help@claritus.io). 
     If you terminate your Account, any association between your Account and information we store will no 
     longer be accessible through your Account. However, given the nature of sharing on the Services, 
     any public activity on your Account prior to deletion will remain stored on our servers and will 
@@ -270,13 +270,13 @@ we will notify you by posting a notice through our Services or by other means.
     To the extent that you do provide us with Personal Information, we wish to maintain accurate 
     Personal Information. If you would like to delete or correct any of your other Personal Information 
     that we may be storing, you may submit an access request by sending an email to 
-    [support@clearvalue.io](mailto:support@clearvalue.io). Your email should include adequate details of your request.
+    [help@claritus.io](mailto:help@claritus.io). Your email should include adequate details of your request.
 
 15. ###### **CALIFORNIA PRIVACY RIGHTS**
 
     California Civil Code Section 1798.83 permits our customers who are California residents to request 
     certain information regarding our disclosure of Personal Information to third parties for their 
-    direct marketing purposes. To make such a request, please send an email to [support@clearvalue.io](mailto:support@clearvalue.io). 
+    direct marketing purposes. To make such a request, please send an email to [help@claritus.io](mailto:help@claritus.io). 
     Please note that we are only required to respond to one request per customer each year.
     
 16. ###### **OUR CALIFORNIA DO NOT TRACK NOTICE**
@@ -292,7 +292,7 @@ we will notify you by posting a notice through our Services or by other means.
 
     If you have any questions, concerns or complaints regarding our compliance with this notice and the 
     Information protection laws, or if you wish to exercise your rights, we encourage you to first contact 
-    us at [support@clearvalue.io](mailto:support@clearvalue.io).
+    us at [help@claritus.io](mailto:help@claritus.io).
     
     
 **Last updated: April 12, 2020**

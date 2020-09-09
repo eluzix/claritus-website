@@ -4,7 +4,7 @@ date: 2020-04-27T09:30:01+03:00
 url: /terms
 ---
 Clear Value Ltd., ("Clear Value", "we", "us" or "our") operates a platform, 
-accessible at (https://clearvalue.io) (the "Site") and through any app that we make available 
+accessible at (https://claritus.io) (the "Site") and through any app that we make available 
 (the "App" and together with the "Site" the "Platform").
 PLEASE READ THE FOLLOWING CAREFULLY BEFORE INSTALLING AND/OR USING THE PLATFORM.
 
@@ -57,7 +57,7 @@ keep your Account password secure.  You must notify us immediately of any unauth
  You should also maintain appropriate anti-virus and anti-malware software on your Device, 
  so that your Account login information is not compromised through your own negligence. 
  If you have any concerns about the login details for your Account or think they have been misused, 
- please contact Clear Value at [support@clearvalue.io](mailto:support@clearvalue.io). 
+ please contact Clear Value at [help@claritus.io](mailto:help@claritus.io). 
  Please note that we shall have the right to terminate and/or delete any Account that 
  was not active during a period of 6 months.
 
@@ -142,7 +142,7 @@ then the Features may be limited or not operate.
     
 11. **Privacy.** We will use any personal information that we may collect or obtain in connection with the 
 Platform in accordance with our privacy policy which is available at 
-[https//clearvalue.io/privacy](/privacy) ("**Privacy Policy**"), and you agree that we may do so. 
+[https//claritus.io/privacy](/privacy) ("**Privacy Policy**"), and you agree that we may do so. 
 Notwithstanding, you are aware that you are not legally obligated to provide us personal information, 
 and you hereby confirm that providing us personal information is at your own free will. 
 Please also be aware that certain personal information and other information provided by you in 
@@ -268,7 +268,7 @@ OTHERWISE, SUCH CAUSE OF ACTION IS PERMANENTLY BARRED.
         country; and (b) you are not listed on any U.S. Government list of prohibited or restricted parties.
         
         3. If you have any questions, complaints, or claims regarding the App, 
-        please contact Clear Value at: [support@clearvalue.io](mailto:support@clearvalue.io) 
+        please contact Clear Value at: [help@claritus.io](mailto:help@claritus.io) 
         
         4. By entering into this Agreement you, to the extent legally permitted, hereby waive any 
         applicable law requiring that this Agreement be localized to meet your language and other local requirements.  
