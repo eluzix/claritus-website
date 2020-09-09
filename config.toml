@@ -1,5 +1,5 @@
 #baseURL = "https://claritus.io/"
-baseURL = "https://claritus.netlify.com/"
+baseURL = "https://claritus-website.netlify.app/"
 languageCode = "en-us"
 title = "Claritus - A simple way to control your wealth"
 
