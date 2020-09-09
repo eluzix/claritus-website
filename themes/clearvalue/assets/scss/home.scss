@@ -288,8 +288,13 @@
         margin-right: 1.75rem;
       }
 
-      .slide-content {
+      .keen-slider__slide {
         flex-direction: column-reverse;
+      }
+
+      .slide-content {
+        flex-direction: column;
+        padding-left: 0;
 
         .slide-text {
           padding-left: 0;
