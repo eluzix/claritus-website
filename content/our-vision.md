@@ -6,7 +6,7 @@ type: our-vision
 ---
 
 {{< rawhtml >}}
-<h1 class="title simple" title="Our Mission">Our <span class="text-green">Mission</span> is to be an innovative, simple and professional personal wealth service</h1>
+<h1 class="title simple is-hidden-mobile" title="Our Mission">Our <span class="text-green">Mission</span> is to be an innovative, simple and professional personal wealth service</h1>
 
 <h1 class="title simple" title="Our Values">Our <span class="text-green">Values</span></h1>
 

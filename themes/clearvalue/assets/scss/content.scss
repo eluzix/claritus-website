@@ -92,6 +92,16 @@
         }
       }
     }
+
+    @include mobile {
+      .cases .case {
+        height: auto;
+
+        .case-img {
+          margin-bottom: 1rem;
+        }
+      }
+    }
   }
 }
 

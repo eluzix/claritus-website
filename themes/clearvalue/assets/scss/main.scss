@@ -235,8 +235,15 @@ body {
 .wrapped-image-right {
   width: 48%;
   float: right;
-  margin-top: 5px;
+  margin-top: 0.3rem;
   margin-left: 1rem;
+
+  @include mobile {
+    float: none;
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 0.3rem;
+  }
 }
 
 .is-bold {
