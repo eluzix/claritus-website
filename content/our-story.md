@@ -4,35 +4,14 @@ date: 2020-07-01T09:30:01+03:00
 url: /our-story
 type: our-story
 ---
-My story is not one of privilege or position. I come from a middle class family and there was no silver spoon involved in my upbringing. I was able to achieve financial freedom and success through hard work, tenacity, persistence and I suppose, a bit of talent. It was always a humbling experience to evolve and to achieve new things.
-
-A few years back, being able to choose how to continue with my journey in life was a blessing and I knew I wanted to spend more time with my loved ones and learn how to manage our finances and investments properly.
-
-With that said, I must add that being in an advantageous financial position was never part of my upbringing, I had to learn many new financial skills in order to handle this aspect of life.   While I don’t have a formal education in financing, I always wanted to lead our family wealth, carefully, responsibly, and with a fact-based attitude.
+A few years ago, I was fortunate enough to achieve financial freedom through hard work, determination and persistence. I suddenly found myself looking ahead at an open horizon that allowed me to pick and choose how I would like to continue my life’s journey. I knew that my top priorities were spending more time with my loved ones and managing our finances and investments in an intelligent and responsible manner.
 
 {{< rawhtml >}}<img class="wrapped-image-right" src="images/our-story-pic1.png" alt="our story pic">{{< /rawhtml >}}
-I spent a long time on the web searching for a good tool that would allow me to have full clarity and control when it comes to my investments and assets.
- 
-I remember that after seeing all of these options and feeling like nothing worked for me, I started to wonder just how many people were facing the same challenge I was facing. It was at this point that I met my partners, Shai and Uzi, and they both faced the challenge and shared the same passion to seek a solution, so we knew we made a perfect team.
+But managing one’s assets, I quickly learned, is hard work. There’s so much to consider, be constantly on top of, and it all requires a great deal of time and know-how. Here I was, suddenly having to learn new skills in order to take charge of my wealth and feeling like I might require a formal degree in finance.
 
-Soon after, we decided to start Claritus and this decision led to the creation of a reliable solution solution that gives people a powerful financial platform. One that tends to give users full view/observation of their wealth and investments.
+I spent a lot of time online, searching for a reliable, comprehensive tool that would allow me to clearly and easily view, manage, and control my assets, but soon understood that none of what was available really worked for me.
 
-Leading the family wealth is a complex area, there are many aspects to handle and it requires attention while also being time consuming. In many cases, one might feel he doesn’t even know where to start. Not to mention the enormous amount of work has to be done to even start to clear the fog.
+That got me wondering: How many more people were out there facing the same challenges I was facing? I reached out to my two partners - who were in the same boat as I - and we decided then and there that it was up to us to come up with a viable solution.
 
-We knew that we had to come up with a solution that could bring some order to such a complex process. As our very first step, we decided to create a simple solution that would give people full visibility of their wealth and a way to have an accurate measure of the quality of the investment portfolio.
+That was the birth of the idea that would eventually become Claritus.
 
-{{< rawhtml >}}
-<img src="images/our-story-pic-2.png" alt="our story pic" class="has-bottom-margin-32 has-top-margin-16">
-{{< /rawhtml >}}
-
-Each of us, The founders of Claritus bring a combination of more than 20 years of experience in the process of building startups, platforms and companies. We remain humble because we know that there are many talented people out there who share our passion. This was a great challenge, but the creation of a precise and intuitive product was and remains of paramount importance to us in this venture.
-
-We believe there are many more people like us, who understand wealth is but a tool for living a healthy and satisfying family life. This is the reason we created Claritus.
-
-We want to welcome you to Claritus. We hope you will find it useful and that it will help you reach your goals. This is just our first step; those of you who manage their wealth actively might identify other aspects that are not yet in this version. There is much more to come. 
- 
-We would be honored to hear your experience with Claritus and we want to know what you think with complete honesty. Your feedback in terms of what you got and what you expected is going to be essential for us to fine-tune Claritus and turn it into the best possible solution.
-
-Sincerely,
-
-Claritus Founders

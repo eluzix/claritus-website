@@ -9,50 +9,61 @@ type: faq
 <div class="collapse">
   <button type="button" class="collapsible">What is Claritus?</button>
   <div class="content">
-    <p>Claritus is a Personal Wealth Service that allows you to visualize all your invested assets in one place.</p>
-    <p>We give you a simple and automatic way to track, understand, and improve your wealth.</p>
+    <p>Claritus is a simple-to-use personal wealth service that allows you to view all of your 
+    invested assets in one place. It’s the only tool you need to track, understand, and grow your wealth.</p>
   </div>
   
   <button type="button" class="collapsible">Why do I need it?</button>
   <div class="content">
-    <p>We believe that seeing a clear picture of your wealth should be easy and accessible whenever you need it.</p>
-    <p>Keeping track of more than a single invested asset is a challenging and tedious task, let alone these assets scattered in different accounts. Whatever you invest in the stock market, in real estate, or any other alternative investment, we help you see all assets together.</p>
+    <p>Keeping track of a single invested asset is a challenging and tedious task, let alone a number 
+    of assets scattered across several accounts. Whether you invest in the stock market, 
+    real estate, or any other alternative investment type, Claritus provides you with a clear 
+    image of ALL your combined assets in one place, anytime you need it</p>
   </div>
   
   <button type="button" class="collapsible">How does it work?</button>
   <div class="content">
-    <p>Add your investment portfolios, bank account, and alternative assets. You can choose to enter them manually or link an account for automatic tracking.</p>
-    <p>We will crunch the numbers for you and allow you to see your assets together or divided into groups. You will get eye-opening insights that will help you control your wealth.</p>
-    <p>If you already have some tracking history, you can build your account backward and instantly see your progress over time.</p>
+    <p>Enter your investment portfolios, bank accounts, and alternative assets into Claritus. 
+    You can choose to enter them manually or link accounts for automatic tracking.</p> 
+    <p>Claritus will crunch the numbers and present you with you a clear, real-time view of your <br/>assets - together or separated into groups. If you already have some tracking history, 
+    you can build your account retroactively and instantly see your progress over time.</p> 
+    <p></p>What’s more, Claritus also provides you with eye-opening insights that will help you control your 
+    wealth and make better-informed decisions for the future.</p>
   </div>
   
-  <button type="button" class="collapsible">How do you keep my privacy?</button>
+  <button type="button" class="collapsible">How do you protect my privacy?</button>
   <div class="content">
-    <p>We take your privacy very seriously; we know it's crucial to you. We are obligated to that, no matter what.</p>
-    <p>We will never sell or share your information with any third parties.</p>
-    <p>Our loyalty is first and foremost to you, no hidden agenda, and no dual loyalty, no matter what. That is why our model is a paid subscription so that we can keep our promise to you.</p>
+    <p>We hold your privacy, security, and anonymity in the highest importance - to the extent that 
+    even we don’t have access to your data. Our loyalty is first and foremost to you, our customer - 
+    no hidden agendas, no dual loyalties, no matter what. In addition, we will never share or sell 
+    your information with any third parties</p>
   </div>
   
-  <button type="button" class="collapsible">What about security?</button>
+  <button type="button" class="collapsible">What about Claritus’s security?</button>
   <div class="content">
-    <p>Claritus applies bank quality standards for security. All your information is secured and encrypted in rest and while in transit.</p>
-    <p>We use Yodlee to get read-only access to the accounts you choose to link. We don't have access to your credentials only to the information you choose to link.</p>
+    <p>Claritus applies bank-quality security standards. 
+    All of your information is secured and encrypted both at rest and in transit. 
+    The system uses Yodlee to get read-only access only to those accounts you choose to link.</p>
   </div>
   
-  <button type="button" class="collapsible">How do you calculate the yield?</button>
+  <button type="button" class="collapsible">How does Claritus calculate my yield?</button>
   <div class="content">
-    <p>For any single asset, we use the modified <a href="https://en.wikipedia.org/wiki/Modified_Dietz_method">Dietz method</a>. When looking at assets together, we use weighted returns. This way, we ensure you can safely compare investments and understand their worth.</p>
+    <p>For any single asset, the system uses the modified 
+    <a href="https://en.wikipedia.org/wiki/Modified_Dietz_method" target="_blank">Dietz method</a>. 
+    When looking at assets together, it uses weighted returns. 
+    This way, you can be confident about safely comparing investments and understanding their worth.</p>
   </div>
   
-  <button type="button" class="collapsible">How do you automatically track my accounts?</button>
+  <button type="button" class="collapsible">How does Claritus automatically track my accounts?</button>
   <div class="content">
-    <p>We use Yodlee, a market leader in financial data aggregation, to link your investments and bank accounts, and track them.</p>
-    <p>We never see any of your credentials, and we get read-only access to the account.</p>
+    <p>Claritus uses Yodlee, a market leader in financial data aggregation, 
+    to link your investments and bank accounts and track them. We never see any of your credentials, 
+    and get read-only access to the accounts you link to Claritus.</p>
   </div>
   
-  <button type="button" class="collapsible">I have a question to ask you, what do I do?</button>
+  <button type="button" class="collapsible">How do I contact you for any reason?</button>
   <div class="content">
-    <p>You can always ask us directly at <a href="mailto:help@claritus.io">help@claritus.io</a>.</p>
+    <p>You can contact us anytime <a href="mailto:help@claritus.io">help@claritus.io</a>.</p>
   </div>
 </div>
 {{< /rawhtml >}}
