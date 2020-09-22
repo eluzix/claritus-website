@@ -63,6 +63,10 @@
       flex-direction: row;
       justify-content: space-between;
       align-items: flex-start;
+
+      &.flex-centered {
+        align-items: center;
+      }
     }
 
     .spacer {
@@ -112,6 +116,10 @@
       align-items: center;
       text-align: center;
     }
+
+    //.has-image img {
+    //  max-width: 30rem;
+    //}
   }
 
   .section-slider {
