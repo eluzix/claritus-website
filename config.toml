@@ -1,6 +1,6 @@
 baseURL = "https://claritus.io/"
 languageCode = "en-us"
-title = "Claritus - A simple way to control your wealth"
+title = "Claritus - The Simple Way to Keep Track of Your Wealth"
 
 theme = "clearvalue"
 assetDir = 'themes/clearvalue/assets'
