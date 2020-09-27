@@ -19,11 +19,15 @@
       height: 100%;
     }
 
-    .has-image {
+    .bg-image {
       background: transparent url("/images/home-section-1.jpg") no-repeat center center content-box;
       background-size: cover;
       height: 100%;
       overflow: hidden;
+
+      &.is-centered {
+        background-size: auto;
+      }
     }
 
     h1 {
@@ -31,6 +35,19 @@
       font-size: 4.5rem;
       line-height: 120%;
       color: $dark;
+    }
+
+    h2 {
+      font-weight: 600;
+      font-size: 4rem;
+      line-height: 120%;
+      color: $dark;
+    }
+
+    h4 {
+      font-weight: normal;
+      font-size: 1.75rem;
+      line-height: 130%;
     }
 
     p {
@@ -48,21 +65,38 @@
       min-width: 16.8rem;
     }
 
-    &.section-1 {
-      & > div:first-of-type {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    .centered {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &.left-align {
+        justify-content: flex-start;
       }
 
-      .centered {
+      & > div:first-child {
         max-width: 35rem;
-      }
-
-      .has-image {
-        background-image: url("/images/home-section-1.jpg");
       }
     }
 
+    &.section-1 .bg-image {
+      background-image: url("/images/home-section-1.jpg");
+    }
+
+    &.section-2 .bg-image {
+      background-image: url("/images/home-section-2.jpg");
+    }
+
+    &.section-3 .bg-image {
+      background-image: url("/images/home-section-3.jpg");
+    }
+
+    &.section-5 .bg-image {
+      background-image: url("/images/home-section-5.jpg");
+    }
+
+    &.section-6 .bg-image {
+      background-image: url("/images/home-section-6.jpg");
+    }
   }
 }
