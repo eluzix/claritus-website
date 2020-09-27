@@ -22,7 +22,7 @@ const app = {
                 const navbar = document.querySelector('header nav.nav')
 
                 entries.forEach((entry) => {
-                    console.log(entry.target, '>>>', entry.intersectionRatio)
+                    // console.log(entry.target, '>>>', entry.intersectionRatio)
                     if (entry.intersectionRatio >= 0.95) {
                         entry.target.classList.add('is-visible')
                         entry.target.classList.forEach((cls) => {
