@@ -12,9 +12,42 @@ const app = {
                 snapHandle: true,
                 clickScrolling: true,
                 autoHide: 'scroll',
-            }
+            },
         });
-    }
+    },
+
+    setupSnapScrolling() {
+        const observer = new IntersectionObserver((entries) => {
+            const navbar = document.querySelector('header nav.nav')
+
+            entries.forEach((entry) => {
+                console.log(entry.target, '>>>', entry.intersectionRatio)
+                if (entry.intersectionRatio >= 0.95) {
+                    entry.target.classList.add("is-visible");
+                    entry.target.classList.forEach((cls) => {
+                        if (cls.startsWith('section-')) {
+                            navbar.classList.add('on-' + cls)
+                        }
+                    })
+                } else {
+                    entry.target.classList.remove("is-visible");
+                    entry.target.classList.forEach((cls) => {
+                        if (cls.startsWith('section-')) {
+                            navbar.classList.remove('on-' + cls)
+                        }
+                    })
+                }
+            })
+        }, {
+            rootMargin: '0px',
+            threshold: 0.95
+        })
+
+        const sections = [...document.querySelectorAll('.home section')]
+        sections.forEach((section, index) => {
+            observer.observe(section)
+        })
+    },
 };
 
 
@@ -177,5 +210,7 @@ document.addEventListener('DOMContentLoaded', function(){
     // setupMenuEvents();
     // setupSlider();
     // coloredTitle();
+    
     app.overlayScrollbar()
+    app.setupSnapScrolling()
 });

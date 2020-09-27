@@ -11,7 +11,7 @@
 @import "../bulma/sass/elements/button";
 @import "../bulma/sass/elements/container";
 @import "../bulma/sass/components/level";
-@import "../bulma/sass/components/navbar";
+//@import "../bulma/sass/components/navbar";
 @import "../bulma/sass/elements/content";
 @import "../bulma/sass/elements/table";
 
@@ -180,6 +180,18 @@ body {
       color: $white;
     }
   }
+
+  &.is-white, &.is-white:hover {
+    color: $white;
+  }
+
+  &.is-transparent, &.is-transparent:hover {
+    background-color: transparent;
+  }
+
+  &.is-borderless {
+    border: none;
+  }
 }
 
 .has-bottom-margin-10 {
@@ -341,7 +353,7 @@ body {
   }
 }
 
-@import "navbar";
+@import "header";
 
 @import "home";
 @import "content";
