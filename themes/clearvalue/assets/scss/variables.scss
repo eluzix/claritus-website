@@ -5,34 +5,32 @@ $tablet: 768px;
 $white: #ffffff;
 $light-white: #e0e0e0;
 
-$primary: #24E3AA;
+$primary: #676E80;
 
-$green: #24e3aa;
+$green: #21ce99;
 $grey-lighter: #e0e0e0;
 $grey-bg: #f5f6f7;
-
 $orange: #FF8800;
 $dark-blue: #323947;
 
-$body-color: $black;
-$primary: $green;
+$body-color: $primary;
 $body-background-color: $white;
 
-$family-sans-serif: 'Open Sans';
+$family-sans-serif: 'Poppins';
 $weight-bold: 800;
 $body-line-height: 1;
-$family-primary: 'Roboto';
-$family-secondary: Raleway, sans-serif;
+$family-primary: 'Poppins', sans-serif;
+$family-secondary: 'Poppins', sans-serif;
 $body-font-size: 1.25rem;
 
-$button-text-color: $white;
+$button-text-color: $dark;
 
 $input-border-color: $grey-lighter;
 $input-shadow: none;
 
-$dark: #242328;
-$dark-shadow: rgba(0, 0, 0, 0.08);
-$dark-box-shadow: rgba(0, 0, 0, 0.01);
+$dark: #495369;
+//$dark-shadow: rgba(0, 0, 0, 0.08);
+//$dark-box-shadow: rgba(0, 0, 0, 0.01);
 
 
 $light-green-gradient: linear-gradient(to top, #40ebb7, #25cf9b);
