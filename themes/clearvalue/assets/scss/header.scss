@@ -3,6 +3,7 @@
   width: 100vw;
   height: $header-height;
   background-color: transparent;
+  z-index: 99;
 
   .nav {
     height: 100%;
@@ -19,7 +20,7 @@
       display: flex;
       justify-content: flex-end;
       align-items: center;
-      
+
       .button.is-login, .button.is-login:hover {
         border: none;
         background-color: transparent;

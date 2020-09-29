@@ -3,6 +3,7 @@
   height: 100vh;
   width: 100vw;
   overflow-y: scroll;
+  overflow-x: hidden;
 
   .has-top-padding {
     padding-top: $header-height;
@@ -156,7 +157,7 @@
           display: flex;
           flex-direction: column;
           justify-content: flex-start;
-          
+
           a {
             display: inline-block;
             font-weight: 600;
