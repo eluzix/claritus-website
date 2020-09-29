@@ -1,0 +1,101 @@
+.menu {
+  display: none;
+
+  &.menu--active {
+    display: block;
+  }
+
+  .background {
+    background: rgba(0, 0, 0, 0.5);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 99;
+  }
+
+  .menu-content {
+    width: 25%;
+    min-width: 400px;
+    background: $white;
+    height: 100vh;
+    z-index: 99;
+    position: absolute;
+    right: 0;
+
+    padding: 2rem 4rem;
+  }
+
+  .menu-controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+      max-width: 2.5rem;
+      max-height: 2.5rem;
+    }
+
+    .icon-close {
+      max-width: 1.688rem;
+      max-height: 1.688rem;
+      cursor: pointer;
+    }
+  }
+
+  .menu-list {
+    margin-top: 4rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 85%;
+
+    li {
+      margin: 1rem 0;
+      a {
+        font-size: 1.75rem;
+        font-weight: 600;
+        line-height: 150%;
+        color: $dark;
+        letter-spacing: 0.01em;
+        font-feature-settings: 'liga' off;
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+}
+
+@include tablet-only {
+  .menu {
+    .menu-content {
+      left: 0;
+    }
+    .menu-list {
+      li {
+        a {
+          font-size: 1.125rem;
+        }
+      }
+    }
+  }
+}
+
+@include mobile {
+  .menu {
+    .menu-controls {
+      flex-direction: row-reverse;
+    }
+
+    .menu-list {
+      li {
+        a {
+          font-size: 1.125rem;
+        }
+      }
+    }
+  }
+}

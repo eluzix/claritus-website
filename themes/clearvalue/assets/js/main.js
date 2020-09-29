@@ -53,7 +53,6 @@ const app = {
         }
     },
 
-
     setupSlider() {
         if (document.querySelector('.home')) {
             var slider = new KeenSlider("#main-slider", {
@@ -91,8 +90,25 @@ const app = {
                 },
             });
         }
+    },
+
+    initMenuOpening() {
+        var control = document.getElementById('menu-burger');
+        control.onclick = function() {
+            toggleMenu();
+        };
+
+        var closeIcon = document.getElementById('icon-close');
+        closeIcon.onclick = function() {
+            toggleMenu();
+        };
     }
 };
+
+function toggleMenu() {
+    var menu = document.getElementById('menu');
+    menu.classList.toggle('menu--active');
+}
 
 function updateClasses(instance) {
     var slide = instance.details().relativeSlide;
@@ -219,4 +235,5 @@ document.addEventListener('DOMContentLoaded', function () {
     app.overlayScrollbar();
     app.setupSnapScrolling();
     app.setupSlider();
+    app.initMenuOpening();
 });
