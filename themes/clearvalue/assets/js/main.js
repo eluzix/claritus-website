@@ -102,6 +102,11 @@ const app = {
         closeIcon.onclick = function() {
             toggleMenu();
         };
+
+        var background = document.querySelector('#menu .background');
+        background.onclick = function() {
+            toggleMenu();
+        };
     }
 };
 
