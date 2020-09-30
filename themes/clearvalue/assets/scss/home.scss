@@ -153,6 +153,12 @@
         flex-direction: column;
         justify-content: space-between;
 
+        .social-block {
+          .button.is-join {
+            display: none;
+          }
+        }
+
         .links {
           display: flex;
           flex-direction: column;
@@ -179,6 +185,101 @@
         .copyright {
           font-size: 1rem;
           color: colorAlpha($light-grey, 0.6);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $desktop) {
+  .home {
+
+    .section {
+      padding-top: 5rem;
+
+      h1 {
+        font-size: 2.625rem;
+      }
+
+      h2 {
+        font-size: 2.625rem;
+      }
+
+      h4 {
+        font-size: 1.125rem;
+      }
+
+      p {
+        font-size: 1rem;
+
+        &.is-small {
+          font-size: 0.875rem;
+        }
+      }
+
+      .centered {
+        padding: 5rem 3rem;
+      }
+
+      h1.has-bottom-margin-50, h2.has-bottom-margin-50 {
+        margin-bottom: 1.25rem;
+      }
+
+      &.section-1 {
+
+        .bg-image {
+          background-position: 20% 0;
+        }
+      }
+
+      &.section-footer {
+        flex-direction: column;
+
+        &> div {
+          width: 100%;
+          padding: 3.125rem;
+          height: 55vh;
+        }
+
+        .pricing {
+          background: none;
+          padding: 0;
+          flex-direction: row-reverse;
+
+          .pricing-box {
+            width: 50%;
+            margin: 0;
+          }
+          .pricing-content {
+            width: 50%;
+            margin-right: 6rem;
+          }
+        }
+
+        .is-footer {
+          height: initial;
+          width: 100%;
+          flex-direction: row;
+          padding: 3.125rem;
+          background-image: none;
+
+          .links {
+            flex-wrap: wrap-reverse;
+            height: 65%;
+            width: 50%;
+
+            a {
+              font-size: 1rem;
+              min-width: 7.75rem;
+            }
+          }
+
+          .social-block {
+            text-align: right;
+            .button.is-join {
+              display: block;
+            }
+          }
         }
       }
     }

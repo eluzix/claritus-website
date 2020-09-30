@@ -27,14 +27,6 @@
         color: $dark;
       }
 
-      .button.is-join {
-        border-color: $green;
-        color: $dark;
-        background-color: transparent;
-        padding-left: 2.5rem;
-        padding-right: 2.5rem;
-      }
-
       & > .button:hover {
         font-weight: 600;
       }
