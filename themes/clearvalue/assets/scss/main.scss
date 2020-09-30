@@ -181,16 +181,24 @@ body {
     }
   }
 
-  &.is-white, &.is-white:hover {
-    color: $white;
-  }
-
   &.is-transparent, &.is-transparent:hover {
     background-color: transparent;
   }
 
   &.is-borderless {
     border: none;
+  }
+
+  &.is-join {
+    border-color: $green;
+    color: $dark;
+    background-color: transparent;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  &.is-white, &.is-white:hover {
+    color: $white;
   }
 }
 
