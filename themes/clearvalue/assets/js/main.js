@@ -97,6 +97,10 @@ const app = {
         control.onclick = function() {
             toggleMenu();
         };
+        var controlFooter = document.getElementById('menu-burger-footer');
+        controlFooter.onclick = function() {
+            toggleMenu();
+        };
 
         var closeIcon = document.getElementById('icon-close');
         closeIcon.onclick = function() {

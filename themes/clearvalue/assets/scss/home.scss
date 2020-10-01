@@ -122,7 +122,7 @@
         .pricing-box {
           display: inline-block;
           width: 350px;
-          padding: 7.5rem 0;
+          padding: 7.5rem 1rem;
           box-shadow: 0 108.622px 86.8976px rgba(42, 50, 87, 0.05), 0 39.8261px 36.3037px rgba(42, 50, 87, 0.02), 0 18.9939px 19.4097px rgba(42, 50, 87, 0.013), 0 9.43317px 10.8809px rgba(42, 50, 87, 0.008), 0 4.32611px 5.77878px rgba(42, 50, 87, 0.00663327), 0 1.49625px 2.40468px rgba(42, 50, 87, 0.0041531);
           border-radius: 0.625rem;
           text-align: center;
@@ -186,6 +186,63 @@
           font-size: 1rem;
           color: colorAlpha($light-grey, 0.6);
         }
+        .logo {
+          display: none;
+        }
+
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $fullhd) {
+  .home {
+
+    .section {
+      padding-top: 5rem;
+
+      h1 {
+        font-size: 3.125rem;
+      }
+
+      h2 {
+        font-size: 3.125rem;
+      }
+
+      h4 {
+        font-size: 1.375rem;
+      }
+
+      p {
+        font-size: 1.125rem;
+
+        &.is-small {
+          font-size: 0.875rem;
+        }
+      }
+
+      &.home-footer {
+        .is-footer {
+          padding: 5rem 1.875rem;
+          width: 30vw;
+        }
+
+        .pricing {
+          .pricing-box {
+            margin: 0;
+            margin-bottom: 5rem;
+            width: 260px;
+            padding: 4.25rem 1rem;
+          }
+
+          .pricing-content {
+            padding: 0 6rem;
+
+            .button.is-wide {
+              margin-left: -50%;
+            }
+          }
+        }
       }
     }
   }
@@ -232,6 +289,10 @@
         }
       }
 
+      .button.is-wide {
+        min-height: 3.375rem;
+      }
+
       &.section-footer {
         flex-direction: column;
 
@@ -249,10 +310,20 @@
           .pricing-box {
             width: 50%;
             margin: 0;
+            padding: 7.5rem 1rem;
           }
           .pricing-content {
             width: 50%;
             margin-right: 6rem;
+            padding: 0;
+
+            .button.is-wide {
+              margin: 0;
+            }
+
+            p.has-bottom-margin-50 {
+              margin-bottom: 1.875rem;
+            }
           }
         }
 
@@ -262,11 +333,13 @@
           flex-direction: row;
           padding: 3.125rem;
           background-image: none;
+          position: relative;
 
           .links {
-            flex-wrap: wrap-reverse;
+            flex-wrap: wrap;
             height: 65%;
             width: 50%;
+            margin-top: 3.5rem;
 
             a {
               font-size: 1rem;
@@ -278,6 +351,23 @@
             text-align: right;
             .button.is-join {
               display: block;
+            }
+          }
+
+          .logo {
+            display: block;
+            position: absolute;
+            top: 3.125rem;
+            img {
+              max-height: 1.5rem;
+            }
+
+            .burger {
+              margin-left: 0;
+              margin-right: 1rem;
+              span {
+                background-color: $white;
+              }
             }
           }
         }

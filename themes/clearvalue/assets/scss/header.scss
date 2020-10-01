@@ -30,38 +30,6 @@
       & > .button:hover {
         font-weight: 600;
       }
-
-      .burger {
-        @include hamburger(2rem);
-        display: inline-block;
-        margin-left: 1.5rem;
-
-        span {
-          width: 2rem;
-          height: 3px;
-          background-color: $dark;
-          left: 0;
-
-          &:nth-child(1) {
-            top: calc(50% - 7px);
-          }
-          &:nth-child(2) {
-            top: calc(50%);
-          }
-          &:nth-child(3) {
-            top: calc(50% + 7px);
-          }
-        }
-
-        &.is-active {
-          span:nth-child(1) {
-            transform: translateY(8px) rotate(45deg);
-          }
-          span:nth-child(3) {
-            transform: translateY(-6px) rotate(-45deg);
-          }
-        }
-      }
     }
 
 
@@ -83,7 +51,38 @@
   }
 }
 
+@media screen and (max-width: $desktop) {
+  .header {
+    padding: 1.875rem 3.125rem;
+    .nav {
+      padding: 0;
+      &.on-section-1, &.on-section-footer {
+        .links  {
+          .button{
+            color: $dark;
+          }
 
+          .burger span {
+            background-color: $dark;
+          }
+        }
+      }
+
+      img.logo {
+        max-height: 1.5rem;
+        margin-left: 3rem;
+      }
+
+      .links {
+        .burger {
+          position: absolute;
+          left: 3.125rem;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
 
 @keyframes slide-in {
   0% {
