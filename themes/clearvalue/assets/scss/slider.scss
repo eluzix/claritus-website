@@ -19,6 +19,10 @@
 .content-dots {
   position: absolute;
   bottom: 10%;
+
+  .arrow {
+    display: none;
+  }
 }
 
 .dots {
@@ -153,7 +157,21 @@
 
 @media screen and (max-width: $desktop) {
   .content-dots {
-    bottom: 10.9rem
+    bottom: 10.9rem;
+
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 5rem;
+
+    .arrow {
+      position: initial;
+    }
+
+    .dots {
+      max-height: 1rem;
+      align-self: center;
+    }
   }
 
   .arrow--right {
@@ -178,6 +196,14 @@
 
   .keen-slider__slide-title {
     margin-bottom: 1.25rem;
+  }
+
+  .navigation-wrapper {
+    .slider {
+      .arrow {
+        display: none;
+      }
+    }
   }
 }
 
