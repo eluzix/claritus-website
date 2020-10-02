@@ -199,7 +199,6 @@
   .home {
 
     .section {
-      padding-top: 5rem;
 
       h1 {
         font-size: 3.125rem;
@@ -207,6 +206,7 @@
 
       h2 {
         font-size: 3.125rem;
+        font-weight: normal;
       }
 
       h4 {
@@ -221,6 +221,10 @@
         }
       }
 
+      .centered {
+        padding: 0 $desktop-padding 0 $desktop-padding;
+      }
+
       &.home-footer {
         .is-footer {
           padding: 5rem 1.875rem;
@@ -232,16 +236,42 @@
             margin: 0;
             margin-bottom: 5rem;
             width: 260px;
-            padding: 4.25rem 1rem;
+            padding: 4.25rem 2rem;
           }
 
           .pricing-content {
-            padding: 0 6rem;
+            padding: 0 3rem 0 4rem;
 
             .button.is-wide {
               margin-left: -50%;
             }
           }
+        }
+      }
+    }
+
+    .section-slider {
+      padding-left: $desktop-padding;
+      padding-right: $desktop-padding;
+
+
+      .slider {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .arrow--left {
+          left: 0;
+          flex-grow: 1;
+          position: initial;
+        }
+        .arrow--right {
+          right: 0;
+          flex-grow: 1;
+          position: initial;
+        }
+        .keen-slider {
+          flex-grow: 2;
         }
       }
     }
@@ -289,6 +319,10 @@
         }
       }
 
+      &.section-6 .bg-image {
+        background-size: 14.875rem auto;
+      }
+
       .button.is-wide {
         min-height: 3.375rem;
       }
@@ -328,36 +362,50 @@
         }
 
         .is-footer {
-          height: initial;
+          height: 13.3rem;
           width: 100%;
           flex-direction: row;
-          padding: 3.125rem;
+          padding: 1.875rem $ipad-padding;
           background-image: none;
           position: relative;
 
           .links {
+            flex-direction: row;
             flex-wrap: wrap;
-            height: 65%;
-            width: 50%;
+            //height: 65%;
+            width: 60%;
             margin-top: 3.5rem;
 
             a {
               font-size: 1rem;
-              min-width: 7.75rem;
+              min-width: 12rem;
+              margin-bottom: 1rem !important;
             }
           }
 
           .social-block {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
             text-align: right;
+
             .button.is-join {
               display: block;
+              width: 7rem;
+              padding-left: 0;
+              padding-right: 0;
+              align-self: flex-end;
+            }
+
+            .has-bottom-margin-50 {
+              margin-bottom: 0;
             }
           }
 
           .logo {
             display: block;
             position: absolute;
-            top: 3.125rem;
+            top: 2rem;
             img {
               max-height: 1.5rem;
             }
@@ -371,6 +419,80 @@
             }
           }
         }
+      }
+
+
+    }
+  }
+}
+
+@include mobile {
+  .home {
+    scroll-padding-top: 5rem;
+
+    .section {
+      flex-direction: column;
+      padding-top: 0;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      position: relative;
+      scroll-margin-top: -5rem;
+
+      &.section-1 {
+        height: calc(100vh - 5rem);
+        margin-top: 0;
+        scroll-margin-top: 0;
+      }
+
+      & > div {
+        width: 100%;
+      }
+
+      .centered {
+        padding: 0;
+
+        & > div:first-child {
+          text-align: center;
+        }
+
+        &.is-left-mobile {
+          align-items: flex-start;
+          padding-top: 4rem;
+
+          & > div {
+            text-align: left;
+          }
+        }
+      }
+
+
+      &.is-full-mobile {
+        color: $white;
+
+        h1, h2, h3 {
+          color: $white;
+        }
+
+        .centered {
+          z-index: 2;
+        }
+
+        .bg-image {
+          position: absolute;
+          width:100%;
+        }
+      }
+
+      &.section-5 {
+        color: $dark;
+        h1, h2 {
+          color: $dark;
+          font-weight: 600;
+        }
+      }
+
+      &.is-reversed-mobile {
+        flex-direction: column-reverse;
       }
     }
   }

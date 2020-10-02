@@ -113,6 +113,12 @@
 
 @include mobile {
   .menu {
+
+    .menu-content {
+      top: 0;
+    }
+
+
     .menu-controls {
       flex-direction: row-reverse;
     }
