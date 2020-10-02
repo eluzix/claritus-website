@@ -338,6 +338,14 @@ body {
       transform: translateY(-6px) rotate(-45deg);
     }
   }
+
+  @include mobile {
+    width: 1.5rem;
+
+    span {
+      width: 1.5rem;
+    }
+  }
 }
 
 //.our-story-img {
