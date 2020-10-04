@@ -112,8 +112,20 @@ const app = {
 
 function toggleMenu() {
     const menu = document.getElementById('menu');
-    menu.classList.toggle('is-block');
-    menu.classList.toggle('menu--active');
+
+    if (menu.classList.contains('menu--active')){
+        menu.classList.toggle('menu--active');
+
+        setTimeout(() => {
+            menu.classList.toggle('is-block');
+        }, 500)
+    } else {
+        menu.classList.toggle('is-block');
+        setTimeout(() => {
+            menu.classList.toggle('menu--active');
+        }, 300)
+
+    }
 }
 
 function updateClasses(instance) {
