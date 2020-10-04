@@ -320,7 +320,22 @@
   }
 
   .content-dots {
-    bottom: 5rem;
+    bottom: 1rem;
+    .dots {
+      max-height: 1.5rem;
+    }
+
+    .dot {
+      width: 1.5rem;
+      height: 1.5rem;
+
+      &--active {
+        width: 0.75rem;
+        height: 0.75rem;
+        top: 5px;
+        left: 5px;
+      }
+    }
     
     .arrow {
       display: block;
