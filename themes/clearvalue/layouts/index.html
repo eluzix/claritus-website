@@ -42,16 +42,11 @@
     </section>
 
     <section class="section section-4 section-slider">
-        <div class="navigation-wrapper container">
-            <div class="slider">
-                <button id="arrow-left"
-                        class="arrow arrow--left">
-                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="25" cy="25" r="22.75" stroke="#C4C4C4" stroke-width="0.5"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M20.3262 25.9188L25.7942 31.7008L24.5655 33L17 25L24.5655 17L25.7942 18.2992L20.3262 24.0812H33V25.9188H20.3262Z" fill="#323947"/>
-                    </svg>
+        <button id="arrow-left" class="arrow arrow--left is-hidden-touch"><img src="/images/slider-left.svg" /></button>
 
-                </button>
+        <div class="navigation-wrapper container">
+            <button class="arrow arrow--left is-hidden-desktop"><img src="/images/slider-left.svg" /></button>
+            <div class="slider">
                 <div id="main-slider" class="keen-slider">
                     <div class="keen-slider__slide number-slide1">
                         <div class="slide-image">
@@ -102,16 +97,7 @@
                         </div>
                     </div>
                 </div>
-                <button
-                        id="arrow-right"
-                        class="arrow arrow--right">
-                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle r="22.75" transform="matrix(-1 0 0 1 25 25)" stroke="#C4C4C4" stroke-width="0.5"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M29.6738 25.9188L24.2058 31.7008L25.4345 33L33 25L25.4345 17L24.2058 18.2992L29.6738 24.0812H17V25.9188H29.6738Z" fill="#323947"/>
-                    </svg>
-                </button>
             </div>
-
             <div class="home__left-content content-dots">
                 <button class="arrow arrow--left">
                     <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -129,7 +115,10 @@
                     </svg>
                 </button>
             </div>
+            <button class="arrow arrow--right is-hidden-desktop"><img src="/images/slider-right.svg" /></button>
         </div>
+
+        <button id="arrow-right" class="arrow arrow--right is-hidden-touch"><img src="/images/slider-right.svg" /></button>
     </section>
 
     <section class="section section-5 is-full-mobile">

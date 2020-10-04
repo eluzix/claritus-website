@@ -401,6 +401,19 @@
   }
 }
 
+@include touch {
+  .home {
+    .section-slider {
+      padding-left: 0;
+      padding-right: 0;
+
+      .slider {
+        display: block;
+      }
+    }
+  }
+}
+
 @include mobile {
   .home {
     //scroll-padding-top: 5rem;
@@ -520,5 +533,14 @@
         }
       }
     }
+
+    //.section-slider {
+    //  padding-left: 0;
+    //  padding-right: 0;
+    //
+    .slider {
+      height: 100vh;
+    }
+    //}
   }
 }

@@ -1,4 +1,4 @@
-const sliderIntervalTime = 60000000; // 5sec
+const sliderIntervalTime = 6000000; // 5sec
 
 const app = {
     // earlyAccessClick(e){
@@ -55,13 +55,13 @@ const app = {
 
     setupSlider() {
         if (document.querySelector('.home')) {
-            var slider = new KeenSlider("#main-slider", {
+            const slider = new KeenSlider("#main-slider", {
                 loop: true,
                 created: function (instance) {
                     let timerId = setInterval(() => {
-                        document
-                            .getElementById("arrow-right").click()
+                        document.querySelectorAll('.arrow--right')[0].click()
                     }, sliderIntervalTime);
+
                     document.querySelectorAll('.arrow--right').forEach(element => {
                         element.addEventListener("click", function () {
                             instance.next();
@@ -73,10 +73,10 @@ const app = {
                         });
                     })
 
-                    var dots_wrapper = document.getElementById("dots");
-                    var slides = document.querySelectorAll(".keen-slider__slide");
+                    const dots_wrapper = document.getElementById("dots");
+                    const slides = document.querySelectorAll(".keen-slider__slide");
                     slides.forEach(function (t, idx) {
-                        var dot = document.createElement("button");
+                        const dot = document.createElement("button");
                         dot.classList.add("dot");
                         dots_wrapper.appendChild(dot);
                         dot.addEventListener("click", function () {
