@@ -1,8 +1,11 @@
 .menu {
   //display: none;
 
-  &.menu--active {
+  &.is-block {
     display: block;
+  }
+
+  &.menu--active {
 
     .menu-content {
       -webkit-transform:translateX(0);

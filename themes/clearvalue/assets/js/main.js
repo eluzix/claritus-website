@@ -93,29 +93,26 @@ const app = {
     },
 
     initMenuOpening() {
-        var control = document.getElementById('menu-burger');
-        control.onclick = function() {
-            toggleMenu();
-        };
-        var controlFooter = document.getElementById('menu-burger-footer');
-        controlFooter.onclick = function() {
-            toggleMenu();
-        };
+        const control = document.getElementById('menu-burger');
+        if (control){
+            control.onclick = toggleMenu
+        }
 
-        var closeIcon = document.getElementById('icon-close');
-        closeIcon.onclick = function() {
-            toggleMenu();
-        };
+        const closeIcon = document.getElementById('icon-close');
+        if (closeIcon) {
+            closeIcon.onclick = toggleMenu
+        }
 
-        var background = document.querySelector('#menu .background');
-        background.onclick = function() {
-            toggleMenu();
-        };
+        const background = document.querySelector('#menu .background');
+        if (background) {
+            background.onclick = toggleMenu
+        }
     }
 };
 
 function toggleMenu() {
-    var menu = document.getElementById('menu');
+    const menu = document.getElementById('menu');
+    menu.classList.toggle('is-block');
     menu.classList.toggle('menu--active');
 }
 
