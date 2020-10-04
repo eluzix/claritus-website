@@ -7,13 +7,13 @@ const app = {
     // },
 
     overlayScrollbar() {
-        OverlayScrollbars(document.querySelectorAll('body'), {
-            scrollbars: {
-                snapHandle: true,
-                clickScrolling: true,
-                autoHide: 'scroll',
-            },
-        });
+        // OverlayScrollbars(document.querySelectorAll('body'), {
+        //     scrollbars: {
+        //         snapHandle: true,
+        //         clickScrolling: true,
+        //         autoHide: 'scroll',
+        //     },
+        // });
     },
 
     setupSnapScrolling() {
