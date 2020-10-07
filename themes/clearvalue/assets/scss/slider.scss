@@ -33,12 +33,13 @@
 .dot {
   width: 14px;
   height: 14px;
-  border: 0.5px solid #676E80;
+  border: 1px solid #676E80;
   box-sizing: border-box;
   background: $white;
 
   border-radius: 50%;
   margin: 0 0.938rem;
+  padding: 0;
   //padding: 5px;
   cursor: pointer;
 }
@@ -61,9 +62,7 @@
     display: inline-block;
     width: 8px;
     height: 8px;
-    -moz-border-radius: 7.5px;
-    -webkit-border-radius: 7.5px;
-    border-radius: 7.5px;
+    border-radius: 50%;
   }
 }
 
@@ -244,21 +243,16 @@
 
     .slide-image {
       max-width: 29rem;
-      max-height: 14.375rem;
+      max-height: 35vh;
 
       img {
         height: 100%;
       }
     }
 
-    .keen-slider__slide-title {
-      max-width: 15rem;
-    }
-
     .slide-text {
       margin-bottom: 2rem;
       .subtitle {
-        max-width: 21rem;
         font-weight: normal;
       }
     }
