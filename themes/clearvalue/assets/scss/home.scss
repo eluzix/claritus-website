@@ -506,10 +506,72 @@
       position: relative;
       //scroll-margin-top: -5rem;
 
+      h1, h2 {
+        font-weight: 600;
+        font-size: 2.625rem;
+        line-height: 120%;
+        text-align: initial;
+      }
+
+      p {
+        text-align: initial;
+        line-height: 180%;
+        font-size: 0.875rem;
+        font-weight: normal;
+      }
+
       &.section-1 {
         height: calc(100vh - 5rem);
+        padding: 0;
         margin-top: 0;
         scroll-margin-top: 0;
+
+        .centered {
+          padding: 2rem;
+          align-items: flex-end;
+
+          .button.is-full {
+            max-width: 100%;
+            width: 100%;
+          }
+        }
+
+        h1.has-bottom-margin-50 {
+          margin-bottom: 0.75rem;
+        }
+
+        p {
+          font-weight: normal;
+          font-size: 0.875rem;
+          line-height: 180%;
+
+          &.is-small {
+            font-size: 0.75rem;
+          }
+        }
+      }
+
+      &.section-2 {
+        .centered {
+          padding: 2.2rem;
+          width: 100%;
+        }
+
+        .bg-image {
+          position: initial;
+        }
+      }
+
+      &.section-3 {
+        h3.is-green {
+          font-weight: 500;
+          font-size: 1.125rem;
+          line-height: 180%;
+        }
+
+        p.has-bottom-margin-50, h2.has-bottom-margin-50 {
+          margin-bottom: 1rem;
+        }
       }
 
       & > div {
@@ -590,6 +652,7 @@
       .is-footer {
         height: 100vh;
         display: block;
+        padding: 4rem 3.5rem;
         //flex-direction: column;
         //justify-content: space-between;
 
@@ -599,6 +662,10 @@
           height: calc(100vh - 13rem);
           a {
             font-size: 1.125rem;
+            display: block;
+            margin-bottom: 2rem !important;
+            font-weight: 600;
+            line-height: 120%;
           }
         }
 
@@ -608,11 +675,20 @@
 
           .social {
             margin-bottom: 1rem;
+
+            a img {
+              max-width: 1.875rem;
+            }
           }
 
           .logo {
             display: none;
           }
+        }
+
+        .copyright {
+          left: 3.5rem;
+          transform: none;
         }
       }
     }
