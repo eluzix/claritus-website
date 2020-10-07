@@ -277,11 +277,14 @@
       padding-top: 5rem;
 
       h1 {
-        font-size: 2.625rem;
+        font-size: 2.5rem;
+        line-height: 140%;
       }
 
       h2 {
-        font-size: 2.625rem;
+        font-size: 2.25rem;
+        font-weight: 500;
+        line-height: 140%;
       }
 
       h4 {
@@ -290,10 +293,15 @@
 
       p {
         font-size: 1rem;
+        max-width: 16rem;
 
         &.is-small {
           font-size: 0.875rem;
         }
+      }
+
+      .button.is-full {
+        max-width: 15rem;
       }
 
       .centered {
@@ -301,13 +309,37 @@
       }
 
       h1.has-bottom-margin-50, h2.has-bottom-margin-50 {
-        margin-bottom: 1.25rem;
+        margin-bottom: 2.5rem;
       }
 
       &.section-1 {
+        .centered {
+          padding: 9rem 1rem 5rem 5rem;
+        }
 
         .bg-image {
           background-position: 20% 0;
+        }
+      }
+
+      &.section-2 {
+        flex-direction: column;
+        position: relative;
+        align-items: flex-start;
+
+        .centered {
+          z-index: 2;
+          padding: 2rem 5rem 5rem 5rem;
+          width: 50%;
+          justify-content: unset;
+          align-items: start;
+        }
+        .bg-image {
+          z-index: 1;
+          position: absolute;
+          bottom: -14rem;
+          height: 100%;
+          width: 100%;
         }
       }
 

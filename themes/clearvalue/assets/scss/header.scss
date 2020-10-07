@@ -83,6 +83,10 @@
         .links  {
           .button{
             color: $dark;
+
+            &.is-join {
+              max-width: 7.625rem;
+            }
           }
 
           .burger span {
@@ -92,16 +96,7 @@
       }
 
       img.logo {
-        max-height: 1.5rem;
-        margin-left: 3rem;
-      }
-
-      .links {
-        .burger {
-          position: absolute;
-          left: $ipad-padding;
-          margin: 0;
-        }
+        max-height: 1.875rem;
       }
     }
   }
@@ -113,11 +108,11 @@
     padding: 1.875rem $mobile-padding;
     .nav {
       position: relative;
-      
+
       img.logo {
         margin-left: 2.5rem;
       }
-      
+
       .links{
         .button.is-login {
           display: none;

@@ -161,6 +161,20 @@
 }
 
 @media screen and (max-width: $fullhd) {
+  .navigation-wrapper {
+
+    .arrow {
+      display: none;
+    }
+    .content-dots {
+
+      .arrow {
+        display: block;
+      }
+    }
+
+  }
+
   .arrow--left {
     padding-left: 0;
     padding-right: $desktop-padding;
@@ -190,8 +204,6 @@
 
 @media screen and (max-width: $desktop) {
   .content-dots {
-    bottom: 10.9rem;
-
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -216,14 +228,39 @@
   //  bottom: -4rem;
   //}
 
+  .navigation-wrapper {
+    align-items: initial;
+  }
+
   .keen-slider__slide {
+    flex-direction: column-reverse;
+    padding: 2rem 9.5rem 2rem 13.75rem;
+    justify-content: flex-end;
+    margin-left: -1rem;
+
     .slide-content {
-      margin-left: 5rem;
-      max-width: 18.75rem;
+      max-width: 100%;
     }
 
     .slide-image {
-      max-width: 22.5rem;
+      max-width: 29rem;
+      max-height: 14.375rem;
+
+      img {
+        height: 100%;
+      }
+    }
+
+    .keen-slider__slide-title {
+      max-width: 15rem;
+    }
+
+    .slide-text {
+      margin-bottom: 2rem;
+      .subtitle {
+        max-width: 21rem;
+        font-weight: normal;
+      }
     }
   }
 
