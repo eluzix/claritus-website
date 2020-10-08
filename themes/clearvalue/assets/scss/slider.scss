@@ -324,15 +324,23 @@
 }
 
 @include mobile {
+  .slider {
+    width: 100vw;
+    padding: 2rem;
+  }
+
   .keen-slider__slide {
     display: flex;
     flex-direction: column-reverse;
     justify-content: flex-end;
     height: auto;
+    padding: 0;
+    margin: 0 auto;
 
     .slide-content {
       margin-left: 0;
       width: 100% !important;
+      max-width: calc(100vw - 4rem);
     }
 
     .keen-slider__slide-title {
@@ -346,26 +354,31 @@
     }
 
     .slide-image {
-      width: calc(100vw - 4rem) !important;
+      width: 100% !important;
+      max-width: calc(100vw - 4rem);
+      text-align: center;
     }
   }
 
   .content-dots {
     bottom: 1rem;
+    padding: 0 2rem;
+    justify-content: space-between;
+
     .dots {
       max-height: 1.5rem;
     }
 
     .dot {
-      width: 1.5rem;
-      height: 1.5rem;
+      width: 0.75rem;
+      height: 0.75rem;
 
     }
     .dot--active:before {
-      width: 0.75rem;
-      height: 0.75rem;
-      top: 5px;
-      left: 5px;
+      width: 0.5rem;
+      height: 0.5rem;
+      top: 1px;
+      left: 1px;
     }
 
     .arrow {
