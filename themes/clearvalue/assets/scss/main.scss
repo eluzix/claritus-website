@@ -32,7 +32,8 @@ body {
   display: flex;
   justify-content: space-between;
   background: $dark;
-  padding: 1.875rem 5rem;
+  min-height: 13.438rem;
+  padding: 3.313rem 5rem;
   height: auto;
   width: 100%;
   flex-direction: row;
@@ -57,7 +58,7 @@ body {
 
   .copyright {
     position: absolute;
-    bottom: 1rem;
+    bottom: 2.313rem;
     left: 50%;
     transform: translate(-50%, -50%);
   }
