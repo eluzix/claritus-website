@@ -57,6 +57,10 @@
   &.our-story {
     font-size: 1.25rem;
 
+    .our-story-img {
+      display: none;
+    }
+
     .container {
       max-width: 54rem;
       margin: 4.375rem auto 0;
@@ -213,5 +217,47 @@
         max-width: 30.375rem;
       }
     }
+  }
+}
+
+@include mobile {
+  .content {
+    h1 {
+      font-size: 2.625rem;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+    }
+
+    article {
+      p {
+        font-size: 0.875rem;
+      }
+    }
+
+    &.our-story {
+      .our-story-img {
+        display: block;
+        width: 100vw;
+
+        background-size: cover;
+        background-image: url("/images/our-story-img.png");
+
+        min-height: 23.5rem;
+        height: 100%;
+        margin: 2rem -1.5rem 2rem;
+      }
+      .hero-image {
+        display: none;
+      }
+
+      .container {
+        margin-top: 2rem;
+        padding: 0 1.5rem;
+      }
+    }
+
+    padding-bottom: 1.165rem;
   }
 }

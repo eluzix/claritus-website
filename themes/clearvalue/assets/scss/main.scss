@@ -342,6 +342,50 @@ body {
   }
 }
 
+@include mobile {
+  .footer {
+    height: 100vh;
+    display: block;
+    padding: 4rem 3.5rem;
+
+    .links {
+      display: block;
+      margin-bottom: 0;
+      height: calc(100vh - 13rem);
+      a {
+        font-size: 1.125rem;
+        display: block;
+        margin-bottom: 2rem !important;
+        font-weight: 600;
+        line-height: 120%;
+      }
+    }
+
+    .social-block {
+      text-align: left;
+      height: 6.5rem;
+
+      .social {
+        margin-bottom: 1rem;
+
+        a img {
+          max-width: 1.875rem;
+        }
+      }
+
+      .logo {
+        display: none;
+      }
+    }
+
+    .copyright {
+      left: 3.5rem;
+      bottom: 3rem;
+      transform: none;
+    }
+  }
+}
+
 @import "header";
 
 @import "home";

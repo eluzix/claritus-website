@@ -6,6 +6,10 @@ type: our-story
 ---
 A few years ago, I was fortunate enough to achieve financial freedom through hard work, determination and persistence. I suddenly found myself looking ahead at an open horizon that allowed me to pick and choose how I would like to continue my life’s journey. I knew that my top priorities were spending more time with my loved ones and managing our finances and investments in an intelligent and responsible manner.
 
+{{< rawhtml >}}
+<div class="our-story-img"></div>
+{{< /rawhtml >}}
+
 But managing one’s assets, I quickly learned, is hard work. There’s so much to consider, be constantly on top of, and it all requires a great deal of time and know-how. Here I was, suddenly having to learn new skills in order to take charge of my wealth and feeling like I might require a formal degree in finance.
 
 I spent a lot of time online, searching for a reliable, comprehensive tool that would allow me to clearly and easily view, manage, and control my assets, but soon understood that one of what was  available really worked for me.

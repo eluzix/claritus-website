@@ -36,7 +36,7 @@
       }
     }
 
-    @include desktop{
+    @include desktop {
       &.on-section-3 img.logo {
         content: url("/images/logo-white.svg");
       }
@@ -44,8 +44,8 @@
 
     @include desktop {
       &.on-section-1, &.on-section-footer {
-        .links  {
-          .button{
+        .links {
+          .button {
             color: $white;
           }
 
@@ -58,8 +58,8 @@
 
     @media screen and (max-width: $fullhd) and (min-width: $desktop + 1) {
       &.on-section-5 {
-        .links  {
-          .button{
+        .links {
+          .button {
             color: $white;
           }
 
@@ -92,8 +92,8 @@
         }
       }
       &.on-section-1, &.on-section-footer {
-        .links  {
-          .button{
+        .links {
+          .button {
             color: $dark;
           }
 
@@ -123,11 +123,7 @@
     .nav {
       position: relative;
 
-      img.logo {
-        margin-left: 2.5rem;
-      }
-
-      .links{
+      .links {
         .button.is-login {
           display: none;
         }
