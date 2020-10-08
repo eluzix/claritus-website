@@ -490,6 +490,14 @@
         display: block;
       }
     }
+
+    .section {
+      &.section-2 {
+        .centered {
+          width: 90%;
+        }
+      }
+    }
   }
 }
 
