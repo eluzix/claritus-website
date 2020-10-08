@@ -2,9 +2,12 @@
 <div class="content our-mission has-navbar-fixed-top">
 
     {{ partial "nav" . }}
+    {{ partial "menu.html" }}
+    <div class="hero-image"></div>
 
     <section class="container">
-        <article class="article">
+        <h1 class="title" title="{{ .Title }}">{{ .Title }}</h1>
+        <article>
             {{ .Content }}
         </article>
     </section>

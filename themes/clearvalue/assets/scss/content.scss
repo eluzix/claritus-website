@@ -12,9 +12,8 @@
   }
 
   .container {
-    max-width: 60rem;
-    margin-right: auto;
-    margin-left: auto;
+    max-width: 54rem;
+    margin: 4.375rem auto 0;
   }
   h1, h2, p {
     color: $dark;
@@ -27,6 +26,12 @@
 
   p {
     line-height: 1.5;
+  }
+
+  .point-title {
+    font-size: 2.125rem;
+    line-height: 150%;
+    font-weight: bold;
   }
 
   ol ol ol {
@@ -60,83 +65,37 @@
     background-color: $grey-bg;
   }
 
+  .hero-image {
+    height: 100%;
+    min-height: 37.5rem;
+    margin-top: 5rem;
+    width: 100vw;
+
+    background-size: cover;
+    background-position: center;
+  }
+
   &.our-story {
     font-size: 1.25rem;
 
-    .our-story-img {
+    .content-img {
       display: none;
     }
 
-    .container {
-      max-width: 54rem;
-      margin: 4.375rem auto 0;
-    }
-
     .hero-image {
-      height: 100%;
-      min-height: 37.5rem;
-      margin-top: 5rem;
-      width: 100vw;
-
-      background-size: cover;
       background-image: url("/images/our-story-img.png");
 
     }
   }
 
   &.our-mission {
-    .article .title:first-of-type {
-      margin-bottom: 5rem;
-    }
-    .article .title:nth-child(2) {
-      margin-top: 0;
-      margin-bottom: 2rem;
+    .hero-image {
+      background-image: url("/images/core-values-img.png");
+      background-position: right;
     }
 
-    .cases {
-      margin-top: 3rem;
-
-      .case {
-        display: flex;
-        margin-bottom: 3.4rem;
-        height: 8rem;
-
-        .case-img {
-          flex: 1;
-          align-self: center;
-          text-align: center;
-
-          img{
-            width: 100px;
-            height: 100px;
-          }
-        }
-
-        .case-content {
-          flex: 70%;
-          align-self: center;
-
-          .case-title, .case-description {
-            font-weight: 800;
-            font-size: 1.25rem;
-            line-height: 150%;
-          }
-
-          .case-description {
-            font-weight: initial;
-          }
-        }
-      }
-    }
-
-    @include mobile {
-      .cases .case {
-        height: auto;
-
-        .case-img {
-          margin-bottom: 1rem;
-        }
-      }
+    p {
+      margin-bottom: 3.125rem;
     }
   }
 }
@@ -189,10 +148,10 @@
 
 @media screen and (max-width: $fullhd) {
   .content {
+    .hero-image {
+      min-height: 31.25rem;
+    }
     &.our-story {
-      .hero-image {
-        min-height: 31.25rem;
-      }
     }
   }
 }
@@ -214,10 +173,15 @@
       }
     }
 
+    .point-title {
+      font-size: 1.5rem;
+    }
+
+    .hero-image {
+      min-height: 25rem;
+    }
+
     &.our-story {
-      .hero-image {
-        min-height: 25rem;
-      }
 
       .container {
         max-width: 30.375rem;
@@ -242,25 +206,46 @@
       }
     }
 
+    .point-title {
+      font-size: 1.5rem;
+    }
+
+    .content-img {
+      display: block;
+      width: 100vw;
+
+      background-size: cover;
+      background-position: center;
+
+      min-height: 23.5rem;
+      height: 100%;
+      margin: 2rem -1.75rem 2rem;
+    }
+
+    .hero-image {
+      display: none;
+    }
+
     &.our-story {
-      .our-story-img {
-        display: block;
-        width: 100vw;
-
-        background-size: cover;
+      .content-img {
         background-image: url("/images/our-story-img.png");
-
-        min-height: 23.5rem;
-        height: 100%;
-        margin: 2rem -1.5rem 2rem;
-      }
-      .hero-image {
-        display: none;
       }
 
       .container {
         margin-top: 2rem;
         padding: 0 1.5rem;
+      }
+    }
+
+    &.our-mission {
+      .content-img {
+        background-image: url("/images/core-values-img.png");
+        background-position: 75% 75%;
+      }
+
+      .container {
+        margin-top: 2rem;
+        margin-bottom: 0;
       }
     }
 
