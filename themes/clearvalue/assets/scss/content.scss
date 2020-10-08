@@ -1,16 +1,13 @@
 .content {
-  margin-top: 12.5rem;
   padding-bottom: 6rem;
 
   font-size: 1.3rem;
-  
+
   @include tablet-only {
-    margin-top: 8rem;
     padding-bottom: 4rem;
   }
 
   @include mobile {
-    margin-top: 8rem;
     padding-bottom: 4rem;
   }
 
@@ -19,20 +16,33 @@
     margin-right: auto;
     margin-left: auto;
   }
+  h1, h2, p {
+    color: $dark;
+  }
 
   h1 {
-    font-size: 2.5rem;
+    font-size: 4.5rem;
+    line-height: 120%;
   }
 
   p {
     line-height: 1.5;
   }
-  
+
   ol ol ol {
     list-style-type: lower-latin !important;
 
     ol {
       list-style-type: lower-roman!important;
+    }
+  }
+
+  article {
+    p {
+      font-size: 1.375rem;
+      line-height: 180%;
+      letter-spacing: 0.01em;
+      font-feature-settings: 'liga' off;
     }
   }
 
@@ -46,6 +56,22 @@
 
   &.our-story {
     font-size: 1.25rem;
+
+    .container {
+      max-width: 54rem;
+      margin: 4.375rem auto 0;
+    }
+
+    .hero-image {
+      height: 100%;
+      min-height: 37.5rem;
+      margin-top: 5rem;
+      width: 100vw;
+
+      background-size: cover;
+      background-image: url("/images/our-story-img.png");
+
+    }
   }
 
   &.our-mission {
@@ -147,6 +173,45 @@
       padding: 0.625rem 1.5rem 0 3.25rem;
       display: none;
       overflow: hidden;
+    }
+  }
+}
+
+@media screen and (max-width: $fullhd) {
+  .content {
+    &.our-story {
+      .hero-image {
+        min-height: 31.25rem;
+      }
+    }
+  }
+}
+
+@include tablet-only {
+  .content {
+
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+    }
+
+    article {
+      p {
+        font-size: 1rem;
+      }
+    }
+
+    &.our-story {
+      .hero-image {
+        min-height: 25rem;
+      }
+
+      .container {
+        max-width: 30.375rem;
+      }
     }
   }
 }

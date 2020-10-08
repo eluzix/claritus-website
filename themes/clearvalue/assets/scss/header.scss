@@ -2,8 +2,12 @@
   position: fixed;
   width: 100vw;
   height: $header-height;
-  background-color: transparent;
+  background-color: $white;
   z-index: 99;
+
+  &.is-transparent {
+    background-color: transparent;
+  }
 
   .nav {
     height: 100%;
@@ -79,14 +83,18 @@
     padding: 1.875rem $ipad-padding;
     .nav {
       padding: 0;
+      .links {
+        .button {
+
+          &.is-join {
+            max-width: 7.625rem;
+          }
+        }
+      }
       &.on-section-1, &.on-section-footer {
         .links  {
           .button{
             color: $dark;
-
-            &.is-join {
-              max-width: 7.625rem;
-            }
           }
 
           .burger span {
@@ -99,6 +107,12 @@
         max-height: 1.875rem;
       }
     }
+  }
+}
+
+@include tablet {
+  .header {
+    padding: 1.875rem 3.125rem;
   }
 }
 

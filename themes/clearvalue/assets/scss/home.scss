@@ -271,6 +271,15 @@
           flex-grow: 2;
         }
       }
+
+      .navigation-wrapper {
+
+        .content-dots {
+          .arrow {
+            display: none;
+          }
+        }
+      }
     }
   }
 }
