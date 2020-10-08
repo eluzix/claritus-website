@@ -8,9 +8,9 @@
   &.menu--active {
 
     .menu-content {
-      -webkit-transform:translateX(0);
-      -moz-transform:translateX(0);
-      transform:translateX(0);
+      -webkit-transform: translateX(0);
+      -moz-transform: translateX(0);
+      transform: translateX(0);
       -webkit-transition: all 0.5s ease-in-out;
       -moz-transition: all 0.5s ease-in-out;
       transition: all 0.5s ease-in-out;
@@ -40,9 +40,9 @@
     right: 0;
     padding: 1.5rem 5rem;
 
-    -webkit-transform:translateX(200%);
-    -moz-transform:translateX(200%);
-    transform:translateX(100%);
+    -webkit-transform: translateX(200%);
+    -moz-transform: translateX(200%);
+    transform: translateX(100%);
     -webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
@@ -92,35 +92,12 @@
   }
 }
 
-@include tablet-only {
-  .menu {
-    .menu-content {
-      left: 0;
-
-      -webkit-transform:translateX(-200%);
-      -moz-transform:translateX(-200%);
-      transform:translateX(-100%);
-      -webkit-transition: all 0.5s ease-in-out;
-      -moz-transition: all 0.5s ease-in-out;
-      transition: all 0.5s ease-in-out;
-    }
-    .menu-list {
-      li {
-        a {
-          font-size: 1.125rem;
-        }
-      }
-    }
-  }
-}
-
 @include mobile {
   .menu {
 
     .menu-content {
       top: 0;
     }
-
 
     .menu-controls {
       flex-direction: row-reverse;
