@@ -2,14 +2,11 @@
 title: "Core Values"
 date: 2020-04-27T09:30:01+03:00
 url: /our-vision
-type: our-vision
+type: hero-content
+content_class: our-mission
 ---
 
 Claritus was founded by 3 partners who are passionate about our work and remind ourselves daily to stay grounded and remain humble. Our values play a huge role in who we are, both as people and as a company.
-
-{{< rawhtml >}}
-<div class="content-img"></div>
-{{< /rawhtml >}}
 
 {{< rawhtml >}}
 <div class="point-title is-green">Loyalty</div>

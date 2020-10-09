@@ -2,6 +2,7 @@
 title: "Privacy Policy"
 date: 2020-04-27T09:30:01+03:00
 url: /privacy
+content_class: terms
 ---
 This privacy policy ("**Privacy Policy**") governs how we, Clear Value Ltd. 
 ("**Clear Value**" "**we**", "**our**" or "**us**") use Personal Information (defined below) that we collect, 
@@ -24,6 +25,7 @@ understand our practices in relation to Personal Information.
 
 #### Table of contents:
 
+{{< rawhtml >}}<div class="toc">{{< /rawhtml >}}
 * [Introduction](/privacy#introduction)
 * [Terms of use](/privacy#terms-of-use) 
 * [Consent and modification](/privacy#consent-and-modification)
@@ -41,6 +43,7 @@ understand our practices in relation to Personal Information.
 * [California privacy rights](/privacy#california-privacy-rights)
 * [Our California do not track notice](/privacy#our-california-do-not-track-notice)
 * [How to contact us](/privacy#contact-us)
+{{< rawhtml >}}</div>{{< /rawhtml >}}
 
 
 This Privacy Policy may be updated from time to time and therefore we ask you to check back periodically for 

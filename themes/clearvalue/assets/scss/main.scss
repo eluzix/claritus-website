@@ -94,6 +94,10 @@ body {
   }
 }
 
+.is-green {
+  color: $green !important;
+}
+
 .button {
   border-radius: 2.25rem;
   color:  $dark;
@@ -101,6 +105,7 @@ body {
 
   &.is-green {
     border-color: $green;
+    color: $white !important;
 
     &.is-full {
       background-color: $green;
@@ -229,10 +234,6 @@ body {
 
 .is-underline {
   text-decoration: underline;
-}
-
-.is-green {
-  color: $green;
 }
 
 .burger {

@@ -1,11 +1,11 @@
 {{ define "content" }}
-<div class="content our-mission has-navbar-fixed-top">
+<div class="content {{ .Params.content_class }} has-navbar-fixed-top">
 
     {{ partial "nav" . }}
     {{ partial "menu.html" }}
     <div class="hero-image"></div>
 
-    <section class="container">
+    <section class="container is-small">
         <h1 class="title" title="{{ .Title }}">{{ .Title }}</h1>
         <article>
             {{ .Content }}

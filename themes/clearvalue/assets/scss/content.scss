@@ -11,7 +11,7 @@
     padding-bottom: 4rem;
   }
 
-  .container {
+  .container.is-small {
     max-width: 54rem;
     margin: 4.375rem auto 0;
   }
@@ -83,14 +83,14 @@
     }
 
     .hero-image {
-      background-image: url("/images/our-story-img.png");
+      background-image: url("/images/our-story-img.jpg");
 
     }
   }
 
   &.our-mission {
     .hero-image {
-      background-image: url("/images/core-values-img.png");
+      background-image: url("/images/core-values-img.jpg");
       background-position: right;
     }
 
@@ -98,50 +98,77 @@
       margin-bottom: 3.125rem;
     }
   }
-}
 
-.faq {
-  article {
-    a {
-      color: $black;
-      border-bottom: 1px black solid;
-      &:hover {
-        border-bottom: none;
-        color: #3273dc;
-      }
+  &.about-claritus {
+    .hero-image {
+      background-image: url("/images/about-claritus.jpg");
+      //background-position: right;
+    }
+
+    article p:first-child {
+      color: $green;
+      font-size: 2.125rem;
     }
   }
 
-  .collapse {
-    .collapsible {
-      background: url("/images/icon-plus.svg") no-repeat left;
-      cursor: pointer;
-      padding: 1.125rem;
-      width: 100%;
-      border: none;
-      text-align: left;
-      outline: none;
-      font-size: 1.25rem;
-      padding-left: 3.25rem;
-      line-height: 2.375rem;
-      border-bottom: 1px solid #D4DAE3;
-      font-weight: bold;
+  &.terms {
+    .container {
+      margin-top: 15rem;
     }
 
-    .active {
-      background-image: url("/images/icon-minus.svg");
-      border-bottom: none;
+    a {
+      color: $green;
     }
 
-    .collapsible:hover {
-      text-decoration: underline;
+    ul {
+      li a {
+        color: $primary;
+      }
     }
 
-    .content {
-      margin-top: 0;
-      padding: 0.625rem 1.5rem 0 3.25rem;
-      display: none;
-      overflow: hidden;
+    .toc ul li {
+      background: url("/images/faq-bullet.svg") no-repeat 0 0.5rem;
+      background-size: 1.125rem;
+      padding-left: 2.25rem;
+      margin-bottom: 1rem;
+      line-height: 180%;
+    }
+  }
+}
+
+.faq {
+  .container {
+    margin-top: 10rem;
+  }
+
+  h1 {
+    margin-bottom: 3.125rem;
+  }
+
+  h6 {
+    font-weight: normal;
+    font-size: 1.375rem;
+    line-height: 180%;
+    margin-bottom: 9.375rem;
+  }
+
+  article {
+    .faq-items {
+      li {
+        background: url("/images/faq-bullet.svg") no-repeat 0 0;
+        padding-left: 4rem;
+        margin-bottom: 3.125rem;
+
+        h2 {
+          font-size: 2.125rem;
+          margin-bottom: 1rem;
+        }
+
+        p {
+          font-size: 1.375rem;
+          line-height: 180%;
+        }
+      }
     }
   }
 }
@@ -151,12 +178,11 @@
     .hero-image {
       min-height: 31.25rem;
     }
-    &.our-story {
-    }
   }
 }
 
-@include tablet-only {
+
+@media screen and (max-width: $widescreen) {
   .content {
 
     h1 {
@@ -187,11 +213,64 @@
         max-width: 30.375rem;
       }
     }
+
+    &.about-claritus {
+      article p:first-child {
+        font-size:1.75rem;
+      }
+    }
+  }
+
+  .faq {
+    h1 {
+      margin-bottom: 1rem;
+    }
+    h6 {
+      font-size: 1rem;
+      margin-bottom: 5.135rem;
+    }
+
+    article .faq-items li {
+      background-size: 2.25rem 2.25rem;
+      padding-left: 2.75rem;
+      padding-top: 0.25rem;
+
+
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+@include tablet-only {
+  .content {
+    .container {
+      padding-left: 3rem;
+      padding-right: 3rem;
+    }
+
+    &.about-claritus {
+      article p:first-child {
+        font-size:1.5rem;
+      }
+    }
   }
 }
 
 @include mobile {
   .content {
+    padding-bottom: 1.165rem;
+
+    .container {
+      padding-left: 1rem;
+      padding-right: 1em;
+    }
+
     h1 {
       font-size: 2.625rem;
     }
@@ -201,7 +280,7 @@
     }
 
     article {
-      p {
+      p, li {
         font-size: 0.875rem;
       }
     }
@@ -210,25 +289,18 @@
       font-size: 1.5rem;
     }
 
-    .content-img {
-      display: block;
-      width: 100vw;
-
-      background-size: cover;
-      background-position: center;
-
-      min-height: 23.5rem;
-      height: 100%;
-      margin: 2rem -1.75rem 2rem;
-    }
-
     .hero-image {
       display: none;
     }
 
     &.our-story {
-      .content-img {
-        background-image: url("/images/our-story-img.png");
+      article p:first-child:after {
+        content: "";
+        display: block;
+        height: 23.5rem;
+        background: url("/images/our-story-img.jpg") no-repeat 0 0;
+        background-size: cover;
+        margin: 2rem -1.5rem;
       }
 
       .container {
@@ -238,9 +310,13 @@
     }
 
     &.our-mission {
-      .content-img {
-        background-image: url("/images/core-values-img.png");
-        background-position: 75% 75%;
+
+      article p:first-child:after {
+        content: "";
+        display: block;
+        height: 23.5rem;
+        background: url("/images/core-values-img.jpg") no-repeat 75% 75%;
+        margin: 2rem -1.5rem;
       }
 
       .container {
@@ -249,6 +325,60 @@
       }
     }
 
-    padding-bottom: 1.165rem;
+    &.about-claritus {
+      article {
+        p:first-child {
+          font-size:1.25rem;
+        }
+
+        p:nth-child(3):after {
+          content: "";
+          display: block;
+          height: 29rem;
+          background: url("/images/about-claritus-mobile.jpg") no-repeat 0 0;
+          background-size: cover;
+          margin: 2rem -1.5rem;
+        }
+      }
+    }
+
+    &.terms {
+      .container {
+        margin-top: 5rem;
+      }
+    }
+
+  }
+
+  .faq {
+    .container {
+      margin-top: 2rem;
+    }
+    
+    h1 {
+      //font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    h6 {
+      font-size: 0.875rem;
+      margin-bottom: 5.135rem;
+    }
+
+    article .faq-items li {
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      p {
+        font-size: 0.875rem;
+      }
+    }
+
+    article .faq-items li {
+      background: url("/images/faq-bullet.svg") no-repeat 0 0;
+      background-size: 1.5rem 1.5rem;
+      padding-left: 2rem;
+      padding-top: 0;
+    }
   }
 }
