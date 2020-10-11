@@ -58,7 +58,7 @@
   .menu-controls {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
 
     .logo {
@@ -85,17 +85,30 @@
       margin: 1rem 0;
       a {
         font-size: 1.75rem;
-        font-weight: 600;
+        font-weight: 500;
         line-height: 150%;
         color: $dark;
         letter-spacing: 0.01em;
         font-feature-settings: 'liga' off;
 
         &:hover {
-          opacity: 0.8;
+          color: $green;
+          text-decoration: underline;
         }
       }
     }
+  }
+}
+
+@media screen and (max-width: $fullhd) and (min-width: $desktop + 1) {
+  .menu .menu-list li a {
+    font-size: 1.375rem;
+  }
+}
+
+@media screen and (max-width: $desktop) {
+  .menu .menu-list li a {
+    font-size: 1.3rem;
   }
 }
 

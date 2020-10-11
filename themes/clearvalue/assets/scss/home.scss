@@ -68,6 +68,7 @@
 
     .button.is-wide {
       min-width: 16.8rem;
+      font-weight: 500;
     }
 
     .centered {
@@ -327,7 +328,7 @@
 
       &.section-1 {
         .centered {
-          padding: 9rem 1rem 5rem 5rem;
+          padding: 9rem 1rem 5rem $ipad-padding;
         }
 
         .bg-image {
@@ -628,6 +629,8 @@
         .bg-image {
           position: absolute;
           width:100%;
+          background-color: rgba(0,0,0,0.3);
+          background-blend-mode: color;
         }
       }
 

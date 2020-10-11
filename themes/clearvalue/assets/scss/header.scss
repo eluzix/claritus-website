@@ -26,6 +26,8 @@
       justify-content: flex-end;
       align-items: center;
 
+      font-weight: 500;
+
       .button.is-login, .button.is-login:hover {
         border: none;
         background-color: transparent;
@@ -75,6 +77,20 @@
       //    display: none;
       //  }
       //}
+    }
+  }
+}
+
+@media screen and (max-width: $fullhd) and (min-width: $desktop + 1) {
+  .header {
+    .nav {
+      img.logo {
+        max-width: 10rem;
+      }
+
+      .links .button {
+        font-size: 1rem;
+      }
     }
   }
 }
