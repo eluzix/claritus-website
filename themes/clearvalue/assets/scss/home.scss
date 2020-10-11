@@ -539,13 +539,13 @@
       }
 
       &.section-1 {
-        height: calc(100vh - 5rem);
+        height: 100vh;
         padding: 0;
         margin-top: 0;
         scroll-margin-top: 0;
 
         .centered {
-          padding: 2rem;
+          padding: 2rem 2rem $header-height 2rem;
           align-items: flex-end;
 
           .button.is-full {
