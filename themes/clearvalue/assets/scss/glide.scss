@@ -75,15 +75,18 @@
       pointer-events: none;
 
       .glide__bullet {
-        width: 14px;
-        height: 14px;
-        border: 1px solid #676E80;
-        box-sizing: border-box;
-        background: $white;
+        width: 0.875rem;
+        height: 0.875rem;
+        background: transparent url("/images/slider-bullet.jpg") no-repeat 0 0;
+        background-size: 0.875rem;
+        border: none;
+        //border: 1px solid #676E80;
+        //box-sizing: border-box;
+        //background: $white;
 
-        border-radius: 50%;
-        margin: 0 0.938rem;
-        padding: 0;
+        //border-radius: 50%;
+        margin: 0 1rem;
+        //padding: 0;
         //padding: 5px;
         cursor: pointer;
         pointer-events: auto;
@@ -95,20 +98,21 @@
 
       .glide__bullet--active {
         //background: $green;
-        position: relative;
+        background-image: url("/images/slider-bullet-active.jpg");
+        //position: relative;
 
-        &::before {
-          background: $green;
-          color: $green;
-          position: relative;
-          bottom: 2px;
-          left: 0;
-          content: '';
-          display: inline-block;
-          width: 8px;
-          height: 8px;
-          border-radius: 50%;
-        }
+        //&::before {
+        //  background: $green;
+        //  color: $green;
+        //  position: relative;
+        //  bottom: 2px;
+        //  left: 0;
+        //  content: '';
+        //  display: inline-block;
+        //  width: 8px;
+        //  height: 8px;
+        //  border-radius: 50%;
+        //}
       }
 
     }
