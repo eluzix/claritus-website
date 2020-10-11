@@ -117,11 +117,12 @@
 
     .menu-content {
       top: 0;
+      padding-right: $mobile-padding;
     }
 
-    .menu-controls {
-      flex-direction: row-reverse;
-    }
+    //.menu-controls {
+    //  flex-direction: row-reverse;
+    //}
 
     .menu-list {
       li {

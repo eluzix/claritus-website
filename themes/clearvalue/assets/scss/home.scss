@@ -91,6 +91,7 @@
 
     &.section-2 .bg-image {
       background-image: url("/images/home-section-2.jpg");
+      background-position: 0;
     }
 
     &.section-3 .bg-image {
@@ -344,7 +345,7 @@
 
         .centered {
           z-index: 2;
-          padding: 2rem 5rem 5rem 5rem;
+          padding: 2rem $ipad-padding 5rem $ipad-padding;
           width: 50%;
           justify-content: unset;
           align-items: start;
@@ -352,8 +353,8 @@
         .bg-image {
           z-index: 1;
           position: absolute;
-          bottom: -14rem;
-          height: 100%;
+          bottom: -2rem;
+          height: 80%;
           width: 100%;
         }
       }
@@ -555,12 +556,12 @@
         }
 
         h1.has-bottom-margin-50 {
-          margin-bottom: 0.75rem;
+          margin-bottom: 1.5rem;
         }
 
         p {
           font-weight: normal;
-          font-size: 0.875rem;
+          font-size: 1rem;
           line-height: 180%;
 
           &.is-small {
@@ -571,8 +572,10 @@
 
       &.section-2 {
         .centered {
-          padding: 2.2rem;
+          margin-top: 3rem;
+          padding: 2.2rem $mobile-padding;
           width: 100%;
+          height: 40vh;
         }
 
         .bg-image {
