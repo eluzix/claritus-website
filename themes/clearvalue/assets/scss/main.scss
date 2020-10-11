@@ -48,11 +48,16 @@ body {
     a {
       font-weight: 500;
       line-height: 140%;
-      font-size: 1.5rem;
+      font-size: 1.3rem;
       margin: 0;
       color: $white;
-      margin-right: 1.25rem;
+      margin-right: 2rem;
       margin-bottom: 1rem !important;
+
+      &:hover {
+        color: $green;
+        text-decoration: underline;
+      }
     }
   }
 
@@ -77,12 +82,12 @@ body {
     }
 
     a img {
-      max-width: 1rem;
+      max-width: 2rem;
     }
 
     .logo {
       display: inline-block;
-      max-width: 5.625rem;
+      max-width: 8rem;
       margin-left: 2.75rem;
     }
 
@@ -292,6 +297,11 @@ body {
 //  }
 //}
 
+@media screen and (max-width: $fullhd) {
+  .footer .links a {
+    font-size: 1.2rem;
+  }
+}
 
 @media screen and (max-width: $tablet) {
   .title {
@@ -346,14 +356,14 @@ body {
 
 @include mobile {
   .footer {
-    height: 100vh;
+    height: 70vh;
     display: block;
     padding: 4rem 3.5rem;
 
     .links {
       display: block;
-      margin-bottom: 0;
-      height: calc(100vh - 13rem);
+      margin-bottom: 8rem;
+
       a {
         font-size: 1.125rem;
         display: block;
@@ -365,10 +375,10 @@ body {
 
     .social-block {
       text-align: left;
-      height: 6.5rem;
+      margin-bottom: 0;
 
       .social {
-        margin-bottom: 1rem;
+        //margin-bottom: 1rem;
 
         a img {
           max-width: 1.875rem;
