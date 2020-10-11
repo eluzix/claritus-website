@@ -22,8 +22,8 @@ const app = {
                 const navbar = document.querySelector('header nav.nav')
 
                 entries.forEach((entry) => {
-                    // console.log(entry.target, '>>>', entry.intersectionRatio)
-                    if (entry.intersectionRatio >= 0.95) {
+                    console.log(entry.target, '>>>', entry.intersectionRatio)
+                    if (entry.intersectionRatio >= 0.05) {
                         entry.target.classList.add('is-visible')
                         entry.target.classList.forEach((cls) => {
                             if (cls.startsWith('section-')) {
@@ -41,7 +41,7 @@ const app = {
                 })
             }, {
                 rootMargin: '0px',
-                threshold: 0.95
+                threshold: [0.05]
             })
 
             const sections = [...document.querySelectorAll('.home section')]
