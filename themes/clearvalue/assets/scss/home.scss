@@ -118,12 +118,13 @@
         padding-left: $desktop-padding;
 
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
         height: 100%;
 
         .pricing-box {
-          display: inline-block;
+          //display: inline-block;
+          display: none;
           width: 350px;
           padding: 7.5rem 1rem;
           box-shadow: 0 108.622px 86.8976px rgba(42, 50, 87, 0.05), 0 39.8261px 36.3037px rgba(42, 50, 87, 0.02), 0 18.9939px 19.4097px rgba(42, 50, 87, 0.013), 0 9.43317px 10.8809px rgba(42, 50, 87, 0.008), 0 4.32611px 5.77878px rgba(42, 50, 87, 0.00663327), 0 1.49625px 2.40468px rgba(42, 50, 87, 0.0041531);
@@ -140,6 +141,7 @@
         .pricing-content {
           max-width: 35rem;
           display: inline-block;
+          margin-left: 9.5rem;
         }
       }
 
@@ -174,7 +176,7 @@
 
           a {
             display: inline-block;
-            font-weight: 600;
+            font-weight: 500;
             font-size: 1.625rem;
             line-height: 150%;
             color: $white;
@@ -235,7 +237,7 @@
 
       &.home-footer {
         .is-footer {
-          padding: 5rem 1.875rem;
+          padding: 9rem 1.875rem 5rem 1.875rem;
           width: 34%;
         }
 
@@ -248,8 +250,13 @@
           }
 
           .pricing-content {
-            padding: 0 3rem 0 4rem;
+            //padding: 0 3rem 0 4rem;
+            margin-left: 0;
           }
+        }
+
+        .is-footer .links a {
+          font-size: 1.3rem;
         }
       }
     }
@@ -407,9 +414,10 @@
             text-align: -webkit-center;
           }
           .pricing-content {
-            width: 50%;
-            margin-right: 6rem;
+            //width: 50%;
+            //margin-right: 6rem;
             padding: 0;
+            max-width: unset;
 
             .button.is-wide {
               margin: 0;
@@ -425,7 +433,7 @@
           height: auto;
           width: 100%;
           flex-direction: row;
-          padding: 1.875rem 2.175rem;
+          padding: 2.875rem 2.175rem;
           background-image: none;
           position: relative;
           flex-wrap: wrap;
@@ -673,7 +681,8 @@
 
       .pricing {
         flex-direction: column-reverse;
-
+        justify-content: center;
+        
         .pricing-content, .pricing-box {
           width: 100%;
           margin-right: 0;
