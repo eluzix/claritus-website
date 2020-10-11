@@ -14,5 +14,5 @@ I spent a lot of time online, searching for a reliable, comprehensive tool that 
 That got me wondering: How many more people were out there facing the same challenges I was facing? I reached out to my two partners - who were in the same boat as I - and we decided then and there that it was up to us to come up with a viable solution.
 
 {{< rawhtml >}}
-<h2>That was the birth of the idea that would eventually become <span class="is-green">Claritus.</span></h2>
+<p class="is-bold">That was the birth of the idea that would eventually become <span class="is-green">Claritus.</span></p>
 {{< /rawhtml >}}
