@@ -675,7 +675,7 @@
     .section.home-footer {
 
       & > div:first-child {
-        height: 100vh;
+        height: 70vh;
         padding: 0 2rem;
       }
 
@@ -696,7 +696,7 @@
       }
 
       .is-footer {
-        height: 100vh;
+        height: 70vh;
         display: block;
         padding: 4rem 3.5rem;
         //flex-direction: column;
@@ -704,8 +704,9 @@
 
         .links {
           display: block;
-          margin-bottom: 0;
-          height: calc(100vh - 13rem);
+          margin-bottom: 8rem;
+          //height: calc(100vh - 13rem);
+          
           a {
             font-size: 1.125rem;
             display: block;
@@ -717,10 +718,11 @@
 
         .social-block {
           text-align: left;
-          height: 6.5rem;
+          //height: 6.5rem;
+          margin-bottom: 0;
 
           .social {
-            margin-bottom: 1rem;
+            //margin-bottom: 1rem;
 
             a img {
               max-width: 1.875rem;
