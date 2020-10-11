@@ -104,6 +104,7 @@
 
     &.section-6 .bg-image {
       background-image: url("/images/home-section-6.jpg");
+      background-size: 40%;
     }
 
     &.home-footer {
@@ -226,6 +227,10 @@
 
       .centered {
         padding: 0 $desktop-padding 0 $desktop-padding;
+      }
+
+      &.section-6 .bg-image {
+        background-size: 50%;
       }
 
       &.home-footer {
@@ -372,7 +377,7 @@
       }
 
       &.section-6 .bg-image {
-        background-size: 14.875rem auto;
+        background-size: 60%;
       }
 
       .button.is-wide {
@@ -638,16 +643,25 @@
       }
 
       &.section-5 {
-        color: $dark;
+        color: $white;
+        
         h1, h2 {
-          color: $dark;
+          color: $white;
           font-weight: 600;
+        }
+
+        .bg-image {
+          background-color: rgba(0,0,0,0.4);
         }
       }
 
       &.is-reversed-mobile {
         flex-direction: column-reverse;
       }
+    }
+
+    &.section-6 .bg-image {
+      background-size: 60%;
     }
 
     .section.home-footer {
