@@ -15,6 +15,10 @@
 @import "../bulma/sass/elements/content";
 @import "../bulma/sass/elements/table";
 
+html.scroll-y {
+  overflow-y: scroll;
+}
+
 body {
   height: 100vh;
   font-size: 1.2rem;
@@ -26,6 +30,10 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  &.scroll-y {
+    overflow-y: scroll;
+  }
 }
 
 .footer {
@@ -354,6 +362,21 @@ body {
   }
 }
 
+@include tablet-only {
+  .footer {
+    .social-block {
+      .social a img {
+        max-width: 1rem;
+      }
+
+      .logo {
+        max-width: 5rem;
+        margin-left: 1.75rem;
+      }
+    }
+  }
+}
+
 @include mobile {
   .footer {
     height: 70vh;
@@ -376,6 +399,7 @@ body {
     .social-block {
       text-align: left;
       margin-bottom: 0;
+      margin-top: -0.2rem;
 
       .social {
         //margin-bottom: 1rem;

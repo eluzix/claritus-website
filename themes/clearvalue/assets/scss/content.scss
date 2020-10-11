@@ -11,7 +11,7 @@
   }
 
   .container {
-    margin-top: 20rem;
+    margin-top: 7.1rem;
 
     &.is-small {
       max-width: 54rem;
@@ -47,7 +47,9 @@
   }
 
   ul {
-    list-style: none;
+    list-style: circle;
+    list-style-position: inside;
+
     margin: 0;
     padding: 0;
   }
@@ -112,14 +114,11 @@
     article p:first-child {
       color: $green;
       font-size: 2.125rem;
+      font-weight: 500;
     }
   }
 
   &.terms {
-    .container {
-      margin-top: 15rem;
-    }
-
     a {
       color: $green;
     }
@@ -131,9 +130,9 @@
     }
 
     .toc ul li {
-      background: url("/images/faq-bullet.svg") no-repeat 0 0.5rem;
+      //background: url("/images/faq-bullet.svg") no-repeat 0 0.5rem;
       background-size: 1.125rem;
-      padding-left: 2.25rem;
+      //padding-left: 2.25rem;
       margin-bottom: 1rem;
       line-height: 180%;
     }
@@ -160,9 +159,10 @@
     .faq-items {
       li {
         background: url("/images/faq-bullet.svg") no-repeat 0 0;
-        padding-left: 4rem;
+        padding-left: 3rem;
         margin-bottom: 3.125rem;
-
+        background-size: 2.25rem;
+        
         h2 {
           font-size: 2.125rem;
           margin-bottom: 1rem;
@@ -171,6 +171,13 @@
         p {
           font-size: 1.375rem;
           line-height: 180%;
+        }
+
+        a {
+          color: $green;
+          &:hover {
+            text-decoration: underline;
+          }
         }
       }
     }
@@ -526,10 +533,7 @@
   }
 
   .faq {
-    .container {
-      margin-top: 2rem;
-    }
-    
+
     h1 {
       //font-size: 2.5rem;
       margin-bottom: 1rem;
