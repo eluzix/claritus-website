@@ -539,14 +539,14 @@
       }
 
       &.section-1 {
-        height: calc(100vh - 5rem);
+        //height: calc(100vh - 5rem);
         padding: 0;
         margin-top: 0;
         scroll-margin-top: 0;
 
         .centered {
           padding: 2rem;
-          align-items: flex-end;
+          align-items: center;
 
           .button.is-full {
             max-width: 100%;
