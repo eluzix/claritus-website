@@ -26,6 +26,8 @@ understand our practices in relation to Personal Information.
 #### Table of contents:
 
 {{< rawhtml >}}<div class="toc">{{< /rawhtml >}}
+
+
 * [Introduction](/privacy#introduction)
 * [Terms of use](/privacy#terms-of-use) 
 * [Consent and modification](/privacy#consent-and-modification)
@@ -43,6 +45,8 @@ understand our practices in relation to Personal Information.
 * [California privacy rights](/privacy#california-privacy-rights)
 * [Our California do not track notice](/privacy#our-california-do-not-track-notice)
 * [How to contact us](/privacy#contact-us)
+
+
 {{< rawhtml >}}</div>{{< /rawhtml >}}
 
 
