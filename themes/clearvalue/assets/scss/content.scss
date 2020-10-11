@@ -11,10 +11,15 @@
     padding-bottom: 4rem;
   }
 
-  .container.is-small {
-    max-width: 54rem;
-    margin: 4.375rem auto 0;
+  .container {
+    margin-top: 10rem;
+
+    &.is-small {
+      max-width: 54rem;
+      margin: 4.375rem auto 0;
+    }
   }
+
   h1, h2, p {
     color: $dark;
   }
@@ -173,6 +178,76 @@
   }
 }
 
+.about-us {
+  .about-content {
+    margin: 5rem $desktop-padding 9.5rem $desktop-padding;
+
+    p {
+      color: $primary;
+    }
+
+    .about-header {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 12.5rem;
+
+      & > div {
+        width: 50%;
+      }
+
+      .bg-image {
+        min-height: 37.5rem;
+        background: transparent url("/images/about-us.jpg") no-repeat 0 0;
+      }
+    }
+
+    .about-pages {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      & > div {
+        width: 21rem;
+
+        h2 {
+          font-size: 2.125rem;
+          color: $green;
+        }
+
+        p {
+           font-size: 1.375rem;
+          //color: $primary;
+        }
+
+        a {
+          display: block;
+          text-align: right;
+          color: $dark;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $widescreen) {
+  .about-us {
+    .about-header {
+      & > div:first-child {
+        margin-left: 10rem;
+      }
+
+      article {
+        width: 35rem;
+      }
+    }
+    .about-pages {
+      margin: 0 10rem;
+    }
+  }
+}
+
 @media screen and (max-width: $fullhd) {
   .content {
     .hero-image {
@@ -245,6 +320,34 @@
       }
     }
   }
+
+  .about-us {
+    article {
+      width: 100%;
+      padding-right: 2rem;
+    }
+
+    .about-content {
+      margin-bottom: 1.5rem;
+
+      .about-header {
+        margin-bottom: 10.625rem;
+
+        & > div:first-child{
+          margin-left: 0;
+        }
+
+        .bg-image {
+          min-height: 28rem;
+          background-size: cover;
+        }
+      }
+
+      .about-pages > div {
+        width: 17rem;
+      }
+    }
+  }
 }
 
 @include tablet-only {
@@ -257,6 +360,29 @@
     &.about-claritus {
       article p:first-child {
         font-size:1.5rem;
+      }
+    }
+  }
+
+  .about-us {
+    .about-content {
+      margin-left: $ipad-padding;
+      margin-right: $ipad-padding;
+
+      .about-header {
+        margin-bottom: 6.25rem;
+      }
+
+      .about-pages > div {
+        width: 12rem;
+        
+        h2 {
+          font-size: 1.5rem;
+        }
+
+        p, a {
+          font-size: 1rem;
+        }
       }
     }
   }
@@ -379,6 +505,61 @@
       background-size: 1.5rem 1.5rem;
       padding-left: 2rem;
       padding-top: 0;
+    }
+  }
+
+  .about-us {
+    .about-content {
+      margin-top: 2rem;
+      margin-left: $mobile-padding;
+      margin-right: $mobile-padding;
+
+      .about-header {
+        flex-direction: column;
+        margin-bottom: 6.25rem;
+
+        & > div {
+          width: 100%;
+        }
+
+        h1 {
+          text-align: center;
+        }
+
+        article {
+          padding: 0;
+        }
+
+        .bg-image {
+          margin-top: 2rem;
+          min-height: 23.5rem;
+        }
+      }
+
+      .about-pages {
+        flex-direction: column;
+
+        & > div {
+          width: 100%;
+          padding: 0 1.5rem;
+
+          h2 {
+            font-size: 1.75rem;
+          }
+
+          p {
+            font-size: 0.875rem;
+          }
+
+          a {
+            font-size: 1.375rem;
+          }
+
+          &:not(:last-child) {
+            margin-bottom: 3.5rem;
+          }
+        }
+      }
     }
   }
 }

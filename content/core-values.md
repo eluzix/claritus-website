@@ -1,7 +1,7 @@
 ---
 title: "Core Values"
 date: 2020-04-27T09:30:01+03:00
-url: /our-vision
+url: /core-values
 type: hero-content
 content_class: our-mission
 ---
