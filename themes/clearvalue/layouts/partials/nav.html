@@ -1,38 +1,16 @@
-<nav class="cv-header level navbar is-fixed-top header-shadow">
-    <div class="level-left">
-        <div class="level-item">
-            <a href="/"><img src="/images/logo.svg" class="logo"/></a>
-            <span id="nav-toggle-fixed" class="nav-toggle">
+<header class="header">
+    <nav class="nav">
+        <a href="/" title="Claritus.io homepage"><img class="logo" src="/images/logo-black.svg" /></a>
+
+        <div class="links">
+            <a class="button is-login is-hidden-mobile" href="{{ .Site.Params.appUrl }}/sign-in">Log In</a>
+            <a class="button is-join is-hidden-mobile" href="{{ .Site.Params.appUrl }}/sign-in">Sign Up</a>
+
+            <div class="burger" id="menu-burger">
                 <span></span>
                 <span></span>
                 <span></span>
-            </span>
+            </div>
         </div>
-    </div>
-    <div class="level-right">
-        <div class="level-item">
-            <a class="nav-link text-white" href="/our-story">
-                Our Story
-            </a>
-<!--            <a class="nav-link text-white" href="#pricing">-->
-<!--                Pricing-->
-<!--            </a>-->
-            <a class="nav-link text-white" href="{{ $.Site.Params.appUrl }}/sign-in">
-                Sign In
-            </a>
-            <a href="{{ $.Site.Params.appUrl }}/on-boarding" class="button btn-white-outline">Sign Up</a>
-        </div>
-    </div>
-    <div id='nav-menu-fixed' class="nav-right nav-menu">
-        <a class="nav-link text-white" href="/our-story">
-            Our Story
-        </a>
-<!--        <a class="nav-link text-white" href="#pricing">-->
-<!--            Pricing-->
-<!--        </a>-->
-        <a class="nav-link text-white" href="{{ .Site.Params.appUrl }}/sign-in">
-            Sign In
-        </a>
-        <a class="nav-link text-white" href="{{ .Site.Params.appUrl }}/on-boarding">Sign Up</a>
-    </div>
-</nav>
+    </nav>
+</header>

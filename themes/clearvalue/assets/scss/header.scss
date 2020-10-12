@@ -1,0 +1,188 @@
+.header {
+  position: fixed;
+  width: 100vw;
+  height: $header-height;
+  padding: 1.875rem $desktop-padding;
+  background-color: $white;
+  z-index: 99;
+
+  &.is-transparent {
+    background-color: transparent;
+  }
+
+  .nav {
+    height: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img.logo {
+      content: url("/images/logo-black.svg");
+    }
+
+    .links {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+
+      font-weight: 500;
+
+      .button.is-login, .button.is-login:hover {
+        border: none;
+        background-color: transparent;
+      }
+
+      & > .button:hover {
+        font-weight: 600;
+      }
+    }
+
+    @include desktop {
+      &.on-section-1, &.on-section-footer {
+        .links {
+          .button {
+            color: $white;
+          }
+
+          .burger span {
+            background-color: $white;
+          }
+        }
+      }
+
+      &.on-section-3 img.logo {
+        content: url("/images/logo-white.svg");
+      }
+    }
+
+    @media screen and (max-width: $fullhd) and (min-width: $desktop + 1) {
+      &.on-section-5 {
+        .links {
+          .button {
+            color: $white;
+          }
+
+          .burger span {
+            background-color: $white;
+          }
+        }
+      }
+
+      //&.on-section-footer {
+      //  .links {
+      //    display: none;
+      //  }
+      //}
+    }
+  }
+}
+
+@media screen and (max-width: $fullhd) and (min-width: $desktop + 1) {
+  .header {
+    .nav {
+      img.logo {
+        max-width: 10rem;
+      }
+
+      .links .button {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $desktop) {
+  .header {
+    padding: 1.875rem $ipad-padding;
+    .nav {
+      padding: 0;
+      .links {
+        .button {
+
+          &.is-join {
+            max-width: 7.625rem;
+          }
+        }
+      }
+      &.on-section-1, &.on-section-footer {
+        .links {
+          .button {
+            color: $dark;
+          }
+
+          .burger span {
+            background-color: $dark;
+          }
+        }
+      }
+
+      img.logo {
+        max-height: 2.5rem;
+      }
+    }
+  }
+}
+
+@include tablet-only {
+  .header {
+    padding: 1.875rem 3.125rem;
+  }
+}
+
+@include mobile {
+  .header {
+    //position: unset;
+    padding: 1.875rem $mobile-padding;
+    background-color: $white!important;
+    .nav {
+      position: relative;
+
+      .links {
+        .button.is-login {
+          display: none;
+        }
+
+        .burger {
+          left: 0;
+        }
+      }
+    }
+  }
+}
+
+//@keyframes slide-in {
+//  0% {
+//    transform: translateY(-100%);
+//  }
+//  100% {
+//    transform: translateY(0%);
+//  }
+//}
+//
+//@-webkit-keyframes slide-in {
+//  0% {
+//    -webkit-transform: translateY(-100%);
+//  }
+//  100% {
+//    -webkit-transform: translateY(0%);
+//  }
+//}
+//
+//@keyframes slide-out {
+//  0% {
+//    transform: translateY(0%);
+//  }
+//  100% {
+//    transform: translateY(-100%);
+//  }
+//}
+//
+//@-webkit-keyframes slide-out {
+//  0% {
+//    -webkit-transform: translateY(0%);
+//  }
+//  100% {
+//    -webkit-transform: translateY(-100%);
+//  }
+//}

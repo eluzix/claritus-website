@@ -9,13 +9,20 @@
     <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
     {{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
     {{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
-    {{ with .Site.Params.keywords }}<meta name="keywords" content="{{ . }}">{{ end }}
 
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ .Permalink }}">
     <meta property="og:title" content="{{ .Site.Title }}" />
     {{ with .Site.Params.description }}<meta property="og:description" content="{{ . }}" />{{ end }}
     <meta property="og:url" content="{{ .Permalink }}" />
     <meta property="og:image" content="{{.Site.BaseURL}}images/claritus_preview.jpg">
-
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="{{ .Permalink }}">
+    <meta property="twitter:title" content="{{ .Site.Title }}">
+    {{ with .Site.Params.description }}<meta property="twitter:description" content="{{ . }}">{{ end }}
+    <meta property="twitter:image" content="{{.Site.BaseURL}}images/claritus_preview.jpg">
     <link rel="canonical" href="{{ .Permalink }}">
 
     {{ $sass := resources.Get "scss/main.scss" }}
@@ -27,10 +34,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
 
-    <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/keen-slider@5.0.2/keen-slider.min.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
 
     {{ with .OutputFormats.Get "RSS" }}
     <link href="{{ .RelPermalink }}" rel="alternate" type="application/rss+xml" />
@@ -39,7 +43,7 @@
 
     {{ $js := resources.Get "js/main.js" }}
     <script src="{{ $js.Permalink }}"></script>
-    <script src="https://cdn.jsdelivr.net/npm/keen-slider@5.0.2/keen-slider.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id={{ .Site.Params.gtagConfig }}"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -47,6 +51,7 @@
         gtag('js', new Date());
 
         gtag('config', '{{ .Site.Params.gtagConfig }}');
+        gtag('config', 'AW-568330611');
     </script>
 
     <script>
@@ -62,11 +67,11 @@
 
 <body class="{{ if .Site.Params.rtl }}rtl{{ end }}">
 <div class="root">
-    {{ partial "header.html" . }}
-
     {{ block "content" . }}{{ end }}
 
-    {{ partial "footer.html" . }}
+    {{if not .IsHome}}
+        {{ partial "footer.html" . }}
+    {{ end }}
 </div>
 
 {{ template "_internal/google_analytics.html" . }}

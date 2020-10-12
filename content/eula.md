@@ -2,6 +2,7 @@
 title: "Clear Value End User License Agreement"
 date: 2020-04-27T09:30:01+03:00
 url: /terms
+content_class: terms
 ---
 Clear Value Ltd., ("Clear Value", "we", "us" or "our") operates a platform, 
 accessible at (https://claritus.io) (the "Site") and through any app that we make available 

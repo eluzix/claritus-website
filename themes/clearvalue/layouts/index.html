@@ -1,294 +1,192 @@
 {{ define "content" }}
 
-<div class="home has-navbar-fixed-top">
-    <div class="hero-container">
-        <nav class="cv-header navbar level">
-            <div class="level-left">
-                <div class="level-item">
-                    <img src="/images/logo.svg" class="logo"/>
-                    <span id="nav-toggle" class="nav-toggle">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </span>
-                </div>
-            </div>
-            <div class="level-right">
-                <div class="level-item">
-                    <a class="nav-link text-white" href="/our-story">
-                        Our Story
-                    </a>
-<!--                    <a class="nav-link text-white" href="#pricing">-->
-<!--                        Pricing-->
-<!--                    </a>-->
-                    <a class="nav-link text-white" href="{{ .Site.Params.appUrl }}/sign-in">
-                        Sign In
-                    </a>
-                    <a href="{{ .Site.Params.appUrl }}/on-boarding" class="button btn-white-outline">Sign Up</a>
-                </div>
-            </div>
-            <div id='nav-menu' class="nav-right nav-menu">
-                <a class="nav-link text-white" href="/our-story">
-                    Our Story
-                </a>
-<!--                <a class="nav-link text-white" href="#pricing">-->
-<!--                    Pricing-->
-<!--                </a>-->
-                <a class="nav-link text-white" href="{{ .Site.Params.appUrl }}/sign-in">
-                    Sign In
-                </a>
-                <a class="nav-link text-white" href="{{ .Site.Params.appUrl }}/on-boarding">Sign Up</a>
-            </div>
-        </nav>
+<div class="home">
+    {{ partial "header.html" . }}
+    {{ partial "menu.html" }}
 
-        <nav class="cv-header level navbar is-fixed-top header-shadow d-none">
-            <div class="level-left">
-                <div class="level-item">
-                    <img src="/images/logo.svg" class="logo"/>
-                    <span id="nav-toggle-fixed" class="nav-toggle">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </span>
-                </div>
-            </div>
-            <div class="level-right">
-                <div class="level-item">
-                    <a class="nav-link text-white" href="/our-story">
-                        Our Story
-                    </a>
-<!--                    <a class="nav-link text-white" href="#pricing">-->
-<!--                        Pricing-->
-<!--                    </a>-->
-                    <a class="nav-link text-white" href="{{ .Site.Params.appUrl }}/sign-in">
-                        Sign In
-                    </a>
-                    <a href="{{ .Site.Params.appUrl }}/on-boarding" class="button btn-white-outline">Sign Up</a>
-                </div>
-            </div>
-            <div id='nav-menu-fixed' class="nav-right nav-menu">
-                <a class="nav-link text-white" href="/our-story">
-                    Our Story
-                </a>
-<!--                <a class="nav-link text-white" href="#pricing">-->
-<!--                    Pricing-->
-<!--                </a>-->
-                <a class="nav-link text-white" href="{{ .Site.Params.appUrl }}/sign-in">
-                    Sign In
-                </a>
-                <a class="nav-link text-white" href="{{ .Site.Params.appUrl }}/on-boarding">Sign Up</a>
-            </div>
-        </nav>
-
-        <section class="hero container">
-            <div class="hero-block">
-                <div class="hero-title text-white has-bottom-margin-30">
-                    <p>The Simple Way to Keep Track</p>
-                    <p>of Your Wealth</p>
-                </div>
-                <div class="hero-description text-white has-bottom-margin-20">
-                    Finally, a 360° view of your assets that lets you track, understand, and be in complete control of your wealth - all in one place!
-                </div>
-                <a class="button btn-black has-bottom-margin-10" href="{{ .Site.Params.appUrl }}/on-boarding">Try it now!</a>
-<!--                <div class="hero-subtitle text-white">-->
-<!--                    Try it FREE for 3 months, no credit card needed.-->
-<!--                </div>-->
-            </div>
-        </section>
-    </div>
-
-    <section class="section">
-        <div class="spacer"></div>
-        <div class="container mobile-reverse">
-            <div class="left has-image">
-                <img src="/images/block1.jpg"/>
-            </div>
-            <div class="right v-leveled is-stretched">
-                <div>
-                    <div class="title">
-                        A <span class="text-green">clear view</span> of your assets
-                    </div>
-                    <div class="subtitle">
-                        Sometimes, a quick glance at your portfolio makes you feel like you’re flying blind.
-                        At Claritus, we believe that EVERYONE should have a clear, understandable view of their wealth -
-                        without requiring a Master’s degree in Finance!
-                    </div>
-                </div>
-
-<!--                <div class="description has-bottom-margin-16">-->
-<!--                    Your wealth, simple & clear.-->
-<!--                </div>-->
+    <section class="section section-1 is-full-mobile">
+        <div class="centered has-top-padding">
+            <div>
+                <h1 class="has-bottom-margin-50">A Simple Way to Keep Track of Your Money</h1>
+                <p class="has-bottom-margin-50">Finally, a 360° view of your assets that lets you track, understand, and be in complete control of your wealth - all in one place!</p>
+                <a class="button is-green is-full is-wide has-bottom-margin-25" href="{{ .Site.Params.appUrl }}/on-boarding">Try it now!</a>
+                <p class="is-small">Try it FREE for 3 months, no credit card needed.</p>
             </div>
         </div>
-        <div class="spacer"></div>
+        <div class="bg-image"></div>
     </section>
 
-    <section class="section">
-        <div class="spacer"></div>
-        <div class="container flex-centered">
-            <div class="left">
-                <div class="title">
-                    A <span class="text-green">beacon</span> in the dark
-                </div>
-                <div class="subtitle has-bottom-margin-30">
-                    In a choppy sea of apps, services, and spreadsheets, Claritus lets you access, track,
-                    and be in full control of your finances from ONE convenient interface.
-                    <br/><br/>
-                    <p class="is-bold">Simple, user-friendly, intuitive.</p>
-                </div>
-            </div>
-            <div class="right is-centered has-image">
-                <img src="/images/beacon_in_dark.png"/>
+    <section class="section section-2">
+        <div class="centered has-top-padding">
+            <div>
+                <h2 class="has-bottom-margin-50">A clear view of your assets</h2>
+                <p>Sometimes, a quick glance at your portfolio makes you feel like you’re flying blind. At Claritus, we believe that EVERYONE should have a clear, understandable view of their wealth -
+                    without requiring a Master’s degree in Finance!</p>
             </div>
         </div>
-        <div class="spacer"></div>
+        <div class="bg-image"></div>
     </section>
 
-    <section class="section section-slider">
-        <div class="navigation-wrapper container">
-            <div class="slider">
-                <div id="main-slider" class="keen-slider">
-                    <div class="keen-slider__slide number-slide1">
-                        <div class="slide-image">
-                            <img src="/images/slider1.png"/>
-                        </div>
-                        <div class="slide-content">
-                            <div class="keen-slider__slide-title title text-white">
-                                Track and Compare
-                            </div>
-                            <div class="slide-text">
-                                <div class="subtitle text-white">
-                                    Track and sort by any asset and compare between investment types and performances easily.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="keen-slider__slide number-slide2">
-                        <div class="slide-image">
-                            <img src="/images/slider2.png"/>
-                        </div>
-                        <div class="slide-content">
-                            <div class="keen-slider__slide-title title text-white">
-                                A clear look forward and back
-                            </div>
-                            <div class="slide-text">
-                                <div class="subtitle text-white">
-                                    Upload your investments’ historical data, and measure their performances over time clearly and objectively.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="keen-slider__slide number-slide3">
-                        <div class="slide-image">
-                            <img src="/images/slider3.png"/>
-                        </div>
-                        <div class="slide-content">
-                            <div class="keen-slider__slide-title title text-white">
-                                We Do the Work For You
-                            </div>
-                            <div class="slide-text">
-                                <div class="subtitle text-white">
-                                    Real-time data from over 17,000 global banks, brokerages, and other financial institutions -  all at your fingertips.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <button id="arrow-left"
-                        class="arrow arrow--left">
-                    <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 24 24"
-                    >
-                        <path
-                                d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z"
-                        ></path>
-                    </svg>
-                </button>
-                <button
-                        id="arrow-right"
-                        class="arrow arrow--right">
-                    <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 24 24"
-                    >
-                        <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"></path>
-                    </svg>
-                </button>
-            </div>
+    <section class="section section-3 is-full-mobile">
+        <div class="bg-image"></div>
 
-            <div class="home__left-content content-dots">
-                <div id="dots" class="dots"></div>
+        <div class="centered has-top-padding is-left-mobile">
+            <div>
+                <h2 class="has-bottom-margin-50">A beacon in the dark</h2>
+                <p class="has-bottom-margin-50">In a choppy sea of apps, services, and spreadsheets, Claritus lets you access, track,
+                    and be in full control of your finances from
+                    ONE convenient interface.</p>
+                <h4 class="is-green">Simple, user-friendly, intuitive.</h4>
             </div>
         </div>
     </section>
 
-    <section class="section">
-        <div class="spacer"></div>
-        <div class="container mobile-reverse">
-            <div class="left has-image">
-                <img src="/images/loyalty.svg"/>
-            </div>
-            <div class="right">
-                <div class="title">
-                    Lifting the fog on a <span class="text-green">brighter future</span>
-                </div>
-                <div class="subtitle has-bottom-margin-30">
-                    <p>Claritus’s straight-forward, comprehensive view of your money’s performance allows to you
-                        acquire a deeper understanding of your assets. This lets you not only to maintain and nurture your wealth,
-                        but to make smarter decisions moving forward.</p>
-                </div>
-            </div>
-            <div class="spacer"></div>
-        </div>
-    </section>
+    <section class="section section-4 section-slider">{{ partial "glide.html" }}</section>
 
-    <section class="section">
-        <div class="spacer"></div>
-        <div class="container">
-            <div class="left">
-                <div class="title">
-                    Privacy and Security <span class="text-green">Guaranteed</span>
-                </div>
-                <div class="subtitle has-bottom-margin-30">
-                    We know your privacy and security are of the utmost importance to you,
-                    which is why we are committed to the highest standards of data security and encryption.
-                    With Claritus, you know your data is for <span class="is-underline">your eyes only</span>.
-                </div>
-            </div>
-            <div class="right is-centered has-image">
-                <img src="/images/privacy.svg"/>
-            </div>
-        </div>
-        <div class="spacer"></div>
-    </section>
+<!--    <section class="section section-4 section-slider">-->
+<!--        <button id="arrow-left" class="arrow arrow&#45;&#45;left is-hidden-touch"><img src="/images/slider-left.svg" /></button>-->
 
-<!--    <section class="section" id="pricing">-->
-<!--        <div class="spacer"></div>-->
-<!--        <div class="container mobile-reverse">-->
-<!--            <div class="left">-->
-<!--                <div class="pricing-info">-->
-<!--                    <p class="has-bottom-margin-24"><span class="text-big">$19.90</span>/month</p>-->
-<!--                    <p class="has-bottom-margin-16">or</p>-->
-<!--                    <p class="has-bottom-margin-16"><span class="text-big">$199</span>/year</p>-->
-<!--                    <p>($39 discount).</p>-->
+<!--        <div class="navigation-wrapper container">-->
+<!--            <button class="arrow arrow&#45;&#45;left is-hidden-desktop"><img src="/images/slider-left.svg" /></button>-->
+<!--            <div class="slider">-->
+<!--                <div id="main-slider" class="keen-slider">-->
+<!--                    <div class="keen-slider__slide number-slide1">-->
+<!--                        <div class="slide-image">-->
+<!--                            <img src="/images/banner-slide-1.png"/>-->
+<!--                        </div>-->
+<!--                        <div class="slide-content">-->
+<!--                            <h2 class="keen-slider__slide-title">-->
+<!--                                We Do the Work For You-->
+<!--                            </h2>-->
+<!--                            <div class="slide-text">-->
+<!--                                <p class="subtitle">-->
+<!--                                    Real-time data from over 17,000 global banks, brokerages,-->
+<!--                                    and other financial institutions - -->
+<!--                                    all at your fingertips.-->
+<!--                                </p>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="keen-slider__slide number-slide2">-->
+<!--                        <div class="slide-image">-->
+<!--                            <img src="/images/banner-slide-2.png"/>-->
+<!--                        </div>-->
+<!--                        <div class="slide-content">-->
+<!--                            <h2 class="keen-slider__slide-title">-->
+<!--                                Track and Compare-->
+<!--                            </h2>-->
+<!--                            <div class="slide-text">-->
+<!--                                <p class="subtitle">-->
+<!--                                    Track and sort by any asset and compare between investment types and performances easily.-->
+<!--                                </p>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="keen-slider__slide number-slide3">-->
+<!--                        <div class="slide-image">-->
+<!--                            <img src="/images/banner-slide-3.png"/>-->
+<!--                        </div>-->
+<!--                        <div class="slide-content">-->
+<!--                            <h2 class="keen-slider__slide-title">-->
+<!--                                A clear look forward and back-->
+<!--                            </h2>-->
+<!--                            <div class="slide-text">-->
+<!--                                <p class="subtitle">-->
+<!--                                    Upload your investments’ historical data, and measure-->
+<!--                                    their performances over time clearly and objectively.-->
+<!--                                </p>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
 <!--                </div>-->
 <!--            </div>-->
-<!--            <div class="right">-->
-<!--                <div class="title">-->
-<!--                    <span class="text-green">Plain and simple</span> pricing-->
-<!--                </div>-->
-<!--                <div class="subtitle has-bottom-margin-24">-->
-<!--                    <p class="has-bottom-margin-30">We believe you should get high value for your money.-->
-<!--                        We don’t want a slice from it, we believe in a fair and simple pricing model.</p>-->
-<!--                    <p>Try us for 3 months for free. No credit card is needed.</p>-->
-<!--                </div>-->
+<!--            <div class="home__left-content content-dots">-->
+<!--                <button class="arrow arrow&#45;&#45;left">-->
+<!--                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+<!--                        <circle cx="25" cy="25" r="22.75" stroke="#C4C4C4" stroke-width="0.5"/>-->
+<!--                        <path fill-rule="evenodd" clip-rule="evenodd" d="M20.3262 25.9188L25.7942 31.7008L24.5655 33L17 25L24.5655 17L25.7942 18.2992L20.3262 24.0812H33V25.9188H20.3262Z" fill="#323947"/>-->
+<!--                    </svg>-->
 
-<!--                <button class="button btn-black btn-wide">Sign Up</button>-->
+<!--                </button>-->
+<!--                <div id="dots" class="dots"></div>-->
+<!--                <button-->
+<!--                        class="arrow arrow&#45;&#45;right">-->
+<!--                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+<!--                        <circle r="22.75" transform="matrix(-1 0 0 1 25 25)" stroke="#C4C4C4" stroke-width="0.5"/>-->
+<!--                        <path fill-rule="evenodd" clip-rule="evenodd" d="M29.6738 25.9188L24.2058 31.7008L25.4345 33L33 25L25.4345 17L24.2058 18.2992L29.6738 24.0812H17V25.9188H29.6738Z" fill="#323947"/>-->
+<!--                    </svg>-->
+<!--                </button>-->
 <!--            </div>-->
+<!--            <button class="arrow arrow&#45;&#45;right is-hidden-desktop"><img src="/images/slider-right.svg" /></button>-->
 <!--        </div>-->
-<!--        <div class="spacer"></div>-->
+
+<!--        <button id="arrow-right" class="arrow arrow&#45;&#45;right is-hidden-touch"><img src="/images/slider-right.svg" /></button>-->
 <!--    </section>-->
 
+    <section class="section section-5 is-full-mobile">
+        <div class="centered is-left-mobile">
+            <div>
+                <h2 class="has-bottom-margin-50">Lifting the fog on a brighter future</h2>
+                <p>Claritus’s straight-forward, comprehensive view of your money’s performance allows to you acquire a deeper understanding of your assets. This allows you not only to maintain and
+                    nurture your wealth, but to make smarter decisions moving forward.</p>
+            </div>
+        </div>
+
+        <div class="bg-image"></div>
+    </section>
+
+    <section class="section section-6 is-reversed-mobile">
+        <div class="bg-image is-centered"></div>
+
+        <div class="centered left-align">
+            <div>
+                <h2 class="has-bottom-margin-50">Privacy and Security Guaranteed</h2>
+                <p>We know your privacy and security are of the utmost importance to you, which is why we are committed
+                    to the highest standards of data security and encryption.
+                    With Claritus, you know your data is for your eyes only. </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section home-footer section-footer">
+        <div>
+            <div class="pricing">
+                <a class="button is-green is-full is-wide is-hidden-tablet" href="{{ .Site.Params.appUrl }}/on-boarding">Try it now!</a>
+
+                <div class="pricing-box is-hidden">
+                    <p class="has-bottom-margin-24"><span class="price">$19.90</span>/month</p>
+                    <p class="is-small has-bottom-margin-24">or</p>
+                    <p><span class="price">$199</span>/year</p>
+                    <p class="is-small">($39 discount)</p>
+                </div>
+
+                <div class="pricing-content">
+                    <h2 class="has-bottom-margin-50">Plain & Simple Pricing</h2>
+                    <p class="has-bottom-margin-50">We believe you should get high value for your money. We don’t want a slice from it, we believe
+                        in a fair and simple pricing model. Try us for free for the first 3 months. No credit card needed.</p>
+                    <a class="button is-green is-full is-wide is-hidden-mobile" href="{{ .Site.Params.appUrl }}/on-boarding">Try it now!</a>
+                </div>
+            </div>
+        </div>
+        <div class="is-footer">
+            <div class="links">
+                <a href="/about-us" class="link" title="About Us">About Us</a>
+                <a href="/faq" class="link" title="FAQ">FAQ</a>
+                <a href="/privacy" class="link" title="Privacy">Privacy</a>
+                <a href="/terms" class="link" title="Terms of Use">Terms of Use</a>
+                <a href="mailto:help@claritus.io" class="link" title="email claritus.io">Contact Us</a>
+            </div>
+
+            <div class="social-block">
+                <div class="social has-bottom-margin-50">
+                    <a href="https://www.linkedin.com/company/claritus-io/" target="_blank"><img src="/images/linkedin.svg" class="has-right-margin-40" /></a>
+                    <a href="https://twitter.com/Claritus_app" target="_blank"><img src="/images/twitter.svg" /></a>
+                    <img src="/images/logo-white.svg" class="logo"/>
+                </div>
+                <p class="copyright">&copy; 2020 Clear Value ltd.</p>
+            </div>
+        </div>
+
+    </section>
 </div>
 {{ end }}

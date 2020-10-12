@@ -1,0 +1,48 @@
+{{ define "content" }}
+<div class="content {{ .Params.content_class }} has-navbar-fixed-top">
+
+    {{ partial "nav" . }}
+    {{ partial "menu.html" }}
+
+    <section class="about-content">
+        <div class="about-header">
+            <div>
+                <h1 class="title" title="{{ .Title }}">{{ .Title }}</h1>
+                <article>
+                    {{ .Content }}
+                </article>
+            </div>
+            <div class="bg-image"></div>
+        </div>
+
+        <div class="about-pages">
+            <div>
+                <div>
+                    <h2>Our Story</h2>
+                    <p>Claritus is the result of a very real and personal need we were all faced with.</p>
+                </div>
+                <a href="{{ ref . "our-story.md" }}">Read more</a>
+            </div>
+            <div>
+                <div>
+                <h2>About Claritus</h2>
+                <p>We hope you will find Claritus
+                    a useful tool that will help you make the right decisions for
+                    a brighter future ahead.</p>
+                </div>
+                <a href="{{ ref . "about.md" }}">Read more</a>
+            </div>
+            <div>
+                <div>
+                <h2>Core Values</h2>
+                <p>Our values play a huge role
+                    in who we are, both as people and as a company</p>
+                </div>
+                <a href="{{ ref . "core-values.md" }}">Read more</a>
+            </div>
+        </div>
+    </section>
+</div>
+{{ end }}
+
+{{ define "title" }}{{ .Title }}{{ end }}

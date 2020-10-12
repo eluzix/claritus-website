@@ -1,38 +1,65 @@
 .content {
-  margin-top: 12.5rem;
   padding-bottom: 6rem;
-
   font-size: 1.3rem;
-  
+
   @include tablet-only {
-    margin-top: 8rem;
     padding-bottom: 4rem;
   }
 
   @include mobile {
-    margin-top: 8rem;
     padding-bottom: 4rem;
   }
 
   .container {
-    max-width: 60rem;
-    margin-right: auto;
-    margin-left: auto;
+    margin-top: 7.1rem;
+
+    &.is-small {
+      max-width: 54rem;
+      margin: 4.375rem auto 0;
+    }
+  }
+
+  h1, h2, p {
+    color: $dark;
   }
 
   h1 {
-    font-size: 2.5rem;
+    font-size: 4.5rem;
+    line-height: 120%;
   }
 
   p {
     line-height: 1.5;
   }
-  
+
+  .point-title {
+    font-size: 2.125rem;
+    line-height: 150%;
+    font-weight: bold;
+  }
+
   ol ol ol {
     list-style-type: lower-latin !important;
 
     ol {
       list-style-type: lower-roman!important;
+    }
+  }
+
+  ul {
+    list-style: circle;
+    list-style-position: inside;
+
+    margin: 0;
+    padding: 0;
+  }
+
+  article {
+    p {
+      font-size: 1.375rem;
+      line-height: 180%;
+      letter-spacing: 0.01em;
+      font-feature-settings: 'liga' off;
     }
   }
 
@@ -44,109 +71,555 @@
     background-color: $grey-bg;
   }
 
+  .hero-image {
+    height: 100%;
+    min-height: 30rem;
+    margin-top: 7.1rem;
+    width: 100vw;
+
+    background-size: cover;
+    background-position: center;
+  }
+
   &.our-story {
     font-size: 1.25rem;
+
+    .content-img {
+      display: none;
+    }
+
+    .hero-image {
+      background-image: url("/images/our-story-img.jpg");
+
+    }
   }
 
   &.our-mission {
-    .article .title:first-of-type {
-      margin-bottom: 5rem;
-    }
-    .article .title:nth-child(2) {
-      margin-top: 0;
-      margin-bottom: 2rem;
+    .hero-image {
+      background-image: url("/images/core-values-img.jpg");
+      background-position: right;
     }
 
-    .cases {
-      margin-top: 3rem;
+    p {
+      margin-bottom: 3.125rem;
+    }
+  }
 
-      .case {
-        display: flex;
-        margin-bottom: 3.4rem;
-        height: 8rem;
+  &.about-claritus {
+    .hero-image {
+      background-image: url("/images/about-claritus.jpg");
+      //background-position: right;
+    }
 
-        .case-img {
-          flex: 1;
-          align-self: center;
-          text-align: center;
+    article p:first-child {
+      color: $green;
+      font-size: 2.125rem;
+      font-weight: 500;
+    }
+  }
 
-          img{
-            width: 100px;
-            height: 100px;
-          }
-        }
+  &.terms {
+    a {
+      color: $green;
+    }
 
-        .case-content {
-          flex: 70%;
-          align-self: center;
-
-          .case-title, .case-description {
-            font-weight: 800;
-            font-size: 1.25rem;
-            line-height: 150%;
-          }
-
-          .case-description {
-            font-weight: initial;
-          }
-        }
+    ul {
+      li a {
+        color: $primary;
       }
     }
 
-    @include mobile {
-      .cases .case {
-        height: auto;
+    .toc ul li {
+      //background: url("/images/faq-bullet.svg") no-repeat 0 0.5rem;
+      background-size: 1.125rem;
+      //padding-left: 2.25rem;
+      margin-bottom: 1rem;
+      line-height: 180%;
+    }
+  }
+}
 
-        .case-img {
+.faq {
+  .container {
+    margin-top: 10rem;
+  }
+
+  h1 {
+    margin-bottom: 3.125rem;
+  }
+
+  h6 {
+    font-weight: normal;
+    font-size: 1.375rem;
+    line-height: 180%;
+    margin-bottom: 9.375rem;
+  }
+
+  article {
+    .faq-items {
+      li {
+        background: url("/images/faq-bullet.svg") no-repeat 0 0;
+        padding-left: 3rem;
+        margin-bottom: 3.125rem;
+        background-size: 2.25rem;
+        
+        h2 {
+          font-size: 2.125rem;
           margin-bottom: 1rem;
+        }
+
+        p {
+          font-size: 1.375rem;
+          line-height: 180%;
+        }
+
+        a {
+          color: $green;
+          &:hover {
+            text-decoration: underline;
+          }
         }
       }
     }
   }
 }
 
-.faq {
-  article {
-    a {
-      color: $black;
-      border-bottom: 1px black solid;
-      &:hover {
-        border-bottom: none;
-        color: #3273dc;
+.about-us {
+  .about-content {
+    margin: 7.1rem $desktop-padding 9.5rem $desktop-padding;
+
+    p {
+      color: $primary;
+    }
+
+    .about-header {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 12.5rem;
+
+      & > div {
+        width: 50%;
+      }
+
+      .bg-image {
+        min-height: 37.5rem;
+        background: transparent url("/images/about-us.jpg") no-repeat 0 0;
+      }
+    }
+
+    .about-pages {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      & > div {
+        width: 21rem;
+
+        & > div {
+          height: 13rem;
+        }
+
+        h2 {
+          font-size: 2.125rem;
+          color: $green;
+        }
+
+        p {
+           font-size: 1.375rem;
+          //color: $primary;
+        }
+
+        a {
+          display: block;
+          text-align: right;
+          color: $dark;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $widescreen) {
+  .about-us {
+    .about-header {
+      & > div:first-child {
+        margin-left: 10rem;
+      }
+
+      article {
+        width: 35rem;
+      }
+    }
+    .about-pages {
+      margin: 0 10rem;
+    }
+  }
+}
+
+@media screen and (max-width: $fullhd) {
+  .content {
+    h1 {
+      font-size: 3.5rem;
+    }
+
+    article p {
+      font-size: 1.125rem;
+      //font-weight: 400;
+    }
+
+    .hero-image {
+      min-height: 30rem;
+    }
+
+    .container.is-small {
+      max-width: 40rem;
+    }
+  }
+
+  .about-us {
+    article {
+      width: 100%;
+      padding-right: 2rem;
+    }
+
+    .about-content {
+      margin-bottom: 1.5rem;
+
+      .about-header {
+        margin-bottom: 10.625rem;
+
+        & > div:first-child{
+          margin-left: 0;
+        }
+
+        .bg-image {
+          min-height: 28rem;
+          background-size: cover;
+        }
+      }
+
+      .about-pages {
+        margin: 0;
+
+        & > div {
+          width: 17rem;
+
+          & > div {
+            height: 15rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: $widescreen) {
+  .content {
+
+    .hero-image {
+      min-height: 20rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+    }
+
+    article {
+      p {
+        font-size: 1rem;
+      }
+    }
+
+    .point-title {
+      font-size: 1.5rem;
+    }
+
+    //.hero-image {
+    //  min-height: 25rem;
+    //}
+
+    .container.is-small {
+      max-width: 40rem;
+    }
+
+    &.about-claritus {
+      article p:first-child {
+        font-size:1.75rem;
       }
     }
   }
 
-  .collapse {
-    .collapsible {
-      background: url("/images/icon-plus.svg") no-repeat left;
-      cursor: pointer;
-      padding: 1.125rem;
-      width: 100%;
-      border: none;
-      text-align: left;
-      outline: none;
-      font-size: 1.25rem;
-      padding-left: 3.25rem;
-      line-height: 2.375rem;
-      border-bottom: 1px solid #D4DAE3;
-      font-weight: bold;
+  .faq {
+    h1 {
+      margin-bottom: 1rem;
+    }
+    h6 {
+      font-size: 1rem;
+      margin-bottom: 5.135rem;
     }
 
-    .active {
-      background-image: url("/images/icon-minus.svg");
-      border-bottom: none;
+    article .faq-items li {
+      background-size: 2.25rem 2.25rem;
+      padding-left: 2.75rem;
+      padding-top: 0.25rem;
+
+
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+
+}
+
+@include tablet-only {
+  .content {
+    .hero-image {
+      min-height: 20rem;
     }
 
-    .collapsible:hover {
-      text-decoration: underline;
+    .container {
+      padding-left: 3rem;
+      padding-right: 3rem;
+
+      &.is-small {
+        max-width: 40rem;
+      }
     }
 
-    .content {
-      margin-top: 0;
-      padding: 0.625rem 1.5rem 0 3.25rem;
+    &.about-claritus {
+      article p:first-child {
+        font-size:1.5rem;
+      }
+    }
+  }
+
+  .about-us {
+    .about-content {
+      margin-left: $ipad-padding;
+      margin-right: $ipad-padding;
+
+      .about-header {
+        margin-bottom: 6.25rem;
+      }
+
+
+      .about-pages {
+        flex-direction: column;
+
+        & > div {
+          width: auto;
+          margin-bottom: 2rem;
+
+          & > div {
+            height: unset;
+            margin-bottom: 1rem;
+          }
+
+          h2 {
+            font-size: 1.5rem;
+          }
+
+          p, a {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include mobile {
+  .content {
+    padding-bottom: 1.165rem;
+
+    .container {
+      padding-left: 1rem;
+      padding-right: 1rem;
+
+      &.is-small {
+        margin-top: 7.1rem;
+      }
+    }
+
+    h1 {
+      font-size: 2.625rem;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+    }
+
+    article {
+      p, li {
+        font-size: 1rem;
+      }
+    }
+
+    .point-title {
+      font-size: 1.5rem;
+    }
+
+    .hero-image {
       display: none;
-      overflow: hidden;
+    }
+
+    &.our-story {
+      article p:first-child:after {
+        content: "";
+        display: block;
+        height: 23.5rem;
+        background: url("/images/our-story-img.jpg") no-repeat 0 0;
+        background-size: cover;
+        margin: 2rem -1.5rem;
+      }
+
+      //.container {
+      //  margin-top: 2rem;
+      //  padding: 0 1.5rem;
+      //}
+    }
+
+    &.our-mission {
+
+      article p:first-child:after {
+        content: "";
+        display: block;
+        height: 23.5rem;
+        background: url("/images/core-values-img.jpg") no-repeat 75% 75%;
+        margin: 2rem -1.5rem;
+      }
+
+      //.container {
+      //  margin-top: 2rem;
+      //  margin-bottom: 0;
+      //}
+    }
+
+    &.about-claritus {
+      article {
+        p:first-child {
+          font-size:1.25rem;
+        }
+
+        p:nth-child(3):after {
+          content: "";
+          display: block;
+          height: 29rem;
+          background: url("/images/about-claritus-mobile.jpg") no-repeat 0 0;
+          background-size: cover;
+          margin: 2rem -1.5rem;
+        }
+      }
+    }
+
+    &.terms {
+      .container {
+        margin-top: 5rem;
+      }
+    }
+
+  }
+
+  .faq {
+
+    h1 {
+      //font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    h6 {
+      font-size: 0.875rem;
+      margin-bottom: 5.135rem;
+    }
+
+    article .faq-items li {
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      p {
+        font-size: 0.875rem;
+      }
+    }
+
+    article .faq-items li {
+      background: url("/images/faq-bullet.svg") no-repeat 0 0;
+      background-size: 1.5rem 1.5rem;
+      padding-left: 2rem;
+      padding-top: 0;
+    }
+  }
+
+  .about-us {
+    .about-content {
+      //margin-top: 5rem;
+      
+      margin-left: $mobile-padding;
+      margin-right: $mobile-padding;
+
+      .about-header {
+        flex-direction: column;
+        margin-bottom: 6.25rem;
+
+        & > div {
+          width: 100%;
+        }
+
+        h1 {
+          text-align: center;
+        }
+
+        article {
+          padding: 0;
+        }
+
+        .bg-image {
+          margin-top: 2rem;
+          min-height: 23.5rem;
+        }
+      }
+
+      .about-pages {
+        flex-direction: column;
+
+        & > div {
+          width: auto;
+          margin-bottom: 2rem;
+
+          & > div {
+            height: unset;
+            margin-bottom: 1rem;
+          }
+
+          h2 {
+            font-size: 1.75rem;
+          }
+
+          p {
+            font-size: 1rem;
+          }
+
+          a {
+            font-size: 1rem;
+            font-weight: 500;
+          }
+
+          &:not(:last-child) {
+            margin-bottom: 3.5rem;
+          }
+        }
+      }
     }
   }
 }
