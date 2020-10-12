@@ -157,6 +157,8 @@
 
   article {
     .faq-items {
+      list-style: none;
+      
       li {
         background: url("/images/faq-bullet.svg") no-repeat 0 0;
         padding-left: 3rem;
