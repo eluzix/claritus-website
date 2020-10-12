@@ -132,11 +132,11 @@ document.addEventListener('DOMContentLoaded', function () {
     // app.setupSlider();
     app.initMenuOpening()
 
-    const terms = document.querySelector('.content.terms')
-    if (terms) {
-        document.querySelector('.root').classList.add('scroll-y')
-        document.getElementsByTagName('html')[0].classList.add('scroll-y')
-    }
+    // const terms = document.querySelector('.content.terms')
+    // if (terms) {
+    //     document.querySelector('.root').classList.add('scroll-y')
+    //     document.getElementsByTagName('html')[0].classList.add('scroll-y')
+    // }
 
     if (app.isMobile()) {
         Intercom('update', {
