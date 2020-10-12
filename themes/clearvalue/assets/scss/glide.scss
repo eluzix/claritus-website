@@ -70,7 +70,7 @@
     .glide__bullets {
       text-align: center;
       position: absolute;
-      bottom: 10%;
+      bottom: 3rem;
       width: calc(100vw - 10rem);
       pointer-events: none;
 
@@ -142,7 +142,7 @@
 
       .glide__arrows {
         top: unset;
-        bottom: 7.5%;
+        bottom: 1.5rem;
       }
     }
   }
@@ -155,6 +155,7 @@
       .glide__slide {
         flex-direction: column-reverse;
         align-items: flex-start;
+        padding-left: 7rem;
 
         .slide-image {
           width: 100%;
@@ -164,6 +165,10 @@
           }
         }
 
+        .slide-content {
+          margin-bottom: 2.5rem;
+        }
+
         h2 {
           margin-bottom: 2.5rem;
         }
@@ -171,6 +176,15 @@
         .slide-text {
           font-size: 1rem;
         }
+      }
+
+      .glide__arrows {
+        width: calc(100vw - 6.35rem);
+        bottom: 4.5rem;
+      }
+      .glide__bullets {
+        width: calc(100vw - 6.35rem);
+        bottom: 6rem;
       }
     }
   }
@@ -183,6 +197,7 @@
       .glide__slide {
         margin-left: $mobile-padding;
         margin-right: $mobile-padding;
+        padding-left: 0;
 
         .slide-image {
           img {
