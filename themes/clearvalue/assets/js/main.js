@@ -56,7 +56,10 @@ const app = {
     setupSlider() {
         if (document.querySelector('.home')) {
 
-            new Glide('.glide').mount()
+            new Glide('.glide', {
+                autoplay: 6000,
+                hoverpause: false,
+            }).mount()
 
             // const slider = new KeenSlider("#main-slider", {
             //     loop: true,
