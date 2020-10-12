@@ -5,7 +5,8 @@ url: /about-us
 type: about-us
 content_class: about-us
 ---
-Each of us, The founders of Claritus bring a combination of more than 20 years of experience 
-in the process of building startups, platforms and companies. 
-We remain humble because we know that there are many talented people out there who share our passion. 
-This was a great challenge, but the creation of a precise and intuitive product was and remains of paramount importance to us in this venture.
+As the 3 founders of Claritus, we bring over 20 years of combined tech-startup experience to the table. 
+We have a passion for finding solutions and bringing our visions to reality. 
+In the end, however, it’s the creation of a precise, intuitive product that remains the reason we do what we do. 
+We put all of that passion and know-how into Claritus. 
+It’s the tool we use and we hope you find it just as useful and simple to use as we do.
