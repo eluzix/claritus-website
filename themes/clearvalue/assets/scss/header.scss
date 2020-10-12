@@ -31,17 +31,10 @@
       .button.is-login, .button.is-login:hover {
         border: none;
         background-color: transparent;
-        color: $dark;
       }
 
       & > .button:hover {
         font-weight: 600;
-      }
-    }
-
-    @include desktop {
-      &.on-section-3 img.logo {
-        content: url("/images/logo-white.svg");
       }
     }
 
@@ -56,6 +49,10 @@
             background-color: $white;
           }
         }
+      }
+
+      &.on-section-3 img.logo {
+        content: url("/images/logo-white.svg");
       }
     }
 
