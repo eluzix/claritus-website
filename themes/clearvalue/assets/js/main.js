@@ -3,20 +3,6 @@ const sliderIntervalTime = 6000000 // 5sec
 const app = {
 
     glide: null,
-    // earlyAccessClick(e){
-    //     const parent = e.target.closest('.early-access');
-    //     const input = parent.querySelector('input.input');
-    // },
-
-    overlayScrollbar() {
-        // OverlayScrollbars(document.querySelectorAll('body'), {
-        //     scrollbars: {
-        //         snapHandle: true,
-        //         clickScrolling: true,
-        //         autoHide: 'scroll',
-        //     },
-        // });
-    },
 
     setupSnapScrolling() {
         try {
@@ -24,7 +10,6 @@ const app = {
                 const navbar = document.querySelector('header nav.nav')
 
                 entries.forEach((entry) => {
-                    // console.log(entry.target, '>>>', entry.intersectionRatio)
                     if (entry.intersectionRatio >= 0.05) {
                         entry.target.classList.add('is-visible')
                         entry.target.classList.forEach((cls) => {
@@ -47,9 +32,9 @@ const app = {
                     }
                 })
             }, {
-                                                          rootMargin: '0px',
-                                                          threshold: [0.05]
-                                                      })
+              rootMargin: '0px',
+              threshold: [0.05]
+            })
 
             const sections = [...document.querySelectorAll('.home section')]
             sections.forEach((section, index) => {
@@ -114,22 +99,9 @@ function toggleMenu() {
     }
 }
 
-// function updateClasses(instance) {
-//     var slide = instance.details().relativeSlide;
-//
-//     var dots = document.querySelectorAll(".dot");
-//     dots.forEach(function(dot, idx) {
-//         idx === slide
-//             ? dot.classList.add("dot--active")
-//             : dot.classList.remove("dot--active");
-//     });
-// }
-
 document.addEventListener('DOMContentLoaded', function () {
 
-    // app.overlayScrollbar();
     app.setupSnapScrolling()
-    // app.setupSlider();
     app.initMenuOpening()
 
     // const terms = document.querySelector('.content.terms')
