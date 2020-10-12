@@ -15,9 +15,9 @@
 @import "../bulma/sass/elements/content";
 @import "../bulma/sass/elements/table";
 
-html.scroll-y {
-  overflow-y: scroll;
-}
+//html.scroll-y {
+//  overflow-y: scroll;
+//}
 
 body {
   height: 100vh;
@@ -31,9 +31,9 @@ body {
   flex-direction: column;
   justify-content: space-between;
 
-  &.scroll-y {
-    overflow-y: scroll;
-  }
+  //&.scroll-y {
+  //  overflow-y: scroll;
+  //}
 }
 
 .footer {
