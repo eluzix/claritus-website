@@ -643,8 +643,8 @@
     .section.home-footer {
 
       & > div:first-child {
-        height: 85vh;
-        padding: 0 2rem;
+        height: auto;
+        padding: 2rem;
       }
 
       .pricing {
