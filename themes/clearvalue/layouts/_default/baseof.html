@@ -41,6 +41,10 @@
     <link href="{{ .RelPermalink }}" rel="feed" type="application/rss+xml" />
     {{ end }}
 
+    {{if .IsHome}}
+    <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+    {{ end }}
+
     {{ $js := resources.Get "js/main.js" }}
     <script src="{{ $js.Permalink }}"></script>
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>

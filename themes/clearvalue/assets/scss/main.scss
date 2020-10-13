@@ -19,6 +19,10 @@
 //  overflow-y: scroll;
 //}
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   height: 100vh;
   font-size: 1.2rem;
