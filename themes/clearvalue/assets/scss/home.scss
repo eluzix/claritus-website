@@ -62,7 +62,7 @@
       line-height: 180%;
       letter-spacing: 0.01em;
       font-feature-settings: 'liga' off;
-      color: $primary;
+      //color: $primary;
 
       &.is-small {
         font-size: 1rem;
@@ -88,8 +88,14 @@
       }
     }
 
-    &.section-1 .bg-image {
-      background-image: url("/images/home-section-1.jpg");
+    &.section-1{
+      .is-p {
+        color: $primary;
+      }
+
+      .bg-image {
+        background-image: url("/images/home-section-1.jpg");
+      }
     }
 
     &.section-2 .bg-image {
@@ -526,6 +532,14 @@
         padding: 0;
         margin-top: 0;
         scroll-margin-top: 0;
+
+        .is-p {
+          color: $white;
+          img {
+            content: url("/images/logo-white.svg");
+            width: 5.625rem;
+          }
+        }
 
         .centered {
           padding: 2rem;
