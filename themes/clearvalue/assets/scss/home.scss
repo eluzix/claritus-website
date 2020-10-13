@@ -91,6 +91,9 @@
     &.section-1{
       .is-p {
         color: $primary;
+        img {
+          width: 5rem;
+        }
       }
 
       .bg-image {
@@ -537,7 +540,7 @@
           color: $white;
           img {
             content: url("/images/logo-white.svg");
-            width: 5.625rem;
+            //width: 5.625rem;
           }
         }
 

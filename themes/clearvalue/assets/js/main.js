@@ -32,9 +32,9 @@ const app = {
                     }
                 })
             }, {
-              rootMargin: '0px',
-              threshold: [0.05]
-            })
+                                                          rootMargin: '0px',
+                                                          threshold: [0.05]
+                                                      })
 
             const sections = [...document.querySelectorAll('.home section')]
             sections.forEach((section, index) => {
@@ -79,6 +79,20 @@ const app = {
         })(navigator.userAgent || navigator.vendor || window.opera)
         return check
     },
+
+    homeScrollToPricing() {
+        document.querySelector('.section-1 a.is-p').addEventListener('click', (e) => {
+            e.cancelable = true;
+            e.preventDefault();
+
+            document.querySelector('.home-footer .pricing').scrollIntoView(
+              {
+                  behavior: 'smooth'
+              })
+
+            return false
+        })
+    }
 }
 
 function toggleMenu() {
@@ -103,6 +117,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     app.setupSnapScrolling()
     app.initMenuOpening()
+    app.homeScrollToPricing()
 
     // const terms = document.querySelector('.content.terms')
     // if (terms) {
