@@ -57,11 +57,12 @@
       line-height: 130%;
     }
 
-    p {
+    p, a.is-p {
       font-size: 1.375rem;
       line-height: 180%;
       letter-spacing: 0.01em;
       font-feature-settings: 'liga' off;
+      color: $primary;
 
       &.is-small {
         font-size: 1rem;
@@ -141,7 +142,7 @@
         }
 
         .pricing-content {
-          max-width: 35rem;
+          max-width: 45rem;
           display: inline-block;
           margin-left: 9.5rem;
         }
@@ -252,7 +253,7 @@
           }
 
           .pricing-content {
-            //padding: 0 3rem 0 4rem;
+            max-width: 35rem;
             margin-left: 0;
           }
         }
@@ -634,10 +635,20 @@
       &.is-reversed-mobile {
         flex-direction: column-reverse;
       }
-    }
 
-    &.section-6 .bg-image {
-      background-size: 60%;
+      &.section-6 {
+        height: auto;
+
+        .bg-image {
+          background-size: contain;
+          min-height: 35vh;
+          margin-bottom: 2rem;
+        }
+
+        .centered {
+          padding-bottom: 2rem;
+        }
+      }
     }
 
     .section.home-footer {
