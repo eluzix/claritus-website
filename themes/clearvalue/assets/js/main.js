@@ -92,7 +92,27 @@ const app = {
 
             return false
         })
-    }
+    },
+
+    setupIntercomMessage() {
+        const elements = document.querySelectorAll('.contact-us-link')
+        for (let i = 0; i < elements.length; i++){
+            elements[i].addEventListener('click', (e) => {
+                if (window.Intercom) {
+                    e.cancelable = true;
+                    e.preventDefault();
+                    app.openIntercomMessage()
+                    return false
+                }
+            })
+        }
+    },
+
+    openIntercomMessage() {
+        if (window.Intercom) {
+            window.Intercom("showNewMessage");
+        }
+    },
 }
 
 function toggleMenu() {
@@ -118,12 +138,7 @@ document.addEventListener('DOMContentLoaded', function () {
     app.setupSnapScrolling()
     app.initMenuOpening()
     app.homeScrollToPricing()
-
-    // const terms = document.querySelector('.content.terms')
-    // if (terms) {
-    //     document.querySelector('.root').classList.add('scroll-y')
-    //     document.getElementsByTagName('html')[0].classList.add('scroll-y')
-    // }
+    app.setupIntercomMessage();
 
     if (app.isMobile()) {
         Intercom('update', {
