@@ -136,14 +136,14 @@ const app = {
                 header.classList.remove('menu-open')
                 burger.classList.remove('is-active')
                 menu.classList.toggle('is-block')
-            }, 500)
+            }, 400)
         } else {
             menu.classList.toggle('is-block')
             setTimeout(() => {
                 header.classList.add('menu-open')
                 burger.classList.add('is-active')
                 menu.classList.toggle('menu--active')
-            }, 300)
+            }, 200)
         }
     },
 }

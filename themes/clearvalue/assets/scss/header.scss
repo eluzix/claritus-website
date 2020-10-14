@@ -36,6 +36,10 @@
       & > .button:hover {
         font-weight: 600;
       }
+
+      .burger:hover {
+        background-color: transparent;
+      }
     }
 
     @include desktop {
