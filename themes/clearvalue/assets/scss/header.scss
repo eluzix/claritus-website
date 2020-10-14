@@ -76,6 +76,25 @@
       //}
     }
   }
+
+
+  &.menu-open {
+    background-color: transparent;
+    //background-color: $white;
+    z-index: 600;
+
+    .nav {
+      .links {
+        .button {
+          color: $dark;
+        }
+
+        .burger span {
+          background-color: $dark;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: $fullhd) and (min-width: $desktop + 1) {

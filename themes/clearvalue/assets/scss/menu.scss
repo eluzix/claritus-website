@@ -56,21 +56,22 @@
   }
 
   .menu-controls {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-
-    .logo {
-      max-width: 2.5rem;
-      max-height: 2.5rem;
-    }
-
-    .icon-close {
-      max-width: 1.688rem;
-      max-height: 1.688rem;
-      cursor: pointer;
-    }
+    display: none;
+    //display: flex;
+    //flex-direction: row;
+    //justify-content: flex-end;
+    //align-items: center;
+    //
+    //.logo {
+    //  max-width: 2.5rem;
+    //  max-height: 2.5rem;
+    //}
+    //
+    //.icon-close {
+    //  max-width: 1.688rem;
+    //  max-height: 1.688rem;
+    //  cursor: pointer;
+    //}
   }
 
   .menu-list {
