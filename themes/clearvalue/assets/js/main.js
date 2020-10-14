@@ -113,13 +113,13 @@ const app = {
     openIntercomMessage() {
         if (window.Intercom) {
             window.Intercom("showNewMessage");
-            // window.setTimeout(() => {
-            //     const int = document.querySelector('.intercom-messenger-new-conversation')
-            //     console.log('>>>>>> int:', int)
-            //     if (int === null) {
-            //         window.location.href = 'mailto:help@claritus.io';
-            //     }
-            // }, 2000)
+            window.setTimeout(() => {
+                const int = document.querySelector('.intercom-messenger-frame')
+                // console.log('>>>>>> int:', int)
+                if (int === null) {
+                    window.location.href = 'mailto:help@claritus.io';
+                }
+            }, 2000)
         }
     },
 }
