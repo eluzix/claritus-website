@@ -95,7 +95,7 @@ const app = {
     },
 
     setupIntercomMessage() {
-        if (window.Intercom) {
+        if (window.Intercom && !app.isMobile()) {
             const elements = document.querySelectorAll('.contact-us-link')
             for (let i = 0; i < elements.length; i++) {
                 elements[i].addEventListener('click', (e) => {
@@ -113,6 +113,11 @@ const app = {
     openIntercomMessage() {
         if (window.Intercom) {
             window.Intercom("showNewMessage");
+            window.setTimeout(() => {
+                if (!document.querySelector('.intercom-messenger-new-conversation')) {
+                    window.location.href = 'mailto:help@claritus.io';
+                }
+            }, 2000)
         }
     },
 }
@@ -142,7 +147,7 @@ document.addEventListener('DOMContentLoaded', function () {
     app.homeScrollToPricing()
     app.setupIntercomMessage();
 
-    if (app.isMobile()) {
+    if (app.isMobile() && window.Intercom) {
         window.Intercom('update', {
             'hide_default_launcher': true
         })
