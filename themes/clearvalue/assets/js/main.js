@@ -111,7 +111,7 @@ const app = {
     openIntercomMessage() {
         if (window.Intercom) {
             if (app.isMobile()) {
-                Intercom('update', {
+                window.Intercom('update', {
                     'hide_default_launcher': false
                 })
 
@@ -148,7 +148,7 @@ document.addEventListener('DOMContentLoaded', function () {
     app.setupIntercomMessage();
 
     if (app.isMobile()) {
-        Intercom('update', {
+        window.Intercom('update', {
             'hide_default_launcher': true
         })
 
