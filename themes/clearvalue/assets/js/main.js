@@ -95,28 +95,23 @@ const app = {
     },
 
     setupIntercomMessage() {
-        const elements = document.querySelectorAll('.contact-us-link')
-        for (let i = 0; i < elements.length; i++){
-            elements[i].addEventListener('click', (e) => {
-                if (window.Intercom) {
-                    e.cancelable = true;
-                    e.preventDefault();
-                    app.openIntercomMessage()
-                    return false
-                }
-            })
+        if (window.Intercom) {
+            const elements = document.querySelectorAll('.contact-us-link')
+            for (let i = 0; i < elements.length; i++) {
+                elements[i].addEventListener('click', (e) => {
+                    if (window.Intercom) {
+                        e.cancelable = true;
+                        e.preventDefault();
+                        app.openIntercomMessage()
+                        return false
+                    }
+                })
+            }
         }
     },
 
     openIntercomMessage() {
         if (window.Intercom) {
-            // if (app.isMobile()) {
-            //     window.Intercom('update', {
-            //         'hide_default_launcher': false
-            //     })
-            //
-            // }
-            
             window.Intercom("showNewMessage");
         }
     },
