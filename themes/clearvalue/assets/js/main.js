@@ -110,12 +110,12 @@ const app = {
 
     openIntercomMessage() {
         if (window.Intercom) {
-            if (app.isMobile()) {
-                window.Intercom('update', {
-                    'hide_default_launcher': false
-                })
-
-            }
+            // if (app.isMobile()) {
+            //     window.Intercom('update', {
+            //         'hide_default_launcher': false
+            //     })
+            //
+            // }
             
             window.Intercom("showNewMessage");
         }
