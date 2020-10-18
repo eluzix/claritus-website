@@ -14,7 +14,7 @@
     width: 100vw;
     height: 100vh;
     scroll-snap-align: start;
-    scroll-snap-stop: always;
+    //scroll-snap-stop: always;
 
     display: flex;
     flex-direction: row;
@@ -92,7 +92,7 @@
       .is-p {
         color: $primary;
         img {
-          width: 4rem;
+          width: 5rem;
           margin-top: 0.2rem;
         }
       }
@@ -157,8 +157,8 @@
           margin-left: 9.5rem;
 
           img.is-v-middle {
-            max-width: 5rem;
-            margin-top: 0.3rem;
+            max-width: 6rem;
+            margin-top: 0.2rem;
           }
         }
       }
