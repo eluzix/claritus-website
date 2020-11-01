@@ -100,6 +100,7 @@ we will notify you by posting a notice through our Services or by other means.
                     <ul>
                         <li>Google Analytics (analytics tool)</li>                    
                         <li>Facebook Pixel (analytics)</li>
+                        <li>Intercom</li>
                         <li>AWS (cloud)</li>
                     </ul>                    
                 </td>
