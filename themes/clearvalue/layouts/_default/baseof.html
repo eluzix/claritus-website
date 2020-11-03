@@ -48,28 +48,25 @@
     {{ $js := resources.Get "js/main.js" }}
     <script src="{{ $js.Permalink }}"></script>
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id={{ .Site.Params.gtagConfig }}"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+<!--    <script async src="https://www.googletagmanager.com/gtag/js?id={{ .Site.Params.gtagConfig }}"></script>-->
+<!--    <script>-->
+<!--        window.dataLayer = window.dataLayer || [];-->
+<!--        function gtag(){dataLayer.push(arguments);}-->
+<!--        gtag('js', new Date());-->
 
-        gtag('config', '{{ .Site.Params.gtagConfig }}');
-        gtag('config', 'AW-568330611');
-    </script>
+<!--        gtag('config', '{{ .Site.Params.gtagConfig }}');-->
+<!--        gtag('config', 'AW-568330611');-->
+<!--    </script>-->
 
-    <script>
-        window.intercomSettings = {
-            app_id: "xjensfym"
-        };
-        // We pre-filled your app ID in the widget URL: 'https://widget.intercom.io/widget/xjensfym'
-        (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/xjensfym';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
-    </script>
-    {{ partial "inspectlet.html" . }}
+    {{ partial "tagmanager.html" . }}
     {{ hugo.Generator }}
 </head>
 
 <body class="{{ if .Site.Params.rtl }}rtl{{ end }}">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WGQNHJ8"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 <div class="root">
     {{ block "content" . }}{{ end }}
 
