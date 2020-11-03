@@ -311,6 +311,11 @@
           & > div {
             height: 15rem;
           }
+
+          p {
+            font-size: 1rem;
+            //color: $primary;
+          }
         }
       }
     }
@@ -355,6 +360,10 @@
       article p:first-child {
         font-size:1.75rem;
       }
+    }
+
+    .about-us .about-content .about-pages > div p {
+      font-size: 1rem;
     }
   }
 
