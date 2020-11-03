@@ -4,15 +4,16 @@
     {{ partial "nav" . }}
     {{ partial "menu.html" }}
 
-    <section class="about-content">
-        <div class="about-header">
+    <div class="hero-image"></div>
+
+    <section class="container is-small">
+        <div>
             <div>
                 <h1 class="title" title="{{ .Title }}">{{ .Title }}</h1>
                 <article>
                     {{ .Content }}
                 </article>
             </div>
-            <div class="bg-image"></div>
         </div>
 
         <div class="about-pages">
@@ -22,15 +23,6 @@
                     <p>Claritus is the result of a very real and personal need we were all faced with.</p>
                 </div>
                 <a href="{{ ref . "our-story.md" }}">Read more</a>
-            </div>
-            <div>
-                <div>
-                <h2>About Claritus</h2>
-                <p>We hope you will find Claritus
-                    a useful tool that will help you make the right decisions for
-                    a brighter future ahead.</p>
-                </div>
-                <a href="{{ ref . "about.md" }}">Read more</a>
             </div>
             <div>
                 <div>
