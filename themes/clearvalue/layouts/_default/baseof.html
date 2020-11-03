@@ -48,22 +48,25 @@
     {{ $js := resources.Get "js/main.js" }}
     <script src="{{ $js.Permalink }}"></script>
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id={{ .Site.Params.gtagConfig }}"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+<!--    <script async src="https://www.googletagmanager.com/gtag/js?id={{ .Site.Params.gtagConfig }}"></script>-->
+<!--    <script>-->
+<!--        window.dataLayer = window.dataLayer || [];-->
+<!--        function gtag(){dataLayer.push(arguments);}-->
+<!--        gtag('js', new Date());-->
 
-        gtag('config', '{{ .Site.Params.gtagConfig }}');
-        gtag('config', 'AW-568330611');
-    </script>
+<!--        gtag('config', '{{ .Site.Params.gtagConfig }}');-->
+<!--        gtag('config', 'AW-568330611');-->
+<!--    </script>-->
 
-    {{ partial "intercom.html" . }}
-    {{ partial "hotjar.html" . }}
+    {{ partial "tagmanager.html" . }}
     {{ hugo.Generator }}
 </head>
 
 <body class="{{ if .Site.Params.rtl }}rtl{{ end }}">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WGQNHJ8"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 <div class="root">
     {{ block "content" . }}{{ end }}
 
