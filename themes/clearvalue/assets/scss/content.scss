@@ -73,8 +73,8 @@
 
   .hero-image {
     //height: 100%;
-    min-height: 30rem;
-    margin-top: 7.1rem;
+    min-height: 20rem;
+    margin-top: 5rem;
     width: 100vw;
 
     background-size: cover;
@@ -266,9 +266,9 @@
       //font-weight: 400;
     }
 
-    .hero-image {
-      min-height: 30rem;
-    }
+    //.hero-image {
+    //  min-height: 30rem;
+    //}
 
     .container.is-small {
       max-width: 40rem;
@@ -322,9 +322,9 @@
 @media screen and (max-width: $widescreen) {
   .content {
 
-    .hero-image {
-      min-height: 20rem;
-    }
+    //.hero-image {
+    //  min-height: 20rem;
+    //}
 
     h1 {
       font-size: 2.5rem;
@@ -395,9 +395,9 @@
 
 @include tablet-only {
   .content {
-    .hero-image {
-      min-height: 20rem;
-    }
+    //.hero-image {
+    //  min-height: 20rem;
+    //}
 
     .container {
       padding-left: 3rem;
@@ -575,6 +575,14 @@
   }
 
   .about-us {
+    article p:first-child:after {
+      content: "";
+      display: block;
+      height: 23.5rem;
+      background: url("/images/about-us.jpg") no-repeat 0 0;
+      background-size: cover;
+      margin: 2rem -1.5rem;
+    }
     .about-pages {
       flex-direction: column;
       margin-top: 3.75rem;
