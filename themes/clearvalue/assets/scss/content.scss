@@ -42,7 +42,7 @@
     list-style-type: lower-latin !important;
 
     ol {
-      list-style-type: lower-roman!important;
+      list-style-type: lower-roman !important;
     }
   }
 
@@ -190,6 +190,7 @@
 
         a {
           color: $green;
+
           &:hover {
             text-decoration: underline;
           }
@@ -206,32 +207,38 @@
     margin-bottom: 1em;
   }
 
-    .about-pages {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
+  .about-pages {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 5rem;
+
+    & > div {
+      width: 40%;
 
       & > div {
-        width: 40%;
+        margin-bottom: 2rem;
+      }
 
-        & > div {
-          margin-bottom: 2rem;
-        }
+      h2 {
+        font-size: 2.125rem;
+        color: $green;
+      }
 
-        h2 {
-          font-size: 1.5rem;
-          color: $green;
-        }
+      p {
+        font-size: 1.375rem;
+        //color: $primary;
+      }
 
-        a {
-          font-size: 1.125rem;
-          display: block;
-          text-align: right;
-          color: $dark;
-          text-decoration: underline;
-        }
+      a {
+        //font-size: 1.125rem;
+        display: block;
+        text-align: right;
+        color: $dark;
+        text-decoration: underline;
       }
     }
+  }
 }
 
 @media screen and (min-width: $widescreen) {
@@ -274,39 +281,40 @@
       padding-right: 2rem;
     }
 
-    .about-content {
-      margin-bottom: 1.5rem;
+    //.about-content {
+    //  margin-bottom: 1.5rem;
 
-      .about-header {
-        margin-bottom: 10.625rem;
+    .about-header {
+      margin-bottom: 10.625rem;
 
-        & > div:first-child{
-          margin-left: 0;
-        }
-
-        .bg-image {
-          min-height: 28rem;
-          background-size: cover;
-        }
+      & > div:first-child {
+        margin-left: 0;
       }
 
-      .about-pages {
-        margin: 0;
+      .bg-image {
+        min-height: 28rem;
+        background-size: cover;
+      }
+    }
+
+    .about-pages {
+      //margin: 0;
+
+      & > div {
+        width: 17rem;
 
         & > div {
-          width: 17rem;
+          height: 15rem;
+        }
 
-          & > div {
-            height: 15rem;
-          }
-
-          p {
-            font-size: 1rem;
-            //color: $primary;
-          }
+        p {
+          font-size: 1.125rem;
+          //color: $primary;
         }
       }
     }
+
+    //}
   }
 }
 
@@ -346,11 +354,13 @@
 
     &.about-claritus {
       article p:first-child {
-        font-size:1.75rem;
+        font-size: 1.75rem;
       }
     }
+  }
 
-    .about-us .about-content .about-pages > div p {
+  .about-us .about-pages > div {
+    p, a {
       font-size: 1rem;
     }
   }
@@ -359,6 +369,7 @@
     h1 {
       margin-bottom: 1rem;
     }
+
     h6 {
       font-size: 1rem;
       margin-bottom: 5.135rem;
@@ -399,43 +410,45 @@
 
     &.about-claritus {
       article p:first-child {
-        font-size:1.5rem;
+        font-size: 1.5rem;
       }
     }
   }
 
   .about-us {
-    .about-content {
-      margin-left: $ipad-padding;
-      margin-right: $ipad-padding;
+    //.about-content {
+    //  margin-left: $ipad-padding;
+    //  margin-right: $ipad-padding;
 
-      .about-header {
-        margin-bottom: 6.25rem;
-      }
+    .about-header {
+      margin-bottom: 6.25rem;
+    }
 
 
-      .about-pages {
-        flex-direction: column;
+    .about-pages {
+      flex-direction: column;
+      margin-top: 3.75rem;
+
+      & > div {
+        width: auto;
+        margin-bottom: 2rem;
+
+        p, a {
+          font-size: 1rem;
+        }
 
         & > div {
-          width: auto;
-          margin-bottom: 2rem;
+          height: unset;
+          margin-bottom: 1rem;
+        }
 
-          & > div {
-            height: unset;
-            margin-bottom: 1rem;
-          }
-
-          h2 {
-            font-size: 1.5rem;
-          }
-
-          p, a {
-            font-size: 1rem;
-          }
+        h2 {
+          font-size: 1.5rem;
         }
       }
     }
+
+    //}
   }
 }
 
@@ -509,7 +522,7 @@
     &.about-claritus {
       article {
         p:first-child {
-          font-size:1.25rem;
+          font-size: 1.25rem;
         }
 
         p:nth-child(3):after {
@@ -537,6 +550,7 @@
       //font-size: 2.5rem;
       margin-bottom: 1rem;
     }
+
     h6 {
       font-size: 0.875rem;
       margin-bottom: 5.135rem;
@@ -563,15 +577,30 @@
   .about-us {
     .about-pages {
       flex-direction: column;
+      margin-top: 3.75rem;
 
       & > div {
         width: 95%;
         margin-bottom: 1rem;
-      }
-    }
 
-    p {
-      font-size: 1rem;
+        & > div {
+          height: auto;
+        }
+
+        p {
+          font-size: 1rem;
+        }
+
+        a {
+          font-size: 1rem;
+          font-weight: 500;
+        }
+      }
+
+
+      h2 {
+        font-size: 1.75rem;
+      }
     }
   }
 }

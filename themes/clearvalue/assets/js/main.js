@@ -81,17 +81,20 @@ const app = {
     },
 
     homeScrollToPricing() {
-        document.querySelector('.section-1 a.is-p').addEventListener('click', (e) => {
-            e.cancelable = true;
-            e.preventDefault();
+        const isP = document.querySelector('.section-1 a.is-p')
+        if (isP){
+            isP.addEventListener('click', (e) => {
+                e.cancelable = true;
+                e.preventDefault();
 
-            document.querySelector('.home-footer .pricing').scrollIntoView(
-              {
-                  behavior: 'smooth'
-              })
+                document.querySelector('.home-footer .pricing').scrollIntoView(
+                  {
+                      behavior: 'smooth'
+                  })
 
-            return false
-        })
+                return false
+            })
+        }
     },
 
     setupIntercomMessage() {
