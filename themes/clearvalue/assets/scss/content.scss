@@ -94,6 +94,19 @@
     }
   }
 
+  &.about-us {
+    font-size: 1.25rem;
+
+    .content-img {
+      display: none;
+    }
+
+    .hero-image {
+      background-image: url("/images/about-us.jpg");
+
+    }
+  }
+
   &.our-mission {
     .hero-image {
       background-image: url("/images/core-values-img.jpg");
@@ -158,13 +171,13 @@
   article {
     .faq-items {
       list-style: none;
-      
+
       li {
         background: url("/images/faq-bullet.svg") no-repeat 0 0;
         padding-left: 3rem;
         margin-bottom: 3.125rem;
         background-size: 2.25rem;
-        
+
         h2 {
           font-size: 2.125rem;
           margin-bottom: 1rem;
@@ -187,28 +200,11 @@
 }
 
 .about-us {
-  .about-content {
-    margin: 7.1rem $desktop-padding 9.5rem $desktop-padding;
 
-    p {
-      color: $primary;
-    }
-
-    .about-header {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      margin-bottom: 12.5rem;
-
-      & > div {
-        width: 50%;
-      }
-
-      .bg-image {
-        min-height: 37.5rem;
-        background: transparent url("/images/about-us.jpg") no-repeat 0 0;
-      }
-    }
+  p {
+    font-size: 1.125rem;
+    margin-bottom: 1em;
+  }
 
     .about-pages {
       display: flex;
@@ -216,23 +212,19 @@
       justify-content: space-between;
 
       & > div {
-        width: 21rem;
+        width: 40%;
 
         & > div {
-          height: 13rem;
+          margin-bottom: 2rem;
         }
 
         h2 {
-          font-size: 2.125rem;
+          font-size: 1.5rem;
           color: $green;
         }
 
-        p {
-           font-size: 1.375rem;
-          //color: $primary;
-        }
-
         a {
+          font-size: 1.125rem;
           display: block;
           text-align: right;
           color: $dark;
@@ -240,7 +232,6 @@
         }
       }
     }
-  }
 }
 
 @media screen and (min-width: $widescreen) {
@@ -253,9 +244,6 @@
       article {
         width: 35rem;
       }
-    }
-    .about-pages {
-      margin: 0 10rem;
     }
   }
 }
@@ -573,64 +561,17 @@
   }
 
   .about-us {
-    .about-content {
-      //margin-top: 5rem;
-      
-      margin-left: $mobile-padding;
-      margin-right: $mobile-padding;
+    .about-pages {
+      flex-direction: column;
 
-      .about-header {
-        flex-direction: column;
-        margin-bottom: 6.25rem;
-
-        & > div {
-          width: 100%;
-        }
-
-        h1 {
-          text-align: center;
-        }
-
-        article {
-          padding: 0;
-        }
-
-        .bg-image {
-          margin-top: 2rem;
-          min-height: 23.5rem;
-        }
+      & > div {
+        width: 95%;
+        margin-bottom: 1rem;
       }
+    }
 
-      .about-pages {
-        flex-direction: column;
-
-        & > div {
-          width: auto;
-          margin-bottom: 2rem;
-
-          & > div {
-            height: unset;
-            margin-bottom: 1rem;
-          }
-
-          h2 {
-            font-size: 1.75rem;
-          }
-
-          p {
-            font-size: 1rem;
-          }
-
-          a {
-            font-size: 1rem;
-            font-weight: 500;
-          }
-
-          &:not(:last-child) {
-            margin-bottom: 3.5rem;
-          }
-        }
-      }
+    p {
+      font-size: 1rem;
     }
   }
 }
