@@ -57,6 +57,7 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     display: flex;
+    padding-top: 0.5rem;
 
     a {
       font-weight: 500;
@@ -87,16 +88,21 @@ body {
     justify-content: space-between;
     text-align: right;
 
-    margin-top: -0.5rem;
+    //margin-top: -0.5rem;
     margin-bottom: 3rem;
 
     .has-bottom-margin-50 {
       margin-bottom: 0;
     }
 
-    a img {
-      max-width: 2rem;
+    a {
+      display: inline-block;
+
+      img {
+        max-width: 2rem;
+      }
     }
+
 
     .logo {
       display: inline-block;
@@ -105,6 +111,9 @@ body {
     }
 
     .social {
+      display: flex;
+      align-items: center;
+      
       img.has-right-margin-40 {
         margin-right: 1.75rem;
       }
