@@ -71,6 +71,20 @@ const app = {
         }
     },
 
+    initGoUpButton() {
+
+        let goUpDiv = document.createElement('div');
+        goUpDiv.className = 'go-up';
+        goUpDiv.innerHTML = '<img src="/images/icon-arrow-up.svg"><span>Go Up</span>';
+
+        goUpDiv.onclick = () => {
+            window.scrollTo(0,0);
+        };
+
+        document.body.appendChild(goUpDiv);
+        
+    },
+
     isMobile: () => {
         let check = false;
         // eslint-disable-next-line
@@ -171,10 +185,11 @@ const app = {
 
 document.addEventListener('DOMContentLoaded', function () {
 
-    app.setupSnapScrolling()
-    app.initMenuOpening()
-    app.homeScrollToPricing()
+    app.setupSnapScrolling();
+    app.initMenuOpening();
+    app.homeScrollToPricing();
     app.setupIntercomMessage();
+    app.initGoUpButton();
 
     if (app.isMobile() && window.Intercom) {
         window.Intercom('update', {
@@ -182,4 +197,13 @@ document.addEventListener('DOMContentLoaded', function () {
         })
 
     }
+
+    window.addEventListener('scroll', function(e) {
+        let element = document.querySelector('.go-up');
+        if (element && window.scrollY > 20) {
+            element.classList.add('is-visible')
+        } else if (element){
+            element.classList.remove('is-visible')
+        }
+    });
 })
