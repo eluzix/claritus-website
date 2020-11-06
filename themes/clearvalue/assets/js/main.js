@@ -82,7 +82,7 @@ const app = {
         };
 
         document.body.appendChild(goUpDiv);
-        
+
     },
 
     isMobile: () => {
@@ -163,6 +163,22 @@ const app = {
             }, 200)
         }
     },
+
+    initContactUsModal() {
+        let modal = document.getElementById("contact-us-modal");
+
+        let openButtons = document.querySelectorAll('.open-contact-us-modal');
+        openButtons.forEach(button => {
+            button.onclick = function() {
+                modal.style.display = "block";
+            }
+        });
+
+        let closeBtn = document.getElementById("close-contact-us");
+        closeBtn.onclick = function() {
+            modal.style.display = "none";
+        };
+    },
 }
 
 // function toggleMenu() {
@@ -190,6 +206,7 @@ document.addEventListener('DOMContentLoaded', function () {
     app.homeScrollToPricing();
     app.setupIntercomMessage();
     app.initGoUpButton();
+    app.initContactUsModal();
 
     if (app.isMobile() && window.Intercom) {
         window.Intercom('update', {
