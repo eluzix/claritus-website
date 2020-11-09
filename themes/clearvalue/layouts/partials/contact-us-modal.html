@@ -1,9 +1,37 @@
 <div id="contact-us-modal" class="modal contact-us">
 
-    <!-- Modal content -->
     <div class="modal-content">
         <span class="close" id="close-contact-us">&times;</span>
-        <p>Some text in the Modal..</p>
+
+        <div class="mailbox-block"></div>
+        <div class="form-block">
+            <h2>Contact Us</h2>
+            <p class="form-submit is-hidden">Message received!<br>
+                Someone from our team will get back to you shortly.</p>
+
+            <form class="form" data-netlify="true" name="contact">
+                <p>If you have any questions, inquiries, or any feedback, please send us a message</p>
+
+                <div class="control has-icons-right is-clearfix">
+                    <input type="text" placeholder="Enter your name"
+                           name="name" class="input" required>
+                    <span class="icon is-right is-clickable"><i class="icon-profile"></i></span>
+                </div>
+                <div class="control has-icons-right is-clearfix">
+                    <input type="email" placeholder="Enter your email"
+                           name="email" class="input" required>
+                    <span class="icon is-right is-clickable"><i class="icon-email"></i></span>
+                </div>
+                <div class="control is-clearfix">
+                    <textarea placeholder="Text your message..."
+                              name="message"
+                              class="input" required></textarea>
+                </div>
+
+                <button class="button is-green is-full is-contact-us has-top-margin-30" type="submit">Submit</button>
+            </form>
+
+        </div>
     </div>
 
 </div>

@@ -177,6 +177,23 @@ const app = {
         let closeBtn = document.getElementById("close-contact-us");
         closeBtn.onclick = function() {
             modal.style.display = "none";
+
+            let successMessage = modal.querySelector('.form-submit');
+            if (successMessage) {
+                successMessage.classList.add('is-hidden')
+            }
+
+            let submittedForm = modal.querySelector('.form');
+            if (submittedForm) {
+                submittedForm.classList.remove('is-hidden')
+            }
+
+            // todo clean inputs
+        };
+
+        modal.querySelector('.form').onsubmit = function (e) {
+            //todo
+            submitForm(modal);
         };
     },
 }
@@ -198,6 +215,19 @@ const app = {
 //
 //     }
 // }
+function submitForm(modal) {
+    let submittedForm = modal.querySelector('.form');
+
+    let successMessage = modal.querySelector('.form-submit.is-hidden');
+    if (successMessage) {
+        successMessage.classList.remove('is-hidden')
+    }
+
+    if (submittedForm) {
+        submittedForm.classList.add('is-hidden')
+    }
+}
+
 
 document.addEventListener('DOMContentLoaded', function () {
 
