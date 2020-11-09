@@ -63,16 +63,19 @@
       margin-bottom: 2.375rem;
     }
 
-    p {
-      font-size: 1rem;
-    }
-
     img {
       margin: 2.375rem 0;
     }
 
     .container {
       margin-top: 8.5rem;
+
+      article {
+        p, ul li {
+          font-size: 1rem;
+        }
+
+      }
 
       .blog-footer {
         margin-top: 1.563rem;
@@ -92,6 +95,14 @@
       .blog-footer {
         text-align: center;
       }
+
+      article {
+        p, ul li {
+          font-weight: normal;
+          font-size: 0.875rem;
+          line-height: 180%;
+        }
+      }
     }
 
     .title {
@@ -102,11 +113,6 @@
       margin-bottom: 4.875rem;
     }
 
-    p {
-      font-weight: normal;
-      font-size: 0.875rem;
-      line-height: 180%;
-    }
 
     img {
       margin-top: 2.375rem;
