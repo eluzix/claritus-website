@@ -181,13 +181,15 @@ const app = {
             let openButtons = document.querySelectorAll('.open-contact-us-modal');
             openButtons.forEach(button => {
                 button.onclick = function() {
-                    modal.style.display = "block";
+                    modal.classList.add('is-active')
+                    // modal.style.display = "block";
                 }
             });
 
             let closeBtn = document.getElementById("close-contact-us");
             closeBtn.onclick = function() {
-                modal.style.display = "none";
+                // modal.style.display = "none";
+                modal.classList.remove('is-active')
 
                 let successMessage = modal.querySelector('.form-submit');
                 if (successMessage) {
@@ -292,7 +294,7 @@ document.addEventListener('DOMContentLoaded', function () {
     app.initMenuOpening();
     app.homeScrollToPricing();
     app.setupIntercomMessage();
-    app.initGoUpButton();
+    // app.initGoUpButton();
     app.initContactUsModal();
 
     if (app.isMobile() && window.Intercom) {
