@@ -335,7 +335,7 @@ body {
 
   position: fixed;
   right: 1.85rem;
-  bottom: 7rem;
+  bottom: 40%;
   cursor: pointer;
 
   &.is-visible {
@@ -358,12 +358,14 @@ body {
 }
 
 .icon-profile {
+  display: block;
   background-image: url(/images/icon-profile.svg);
   width: 24px;
   height: 24px;
 }
 
 .icon-email {
+  display: block;
   background-image: url(/images/icon-email.svg);
   width: 24px;
   height: 24px;
