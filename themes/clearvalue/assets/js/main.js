@@ -233,7 +233,8 @@ const app = {
         let data = {
             name: submittedForm.querySelector('.input[name=name]').value,
             email: submittedForm.querySelector('.input[name=email]').value,
-            message: submittedForm.querySelector('.input[name=message]').value
+            message: submittedForm.querySelector('.input[name=message]').value,
+            'form-name': 'contact'
         };
         app.sendData(url, data);
 
