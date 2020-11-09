@@ -26,6 +26,10 @@
       }
 
     }
+
+    .blog-footer {
+      margin-top: 4.375rem;
+    }
   }
 
   .title {
@@ -51,9 +55,62 @@
     padding: 0;
   }
 
+  @media screen and (max-width: 835px) {
+
+    .title {
+      font-size: 2.5rem;
+      font-weight: 600;
+      margin-bottom: 2.375rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+
+    img {
+      margin: 2.375rem 0;
+    }
+
+    .container {
+      margin-top: 8.5rem;
+
+      .blog-footer {
+        margin-top: 1.563rem;
+        font-size: 1.375rem;
+      }
+    }
+  }
+
   @include mobile {
     h3 {
       font-size: 1.5rem;
+    }
+
+    .container {
+      margin-top: 7.125rem;
+
+      .blog-footer {
+        text-align: center;
+      }
+    }
+
+    .title {
+      font-weight: 600;
+      font-size: 1.75rem;
+      line-height: 120%;
+
+      margin-bottom: 4.875rem;
+    }
+
+    p {
+      font-weight: normal;
+      font-size: 0.875rem;
+      line-height: 180%;
+    }
+
+    img {
+      margin-top: 2.375rem;
+      margin-bottom: 2rem;
     }
   }
 }
