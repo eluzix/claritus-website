@@ -2,6 +2,30 @@
 
   .container {
     margin-top: 12.5rem;
+
+    article {
+      ul {
+        list-style: unset;
+        list-style-position: inside;
+
+        li {
+          &::marker {
+            background: #676E80;
+          }
+        }
+      }
+
+      li:not(:last-of-type) {
+        margin: 0;
+      }
+
+      p, ul li {
+        font-size: 1.375rem;
+        line-height: 180%;
+        color: $primary;
+      }
+
+    }
   }
 
   .title {
@@ -13,29 +37,8 @@
     margin-bottom: 4.375rem;
   }
 
-  p, ul li {
-    font-size: 1.375rem;
-    line-height: 180%;
-    color: $primary;
-  }
-
-  ul {
-    list-style: unset;
-    list-style-position: inside;
-
-    li {
-      &::marker {
-        background: #676E80;
-      }
-    }
-  }
-
   img {
     margin: 4.375rem 0;
-  }
-
-  li:not(:last-of-type) {
-    margin: 0;
   }
 
   h3 {

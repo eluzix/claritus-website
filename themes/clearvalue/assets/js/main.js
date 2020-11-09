@@ -167,65 +167,95 @@ const app = {
     initContactUsModal() {
         let modal = document.getElementById("contact-us-modal");
 
-        let openButtons = document.querySelectorAll('.open-contact-us-modal');
-        openButtons.forEach(button => {
-            button.onclick = function() {
-                modal.style.display = "block";
-            }
-        });
+        if (modal) {
+            let openButtons = document.querySelectorAll('.open-contact-us-modal');
+            openButtons.forEach(button => {
+                button.onclick = function() {
+                    modal.style.display = "block";
+                }
+            });
 
-        let closeBtn = document.getElementById("close-contact-us");
-        closeBtn.onclick = function() {
-            modal.style.display = "none";
+            let closeBtn = document.getElementById("close-contact-us");
+            closeBtn.onclick = function() {
+                modal.style.display = "none";
 
-            let successMessage = modal.querySelector('.form-submit');
-            if (successMessage) {
-                successMessage.classList.add('is-hidden')
-            }
+                let successMessage = modal.querySelector('.form-submit');
+                if (successMessage) {
+                    successMessage.classList.add('is-hidden')
+                }
 
-            let submittedForm = modal.querySelector('.form');
-            if (submittedForm) {
-                submittedForm.classList.remove('is-hidden')
-            }
-        };
+                let submittedForm = modal.querySelector('.form');
+                if (submittedForm) {
+                    submittedForm.classList.remove('is-hidden')
+                }
+            };
 
-        modal.querySelector('.form').onsubmit = function (e) {
-            e.preventDefault();
+            modal.querySelector('.form').onsubmit = function (e) {
+                e.preventDefault();
 
-            submitForm(modal);
-        };
+                app.submitForm(modal);
+            };
+        }
+
     },
+
+    sendData(url2get, data) {
+        const XHR = new XMLHttpRequest();
+
+        let urlEncodedData = "",
+            urlEncodedDataPairs = [],
+            name;
+
+        for( name in data ) {
+            urlEncodedDataPairs.push( encodeURIComponent( name ) + '=' + encodeURIComponent( data[name] ) );
+        }
+
+        urlEncodedData = urlEncodedDataPairs.join( '&' ).replace( /%20/g, '+' );
+
+        XHR.addEventListener( 'load', function(event) {
+            app.clearData();
+        } );
+
+        XHR.addEventListener( 'error', function(event) {
+            return 'Oops! Something went wrong.';
+        } );
+
+        XHR.open( 'POST', url2get );
+        XHR.setRequestHeader( 'Content-Type', 'application/x-www-form-urlencoded' );
+
+        XHR.send( urlEncodedData );
+    },
+    submitForm(modal) {
+
+        let submittedForm = modal.querySelector('.form');
+
+        let url = submittedForm.action;
+        let data = {
+            name: submittedForm.querySelector('.input[name=name]').value,
+            email: submittedForm.querySelector('.input[name=email]').value,
+            message: submittedForm.querySelector('.input[name=message]').value
+        };
+        app.sendData(url, data);
+
+    },
+
+    clearData() {
+        let modal = document.getElementById("contact-us-modal");
+        let submittedForm = modal.querySelector('.form');
+        submittedForm.querySelector('.input[name=name]').value = '';
+        submittedForm.querySelector('.input[name=email]').value = '';
+        submittedForm.querySelector('.input[name=message]').value = '';
+
+        let successMessage = modal.querySelector('.form-submit.is-hidden');
+        if (successMessage) {
+            successMessage.classList.remove('is-hidden')
+        }
+
+        if (submittedForm) {
+            submittedForm.classList.add('is-hidden')
+        }
+    }
 };
-
-function postAsync(url2get, sendstr)    {
-    let req;
-    if (window.XMLHttpRequest) {
-        req = new XMLHttpRequest();
-    } else if (window.ActiveXObject) {
-        req = new ActiveXObject("Microsoft.XMLHTTP");
-    }
-    if (req != undefined) {
-        // req.overrideMimeType("application/json"); // if request result is JSON
-
-        try {
-            req.open("POST", url2get, false);
-        }
-        catch(err) {
-            alert("couldnt complete request. Is JS enabled for that domain?\\n\\n" + err.message);
-            return false;
-        }
-        req.send(sendstr);
-
-        if (req.readyState == 4) {
-            if (req.status == 200) {
-                return req.responseText;
-            } else {
-                return "XHR error: " + req.status +" "+req.statusText;
-            }
-        }
-    }
-}
-
 // function toggleMenu() {
 //     const menu = document.getElementById('menu')
 //
@@ -243,34 +273,6 @@ function postAsync(url2get, sendstr)    {
 //
 //     }
 // }
-function submitForm(modal) {
-
-    let submittedForm = modal.querySelector('.form');
-
-    let url = submittedForm.action;
-    let requestedString = "name=" + submittedForm.querySelector('.input[name=name]').value
-        + "&email=" + submittedForm.querySelector('.input[name=email]').value
-        + "&message=" + submittedForm.querySelector('.input[name=message]').value;
-    let ret = postAsync(url, requestedString) ;
-
-    if (ret.match(/^XHR error/)) {
-        console.log(ret);
-        return;
-    }
-
-    submittedForm.querySelector('.input[name=name]').value = '';
-    submittedForm.querySelector('.input[name=email]').value = '';
-    submittedForm.querySelector('.input[name=message]').value = '';
-
-    let successMessage = modal.querySelector('.form-submit.is-hidden');
-    if (successMessage) {
-        successMessage.classList.remove('is-hidden')
-    }
-
-    if (submittedForm) {
-        submittedForm.classList.add('is-hidden')
-    }
-}
 
 
 document.addEventListener('DOMContentLoaded', function () {
