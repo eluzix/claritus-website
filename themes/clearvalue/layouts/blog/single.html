@@ -1,0 +1,26 @@
+{{ define "content" }}
+<div class="content {{ .Params.content_class }} has-navbar-fixed-top">
+
+    {{ partial "nav" . }}
+    {{ partial "menu.html" }}
+
+    <section class="container is-small">
+        <div>
+            <div>
+                <h1 class="title" title="{{ .Title }}">{{ .Title }}</h1>
+                <article>
+                    {{ .Content }}
+                </article>
+            </div>
+        </div>
+        <div class="has-top-margin-70">
+            <h3>Have questions? Comments? Need help?</h3>
+            <h3>Contact us anytime at <a href="mailto:help@claritus.io" class="link contact-us-link is-green" title="email claritus.io">help@claritus.io</a></h3>
+
+            <a class="button is-green is-full is-contact-us has-top-margin-30 open-contact-us-modal">Contact Us</a>
+        </div>
+    </section>
+</div>
+{{ end }}
+
+{{ define "title" }}{{ .Title }}{{ end }}

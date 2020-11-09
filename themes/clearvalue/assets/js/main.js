@@ -71,6 +71,20 @@ const app = {
         }
     },
 
+    initGoUpButton() {
+
+        let goUpDiv = document.createElement('div');
+        goUpDiv.className = 'go-up';
+        goUpDiv.innerHTML = '<img src="/images/icon-arrow-up.svg"><span>Go Up</span>';
+
+        goUpDiv.onclick = () => {
+            window.scrollTo(0,0);
+        };
+
+        document.body.appendChild(goUpDiv);
+
+    },
+
     isMobile: () => {
         let check = false;
         // eslint-disable-next-line
@@ -149,8 +163,99 @@ const app = {
             }, 200)
         }
     },
-}
 
+    initContactUsModal() {
+        let modal = document.getElementById("contact-us-modal");
+
+        if (modal) {
+            let openButtons = document.querySelectorAll('.open-contact-us-modal');
+            openButtons.forEach(button => {
+                button.onclick = function() {
+                    modal.style.display = "block";
+                }
+            });
+
+            let closeBtn = document.getElementById("close-contact-us");
+            closeBtn.onclick = function() {
+                modal.style.display = "none";
+
+                let successMessage = modal.querySelector('.form-submit');
+                if (successMessage) {
+                    successMessage.classList.add('is-hidden')
+                }
+
+                let submittedForm = modal.querySelector('.form');
+                if (submittedForm) {
+                    submittedForm.classList.remove('is-hidden')
+                }
+            };
+
+            modal.querySelector('.form').onsubmit = function (e) {
+                e.preventDefault();
+
+                app.submitForm(modal);
+            };
+        }
+
+    },
+
+    sendData(url2get, data) {
+        const XHR = new XMLHttpRequest();
+
+        let urlEncodedData = "",
+            urlEncodedDataPairs = [],
+            name;
+
+        for( name in data ) {
+            urlEncodedDataPairs.push( encodeURIComponent( name ) + '=' + encodeURIComponent( data[name] ) );
+        }
+
+        urlEncodedData = urlEncodedDataPairs.join( '&' ).replace( /%20/g, '+' );
+
+        XHR.addEventListener( 'load', function(event) {
+            app.clearData();
+        } );
+
+        XHR.addEventListener( 'error', function(event) {
+            return 'Oops! Something went wrong.';
+        } );
+
+        XHR.open( 'POST', url2get );
+        XHR.setRequestHeader( 'Content-Type', 'application/x-www-form-urlencoded' );
+
+        XHR.send( urlEncodedData );
+    },
+    submitForm(modal) {
+
+        let submittedForm = modal.querySelector('.form');
+
+        let url = submittedForm.action;
+        let data = {
+            name: submittedForm.querySelector('.input[name=name]').value,
+            email: submittedForm.querySelector('.input[name=email]').value,
+            message: submittedForm.querySelector('.input[name=message]').value
+        };
+        app.sendData(url, data);
+
+    },
+
+    clearData() {
+        let modal = document.getElementById("contact-us-modal");
+        let submittedForm = modal.querySelector('.form');
+        submittedForm.querySelector('.input[name=name]').value = '';
+        submittedForm.querySelector('.input[name=email]').value = '';
+        submittedForm.querySelector('.input[name=message]').value = '';
+
+        let successMessage = modal.querySelector('.form-submit.is-hidden');
+        if (successMessage) {
+            successMessage.classList.remove('is-hidden')
+        }
+
+        if (submittedForm) {
+            submittedForm.classList.add('is-hidden')
+        }
+    }
+};
 // function toggleMenu() {
 //     const menu = document.getElementById('menu')
 //
@@ -169,12 +274,15 @@ const app = {
 //     }
 // }
 
+
 document.addEventListener('DOMContentLoaded', function () {
 
-    app.setupSnapScrolling()
-    app.initMenuOpening()
-    app.homeScrollToPricing()
+    app.setupSnapScrolling();
+    app.initMenuOpening();
+    app.homeScrollToPricing();
     app.setupIntercomMessage();
+    app.initGoUpButton();
+    app.initContactUsModal();
 
     if (app.isMobile() && window.Intercom) {
         window.Intercom('update', {
@@ -182,4 +290,13 @@ document.addEventListener('DOMContentLoaded', function () {
         })
 
     }
+
+    window.addEventListener('scroll', function(e) {
+        let element = document.querySelector('.go-up');
+        if (element && window.scrollY > 20) {
+            element.classList.add('is-visible')
+        } else if (element){
+            element.classList.remove('is-visible')
+        }
+    });
 })
