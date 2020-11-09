@@ -73,16 +73,26 @@ const app = {
 
     initGoUpButton() {
 
-        let goUpDiv = document.createElement('div');
-        goUpDiv.className = 'go-up';
-        goUpDiv.innerHTML = '<img src="/images/icon-arrow-up.svg"><span>Go Up</span>';
+        if (!app.isMobile()) {
+            let goUpDiv = document.createElement('div');
+            goUpDiv.className = 'go-up';
+            goUpDiv.innerHTML = '<img src="/images/icon-arrow-up.svg"><span>Go Up</span>';
 
-        goUpDiv.onclick = () => {
-            window.scrollTo(0,0);
-        };
+            goUpDiv.onclick = () => {
+                window.scrollTo(0,0);
+            };
 
-        document.body.appendChild(goUpDiv);
+            document.body.appendChild(goUpDiv);
 
+            window.addEventListener('scroll', function(e) {
+                let element = document.querySelector('.go-up');
+                if (element && window.scrollY > 20) {
+                    element.classList.add('is-visible')
+                } else if (element){
+                    element.classList.remove('is-visible')
+                }
+            });
+        }
     },
 
     isMobile: () => {
@@ -291,13 +301,4 @@ document.addEventListener('DOMContentLoaded', function () {
         })
 
     }
-
-    window.addEventListener('scroll', function(e) {
-        let element = document.querySelector('.go-up');
-        if (element && window.scrollY > 20) {
-            element.classList.add('is-visible')
-        } else if (element){
-            element.classList.remove('is-visible')
-        }
-    });
 })
