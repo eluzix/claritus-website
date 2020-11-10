@@ -207,6 +207,16 @@ const app = {
 
                 if (app.validateForm(modal)) {
                     app.submitForm(modal);
+                } else {
+                    if (!app._contactModelValidated){
+                        app._contactModelValidated = true;
+
+                        modal.querySelectorAll('.input').forEach(element => {
+                            element.addEventListener('input', (e) => {
+                                app.validateForm(modal)
+                            })
+                        });
+                    }
                 }
 
             };
@@ -222,8 +232,10 @@ const app = {
                 (element.type === 'email' && !app.validateEmail(element.value))) {
                 inputsAreValid = false;
                 element.classList.add('is-invalid');
+                element.parentElement.querySelector('.error-message').classList.add('is-active');
             } else {
                 element.classList.remove('is-invalid');
+                element.parentElement.querySelector('.error-message').classList.remove('is-active')
             }
         });
 

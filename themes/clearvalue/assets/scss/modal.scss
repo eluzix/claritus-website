@@ -88,7 +88,7 @@
       width: 100%;
       border: 1px solid #D3D3D3;
       box-sizing: border-box;
-      border-radius: 36px;
+      border-radius: 30px;
       resize: none;
       padding: 2.125rem;
       color: #676E80;
@@ -106,8 +106,32 @@
       }
     }
 
-    .input.is-invalid {
-      border-color: $red;
+    input, textarea {
+      &:active {
+        border: 1px solid $dark;
+        box-sizing: border-box;
+        border-radius: 30px;
+      }
+
+      &:hover {
+        border: 1px solid $green;
+        box-sizing: border-box;
+        border-radius: 30px;
+      }
+
+      &.is-invalid {
+        border: 1px solid #EB5757;
+        box-sizing: border-box;
+        border-radius: 30px;
+        margin-bottom: 0.5rem;
+      }
+
+      &:disabled {
+        border: 1px solid #F8F9FB;
+        box-sizing: border-box;
+        border-radius: 30px;
+        background-color: $white;
+      }
     }
 
     .button {
