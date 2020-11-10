@@ -88,7 +88,7 @@
       width: 100%;
       border: 1px solid #D3D3D3;
       box-sizing: border-box;
-      border-radius: 36px;
+      border-radius: 30px;
       resize: none;
       padding: 2.125rem;
       color: #676E80;
@@ -123,6 +123,7 @@
         border: 1px solid #EB5757;
         box-sizing: border-box;
         border-radius: 30px;
+        margin-bottom: 0.5rem;
       }
 
       &:disabled {

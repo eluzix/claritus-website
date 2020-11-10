@@ -207,6 +207,16 @@ const app = {
 
                 if (app.validateForm(modal)) {
                     app.submitForm(modal);
+                } else {
+                    if (!app._contactModelValidated){
+                        app._contactModelValidated = true;
+
+                        modal.querySelectorAll('.input').forEach(element => {
+                            element.addEventListener('input', (e) => {
+                                app.validateForm(modal)
+                            })
+                        });
+                    }
                 }
 
             };
