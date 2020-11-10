@@ -205,10 +205,36 @@ const app = {
             modal.querySelector('.form').onsubmit = function (e) {
                 e.preventDefault();
 
-                app.submitForm(modal);
+                if (app.validateForm(modal)) {
+                    app.submitForm(modal);
+                }
+
             };
         }
 
+    },
+
+    validateForm(modal) {
+        let inputsAreValid = true;
+
+        modal.querySelectorAll('.input').forEach(element => {
+            if (!element.value ||
+                (element.type === 'email' && !app.validateEmail(element.value))) {
+                inputsAreValid = false;
+                element.classList.add('is-invalid');
+            } else {
+                element.classList.remove('is-invalid');
+            }
+        });
+
+        return inputsAreValid;
+    },
+
+    validateEmail(mail) {
+        if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(mail)) {
+            return (true)
+        }
+        return (false)
     },
 
     sendData(url2get, data) {
@@ -237,6 +263,7 @@ const app = {
 
         XHR.send( urlEncodedData );
     },
+
     submitForm(modal) {
 
         let submittedForm = modal.querySelector('.form');
