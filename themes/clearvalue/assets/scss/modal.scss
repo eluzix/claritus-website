@@ -106,8 +106,31 @@
       }
     }
 
-    .input.is-invalid {
-      border-color: $red;
+    input, textarea {
+      &:active {
+        border: 1px solid $dark;
+        box-sizing: border-box;
+        border-radius: 30px;
+      }
+
+      &:hover {
+        border: 1px solid $green;
+        box-sizing: border-box;
+        border-radius: 30px;
+      }
+
+      &.is-invalid {
+        border: 1px solid #EB5757;
+        box-sizing: border-box;
+        border-radius: 30px;
+      }
+
+      &:disabled {
+        border: 1px solid #F8F9FB;
+        box-sizing: border-box;
+        border-radius: 30px;
+        background-color: $white;
+      }
     }
 
     .button {

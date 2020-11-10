@@ -222,8 +222,10 @@ const app = {
                 (element.type === 'email' && !app.validateEmail(element.value))) {
                 inputsAreValid = false;
                 element.classList.add('is-invalid');
+                element.parentElement.querySelector('.error-message').classList.add('is-active');
             } else {
                 element.classList.remove('is-invalid');
+                element.parentElement.querySelector('.error-message').classList.remove('is-active')
             }
         });
 
