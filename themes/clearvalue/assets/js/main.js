@@ -178,9 +178,10 @@ const app = {
         let modal = document.getElementById("contact-us-modal");
 
         if (modal) {
-            let openButtons = document.querySelectorAll('.open-contact-us-modal');
+            let openButtons = document.querySelectorAll('.open-contact-us-modal, .contact-us-link');
             openButtons.forEach(button => {
-                button.onclick = function() {
+                button.onclick = function(e) {
+                    e.preventDefault()
                     modal.classList.add('is-active')
                     // modal.style.display = "block";
                 }
@@ -335,7 +336,7 @@ document.addEventListener('DOMContentLoaded', function () {
     app.setupSnapScrolling();
     app.initMenuOpening();
     app.homeScrollToPricing();
-    app.setupIntercomMessage();
+    // app.setupIntercomMessage();
     // app.initGoUpButton();
     app.initContactUsModal();
 
