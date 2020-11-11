@@ -249,46 +249,49 @@ const app = {
         return (false)
     },
 
-    sendData(url2get, data) {
-        const XHR = new XMLHttpRequest();
-
-        let urlEncodedData = "",
-            urlEncodedDataPairs = [],
-            name;
-
-        for( name in data ) {
-            urlEncodedDataPairs.push( encodeURIComponent( name ) + '=' + encodeURIComponent( data[name] ) );
-        }
-
-        urlEncodedData = urlEncodedDataPairs.join( '&' ).replace( /%20/g, '+' );
-
-        XHR.addEventListener( 'load', function(event) {
-            app.clearData();
-        } );
-
-        XHR.addEventListener( 'error', function(event) {
-            return 'Oops! Something went wrong.';
-        } );
-
-        XHR.open( 'POST', url2get );
-        XHR.setRequestHeader( 'Content-Type', 'application/x-www-form-urlencoded' );
-
-        XHR.send( urlEncodedData );
-    },
-
     submitForm(modal) {
+        grecaptcha.ready(function(){
+            grecaptcha.execute('6LeptuEZAAAAAH5olX9oeDX9C2Ck2KG_Dd2zXhKw', {action: 'submit'}).then(function(token) {
+                // Add your logic to submit to your backend server here.
+                let submittedForm = modal.querySelector('.form');
 
-        let submittedForm = modal.querySelector('.form');
+                let url = 'https://nkm2iod3hf.execute-api.us-east-1.amazonaws.com/prod/contact-us';
+                // let url = 'https://29iax1x5e5.execute-api.us-east-1.amazonaws.com/dev/contact-us';
+                let data = {
+                    token: token,
+                    name: submittedForm.querySelector('.input[name=name]').value,
+                    email: submittedForm.querySelector('.input[name=email]').value,
+                    msg: submittedForm.querySelector('.input[name=message]').value,
+                };
 
-        let url = submittedForm.action;
-        let data = {
-            name: submittedForm.querySelector('.input[name=name]').value,
-            email: submittedForm.querySelector('.input[name=email]').value,
-            message: submittedForm.querySelector('.input[name=message]').value,
-            'form-name': 'contact'
-        };
-        app.sendData(url, data);
+                let urlEncodedData = "",
+                    urlEncodedDataPairs = [],
+                    name;
 
+                for( name in data ) {
+                    urlEncodedDataPairs.push( encodeURIComponent( name ) + '=' + encodeURIComponent( data[name] ) );
+                }
+
+                urlEncodedData = urlEncodedDataPairs.join( '&' ).replace( /%20/g, '+' );
+
+                fetch(url,  {
+                    method: 'POST',
+                    mode: 'no-cors',
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded'
+                    },
+                    body: urlEncodedData
+                }).catch(() => {
+                    //do nothing
+                })
+                
+                app.clearData();
+
+            }).catch((e) => {
+                console.error('grecaptcha error:', e)
+            })
+
+        })
     },
 
     clearData() {
