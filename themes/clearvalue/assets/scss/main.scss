@@ -19,6 +19,8 @@
 //  overflow-y: scroll;
 //}
 
+.grecaptcha-badge { visibility: hidden; }
+
 html {
   scroll-behavior: smooth;
   font-size: 14px;
