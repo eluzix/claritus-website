@@ -48,13 +48,8 @@
     {{ $js := resources.Get "js/main.js" }}
     <script src="{{ $js.Permalink }}"></script>
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
-
-    <script type="text/javascript">
-        var _iub = _iub || [];
-        _iub.csConfiguration = {"consentOnContinuedBrowsing":false,"whitelabel":false,"lang":"en","countryDetection":true,"cookiePolicyId":10861300,"siteId":2076059,"cookiePolicyUrl":"https://claritus.io/privacy", "banner":{ "acceptButtonDisplay":true,"customizeButtonDisplay":true,"position":"float-bottom-left","acceptButtonColor":"#21ce99","acceptButtonCaptionColor":"white","customizeButtonColor":"#495369","customizeButtonCaptionColor":"white","textColor":"#495369","backgroundColor":"#ffffff" }};
-    </script>
-    <script type="text/javascript" src="//cdn.iubenda.com/cs/iubenda_cs.js" charset="UTF-8" async></script>
-
+    
+    {{ partial "cookie.html" . }}
     {{ partial "tagmanager.html" . }}
     {{ hugo.Generator }}
 </head>
