@@ -48,21 +48,13 @@
     {{ $js := resources.Get "js/main.js" }}
     <script src="{{ $js.Permalink }}"></script>
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
-<!--    <script async src="https://www.googletagmanager.com/gtag/js?id={{ .Site.Params.gtagConfig }}"></script>-->
-<!--    <script>-->
-<!--        window.dataLayer = window.dataLayer || [];-->
-<!--        function gtag(){dataLayer.push(arguments);}-->
-<!--        gtag('js', new Date());-->
-
-<!--        gtag('config', '{{ .Site.Params.gtagConfig }}');-->
-<!--        gtag('config', 'AW-568330611');-->
-<!--    </script>-->
-
+    
     {{ partial "tagmanager.html" . }}
     {{ hugo.Generator }}
 </head>
 
 <body class="{{ if .Site.Params.rtl }}rtl{{ end }}">
+{{ partial "cookie.html" . }}
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WGQNHJ8"
                   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -77,6 +69,7 @@
 </div>
 
 {{ template "_internal/google_analytics.html" . }}
+<script id="CookieDeclaration" src="https://consent.cookiebot.com/62c99a2e-89de-4356-96f8-fb12f6a6d7c9/cd.js" type="text/javascript" async></script>
 </body>
 
 </html>

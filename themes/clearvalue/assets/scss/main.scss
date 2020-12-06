@@ -570,3 +570,8 @@ body {
 @import "menu";
 @import "blog";
 @import "modal";
+
+.cookiefirst-root a {
+  color: $white;
+  opacity: 0.5;
+}
