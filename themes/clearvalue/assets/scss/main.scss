@@ -571,15 +571,11 @@ body {
 @import "blog";
 @import "modal";
 
-.cookiefirst-root > div.notranslate:before {
-  content: "";
-  display: block;
-  //position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.4);
+.cookiefirst-root > div.notranslate {
+  max-width: 460px!important;
+  & > div {
+    padding: 30px!important;
+  }
 }
 
 .cookiefirst-root a {
