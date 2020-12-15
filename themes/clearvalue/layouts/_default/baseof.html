@@ -34,7 +34,7 @@
     <link rel="preload" as="image" href="/images/home-section-1.jpg">
 
     {{ $sass := resources.Get "scss/main.scss" }}
-    {{ $style := $sass | resources.ToCSS }}
+    {{ $style := $sass | resources.ToCSS | resources.Minify  | fingerprint }}
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ $style.Permalink }}">
 
@@ -54,7 +54,8 @@
     <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
     {{ end }}
 
-    {{ $js := resources.Get "js/main.js" }}
+    {{ $mainJs := resources.Get "js/main.js" }}
+    {{ $js := $mainJs | resources.Minify | fingerprint }}
     <script src="{{ $js.Permalink }}"></script>
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide" async></script>
     
