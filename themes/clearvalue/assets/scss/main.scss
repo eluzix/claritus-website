@@ -571,6 +571,17 @@ body {
 @import "blog";
 @import "modal";
 
+.cookiefirst-root > div.notranslate:before {
+  content: "";
+  display: block;
+  //position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
 .cookiefirst-root a {
   color: $white;
   opacity: 0.5;
