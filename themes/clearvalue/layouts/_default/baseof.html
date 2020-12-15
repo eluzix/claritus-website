@@ -25,6 +25,8 @@
     <meta property="twitter:image" content="{{.Site.BaseURL}}images/claritus_preview.jpg">
     <link rel="canonical" href="{{ .Permalink }}">
 
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
     <link rel="preconnect" href="https://cdn.jsdelivr.net">
     <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
     <link rel="preconnect" href="https://consent.cookiebot.com">
@@ -76,7 +78,7 @@
 </div>
 
 {{ template "_internal/google_analytics.html" . }}
-<script id="CookieDeclaration" src="https://consent.cookiebot.com/62c99a2e-89de-4356-96f8-fb12f6a6d7c9/cd.js" type="text/javascript" async></script>
+<script id="CookieDeclaration" src="https://consent.cookiebot.com/62c99a2e-89de-4356-96f8-fb12f6a6d7c9/cd.js?culture=en" type="text/javascript" async></script>
 </body>
 
 </html>
