@@ -41,3 +41,28 @@ HUGO_VERSION = "0.79.0"
 
 [context.next.environment]
 HUGO_ENABLEGITINFO = "true"
+
+
+[[redirects]]
+from = "https://clearvalue.io"
+to = "https://claritus.io"
+status = 301
+force = false
+
+[[redirects]]
+from = "https://clearvalue.io/*"
+to = "https://claritus.io/:splat"
+status = 301
+force = false
+
+[[redirects]]
+from = "https://www.clearvalue.io"
+to = "https://claritus.io"
+status = 301
+force = false
+
+[[redirects]]
+from = "https://www.clearvalue.io/*"
+to = "https://claritus.io/:splat"
+status = 301
+force = false
