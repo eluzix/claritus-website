@@ -310,6 +310,32 @@ const app = {
         if (submittedForm) {
             submittedForm.classList.add('is-hidden')
         }
+    },
+
+    utmCookie() {
+        const params = {}
+        if (window.location.search) {
+            console.log('search = ', window.location.search)
+            const pairs = window.location.search.substring(1).split('&')
+            pairs.forEach((pair) => {
+                const kv = pair.split('=')
+                if (kv.length > 1) {
+                    const k = kv[0].toLowerCase()
+                    if (k.startsWith('utm')){
+                         params[k] = decodeURIComponent(kv[1])
+                    }
+                }
+            })
+        }
+
+        if (Object.keys(params).length > 0){
+            params['referrer'] = document.referrer
+            params['session'] = Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
+
+            const apexDomain = document.domain.split('.').reverse().splice(0,2).reverse().join('.');
+            const cookieStr = `_cvc=${encodeURIComponent(JSON.stringify(params))};path=/;max-age=604800;domain=${apexDomain}`
+            console.log(cookieStr)
+        }
     }
 };
 // function toggleMenu() {
@@ -339,6 +365,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // app.setupIntercomMessage();
     // app.initGoUpButton();
     app.initContactUsModal();
+    app.utmCookie()
 
     if (app.isMobile() && window.Intercom) {
         window.Intercom('update', {

@@ -9,6 +9,7 @@ assetDir = 'themes/clearvalue/assets'
     description = "Finally, a 360° view of your assets that lets you track, understand, and be in complete control of your wealth - all in one place!"
     gtagConfig = 'UA-159218662-2'
     appUrl = "https://app.claritus.io"
+    cookieDomain = 'localhost'
 
 [permalinks]
   posts = "blog/:title"
