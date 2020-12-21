@@ -47,22 +47,22 @@ HUGO_ENABLEGITINFO = "true"
 from = "https://clearvalue.io"
 to = "https://claritus.io"
 status = 301
-force = false
+force = true
 
 [[redirects]]
 from = "https://clearvalue.io/*"
 to = "https://claritus.io/:splat"
 status = 301
-force = false
+force = true
 
 [[redirects]]
 from = "https://www.clearvalue.io"
 to = "https://claritus.io"
 status = 301
-force = false
+force = true
 
 [[redirects]]
 from = "https://www.clearvalue.io/*"
 to = "https://claritus.io/:splat"
 status = 301
-force = false
+force = true
