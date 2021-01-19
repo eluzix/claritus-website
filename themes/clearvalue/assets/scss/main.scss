@@ -232,7 +232,7 @@ body {
 }
 
 .has-bottom-margin-20 {
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.429rem;
 }
 
 .has-bottom-margin-25 {
@@ -240,7 +240,7 @@ body {
 }
 
 .has-bottom-margin-30 {
-  margin-bottom: 1.875rem;
+  margin-bottom: 2.143rem;
 }
 
 .has-bottom-margin-32 {
@@ -251,8 +251,16 @@ body {
   margin-bottom: 2.188rem;
 }
 
+.has-bottom-margin-40 {
+  margin-bottom: 2.857rem;
+}
+
 .has-bottom-margin-50 {
-  margin-bottom: 3.125rem;
+  margin-bottom: 3.571rem;
+}
+
+.has-bottom-margin-60 {
+  margin-bottom: 4.286rem;
 }
 
 .has-bottom-margin-200 {
@@ -277,6 +285,10 @@ body {
 
 .has-top-margin-200 {
   margin-top: 12.5rem;
+}
+
+.is-invisible-tablet {
+  display: none;
 }
 
 .is-centered {
@@ -570,6 +582,7 @@ body {
 @import "menu";
 @import "blog";
 @import "modal";
+@import "landing-page";
 
 .cookiefirst-root > div.notranslate {
   max-width: 460px!important;
