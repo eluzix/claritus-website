@@ -59,7 +59,7 @@
   }
 
   &.home {
-    background: $dark;
+    background: $dark-blue;
     scroll-snap-type: y mandatory;
 
     height: 100vh;
@@ -69,6 +69,7 @@
 
     .section {
       width: 100vw;
+      height: auto;
       //scroll-snap-align: start;
 
       display: flex;
@@ -83,6 +84,8 @@
         flex-direction: column;
         margin: 0 auto;
         text-align: center;
+        padding: 0 $desktop-padding-lp 0 $desktop-padding-lp;
+        width: 100%;
 
         &.left-align {
           justify-content: flex-start;
@@ -217,6 +220,8 @@
         img {
           filter: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.07)), drop-shadow(0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0485425)), drop-shadow(0px 22.3363px 17.869px rgba(0, 0, 0, 0.039404)), drop-shadow(0px 12.5216px 10.0172px rgba(0, 0, 0, 0.0335923)), drop-shadow(0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0283442)), drop-shadow(0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0209594));
           border-radius: 20px;
+          width: inherit;
+          min-width: auto;
         }
       }
 
@@ -550,6 +555,48 @@
   @include mobile {
     h2 {
       font-size: 2rem;
+    }
+    h3 {
+      font-size: 1.571rem;
+    }
+    p, .copyright {
+      font-size: 1rem;
+    }
+    .button {
+      height: 3.429rem;
+      width: 12.5rem;
+      font-weight: 600;
+      font-size: 1.143rem;
+      line-height: 140%;
+
+      &.is-higher {
+        height: 3.429rem;
+      }
+    }
+    .is-invisible-tablet {
+      display: initial;
+    }
+  }
+
+  .icon {
+    &.is-right {
+      margin: 0.857rem 1.786rem;
+      right: 0;
+      height: 1.714rem;
+      pointer-events: none;
+      position: absolute;
+      top: 0;
+      width: 1.714rem;
+      z-index: 4;
+    }
+
+    .clearvalue {
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      &.email {
+        background-image: url(/images/icon-email.svg);
+      }
     }
   }
 }

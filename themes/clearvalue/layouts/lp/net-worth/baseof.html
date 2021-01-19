@@ -43,16 +43,10 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
-
     {{ with .OutputFormats.Get "RSS" }}
     <link href="{{ .RelPermalink }}" rel="alternate" type="application/rss+xml" />
     <link href="{{ .RelPermalink }}" rel="feed" type="application/rss+xml" />
     {{ end }}
-
-    {{ $mainJs := resources.Get "js/main.js" }}
-    {{ $js := $mainJs | resources.Minify | fingerprint }}
-    <script src="{{ $js.Permalink }}"></script>
     
     {{ partial "tagmanager.html" . }}
     {{ hugo.Generator }}
