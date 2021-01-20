@@ -1,0 +1,127 @@
+{{ define "content" }}
+    <div class="{{ .Params.content_class }} ">
+        {{ partial "header-lp.html" . }}
+
+        <section class="section hero">
+            <div class="centered">
+                <h2 class="has-bottom-margin-20">Net Worth Tracking <span class="is-green">Made Simple</span>.</h2>
+                <p class="has-bottom-margin-40">Track, understand and be in complete control of your wealth with Claritus. The platform that gives you a 360° view of your assets and investments, all in one place.</p>
+                <a class="button is-green is-full is-wide is-higher has-bottom-margin-25"
+                   href="{{ .Site.Params.appUrl }}/on-boarding">Try Claritus</a>
+
+                <img src="/images/section-hero.png" />
+
+            </div>
+        </section>
+
+        <section class="section section-1">
+            <div class="section-info">
+                <div class="block-text">
+                    <div>
+                        <h3 class="has-bottom-margin-30">Clear & <span class="is-green">Concise</span></h3>
+                        <p class="has-bottom-margin-30">Get a clear and concise view of your wealth by adding bank accounts,
+                            real estate, crypto, venture capital, cash and lots more to your account. </p>
+                        <a class="button is-green is-full is-wide has-bottom-margin-25"
+                           href="{{ .Site.Params.appUrl }}/on-boarding">Join Claritus</a>
+                    </div>
+                </div>
+
+                <div class="block-image">
+                    <img src="/images/video.png" />
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-2 is-white">
+            <div class="section-info">
+                <div class="block-text">
+                    <div>
+                        <h3 class="has-bottom-margin-20">Track and <span class="is-green">Control</span></h3>
+                        <p>With real time data from more than 17,000 global financial institutions, brokerages, and other financial organizations, it’s never been easier to automatically keep track of your investments and assets.</p>
+                    </div>
+                </div>
+
+                <div class="block-image">
+                    <img src="/images/section-2.jpg" />
+                </div>
+            </div>
+
+        </section>
+
+        <section class="section section-3">
+            <div class="section-info">
+                <div class="block-text">
+                    <div>
+                        <h3 class="has-bottom-margin-30">Nurture and <span class="is-green">Grow</span></h3>
+                        <p class="has-bottom-margin-30">Upload your investment history and measure
+                            your wealth’s performance over time easily
+                            and accurately, and enjoy performance analytics
+                            and cross asset performance comparisons
+                            to help grow your wealth.</p>
+                    </div>
+                </div>
+
+                <div class="block-image">
+                    <img src="/images/section-3.png" />
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-4">
+            <div class="section-info is-reversed-tablet">
+                <div class="block-image">
+                    <img src="/images/section-4.png" />
+                    <a class="button is-green is-full is-wide has-bottom-margin-25 is-invisible-desktop"
+                       href="{{ .Site.Params.appUrl }}/on-boarding">Get Claritus</a>
+                </div>
+                <div class="block-text has-margin-left">
+                    <div>
+                        <h3 class="has-bottom-margin-30">Automate and <span class="is-green">Simplify</span></h3>
+                        <p class="has-bottom-margin-30">Let Claritus do the work for you by automatically uploading your current spreadsheet to your account and automating how you track, understand and control your wealth.</p>
+                        <a class="button is-green is-full is-wide has-bottom-margin-25 is-hidden-touch"
+                           href="{{ .Site.Params.appUrl }}/on-boarding">Get Claritus</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-5 is-white">
+            <div class="section-info">
+                <div class="block-text">
+                    <div>
+                        <h3 class="has-bottom-margin-30">Keep it <span class="is-green">Confidential</span></h3>
+                        <img src="/images/section-5.jpg" class="is-invisible-tablet" />
+                        <p class="has-bottom-margin-30">We understand that your privacy and security are of the utmost importance to you, which is why we are committed to providing you with the highest standards of data security and encryption. With Claritus, you can rest assured that your data is safe, secure and private.</p>
+                        <a class="button is-green is-full is-wide has-bottom-margin-25"
+                           href="{{ .Site.Params.appUrl }}/on-boarding">Join Claritus</a>
+                    </div>
+                </div>
+                <div class="block-image is-hidden-mobile">
+                    <img src="/images/section-5.jpg" />
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-footer">
+            <div class="centered">
+                <h3>Not Ready to Join Yet?</h3>
+                <p class="has-bottom-margin-50">Let’s keep in touch anyway.</p>
+
+                <div class="control email-input">
+                    <input class="input" type="email" placeholder="Your Email Address" id="subscribe-email">
+                    <span class="icon is-right is-invisible-tablet" id="subscribe-email-icon">
+                        <i class="clearvalue email"></i></span>
+                    <span id="validation-error" style="display: none;" class="is-red">Email is not valid</span>
+                    <button class="button is-join is-green is-full is-wide"
+                            onclick="keepInTouch(this)">Sign Up</button>
+
+
+                    <p class="is-green has-bottom-margin-24" hidden
+                       id="subscribe-success">Thank you for signing up for our newsletter!</p>
+                </div>
+
+                <p class="copyright">&copy; {{ now.Year }} Clear Value ltd.</p>
+            </div>
+        </section>
+    </div>
+{{ end }}
