@@ -205,7 +205,6 @@ input {
 
 
 .header {
-  position: fixed;
   width: 100vw;
   background: $dark;
   padding: 1.429rem $desktop-padding-lp;
@@ -289,7 +288,7 @@ input {
     }
 
     &.hero {
-      padding-top: 10rem;
+      padding-top: 2rem;
       margin-bottom: 22.857rem;
 
       img {
@@ -535,7 +534,7 @@ input {
         max-width: none;
       }
       &.hero {
-        padding-top: 12.143rem;
+        padding-top: 4.143rem;
 
         img {
           margin-top: 3.714rem;
@@ -786,7 +785,7 @@ input {
       }
 
       &.hero {
-        padding-top: 8.571rem;
+        padding-top: 0.571rem;
       }
 
       &.section-1 {
