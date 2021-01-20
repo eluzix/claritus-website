@@ -1,6 +1,6 @@
 {{ define "content" }}
-    <div class="home {{ .Params.content_class }} ">
-        {{ partial "header.html" . }}
+    <div class="{{ .Params.content_class }} ">
+        {{ partial "header-lp.html" . }}
 
         <section class="section hero">
             <div class="centered">
@@ -109,7 +109,8 @@
 
                 <div class="control email-input">
                     <input class="input" type="email" placeholder="Your Email Address" id="subscribe-email">
-                    <span class="icon is-right is-invisible-tablet"><i class="clearvalue email"></i></span>
+                    <span class="icon is-right is-invisible-tablet" id="subscribe-email-icon">
+                        <i class="clearvalue email"></i></span>
                     <button class="button is-join is-green is-full is-wide"
                             onclick="keepInTouch(this)">Sign Up</button>
 

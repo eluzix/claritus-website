@@ -33,7 +33,7 @@
     <link rel="dns-prefetch" href="https://consent.cookiefirst.com">
     <link rel="preload" as="image" href="/images/section-hero.svg">
 
-    {{ $sass := resources.Get "scss/main.scss" }}
+    {{ $sass := resources.Get "scss/landing-page.scss" }}
     {{ $style := $sass | resources.ToCSS | resources.Minify  | fingerprint }}
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ $style.Permalink }}">
@@ -47,6 +47,10 @@
     <link href="{{ .RelPermalink }}" rel="alternate" type="application/rss+xml" />
     <link href="{{ .RelPermalink }}" rel="feed" type="application/rss+xml" />
     {{ end }}
+
+    {{ $mainJs := resources.Get "js/landing-page.js" }}
+    {{ $js := $mainJs | resources.Minify | fingerprint }}
+    <script src="{{ $js.Permalink }}"></script>
     
     {{ partial "tagmanager.html" . }}
     {{ hugo.Generator }}
