@@ -1,4 +1,6 @@
-//@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@charset "utf-8";
+//@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700|family=Open+Sans:400,700|Raleway:400,800&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
 @import "../bulma/sass/utilities/all";
 @import "variables";
@@ -572,7 +574,8 @@ body {
 .cookiefirst-root > div.notranslate {
   max-width: 460px!important;
   & > div {
-    padding: 30px!important;
+    padding: 40px!important;
+    border-radius: 10px!important;
   }
 }
 
