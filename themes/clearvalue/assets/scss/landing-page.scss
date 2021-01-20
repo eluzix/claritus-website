@@ -31,6 +31,22 @@ body {
   justify-content: space-between;
 }
 
+.loader {
+  @extend %loader;
+}
+
+.is-loading {
+  color: transparent !important;
+  pointer-events: none;
+  &::after {
+    @extend %loader;
+    position: absolute !important;
+    left: 50%;
+  }
+
+}
+
+
 h2 {
   font-weight: 500;
   font-size: 4.571rem;
@@ -58,6 +74,10 @@ p {
 
 .is-green {
   color: $green !important;
+}
+
+.is-red {
+  color: $red !important;
 }
 
 .button {
@@ -757,6 +777,10 @@ input {
           .is-join {
             position: initial;
             margin-top: 1.786rem;
+          }
+
+          p {
+            margin: 0 auto;
           }
         }
       }
