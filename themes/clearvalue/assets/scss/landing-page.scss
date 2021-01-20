@@ -432,7 +432,7 @@ input {
   }
 }
 
-@media screen and (max-width: $fullhd) {//small desktop
+@media screen and (max-width: $fullhd-lp) {//small desktop
   h2 {
     font-size: 3.571rem;
   }
