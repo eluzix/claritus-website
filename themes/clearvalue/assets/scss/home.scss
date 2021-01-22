@@ -506,6 +506,28 @@
         }
       }
     }
+
+    .home-footer {
+      .social {
+        position: relative;
+
+        .linkedin {
+          height: 100%;
+          position: absolute;
+          top: 9px;
+          left: -32px;
+        }
+        .facebook {
+          height: 100%;
+          position: absolute;
+          top: 9px;
+          left: 0;
+        }
+        .logo {
+          margin-top: 6px;
+        }
+      }
+    }
   }
 }
 
@@ -738,6 +760,12 @@
         .copyright {
           left: 3.5rem;
           transform: none;
+        }
+      }
+
+      .social {
+        .facebook, .linkedin {
+          position: initial;
         }
       }
     }
