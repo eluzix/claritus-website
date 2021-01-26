@@ -37,3 +37,51 @@ function validateEmail(email) {
     const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(String(email).toLowerCase());
 }
+
+const app = {
+    initMenuOpening: function () {
+        const control = document.getElementById('menu-burger')
+        if (control) {
+            control.onclick = app.toggleMenu
+        }
+
+        const closeIcon = document.getElementById('icon-close')
+        if (closeIcon) {
+            closeIcon.onclick = app.toggleMenu
+        }
+
+        const background = document.querySelector('#menu .background')
+        if (background) {
+            background.onclick = app.toggleMenu
+        }
+    },
+
+    toggleMenu: function () {
+        const menu = document.getElementById('menu')
+        const header = document.querySelector('header.header')
+        const burger = document.getElementById('menu-burger')
+
+        if (menu.classList.contains('menu--active')) {
+            menu.classList.toggle('menu--active')
+
+            setTimeout(() => {
+                header.classList.remove('menu-open')
+                burger.classList.remove('is-active')
+                menu.classList.toggle('is-block')
+            }, 400)
+        } else {
+            menu.classList.toggle('is-block')
+            setTimeout(() => {
+                header.classList.add('menu-open')
+                burger.classList.add('is-active')
+                menu.classList.toggle('menu--active')
+            }, 200)
+        }
+    },
+};
+
+document.addEventListener('DOMContentLoaded', function () {
+
+    app.initMenuOpening();
+
+})

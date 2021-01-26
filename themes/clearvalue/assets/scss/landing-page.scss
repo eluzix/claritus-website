@@ -149,6 +149,48 @@ input {
   padding-right: 2rem;
 }
 
+.burger {
+  @include hamburger(2.5rem);
+  display: inline-block;
+  margin-left: 3.643rem;
+
+  span {
+    width: 2.5rem;
+    height: 3px;
+    background-color: $white;
+    left: 0;
+
+    &:nth-child(1) {
+      top: calc(50% - 7px);
+    }
+    &:nth-child(2) {
+      top: calc(50%);
+    }
+    &:nth-child(3) {
+      top: calc(50% + 7px);
+    }
+  }
+
+  &.is-active {
+    z-index: 600;
+
+    span:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+    span:nth-child(3) {
+      transform: translateY(-6px) rotate(-45deg);
+    }
+  }
+
+  @include mobile {
+    width: 1.5rem;
+
+    span {
+      width: 1.5rem;
+    }
+  }
+}
+
 .is-centered {
   text-align: center;
 }
@@ -234,7 +276,18 @@ input {
       color: $white;
 
       font-weight: 500;
+
+      .burger{
+        &:hover {
+          background-color: transparent;
+        }
+      }
     }
+  }
+
+  &.menu-open {
+    background-color: transparent;
+    z-index: 600;
   }
 }
 
@@ -528,6 +581,10 @@ input {
     }
   }
 
+  .burger {
+    margin-left: 2.357rem;
+  }
+
   .landing-page {
 
     .section {
@@ -710,6 +767,9 @@ input {
             line-height: 180%;
           }
         }
+        .burger {
+          left: 0;
+        }
       }
     }
   }
@@ -823,3 +883,5 @@ input {
     }
   }
 }
+
+@import "menu-lp";
