@@ -89,4 +89,31 @@
       }
     }
   }
+
+  .white-hexagon {
+    display: none;
+  }
+}
+
+@include mobile {
+  .menu {
+    .menu-content {
+      padding: 10rem 2.857rem;
+    }
+
+    .menu-list {
+      li {
+        a {
+          font-weight: 600;
+          font-size: 1.143rem;
+        }
+      }
+    }
+    .white-hexagon {
+      display: block;
+      position: absolute;
+      top: 2.286rem;
+      left: 2.714rem;
+    }
+  }
 }
