@@ -765,7 +765,7 @@ input {
       }
 
       &.section-footer {
-        margin-top: 9.214rem;
+        padding-top: 9.214rem;
 
         .control {
           margin-bottom: 9.286rem;
@@ -796,6 +796,10 @@ input {
     .links {
       width: 100%;
       margin-right: 0;
+
+      a.link {
+        font-size: 1.143rem;
+      }
     }
 
     .social-block {
@@ -818,6 +822,10 @@ input {
           margin: 3.429rem auto;
         }
       }
+    }
+
+    .copyright {
+      font-size: 1rem;
     }
   }
 }
@@ -915,7 +923,7 @@ input {
       }
 
       &.section-footer {
-        margin-top: 7.429rem;
+        padding-top: 7.429rem;
 
         .centered {
           p {
@@ -1003,8 +1011,9 @@ input {
       margin-bottom: 3.857rem;
       padding: 0 2.286rem;
 
-       a {
+       a.link {
          margin-bottom: 1rem;
+         font-size: 1rem;
        }
     }
 
@@ -1023,6 +1032,10 @@ input {
         }
 
       }
+    }
+
+    .copyright {
+      font-size: 0.857rem;
     }
   }
 }
