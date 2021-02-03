@@ -1,195 +1,192 @@
 {{ define "content" }}
-
-<div class="home">
+<div class="landing-page">
     {{ partial "header.html" . }}
-    {{ partial "menu.html" }}
+    {{ partial "menu-lp.html" }}
 
-    <section class="section section-1 is-full-mobile">
-        <div class="centered has-top-padding">
-            <div>
-                <h1 class="has-bottom-margin-50">A Simple Way to Keep Track of Your Wealth</h1>
-                <p class="has-bottom-margin-50">Finally, a 360° view of your assets that lets you track, understand, and be in complete control of your wealth - all in one place!</p>
-                <a class="button is-green is-full is-wide has-bottom-margin-25" href="{{ .Site.Params.appUrl }}/on-boarding">Try it now!</a>
-                <p><a href="#pricing" class="is-small is-p">Try <img class="is-v-middle" src="/images/logo-all-black.svg" alt="Claritus" /> for Free</a></p>
-            </div>
-        </div>
-        <div class="bg-image"></div>
-    </section>
+    <section class="section hero">
+        <div class="centered">
+            <h2 class="has-bottom-margin-20">A Simple Way to Keep Track of <span class="is-green">Your Wealth</span></h2>
+            <p class="has-bottom-margin-40">Finally, a 360° view of your assets that lets you track, understand, and be in complete control of your wealth - all in one place!</p>
+            <a class="button is-green is-full is-wide is-higher has-bottom-margin-25"
+               href="{{ .Site.Params.appUrl }}/on-boarding">
+                Try <img src="/images/logo-white-beta.svg" class="icon-logo"> for Free
+            </a>
 
-    <section class="section section-2">
-        <div class="centered has-top-padding">
-            <div>
-                <h2 class="has-bottom-margin-50">A clear view of your assets</h2>
-                <p>At Claritus, we believe that EVERYONE should have a clear, understandable view of their wealth -
-                    without requiring a Master’s degree in Finance!</p>
-            </div>
-        </div>
-        <div class="bg-image"></div>
-    </section>
+            <img src="/images/section-hero.png" />
 
-    <section class="section section-3 is-full-mobile">
-        <div class="bg-image"></div>
-
-        <div class="centered has-top-padding is-left-mobile">
-            <div>
-                <h2 class="has-bottom-margin-50">A beacon in the dark</h2>
-                <p class="has-bottom-margin-50">Claritus lets you access, track, and be in full control of your finances from ONE convenient interface. In a choppy sea of apps, services, and spreadsheets, Claritus is your beacon in the dark.</p>
-                <h4 class="is-green">Simple, user-friendly, intuitive.</h4>
-            </div>
         </div>
     </section>
 
-    <section class="section section-4 section-slider">{{ partial "glide.html" }}</section>
-
-<!--    <section class="section section-4 section-slider">-->
-<!--        <button id="arrow-left" class="arrow arrow&#45;&#45;left is-hidden-touch"><img src="/images/slider-left.svg" /></button>-->
-
-<!--        <div class="navigation-wrapper container">-->
-<!--            <button class="arrow arrow&#45;&#45;left is-hidden-desktop"><img src="/images/slider-left.svg" /></button>-->
-<!--            <div class="slider">-->
-<!--                <div id="main-slider" class="keen-slider">-->
-<!--                    <div class="keen-slider__slide number-slide1">-->
-<!--                        <div class="slide-image">-->
-<!--                            <img src="/images/banner-slide-1.png"/>-->
-<!--                        </div>-->
-<!--                        <div class="slide-content">-->
-<!--                            <h2 class="keen-slider__slide-title">-->
-<!--                                We Do the Work For You-->
-<!--                            </h2>-->
-<!--                            <div class="slide-text">-->
-<!--                                <p class="subtitle">-->
-<!--                                    Real-time data from over 17,000 global banks, brokerages,-->
-<!--                                    and other financial institutions - -->
-<!--                                    all at your fingertips.-->
-<!--                                </p>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                    <div class="keen-slider__slide number-slide2">-->
-<!--                        <div class="slide-image">-->
-<!--                            <img src="/images/banner-slide-2.png"/>-->
-<!--                        </div>-->
-<!--                        <div class="slide-content">-->
-<!--                            <h2 class="keen-slider__slide-title">-->
-<!--                                Track and Compare-->
-<!--                            </h2>-->
-<!--                            <div class="slide-text">-->
-<!--                                <p class="subtitle">-->
-<!--                                    Track and sort by any asset and compare between investment types and performances easily.-->
-<!--                                </p>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                    <div class="keen-slider__slide number-slide3">-->
-<!--                        <div class="slide-image">-->
-<!--                            <img src="/images/banner-slide-3.png"/>-->
-<!--                        </div>-->
-<!--                        <div class="slide-content">-->
-<!--                            <h2 class="keen-slider__slide-title">-->
-<!--                                A clear look forward and back-->
-<!--                            </h2>-->
-<!--                            <div class="slide-text">-->
-<!--                                <p class="subtitle">-->
-<!--                                    Upload your investments’ historical data, and measure-->
-<!--                                    their performances over time clearly and objectively.-->
-<!--                                </p>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <div class="home__left-content content-dots">-->
-<!--                <button class="arrow arrow&#45;&#45;left">-->
-<!--                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">-->
-<!--                        <circle cx="25" cy="25" r="22.75" stroke="#C4C4C4" stroke-width="0.5"/>-->
-<!--                        <path fill-rule="evenodd" clip-rule="evenodd" d="M20.3262 25.9188L25.7942 31.7008L24.5655 33L17 25L24.5655 17L25.7942 18.2992L20.3262 24.0812H33V25.9188H20.3262Z" fill="#323947"/>-->
-<!--                    </svg>-->
-
-<!--                </button>-->
-<!--                <div id="dots" class="dots"></div>-->
-<!--                <button-->
-<!--                        class="arrow arrow&#45;&#45;right">-->
-<!--                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">-->
-<!--                        <circle r="22.75" transform="matrix(-1 0 0 1 25 25)" stroke="#C4C4C4" stroke-width="0.5"/>-->
-<!--                        <path fill-rule="evenodd" clip-rule="evenodd" d="M29.6738 25.9188L24.2058 31.7008L25.4345 33L33 25L25.4345 17L24.2058 18.2992L29.6738 24.0812H17V25.9188H29.6738Z" fill="#323947"/>-->
-<!--                    </svg>-->
-<!--                </button>-->
-<!--            </div>-->
-<!--            <button class="arrow arrow&#45;&#45;right is-hidden-desktop"><img src="/images/slider-right.svg" /></button>-->
-<!--        </div>-->
-
-<!--        <button id="arrow-right" class="arrow arrow&#45;&#45;right is-hidden-touch"><img src="/images/slider-right.svg" /></button>-->
-<!--    </section>-->
-
-    <section class="section section-5 is-full-mobile">
-        <div class="centered is-left-mobile">
-            <div>
-                <h2 class="has-bottom-margin-50">Lifting the fog on a brighter future</h2>
-                <p>Claritus’s straight-forward, comprehensive view of your money’s performance allows to you acquire a deeper understanding of your assets. This allows you not only to maintain and
-                    nurture your wealth, but to make smarter decisions moving forward.</p>
-            </div>
-        </div>
-
-        <div class="bg-image"></div>
-    </section>
-
-    <section class="section section-6 is-reversed-mobile">
-        <div class="bg-image is-centered"></div>
-
-        <div class="centered left-align">
-            <div>
-                <h2 class="has-bottom-margin-50">Privacy and Security Guaranteed</h2>
-                <p>We know your privacy and security are of the utmost importance to you, which is why we are committed
-                    to the highest standards of data security and encryption.
-                    With Claritus, you know your data is <span class="is-underline">for your eyes only</span>. </p>
-            </div>
-        </div>
-    </section>
-
-    <section class="section home-footer section-footer" id="pricing">
-        <div>
-            <div class="pricing">
-                <a class="button is-green is-full is-wide is-hidden-tablet" href="{{ .Site.Params.appUrl }}/on-boarding">Try it now!</a>
-
-                <div class="pricing-box is-hidden">
-                    <p class="has-bottom-margin-24"><span class="price">$19.90</span>/month</p>
-                    <p class="is-small has-bottom-margin-24">or</p>
-                    <p><span class="price">$199</span>/year</p>
-                    <p class="is-small">($39 discount)</p>
+    <section class="section section-clear-view">
+        <div class="section-info">
+            <div class="block-text">
+                <div>
+                    <h3 class="has-bottom-margin-30">A clear view of your assets</span></h3>
+                    <p class="has-bottom-margin-30">At Claritus, we believe that EVERYONE should have a clear, understandable view of their wealth - without requiring a Master’s degree in Finance!</p>
+<!--                    <a class="button is-green is-full is-wide has-bottom-margin-25"-->
+<!--                       href="{{ .Site.Params.appUrl }}/on-boarding">Join Claritus</a>-->
                 </div>
+            </div>
 
-                <div class="pricing-content">
-                    <h2 class="has-bottom-margin-50">Simple, Transparent Pricing</h2>
-                    <p>At Claritus, we aim to bring you the highest-value tools for your money at a fair, minimal cost.<p>
-                    <p class="has-bottom-margin-50">Subscription prices are fixed, clear, and affordable. That means they’re the same for everyone and not based on your assets.
-                    In addition, there are no surprise costs or hidden fees, ever.</p>
-                    <p class="has-bottom-margin-50">Try <img class="is-v-middle" src="/images/logo-all-black.svg" alt="Claritus" /> for Free</p>
-                    <a class="button is-green is-full is-wide is-hidden-mobile" href="{{ .Site.Params.appUrl }}/on-boarding">Try it now!</a>
+            <div class="block-image">
+                <img src="/images/video.png" />
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-privacy is-white">
+        <div class="section-info">
+            <div class="block-image is-hidden-mobile">
+                <img src="/images/section-5.jpg" />
+            </div>
+            <div class="block-text">
+                <div>
+                    <h3 class="has-bottom-margin-30">Privacy and Security Guaranteed</h3>
+                    <img src="/images/section-5.jpg" class="is-invisible-tablet" />
+                    <p class="has-bottom-margin-30">We know your privacy and security are of the utmost importance to
+                        you, which is why we are committed to the highest standards of data security and encryption.
+                        With Claritus, you know your data is for your eyes only.</p>
+<!--                    <a class="button is-green is-full is-wide has-bottom-margin-25"-->
+<!--                       href="{{ .Site.Params.appUrl }}/on-boarding">Join Claritus</a>-->
                 </div>
             </div>
         </div>
-        <div class="is-footer">
-            <div class="links">
-                <a href="/about-us" class="link" title="About Us">About Us</a>
-                <a href="/our-story" class="link" title="Our Story">Our Story</a>
-                <a href="/faq" class="link" title="FAQ">FAQ</a>
-                <a href="mailto:help@claritus.io" class="link contact-us-link" title="email claritus.io">Contact Us</a>
-                <a href="/privacy" class="link" title="Privacy">Privacy Policy</a>
-                <a href="/terms" class="link" title="Terms of Use">Terms of Use</a>
+    </section>
+
+    <section class="section section-beacon">
+        <div class="section-info">
+            <div class="block-text">
+                <div>
+                    <h3 class="has-bottom-margin-30">A beacon
+                        in the dark</h3>
+                    <img src="/images/section-5.jpg" class="is-invisible-tablet" />
+                    <p class="has-bottom-margin-10">Claritus lets you access, track, and be in full control of your finances from ONE convenient interface. In a choppy sea of apps, services, and spreadsheets, Claritus is your beacon in the dark.</p>
+                    <p class="is-green has-bottom-margin-50">Simple, user-friendly, intuitive. </p>
+                    <a class="button is-green is-full is-wide has-bottom-margin-25"
+                       href="{{ .Site.Params.appUrl }}/on-boarding">Join Claritus</a>
+                </div>
+            </div>
+            <div class="block-image is-hidden-mobile">
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-track is-white">
+        <div class="section-info">
+            <div class="block-text">
+                <div>
+                    <h3 class="has-bottom-margin-20">Track and Control</h3>
+                    <p>With real time data from more than 17,000 global financial institutions, brokerages, and other financial organizations, it’s never been easier to automatically keep track of your investments and assets.</p>
+                </div>
             </div>
 
-            <div class="social-block">
-                <div class="social has-bottom-margin-50">
-                    <a href="https://www.linkedin.com/company/claritus-io/" class="linkedin"
-                       target="_blank" rel="noopener"><img src="/images/linkedin.svg" class="has-right-margin-40"></a>
-                    <a href="https://www.facebook.com/Claritus.io" class="facebook"
-                       target="_blank" rel="noopener"><img src="/images/icon-facebook.svg"></a>
-                    <img src="/images/logo-white.svg" class="logo">
-                </div>
-                <p class="copyright">&copy; 2020 Clear Value ltd.</p>
+            <div class="block-image">
+                <img src="/images/section-2.jpg" />
             </div>
         </div>
 
     </section>
+
+    <section class="section section-daterange is-white">
+        <div class="section-info">
+            <div class="block-image">
+                <img src="/images/date-range-view.jpg" />
+            </div>
+
+            <div class="block-text">
+                <div>
+                    <h3 class="has-bottom-margin-20">Nurture and Grow</h3>
+                    <p>Upload your investment history and measure your wealth’s performance over time easily and
+                        accurately, and enjoy performance analytics and cross asset performance comparisons to help
+                        grow your wealth.</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="section section-automate is-white">
+        <div class="section-info is-reversed-tablet">
+            <div class="block-text">
+                <div>
+                    <h3 class="has-bottom-margin-30">Automate and Simplify</h3>
+                    <p class="has-bottom-margin-30">Let Claritus do the work for you by automatically uploading your current spreadsheet to your account and automating how you track, understand and control your wealth.</p>
+                </div>
+            </div>
+            <div class="block-image">
+                <img src="/images/section-4.svg" />
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-fog">
+        <div class="w-100">
+            <h2 class="has-bottom-margin-20 is-centered">Lifting the fog on a brighter future</h2>
+            <p class="info has-bottom-margin-40">Claritus’s straight-forward, comprehensive view of your money’s performance
+                allows to you acquire a deeper understanding of your assets. This allows you not only to maintain and
+                nurture your wealth, but to make smarter decisions moving forward.</p>
+
+            <img src="/images/section-fog.jpg" class="w-100" />
+        </div>
+    </section>
+
+    <section class="section section-testimonials is-white">
+        <div class="centered">
+            <h2 class="has-bottom-margin-20">Other Saying About Us</h2>
+            <div class="testimonials-block">
+                <div class="testimonial">
+                    <img src="/images/icon-quotation.svg" class="quotation" />
+                    <p class="testimonial-text">Enim consectetur amet faucibus enim dignissim ultrices nunc ante nisi.
+                        Amet in ut feugiat amet, adipiscing leo. Leo at volutpat aliquet interdum aliquam molestie. </p>
+                    <div class="testimonial-author">
+                        <img src="/images/person.png" />
+                        <span>Robert Fox</span>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <img src="/images/icon-quotation.svg" class="quotation" />
+                    <p class="testimonial-text">Enim consectetur amet faucibus enim dignissim ultrices nunc ante nisi.
+                        Amet in ut feugiat amet, adipiscing leo.</p>
+                    <div class="testimonial-author">
+                        <img src="/images/person.png" />
+                        <span>Robert Fox</span>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <img src="/images/icon-quotation.svg" class="quotation" />
+                    <p class="testimonial-text">Enim consectetur amet faucibus enim dignissim ultrices nunc ante nisi.
+                        Amet in ut feugiat amet, adipiscing leo. Leo at volutpat aliquet interdum aliquam molestie.</p>
+                    <div class="testimonial-author">
+                        <img src="/images/person.png" />
+                        <span>Robert Fox</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section section-beacon section-transparent">
+        <div class="section-info">
+            <div class="block-text">
+                <div>
+                    <h2 class="has-bottom-margin-30">Transparent & Simple Pricing </h2>
+                    <p class="has-bottom-margin-50">At Claritus, we aim to bring you the highest-value tools for your money at a fair, minimal cost.</p>
+                    <p>Subscription prices are fixed, clear, and affordable. That means they’re the same for everyone and not based on your assets. In addition, there are no surprise costs or hidden fees, ever.</p>
+                </div>
+            </div>
+            <div class="block-image is-hidden-mobile">
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-footer">
+        <div class="centered">
+            <h4>If you're a Family office, or financial professional and want to use Claritus for your clients.</h4>
+            <h4>Contact us <a href="mailto:Hello@Claritus.io" class="link contact-us-link is-green" title="email claritus.io">Hello@Claritus.io</a></h4>
+        </div>
+    </section>
+
+    {{ partial "lp-footer.html" . }}
 </div>
 {{ end }}
