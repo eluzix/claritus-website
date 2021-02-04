@@ -31,7 +31,7 @@
     <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
     <link rel="preconnect" href="https://consent.cookiefirst.com">
     <link rel="dns-prefetch" href="https://consent.cookiefirst.com">
-    <link rel="preload" as="image" href="/images/home-section-1.jpg">
+    <link rel="preload" as="image" href="/images/section-hero.png">
 
     {{ $sass := resources.Get "scss/main.scss" }}
     {{ $style := $sass | resources.ToCSS | resources.Minify  | fingerprint }}
@@ -47,7 +47,6 @@
             href="https://cdn.jsdelivr.net/npm/keen-slider@5.0.2/keen-slider.min.css"
     />
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
 
     {{ with .OutputFormats.Get "RSS" }}
     <link href="{{ .RelPermalink }}" rel="alternate" type="application/rss+xml" />
@@ -62,7 +61,6 @@
     {{ $js := $mainJs | resources.Minify | fingerprint }}
     <script src="{{ $js.Permalink }}"></script>
     <script src="https://cdn.jsdelivr.net/npm/keen-slider@5.0.2/keen-slider.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide" async></script>
 
     {{ partial "tagmanager.html" . }}
     {{ hugo.Generator }}

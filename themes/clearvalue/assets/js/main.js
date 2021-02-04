@@ -2,8 +2,6 @@ const sliderIntervalTime = 6000 * 1000
 
 const app = {
 
-    glide: null,
-
     setupSnapScrolling() {
         try {
             const observer = new IntersectionObserver((entries) => {
@@ -17,10 +15,6 @@ const app = {
                                 navbar.classList.add('on-' + cls)
                             }
                         })
-
-                        if (entry.target.classList.contains('section-slider') && app.glide === null) {
-                            app.setupSlider()
-                        }
 
                     } else {
                         entry.target.classList.remove('is-visible')
@@ -45,15 +39,6 @@ const app = {
         }
     },
 
-    setupSlider() {
-        if (document.querySelector('.home')) {
-            app.glide = new Glide('.glide', {
-                autoplay: 6000,
-                hoverpause: false,
-            }).mount()
-        }
-    },
-
     initMenuOpening() {
         const control = document.getElementById('menu-burger')
         if (control) {
@@ -68,30 +53,6 @@ const app = {
         const background = document.querySelector('#menu .background')
         if (background) {
             background.onclick = app.toggleMenu
-        }
-    },
-
-    initGoUpButton() {
-
-        if (!app.isMobile()) {
-            let goUpDiv = document.createElement('div');
-            goUpDiv.className = 'go-up';
-            goUpDiv.innerHTML = '<img src="/images/icon-arrow-up.svg"><span>Go Up</span>';
-
-            goUpDiv.onclick = () => {
-                window.scrollTo(0,0);
-            };
-
-            document.body.appendChild(goUpDiv);
-
-            window.addEventListener('scroll', function(e) {
-                let element = document.querySelector('.go-up');
-                if (element && window.scrollY > 20) {
-                    element.classList.add('is-visible')
-                } else if (element){
-                    element.classList.remove('is-visible')
-                }
-            });
         }
     },
 
@@ -121,35 +82,6 @@ const app = {
         }
     },
 
-    setupIntercomMessage() {
-        if (window.Intercom) {
-            const elements = document.querySelectorAll('.contact-us-link')
-            for (let i = 0; i < elements.length; i++) {
-                elements[i].addEventListener('click', (e) => {
-                    if (window.Intercom) {
-                        e.cancelable = true;
-                        e.preventDefault();
-                        app.openIntercomMessage()
-                        return false
-                    }
-                })
-            }
-        }
-    },
-
-    openIntercomMessage() {
-        if (window.Intercom) {
-            window.Intercom("showNewMessage");
-            window.setTimeout(() => {
-                const int = document.querySelector('.intercom-messenger-frame')
-                // console.log('>>>>>> int:', int)
-                if (int === null) {
-                    window.location.href = 'mailto:help@claritus.io';
-                }
-            }, 2000)
-        }
-    },
-
     toggleMenu() {
         const menu = document.getElementById('menu')
         const header = document.querySelector('header.header')
@@ -171,144 +103,6 @@ const app = {
                 burger.classList.add('is-active')
                 menu.classList.toggle('menu--active')
             }, 200)
-        }
-    },
-
-    initContactUsModal() {
-        let modal = document.getElementById("contact-us-modal");
-
-        if (modal) {
-            let openButtons = document.querySelectorAll('.open-contact-us-modal, .contact-us-link');
-            openButtons.forEach(button => {
-                button.onclick = function(e) {
-                    e.preventDefault()
-                    modal.classList.add('is-active')
-                    // modal.style.display = "block";
-                }
-            });
-
-            let closeBtn = document.getElementById("close-contact-us");
-            closeBtn.onclick = function() {
-                // modal.style.display = "none";
-                modal.classList.remove('is-active')
-
-                let successMessage = modal.querySelector('.form-submit');
-                if (successMessage) {
-                    successMessage.classList.add('is-hidden')
-                }
-
-                let submittedForm = modal.querySelector('.form');
-                if (submittedForm) {
-                    submittedForm.classList.remove('is-hidden')
-                }
-            };
-
-            modal.querySelector('.form').onsubmit = function (e) {
-                e.preventDefault();
-
-                if (app.validateForm(modal)) {
-                    app.submitForm(modal);
-                } else {
-                    if (!app._contactModelValidated){
-                        app._contactModelValidated = true;
-
-                        modal.querySelectorAll('.input').forEach(element => {
-                            element.addEventListener('input', (e) => {
-                                app.validateForm(modal)
-                            })
-                        });
-                    }
-                }
-
-            };
-        }
-
-    },
-
-    validateForm(modal) {
-        let inputsAreValid = true;
-
-        modal.querySelectorAll('.input').forEach(element => {
-            if (!element.value ||
-                (element.type === 'email' && !app.validateEmail(element.value))) {
-                inputsAreValid = false;
-                element.classList.add('is-invalid');
-                element.parentElement.querySelector('.error-message').classList.add('is-active');
-            } else {
-                element.classList.remove('is-invalid');
-                element.parentElement.querySelector('.error-message').classList.remove('is-active')
-            }
-        });
-
-        return inputsAreValid;
-    },
-
-    validateEmail(mail) {
-        if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(mail)) {
-            return (true)
-        }
-        return (false)
-    },
-
-    submitForm(modal) {
-        grecaptcha.ready(function(){
-            grecaptcha.execute('6LeptuEZAAAAAH5olX9oeDX9C2Ck2KG_Dd2zXhKw', {action: 'submit'}).then(function(token) {
-                // Add your logic to submit to your backend server here.
-                let submittedForm = modal.querySelector('.form');
-
-                let url = 'https://nkm2iod3hf.execute-api.us-east-1.amazonaws.com/prod/contact-us';
-                // let url = 'https://29iax1x5e5.execute-api.us-east-1.amazonaws.com/dev/contact-us';
-                let data = {
-                    token: token,
-                    name: submittedForm.querySelector('.input[name=name]').value,
-                    email: submittedForm.querySelector('.input[name=email]').value,
-                    msg: submittedForm.querySelector('.input[name=message]').value,
-                };
-
-                let urlEncodedData = "",
-                    urlEncodedDataPairs = [],
-                    name;
-
-                for( name in data ) {
-                    urlEncodedDataPairs.push( encodeURIComponent( name ) + '=' + encodeURIComponent( data[name] ) );
-                }
-
-                urlEncodedData = urlEncodedDataPairs.join( '&' ).replace( /%20/g, '+' );
-
-                fetch(url,  {
-                    method: 'POST',
-                    mode: 'no-cors',
-                    headers: {
-                        'Content-Type': 'application/x-www-form-urlencoded'
-                    },
-                    body: urlEncodedData
-                }).catch(() => {
-                    //do nothing
-                })
-                
-                app.clearData();
-
-            }).catch((e) => {
-                console.error('grecaptcha error:', e)
-            })
-
-        })
-    },
-
-    clearData() {
-        let modal = document.getElementById("contact-us-modal");
-        let submittedForm = modal.querySelector('.form');
-        submittedForm.querySelector('.input[name=name]').value = '';
-        submittedForm.querySelector('.input[name=email]').value = '';
-        submittedForm.querySelector('.input[name=message]').value = '';
-
-        let successMessage = modal.querySelector('.form-submit.is-hidden');
-        if (successMessage) {
-            successMessage.classList.remove('is-hidden')
-        }
-
-        if (submittedForm) {
-            submittedForm.classList.add('is-hidden')
         }
     },
 
@@ -391,7 +185,7 @@ const app = {
 
     setupSliderTestimonials() {
         if (document.querySelector('.home')) {
-            var slider = new KeenSlider("#main-slider", {
+            let slider = new KeenSlider("#main-slider", {
                 loop: true,
                 created: function (instance) {
                     let timerId = setInterval(() => {
@@ -419,11 +213,11 @@ const app = {
                         .addEventListener("click", function () {
                             instance.next();
                         });
-                    var dots_wrapper = document.getElementById("dots");
-                    var slides = document.querySelectorAll(".keen-slider__slide");
+                    let dots_wrapper = document.getElementById("dots");
+                    let slides = document.querySelectorAll(".keen-slider__slide");
 
                     slides.forEach(function (t, idx) {
-                        var dot = document.createElement("button");
+                        let dot = document.createElement("button");
                         dot.classList.add("dot");
                         dots_wrapper.appendChild(dot);
                         dot.addEventListener("click", function () {
@@ -462,31 +256,13 @@ function updateClasses(instance) {
         arrowRightMobile.classList.remove("arrow--disabled");
     }
 
-    var dots = document.querySelectorAll(".dot");
+    let dots = document.querySelectorAll(".dot");
     dots.forEach(function(dot, idx) {
         idx === slide
             ? dot.classList.add("dot--active")
             : dot.classList.remove("dot--active");
     });
 }
-
-// function toggleMenu() {
-//     const menu = document.getElementById('menu')
-//
-//     if (menu.classList.contains('menu--active')) {
-//         menu.classList.toggle('menu--active')
-//
-//         setTimeout(() => {
-//             menu.classList.toggle('is-block')
-//         }, 500)
-//     } else {
-//         menu.classList.toggle('is-block')
-//         setTimeout(() => {
-//             menu.classList.toggle('menu--active')
-//         }, 300)
-//
-//     }
-// }
 
 function checkHeaderVisibility() {
     let headerElement = document.querySelector('header');
@@ -515,9 +291,6 @@ document.addEventListener('DOMContentLoaded', function () {
     app.initMenuOpening();
     app.homeScrollToPricing();
     app.setupSliderTestimonials();
-    // app.setupIntercomMessage();
-    // app.initGoUpButton();
-    // app.initContactUsModal();
 
     try {
         app.utmCookie()
