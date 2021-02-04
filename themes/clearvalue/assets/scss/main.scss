@@ -12,7 +12,6 @@ html {
 }
 
 body {
-  height: 100vh;
   font-size: 1.2rem;
 
   color: $white;
@@ -28,7 +27,6 @@ body {
 }
 
 .root {
-  min-height: 100vh;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -253,8 +251,12 @@ input {
   margin-bottom: 4.286rem;
 }
 
-.is-invisible-tablet, .is-invisible-fullhd, .is-visible-touch {
-  display: none;
+.is-invisible-tablet, .is-invisible-fullhd, .is-visible-touch, .is-visible-tablet {
+  display: none !important;
+}
+
+.is-hidden-tablet {
+  display: inherit !important;
 }
 
 .icon {
@@ -288,12 +290,16 @@ input {
   background: $dark-blue;
   height: auto;
 
+  .logo-black {
+    display: none;
+  }
+
   .button {
     height: 4rem;
   }
 
   .nav {
-    height: 100%;
+    //height: 100%;
     padding: 0;
     display: flex;
     justify-content: space-between;
@@ -323,15 +329,54 @@ input {
     background-color: transparent;
     z-index: 600;
   }
+
+  &.white-header {
+    background: $white;
+    color: $dark-blue;
+    position: fixed;
+    top: 0;
+
+    .nav {
+      .logo-black {
+        display: block;
+        content: none;
+      }
+      .logo-white {
+        display: none;
+      }
+
+      .links {
+        .button {
+          color: $dark;
+
+          &.is-login {
+            border-color: $white;
+          }
+
+          &.is-join {
+            color: $dark;
+          }
+        }
+      }
+
+      .burger span {
+        background-color: $dark;
+      }
+    }
+
+  }
+}
+
+.header-hidden-height {
+  min-height: 7.125rem;
+  width: 0;
+  display: none;
 }
 
 .landing-page {
   background: $dark-blue;
 
-  height: 100vh;
   width: 100vw;
-  overflow-y: scroll;
-  overflow-x: hidden;
 
   .section {
     width: 100vw;
@@ -446,6 +491,13 @@ input {
     &.section-track {
       .section-info {
         margin: 11.071rem auto;
+
+        .block-image {
+          img {
+            box-shadow: 0px 108.622px 86.8976px rgba(42, 50, 87, 0.05), 0px 39.8261px 36.3037px rgba(42, 50, 87, 0.02), 0px 18.9939px 19.4097px rgba(42, 50, 87, 0.013), 0px 9.43317px 10.8809px rgba(42, 50, 87, 0.008), 0px 4.32611px 5.77878px rgba(42, 50, 87, 0.00663327), 0px 1.49625px 2.40468px rgba(42, 50, 87, 0.0041531);
+            border-radius: 20px;
+          }
+        }
       }
     }
 
@@ -551,6 +603,11 @@ input {
       .section-info {
         .block-image {
           margin-right: 12rem;
+
+          img {
+            box-shadow: 0px 8px 35px 5px rgba(0, 0, 0, 0.05);
+            border-radius: 10px;
+          }
         }
 
         .block-text {
@@ -730,6 +787,14 @@ input {
         }
       }
 
+      &.section-testimonials {
+        .testimonials-block {
+          .testimonial {
+            margin-right: 1rem;
+          }
+        }
+      }
+
       &.section-automate {
         padding-top: 10.714rem;
         padding-bottom: 14.286rem;
@@ -790,6 +855,14 @@ input {
 
   p, .copyright {
     font-size: 1.143rem;
+  }
+
+  .is-visible-tablet {
+    display: block !important;
+  }
+
+  .is-hidden-tablet {
+    display: none !important;
   }
 
   .header {
@@ -868,46 +941,109 @@ input {
 
       &.section-track {
         .section-info {
-          margin: 6.429rem auto 9.143rem;
+          margin: 8.571rem auto 7.143rem;
 
           .block-text {
             & > div {
               margin-bottom: 3.571rem;
             }
           }
-        }
-      }
 
-      &.section-automate {
-        padding-top: 6.429rem;
-        padding-bottom: 6.429rem;
-
-        .block-image {
-          .button {
-            margin-top: 5.786rem;
+          .block-image {
+            max-width: 37.857rem;
+            margin: 0 auto;
           }
         }
       }
 
-      &.section-privacy {
+      &.section-automate {
         padding: 8.571rem 0;
 
+        .block-image {
+          max-width: 28rem;
+          margin: 3.571rem auto 0;
+        }
+      }
+
+      &.section-testimonials {
+        padding: 8.571rem 0 14.643rem;
+        .testimonials-slider {
+          .slider {
+            display: flex;
+            flex-direction: row;
+          }
+
+          .keen-slider {
+            max-width: 28rem;
+            margin: 0 6rem;
+
+            box-shadow: 0px 108.622px 86.8976px rgba(42, 50, 87, 0.05), 0px 39.8261px 36.3037px rgba(42, 50, 87, 0.02), 0px 18.9939px 19.4097px rgba(42, 50, 87, 0.013), 0px 9.43317px 10.8809px rgba(42, 50, 87, 0.008), 0px 4.32611px 5.77878px rgba(42, 50, 87, 0.00663327), 0px 1.49625px 2.40468px rgba(42, 50, 87, 0.0041531);
+            border-radius: 20px;
+
+            .keen-slider__slide {
+              display: flex;
+              flex-direction: column;
+
+              &.testimonial {
+                margin: 0;
+                box-shadow: none;
+                border-radius: unset;
+              }
+            }
+          }
+        }
+      }
+
+      &.section-fog {
+        padding: 8.571rem 0;
+      }
+
+      &.section-privacy {
+        padding: 7rem 0;
+
         .section-info {
-          flex-direction: row;
-          text-align: initial;
 
           .block-image {
-            text-align: end;
             align-self: center;
 
             img {
-              max-width: 18.214rem;
+              max-width: 15.5rem;
               height: auto;
             }
           }
 
           .block-text {
-            max-width: 23.214rem;
+            max-width: 28rem;
+            margin: 5.857rem auto 0 !important;
+          }
+        }
+      }
+
+      &.section-beacon {
+        .section-info {
+          flex-direction: column-reverse;
+          margin-left: 0;
+          padding-left: 0;
+
+          .block-image {
+            background: linear-gradient(0deg, #353D4F 0%, rgba(53, 61, 79, 0) 59.28%),url(/images/beacon-in-the-dark.jpg) no-repeat;
+            background-position-x: center;
+          }
+
+          .block-text {
+            margin-bottom: 14.286rem !important;
+          }
+        }
+
+      }
+
+      &.section-daterange {
+        .section-info {
+          flex-direction: column-reverse;
+
+          .block-image {
+            margin: 3.571rem auto 0;
+            max-width: 33.929rem;
           }
         }
       }
@@ -1189,3 +1325,4 @@ input {
 }
 
 @import "menu-lp";
+@import "slider";

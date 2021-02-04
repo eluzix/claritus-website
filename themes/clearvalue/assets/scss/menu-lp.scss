@@ -54,6 +54,23 @@
     transition: all 0.5s ease-in-out;
   }
 
+  &.white-header {
+    .menu-content {
+      background: $white;
+      padding: 7.643rem 2.643rem;
+    }
+
+    .menu-list li {
+      a {
+        color: $dark;
+      }
+
+      &:hover {
+        background: rgba(73, 83, 105, 0.05);
+      }
+    }
+  }
+
   .menu-controls {
     display: none;
   }

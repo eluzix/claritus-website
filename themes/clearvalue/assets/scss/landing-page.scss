@@ -223,7 +223,7 @@ input {
 }
 
 .is-invisible-tablet, .is-invisible-fullhd, .is-visible-touch {
-  display: none;
+  display: none !important;
 }
 
 .icon {
