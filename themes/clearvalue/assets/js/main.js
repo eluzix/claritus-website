@@ -1,4 +1,4 @@
-const sliderIntervalTime = 6000000 // 5sec
+const sliderIntervalTime = 3000 // 5sec
 
 const app = {
 
@@ -403,9 +403,19 @@ const app = {
                         .addEventListener("click", function () {
                             instance.prev();
                         });
+                    document
+                        .getElementById("arrow-left-mobile")
+                        .addEventListener("click", function () {
+                            instance.prev();
+                        });
 
                     document
                         .getElementById("arrow-right")
+                        .addEventListener("click", function () {
+                            instance.next();
+                        });
+                    document
+                        .getElementById("arrow-right-mobile")
                         .addEventListener("click", function () {
                             instance.next();
                         });
@@ -431,15 +441,26 @@ const app = {
 };
 
 function updateClasses(instance) {
-    var slide = instance.details().relativeSlide;
-    var arrowLeft = document.getElementById("arrow-left");
-    var arrowRight = document.getElementById("arrow-right");
-    slide === 0
-        ? arrowLeft.classList.add("arrow--disabled")
-        : arrowLeft.classList.remove("arrow--disabled");
-    slide === instance.details().size - 1
-        ? arrowRight.classList.add("arrow--disabled")
-        : arrowRight.classList.remove("arrow--disabled");
+    let slide = instance.details().relativeSlide;
+    let arrowLeft = document.getElementById("arrow-left");
+    let arrowLeftMobile = document.getElementById("arrow-left-mobile");
+    let arrowRight = document.getElementById("arrow-right");
+    let arrowRightMobile = document.getElementById("arrow-right-mobile");
+
+    if (slide === 0) {
+        arrowLeft.classList.add("arrow--disabled");
+        arrowLeftMobile.classList.add("arrow--disabled");
+    } else {
+        arrowLeft.classList.remove("arrow--disabled");
+        arrowLeftMobile.classList.remove("arrow--disabled");
+    }
+    if (slide === instance.details().size - 1) {
+        arrowRight.classList.add("arrow--disabled")
+        arrowRightMobile.classList.add("arrow--disabled")
+    } else {
+        arrowRight.classList.remove("arrow--disabled");
+        arrowRightMobile.classList.remove("arrow--disabled");
+    }
 
     var dots = document.querySelectorAll(".dot");
     dots.forEach(function(dot, idx) {

@@ -110,6 +110,10 @@ p {
     }
   }
 
+  &.is-wide {
+    width: auto;
+  }
+
   &.is-green {
     border-color: $green;
     color: $white !important;
@@ -251,7 +255,7 @@ input {
   margin-bottom: 4.286rem;
 }
 
-.is-invisible-tablet, .is-invisible-fullhd, .is-visible-touch, .is-visible-tablet {
+.is-invisible-tablet, .is-invisible-fullhd, .is-visible-touch, .is-visible-tablet, .is-visible-mobile {
   display: none !important;
 }
 
@@ -468,7 +472,6 @@ input {
       .section-info {
         .block-text {
           flex: 46%;
-          margin-top: 2rem;
           margin-right: 0;
           padding-right: 8rem;
         }
@@ -511,7 +514,6 @@ input {
         }
 
         .block-text {
-          margin: 0 auto;
           margin-right: 13rem;
         }
       }
@@ -627,6 +629,7 @@ input {
           padding: 13.143rem 0;
           flex: 50%;
           margin-right: 0;
+          margin-top: 0;
         }
 
         .block-image {
@@ -996,6 +999,11 @@ input {
 
       &.section-fog {
         padding: 8.571rem 0;
+
+        img {
+          height: 25rem;
+          object-fit: cover;
+        }
       }
 
       &.section-privacy {
@@ -1037,6 +1045,15 @@ input {
 
       }
 
+      &.section-transparent {
+        .section-info {
+          .block-image {
+            background: linear-gradient(0deg, #353D4F 0%, rgba(53, 61, 79, 0) 59.28%),url(/images/section-transparent.png) no-repeat;
+            background-position-x: center;
+          }
+        }
+      }
+
       &.section-daterange {
         .section-info {
           flex-direction: column-reverse;
@@ -1049,7 +1066,7 @@ input {
       }
 
       &.section-footer {
-        padding-top: 9.214rem;
+        padding: 3.571rem 0;
 
         .control {
           margin-bottom: 9.286rem;
@@ -1088,6 +1105,8 @@ input {
 
     .social-block {
       width: 100%;
+      text-align: center;
+
       .social {
         text-align: center;
         margin-top: 3.429rem;
@@ -1120,11 +1139,15 @@ input {
   }
 
   h3 {
-    font-size: 1.571rem;
+    font-size: 2rem;
   }
 
   p, .copyright {
     font-size: 1rem;
+  }
+
+  .is-visible-mobile {
+    display: block !important;
   }
 
   .button {
@@ -1189,6 +1212,8 @@ input {
       }
 
       &.hero {
+        margin-bottom: 10.5rem;
+
         img {
           margin-top: 3.429rem;
           min-width: 100%;
@@ -1207,7 +1232,7 @@ input {
       }
 
       &.section-footer {
-        padding-top: 7.429rem;
+        padding: 3.571rem 1.071rem;
 
         .centered {
           p {
@@ -1253,26 +1278,68 @@ input {
 
       &.section-track {
         .section-info {
-          margin: 5.857rem auto;
+          margin: 7rem 0 7.857rem;
+          padding: 0;
         }
       }
 
       &.section-privacy {
 
-        padding: 5.714rem 1.071rem;
+        padding: 4.571rem 1.071rem;
         .section-info {
           text-align: center;
 
           .block-text {
             max-width: 100%;
+            margin-top: 2.857rem !important;
+          }
 
-            img {
-              max-height: 14.143rem;
-              margin: 0.714rem auto 3rem;
-            }
+          .block-image {
+            max-width: 13.143rem;
           }
         }
 
+      }
+
+      &.section-beacon {
+        padding: 0;
+
+        .section-info {
+          .block-image {
+            min-height: 26.786rem;
+            background-position: center;
+          }
+
+          .block-text {
+            margin-bottom: 9.857rem !important;
+          }
+        }
+      }
+
+      &.section-testimonials {
+        .testimonials-slider {
+          .keen-slider {
+            max-width: 24.571rem;
+          }
+
+          .content-dots {
+            display: flex;
+            flex-direction: row;
+            right: 4.429rem;
+            bottom: -12.5rem;
+            width: 100vw;
+
+            .dots {
+              margin: 1.5rem 4rem 0;
+            }
+          }
+        }
+      }
+
+      &.section-fog {
+        img {
+          height: 21rem;
+        }
       }
 
       & > div {
@@ -1285,15 +1352,15 @@ input {
     display: flex;
     flex-direction: column-reverse;
     max-height: 31rem;
-    padding: 2.286rem 1.714rem;
+    padding: 2.571rem 3.429rem;
 
     .links {
-      order: 1;
+      order: 2;
 
       display: flex;
       flex-direction: column;
-      margin-bottom: 3.857rem;
-      padding: 0 2.286rem;
+      margin-bottom: 2.357rem;
+      padding: 0;
 
       a.link {
         margin-bottom: 1rem;
@@ -1302,7 +1369,9 @@ input {
     }
 
     .social-block {
-      order: 2;
+      order: 1;
+      display: flex !important;
+      justify-content: center;
 
       .social {
         margin-top: 0;
@@ -1312,7 +1381,7 @@ input {
           display: inline-block;
           text-align: right;
           width: 50%;
-          margin: 0;
+          margin: 1.786rem 0 0;
         }
 
       }

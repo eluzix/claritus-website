@@ -39,13 +39,12 @@
 
     <section class="section section-privacy is-white">
         <div class="section-info">
-            <div class="block-image is-hidden-mobile">
+            <div class="block-image">
                 <img src="/images/section-5.jpg"/>
             </div>
             <div class="block-text">
                 <div>
                     <h3 class="has-bottom-margin-30">Privacy and Security Guaranteed</h3>
-                    <img src="/images/section-5.jpg" class="is-invisible-tablet"/>
                     <p class="has-bottom-margin-30">We know your privacy and security are of the utmost importance to
                         you, which is why we are committed to the highest standards of data security and encryption.
                         With Claritus, you know your data is <span class="is-green">for your eyes only</span>.</p>
@@ -69,7 +68,7 @@
                        href="{{ .Site.Params.appUrl }}/on-boarding">Join Claritus</a>
                 </div>
             </div>
-            <div class="block-image is-hidden-mobile">
+            <div class="block-image">
             </div>
         </div>
     </section>
@@ -173,7 +172,7 @@
             <div class="testimonials-block testimonials-slider is-visible-tablet navigation-wrapper container">
                 <div class="slider">
                     <button id="arrow-left"
-                            class="arrow arrow--left">
+                            class="arrow arrow--left is-hidden-mobile">
                         <svg width="53" height="53" viewBox="0 0 53 53" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="26.5011" cy="26.4991" r="24.13" stroke="#C4C4C4" stroke-width="0.5"/>
                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -214,7 +213,7 @@
                     </div>
                     <button
                             id="arrow-right"
-                            class="arrow arrow--right">
+                            class="arrow arrow--right is-hidden-mobile">
                         <svg width="53" height="53" viewBox="0 0 53 53" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle r="24.13" transform="matrix(-1 0 0 1 26.4989 26.4991)" stroke="#C4C4C4"
                                     stroke-width="0.5"/>
@@ -226,7 +225,27 @@
                 </div>
 
                 <div class="content-dots">
+                    <button id="arrow-left-mobile"
+                            class="arrow arrow--left is-visible-mobile">
+                        <svg width="53" height="53" viewBox="0 0 53 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="26.5011" cy="26.4991" r="24.13" stroke="#C4C4C4" stroke-width="0.5"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M21.5453 27.4735L27.3414 33.6024L26.039 34.9795L18.0195 26.4995L26.039 18.0195L27.3414 19.3967L21.5453 25.5256H34.9795V27.4735H21.5453Z"
+                                  fill="#323947"/>
+                        </svg>
+                    </button>
                     <div id="dots" class="dots"></div>
+                    <button
+                            id="arrow-right-mobile"
+                            class="arrow arrow--right is-visible-mobile">
+                        <svg width="53" height="53" viewBox="0 0 53 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle r="24.13" transform="matrix(-1 0 0 1 26.4989 26.4991)" stroke="#C4C4C4"
+                                    stroke-width="0.5"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M31.4547 27.4735L25.6586 33.6024L26.961 34.9795L34.9805 26.4995L26.961 18.0195L25.6586 19.3967L31.4547 25.5256H18.0205V27.4735H31.4547Z"
+                                  fill="#323947"/>
+                        </svg>
+                    </button>
                 </div>
             </div>
         </div>
@@ -243,7 +262,7 @@
                         and not based on your assets. In addition, there are no surprise costs or hidden fees, ever.</p>
                 </div>
             </div>
-            <div class="block-image is-hidden-mobile">
+            <div class="block-image">
             </div>
         </div>
     </section>
