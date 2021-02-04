@@ -1,4 +1,4 @@
-const sliderIntervalTime = 3000 // 5sec
+const sliderIntervalTime = 6000 * 1000
 
 const app = {
 
