@@ -14,12 +14,7 @@
     margin-top: 7.1rem;
 
     &.is-small {
-      max-width: 61.857rem;
-      margin: 4.375rem auto 0;
-    }
-
-    &.is-medium {
-      max-width: 83.214rem;
+      max-width: 54rem;
       margin: 4.375rem auto 0;
     }
   }
@@ -107,19 +102,6 @@
     }
   }
 
-  // &.about-us {
-  //   font-size: 1.25rem;
-
-  //   .content-img {
-  //     display: none;
-  //   }
-
-  //   .hero-image {
-  //     background-image: url("/images/about-us.jpg");
-
-  //   }
-  // }
-
   &.our-mission {
     .hero-image {
       background-image: url("/images/core-values-img.jpg");
@@ -134,7 +116,6 @@
   &.about-claritus {
     .hero-image {
       background-image: url("/images/about-claritus.jpg");
-      //background-position: right;
     }
 
     article p:first-child {
@@ -156,9 +137,7 @@
     }
 
     .toc ul li {
-      //background: url("/images/faq-bullet.svg") no-repeat 0 0.5rem;
       background-size: 1.125rem;
-      //padding-left: 2.25rem;
       margin-bottom: 1rem;
       line-height: 180%;
     }
@@ -214,6 +193,21 @@
 }
 
 .about-us {
+  .container {
+    box-sizing: content-box;
+    margin: 0 auto !important;
+    padding-left: 1.714rem !important;
+    padding-right: 1.714rem !important;
+
+    &.is-small {
+      max-width: 61.857rem;
+    }
+
+    &.is-medium {
+      max-width: 83.214rem;
+    }
+  }
+
   .hero {
     display: flex;
     align-items: center;
@@ -229,6 +223,7 @@
         font-size: 4.571rem;
         line-height: 130%;
         white-space: nowrap;
+        margin-bottom: 1.428rem;
       }
 
       p {
@@ -242,10 +237,6 @@
   .about-text {
     padding: 10.8rem 0;
 
-    .container {
-      margin-top: 0;
-    }
-
     p {
       font-size: 1.571rem;
       line-height: 182%;
@@ -257,24 +248,20 @@
   }
 
   .our-team {
-    padding: 9.25rem 0 8.575rem;
+    padding: 9rem 0 8.575rem;
     background-color: #F8F8FB;
 
-    .container {
-      margin-top: 0;
+    .container > h2 {
+      font-weight: normal;
+      font-size: 3.857rem;
+      line-height: 130%;
+      text-align: center;
+      margin-bottom: 7.875rem;
+      color: rgba(73, 83, 105, 0.8);
 
-      & > h2 {
-        font-weight: normal;
-        font-size: 3.857rem;
-        line-height: 130%;
-        text-align: center;
-        margin-bottom: 7.875rem;
-        color: rgba(73, 83, 105, 0.8);
-
-        .members-names {
-          color: $dark;
-          letter-spacing: 0.05rem;
-        }
+      .members-names {
+        color: $dark;
+        letter-spacing: 0.05rem;
       }
     }
 
@@ -333,13 +320,8 @@
   .about-pages {
     padding: 8.6rem 0 7rem;
 
-    .container {
-      margin-top: 0;
-    }
-
     .pages-overview {
       display: flex;
-      flex-direction: row;
       justify-content: space-between;
 
       & > div {
@@ -387,20 +369,11 @@
 
     article p {
       font-size: 1.125rem;
-      //font-weight: 400;
     }
-
-    //.hero-image {
-    //  min-height: 30rem;
-    //}
 
     .container {
       &.is-small {
-        max-width: 52.6rem;
-      }
-
-      &.is-medium {
-        max-width: 66.357rem;
+        max-width: 40rem;
       }
     }
 
@@ -411,6 +384,16 @@
   }
 
   .about-us {
+    .container {
+      &.is-small {
+        max-width: 52.6rem;
+      }
+
+      &.is-medium {
+        max-width: 66.357rem;
+      }
+    }
+
     .hero {
       position: relative;
       align-items: flex-start;
@@ -455,18 +438,16 @@
     .our-team {
       padding: 8.5rem 0 8.575rem;
 
-      .container {
-        & > h2 {
-          font-size: 3.571rem;
-          line-height: 120%;
-          margin-bottom: 6rem;
-          padding: 0 1rem;
-        }
+      .container > h2 {
+        font-size: 3.571rem;
+        line-height: 120%;
+        margin-bottom: 6rem;
+        padding: 0 1rem;
       }
 
       .team-members {
         & > div {
-          max-width: 18.5rem;
+          max-width: 18.75rem;
         }
       }
 
@@ -511,14 +492,8 @@
   }
 }
 
-
 @media screen and (max-width: $widescreen) {
   .content {
-
-    //.hero-image {
-    //  min-height: 20rem;
-    //}
-
     h1 {
       font-size: 2.5rem;
     }
@@ -537,22 +512,12 @@
       font-size: 1.5rem;
     }
 
-    //.hero-image {
-    //  min-height: 25rem;
-    //}
-
     &.about-claritus {
       article p:first-child {
         font-size: 1.75rem;
       }
     }
   }
-
-  // .about-us .about-pages > div {
-  //   p, a {
-  //     font-size: 1rem;
-  //   }
-  // }
 
   .faq {
     h1 {
@@ -580,14 +545,7 @@
     }
   }
 
-}
-
-@include tablet-only {
-  .content {
-    //.hero-image {
-    //  min-height: 20rem;
-    //}
-
+  .about-us {
     .container {
       &.is-small {
         max-width: 34.75rem;
@@ -598,26 +556,7 @@
       }
     }
 
-    &.about-claritus {
-      article p:first-child {
-        font-size: 1.5rem;
-      }
-    }
-  }
-}
-
-@include tablet {
-  .content {
-    .page-title {
-      font-size: 2.857rem;
-      padding: 4rem 0 6rem;
-    }
-  }
-
-  .about-us {
     .hero {
-      position: relative;
-      align-items: flex-start;
       padding-top: 4.5rem;
       min-height: 49.875rem;
 
@@ -636,7 +575,7 @@
       }
 
       .hero-right {
-        right: -13%;
+        right: -8rem;
         top: 26%;
       }
     }
@@ -656,14 +595,12 @@
     .our-team {
       padding: 7.25rem 0 7.275rem;
 
-      .container {
-        & > h2 {
-          max-width: 43.571rem;
-          font-size: 2.571rem;
-          line-height: 140%;
-          margin: 0 auto 4.5rem;
-          padding: 0;
-        }
+      .container > h2 {
+        max-width: 43.571rem;
+        font-size: 2.571rem;
+        line-height: 140%;
+        margin: 0 auto 4.5rem;
+        padding: 0;
       }
 
       .team-members {
@@ -675,13 +612,14 @@
       .pic {
         width: 11.276rem;
         height: 11.276rem;
-        margin: 0 auto 2.15rem;
+        margin: 0 auto 2rem;
+        background-size: cover !important;
       }
 
       .initials {
         font-size: 1.286rem;
         line-height: 140%;
-        margin-bottom: 0rem;
+        margin-bottom: 0;
       }
 
       .profession {
@@ -720,6 +658,30 @@
           }
         }
       }
+    }
+  }
+}
+
+@include tablet-only {
+  .content {
+    .container {
+      padding-left: 3rem;
+      padding-right: 3rem;
+
+      &.is-small {
+        max-width: 40rem;
+      }
+    }
+
+    &.about-claritus {
+      article p:first-child {
+        font-size: 1.5rem;
+      }
+    }
+
+    .page-title {
+      font-size: 2.857rem;
+      padding: 4rem 0 6rem;
     }
   }
 }
@@ -768,15 +730,9 @@
         background-size: cover;
         margin: 2rem -1.5rem;
       }
-
-      //.container {
-      //  margin-top: 2rem;
-      //  padding: 0 1.5rem;
-      //}
     }
 
     &.our-mission {
-
       article p:first-child:after {
         content: "";
         display: block;
@@ -784,11 +740,6 @@
         background: url("/images/core-values-img.jpg") no-repeat 75% 75%;
         margin: 2rem -1.5rem;
       }
-
-      //.container {
-      //  margin-top: 2rem;
-      //  margin-bottom: 0;
-      //}
     }
 
     &.about-claritus {
@@ -814,12 +765,14 @@
       }
     }
 
+    .page-title {
+      font-size: 2.571rem;
+      padding: 4rem 0 3rem;
+    }
   }
 
   .faq {
-
     h1 {
-      //font-size: 2.5rem;
       margin-bottom: 1rem;
     }
 
@@ -846,41 +799,130 @@
     }
   }
 
-  // .about-us {
-  //   article p:first-child:after {
-  //     content: "";
-  //     display: block;
-  //     height: 23.5rem;
-  //     background: url("/images/about-us.jpg") no-repeat 0 0;
-  //     background-size: cover;
-  //     margin: 2rem -1.5rem;
-  //   }
-  //   .about-pages {
-  //     flex-direction: column;
-  //     margin-top: 3.75rem;
+  .about-us {
+    .hero {
+      padding-top: 4.125rem;
+      min-height: 50.875rem;
+      flex-wrap: wrap;
 
-  //     & > div {
-  //       width: 95%;
-  //       margin-bottom: 1rem;
+      .hero-left {
+        width: 100%;
+        text-align: center;
+        padding-left: 1.714rem;
+        padding-right: 1.714rem;
 
-  //       & > div {
-  //         height: auto;
-  //       }
+        h2 {
+          font-size: 2rem;
+          line-height: 120%;
+          margin-bottom: 2rem;
+        }
 
-  //       p {
-  //         font-size: 1rem;
-  //       }
+        p {
+          max-width: 23rem;
+          font-size: 1rem;
+          margin: 0 auto;
+        }
+      }
 
-  //       a {
-  //         font-size: 1rem;
-  //         font-weight: 500;
-  //       }
-  //     }
+      .hero-right {
+        position: static;
+        transform: scale(1.2);
+        max-width: 26.785rem;
+        margin: 0 auto;
+      }
+    }
 
+    .about-text {
+      padding: 3.5rem 0 5.5rem;
 
-  //     h2 {
-  //       font-size: 1.75rem;
-  //     }
-  //   }
-  // }
+      p {
+        font-size: 1.143rem;
+      }
+
+      .divider {
+        height: 2.1rem;
+      }
+    }
+
+    .our-team {
+      padding: 6rem 0 6.275rem;
+
+      .container > h2 {
+        max-width: 43.571rem;
+        font-size: 2rem;
+        line-height: 120%;
+        margin: 0 auto 4.5rem;
+        padding: 0;
+      }
+
+      .team-members {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+
+        & > div:not(:last-child) {
+          margin-bottom: 4.875rem;
+        }
+      }
+
+      .pic {
+        margin: 0 auto 1.5rem;
+      }
+
+      .initials {
+        font-size: 1.143rem;
+        line-height: 140%;
+        margin-bottom: 0;
+      }
+
+      .profession {
+        font-size: 1rem;
+        margin-bottom: 1.25rem;
+      }
+
+      .description {
+        font-size: 0.857rem;
+        line-height: 150%;
+
+      }
+    }
+
+    .about-pages {
+      padding: 8.5rem 0 9.125rem;
+
+      .pages-overview {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0 1rem;
+
+        & > div {
+          width: 100%;
+
+          &:not(:last-child) {
+            margin-right: 0;
+            margin-bottom: 6.5rem;
+          }
+
+          & > div {
+            margin-bottom: 1.125rem;
+          }
+
+          h2 {
+            font-size: 2rem;
+            line-height: 120%;
+            margin-bottom: 1.125rem;
+          }
+
+          p {
+            font-size: 1rem;
+          }
+
+          a {
+            font-size: 1.571rem;
+          }
+        }
+      }
+    }
+  }
 }
