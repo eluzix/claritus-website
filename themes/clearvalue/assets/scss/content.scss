@@ -218,9 +218,10 @@
     display: flex;
     align-items: center;
     min-height: 57.143rem;
-    background: #F8F8FB url('/images/about-us.png') no-repeat 100% center;
+    background-color: #F8F8FB;
 
-    & > div {
+    .hero-left {
+      flex-grow: 1;
       padding-left: 16.071rem;
 
       h2 {
@@ -335,7 +336,7 @@
       margin-top: 0;
     }
 
-    .pages-description {
+    .pages-overview {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
