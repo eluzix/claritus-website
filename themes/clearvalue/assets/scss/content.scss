@@ -14,7 +14,12 @@
     margin-top: 7.1rem;
 
     &.is-small {
-      max-width: 54rem;
+      max-width: 61.857rem;
+      margin: 4.375rem auto 0;
+    }
+
+    &.is-medium {
+      max-width: 83.214rem;
       margin: 4.375rem auto 0;
     }
   }
@@ -36,6 +41,14 @@
     font-size: 2.125rem;
     line-height: 150%;
     font-weight: bold;
+  }
+
+  .page-title {
+    font-size: 5.143rem;
+    line-height: 120%;
+    font-weight: 600;
+    text-align: center;
+    padding: 5.7rem 0 7rem;
   }
 
   ol ol ol {
@@ -94,18 +107,18 @@
     }
   }
 
-  &.about-us {
-    font-size: 1.25rem;
+  // &.about-us {
+  //   font-size: 1.25rem;
 
-    .content-img {
-      display: none;
-    }
+  //   .content-img {
+  //     display: none;
+  //   }
 
-    .hero-image {
-      background-image: url("/images/about-us.jpg");
+  //   .hero-image {
+  //     background-image: url("/images/about-us.jpg");
 
-    }
-  }
+  //   }
+  // }
 
   &.our-mission {
     .hero-image {
@@ -201,60 +214,178 @@
 }
 
 .about-us {
-
-  p {
-    font-size: 1.125rem;
-    margin-bottom: 1em;
-  }
-
-  .about-pages {
+  .hero {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 5rem;
+    align-items: center;
+    min-height: 57.143rem;
+    background: #F8F8FB url('/images/about-us.png') no-repeat 100% center;
 
     & > div {
-      width: 40%;
-
-      & > div {
-        margin-bottom: 2rem;
-      }
+      padding-left: 16.071rem;
 
       h2 {
-        font-size: 2.125rem;
-        color: $green;
+        font-weight: 500;
+        font-size: 4.571rem;
+        line-height: 130%;
       }
 
       p {
-        font-size: 1.375rem;
-        //color: $primary;
+        max-width: 40.5rem;
+        font-size: 1.571rem;
+        line-height: 182%;
+      }
+    }
+  }
+
+  .about-text {
+    padding: 10.8rem 0;
+
+    .container {
+      margin-top: 0;
+    }
+
+    p {
+      font-size: 1.571rem;
+      line-height: 182%;
+    }
+
+    .divider {
+      height: 2.875rem;
+    }
+  }
+
+  .our-team {
+    padding: 9.25rem 0 8.575rem;
+    background-color: #F8F8FB;
+
+    .container {
+      margin-top: 0;
+
+      & > h2 {
+        font-weight: normal;
+        font-size: 3.857rem;
+        line-height: 130%;
+        text-align: center;
+        margin-bottom: 7.875rem;
+        color: rgba(73, 83, 105, 0.8);
+
+        .members-names {
+          color: $dark;
+          letter-spacing: 0.05rem;
+        }
+      }
+    }
+
+    .team-members {
+      display: flex;
+      justify-content: space-between;
+
+      & > div {
+        max-width: 19.285rem;
+        text-align: center;
+      }
+    }
+
+    .pic {
+      width: 14.095rem;
+      height: 14.095rem;
+      border-radius: 50%;
+      margin: 0 auto 2.25rem;
+      overflow: hidden;
+      border: 1px solid #21ce99;
+
+      &.pic-gabriel {
+        background: #FFFFFF url('/images/gabriel.jpg') no-repeat center bottom;
       }
 
-      a {
-        //font-size: 1.125rem;
-        display: block;
-        text-align: right;
-        color: $dark;
-        text-decoration: underline;
-        font-weight: 500;
+      &.pic-shai {
+        background: #FFFFFF url('/images/shai.jpg') no-repeat center bottom;
+      }
+
+      &.pic-uzi {
+        background: #FFFFFF url('/images/uzi.jpg') no-repeat center bottom;
+      }
+    }
+
+    .initials {
+      font-weight: 600;
+      font-size: 1.786rem;
+      line-height: 180%;
+      color: $dark;
+    }
+
+    .profession {
+      display: inline-block;
+      font-size: 1.571rem;
+      line-height: 180%;
+      color: $primary;
+      margin-bottom: 2rem;
+    }
+
+    .description {
+      font-size: 1.142rem;
+      line-height: 180%;
+    }
+  }
+
+  .about-pages {
+    padding: 8.6rem 0 7rem;
+
+    .container {
+      margin-top: 0;
+    }
+
+    .pages-description {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      & > div {
+        width: 41%;
+
+        & > div {
+          margin-bottom: 1.87rem;
+        }
+
+        h2 {
+          font-weight: 500;
+          font-size: 2.429rem;
+          line-height: 150%;
+          margin-bottom: 1.9rem;
+        }
+
+        p {
+          font-size: 1.571rem;
+          line-height: 180%;
+        }
+
+        a {
+          display: block;
+          text-align: right;
+          color: $dark;
+          font-weight: 500;
+          font-size: 1.714rem;
+          line-height: 150%;
+          text-decoration: underline;
+        }
       }
     }
   }
 }
 
-@media screen and (min-width: $widescreen) {
-  .about-us {
-    .about-header {
-      & > div:first-child {
-        margin-left: 10rem;
-      }
+// @media screen and (min-width: $widescreen) {
+//   .about-us {
+//     .about-header {
+//       & > div:first-child {
+//         margin-left: 10rem;
+//       }
 
-      article {
-        width: 35rem;
-      }
-    }
-  }
-}
+//       article {
+//         width: 35rem;
+//       }
+//     }
+//   }
+// }
 
 @media screen and (max-width: $fullhd) {
   .content {
@@ -276,47 +407,47 @@
     }
   }
 
-  .about-us {
-    article {
-      width: 100%;
-      padding-right: 2rem;
-    }
+  // .about-us {
+  //   article {
+  //     width: 100%;
+  //     padding-right: 2rem;
+  //   }
 
-    //.about-content {
-    //  margin-bottom: 1.5rem;
+  //   //.about-content {
+  //   //  margin-bottom: 1.5rem;
 
-    .about-header {
-      margin-bottom: 10.625rem;
+  //   .about-header {
+  //     margin-bottom: 10.625rem;
 
-      & > div:first-child {
-        margin-left: 0;
-      }
+  //     & > div:first-child {
+  //       margin-left: 0;
+  //     }
 
-      .bg-image {
-        min-height: 28rem;
-        background-size: cover;
-      }
-    }
+  //     .bg-image {
+  //       min-height: 28rem;
+  //       background-size: cover;
+  //     }
+  //   }
 
-    .about-pages {
-      //margin: 0;
+  //   .about-pages {
+  //     //margin: 0;
 
-      & > div {
-        width: 17rem;
+  //     & > div {
+  //       width: 17rem;
 
-        & > div {
-          height: 15rem;
-        }
+  //       & > div {
+  //         height: 15rem;
+  //       }
 
-        p {
-          font-size: 1.125rem;
-          //color: $primary;
-        }
-      }
-    }
+  //       p {
+  //         font-size: 1.125rem;
+  //         //color: $primary;
+  //       }
+  //     }
+  //   }
 
-    //}
-  }
+  //   //}
+  // }
 }
 
 
@@ -360,11 +491,11 @@
     }
   }
 
-  .about-us .about-pages > div {
-    p, a {
-      font-size: 1rem;
-    }
-  }
+  // .about-us .about-pages > div {
+  //   p, a {
+  //     font-size: 1rem;
+  //   }
+  // }
 
   .faq {
     h1 {
@@ -416,41 +547,41 @@
     }
   }
 
-  .about-us {
-    //.about-content {
-    //  margin-left: $ipad-padding;
-    //  margin-right: $ipad-padding;
+  // .about-us {
+  //   //.about-content {
+  //   //  margin-left: $ipad-padding;
+  //   //  margin-right: $ipad-padding;
 
-    .about-header {
-      margin-bottom: 6.25rem;
-    }
+  //   .about-header {
+  //     margin-bottom: 6.25rem;
+  //   }
 
 
-    .about-pages {
-      flex-direction: column;
-      margin-top: 3.75rem;
+  //   .about-pages {
+  //     flex-direction: column;
+  //     margin-top: 3.75rem;
 
-      & > div {
-        width: auto;
-        margin-bottom: 2rem;
+  //     & > div {
+  //       width: auto;
+  //       margin-bottom: 2rem;
 
-        p, a {
-          font-size: 1rem;
-        }
+  //       p, a {
+  //         font-size: 1rem;
+  //       }
 
-        & > div {
-          height: unset;
-          margin-bottom: 1rem;
-        }
+  //       & > div {
+  //         height: unset;
+  //         margin-bottom: 1rem;
+  //       }
 
-        h2 {
-          font-size: 1.5rem;
-        }
-      }
-    }
+  //       h2 {
+  //         font-size: 1.5rem;
+  //       }
+  //     }
+  //   }
 
-    //}
-  }
+  //   //}
+  // }
 }
 
 @include mobile {
@@ -575,41 +706,41 @@
     }
   }
 
-  .about-us {
-    article p:first-child:after {
-      content: "";
-      display: block;
-      height: 23.5rem;
-      background: url("/images/about-us.jpg") no-repeat 0 0;
-      background-size: cover;
-      margin: 2rem -1.5rem;
-    }
-    .about-pages {
-      flex-direction: column;
-      margin-top: 3.75rem;
+  // .about-us {
+  //   article p:first-child:after {
+  //     content: "";
+  //     display: block;
+  //     height: 23.5rem;
+  //     background: url("/images/about-us.jpg") no-repeat 0 0;
+  //     background-size: cover;
+  //     margin: 2rem -1.5rem;
+  //   }
+  //   .about-pages {
+  //     flex-direction: column;
+  //     margin-top: 3.75rem;
 
-      & > div {
-        width: 95%;
-        margin-bottom: 1rem;
+  //     & > div {
+  //       width: 95%;
+  //       margin-bottom: 1rem;
 
-        & > div {
-          height: auto;
-        }
+  //       & > div {
+  //         height: auto;
+  //       }
 
-        p {
-          font-size: 1rem;
-        }
+  //       p {
+  //         font-size: 1rem;
+  //       }
 
-        a {
-          font-size: 1rem;
-          font-weight: 500;
-        }
-      }
+  //       a {
+  //         font-size: 1rem;
+  //         font-weight: 500;
+  //       }
+  //     }
 
 
-      h2 {
-        font-size: 1.75rem;
-      }
-    }
-  }
+  //     h2 {
+  //       font-size: 1.75rem;
+  //     }
+  //   }
+  // }
 }

@@ -3,33 +3,67 @@
 
     {{ partial "nav" . }}
     {{ partial "menu.html" }}
-    <div class="hero-image"></div>
+    <h1 class="page-title" title="{{ .Title }}">{{ .Title }}</h1>
 
-    <section class="container is-small">
+    <section class="hero">
         <div>
-            <div>
-                <h1 class="title" title="{{ .Title }}">{{ .Title }}</h1>
-                <article>
-                    {{ .Content }}
-                </article>
+            <h2 class="has-bottom-margin-20"><span class="is-green">Claritus</span> is a <br> simple-to-use <br> personal wealth <br> management service.</h2>
+            <p>It allows you to view all of your invested assets in one place. It’s the only service you need to track, understand, and nurture your wealth.</p>
+        </div>
+    </section>
+
+    <section class="about-text">
+        <div class="container is-small">
+            <article>
+                {{ .Content }}
+            </article>
+        </div>
+    </section>
+
+    <section class="our-team">
+        <div class="container is-medium">
+            <h2>We look forward to hearing from you, <span class="members-names">Gabriel,  Shai and Uzi.</span></h2>
+
+            <div class="team-members">
+                <div>
+                    <div class="pic pic-gabriel"></div>
+                    <h3 class="initials">Gabriel Bilcsyk</h3>
+                    <span class="profession">Chairman</span>
+                    <p class="description">Nunc quam nec maecenas morbi. Molestie fermentum, elementum, sed nibh et laoreet</p>
+                </div>
+                <div>
+                    <div class="pic pic-shai"></div>
+                    <h3 class="initials">Shai Azran</h3>
+                    <span class="profession">CEO</span>
+                    <p class="description">Nunc quam nec maecenas morbi. Molestie fermentum, elementum, sed nibh et laoreet</p>
+                </div>
+                <div>
+                    <div class="pic pic-uzi"></div>
+                    <h3 class="initials">Uzi Rafaeli</h3>
+                    <span class="profession">CTO</span>
+                    <p class="description">Nunc quam nec maecenas morbi. Molestie fermentum, elementum, sed nibh et laoreet</p>
+                </div>
             </div>
         </div>
+    </section>
 
-        <div class="about-pages">
-            <div>
+    <section class="about-pages">
+        <div class="container is-medium">
+            <div class="pages-description">
                 <div>
-                    <h2>Our Story</h2>
-                    <p>Claritus is the result of a very real and personal need we were all faced with.</p>
+                    <div>
+                        <h2 class="is-green">Our Story</h2>
+                        <p>Claritus is the result of a very real and personal need we were all faced with.</p>
+                    </div>
+                    <a href="{{ ref . "our-story.md" }}">Read more</a>
                 </div>
-                <a href="{{ ref . "our-story.md" }}">Read more</a>
-            </div>
-            <div>
                 <div>
-                <h2>Core Values</h2>
-                <p>Our values play a huge role
-                    in who we are, both as people and as a company</p>
+                    <div>
+                        <h2 class="is-green">Core Values</h2>
+                        <p>Our values play a huge role in who we are, both as people and as a company</p>
+                    </div>
+                    <a href="{{ ref . "core-values.md" }}">Read more</a>
                 </div>
-                <a href="{{ ref . "core-values.md" }}">Read more</a>
             </div>
         </div>
     </section>
