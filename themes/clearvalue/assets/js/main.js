@@ -265,12 +265,14 @@ function updateClasses(instance) {
 }
 
 function checkHeaderVisibility() {
-    let headerElement = document.querySelector('header');
-    if (!headerElement) {
+    const headerElement = document.querySelector('header');
+    const landingPageElement = document.querySelector('.landing-page');
+
+    if (!headerElement || !landingPageElement) {
         return false;
     }
 
-    let isVisible = app.isHeaderInViewport(document.querySelector('.landing-page'));
+    let isVisible = app.isHeaderInViewport(landingPageElement);
     let menuElement = document.getElementById('menu');
     if (isVisible) {
         headerElement.classList.remove('white-header');

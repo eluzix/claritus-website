@@ -4,6 +4,7 @@ date: 2020-10-11T10:30:01+03:00
 url: /about-us
 type: about-us
 content_class: about-us
+header_class: white-header
 ---
 Built on a powerful financial-data platform and designed with a friendly, intuitive interface, Claritus not only gives you a full view of your money and investments but provides accurate insights and assessments. Although Claritus is currently in its Beta version, we plan on expanding the service to include many more tools that will allow you to actively manage and control your wealth – all from one easy-to-use place.
 
