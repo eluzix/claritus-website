@@ -228,6 +228,7 @@
         font-weight: 500;
         font-size: 4.571rem;
         line-height: 130%;
+        white-space: nowrap;
       }
 
       p {
@@ -342,7 +343,11 @@
       justify-content: space-between;
 
       & > div {
-        width: 41%;
+        width: 50%;
+
+        &:not(:last-child) {
+          margin-right: 15.5rem;
+        }
 
         & > div {
           margin-bottom: 1.87rem;
@@ -374,20 +379,6 @@
   }
 }
 
-// @media screen and (min-width: $widescreen) {
-//   .about-us {
-//     .about-header {
-//       & > div:first-child {
-//         margin-left: 10rem;
-//       }
-
-//       article {
-//         width: 35rem;
-//       }
-//     }
-//   }
-// }
-
 @media screen and (max-width: $fullhd) {
   .content {
     h1 {
@@ -403,52 +394,121 @@
     //  min-height: 30rem;
     //}
 
-    .container.is-small {
-      max-width: 40rem;
+    .container {
+      &.is-small {
+        max-width: 52.6rem;
+      }
+
+      &.is-medium {
+        max-width: 66.357rem;
+      }
+    }
+
+    .page-title {
+      font-size: 4rem;
+      padding: 6.4rem 0 5.75rem;
     }
   }
 
-  // .about-us {
-  //   article {
-  //     width: 100%;
-  //     padding-right: 2rem;
-  //   }
+  .about-us {
+    .hero {
+      position: relative;
+      align-items: flex-start;
+      padding-top: 5.75rem;
+      min-height: 49.875rem;
 
-  //   //.about-content {
-  //   //  margin-bottom: 1.5rem;
+      .hero-left {
+        padding-left: 12.5rem;
+        z-index: 1;
 
-  //   .about-header {
-  //     margin-bottom: 10.625rem;
+        h2 {
+          font-size: 3.571rem;
+          line-height: 120%;
+        }
 
-  //     & > div:first-child {
-  //       margin-left: 0;
-  //     }
+        p {
+          max-width: 32.071rem;
+          font-size: 1.286rem;
+        }
+      }
 
-  //     .bg-image {
-  //       min-height: 28rem;
-  //       background-size: cover;
-  //     }
-  //   }
+      .hero-right {
+        position: absolute;
+        right: 0;
+        top: 17%;
+        max-width: 44.714rem;
+      }
+    }
 
-  //   .about-pages {
-  //     //margin: 0;
+    .about-text {
+      padding: 8.6rem 0;
 
-  //     & > div {
-  //       width: 17rem;
+      p {
+        font-size: 1.286rem;
+      }
 
-  //       & > div {
-  //         height: 15rem;
-  //       }
+      .divider {
+        height: 2.3rem;
+      }
+    }
 
-  //       p {
-  //         font-size: 1.125rem;
-  //         //color: $primary;
-  //       }
-  //     }
-  //   }
+    .our-team {
+      padding: 8.5rem 0 8.575rem;
 
-  //   //}
-  // }
+      .container {
+        & > h2 {
+          font-size: 3.571rem;
+          line-height: 120%;
+          margin-bottom: 6rem;
+          padding: 0 1rem;
+        }
+      }
+
+      .team-members {
+        & > div {
+          max-width: 18.5rem;
+        }
+      }
+
+      .initials {
+        font-size: 1.571rem;
+        line-height: 140%;
+        margin-bottom: 0.75rem;
+      }
+
+      .profession {
+        font-size: 1.286rem;
+        margin-bottom: 1.5rem;
+      }
+    }
+
+    .about-pages {
+      padding: 8.6rem 0 1.075rem;
+
+      .pages-overview {
+        padding: 0 6.85rem;
+
+        & > div {
+          &:not(:last-child) {
+            margin-right: 9.75rem;
+          }
+
+          h2 {
+            margin-bottom: 1.55rem;
+          }
+
+          p {
+            font-size: 1.286rem;
+          }
+
+          a {
+            font-weight: 500;
+            font-size: 1.286rem;
+          }
+        }
+      }
+    }
+  }
 }
 
 
@@ -480,10 +540,6 @@
     //.hero-image {
     //  min-height: 25rem;
     //}
-
-    .container.is-small {
-      max-width: 40rem;
-    }
 
     &.about-claritus {
       article p:first-child {
@@ -533,11 +589,12 @@
     //}
 
     .container {
-      padding-left: 3rem;
-      padding-right: 3rem;
-
       &.is-small {
-        max-width: 40rem;
+        max-width: 34.75rem;
+      }
+
+      &.is-medium {
+        max-width: 52rem;
       }
     }
 
@@ -547,42 +604,124 @@
       }
     }
   }
+}
 
-  // .about-us {
-  //   //.about-content {
-  //   //  margin-left: $ipad-padding;
-  //   //  margin-right: $ipad-padding;
+@include tablet {
+  .content {
+    .page-title {
+      font-size: 2.857rem;
+      padding: 4rem 0 6rem;
+    }
+  }
 
-  //   .about-header {
-  //     margin-bottom: 6.25rem;
-  //   }
+  .about-us {
+    .hero {
+      position: relative;
+      align-items: flex-start;
+      padding-top: 4.5rem;
+      min-height: 49.875rem;
 
+      .hero-left {
+        padding-left: 8rem;
 
-  //   .about-pages {
-  //     flex-direction: column;
-  //     margin-top: 3.75rem;
+        h2 {
+          font-size: 2.571rem;
+          line-height: 140%;
+        }
 
-  //     & > div {
-  //       width: auto;
-  //       margin-bottom: 2rem;
+        p {
+          max-width: 22.143rem;
+          font-size: 1.143rem;
+        }
+      }
 
-  //       p, a {
-  //         font-size: 1rem;
-  //       }
+      .hero-right {
+        right: -13%;
+        top: 26%;
+      }
+    }
 
-  //       & > div {
-  //         height: unset;
-  //         margin-bottom: 1rem;
-  //       }
+    .about-text {
+      padding: 8.6rem 0;
 
-  //       h2 {
-  //         font-size: 1.5rem;
-  //       }
-  //     }
-  //   }
+      p {
+        font-size: 1.143rem;
+      }
 
-  //   //}
-  // }
+      .divider {
+        height: 2.1rem;
+      }
+    }
+
+    .our-team {
+      padding: 7.25rem 0 7.275rem;
+
+      .container {
+        & > h2 {
+          max-width: 43.571rem;
+          font-size: 2.571rem;
+          line-height: 140%;
+          margin: 0 auto 4.5rem;
+          padding: 0;
+        }
+      }
+
+      .team-members {
+        & > div {
+          max-width: 12rem;
+        }
+      }
+
+      .pic {
+        width: 11.276rem;
+        height: 11.276rem;
+        margin: 0 auto 2.15rem;
+      }
+
+      .initials {
+        font-size: 1.286rem;
+        line-height: 140%;
+        margin-bottom: 0rem;
+      }
+
+      .profession {
+        font-size: 1.143rem;
+        margin-bottom: 2.15rem;
+      }
+
+      .description {
+        font-size: 1rem;
+        line-height: 150%;
+      }
+    }
+
+    .about-pages {
+      padding: 8.6rem 0 2.875rem;
+
+      .pages-overview {
+        padding: 0 8.5rem;
+
+        & > div {
+          &:not(:last-child) {
+            margin-right: 6.25rem;
+          }
+
+          & > div {
+            margin-bottom: 3.575rem;
+          }
+
+          h2 {
+            font-size: 1.714rem;
+            line-height: 150%;
+          }
+
+          p {
+            font-size: 1.143rem;
+          }
+        }
+      }
+    }
+  }
 }
 
 @include mobile {
