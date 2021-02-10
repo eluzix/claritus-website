@@ -232,6 +232,13 @@ const app = {
             });
         }
     },
+
+    initScrollTop() {
+        const control = document.getElementById('scroll-top')
+        if (control) {
+            control.onclick = () => { window.scrollTo({ top: 0, behavior: 'smooth' }) }
+        }
+    },
 };
 
 function updateClasses(instance) {
@@ -293,6 +300,7 @@ document.addEventListener('DOMContentLoaded', function () {
     app.initMenuOpening();
     app.homeScrollToPricing();
     app.setupSliderTestimonials();
+    app.initScrollTop();
 
     try {
         app.utmCookie()
@@ -304,6 +312,5 @@ document.addEventListener('DOMContentLoaded', function () {
         window.Intercom('update', {
             'hide_default_launcher': true
         })
-
     }
 })
