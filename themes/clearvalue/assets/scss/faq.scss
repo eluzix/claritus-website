@@ -18,7 +18,7 @@
     li {
       position: relative;
       padding-left: 5.5rem;
-      margin-bottom: 3.125rem;
+      margin-bottom: 6.5rem;
       background-size: 2.25rem;
 
       &:before {
@@ -69,108 +69,112 @@
   }
 }
 
-// .faq {
-//   .container {
-//     margin-top: 10rem;
-//   }
+@media screen and (max-width: $fullhd) {
+  .faq {
+    .container {
+      max-width: 52.25rem;
+    }
 
-//   h1 {
-//     margin-bottom: 3.125rem;
-//   }
+    .heading {
+      padding: 5.7rem 0 8.75rem;
 
-//   h6 {
-//     font-weight: normal;
-//     font-size: 1.375rem;
-//     line-height: 180%;
-//     margin-bottom: 9.375rem;
-//   }
+      .page-title {
+        font-size: 3.571rem;
+        line-height: 120%;
+      }
+    }
 
-//   article {
-//     .faq-items {
-//       list-style: none;
+    .faq-items {
+      li {
+        padding: 0.55rem 0 0 4.55rem;
+        margin-bottom: 5.85rem;
 
-//       li {
-//         background: url("/images/faq-bullet.svg") no-repeat 0 0;
-//         padding-left: 3rem;
-//         margin-bottom: 3.125rem;
-//         background-size: 2.25rem;
+        h2 {
+          font-size: 1.571rem;
+          line-height: 140%;
+          margin-bottom: 1.5rem;
+        }
 
-//         h2 {
-//           font-size: 2.125rem;
-//           margin-bottom: 1rem;
-//         }
+        p {
+          font-size: 1.286rem;
+        }
+      }
+    }
+  }
+}
 
-//         p {
-//           font-size: 1.375rem;
-//           line-height: 180%;
-//         }
+@media screen and (max-width: $widescreen) {
+  .faq {
+    .container {
+      max-width: 49.25rem;
+    }
 
-//         a {
-//           color: $green;
+    .heading {
+      padding: 3.35rem 0 7.35rem 1.5rem;
 
-//           &:hover {
-//             text-decoration: underline;
-//           }
-//         }
-//       }
-//     }
-//   }
-// }
+      .page-title {
+        font-size: 2.571rem;
+        line-height: 140%;
+      }
+    }
 
-// @media screen and (max-width: $widescreen) {
-//   .faq {
-//     h1 {
-//       margin-bottom: 1rem;
-//     }
+    .faq-items {
+      li {
+        padding: 0.25rem 0 0 3.55rem;
+        margin-bottom: 4.45rem;
 
-//     h6 {
-//       font-size: 1rem;
-//       margin-bottom: 5.135rem;
-//     }
+        &:before {
+          width: 2.3rem;
+          height: 2.3rem;
+        }
 
-//     article .faq-items li {
-//       background-size: 2.25rem 2.25rem;
-//       padding-left: 2.75rem;
-//       padding-top: 0.25rem;
+        h2 {
+          font-size: 1.286rem;
+          margin-bottom: 1.15rem;
+        }
 
+        p {
+          font-size: 1.143rem;
+        }
+      }
+    }
+  }
+}
 
-//       h2 {
-//         font-size: 1.5rem;
-//       }
+@include mobile {
+  .faq {
+    .container {
+      max-width: 49.25rem;
+    }
 
-//       p {
-//         font-size: 1rem;
-//       }
-//     }
-//   }
-// }
+    .heading {
+      padding: 4.4rem 1rem 3.35rem;
 
-// @include mobile {
-//   .faq {
-//     h1 {
-//       margin-bottom: 1rem;
-//     }
+      .page-title {
+        font-size: 2rem;
+        line-height: 120%;
+      }
+    }
 
-//     h6 {
-//       font-size: 0.875rem;
-//       margin-bottom: 5.135rem;
-//     }
+    .faq-items {
+      li {
+        margin-bottom: 2.95rem;
 
-//     article .faq-items li {
-//       h2 {
-//         font-size: 1.5rem;
-//       }
+        &:before {
+          width: 2rem;
+          height: 2rem;
+          left: 0.85rem;
+        }
 
-//       p {
-//         font-size: 0.875rem;
-//       }
-//     }
+        h2 {
+          font-size: 1.143rem;
+          margin-bottom: 0.95rem;
+        }
 
-//     article .faq-items li {
-//       background: url("/images/faq-bullet.svg") no-repeat 0 0;
-//       background-size: 1.5rem 1.5rem;
-//       padding-left: 2rem;
-//       padding-top: 0;
-//     }
-//   }
-// }
+        p {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}

@@ -27,7 +27,7 @@ faq_list:
       body: "You can contact us anytime <a href=\"mailto:help@claritus.io\">help@claritus.io</a>."
 ---
 {{< rawhtml >}}
-Have a question about Claritus? We’re here to help. <br/>
+Have a question about Claritus? We’re here to help.
 If you don’t see your question in the list below, write to us at <a href="mailto:help@claritus.io" class="is-green">help@claritus.io</a>
 {{< /rawhtml >}}
 

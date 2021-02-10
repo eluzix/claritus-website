@@ -180,6 +180,11 @@
       .page-title {
         font-size: 4rem;
       }
+
+      .page-description {
+        font-size: 1.286rem;
+        margin: 1.5rem auto 0;
+      }
     }
 
     .divider {
@@ -214,6 +219,20 @@
       }
     }
 
+    .heading {
+      padding: 3.6rem 0 6rem;
+
+      .page-title {
+        font-size: 2.857rem;
+      }
+
+      .page-description {
+        max-width: 40rem;
+        font-size: 1.143rem;
+        margin: 1.45rem auto 0;
+      }
+    }
+
     .divider {
       height: 2.1rem;
     }
@@ -234,14 +253,6 @@
     &.about-claritus {
       article p:first-child {
         font-size: 1.5rem;
-      }
-    }
-
-    .heading {
-      padding: 3.6rem 0 6rem;
-
-      .page-title {
-        font-size: 2.857rem;
       }
     }
   }
@@ -332,6 +343,11 @@
 
       .page-title {
         font-size: 2.571rem;
+      }
+
+      .page-description {
+        font-size: 1rem;
+        margin: 1.45rem auto 0;
       }
     }
 
