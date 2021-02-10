@@ -1,22 +1,27 @@
 {{ define "content" }}
-<div class="content faq has-navbar-fixed-top">
+<div class="content {{ .Params.content_class }} has-navbar-fixed-top">
 
     {{ partial "nav" . }}
     {{ partial "menu.html" }}
 
-    <section class="container">
-        <h1 class="title has-bottom-margin-32 is-centered" title="{{ .Title }}">{{ .Title }}</h1>
-        <article>
-            <h6 class="has-bottom-margin-32 is-centered">{{ .Content }}</h6>
-            <ul class="faq-items">
-                {{ range .Params.faq_list }}
-                    <li>
-                        <h2>{{ .title }}</h2>
-                        <p>{{ .body | safeHTML}}</p>
-                    </li>
-                {{ end }}
-            </ul>
-        </article>
+    <section class="heading">
+        <h1 class="page-title" title="{{ .Title }}">{{ .Title }}</h1>
+        <p class="page-description">{{ .Content }}</p>
+    </section>
+
+    <section class="questions">
+        <div class="container">
+            <article>
+                <ul class="faq-items">
+                    {{ range .Params.faq_list }}
+                        <li>
+                            <h2>{{ .title }}</h2>
+                            <p>{{ .body | safeHTML}}</p>
+                        </li>
+                    {{ end }}
+                </ul>
+            </article>
+        </div>
     </section>
 </div>
 {{ end }}

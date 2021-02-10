@@ -280,20 +280,16 @@ function checkHeaderVisibility() {
     }
 
     let isVisible = app.isHeaderInViewport(landingPageElement);
-    let menuElement = document.getElementById('menu');
     if (isVisible) {
         headerElement.classList.remove('white-header');
-        menuElement.classList.remove('white-header');
         document.querySelector('.header-hidden-height').style.display = 'none';
     } else {
         headerElement.classList.add('white-header');
-        menuElement.classList.add('white-header');
         document.querySelector('.header-hidden-height').style.display = 'block';
     }
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-
     window.addEventListener("scroll", checkHeaderVisibility, false);
 
     app.setupSnapScrolling();

@@ -14,6 +14,10 @@
     }
   }
 
+  p {
+    color: $primary;
+  }
+
   .hero {
     display: flex;
     align-items: center;
@@ -46,10 +50,6 @@
     p {
       font-size: 1.571rem;
       line-height: 182%;
-    }
-
-    .divider {
-      height: 2.875rem;
     }
   }
 
@@ -214,10 +214,6 @@
       p {
         font-size: 1.286rem;
       }
-
-      .divider {
-        height: 2.3rem;
-      }
     }
 
     .our-team {
@@ -319,10 +315,6 @@
 
       p {
         font-size: 1.143rem;
-      }
-
-      .divider {
-        height: 2.1rem;
       }
     }
 
@@ -435,10 +427,6 @@
 
       p {
         font-size: 1.143rem;
-      }
-
-      .divider {
-        height: 2.1rem;
       }
     }
 

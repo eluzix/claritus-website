@@ -358,24 +358,6 @@ input {
         background-color: $dark;
       }
     }
-
-
-    & ~ .menu {
-      .menu-content {
-        background: $white;
-        padding: 7.643rem 2.643rem;
-      }
-
-      .menu-list li {
-        a {
-          color: $dark;
-        }
-
-        &:hover {
-          background: rgba(73, 83, 105, 0.05);
-        }
-      }
-    }
   }
 }
 
@@ -1447,3 +1429,4 @@ input {
 @import "slider";
 @import "content";
 @import "about-us";
+@import "faq";

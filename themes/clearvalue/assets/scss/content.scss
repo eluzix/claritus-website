@@ -38,13 +38,27 @@
     font-weight: bold;
   }
 
-  .page-title {
-    font-size: 5.143rem;
-    line-height: 120%;
-    font-weight: 600;
-    text-align: center;
-    margin-top: $header-height;
+  .heading {
     padding: 5rem 0 7rem;
+    margin-top: $header-height;
+    text-align: center;
+
+    .page-title {
+      font-size: 5.143rem;
+      line-height: 120%;
+      font-weight: 600;
+    }
+
+    .page-description {
+      font-size: 1.571rem;
+      line-height: 180%;
+      max-width: 60rem;
+      margin: 2.143rem auto 0;
+    }
+  }
+
+  .divider {
+    height: 2.875rem;
   }
 
   ol ol ol {
@@ -81,7 +95,6 @@
   }
 
   .hero-image {
-    //height: 100%;
     min-height: 20rem;
     margin-top: 5rem;
     width: 100vw;
@@ -145,54 +158,6 @@
   }
 }
 
-.faq {
-  .container {
-    margin-top: 10rem;
-  }
-
-  h1 {
-    margin-bottom: 3.125rem;
-  }
-
-  h6 {
-    font-weight: normal;
-    font-size: 1.375rem;
-    line-height: 180%;
-    margin-bottom: 9.375rem;
-  }
-
-  article {
-    .faq-items {
-      list-style: none;
-
-      li {
-        background: url("/images/faq-bullet.svg") no-repeat 0 0;
-        padding-left: 3rem;
-        margin-bottom: 3.125rem;
-        background-size: 2.25rem;
-
-        h2 {
-          font-size: 2.125rem;
-          margin-bottom: 1rem;
-        }
-
-        p {
-          font-size: 1.375rem;
-          line-height: 180%;
-        }
-
-        a {
-          color: $green;
-
-          &:hover {
-            text-decoration: underline;
-          }
-        }
-      }
-    }
-  }
-}
-
 @media screen and (max-width: $fullhd) {
   .content {
     h1 {
@@ -209,9 +174,16 @@
       }
     }
 
-    .page-title {
-      font-size: 4rem;
+    .heading {
       padding: 5.75rem 0 5.75rem;
+
+      .page-title {
+        font-size: 4rem;
+      }
+    }
+
+    .divider {
+      height: 2.3rem;
     }
   }
 }
@@ -241,31 +213,9 @@
         font-size: 1.75rem;
       }
     }
-  }
 
-  .faq {
-    h1 {
-      margin-bottom: 1rem;
-    }
-
-    h6 {
-      font-size: 1rem;
-      margin-bottom: 5.135rem;
-    }
-
-    article .faq-items li {
-      background-size: 2.25rem 2.25rem;
-      padding-left: 2.75rem;
-      padding-top: 0.25rem;
-
-
-      h2 {
-        font-size: 1.5rem;
-      }
-
-      p {
-        font-size: 1rem;
-      }
+    .divider {
+      height: 2.1rem;
     }
   }
 }
@@ -287,9 +237,12 @@
       }
     }
 
-    .page-title {
-      font-size: 2.857rem;
+    .heading {
       padding: 3.6rem 0 6rem;
+
+      .page-title {
+        font-size: 2.857rem;
+      }
     }
   }
 }
@@ -373,38 +326,17 @@
       }
     }
 
-    .page-title {
-      font-size: 2.571rem;
+    .heading {
       padding: 4rem 0 3rem;
       margin-top: 5.45rem;
-    }
-  }
 
-  .faq {
-    h1 {
-      margin-bottom: 1rem;
-    }
-
-    h6 {
-      font-size: 0.875rem;
-      margin-bottom: 5.135rem;
-    }
-
-    article .faq-items li {
-      h2 {
-        font-size: 1.5rem;
-      }
-
-      p {
-        font-size: 0.875rem;
+      .page-title {
+        font-size: 2.571rem;
       }
     }
 
-    article .faq-items li {
-      background: url("/images/faq-bullet.svg") no-repeat 0 0;
-      background-size: 1.5rem 1.5rem;
-      padding-left: 2rem;
-      padding-top: 0;
+    .divider {
+      height: 2.1rem;
     }
   }
 }

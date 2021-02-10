@@ -69,22 +69,21 @@
 
     li {
       margin: 1rem 0;
-      padding: 5px 25px;
 
       a {
+        display: block;
+        padding: 5px 25px;
         font-weight: normal;
         font-size: 1.571rem;
         line-height: 180%;
         color: $white;
         letter-spacing: 0.01em;
         font-feature-settings: 'liga' off;
-      }
 
-      &:hover {
-        background: rgba(255, 255, 255, 0.05);
-        border-radius: 10px;
-        a {
-          color: $green;
+        &:hover {
+          color: $green !important;
+          background: rgba(255, 255, 255, 0.05);
+          border-radius: 10px;
         }
       }
     }
@@ -92,6 +91,23 @@
 
   .white-hexagon {
     display: none;
+  }
+}
+
+.header.white-header ~ .menu {
+  .menu-content {
+    background: $white;
+    padding: 7.643rem 2.643rem;
+  }
+
+  .menu-list li {
+    a {
+      color: $dark;
+
+      &:hover {
+        background: rgba(73, 83, 105, 0.05);
+      }
+    }
   }
 }
 
@@ -109,6 +125,7 @@
         }
       }
     }
+
     .white-hexagon {
       display: block;
       position: absolute;

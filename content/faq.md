@@ -3,6 +3,8 @@ title: "Frequently Asked Questions"
 date: 2020-04-27T09:30:01+03:00
 url: /faq
 type: faq
+content_class: faq
+header_class: white-header
 faq_list:
     - title: What is Claritus?
       body: "Claritus is a simple-to-use personal wealth service that allows you to view all of your invested assets in one place. It’s the only tool you need to track, understand, and grow your wealth."
@@ -15,9 +17,9 @@ faq_list:
     - title: What about Claritus’s security?
       body: "Claritus applies bank-quality security standards. All of your information is secured and encrypted both at rest and in transit. The system uses Yodlee to get read-only access only to those accounts you choose to link."
     - title: How does Claritus calculate my yield?
-      body: "For any single asset, the system uses the modified 
-             <a href=\"https://en.wikipedia.org/wiki/Modified_Dietz_method\" target=\"_blank\">Dietz method</a>.<br/> 
-             When looking at assets together, it uses weighted returns.<br/> 
+      body: "For any single asset, the system uses the modified
+             <a href=\"https://en.wikipedia.org/wiki/Modified_Dietz_method\" target=\"_blank\">Dietz method</a>.<br/>
+             When looking at assets together, it uses weighted returns.<br/>
              This way, you can be confident about safely comparing investments and understanding their worth."
     - title: How does Claritus automatically track my accounts?
       body: "Claritus uses Yodlee, a market leader in financial data aggregation, to link your investments and bank accounts and track them. We never see any of your credentials, and get read-only access to the accounts you link to Claritus."
@@ -25,7 +27,7 @@ faq_list:
       body: "You can contact us anytime <a href=\"mailto:help@claritus.io\">help@claritus.io</a>."
 ---
 {{< rawhtml >}}
-Have a question about Claritus? We’re here to help.
+Have a question about Claritus? We’re here to help. <br/>
 If you don’t see your question in the list below, write to us at <a href="mailto:help@claritus.io" class="is-green">help@claritus.io</a>
 {{< /rawhtml >}}
 
