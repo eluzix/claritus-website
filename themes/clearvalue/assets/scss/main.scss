@@ -687,7 +687,7 @@ input {
 .footer {
   min-height: 12.428rem;
   background-color: $dark-blue;
-  padding: 3.571rem 5.714rem 0;
+  padding: 3.675rem 5.714rem 0;
 
   #scroll-top {
     display: flex;
@@ -705,12 +705,14 @@ input {
 
   .links-block {
     display: flex;
+    margin-bottom: 3.5rem;
   }
 
   .copyright {
     text-align: center;
     margin-bottom: 0;
     font-size: 1rem;
+    letter-spacing: 0.01rem;
   }
 
   .links {
@@ -719,11 +721,11 @@ input {
 
     .link {
       font-size: 1.286rem;
-      line-height: 180%;
+      line-height: 140%;
       color: $white;
 
       &:not(:last-child) {
-        margin-right: 5.75rem;
+        margin-right: 5.725rem;
       }
 
       &:hover {
@@ -738,7 +740,7 @@ input {
 
       a {
         vertical-align: top;
-        margin-right: 2.475rem;
+        margin-right: 2.75rem;
       }
 
       .logo {
@@ -749,7 +751,7 @@ input {
   }
 }
 
-@media screen and (max-width: $fullhd-lp) {//small desktop
+@media screen and (max-width: $fullhd-lp) {
   h2 {
     font-size: 3.571rem;
   }
@@ -829,12 +831,21 @@ input {
       }
     }
   }
+}
 
+@media screen and (max-width: $fullhd) {
   .footer {
+    min-height: 12rem;
+    padding: 3.675rem 5.8rem 0;
+
+    .links-block {
+      margin-bottom: 3.4rem;
+    }
+
     .links {
       .link {
         &:not(:last-child) {
-          margin-right: 3.45rem;
+          margin-right: 3.35rem;
         }
       }
     }
@@ -842,7 +853,7 @@ input {
     .social-block {
       .social {
         a {
-          margin-right: 2.9rem;
+          margin-right: 2.85rem;
         }
       }
     }
@@ -875,6 +886,8 @@ input {
   }
 
   .header {
+    padding: 1.215rem 3.5rem;
+
     .nav {
       .links .button {
         height: 3.35rem;
@@ -1093,20 +1106,22 @@ input {
 
   .footer {
     min-height: 13.714rem;
-    padding: 2.15rem 6rem 0;
+    padding: 2.35rem 6.1rem 0;
 
     .links-block {
       flex-wrap: wrap;
+      margin-bottom: 2.5rem;
     }
 
     .links {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-      margin: 0 0 2.5rem;
+      margin: 0 0 2.75rem;
 
       .link {
         font-size: 1.143rem;
+        letter-spacing: 0.01rem;
 
         &:not(:last-child) {
           margin-right: 1rem;
@@ -1116,14 +1131,13 @@ input {
 
     .social-block {
       width: 100%;
-      margin-bottom: 2.65rem;
 
       .social {
         a {
           margin-right: 0;
 
           &:not(:first-child) {
-            margin-left: 2.9rem;
+            margin-left: 2.75rem;
           }
         }
 
@@ -1133,12 +1147,6 @@ input {
         }
       }
     }
-  }
-}
-
-@include tablet-only {
-  .header {
-    padding: 0.575rem 3.5rem;
   }
 }
 
@@ -1396,29 +1404,36 @@ input {
     }
   }
 
-
   .footer {
     min-height: 37.143rem;
-    padding: 2.75rem 1.25rem 0 4rem;
+    padding: 3rem 1.25rem 0 4rem;
+
+    .links-block {
+      margin-bottom: 3.2rem;
+    }
 
     .links {
       flex-direction: column;
       justify-content: flex-start;
-      margin: 0 0 4.8rem;
+      margin: 0 0 5.25rem;
 
       .link {
+        letter-spacing: .03rem;
+
         &:not(:last-child) {
-          margin: 0 0 1.5rem;
+          margin: 0 0 1.9rem;
         }
       }
     }
 
     .social-block {
-      margin-bottom: 3.2rem;
-    }
+      .social {
+        align-items: center;
 
-    .social {
-      align-items: center;
+        a:not(:first-child) {
+          margin-left: 2.85rem;
+        }
+      }
     }
 
     .copyright {
