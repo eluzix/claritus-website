@@ -13,7 +13,6 @@ html {
 
 body {
   font-size: 1.2rem;
-
   color: $white;
 }
 
@@ -139,13 +138,12 @@ p {
     border-color: $green;
     color: $white;
     background-color: transparent;
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
+    padding-left: 2.75rem;
+    padding-right: 2.75rem;
     border-width: 2px;
 
     &:hover {
       background: $green;
-      border-radius: 28px;
       color: $white;
     }
 
@@ -153,20 +151,20 @@ p {
       border: 2px solid #D3D3D3;
       color: #D3D3D3;
       box-sizing: border-box;
-      border-radius: 28px;
     }
   }
 
   &.is-login {
     background: transparent;
-    border: 2px solid $dark-blue;
+    border: none;
     color: $white;
-    margin-right: 2.143rem;
+    margin-right: 3.25rem;
+    padding: 0;
     font-weight: normal;
+    cursor: pointer;
 
     &:hover {
-      border: 2px solid #D3D3D3;
-      cursor: pointer;
+      opacity: 0.8;
     }
   }
 }
@@ -188,7 +186,7 @@ input {
 .burger {
   @include hamburger(2.5rem);
   display: inline-block;
-  margin-left: 3.643rem;
+  margin-left: 1.75rem;
 
   span {
     width: 2.5rem;
@@ -197,13 +195,13 @@ input {
     left: 0;
 
     &:nth-child(1) {
-      top: calc(50% - 7px);
+      top: calc(50% - 10px);
     }
     &:nth-child(2) {
       top: calc(50%);
     }
     &:nth-child(3) {
-      top: calc(50% + 7px);
+      top: calc(50% + 10px);
     }
   }
 
@@ -211,18 +209,10 @@ input {
     z-index: 600;
 
     span:nth-child(1) {
-      transform: translateY(8px) rotate(45deg);
+      transform: translateY(10px) rotate(45deg);
     }
     span:nth-child(3) {
-      transform: translateY(-6px) rotate(-45deg);
-    }
-  }
-
-  @include mobile {
-    width: 1.5rem;
-
-    span {
-      width: 1.5rem;
+      transform: translateY(-10px) rotate(-45deg);
     }
   }
 }
@@ -288,18 +278,19 @@ input {
 
 .header {
   width: 100vw;
-  background: $dark;
-  padding: 1.429rem $desktop-padding-lp;
-  z-index: 99;
+  height: $header-height;
+  padding: 1.75rem $desktop-padding-lp;
   background: $dark-blue;
-  height: auto;
+  z-index: 99;
 
   .logo-black {
     display: none;
   }
 
   .button {
-    height: 4rem;
+    height: 4.75rem;
+    font-weight: normal;
+    font-size: 1.571rem;
   }
 
   .nav {
@@ -317,6 +308,7 @@ input {
       justify-content: flex-end;
       align-items: center;
       color: $white;
+      margin-left: 2rem;
 
       font-weight: 500;
 
@@ -873,10 +865,16 @@ input {
       .links .button {
         font-size: 1.143rem;
 
+        &.is-login {
+          margin-right: 2.25rem;
+        }
+
         &.is-join {
           max-width: 10.214rem;
           height: 3.571rem;
           color: $white;
+          padding-left: 2rem;
+          padding-right: 2rem;
         }
       }
 
@@ -887,7 +885,7 @@ input {
   }
 
   .burger {
-    margin-left: 2.357rem;
+    margin-left: 1.875rem;
   }
 
   .landing-page {
@@ -1082,7 +1080,7 @@ input {
 
 @include tablet-only {
   .header {
-    padding: 1.857rem 1.143rem;
+    padding: 0.575rem 3.5rem;
   }
 }
 
@@ -1168,28 +1166,60 @@ input {
   }
 
   .header {
-    padding: 1.714rem;
+    height: 5.45rem;
+    padding: 1.75rem 1.125rem;
 
     .nav {
       position: relative;
 
       img.logo {
-        max-height: 2.643rem;
+        max-height: 2.25rem;
       }
 
       .links {
         .button {
-          &.is-join {
-            max-height: 2.857rem;
-            width: 9.571rem;
+          width: auto;
+          max-height: 2.35rem;
+          font-size: 1rem;
 
-            font-weight: normal;
-            font-size: 1rem;
-            line-height: 180%;
+          &.is-login {
+            margin-right: 1.5rem;
+          }
+
+          &.is-join {
+            padding-left: 1.7rem;
+            padding-right: 1.7rem;
           }
         }
+
         .burger {
           left: 0;
+          width: 1.75rem;
+          margin-left: 1.125rem;
+
+          span {
+            width: 1.75rem;
+            height: 2px;
+
+            &:nth-child(1) {
+              top: calc(50% - 6px);
+            }
+            &:nth-child(2) {
+              top: calc(50%);
+            }
+            &:nth-child(3) {
+              top: calc(50% + 6px);
+            }
+          }
+
+          &.is-active {
+            span:nth-child(1) {
+              transform: translateY(6px) rotate(45deg);
+            }
+            span:nth-child(3) {
+              transform: translateY(-6px) rotate(-45deg);
+            }
+          }
         }
       }
     }
@@ -1396,3 +1426,4 @@ input {
 @import "menu-lp";
 @import "slider";
 @import "content";
+@import "about-us";

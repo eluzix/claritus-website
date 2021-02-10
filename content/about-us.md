@@ -14,4 +14,4 @@ We would love to hear what you think of Claritus. What you like, what you expect
 
 {{< rawhtml >}}<div class="divider"></div>{{< /rawhtml >}}
 
-With over 20 years (each) of tech-startup experience, we have a passion for finding solutions and bringing our visions to reality. Claritus was born out of a genuine need we all had in tracking our finances. We have put all of that passion and know-how into Claritus. It’s the tool we use, and we hope you will find it just as useful as we do.
+With over 20 years (each) of {{< rawhtml >}}<span style="white-space: nowrap;">tech-startup</span>{{< /rawhtml >}} experience, we have a passion for finding solutions and bringing our visions to reality. Claritus was born out of a genuine need we all had in tracking our finances. We have put all of that passion and know-how into Claritus. It’s the tool we use, and we hope you will find it just as useful as we do.

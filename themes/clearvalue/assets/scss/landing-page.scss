@@ -251,11 +251,10 @@ input {
 
 .header {
   width: 100vw;
-  background: $dark;
+  height: $header-height;
   padding: 1.429rem $desktop-padding-lp;
-  z-index: 99;
   background: $dark-blue;
-  height: auto;
+  z-index: 99;
 
   .button {
     height: 4rem;
