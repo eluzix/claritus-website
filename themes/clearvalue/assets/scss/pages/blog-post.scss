@@ -162,13 +162,258 @@
 }
 
 @media screen and (max-width: $fullhd) {
+  .blog-post {
+    .container {
+      max-width: 52.5rem;
+    }
 
+    .back-link {
+      min-height: 1.9rem;
+      font-size: 1rem;
+      line-height: 150%;
+      padding-left: 2.9rem;
+
+      &:before {
+        width: 1.9rem;
+        height: 1.9rem;
+        background-size: 0.686rem;
+      }
+    }
+
+    .post-content {
+      padding: 1.56rem 0 10.55rem;
+
+      h1 {
+        font-size: 3.571rem;
+        line-height: 120%;
+        margin-bottom: 3.6rem;
+      }
+
+      article {
+        ul {
+          padding: 0 0 0 2.2rem;
+          list-style: none;
+
+          &:not(:last-child) {
+            margin-bottom: 4.35rem;
+          }
+        }
+
+        p, li {
+          font-size: 1.286rem;
+          letter-spacing: 0.014rem;
+        }
+
+        p {
+          &:not(:last-child) {
+            margin-bottom: 2.175rem;
+          }
+
+          &:last-child {
+            margin-top: 2.35rem;
+          }
+        }
+
+        li {
+          position: relative;
+          padding-left: 2.1rem;
+
+          &:before {
+            display: block;
+            position: absolute;
+            content: "\2022";
+            left: 0;
+            top: 0;
+            font-size: 2.2rem;
+          }
+        }
+
+        img {
+          &:not(:last-child) {
+            margin-bottom: 4.1rem;
+          }
+        }
+      }
+    }
+
+    .post-footer {
+      padding: 6rem 0 5.7rem;
+
+      h3 {
+        max-width: 50rem;
+        font-size: 2rem;
+      }
+
+      .open-contact-us-modal {
+        max-width: 18.286rem;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: $widescreen) {
+  .blog-post {
+    .container {
+      max-width: 34.5rem;
+    }
 
+    .back-link {
+      font-size: 0.857rem;
+      padding-left: 2.9rem;
+    }
+
+    .navigation {
+      margin-bottom: 2.4rem;
+    }
+
+    .post-content {
+      padding: 0 0 7.1rem;
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      article {
+        ul {
+          padding: .75rem 0 0 1.7rem;
+
+          &:not(:last-child) {
+            margin-bottom: 2.8rem;
+          }
+        }
+
+        p, li {
+          font-size: 1.143rem;
+          letter-spacing: 0.01rem;
+        }
+
+        p {
+          &:not(:last-child) {
+            margin-bottom: 2.1rem;
+          }
+
+          &:last-child {
+            margin-top: 0;
+          }
+        }
+
+        li {
+          padding-left: 2.55rem;
+
+          &:before {
+            font-size: 2.4rem;
+          }
+
+          &:not(:last-child) {
+            margin-bottom: 1.5rem;
+          }
+        }
+
+        img {
+          &:not(:last-child) {
+            margin-bottom: 2.6rem;
+          }
+        }
+      }
+    }
+
+    .post-footer {
+      padding: 4.4rem 0 4.3rem;
+
+      .container {
+        max-width: 43.6rem;
+      }
+
+      h3 {
+        max-width: 42rem;
+        font-size: 1.714rem;
+        margin-bottom: 3rem;
+      }
+
+      .open-contact-us-modal {
+        max-width: 17rem;
+      }
+
+      .scroll-to-top {
+        right: 3.3rem;
+        bottom: 3.5rem;
+      }
+    }
+  }
 }
 
 @include mobile {
+  .blog-post {
+    .back-link {
+      font-size: 0.857rem;
+      padding-left: 2.9rem;
+    }
 
+    .navigation {
+      margin-bottom: 2.6rem;
+    }
+
+    .post-content {
+      margin-top: 5.45rem;
+      padding: .45rem 0 4rem;
+
+      h1 {
+        margin-bottom: 2.1rem;
+      }
+
+      article {
+        ul {
+          padding: .2rem 0 0 0.9rem;
+
+          &:not(:last-child) {
+            margin-bottom: 2.8rem;
+          }
+        }
+
+        p, li {
+          font-size: 1rem;
+        }
+
+        p {
+          &:not(:last-child) {
+            margin-bottom: 1.8rem;
+          }
+        }
+
+        li {
+          padding-left: 2rem;
+
+          &:not(:last-child) {
+            margin-bottom: 1.1rem;
+          }
+        }
+      }
+    }
+
+    .post-footer {
+      padding: 6.85rem 0 6.8rem;
+
+      .container {
+        max-width: 43.6rem;
+      }
+
+      h3 {
+        font-size: 1.571rem;
+        margin-bottom: 4.15rem;
+        text-align: center;
+        line-height: 141%;
+      }
+
+      .open-contact-us-modal {
+        display: block;
+        margin: 0 auto;
+        padding-top: 0.8rem;
+      }
+
+      .scroll-to-top {
+        right: 3.3rem;
+        bottom: 3.5rem;
+      }
+    }
+  }
 }
