@@ -66,3 +66,161 @@
     }
   }
 }
+
+@media screen and (max-width: $fullhd) {
+  .our-story {
+    .container {
+      max-width: 52.5rem;
+    }
+
+    .heading {
+      padding: 5rem 0 5.8rem;
+
+      .page-title {
+        font-size: 3.571rem;
+        line-height: 120%;
+      }
+    }
+
+    .hero {
+      min-height: 42.857rem;
+
+      .hero-left {
+        p {
+          max-width: 33rem;
+          font-size: 2rem;
+          transform: translateX(-2px);
+        }
+      }
+    }
+
+    .story-text {
+      padding: 8.5rem 0 3.25rem;
+
+      p {
+        font-size: 1.286rem;
+        letter-spacing: 0.012rem;
+
+        &.is-bold {
+          font-size: 2rem;
+          letter-spacing: 0;
+          padding-top: 3.5rem;
+        }
+
+        &:not(:last-child) {
+          margin-bottom: 2.3rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $widescreen) {
+  .our-story {
+    .container {
+      max-width: 34.75rem;
+    }
+
+    .heading {
+      padding: 3.35rem 0 4.2rem;
+
+      .page-title {
+        font-size: 2.571rem;
+        line-height: 140%;
+      }
+    }
+
+    .hero {
+      min-height: 43.5rem;
+      align-items: flex-start;
+      padding-top: 11.5rem;
+
+      .hero-left {
+        width: 100%;
+        justify-content: flex-start;
+        padding-left: 13.4%;
+
+        p {
+          max-width: 25.857rem;
+          font-size: 1.714rem;
+          line-height: 151%;
+          transform: translateX(0);
+        }
+      }
+    }
+
+    .story-text {
+      padding: 8.5rem 0 3.25rem;
+
+      p {
+        font-size: 1.143rem;
+        letter-spacing: 0.012rem;
+
+        &.is-bold {
+          font-size: 1.714rem;
+          padding-top: 2.15rem;
+        }
+
+        &:not(:last-child) {
+          margin-bottom: 2.1rem;
+        }
+      }
+    }
+  }
+}
+
+@include mobile {
+  .our-story {
+    .container {
+      max-width: 34.75rem;
+    }
+
+    .heading {
+      padding: 4.4rem 0 3.2rem;
+
+      .page-title {
+        font-size: 2rem;
+        line-height: 120%;
+      }
+    }
+
+    .hero {
+      min-height: 42.857rem;
+      padding-top: 4.15rem;
+
+      .hero-left {
+        justify-content: center;
+        padding-left: 0;
+
+        p {
+          max-width: 23.429rem;
+          font-size: 1.571rem;
+          line-height: 141%;
+        }
+      }
+    }
+
+    .story-text {
+      padding: 3.5rem 0 4.8rem;
+
+      p {
+        font-size: 1rem;
+        letter-spacing: 0.012rem;
+
+        &.is-bold {
+          font-size: 1.571rem;
+          line-height: 140%;
+          padding-top: 0.4rem;
+        }
+
+        &:not(:last-child) {
+          margin-bottom: 1.7rem;
+        }
+
+        &:first-child {
+          margin-bottom: 1.9rem;
+        }
+      }
+    }
+  }
+}
