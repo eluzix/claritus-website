@@ -25,7 +25,7 @@
     display: flex;
     align-items: center;
     min-height: 50rem;
-    background: url("/images/our-story-img.png") no-repeat center;
+    background-image: url("/images/our-story.png");
     background-size: cover;
 
     .hero-left {
@@ -84,6 +84,7 @@
 
     .hero {
       min-height: 42.857rem;
+      background-image: url("/images/our-story-small.png");
 
       .hero-left {
         p {
@@ -134,6 +135,7 @@
       min-height: 43.5rem;
       align-items: flex-start;
       padding-top: 11.5rem;
+      background-image: url("/images/our-story-tablet.png");
 
       .hero-left {
         width: 100%;
@@ -187,6 +189,7 @@
     .hero {
       min-height: 42.857rem;
       padding-top: 4.15rem;
+      background-image: url("/images/our-story-mobile.png");
 
       .hero-left {
         justify-content: center;
