@@ -689,17 +689,14 @@ input {
   background-color: $dark-blue;
   padding: 3.675rem 5.714rem 0;
 
-  #scroll-top {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .scroll-to-top {
+    display: block;
     width: 3.154rem;
     height: 3.154rem;
     margin-left: auto;
-    padding: 8px 0 0;
     border-radius: 50%;
     border: 0.5px solid #D3D3D3;
-    background-color: transparent;
+    background: url("/images/arrow.svg") no-repeat center;
     cursor: pointer;
   }
 

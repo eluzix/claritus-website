@@ -234,10 +234,11 @@ const app = {
     },
 
     initScrollTop() {
-        const control = document.getElementById('scroll-top')
-        if (control) {
-            control.onclick = () => { window.scrollTo({ top: 0, behavior: 'smooth' }) }
-        }
+        document.querySelectorAll('.scroll-to-top').forEach(item => {
+            item.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' })
+            })
+        })
     },
 };
 

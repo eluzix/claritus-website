@@ -2,7 +2,8 @@
 title: "Claritus – Best Practices"
 date: 2020-10-11T10:30:01+03:00
 type: blog
-content_class: blog
+content_class: blog-post
+header_class: white-header
 ---
 
 Whether you’re new to Claritus and want to play around and orient yourself, or like to follow step-by-step instructions and take your time before committing to a service, Claritus gives you the option to enter your information manually, at your own pace.
@@ -18,7 +19,7 @@ It may seem like a whole lot of unnecessary work on your part, having to enter d
 
 <img src="/images/blog-best-practices.png">
 {{< /rawhtml >}}
-        
+
 Here are our ‘Best Practices’ guidelines for getting the most out of Claritus:
 We highly recommend you update your data on a regular basis (monthly, quarterly, annually – that’s completely up to you) for each investment or asset. This takes just a few seconds per holding, and gives you a better, more precise picture of your finances looking back. Keep in mind, it is always best to enter each holding’s valuation at its end-of-business-day closing value.
 
