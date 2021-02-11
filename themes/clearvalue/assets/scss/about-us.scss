@@ -313,6 +313,7 @@
 
           p {
             font-size: 1.286rem;
+            letter-spacing: 0.01rem;
           }
 
           a {
@@ -361,13 +362,14 @@
       }
 
       .hero-right {
-        right: -8rem;
-        top: 26%;
+        right: -7rem;
+        top: 26.5%;
+        max-width: 43.5rem;
       }
     }
 
     .about-text {
-      padding: 8.6rem 0;
+      padding: 8.7rem 0;
 
       p {
         font-size: 1.143rem;
@@ -375,33 +377,53 @@
     }
 
     .our-team {
-      padding: 7.25rem 0 7.275rem;
+      padding: 7.1rem 0 7.275rem;
 
       .container > h2 {
         max-width: 43.571rem;
         font-size: 2.571rem;
         line-height: 140%;
-        margin: 0 auto 4.5rem;
+        margin: 0 auto 4.25rem;
         padding: 0;
       }
 
       .team-members {
         & > div {
-          max-width: 12rem;
+          max-width: 12.2rem;
+
+          &:first-child {
+            .pic {
+              transform: translateX(0);
+            }
+
+            .profession {
+              transform: translateX(0);
+            }
+          }
+
+          &:last-child {
+            .pic {
+              transform: translateX(0);
+            }
+
+            .profession {
+              transform: translateX(0);
+            }
+          }
         }
       }
 
       .pic {
         width: 11.276rem;
         height: 11.276rem;
-        margin: 0 auto 2rem;
+        margin: 0 auto 2.1rem;
         background-size: cover !important;
       }
 
       .initials {
         font-size: 1.286rem;
         line-height: 140%;
-        margin-bottom: 0;
+        margin-bottom: 0.05rem;
       }
 
       .profession {
@@ -416,10 +438,10 @@
     }
 
     .about-pages {
-      padding: 8.6rem 0 2.875rem;
+      padding: 8.45rem 0 2.8rem;
 
       .pages-overview {
-        padding: 0 8.5rem;
+        padding: 0 8.65rem;
 
         & > div {
           &:not(:last-child) {
@@ -433,10 +455,13 @@
           h2 {
             font-size: 1.714rem;
             line-height: 150%;
+            margin-bottom: 1.55rem;
           }
 
           p {
             font-size: 1.143rem;
+            line-height: 182%;
+            letter-spacing: 0.01rem;
           }
         }
       }
@@ -459,8 +484,8 @@
 
         h2 {
           font-size: 2rem;
-          line-height: 120%;
-          margin-bottom: 2rem;
+          line-height: 122%;
+          margin-bottom: 1.55rem;
         }
 
         p {
@@ -474,12 +499,12 @@
         position: static;
         transform: scale(1.2);
         max-width: 26.785rem;
-        margin: 0 auto;
+        margin: -6px auto 0;
       }
     }
 
     .about-text {
-      padding: 3.25rem 0 5.5rem;
+      padding: 3.35rem 0 5.5rem;
 
       p {
         font-size: 1.143rem;
@@ -492,8 +517,8 @@
       .container > h2 {
         max-width: 43.571rem;
         font-size: 2rem;
-        line-height: 120%;
-        margin: 0 auto 4.5rem;
+        line-height: 122%;
+        margin: 0 auto 4.1rem;
         padding: 0;
       }
 
@@ -503,10 +528,16 @@
         align-items: center;
 
         & > div {
-          max-width: 18.75rem;
+          max-width: 22.857rem;
+
+          &:nth-child(2) {
+            .pic {
+              transform: translateX(-7px);
+            }
+          }
 
           &:not(:last-child) {
-            margin-bottom: 4.875rem;
+            margin-bottom: 4.75rem;
           }
         }
       }
@@ -514,7 +545,8 @@
       .pic {
         width: 14.095rem;
         height: 14.095rem;
-        margin: 0 auto 1.5rem;
+        margin: 0 auto 1.8rem;
+        background-size: initial !important;
       }
 
       .initials {
@@ -525,7 +557,7 @@
 
       .profession {
         font-size: 1rem;
-        margin-bottom: 1.25rem;
+        margin-bottom: 1.15rem;
       }
 
       .description {
@@ -536,7 +568,7 @@
     }
 
     .about-pages {
-      padding: 8.5rem 0 9.125rem;
+      padding: 8.2rem 0 9rem;
 
       .pages-overview {
         flex-direction: column;
@@ -553,13 +585,13 @@
           }
 
           & > div {
-            margin-bottom: 1.125rem;
+            margin-bottom: 1.1rem;
           }
 
           h2 {
             font-size: 2rem;
             line-height: 120%;
-            margin-bottom: 1.125rem;
+            margin-bottom: 1.3rem;
           }
 
           p {
