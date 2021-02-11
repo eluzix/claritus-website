@@ -57,6 +57,10 @@
     p {
       font-size: 1.571rem;
       line-height: 182%;
+
+      &:not(:last-child) {
+        margin-bottom: 2.875rem;
+      }
     }
   }
 
@@ -232,6 +236,10 @@
 
       p {
         font-size: 1.286rem;
+
+        &:not(:last-child) {
+          margin-bottom: 2.3rem;
+        }
       }
     }
 
@@ -374,6 +382,10 @@
 
       p {
         font-size: 1.143rem;
+
+        &:not(:last-child) {
+          margin-bottom: 2.1rem;
+        }
       }
     }
 

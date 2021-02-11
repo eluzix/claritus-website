@@ -1,0 +1,68 @@
+.our-story {
+  .container {
+    margin: 0 auto;
+    max-width: 61.614rem;
+    box-sizing: content-box;
+    padding-left: 1.714rem !important;
+    padding-right: 1.714rem !important;
+  }
+
+  p {
+    color: $primary;
+  }
+
+  .heading {
+    padding: 5.7rem 0 7.15rem;
+
+    .page-title {
+      font-weight: 500;
+      font-size: 4.571rem;
+      line-height: 130%;
+    }
+  }
+
+  .hero {
+    display: flex;
+    align-items: center;
+    min-height: 50rem;
+    background: url("/images/our-story-img.png") no-repeat center;
+    background-size: cover;
+
+    .hero-left {
+      display: flex;
+      justify-content: flex-end;
+      width: 50%;
+
+      p {
+        max-width: 40.5rem;
+        color: $dark;
+        font-weight: 500;
+        font-size: 2.429rem;
+        line-height: 150%;
+        transform: translateX(-15px);
+      }
+    }
+  }
+
+  .story-text {
+    padding: 10.8rem 0 4.78rem;
+
+    p {
+      font-size: 1.571rem;
+      line-height: 182%;
+      letter-spacing: .015rem;
+
+      &.is-bold {
+        font-weight: 500;
+        font-size: 2.429rem;
+        line-height: 150%;
+        letter-spacing: 0.005rem;
+        padding-top: 4.15rem;
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 2.875rem;
+      }
+    }
+  }
+}
