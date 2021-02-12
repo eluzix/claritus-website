@@ -864,32 +864,9 @@ input {
   }
 }
 
-@media screen and (max-width: 835px) { //tablet
-  h2 {
-    font-size: 2.571rem;
-  }
-
-  h3 {
-    font-size: 2rem;
-  }
-
-  h4 {
-    font-size: 1.286rem;
-  }
-
-  p, .copyright {
-    font-size: 1.143rem;
-  }
-
-  .is-visible-tablet {
-    display: block !important;
-  }
-
-  .is-hidden-tablet {
-    display: none !important;
-  }
-
+@media screen and (max-width: $widescreen) {
   .header {
+    height: 6.143rem;
     padding: 1.215rem 3.5rem;
 
     .nav {
@@ -918,6 +895,78 @@ input {
 
   .burger {
     margin-left: 1.835rem;
+  }
+
+  .footer {
+    min-height: 13.714rem;
+    padding: 2.35rem 6.1rem 0;
+
+    .links-block {
+      flex-wrap: wrap;
+      margin-bottom: 2.5rem;
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin: 0 0 2.8rem;
+
+      .link {
+        font-size: 1.143rem;
+        letter-spacing: 0.01rem;
+        margin-bottom: 0;
+
+        &:not(:last-child) {
+          margin-right: 1rem;
+        }
+      }
+    }
+
+    .social-block {
+      width: 100%;
+
+      .social {
+        a {
+          margin-right: 0;
+
+          &:not(:first-child) {
+            margin-left: 2.75rem;
+          }
+        }
+
+        .logo {
+          order: -1;
+          flex-grow: 1;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 835px) { //tablet
+  h2 {
+    font-size: 2.571rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  h4 {
+    font-size: 1.286rem;
+  }
+
+  p, .copyright {
+    font-size: 1.143rem;
+  }
+
+  .is-visible-tablet {
+    display: block !important;
+  }
+
+  .is-hidden-tablet {
+    display: none !important;
   }
 
   .landing-page {
@@ -1103,52 +1152,6 @@ input {
           input {
             width: 37.786rem;
           }
-        }
-      }
-    }
-  }
-
-  .footer {
-    min-height: 13.714rem;
-    padding: 2.35rem 6.1rem 0;
-
-    .links-block {
-      flex-wrap: wrap;
-      margin-bottom: 2.5rem;
-    }
-
-    .links {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      margin: 0 0 2.8rem;
-
-      .link {
-        font-size: 1.143rem;
-        letter-spacing: 0.01rem;
-        margin-bottom: 0;
-
-        &:not(:last-child) {
-          margin-right: 1rem;
-        }
-      }
-    }
-
-    .social-block {
-      width: 100%;
-
-      .social {
-        a {
-          margin-right: 0;
-
-          &:not(:first-child) {
-            margin-left: 2.75rem;
-          }
-        }
-
-        .logo {
-          order: -1;
-          flex-grow: 1;
         }
       }
     }
