@@ -30,6 +30,8 @@
     align-items: center;
     min-height: 50rem;
     background: #353D4F;
+    background: url("/images/core-values.png") no-repeat center;
+    background-size: cover;
 
     .hero-left {
       display: flex;
@@ -98,6 +100,7 @@
 
     .hero {
       min-height: 42.786rem;
+      background-image: url("/images/core-values-small.png");
 
       .hero-left {
         width: 58.4%;
@@ -151,6 +154,7 @@
       min-height: 35.714rem;
       align-items: flex-start;
       padding-top: 6rem;
+      background-image: url("/images/core-values-tablet.png");
 
       .hero-left {
         width: 100%;
@@ -212,6 +216,7 @@
       min-height: 49.143rem;
       padding-top: 5.35rem;
       margin-left: -1px;
+      background-image: url("/images/core-values-mobile.png");
 
       .hero-left {
         justify-content: center;
