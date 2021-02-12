@@ -12,14 +12,13 @@
     padding-bottom: 1.5rem;
   }
 
-  .faq-items {
+  .questions-items {
     list-style: none;
 
     li {
       position: relative;
       padding-left: 5.5rem;
       margin-bottom: 6.5rem;
-      background-size: 2.25rem;
 
       &:before {
         display: block;
@@ -84,7 +83,7 @@
       }
     }
 
-    .faq-items {
+    .questions-items {
       li {
         padding: 0.55rem 0 0 4.55rem;
         margin-bottom: 5.85rem;
@@ -118,7 +117,7 @@
       }
     }
 
-    .faq-items {
+    .questions-items {
       li {
         padding: 0.25rem 0 0 3.55rem;
         margin-bottom: 4.45rem;
@@ -156,7 +155,7 @@
       }
     }
 
-    .faq-items {
+    .questions-items {
       li {
         margin-bottom: 2.95rem;
 

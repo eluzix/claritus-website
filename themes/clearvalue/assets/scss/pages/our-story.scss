@@ -25,7 +25,7 @@
     display: flex;
     align-items: center;
     min-height: 50rem;
-    background-image: url("/images/our-story.png");
+    background: url("/images/our-story.png") no-repeat center;
     background-size: cover;
 
     .hero-left {

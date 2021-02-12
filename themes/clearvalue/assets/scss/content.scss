@@ -99,17 +99,6 @@
     background-position: center;
   }
 
-  &.our-mission {
-    .hero-image {
-      background-image: url("/images/core-values-img.jpg");
-      background-position: right;
-    }
-
-    p {
-      margin-bottom: 3.125rem;
-    }
-  }
-
   &.about-claritus {
     .hero-image {
       background-image: url("/images/about-claritus.jpg");
@@ -266,16 +255,6 @@
 
     .hero-image {
       display: none;
-    }
-
-    &.our-mission {
-      article p:first-child:after {
-        content: "";
-        display: block;
-        height: 23.5rem;
-        background: url("/images/core-values-img.jpg") no-repeat 75% 75%;
-        margin: 2rem -1.5rem;
-      }
     }
 
     &.about-claritus {

@@ -1,0 +1,94 @@
+.core-values {
+  &.content {
+    padding-bottom: 0;
+  }
+
+  .container {
+    margin: 0 auto;
+    max-width: 61.714rem;
+    box-sizing: content-box;
+    padding-left: 1.714rem !important;
+    padding-right: 1.714rem !important;
+  }
+
+  p {
+    color: $primary;
+  }
+
+  .heading {
+    padding: 5.7rem 0 7.15rem;
+
+    .page-title {
+      font-weight: 500;
+      font-size: 4.571rem;
+      line-height: 130%;
+    }
+  }
+
+  .hero {
+    display: flex;
+    align-items: center;
+    min-height: 50rem;
+    background: #353D4F;
+
+    .hero-left {
+      display: flex;
+      justify-content: flex-end;
+      width: 50%;
+
+      h2 {
+        color: $white;
+        font-weight: 500;
+        font-size: 4.571rem;
+        line-height: 130%;
+        white-space: nowrap;
+        margin-bottom: 1.55rem;
+      }
+
+      p {
+        max-width: 40.5rem;
+        color: $white;
+        font-size: 1.571rem;
+        line-height: 182%;
+        letter-spacing: 0.015rem;
+      }
+    }
+  }
+
+  .values {
+    padding: 8.6rem 0 7.4rem;
+  }
+
+  .values-items {
+    list-style: none;
+
+    li {
+      margin-bottom: 3.5rem;
+
+      h2 {
+        font-weight: 500;
+        font-size: 2.429rem;
+        line-height: 150%;
+        margin-bottom: 0.75rem;
+      }
+
+      p {
+        font-size: 1.571rem;
+        line-height: 182%;
+        letter-spacing: 0.015rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $fullhd) {
+
+}
+
+@media screen and (max-width: $widescreen) {
+
+}
+
+@include mobile {
+
+}

@@ -3,6 +3,7 @@
 
     {{ partial "nav" . }}
     {{ partial "menu.html" }}
+
     <section class="heading">
         <h1 class="page-title" title="{{ .Title }}">{{ .Title }}</h1>
     </section>
@@ -10,7 +11,7 @@
     <section class="hero">
         <div class="hero-left">
             <h2><span class="is-green">Claritus</span> is a <br> simple-to-use <br> personal wealth <br> management service.</h2>
-            <p>It allows you to view all of your invested assets in one place. It’s the only service you need to track, understand, and nurture your wealth.</p>
+            <p>{{ .Params.hero_text }}</p>
         </div>
         <div class="hero-right">
             <img src="/images/about-us.png" alt=""/>
@@ -55,14 +56,14 @@
     <section class="about-pages">
         <div class="container is-medium">
             <div class="pages-overview">
-                <div>
+                <div class="story-page">
                     <div>
                         <h2 class="is-green">Our story</h2>
                         <p>Claritus is the result of a very real and personal need we were all faced with.</p>
                     </div>
                     <a href="{{ ref . "our-story.md" }}">Read more</a>
                 </div>
-                <div class="core-values">
+                <div class="values-page">
                     <div>
                         <h2 class="is-green">Core Values</h2>
                         <p>Our values play a huge role in who we are, both as people and as a company</p>

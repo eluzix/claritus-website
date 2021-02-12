@@ -6,16 +6,24 @@
 
     <section class="heading">
         <h1 class="page-title" title="{{ .Title }}">{{ .Title }}</h1>
-        <p class="page-description">{{ .Content }}</p>
     </section>
 
-    <section class="questions">
+    <section class="hero">
+        <div class="hero-left">
+            <div>
+                <h2><span class="is-green">Our values</span> play <br/> a huge role in who <br/> we are, both as people <br/> and as a company.</h2>
+                <p>{{ .Params.hero_text }}</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="values">
         <div class="container">
             <article>
-                <ul class="questions-items">
-                    {{ range .Params.faq_list }}
+                <ul class="values-items">
+                    {{ range .Params.values_list }}
                         <li>
-                            <h2>{{ .title }}</h2>
+                            <h2 class="is-green">{{ .title }}</h2>
                             <p>{{ .body | safeHTML}}</p>
                         </li>
                     {{ end }}
@@ -27,4 +35,3 @@
 {{ end }}
 
 {{ define "title" }}{{ .Title }}{{ end }}
-
