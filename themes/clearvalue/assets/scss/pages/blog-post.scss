@@ -65,6 +65,15 @@
         padding: 0.75rem 0 0 1.55rem;
         list-style: disc;
 
+        li {
+          max-width: 57.57rem;
+          padding-left: 0.4rem;
+
+          &:not(:last-child) {
+            margin-bottom: 2.1rem;
+          }
+        }
+
         &:not(:last-child) {
           margin-bottom: 3.5rem;
         }
@@ -78,15 +87,6 @@
 
       p:not(:last-child) {
         margin-bottom: 2.875rem;
-      }
-
-      li {
-        max-width: 57.57rem;
-        padding-left: 0.4rem;
-
-        &:not(:last-child) {
-          margin-bottom: 2.1rem;
-        }
       }
 
       img {
@@ -194,6 +194,20 @@
           padding: 0 0 0 2.2rem;
           list-style: none;
 
+          li {
+            position: relative;
+            padding-left: 2.1rem;
+
+            &:before {
+              display: block;
+              position: absolute;
+              content: "\2022";
+              left: 0;
+              top: 0;
+              font-size: 2.2rem;
+            }
+          }
+
           &:not(:last-child) {
             margin-bottom: 4.35rem;
           }
@@ -211,20 +225,6 @@
 
           &:last-child {
             margin-top: 2.35rem;
-          }
-        }
-
-        li {
-          position: relative;
-          padding-left: 2.1rem;
-
-          &:before {
-            display: block;
-            position: absolute;
-            content: "\2022";
-            left: 0;
-            top: 0;
-            font-size: 2.2rem;
           }
         }
 
@@ -278,6 +278,18 @@
         ul {
           padding: .75rem 0 0 1.7rem;
 
+          li {
+            padding-left: 2.55rem;
+
+            &:before {
+              font-size: 2.4rem;
+            }
+
+            &:not(:last-child) {
+              margin-bottom: 1.5rem;
+            }
+          }
+
           &:not(:last-child) {
             margin-bottom: 2.8rem;
           }
@@ -295,18 +307,6 @@
 
           &:last-child {
             margin-top: 0;
-          }
-        }
-
-        li {
-          padding-left: 2.55rem;
-
-          &:before {
-            font-size: 2.4rem;
-          }
-
-          &:not(:last-child) {
-            margin-bottom: 1.5rem;
           }
         }
 
@@ -366,6 +366,14 @@
         ul {
           padding: .2rem 0 0 0.9rem;
 
+          li {
+            padding-left: 2rem;
+
+            &:not(:last-child) {
+              margin-bottom: 1.1rem;
+            }
+          }
+
           &:not(:last-child) {
             margin-bottom: 2.8rem;
           }
@@ -378,14 +386,6 @@
         p {
           &:not(:last-child) {
             margin-bottom: 1.8rem;
-          }
-        }
-
-        li {
-          padding-left: 2rem;
-
-          &:not(:last-child) {
-            margin-bottom: 1.1rem;
           }
         }
       }

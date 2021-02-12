@@ -251,7 +251,6 @@ we will notify you by posting a notice through our Services or by other means.
     Our Services utilizes "cookies", anonymous identifiers and other tracking technologies in order to for us to provide our Services and present you with information that is customized for you. A "cookie" is a small text file that may be used, for example, to collect information about activity on the Services. Certain cookies and other technologies may serve to recall Personal Information, such as an IP address, previously indicated by a user. Most browsers allow you to control cookies, including whether or not to accept them and how to remove them. You may set most browsers to notify you if you receive a cookie, or you may choose to block cookies with your browser.
 
 13. ###### **ANALYTICS TOOLS**
-
     * _Google Analytics._ The Services uses a tool called "Google Analytics" to collect information about use
     of the Services. Google Analytics collects information such as how often users visit our Services,
     what pages they visit when they do so, and what other sites they used prior to coming to this Services.
@@ -259,11 +258,11 @@ we will notify you by posting a notice through our Services or by other means.
     We do not combine the information collected through the use of Google Analytics with personally identifiable
     information. Google’s ability to use and share information collected by Google Analytics about your visits
     to our Services is restricted by the Google Analytics Terms of Service, available at
-    http://www.google.com/analytics/terms/us.html/, and the Google Privacy Policy, available at
-    http://www.google.com/policies/privacy/. You may learn more about how Google collects and processes
-    Information specifically in connection with Google Analytics at http://www.google.com/policies/privacy/partners/.
+    {{< rawhtml >}}<a href="http://www.google.com/analytics/terms/us.html/" class="is-broken-mobile">http://www.google.com/analytics/terms/us.html/</a>{{< /rawhtml >}}, and the Google Privacy Policy, available at
+    {{< rawhtml >}}<a href="http://www.google.com/policies/privacy/" class="is-broken-mobile">http://www.google.com/policies/privacy/</a>{{< /rawhtml >}}. You may learn more about how Google collects and processes
+    Information specifically in connection with Google Analytics at {{< rawhtml >}}<a href="http://www.google.com/policies/privacy/partners/" class="is-broken-mobile">http://www.google.com/policies/privacy/partners/</a>{{< /rawhtml >}}.
     You may prevent your Information from being used by Google Analytics by downloading and installing the
-    Google Analytics Opt-out Browser Add-on, available at https://tools.google.com/dlpage/gaoptout/.
+    Google Analytics Opt-out Browser Add-on, available at {{< rawhtml >}}<a href="https://tools.google.com/dlpage/gaoptout/" class="is-broken-mobile">https://tools.google.com/dlpage/gaoptout/</a>{{< /rawhtml >}}.
 
     * _Facebook Pixels and SDKs._ We use Facebook pixels or SDKs, which are tools that provide help to
     website owners and publishers, developers, advertisers, business partners (and their customers)
@@ -272,7 +271,7 @@ we will notify you by posting a notice through our Services or by other means.
     and other storage technologies to collect or receive information from your websites and elsewhere on the
     internet and use that information to provide measurement services and target ads. Facebook’s ability to
     use and share information is governed by the Facebook Tools Terms, available at:
-    https://www.facebook.com/legal/technology_terms/. You can prevent your data from being used by
+    {{< rawhtml >}}<a href="https://www.facebook.com/legal/technology_terms/" class="is-broken-mobile">https://www.facebook.com/legal/technology_terms/</a>{{< /rawhtml >}}. You can prevent your data from being used by
     Facebook Pixels and SDKs by exercising your choice through these mechanisms: http://www.aboutads.info/
     choices or http://www.youronlinechoices.eu/.
 
