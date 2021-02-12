@@ -82,13 +82,174 @@
 }
 
 @media screen and (max-width: $fullhd) {
+  .core-values {
+    .container {
+      max-width: 52.5rem;
+    }
 
+    .heading {
+      padding: 5.8rem 0 5.7rem;
+
+      .page-title {
+        font-size: 3.571rem;
+        line-height: 120%;
+      }
+    }
+
+    .hero {
+      min-height: 42.786rem;
+
+      .hero-left {
+        width: 58.4%;
+
+        h2 {
+          font-size: 3.571rem;
+          line-height: 120%;
+        }
+
+        p {
+          max-width: 38.928rem;
+          font-size: 1.286rem;
+        }
+      }
+    }
+
+    .values {
+      padding: 5.8rem 0 6rem;
+    }
+
+    .values-items {
+      li {
+        margin-bottom: 3.5rem;
+
+        p {
+          font-size: 1.286rem;
+          letter-spacing: 0.013rem;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: $widescreen) {
+  .core-values {
+    .container {
+      max-width: 34.75rem;
+    }
 
+    .heading {
+      padding: 5.35rem 0 4.2rem;
+
+      .page-title {
+        font-size: 2.571rem;
+        line-height: 140%;
+        padding-left: 1.4rem;
+      }
+    }
+
+    .hero {
+      min-height: 35.714rem;
+      align-items: flex-start;
+      padding-top: 6rem;
+
+      .hero-left {
+        width: 100%;
+        justify-content: flex-start;
+        padding-left: 13.4%;
+
+        h2 {
+          font-size: 2.571rem;
+          line-height: 140%;
+          margin-bottom: 1.1rem;
+        }
+
+        p {
+          max-width: 25.857rem;
+          font-size: 1.143rem;
+        }
+      }
+    }
+
+    .values {
+      padding: 4.4rem 0 4.2rem;
+    }
+
+    .values-items {
+      li {
+        margin-bottom: 2.9rem;
+
+        h2 {
+          font-size: 1.714rem;
+          margin-bottom: 0.75rem;
+        }
+
+        p {
+          font-size: 1.143rem;
+          letter-spacing: 0.01rem;
+        }
+      }
+    }
+  }
 }
 
 @include mobile {
+  .core-values {
+    .container {
+      max-width: 34.75rem;
+    }
 
+    .heading {
+      padding: 4.4rem 0 3.2rem;
+
+      .page-title {
+        font-size: 2rem;
+        line-height: 120%;
+        padding-left: 0;
+      }
+    }
+
+    .hero {
+      min-height: 49.143rem;
+      padding-top: 5.35rem;
+      margin-left: -1px;
+
+      .hero-left {
+        justify-content: center;
+        padding-left: 0;
+
+        h2 {
+          font-size: 2rem;
+          line-height: 122%;
+          margin-bottom: 1.55rem;
+        }
+
+        p {
+          max-width: 23rem;
+          font-size: 1rem;
+          margin: 0 auto;
+          letter-spacing: 0.005rem;
+        }
+      }
+    }
+
+    .values {
+      padding: 3.6rem 0 3.2rem;
+    }
+
+    .values-items {
+      li {
+        margin-bottom: 2.4rem;
+
+        h2 {
+          font-size: 1.571rem;
+          line-height: 140%;
+          margin-bottom: 0.4rem;
+        }
+
+        p {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
 }
