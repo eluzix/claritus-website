@@ -110,24 +110,6 @@
       font-weight: 500;
     }
   }
-
-  &.terms article {
-    a {
-      color: $green;
-    }
-
-    ul {
-      li a {
-        color: $primary;
-      }
-    }
-
-    .toc ul li {
-      background-size: 1.125rem;
-      margin-bottom: 1rem;
-      line-height: 180%;
-    }
-  }
 }
 
 @media screen and (max-width: $fullhd) {
@@ -271,12 +253,6 @@
           background-size: cover;
           margin: 2rem -1.5rem;
         }
-      }
-    }
-
-    &.terms {
-      .container {
-        margin-top: 5rem;
       }
     }
 
