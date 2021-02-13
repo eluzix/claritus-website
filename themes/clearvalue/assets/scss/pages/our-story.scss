@@ -29,9 +29,12 @@
     background-size: cover;
 
     .hero-left {
-      display: flex;
-      justify-content: flex-end;
       width: 50%;
+
+      > div {
+        width: fit-content;
+        margin-left: auto;
+      }
 
       p {
         max-width: 40.5rem;
@@ -138,9 +141,7 @@
       background-image: url("/images/our-story-tablet.png");
 
       .hero-left {
-        width: 100%;
-        justify-content: flex-start;
-        padding-left: 13.4%;
+        width: 56.7%;
 
         p {
           max-width: 25.857rem;
@@ -188,8 +189,11 @@
       background-image: url("/images/our-story-mobile.png");
 
       .hero-left {
-        justify-content: center;
-        padding-left: 0;
+        width: 100%;
+        
+        > div {
+          margin: 0 auto;
+        }
 
         p {
           max-width: 23.429rem;

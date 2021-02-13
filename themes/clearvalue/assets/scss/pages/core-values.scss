@@ -34,9 +34,12 @@
     background-size: cover;
 
     .hero-left {
-      display: flex;
-      justify-content: flex-end;
       width: 50%;
+
+      > div {
+        width: fit-content;
+        margin-left: auto;
+      }
 
       h2 {
         color: $white;
@@ -158,8 +161,11 @@
 
       .hero-left {
         width: 100%;
-        justify-content: flex-start;
         padding-left: 13.4%;
+
+        > div {
+          margin-left: 0;
+        }
 
         h2 {
           font-size: 2.571rem;
@@ -219,8 +225,11 @@
       background-image: url("/images/core-values-mobile.png");
 
       .hero-left {
-        justify-content: center;
         padding-left: 0;
+
+        > div {
+          margin: 0 auto;
+        }
 
         h2 {
           font-size: 2rem;
