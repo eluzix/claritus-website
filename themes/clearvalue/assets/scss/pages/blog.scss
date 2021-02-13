@@ -1,0 +1,89 @@
+.blog {
+  &.content {
+    padding-bottom: 0;
+  }
+
+  .container {
+    margin: 0 auto;
+    max-width: 83.143rem;
+    box-sizing: content-box;
+    padding-left: 1.714rem !important;
+    padding-right: 1.714rem !important;
+  }
+
+  .heading {
+    padding: 5.7rem 0 7.15rem;
+
+    .page-title {
+      font-weight: 600;
+      font-size: 4.571rem;
+      line-height: 130%;
+    }
+  }
+
+  .columns {
+    margin-top: -5.3rem;
+    margin-left: -3.7rem;
+    margin-right: -3.7rem;
+
+    &:last-child {
+      margin-bottom: -5.3rem;
+    }
+  }
+
+  .post-card {
+    box-sizing: border-box;
+    padding-top: 5.3rem;
+    padding-bottom: 5.3rem;
+    padding-left: 3.7rem;
+    padding-right: 3.7rem;
+
+    &.is-half {
+      .post-thumbnail {
+        height: 17.857rem;
+        overflow: hidden;
+        margin-bottom: 2.85rem;
+    
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      .post-title {
+        margin-bottom: 1.85rem;
+      }
+    }
+  }
+
+  .post-thumbnail {
+    margin-bottom: 2rem;
+  }
+
+  .post-title {
+    color: $dark;
+    font-weight: 500;
+    font-size: 2.428rem;
+    line-height: 151%;
+    margin-bottom: 2.2rem;
+  }
+
+  .post-excerpt {
+    color: $primary;
+    font-size: 1.571rem;
+    line-height: 182%;
+  }
+}
+
+@media screen and (max-width: $fullhd) {
+  
+}
+
+@media screen and (max-width: $widescreen) {
+  
+}
+
+@include mobile {
+  
+}
