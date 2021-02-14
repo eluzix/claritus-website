@@ -1407,7 +1407,7 @@ input {
               cursor: pointer;
               pointer-events: auto;
 
-              &.is-active {
+              &--active {
                 background-image: url("/images/slider-bullet-active.jpg");
               }
 
