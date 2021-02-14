@@ -8,45 +8,33 @@
         <h1 class="page-title" title="{{ .Title }}">{{ .Title }}</h1>
     </section>
 
+    {{ $paginator := .Paginate (.Pages.ByPublishDate.Reverse) }}
     <section class="posts">
         <div class="container">
             <div class="columns is-multiline">
+
+                {{ range first 1 $paginator.Pages }}
                 <article class="post-card column is-full">
                     <div class="post-thumbnail">
-                        <img src="/images/thumbnail.png" alt="thumbnail">
+                        <img src="{{ .Params.thumbnail }}" alt="thumbnail">
                     </div>
-                    <h3 class="post-title">Purus ante tincidunt pharetra tincidunt vitae</h3>
-                    <p class="post-excerpt">Nullam faucibus etiam a enim scelerisque mattis consequat, ullamcorper. Id ut blandit semper ac. Ultrices vulputate sed pellentesque dignissim elit aliquet. Laoreet aliquet fermentum nec risus ullamcorper. Blandit non augue adipiscing scelerisque eget elit felis.</p>
+                    <a class="post-title" href="{{ .RelPermalink }}">{{ .Title }}</a>
+                    <p class="post-excerpt">{{ .Summary }}</p>
                 </article>
+                {{ end }}
+
+                {{ range after 1 $paginator.Pages }}
                 <article class="post-card column is-half">
                     <div class="post-thumbnail">
-                        <img src="/images/thumbnail.png" alt="thumbnail">
+                        <img src="{{ .Params.thumbnail }}" alt="thumbnail">
                     </div>
-                    <h3 class="post-title">Auctor sed fermentum eleifend nam elementum vel</h3>
-                    <p class="post-excerpt">Nullam faucibus etiam a enim scelerisque mattis consequat, ullamcorper. Id ut blandit semper ac. Ultrices vulputate sed pellentesque </p>
+                    <a class="post-title" href="{{ .RelPermalink }}">{{ .Title }}</a>
+                    <p class="post-excerpt">{{ .Summary }}</p>
                 </article>
-                <article class="post-card column is-half">
-                    <div class="post-thumbnail">
-                        <img src="/images/thumbnail.png" alt="thumbnail">
-                    </div>
-                    <h3 class="post-title">Auctor sed fermentum eleifend nam elementum vel in libero nec</h3>
-                    <p class="post-excerpt">Nullam faucibus etiam a enim scelerisque mattis consequat, ullamcorper. Id ut blandit semper ac. Ultrices vulputate sed pellentesque </p>
-                </article>
-                <article class="post-card column is-half">
-                    <div class="post-thumbnail">
-                        <img src="/images/thumbnail.png" alt="thumbnail">
-                    </div>
-                    <h3 class="post-title">Auctor sed fermentum eleifend nam elementum vel</h3>
-                    <p class="post-excerpt">Nullam faucibus etiam a enim scelerisque mattis consequat, ullamcorper. Id ut blandit semper ac. Ultrices vulputate sed pellentesque </p>
-                </article>
-                <article class="post-card column is-half">
-                    <div class="post-thumbnail">
-                        <img src="/images/thumbnail.png" alt="thumbnail">
-                    </div>
-                    <h3 class="post-title">Auctor sed fermentum eleifend nam elementum vel in libero nec</h3>
-                    <p class="post-excerpt">Nullam faucibus etiam a enim scelerisque mattis consequat, ullamcorper. Id ut blandit semper ac. Ultrices vulputate sed pellentesque </p>
-                </article>
+                {{ end }}
             </div>
+
+            {{ template "_internal/pagination.html" . }}
         </div>
     </section>
 </div>

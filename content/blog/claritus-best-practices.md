@@ -1,9 +1,11 @@
 ---
 title: "Claritus – Best Practices"
 date: 2020-10-11T10:30:01+03:00
+publishDate: 2020-10-11T10:30:01+03:00
 type: blog
 content_class: blog-post
 header_class: white-header
+thumbnail: /images/thumbnail.png
 ---
 
 Whether you’re new to Claritus and want to play around and orient yourself, or like to follow step-by-step instructions and take your time before committing to a service, Claritus gives you the option to enter your information manually, at your own pace.

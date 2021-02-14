@@ -1,4 +1,6 @@
 .blog {
+  margin-bottom: 10rem;
+  
   &.content {
     padding-bottom: 0;
   }
@@ -33,10 +35,17 @@
 
   .post-card {
     box-sizing: border-box;
-    padding-top: 5.3rem;
-    padding-bottom: 5.3rem;
-    padding-left: 3.7rem;
-    padding-right: 3.7rem;
+    padding: 5.3rem 3.7rem;
+
+    &.is-full {
+      .post-thumbnail {
+        text-align: center;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
 
     &.is-half {
       .post-thumbnail {
@@ -74,16 +83,175 @@
     font-size: 1.571rem;
     line-height: 182%;
   }
+
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    li::marker {
+      display: none;
+    }
+
+    a {
+      color:$primary;
+      font-size: 1.57rem;
+    }
+
+    .page-item:first-of-type, .page-item:last-of-type {
+      display: none;
+    }
+
+    //.page-item:nth-child(2), .page-item:nth-last-child(2) {
+    //  width: 3.57rem;
+    //  height: 3.57rem;
+    //}
+
+    .page-link[aria-label="Previous"], .page-link[aria-label="Next"] {
+      display: inline-block;
+      width: 3.57rem;
+      height: 3.57rem;
+      background: white url("/images/icon-back.svg") no-repeat 50% 50%;
+
+      span {
+        opacity: 0;
+      }
+    }
+
+    .page-link[aria-label="Previous"] {
+      background-image: url("/images/icon-back.svg");
+      margin-right: 5.7rem;
+    }
+
+    .page-link[aria-label="Next"] {
+      background-image: url("/images/icon-next.svg");
+      margin-left: 5.7rem;
+    }
+  }
 }
 
-@media screen and (max-width: $fullhd) {
-  
+//@media screen and (max-width: $fullhd) {
+//
+//}
+//
+//@media screen and (max-width: $widescreen) {
+//
+//}
+
+@media screen and (max-width: 1280px) {
+  .blog {
+
+    .heading h1.page-title {
+      font-size: 4rem;
+    }
+    
+    .container {
+      max-width: 66.25rem;
+    }
+
+    .post-card {
+      padding: 3.5rem 2.42rem;
+    }
+
+    .post-title {
+      font-size: 2rem;
+    }
+
+    .post-excerpt {
+      font-size: 1.285rem;
+    }
+
+    .pagination a {
+      font-size: 1.285rem;
+    }
+  }
 }
 
-@media screen and (max-width: $widescreen) {
-  
+@include tablet-only {
+  .blog {
+    .heading {
+      padding: 5.7rem 0;
+
+      h1.page-title {
+        font-size: 2.85rem;
+      }
+    }
+
+    .container {
+      width: 43.57rem;
+    }
+
+    .post-card {
+      padding: 2.85rem 1.07rem;
+    }
+
+    .post-title {
+      font-size: 1.71rem;
+    }
+
+    .post-excerpt {
+      font-size: 1.14rem;
+    }
+
+    .pagination {
+      a {
+        font-size: 1.14rem;
+      }
+
+      .page-link[aria-label="Previous"] {
+        margin-right: 4rem;
+      }
+
+      .page-link[aria-label="Next"] {
+        margin-left: 4rem;
+      }
+    }
+  }
 }
+
 
 @include mobile {
-  
+  .blog{
+    .heading {
+      padding: 2.85rem 0 0;
+
+      h1.page-title {
+        font-size: 2.57rem;
+      }
+    }
+
+    .container {
+      max-width: calc(100vw - (1.71rem * 2));
+    }
+
+    .columns {
+      margin: 0;
+    }
+
+    .post-card {
+      padding: 2.67rem 0;
+    }
+
+    .post-title {
+      font-size: 1.57rem;
+    }
+
+    .post-excerpt {
+      font-size: 1rem;
+    }
+
+    .pagination {
+      a {
+        font-size: 1rem;
+      }
+
+      .page-link[aria-label="Previous"] {
+        margin-right: 2rem;
+      }
+
+      .page-link[aria-label="Next"] {
+        margin-left: 2rem;
+      }
+    }
+  }
 }
