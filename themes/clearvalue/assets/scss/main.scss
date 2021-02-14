@@ -1072,6 +1072,26 @@ input {
               }
             }
           }
+
+          .dot{
+            width: .875rem;
+            height: .875rem;
+            background: url("/images/slider-bullet.jpg")no-repeat;
+            background-size: .875rem;
+            border: none;
+            border-radius: 0;
+            margin: 0 1rem;
+            cursor: pointer;
+            pointer-events: auto;
+
+            &--active {
+              background-image: url("/images/slider-bullet-active.jpg");
+            }
+
+            &.dot--active:before{
+              display: none;
+            }
+          }
         }
       }
 
