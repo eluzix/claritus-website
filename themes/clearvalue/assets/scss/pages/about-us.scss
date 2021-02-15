@@ -110,7 +110,7 @@
       border-radius: 50%;
       margin: 0 auto 2.15rem;
       overflow: hidden;
-      border: 1px solid #21ce99;
+      border: 1px solid $green;
 
       &.pic-gabriel {
         background: #FFFFFF url('/images/gabriel.jpg') no-repeat center bottom;
@@ -507,7 +507,7 @@
       .hero-left {
         padding: 0;
         text-align: center;
-        
+
         > div {
           margin: 0 auto;
         }
