@@ -1073,7 +1073,7 @@ input {
             }
           }
 
-          .dot{
+          .dot {
             width: .9rem;
             height: .9rem;
             background: url("/images/slider-bullet.svg")no-repeat;
@@ -1413,11 +1413,15 @@ input {
             position: relative;
             justify-content: center;
 
+            .arrow {
+              background-color: transparent;
+            }
+
             .dots {
               margin: 1.5rem 2rem 0;
             }
 
-            .dot{
+            .dot {
               width: .9rem;
               height: .9rem;
               background: url("/images/slider-bullet.svg")no-repeat;
