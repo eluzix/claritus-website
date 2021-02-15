@@ -570,6 +570,11 @@ input {
           }
         }
       }
+
+      .testimonials-slider {
+        position: absolute;
+        visibility: hidden;
+      }
     }
 
     &.section-privacy {
@@ -1048,7 +1053,12 @@ input {
 
       &.section-testimonials {
         padding: 8.571rem 0 14.643rem;
+
         .testimonials-slider {
+          display: block;
+          position: relative;
+          visibility: visible;
+
           .slider {
             display: flex;
             flex-direction: row;
