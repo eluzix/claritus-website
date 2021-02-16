@@ -25,13 +25,19 @@
     <meta property="twitter:image" content="{{.Site.BaseURL}}images/claritus_preview.jpg">
     <link rel="canonical" href="{{ .Permalink }}">
 
+    <link rel="preconnect" href="https://app.claritus.io">
+    <link rel="prefetch" href="https://app.claritus.io/on-boarding" />
+    <link rel="dns-prefetch" href="https://app.claritus.io">
     <link rel="preconnect" href="https://www.googletagmanager.com">
     <link rel="dns-prefetch" href="https://www.googletagmanager.com">
     <link rel="preconnect" href="https://cdn.jsdelivr.net">
     <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
     <link rel="preconnect" href="https://consent.cookiefirst.com">
     <link rel="dns-prefetch" href="https://consent.cookiefirst.com">
+    {{if .IsHome}}
     <link rel="preload" as="image" href="/images/section-hero.png">
+    <link rel="preload" as="image" href="/images/nurture-grow.gif">
+    {{ end }}
 
     {{ $sass := resources.Get "scss/main.scss" }}
     {{ $style := $sass | resources.ToCSS | resources.Minify  | fingerprint }}
@@ -53,9 +59,9 @@
     <link href="{{ .RelPermalink }}" rel="feed" type="application/rss+xml" />
     {{ end }}
 
-    {{if .IsHome}}
-    <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
-    {{ end }}
+<!--    {{if .IsHome}}-->
+<!--    <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>-->
+<!--    {{ end }}-->
 
     {{ $mainJs := resources.Get "js/main.js" }}
     {{ $js := $mainJs | resources.Minify | fingerprint }}

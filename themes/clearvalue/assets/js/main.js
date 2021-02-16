@@ -2,42 +2,42 @@ const sliderIntervalTime = 6000 * 1000
 
 const app = {
 
-    setupSnapScrolling() {
-        try {
-            const observer = new IntersectionObserver((entries) => {
-                const navbar = document.querySelector('header nav.nav')
-
-                entries.forEach((entry) => {
-                    if (entry.intersectionRatio >= 0.05) {
-                        entry.target.classList.add('is-visible')
-                        entry.target.classList.forEach((cls) => {
-                            if (cls.startsWith('section-')) {
-                                navbar.classList.add('on-' + cls)
-                            }
-                        })
-
-                    } else {
-                        entry.target.classList.remove('is-visible')
-                        entry.target.classList.forEach((cls) => {
-                            if (cls.startsWith('section-')) {
-                                navbar.classList.remove('on-' + cls)
-                            }
-                        })
-                    }
-                })
-            }, {
-                                                          rootMargin: '0px',
-                                                          threshold: [0.05]
-                                                      })
-
-            const sections = [...document.querySelectorAll('.home section')]
-            sections.forEach((section, index) => {
-                observer.observe(section)
-            })
-        } catch (e) {
-            console.log('[IntersectionObserver] error:', e)
-        }
-    },
+    // setupSnapScrolling() {
+    //     try {
+    //         const observer = new IntersectionObserver((entries) => {
+    //             const navbar = document.querySelector('header nav.nav')
+    //
+    //             entries.forEach((entry) => {
+    //                 if (entry.intersectionRatio >= 0.05) {
+    //                     entry.target.classList.add('is-visible')
+    //                     entry.target.classList.forEach((cls) => {
+    //                         if (cls.startsWith('section-')) {
+    //                             navbar.classList.add('on-' + cls)
+    //                         }
+    //                     })
+    //
+    //                 } else {
+    //                     entry.target.classList.remove('is-visible')
+    //                     entry.target.classList.forEach((cls) => {
+    //                         if (cls.startsWith('section-')) {
+    //                             navbar.classList.remove('on-' + cls)
+    //                         }
+    //                     })
+    //                 }
+    //             })
+    //         }, {
+    //                                                       rootMargin: '0px',
+    //                                                       threshold: [0.05]
+    //                                                   })
+    //
+    //         const sections = [...document.querySelectorAll('.home section')]
+    //         sections.forEach((section, index) => {
+    //             observer.observe(section)
+    //         })
+    //     } catch (e) {
+    //         console.log('[IntersectionObserver] error:', e)
+    //     }
+    // },
 
     initMenuOpening() {
         const control = document.getElementById('menu-burger')
@@ -456,7 +456,7 @@ function checkHeaderVisibility() {
 document.addEventListener('DOMContentLoaded', function () {
     window.addEventListener("scroll", checkHeaderVisibility, false);
 
-    app.setupSnapScrolling();
+    // app.setupSnapScrolling();
     app.initMenuOpening();
     app.homeScrollToPricing();
     app.setupSliderTestimonials();
