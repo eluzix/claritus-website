@@ -2,28 +2,6 @@
   background: $dark-blue;
   width: 100vw;
 
-  .button {
-    height: 3.714rem;
-    font-size: 1.286rem;
-    font-weight: 400;
-    padding: 0 2.7rem;
-  }
-
-  .join-button {
-    width: 100%;
-    max-width: 19.214rem;
-  }
-
-  .try-button {
-    .icon-logo {
-      height: 100%;
-      max-height: 2.4rem;
-      margin: 8px 6px 0;
-      padding: 0;
-      min-width: auto;
-    }
-  }
-
   .section {
     width: 100vw;
     height: auto;
@@ -31,6 +9,28 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+
+    .button {
+      height: 3.714rem;
+      font-size: 1.286rem;
+      font-weight: 400;
+      padding: 0 2.7rem;
+    }
+
+    .join-button {
+      width: 100%;
+      max-width: 19.214rem;
+    }
+
+    .try-button {
+      .icon-logo {
+        height: 100%;
+        max-height: 2.4rem;
+        margin: 8px 6px 0;
+        padding: 0;
+        min-width: auto;
+      }
+    }
 
     .centered {
       display: flex;
@@ -61,7 +61,7 @@
     }
 
     &.hero {
-      padding-top: 2rem;
+      padding-top: 6.9rem;
       margin-bottom: 21.45rem;
 
       .hero-title {
@@ -441,11 +441,11 @@
 
 @media screen and (max-width: $fullhd) {
   .landing-page {
-    .join-button {
-      max-width: 17.85rem;
-    }
-
     .section {
+      .join-button {
+        max-width: 17.85rem;
+      }
+
       .centered {
         max-width: 77.8rem;
 
@@ -455,7 +455,7 @@
       }
 
       &.hero {
-        padding-top: 2.5rem;
+        padding-top: 2.9rem;
         margin-bottom: 14.25rem;
 
         .centered > img {
@@ -731,7 +731,7 @@
       }
 
       &.hero {
-        padding-top: 6.143rem;
+        padding-top: 6.743rem;
 
         .hero-title {
           max-width: 32rem;
@@ -1080,8 +1080,8 @@
         height: 3.4rem;
 
         .icon-logo {
-          max-height: 2.3rem;
-          margin: 8px 10px 0;
+          max-height: 2.15rem;
+          margin: 8px 12px 0;
         }
       }
 

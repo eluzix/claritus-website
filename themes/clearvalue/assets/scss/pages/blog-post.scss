@@ -48,7 +48,7 @@
   }
 
   .post-content {
-    margin-top: $header-height;
+    margin-top: $header-height-desktop;
     padding: 2.2rem 0 10.55rem;
 
     h1 {
@@ -267,7 +267,7 @@
     }
 
     .post-content {
-      margin-top: 6.143rem;
+      margin-top: $header-height-mobile;
       padding: 1rem 0 7.1rem;
 
       h1 {
@@ -355,7 +355,6 @@
     }
 
     .post-content {
-      margin-top: 5.45rem;
       padding: .45rem 0 4rem;
 
       h1 {

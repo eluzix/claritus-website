@@ -39,11 +39,12 @@ $input-shadow: none;
 //$dark-shadow: rgba(0, 0, 0, 0.08);
 //$dark-box-shadow: rgba(0, 0, 0, 0.01);
 
-
 $light-green-gradient: linear-gradient(to top, #40ebb7, #25cf9b);
 $white-grey-gradient: linear-gradient(135deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 20%, white 70%);
 
-$header-height: 8.143rem;
+$header-height-desktop: 6.143rem;
+$header-height-mobile: 4.143rem;
+
 $desktop-padding: 5rem;
 $desktop-padding-lp: 5.75rem;
 $ipad-padding: 3.175rem;
