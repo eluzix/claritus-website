@@ -32,20 +32,22 @@
     [
         {
             "@context":"http://schema.org/",
-            "@type":"QAPage",
+            "@type":"FAQPage",
             "name": "{{ .Title }}",
             "description": "Claritus FAQ Page"
         },
-        {{ range $index, $elem := .Params.faq_list }}
-        {{ $c := add $index 1 }}
+        "mainEntity": [
+        {{ range .Params.faq_list }}
         {
-            "@context":"http://schema.org/",
-            "@id": "Question{{ $c }}",
             "@type":"Question",
-            "name":"{{ $elem.title }}",
-            "text": "{{ $elem.body | safeHTML}}"
+            "name":"{{ .title }}",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "{{ .body | safeHTML}}"
+            }
         },
         {{ end }}
+        ]
     ]
 </script>
 {{ end }}
