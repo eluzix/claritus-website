@@ -1,5 +1,5 @@
 ---
-title: "We value our Beta Customers!"
+title: "We Value our Beta Customers!"
 date: 2021-02-14T10:31:01+03:00
 publishDate: 2021-02-14T10:31:01+03:00
 type: blog
@@ -8,18 +8,15 @@ header_class: white-header
 thumbnail: /images/thumbnail3.jpg
 ---
 
-If you read this post then you are probably one of our Beta customers.
+If you’re reading this post then you’re probably one of Claritus’ first users, what we call a beta user - or at least thinking of becoming one.
 
-First, let us thank you for your interest in Claritus.
+Firstly, we want to thank you for your interest in Claritus. Claritus was born out of a real, authentic and personal need and our overall mission is to bring financial peace of mind to many more people with our platform.
 
-Claritus was born out of an authentic need and with the aspiration to bring peace of mind to our customers.
+Claritus is currently in its beta phase, which means the service is almost ready, but not quite. We’re still changing and improving some things and adding new features, to make sure you have the best experience possible. We’re going to be launching our full and complete service in a few months and It will be available on a subscription basis.
 
-The Claritus service will be in a few months from now with a subscription, affordable plan.
+However, as a thank you for being one of our first users, and baring with us through this period as well as providing us with feedback, and for sharing your needs and pains - we want to give you an annual subscription to Claritus - for free.
 
-As we are in our Beta phase, we would like to thank you all and demonstrate our appreciation and gratitude by providing you with a 1-year free subscription.
+Best Regards, {{< rawhtml >}}<br/>{{< /rawhtml >}}
+The Claritus Team
 
-We are constantly improving our service for your satisfaction and hope you will continue to enjoy Claritus.
 
-Sincerely,
-
-The Claritus founders on behalf of the entire Claritus team
