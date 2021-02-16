@@ -1,17 +1,17 @@
 {{ define "content" }}
-<div class="content {{ .Params.content_class }} has-navbar-fixed-top">
+<div class="content {{ .Params.content_class }} black-heading">
 
     {{ partial "nav" . }}
     {{ partial "menu.html" }}
 
-    <section class="heading">
-        <h1 class="page-title" title="{{ .Title }}">{{ .Title }}</h1>
-    </section>
+<!--    <section class="heading">-->
+<!--    </section>-->
 
     <section class="hero">
         <div class="hero-left">
-            <div>
-                <h2><span class="is-green">Claritus</span> is a <br> simple-to-use <br> personal wealth <br> management service.</h2>
+            <div class="">
+                <h1 class="page-title" title="{{ .Title }}">{{ .Title }}</h1>
+                <h2><span class="is-green">Claritus</span> is a simple-to-use <br> personal wealth management service.</h2>
                 <p>{{ .Params.hero_text }}</p>
             </div>
         </div>

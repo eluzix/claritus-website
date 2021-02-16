@@ -410,6 +410,11 @@ input {
   }
 }
 
+.transparent-header .header:not(.white-header,.menu-open) {
+  background-color: rgba(53, 61, 79, 0.5);
+  position: relative;
+}
+
 .header-hidden-height {
   min-height: 7.125rem;
   width: 0;

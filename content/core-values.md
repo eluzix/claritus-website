@@ -4,7 +4,7 @@ date: 2020-04-27T09:30:01+03:00
 url: /core-values
 type: core-values
 content_class: core-values
-header_class: white-header
+header_class: 
 hero_text: "Claritus was founded by 3 partners who are passionate about our work and remind ourselves daily to stay grounded and remain humble."
 values_list:
     - title: Loyalty

@@ -1,18 +1,20 @@
 {{ define "content" }}
-<div class="content {{ .Params.content_class }} has-navbar-fixed-top">
+<div class="content {{ .Params.content_class }} transparent-header">
 
     {{ partial "nav" . }}
     {{ partial "menu.html" }}
-    <section class="heading">
-        <h1 class="page-title" title="{{ .Title }}">{{ .Title }}</h1>
-    </section>
+<!--    <section class="heading">-->
+<!--        <h1 class="page-title" title="{{ .Title }}">{{ .Title }}</h1>-->
+<!--    </section>-->
 
-    <section class="hero">
+    <section class="hero stretched-image">
         <div class="hero-left">
             <div>
-                <p>{{ .Params.hero_text }}</p>
+                <h1 class="page-title" title="{{ .Title }}">{{ .Title }}</h1>
+                <h2>{{ .Params.hero_text }}</h2>
             </div>
         </div>
+        <div class="hero-right"></div>
     </section>
 
     <section class="story-text">

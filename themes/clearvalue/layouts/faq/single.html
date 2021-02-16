@@ -1,12 +1,12 @@
 {{ define "content" }}
-<div class="content {{ .Params.content_class }} has-navbar-fixed-top">
+<div class="content {{ .Params.content_class }}">
 
     {{ partial "nav" . }}
     {{ partial "menu.html" }}
 
-    <section class="heading">
+    <section class="hero hero-center">
         <h1 class="page-title" title="{{ .Title }}">{{ .Title }}</h1>
-        <p class="page-description">{{ .Content }}</p>
+        <h2>{{ .Content }}</h2>
     </section>
 
     <section class="questions">

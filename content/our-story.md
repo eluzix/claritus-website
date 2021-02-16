@@ -4,7 +4,7 @@ date: 2020-07-01T09:30:01+03:00
 url: /our-story
 type: our-story
 content_class: our-story
-header_class: white-header
+header_class: 
 hero_text: "A few years ago, I was fortunate enough to achieve financial freedom through hard work, determination and persistence."
 ---
 I suddenly found myself looking ahead at an open horizon that allowed me to pick and choose how I would like to continue my life’s journey. I knew that my top priorities were spending more time with my loved ones and managing our finances and investments in an intelligent and responsible manner.

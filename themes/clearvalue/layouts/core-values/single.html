@@ -1,20 +1,17 @@
 {{ define "content" }}
-<div class="content {{ .Params.content_class }} has-navbar-fixed-top">
+<div class="content {{ .Params.content_class }} transparent-header">
 
     {{ partial "nav" . }}
     {{ partial "menu.html" }}
 
-    <section class="heading">
-        <h1 class="page-title" title="{{ .Title }}">{{ .Title }}</h1>
-    </section>
-
-    <section class="hero">
+    <section class="hero stretched-image">
         <div class="hero-left">
             <div>
+                <h1 class="page-title" title="{{ .Title }}">{{ .Title }}</h1>
                 <h2><span class="is-green">Our values</span> play <br/> a huge role in who <br/> we are, both as people <br/> and as a company.</h2>
-                <p>{{ .Params.hero_text }}</p>
             </div>
         </div>
+        <div class="hero-right"></div>
     </section>
 
     <section class="values">
