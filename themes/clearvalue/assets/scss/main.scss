@@ -612,12 +612,11 @@ input {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-      margin: 0 0 2.8rem;
+      margin: 0 0 1.8rem;
 
       .link {
         font-size: 1.143rem;
         letter-spacing: 0.01rem;
-        margin-bottom: 0;
 
         &:not(:last-child) {
           margin-right: 1rem;
