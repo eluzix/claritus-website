@@ -21,32 +21,6 @@
     }
   }
 
-  //.hero {
-  //  display: flex;
-  //  align-items: center;
-  //  min-height: 50rem;
-  //  background: url("/images/our-story.png") no-repeat center;
-  //  background-size: cover;
-  //
-  //  .hero-left {
-  //    width: 50%;
-  //
-  //    > div {
-  //      width: fit-content;
-  //      margin-left: auto;
-  //    }
-  //
-  //    p {
-  //      max-width: 40.5rem;
-  //      color: $dark;
-  //      font-weight: 500;
-  //      font-size: 2.429rem;
-  //      line-height: 150%;
-  //      transform: translateX(-15px);
-  //    }
-  //  }
-  //}
-
   .hero.stretched-image {
     min-height: calc(57.14rem + 6.143rem);
     height: calc(57.14rem + 6.143rem);
@@ -129,7 +103,7 @@
   }
 }
 
-@media screen and (max-width: $widescreen) {
+@media screen and (max-width: 1280px) {
   .our-story {
     .container {
       max-width: 34.75rem;
@@ -144,28 +118,10 @@
       }
     }
 
-    //.hero {
-    //  min-height: 43.5rem;
-    //  align-items: flex-start;
-    //  padding-top: 11.5rem;
-    //  background-image: url("/images/our-story-tablet.png");
-    //
-    //  .hero-left {
-    //    width: 56.7%;
-    //
-    //    p {
-    //      max-width: 25.857rem;
-    //      font-size: 1.714rem;
-    //      line-height: 151%;
-    //      transform: translateX(0);
-    //    }
-    //  }
-    //}
-
     .hero.stretched-image {
       min-height: auto;
-      height: calc(50rem + 6.143rem);
-      max-height: calc(100vh);
+      height: calc(100vh + 6.143rem);
+      max-height: 100vh;
     }
 
     .story-text {
@@ -196,35 +152,6 @@
 
 @include mobile {
   .our-story {
-    .heading {
-      padding: 4.4rem 0 3.2rem;
-
-      .page-title {
-        font-size: 2rem;
-        line-height: 120%;
-      }
-    }
-
-    //.hero {
-    //  min-height: 42.857rem;
-    //  padding-top: 4.15rem;
-    //  background-image: url("/images/our-story-mobile.png");
-    //
-    //  .hero-left {
-    //    width: 100%;
-    //
-    //    > div {
-    //      margin: 0 auto;
-    //    }
-    //
-    //    p {
-    //      max-width: 23.429rem;
-    //      font-size: 1.571rem;
-    //      line-height: 141%;
-    //    }
-    //  }
-    //}
-
     .story-text {
       padding: 3.5rem 0 4.8rem;
 
