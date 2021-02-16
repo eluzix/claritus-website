@@ -11,7 +11,7 @@ sections:
   match: "*"
 - type: directory
   path: content/lp
-  label: Lp
+  label: Landing Pages
   create: all
   match: "**/*"
 - type: directory
