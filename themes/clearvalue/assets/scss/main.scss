@@ -390,7 +390,7 @@ input {
 
   .links-block {
     display: flex;
-    margin-bottom: 3.5rem;
+    margin-bottom: 2.9rem;
   }
 
   .copyright {
@@ -405,6 +405,8 @@ input {
     margin-right: 2rem;
 
     .link {
+      display: inline-block;
+      margin-bottom: 1rem;
       font-size: 1.286rem;
       line-height: 140%;
       color: $white;
@@ -483,9 +485,6 @@ input {
 
     .links {
       .link {
-        display: inline-block;
-        margin-bottom: 1rem;
-
         &:not(:last-child) {
           margin-right: 3.35rem;
         }
