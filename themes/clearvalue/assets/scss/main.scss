@@ -166,6 +166,12 @@ p {
       opacity: 0.8;
     }
   }
+
+  &.is-contact-us {
+    padding: 0.75rem 5.5rem;
+    height: 3.375rem;
+    font-weight: 500;
+  }
 }
 
 input {
@@ -217,6 +223,19 @@ input {
   }
 }
 
+.error-message {
+  color: #EB5757;
+  font-weight: normal;
+  font-size: 0.875rem;
+  line-height: 150%;
+  display: none;
+
+  &.is-active {
+    display: block;
+    margin-bottom: 1rem;
+  }
+}
+
 .is-centered {
   text-align: center;
 }
@@ -243,6 +262,10 @@ input {
 
 .has-bottom-margin-60 {
   margin-bottom: 4.286rem;
+}
+
+.has-top-margin-30 {
+  margin-top: 1.875rem;
 }
 
 .is-invisible-tablet, .is-invisible-fullhd, .is-visible-touch, .is-visible-tablet, .is-visible-mobile {
@@ -273,6 +296,27 @@ input {
       background-image: url("/images/icon-email.svg");
     }
   }
+}
+
+.icon-profile {
+  display: block;
+  background-image: url(/images/icon-profile.svg);
+  width: 24px;
+  height: 24px;
+}
+
+.icon-email {
+  display: block;
+  background-image: url(/images/icon-email.svg);
+  width: 24px;
+  height: 24px;
+}
+
+.icon-close-modal {
+  display: block;
+  background-image: url(/images/icon-close-modal.svg);
+  width: 28px;
+  height: 28px;
 }
 
 .header {
@@ -725,5 +769,6 @@ input {
 
 @import "menu-lp";
 @import "slider";
+@import "modal";
 @import "content";
 @import "pages";

@@ -1,0 +1,305 @@
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+
+  &.is-active {
+    display: block;
+    -webkit-animation: fadeInFromNone 0.5s ease-out;
+    -moz-animation: fadeInFromNone 0.5s ease-out;
+    -o-animation: fadeInFromNone 0.5s ease-out;
+    animation: fadeInFromNone 0.5s ease-out;
+  }
+}
+
+.contact-us {
+  color: $primary;
+  z-index: 1000;
+
+  .modal-content {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    position: relative;
+  }
+
+  .mailbox-block {
+    background: url("/images/icon-mailbox.svg") no-repeat center;
+    width: 50%;
+    background-size: 45rem;
+  }
+
+  .form-block {
+    width: 40%;
+    margin-left: 5%;
+    margin: 10rem 2rem;
+    text-align: center;
+    text-align: -webkit-center;
+    align-self: center;
+
+    .form-submit {
+      min-height: 27.5rem;
+    }
+
+    h2 {
+      font-weight: 500;
+      font-size: 4rem;
+      line-height: 130%;
+    }
+
+    h3 {
+      font-size: 2.125rem;
+      font-weight: 500;
+    }
+
+    p {
+      font-size: 1.375rem;
+      line-height: 180%;
+
+      margin-bottom: 3.125rem;
+    }
+
+    input {
+      width: 100%;
+      height: 3.375rem;
+      border: 1px solid #D3D3D3;
+      box-sizing: border-box;
+      border-radius: 47px;
+      color: #676E80;
+      padding: 0 2.188rem;
+      margin-bottom: 2.188rem;
+    }
+
+    textarea {
+      width: 100%;
+      height: 11.25rem;
+      border: 1px solid #D3D3D3;
+      box-sizing: border-box;
+      border-radius: 30px;
+      resize: none;
+      padding: 2.125rem;
+      color: #676E80;
+    }
+
+    input, textarea {
+      &::placeholder {
+        color: #d0d0d0;
+        line-height: 150%;
+      }
+
+      &:focus {
+        outline: none!important;
+        box-shadow: 0 0 8px #d3d3d3;
+      }
+
+      &:active {
+        border: 1px solid $dark;
+        box-sizing: border-box;
+        border-radius: 30px;
+      }
+
+      &:hover {
+        border: 1px solid $green;
+        box-sizing: border-box;
+        border-radius: 30px;
+      }
+
+      &.is-invalid {
+        border: 1px solid #EB5757;
+        box-sizing: border-box;
+        border-radius: 30px;
+        margin-bottom: 0.5rem;
+      }
+
+      &:disabled {
+        border: 1px solid #F8F9FB;
+        box-sizing: border-box;
+        border-radius: 30px;
+        background-color: $white;
+      }
+    }
+
+    .button {
+      height: 3.375rem;
+      font-weight: 500;
+    }
+
+    .control {
+      position: relative;
+      max-width: 26.125rem;
+      text-align: center;
+      box-sizing: border-box;
+      clear: both;
+      font-size: 1rem;
+
+      .icon.is-right {
+        margin: 0;
+      }
+    }
+
+    .has-icons-right .icon {
+      padding: 0.75rem;
+      height: 3.5em;
+      width: 3.5em;
+    }
+  }
+
+  .recaptcha {
+    font-size: 0.75rem;
+    margin-top: 0.5rem;
+    line-height: 1rem;
+  }
+}
+
+.close {
+  color: #676E80;
+  float: right;
+  font-size: 28px;
+
+  position: absolute;
+  right: 2.5rem;
+  top: 2.5rem;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1281px) {
+  .contact-us {
+
+    .mailbox-block {
+      background-size: 35rem;
+    }
+
+    .form-block {
+      margin: 0;
+      margin-left: 5%;
+
+      h2 {
+        font-size: 3.125rem;
+        line-height: 120%;
+
+        margin-bottom: 1.875rem;
+      }
+
+      p {
+        font-size: 1.125rem;
+        line-height: 180%;
+
+        margin-bottom: 1.875rem;
+      }
+
+      input {
+        margin-bottom: 1.25rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 835px) {
+  .contact-us {
+    .mailbox-block {
+      display: none;
+    }
+
+    .form-block {
+      max-width: 23.5rem;
+      width: 100%;
+      margin: 0 auto;
+      margin-top: 6rem;
+      align-self: auto;
+      overflow-y: scroll;
+
+      textarea {
+        padding: 1.75rem 2.188rem;
+      }
+    }
+
+    .modal-content {
+      background-color: $white;
+    }
+  }
+}
+
+@-webkit-keyframes fadeInFromNone {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+
+  1% {
+    display: block;
+    opacity: 0;
+  }
+
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeInFromNone {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+
+  1% {
+    display: block;
+    opacity: 0;
+  }
+
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeInFromNone {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+
+  1% {
+    display: block;
+    opacity: 0;
+  }
+
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInFromNone {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+
+  1% {
+    display: block;
+    opacity: 0;
+  }
+
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
