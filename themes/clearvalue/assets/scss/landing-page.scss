@@ -776,7 +776,7 @@ input {
   }
 }
 
-@media screen and (max-width: $widescreen) {
+@include touch {
   .header {
     height: $header-height-mobile;
   }
