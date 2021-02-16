@@ -65,9 +65,17 @@ h4 {
   margin-bottom: 1.429rem;
 }
 
-p {
+p, .learn-more {
   font-size: 1.571rem;
   line-height: 180%;
+}
+
+.learn-more {
+  color: $primary;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .copyright {
@@ -496,7 +504,7 @@ input {
     font-size: 1.571rem;
   }
 
-  p {
+  p, .learn-more {
     font-size: 1.286rem;
   }
 }
@@ -567,7 +575,7 @@ input {
     font-size: 1.286rem;
   }
 
-  p, .copyright {
+  p, .copyright, .learn-more {
     font-size: 1.143rem;
   }
 
@@ -708,7 +716,7 @@ input {
     font-size: 2rem;
   }
 
-  p, .copyright {
+  p, .copyright, .learn-more {
     font-size: 1rem;
   }
 
