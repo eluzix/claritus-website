@@ -1,5 +1,6 @@
 ---
 title: "Claritus – Best Practices"
+descriptio: "Claritus gives you the option to enter your information manually, at your own pace"
 date: 2020-10-11T10:30:01+03:00
 publishDate: 2020-10-11T10:30:01+03:00
 type: blog

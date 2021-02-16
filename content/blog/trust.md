@@ -1,5 +1,6 @@
 ---
 title: "Trust"
+description: "Trust is something built with time, and it’s our obligation to gain yours and prove to you from the very beginning and all along the way that you can trust us."
 date: 2021-02-14T10:30:01+03:00
 publishDate: 2021-02-14T10:30:01+03:00
 type: blog

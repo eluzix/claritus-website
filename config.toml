@@ -7,6 +7,8 @@ assetDir = 'themes/clearvalue/assets'
 
 Paginate = 9
 
+disableKinds = ["taxonomy", "taxonomyTerm"]
+
 [params]
     description = "Finally, a 360° view of your assets that lets you track, understand, and be in complete control of your wealth - all in one place!"
     gtagConfig = 'UA-159218662-2'

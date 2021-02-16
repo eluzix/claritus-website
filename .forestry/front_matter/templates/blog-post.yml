@@ -5,6 +5,12 @@ fields:
 - type: text
   name: title
   label: title
+- type: text
+  name: description
+  label: description
+- type: text
+  name: metaTitle
+  label: meta_title
 - type: datetime
   name: date
   label: date

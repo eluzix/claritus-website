@@ -1,5 +1,6 @@
 ---
 title: "What is Claritus Minimal Securities Portfolio?"
+description: "We know you want to track and be updated, among other assets, also on a particular securities’ portfolio."
 date: 2021-02-14T10:31:01+03:00
 publishDate: 2021-02-14T10:31:01+03:00
 type: blog

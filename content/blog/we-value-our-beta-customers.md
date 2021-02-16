@@ -1,5 +1,6 @@
 ---
 title: "We Value our Beta Customers!"
+description: "Claritus was born out of a real, authentic and personal need and our overall mission is to bring financial peace of mind to many more people with our platform."
 date: 2021-02-14T10:31:01+03:00
 publishDate: 2021-02-14T10:31:01+03:00
 type: blog
