@@ -480,6 +480,30 @@ input {
 }
 
 @media screen and (max-width: $widescreen) {
+  h2 {
+    font-size: 2.571rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  h4 {
+    font-size: 1.286rem;
+  }
+
+  p, .copyright {
+    font-size: 1.143rem;
+  }
+
+  .is-visible-tablet {
+    display: block !important;
+  }
+
+  .is-hidden-tablet {
+    display: none !important;
+  }
+
   .header {
     height: 6.143rem;
     padding: 1.215rem 3.5rem;
@@ -556,32 +580,6 @@ input {
         }
       }
     }
-  }
-}
-
-@media screen and (max-width: 835px) { //tablet
-  h2 {
-    font-size: 2.571rem;
-  }
-
-  h3 {
-    font-size: 2rem;
-  }
-
-  h4 {
-    font-size: 1.286rem;
-  }
-
-  p, .copyright {
-    font-size: 1.143rem;
-  }
-
-  .is-visible-tablet {
-    display: block !important;
-  }
-
-  .is-hidden-tablet {
-    display: none !important;
   }
 }
 
