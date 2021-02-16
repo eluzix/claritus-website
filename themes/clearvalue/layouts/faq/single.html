@@ -27,4 +27,26 @@
 {{ end }}
 
 {{ define "title" }}{{ .Title }}{{ end }}
+{{ define "StructData" }}
+<script type="application/ld+json">
+    [
+        {
+            "@context":"http://schema.org/",
+            "@type":"QAPage",
+            "name": "{{ .Title }}",
+            "description": "Claritus FAQ Page"
+        },
+        {{ range $index, $elem := .Params.faq_list }}
+        {{ $c := add $index 1 }}
+        {
+            "@context":"http://schema.org/",
+            "@id": "Question{{ $c }}",
+            "@type":"Question",
+            "name":"{{ $elem.title }}",
+            "text": "{{ $elem.body | safeHTML}}"
+        },
+        {{ end }}
+    ]
+</script>
+{{ end }}
 

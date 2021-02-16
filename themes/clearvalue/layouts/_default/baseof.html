@@ -71,6 +71,8 @@
     <script src="{{ $js.Permalink }}"></script>
     <script src="https://cdn.jsdelivr.net/npm/keen-slider@5.0.2/keen-slider.min.js"></script>
 
+    {{ block "StructData" . }}{{ end }}
+
     {{ partial "tagmanager.html" . }}
     {{ hugo.Generator }}
 </head>
