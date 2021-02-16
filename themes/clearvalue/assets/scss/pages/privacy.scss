@@ -1,5 +1,6 @@
 .privacy {
   &.content {
+    margin-top: 7rem;
     padding-bottom: 0;
   }
 
@@ -10,6 +11,7 @@
       font-weight: 500;
       font-size: 4.571rem;
       line-height: 130%;
+      text-align: center;
     }
   }
 
@@ -358,6 +360,10 @@
   }
 
   .privacy {
+    &.content {
+      margin-top: 5rem;
+    }
+
     .heading {
       padding: 4.4rem 0 1.45rem;
 

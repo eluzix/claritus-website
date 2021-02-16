@@ -306,9 +306,10 @@ function checkHeaderVisibility() {
     const headerElement = document.querySelector('header');
     // const landingPageElement = document.querySelector('.landing-page');
     const landingPageElement = document.querySelector('.root');
+    const noScroll = document.querySelector('.no-header-scroll');
 
     // if (!headerElement || !landingPageElement) {
-    if (!headerElement) {
+    if (!headerElement || noScroll) {
         return false;
     }
 
