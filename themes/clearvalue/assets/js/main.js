@@ -240,6 +240,36 @@ const app = {
             })
         })
     },
+
+    initLazyLoad() {
+        const options = {
+            root: null,
+            rootMargin: "75px 0px",
+            threshold: 0.01,
+        };
+        const imagesCallback = function(entries, observer) {
+            for (let i = 0; i < entries.length; i++) {
+                if (entries[i].intersectionRatio > 0) {
+                    // Stop watching and load the image
+                    observer.unobserve(entries[i].target);
+                    let dataSrc = entries[i].target.dataset.src;
+
+                    if (dataSrc) {
+                        entries[i].target.src = dataSrc; //preload image
+                        delete entries[i].target.dataset.src;
+                    }
+
+                    entries[i].target.classList.remove("lazy-image");
+                }
+            }
+        };
+
+        const images = document.querySelectorAll(".lazy-image[data-src]");
+        const imagesObserver = new IntersectionObserver(imagesCallback, options);
+        for (let i = 0; i < images.length; i++) {
+            imagesObserver.observe(images[i]);
+        }
+    },
 };
 
 function updateClasses(instance) {
@@ -298,6 +328,7 @@ document.addEventListener('DOMContentLoaded', function () {
     app.homeScrollToPricing();
     app.setupSliderTestimonials();
     app.initScrollTop();
+    app.initLazyLoad();
 
     try {
         app.utmCookie()

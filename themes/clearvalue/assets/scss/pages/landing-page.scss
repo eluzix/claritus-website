@@ -138,9 +138,23 @@
         }
 
         .block-image {
+          position: relative;
           flex: 66.5%;
           height: 100%;
           max-height: 35.714rem;
+
+          &:before {
+            display: block;
+            position: absolute;
+            content: '';
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 7.143rem;
+            height: 7.143rem;
+            border-radius: 50%;
+            background: $white url("/images/play.svg") no-repeat 54%;
+          }
 
           img {
             background: linear-gradient(0deg, rgba(53, 61, 79, 0.5), rgba(53, 61, 79, 0.5));
@@ -177,7 +191,12 @@
     }
 
     &.section-fog {
-      padding: 14.286rem 0 14.1rem;
+      min-height: 88rem;
+      align-items: flex-start;
+      padding-top: 14.286rem;
+      background: url("/images/section-fog.png") no-repeat;
+      background-size: 100% auto;
+      background-position: center 74.2%;
 
       .info {
         max-width: 61rem;
@@ -275,8 +294,8 @@
       min-height: 64.286rem;
       align-items: flex-start;
       padding-top: 13.5rem;
-      background: linear-gradient(90deg,#353D4F 0%,rgba(53,61,79,0) 59.28%), url("/images/section-beacon.png") no-repeat center right;
-      background-size: 50% 100%;
+      background: url("/images/section-beacon.png") no-repeat center;
+      background-size: cover;
 
       .section-info {
         .block-text {
@@ -305,6 +324,10 @@
         .block-image {
           margin-right: 2rem;
           margin-top: 3.25rem;
+
+          img {
+            border-radius: 1.428rem;
+          }
         }
 
         .block-text {
@@ -349,9 +372,8 @@
       min-height: 64.286rem;
       align-items: flex-start;
       padding-top: 14.2rem;
-      background: linear-gradient(90deg,#353D4F 0%,rgba(53,61,79,0) 59.28%), url("/images/section-transparent.png") no-repeat center right;
-      background-size: 50% 100%;
-
+      background: url("/images/section-transparent.png") no-repeat center;
+      background-size: cover;
 
       .section-info {
         .block-text {
@@ -579,7 +601,10 @@
       }
 
       &.section-fog {
-        padding: 5.2rem 0 16.5rem;
+        min-height: 73.3rem;
+        padding-top: 5.2rem;
+        background-image: url("/images/section-fog-small.png");
+        background-position: 50% 63.8%;
 
         h2 {
           margin-bottom: 3.429rem;
@@ -613,13 +638,10 @@
       &.section-beacon {
         padding-top: 8.3rem;
         min-height: 50rem;
+        background-image: url("/images/section-beacon-small.png");
 
         .section-info {
           max-width: 80rem;
-
-          // .block-image {
-          //   min-height: 50rem;
-          // }
 
           .block-text {
             .beacon-text {
@@ -639,6 +661,7 @@
       &.section-transparent {
         min-height: 50rem;
         padding-top: 8.5rem;
+        background-image: url("/images/section-transparent-small.png");
 
         .section-info {
           .block-text {
@@ -734,6 +757,10 @@
         .section-info {
           .block-image {
             padding-top: 3.55rem;
+
+            &:before {
+              top: calc(50% + 1.95rem);
+            }
           }
 
           .block-text {
@@ -778,11 +805,10 @@
         align-items: flex-end;
         padding-top: 0;
         padding-bottom: 14.5rem;
+        background-image: url("/images/section-beacon-tablet.png");
 
         .section-info {
           flex-direction: column-reverse;
-          margin-left: 0;
-          padding-left: 0;
 
           .block-text {
             h3 {
@@ -833,7 +859,7 @@
             h3 {
               margin-bottom: 1.35rem;
             }
-            
+
             p {
               max-width: 32rem;
             }
@@ -864,7 +890,10 @@
       }
 
       &.section-fog {
-        padding: 8.8rem 0 11.5rem;
+        min-height: 64.7rem;
+        padding-top: 8.8rem;
+        background-image: url("/images/section-fog-tablet.png");
+        background-position: 50% 76.4%;
 
         h2 {
           margin-bottom: 2.2rem;
@@ -974,13 +1003,9 @@
         align-items: flex-end;
         padding-top: 0;
         padding-bottom: 8.3rem;
+        background-image: url("/images/section-transparent-tablet.png");
 
         .section-info {
-          // .block-image {
-          //   background: linear-gradient(0deg, #353D4F 0%, rgba(53, 61, 79, 0) 59.28%),url(/images/section-transparent.png) no-repeat;
-          //   background-position-x: center;
-          // }
-
           .block-text {
             h2 {
               max-width: 100%;
@@ -995,7 +1020,7 @@
               &:nth-child(2) {
                 max-width: 32rem;
               }
-  
+
               &:nth-child(3) {
                 max-width: 38rem;
               }
@@ -1075,7 +1100,7 @@
 
         .button {
           height: 3.4rem;
-  
+
           .icon-logo {
             max-height: 2.3rem;
             margin: 8px 10px 0;
@@ -1101,8 +1126,15 @@
         .section-info {
           .block-image {
             padding-top: 2.65rem;
+
+            &:before {
+              width: 5rem;
+              height: 5rem;
+              top: calc(50% + 2.2rem);
+              background-size: 1.5rem 1.9rem;
+            }
           }
-          
+
           .block-text {
             h3 {
               max-width: 18rem;
@@ -1115,7 +1147,7 @@
 
       &.section-privacy {
         padding: 4.571rem 1.071rem 4.8rem;
-        
+
         .section-info {
           text-align: center;
 
@@ -1145,6 +1177,7 @@
         align-items: center;
         justify-content: flex-end;
         padding-bottom: 9.9rem;
+        background-image: url("/images/section-beacon-mobile.png");
 
         .section-info {
           .block-text {
@@ -1290,7 +1323,10 @@
       }
 
       &.section-fog {
-        padding: 5.2rem 0 9.4rem;
+        min-height: 63.45rem;
+        padding-top: 5.2rem;
+        background-image: url("/images/section-fog-mobile.png");
+        background-position: 50% 79.4%;
 
         h2 {
           margin-bottom: 1.3rem;
@@ -1312,6 +1348,7 @@
         align-items: center;
         justify-content: flex-end;
         padding-bottom: 4.1rem;
+        background-image: url("/images/section-transparent-mobile.png");
 
         .section-info {
           .block-text {
@@ -1323,6 +1360,8 @@
             }
 
             p {
+              letter-spacing: 0.009rem;
+
               &:nth-child(2) {
                 max-width: 20rem;
                 margin-bottom: 1.75rem;
@@ -1338,7 +1377,11 @@
       }
 
       &.section-footer {
-        padding: 3.571rem 1.071rem 1.5rem;
+        padding: 3.571rem 1.071rem 1.6rem;
+
+        h4 {
+          margin-bottom: 1.8rem;
+        }
 
         .centered {
           p {
