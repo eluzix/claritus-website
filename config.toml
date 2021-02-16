@@ -1,6 +1,6 @@
 baseURL = "https://claritus.io/"
 languageCode = "en-us"
-title = "Claritus - The Simple Way to Keep Track of Your Wealth"
+title = "Claritus - A Simple Way to Keep Track of Your Portfolio"
 
 theme = "clearvalue"
 assetDir = 'themes/clearvalue/assets'
@@ -10,7 +10,7 @@ Paginate = 9
 disableKinds = ["taxonomy", "taxonomyTerm"]
 
 [params]
-    description = "Finally, a 360° view of your assets that lets you track, understand, and be in complete control of your wealth - all in one place!"
+    description = "Finally, a 360° view of your portfolio that lets you track, understand, and be in complete control of all of your assets and investments - all in one place!"
     gtagConfig = 'UA-159218662-2'
     appUrl = "https://app.claritus.io"
     cookieDomain = 'localhost'
