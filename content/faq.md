@@ -4,7 +4,7 @@ date: 2020-04-27T09:30:01+03:00
 url: /faq
 type: faq
 content_class: faq
-header_class: white-header
+header_class: 
 faq_list:
     - title: What is Claritus?
       body: "Claritus is a simple-to-use personal wealth service that allows you to view all of your invested assets in one place. It’s the only tool you need to track, understand, and grow your wealth."
@@ -27,7 +27,7 @@ faq_list:
       body: "You can contact us anytime <a href=\"mailto:help@claritus.io\">help@claritus.io</a>."
 ---
 {{< rawhtml >}}
-Have a question about Claritus? We’re here to help.
-If you don’t see your question in the list below, write to us at <a href="mailto:help@claritus.io" class="is-green">help@claritus.io</a>
+Here some common questions about Claritus.<br/>
+Can't find an answer, contact us as <a href="mailto:help@claritus.io" class="is-green">help@claritus.io</a>
 {{< /rawhtml >}}
 
