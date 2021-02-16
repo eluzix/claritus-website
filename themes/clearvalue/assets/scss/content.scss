@@ -170,8 +170,6 @@
     }
 
     .heading {
-      margin-top: $header-height-mobile;
-
       .page-title {
         font-size: 2.857rem;
       }
@@ -200,6 +198,14 @@
       article p:first-child {
         font-size: 1.5rem;
       }
+    }
+  }
+}
+
+@include touch {
+  .content {
+    .heading {
+      margin-top: $header-height-mobile;
     }
   }
 }

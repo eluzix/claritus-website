@@ -267,7 +267,6 @@
     }
 
     .post-content {
-      margin-top: $header-height-mobile;
       padding: 1rem 0 7.1rem;
 
       h1 {
@@ -339,6 +338,14 @@
         right: 3.3rem;
         bottom: 3.5rem;
       }
+    }
+  }
+}
+
+@include touch {
+  .blog-post {
+    .post-content {
+      margin-top: $header-height-mobile;
     }
   }
 }
