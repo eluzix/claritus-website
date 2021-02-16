@@ -29,14 +29,12 @@
 {{ define "title" }}{{ .Title }}{{ end }}
 {{ define "StructData" }}
 <script type="application/ld+json">
-    [
-        {
-            "@context":"http://schema.org/",
-            "@type":"FAQPage",
-            "name": "{{ .Title }}",
-            "description": "Claritus FAQ Page"
-        },
-        "mainEntity": [
+{
+    "@context":"http://schema.org/",
+    "@type":"FAQPage",
+    "name": "{{ .Title }}",
+    "description": "Claritus FAQ Page",
+    "mainEntity": [
         {{ range .Params.faq_list }}
         {
             "@type":"Question",
@@ -47,8 +45,8 @@
             }
         },
         {{ end }}
-        ]
     ]
+}
 </script>
 {{ end }}
 
