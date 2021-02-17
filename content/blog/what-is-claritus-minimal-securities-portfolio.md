@@ -1,7 +1,7 @@
 ---
 title: What is Claritus Minimal Securities Portfolio?
-description: We know you want to track and be updated, among other assets, also on
-  a particular securities’ portfolio.
+description: A ‘Minimal Securities Portfolio’ was designed for manual work and as
+  such, our aim was for minimal work and maximum value.
 date: 2021-02-14T10:31:01.000+03:00
 publishDate: 2021-02-14T10:31:01.000+03:00
 content_class: blog-post
