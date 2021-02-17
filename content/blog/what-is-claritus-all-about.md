@@ -1,14 +1,14 @@
 ---
-title: "What is Claritus All About?"
-description: "Claritus’ mission is to bring financial peace of mind to those people who have investments and assets on top of their day to day finances."
-date: 2021-02-17T10:31:01+03:00
-publishDate: 2021-02-17T10:31:01+03:00
-type: blog
+title: What is Claritus All About?
+description: Claritus’ mission is to bring financial peace of mind to those people
+  who have investments and assets on top of their day to day finances.
+date: 2021-02-17T10:31:01.000+03:00
+publishDate: 2021-02-17T10:31:01.000+03:00
 content_class: blog-post
 header_class: white-header
-thumbnail: /images/thumbnail3.jpg
----
+thumbnail: "/uploads/what-is-claritus-all-about.png"
 
+---
 Claritus’ mission is to bring financial peace of mind to those people who have investments and assets on top of their day to day finances.
 
 It's not that we don’t think all people need financial tools to help their finances grow, on the contrary.
@@ -38,5 +38,3 @@ Our assumption was that people work hard to gain financial security and from tha
 So, if you feel you need an easy to use, trustworthy and discrete companion to assist you in nurturing your wealth, please try our very early service of Claritus.
 
 Your financial peace of mind is our mission.
-
-
