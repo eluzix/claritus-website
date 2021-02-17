@@ -91,8 +91,8 @@ const app = {
         if (menu.classList.contains('menu--active')) {
             menu.classList.toggle('menu--active')
 
+            header.classList.remove('menu-open')
             setTimeout(() => {
-                header.classList.remove('menu-open')
                 burger.classList.remove('is-active')
                 menu.classList.toggle('is-block')
             }, 400)
