@@ -67,7 +67,7 @@ h4 {
   margin-bottom: 1.429rem;
 }
 
-p, .learn-more {
+p {
   font-size: 1.571rem;
   line-height: 180%;
 }
@@ -94,6 +94,10 @@ p, .learn-more {
 
 .is-red {
   color: $red !important;
+}
+
+.is-underline {
+  text-decoration: underline;
 }
 
 .button {

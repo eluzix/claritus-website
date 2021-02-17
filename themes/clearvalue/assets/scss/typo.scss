@@ -141,3 +141,28 @@
     line-height: 150%;
   }
 }
+
+.is-link {
+  font-weight: 500;
+  font-size: 1.71rem;
+  line-height: 160%;
+  letter-spacing: 0.02em;
+  text-decoration-line: underline;
+  font-feature-settings: 'liga' off;
+  color: $primary;
+
+  @media screen and (max-width: 1280px) {
+    font-size: 1.42rem;
+    line-height: 160%;
+  }
+
+  //@include tablet-only {
+  //  font-size: 18px;
+  //  line-height: 160%;
+  //}
+
+  @include mobile {
+    font-size: 1.28rem;
+    line-height: 160%;
+  }
+}

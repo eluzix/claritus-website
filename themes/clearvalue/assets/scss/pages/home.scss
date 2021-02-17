@@ -104,10 +104,10 @@
           margin-left: 17rem;
         }
 
-        h3 {
-          font-weight: 500;
-          font-size: 4.571rem;
-          line-height: 130%;
+        .is-h2 {
+          //font-weight: 500;
+          //font-size: 4.571rem;
+          //line-height: 130%;
           margin-bottom: 3.6rem;
         }
 
@@ -132,9 +132,9 @@
           margin-top: 5.85rem;
           padding-right: 4.5rem;
 
-          h3 {
-            max-width: 33rem;
-          }
+          //h3 {
+          //  max-width: 33rem;
+          //}
         }
 
         .block-image {
@@ -172,7 +172,7 @@
         margin-right: 2rem;
         margin-top: 7rem;
 
-        h3 {
+        .is-h2 {
           margin-bottom: 1.5rem;
         }
 
@@ -342,8 +342,8 @@
           margin: 0 auto;
           display: flex;
           align-items: center;
-          
-          h3 {
+
+          .is-h2 {
             margin-bottom: 1.5rem;
           }
 
@@ -366,7 +366,7 @@
           margin-right: 13rem;
           margin-top: 3.9rem;
 
-          h3 {
+          .is-h2 {
             max-width: 29rem;
             margin-bottom: 1.5rem;
           }
@@ -493,10 +493,10 @@
 
         .block-text {
 
-          h3 {
-            font-size: 3.571rem;
-            line-height: 120%;
-          }
+          //h3 {
+          //  font-size: 3.571rem;
+          //  line-height: 120%;
+          //}
         }
       }
 
@@ -507,9 +507,9 @@
           .block-text {
             margin-top: 3.35rem;
 
-            h3 {
-              max-width: 25.5rem;
-            }
+            //h3 {
+            //  max-width: 25.5rem;
+            //}
 
             p {
               max-width: 26rem;
@@ -530,7 +530,7 @@
         .block-text {
           margin-top: 4.5rem;
 
-          h3 {
+          .is-h2 {
             margin-bottom: 3.6rem;
           }
 
@@ -549,7 +549,7 @@
           .block-text {
             padding-left: 7rem;
 
-            h3 {
+            .is-h2 {
               margin-bottom: 3.6rem;
             }
           }
@@ -603,7 +603,7 @@
             margin-right: 0;
             margin-top: 4.9rem;
 
-            h3 {
+            .is-h2 {
               margin-bottom: 3.6rem;
             }
 
@@ -729,9 +729,9 @@
           margin: 0 !important;
           padding: 0 !important;
 
-          h3 {
-            font-size: 2.571rem;
-            line-height: 140%;
+          .is-h2 {
+            //font-size: 2.571rem;
+            //line-height: 140%;
             margin-bottom: 2rem;
           }
 
@@ -782,9 +782,9 @@
           }
 
           .block-text {
-            h3 {
-              max-width: 100%;
-            }
+            //h3 {
+            //  max-width: 100%;
+            //}
 
             p {
               max-width: 32rem;
@@ -811,7 +811,7 @@
             max-width: 28rem;
             margin: 5.857rem auto 0 !important;
 
-            h3 {
+            .is-h2 {
               margin-bottom: 1.75rem;
             }
 
@@ -833,7 +833,7 @@
           flex-direction: column-reverse;
 
           .block-text {
-            h3 {
+            .is-h2 {
               margin-bottom: 1.35rem;
             }
 
@@ -855,7 +855,7 @@
 
         .section-info {
           .block-text {
-            h3 {
+            .is-h2 {
               margin-bottom: 1.35rem;
             }
           }
@@ -878,7 +878,7 @@
           }
 
           .block-text {
-            h3 {
+            .is-h2 {
               margin-bottom: 1.35rem;
             }
 
@@ -899,7 +899,7 @@
           }
 
           .block-text {
-            h3 {
+            .is-h2 {
               max-width: 100%;
               margin-bottom: 1.35rem;
             }
@@ -1144,9 +1144,9 @@
         max-width: 100%;
 
         .block-text {
-          h3 {
-            font-size: 2rem;
-            line-height: 120%;
+          .is-h2 {
+            //font-size: 2rem;
+            //line-height: 120%;
             margin-bottom: 1.5rem;
           }
         }
@@ -1167,13 +1167,13 @@
             }
           }
 
-          .block-text {
-            h3 {
-              max-width: 18rem;
-              margin-left: auto;
-              margin-right: auto;
-            }
-          }
+          //.block-text {
+          //  h3 {
+          //    max-width: 18rem;
+          //    margin-left: auto;
+          //    margin-right: auto;
+          //  }
+          //}
         }
       }
 
@@ -1187,7 +1187,7 @@
             max-width: 100%;
             margin: 3rem auto 0!important;
 
-            h3 {
+            .is-h2 {
               margin-bottom: 1.5rem;
             }
 
@@ -1217,7 +1217,7 @@
 
         .section-info {
           .block-text {
-            h3 {
+            .is-h2 {
               margin-bottom: 1.15rem;
             }
 
@@ -1244,7 +1244,7 @@
           }
 
           .block-text {
-            h3 {
+            .is-h2 {
               margin-bottom: 1.05rem;
             }
 
@@ -1262,7 +1262,7 @@
           }
 
           .block-text {
-            h3 {
+            .is-h2 {
               margin-bottom: 1rem;
             }
 
@@ -1287,7 +1287,7 @@
           }
 
           .block-text {
-            h3 {
+            .is-h2 {
               margin-bottom: 1rem;
             }
 
