@@ -1,17 +1,17 @@
 {{ define "content" }}
 <div class="landing-page home">
-    {{ partial "header.html" . }}
-    {{ partial "menu-lp.html" }}
+    {{ partial "nav.html" . }}
+    {{ partial "menu.html" }}
 
     <section class="section hero">
         <div class="centered">
             <h1 class="hero-title">
-                A Simple Way to Keep Track of <span class="is-green">Your Portfolio</span>
+                {{ .Title | safeHTML }}
             </h1>
-            <p class="hero-text">Finally, a 360° view of your portfolio that lets you track, understand, and be in complete control of all of your assets and investments - all in one place!</p>
+            <p class="hero-text">{{ .Params.heroText | safeHTML }}</p>
             <a class="button is-green is-full is-wide is-higher try-button"
                href="{{ .Site.Params.appUrl }}/on-boarding">
-                Try <img src="/images/logo-white-beta.svg" class="icon-logo"> for Free
+                Try <img src="{{ .Params.heroImg }}" class="icon-logo"> for Free
             </a>
 
             <img src="/images/section-hero.png"/>
@@ -22,13 +22,13 @@
         <div class="section-info">
             <div class="block-text">
                 <div>
-                    <h3>Clear & Concise</h3>
-                    <p>At Claritus, we believe that everyone should have a clear, and understandable view of their assets and investments - without requiring a Master’s degree in Finance!</p>
+                    <h2 class="is-h2">{{ .Params.section1Title | safeHTML}}</h2>
+                    <p>{{ .Params.section1Text | safeHTML}}</p>
                 </div>
             </div>
 
             <div class="block-image">
-                <img src="/images/video.png"/>
+                <img src="{{ .Params.section1Img }}"/>
             </div>
         </div>
     </section>
@@ -36,15 +36,13 @@
     <section class="section section-privacy is-white">
         <div class="section-info">
             <div class="block-image">
-                <img src="/images/section-5.jpg"/>
+                <img src="{{ .Params.section2Img }}"/>
             </div>
             <div class="block-text">
                 <div>
-                    <h3>Privacy and Security Guaranteed</h3>
-                    <p>We know your privacy and security are of the utmost importance to
-                        you, which is why we are committed to the highest standards of data security and encryption.
-                        With Claritus, you know your data is <span class="is-green">for your eyes only</span>.</p>
-                    <a href="/blog/trust" class="learn-more">Learn more.</a>
+                    <h2 class="is-h2">{{ .Params.section2Title | safeHTML}}</h2>
+                    <p>{{ .Params.section2Text | safeHTML}}</p>
+                    <a href="/blog/trust" class="is-link">Learn more</a>
                 </div>
             </div>
         </div>
@@ -54,9 +52,9 @@
         <div class="section-info">
             <div class="block-text">
                 <div>
-                    <h3>A Beacon in the Dark</h3>
-                    <p class="beacon-text">Claritus lets you access, track, and be in full control of your portfolio - all from ONE convenient interface. In a choppy sea of apps, services, and spreadsheets, Claritus is your beacon in the dark.</p>
-                    <p class="is-green beacon-caption">Simple, user-friendly, intuitive.</p>
+                    <h2 class="is-h2">{{ .Params.section3Title | safeHTML}}</h2>
+                    <p class="beacon-text is-regular-text">{{ .Params.section3Text | safeHTML}}</p>
+                    <p class="is-green beacon-caption is-regular-text">{{ .Params.section3Text2 | safeHTML}}</p>
                     <a class="button is-green is-full is-wide is-higher try-button"
                         href="{{ .Site.Params.appUrl }}/on-boarding" title="Try Claritus for Free">
                         Try <img src="/images/logo-white-beta.svg" class="icon-logo"> for Free
@@ -70,13 +68,13 @@
         <div class="section-info">
             <div class="block-text">
                 <div>
-                    <h3 class="has-bottom-margin-20">Track and Control</h3>
-                    <p>With real time data from more than 17,000 global financial institutions, brokerages, and other financial organizations, it’s never been easier <br/> to automatically keep track of your portfolio.</p>
+                    <h2 class="is-h2 has-bottom-margin-20">{{ .Params.section4Title | safeHTML}}</h2>
+                    <p>{{ .Params.section4Text | safeHTML}}</p>
                 </div>
             </div>
 
-            <div class="block-image">
-                <img src="/images/section-2.png"/>
+            <div class="block-image has-border-shadow">
+                <img src="{{ .Params.section4Img }}"/>
             </div>
         </div>
 
@@ -84,14 +82,14 @@
 
     <section class="section section-daterange is-white">
         <div class="section-info">
-            <div class="block-image">
-                <img src="/images/nurture-grow.png" class="lazy-image" data-src="/images/nurture-grow.gif"/>
+            <div class="block-image has-border-shadow">
+                <img src="/images/nurture-grow.png" class="lazy-image" data-src="{{ .Params.section5Img }}"/>
             </div>
 
             <div class="block-text">
                 <div>
-                    <h3>Nurture and Grow</h3>
-                    <p>Upload your investment history and measure your portfolio’s performance over time easily and accurately. You can also benefit from performance analytics and cross asset performance comparisons to help grow your wealth.</p>
+                    <h2 class="is-h2">{{ .Params.section5Title | safeHTML}}</h2>
+                    <p>{{ .Params.section5Text | safeHTML}}</p>
                 </div>
             </div>
         </div>
@@ -102,51 +100,36 @@
         <div class="section-info">
             <div class="block-text">
                 <div>
-                    <h3>Automate and Simplify</h3>
-                    <p>Let Claritus do the work for you by automatically uploading your current spreadsheet to your account and automating how you track, understand and control your wealth.</p>
+                    <h2 class="is-h2">{{ .Params.section6Title | safeHTML}}</h2>
+                    <p>{{ .Params.section6Text | safeHTML}}</p>
                 </div>
             </div>
             <div class="block-image">
-                <img src="/images/section-4.svg"/>
+                <img src="{{ .Params.section6Img }}"/>
             </div>
         </div>
     </section>
 
     <section class="section section-fog">
         <div class="w-100">
-            <h2 class="has-bottom-margin-20 is-centered">Lifting the Fog on a Brighter Future</h2>
-            <p class="info has-bottom-margin-40">Claritus’s straight-forward, comprehensive view of your portfolio’s performance allows to you acquire a deeper understanding of your financials. Not only can you maintain and nurture your investments, but you can also  make smarter decisions moving forward.</p>
+            <h2 class="has-bottom-margin-20 is-centered">{{ .Params.section7Title | safeHTML}}</h2>
+            <p class="info has-bottom-margin-40">{{ .Params.section7Text | safeHTML}}</p>
         </div>
     </section>
 
     <section class="section section-testimonials is-white">
         <div class="centered">
-            <h2>What our early adopters saying about us...</h2>
+            <h2>{{ .Params.section8Title | safeHTML}}</h2>
             <div class="testimonials-block is-hidden-tablet">
+                {{ range .Params.testimonials }}
                 <div class="testimonial">
                     <img src="/images/icon-quotation.svg" class="quotation"/>
-                    <p class="testimonial-text">fantastic! The app is really well designed, loads very fast and I really appreciate the subtle details that have been included. I'm very happy to have found it.</p>
+                    <p class="testimonial-text">{{ .title | safeHTML}}</p>
                     <div class="testimonial-author">
-                        <img src="/images/person.png"/>
-                        <span>Justin L.</span>
+                        <span>{{ .author }}</span>
                     </div>
                 </div>
-                <div class="testimonial">
-                    <img src="/images/icon-quotation.svg" class="quotation"/>
-                    <p class="testimonial-text">I will really enjoy using Claritus to keep track of all my assets and liabilities.</p>
-                    <div class="testimonial-author">
-                        <img src="/images/person.png"/>
-                        <span>Andres S.</span>
-                    </div>
-                </div>
-                <div class="testimonial">
-                    <img src="/images/icon-quotation.svg" class="quotation"/>
-                    <p class="testimonial-text">I'm psyched to lean into Claritus as my primary tool and replace my old spreadsheet.</p>
-                    <div class="testimonial-author">
-                        <img src="/images/person.png"/>
-                        <span>Andy P.</span>
-                    </div>
-                </div>
+                {{ end }}
             </div>
             <div class="testimonials-block testimonials-slider navigation-wrapper container">
                 <div class="slider">
@@ -160,30 +143,16 @@
                         </svg>
                     </button>
                     <div id="main-slider" class="keen-slider">
-                        <div class="keen-slider__slide number-slide1 testimonial">
+                        {{ range $index, $elem := .Params.testimonials }}
+                        {{ $c := add $index 1 }}
+                        <div class="keen-slider__slide number-slide{{ $c }} testimonial">
                             <img src="/images/icon-quotation.svg" class="quotation"/>
-                            <p class="testimonial-text">fantastic! The app is really well designed, loads very fast and I really appreciate the subtle details that have been included. I'm very happy to have found it.</p>
+                            <p class="testimonial-text">{{ $elem.title | safeHTML }}</p>
                             <div class="testimonial-author">
-                                <img src="/images/person.png"/>
-                                <span>Justin L.</span>
+                                <span>{{ $elem.author }}</span>
                             </div>
                         </div>
-                        <div class="keen-slider__slide number-slide2 testimonial">
-                            <img src="/images/icon-quotation.svg" class="quotation"/>
-                            <p class="testimonial-text">I will really enjoy using Claritus to keep track of all my assets and liabilities.</p>
-                            <div class="testimonial-author">
-                                <img src="/images/person.png"/>
-                                <span>Andres S.</span>
-                            </div>
-                        </div>
-                        <div class="keen-slider__slide number-slide3 testimonial">
-                            <img src="/images/icon-quotation.svg" class="quotation"/>
-                            <p class="testimonial-text">I'm psyched to lean into Claritus as my primary tool and replace my old spreadsheet.</p>
-                            <div class="testimonial-author">
-                                <img src="/images/person.png"/>
-                                <span>Andy P.</span>
-                            </div>
-                        </div>
+                        {{ end }}
                     </div>
                     <button
                             id="arrow-right"
@@ -229,10 +198,10 @@
         <div class="section-info">
             <div class="block-text">
                 <div>
-                    <h2>Simple, Transparent Pricing</h2>
+                    <h2>Transparent &<br/> Simple Pricing</h2>
                     <p>At Claritus, we aim to bring you the highest&#x2011;value tools for your money at a fair, and low cost.</p>
                     <p>Subscription prices are clear and affordable. This  means they’re the same for everyone and not based on your portfolio’s worth. In addition, there are no surprise costs or hidden fees, ever.</p>
-                    <p>Sign up to Claritus beta and enjoy our annual subscription for free, as a thank you for being one of our first users. <a href="/blog/we-value-our-beta-customers/" class="learn-more">Learn more</a></p>
+                    <p>Sign up to Claritus beta and enjoy our annual subscription for free, as a thank you for being one of our first users. <a href="/blog/we-value-our-beta-customers/" class="learn-more is-link">Learn more</a></p>
                     <a class="button is-green is-full is-wide is-higher try-button"
                         href="{{ .Site.Params.appUrl }}/on-boarding">
                          Try <img src="/images/logo-white-beta.svg" class="icon-logo"> for Free
@@ -244,7 +213,7 @@
 
     <section class="section section-footer">
         <div class="centered">
-            <h4>If you're a Family Office, or financial professional and want to use Claritus for your clients, please contact us at <a href="mailto:Hello@Claritus.io" class="link contact-us-link is-green" title="email claritus.io">Hello@Claritus.io</a></h4>
+            <h4>{{ .Params.familyOffice | safeHTML }}</h4>
         </div>
     </section>
 

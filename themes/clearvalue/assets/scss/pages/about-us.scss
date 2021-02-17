@@ -167,18 +167,18 @@
           margin-bottom: 1.87rem;
         }
 
-        h2 {
-          font-weight: 500;
-          font-size: 2.429rem;
-          line-height: 150%;
+        .is-h3 {
+          //font-weight: 500;
+          //font-size: 2.429rem;
+          //line-height: 150%;
           margin-bottom: 1.9rem;
         }
 
-        p {
-          font-size: 1.571rem;
-          line-height: 180%;
-          letter-spacing: 0.015rem;
-        }
+        //p {
+        //  font-size: 1.571rem;
+        //  line-height: 180%;
+        //  letter-spacing: 0.015rem;
+        //}
 
         a {
           display: block;
@@ -210,11 +210,11 @@
       }
     }
 
-    .heading {
-      .page-title {
-        letter-spacing: .01rem;
-      }
-    }
+    //.heading {
+    //  .page-title {
+    //    letter-spacing: .01rem;
+    //  }
+    //}
 
     //.hero {
     //  position: relative;
@@ -326,14 +326,14 @@
             margin-bottom: 1.825rem;
           }
 
-          h2 {
+          .is-h3 {
             margin-bottom: 1.4rem;
           }
 
-          p {
-            font-size: 1.286rem;
-            letter-spacing: 0.01rem;
-          }
+          //p {
+          //  font-size: 1.286rem;
+          //  letter-spacing: 0.01rem;
+          //}
 
           a {
             font-weight: 500;
@@ -352,9 +352,9 @@
 @media screen and (max-width: 1280px) {
   .about-us {
     .container {
-      &.is-small {
-        max-width: 34.75rem;
-      }
+      //&.is-small {
+      //  max-width: 34.75rem;
+      //}
 
       &.is-medium {
         max-width: 52rem;
@@ -481,19 +481,31 @@
             margin-bottom: 3.575rem;
           }
 
-          h2 {
-            font-size: 1.714rem;
-            line-height: 150%;
+          .is-h3 {
+            //font-size: 1.714rem;
+            //line-height: 150%;
             margin-bottom: 1.55rem;
           }
 
-          p {
-            font-size: 1.143rem;
-            line-height: 182%;
-            letter-spacing: 0.01rem;
-          }
+          //p {
+          //  font-size: 1.143rem;
+          //  line-height: 182%;
+          //  letter-spacing: 0.01rem;
+          //}
         }
       }
+    }
+  }
+}
+
+@include tablet-only {
+  .about-us {
+    .container.is-small {
+      max-width: 34.75rem;
+    }
+
+    .hero {
+      min-height: calc(100vh - 4.143rem);
     }
   }
 }
@@ -622,15 +634,15 @@
             margin-bottom: 1.1rem;
           }
 
-          h2 {
-            font-size: 2rem;
-            line-height: 120%;
+          .is-h3 {
+            //font-size: 2rem;
+            //line-height: 120%;
             margin-bottom: 1.3rem;
           }
 
-          p {
-            font-size: 1rem;
-          }
+          //p {
+          //  font-size: 1rem;
+          //}
 
           a {
             font-size: 1.571rem;

@@ -9,6 +9,9 @@ fields:
   name: description
   label: description
 - type: text
+  name: summary
+  label: summary
+- type: text
   name: metaTitle
   label: meta_title
 - type: datetime

@@ -7,8 +7,8 @@
     <section class="hero stretched-image">
         <div class="hero-left">
             <div>
-                <h1 class="page-title" title="{{ .Title }}">{{ .Title }}</h1>
-                <h2><span class="is-green">Our values</span> play <br/> a huge role in who <br/> we are, both as people <br/> and as a company.</h2>
+                <h1 class="page-title is-h2" title="{{ .Title }}">{{ .Title }}</h1>
+                <h3 class="is-h3"><span class="is-green">Our values</span> play a huge role in who we are, both as people and as a company.</h3>
             </div>
         </div>
         <div class="hero-right"></div>
@@ -20,8 +20,8 @@
                 <ul class="values-items">
                     {{ range .Params.values_list }}
                         <li>
-                            <h2 class="is-green">{{ .title }}</h2>
-                            <p>{{ .body | safeHTML}}</p>
+                            <h4 class="is-h4 is-green">{{ .title }}</h4>
+                            <p class="is-regular-text">{{ .body | safeHTML}}</p>
                         </li>
                     {{ end }}
                 </ul>

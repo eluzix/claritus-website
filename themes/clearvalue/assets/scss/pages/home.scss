@@ -1,4 +1,4 @@
-.landing-page {
+.home {
   background: $dark-blue;
   width: 100vw;
 
@@ -104,10 +104,10 @@
           margin-left: 17rem;
         }
 
-        h3 {
-          font-weight: 500;
-          font-size: 4.571rem;
-          line-height: 130%;
+        .is-h2 {
+          //font-weight: 500;
+          //font-size: 4.571rem;
+          //line-height: 130%;
           margin-bottom: 3.6rem;
         }
 
@@ -132,9 +132,9 @@
           margin-top: 5.85rem;
           padding-right: 4.5rem;
 
-          h3 {
-            max-width: 33rem;
-          }
+          //h3 {
+          //  max-width: 33rem;
+          //}
         }
 
         .block-image {
@@ -172,7 +172,7 @@
         margin-right: 2rem;
         margin-top: 7rem;
 
-        h3 {
+        .is-h2 {
           margin-bottom: 1.5rem;
         }
 
@@ -184,7 +184,7 @@
       .section-info {
         .block-image {
           box-shadow: 0px 108.622px 86.8976px rgba(42, 50, 87, 0.05), 0px 39.8261px 36.3037px rgba(42, 50, 87, 0.02), 0px 18.9939px 19.4097px rgba(42, 50, 87, 0.013), 0px 9.43317px 10.8809px rgba(42, 50, 87, 0.008), 0px 4.32611px 5.77878px rgba(42, 50, 87, 0.00663327), 0px 1.49625px 2.40468px rgba(42, 50, 87, 0.0041531);
-          border-radius: 20px;
+          border-radius: 1.428rem;
           padding: 2.5rem;
         }
       }
@@ -243,10 +243,10 @@
             line-height: 200%;
             color: $green;
 
-            img {
-              vertical-align: middle;
-              margin-right: 0.9rem;
-            }
+            //img {
+            //  vertical-align: middle;
+            //  margin-right: 0.9rem;
+            //}
           }
 
           .testimonial-text {
@@ -313,10 +313,10 @@
           }
 
           .beacon-caption {
-            font-weight: 500;
-            font-size: 2rem;
-            line-height: 130%;
-            letter-spacing: 0.02rem;
+            //font-weight: 500;
+            //font-size: 2rem;
+            //line-height: 130%;
+            //letter-spacing: 0.02rem;
             margin-bottom: 3.4rem;
           }
         }
@@ -326,18 +326,24 @@
     &.section-daterange {
       .section-info {
         .block-image {
+          box-shadow: 0px 8px 35px 5px rgba(0, 0, 0, 0.05);
+          border-radius: 1.428rem;
+
           margin-right: 2rem;
-          margin-top: 3.25rem;
+          margin-top: 1.25rem;
 
           img {
+            width: 100%;
             border-radius: 1.428rem;
           }
         }
 
         .block-text {
           margin: 0 auto;
+          display: flex;
+          align-items: center;
 
-          h3 {
+          .is-h2 {
             margin-bottom: 1.5rem;
           }
 
@@ -360,7 +366,7 @@
           margin-right: 13rem;
           margin-top: 3.9rem;
 
-          h3 {
+          .is-h2 {
             max-width: 29rem;
             margin-bottom: 1.5rem;
           }
@@ -448,7 +454,7 @@
 }
 
 @media screen and (max-width: $fullhd) {
-  .landing-page {
+  .home {
     .section {
       .join-button {
         max-width: 17.85rem;
@@ -487,10 +493,10 @@
 
         .block-text {
 
-          h3 {
-            font-size: 3.571rem;
-            line-height: 120%;
-          }
+          //h3 {
+          //  font-size: 3.571rem;
+          //  line-height: 120%;
+          //}
         }
       }
 
@@ -501,9 +507,9 @@
           .block-text {
             margin-top: 3.35rem;
 
-            h3 {
-              max-width: 25.5rem;
-            }
+            //h3 {
+            //  max-width: 25.5rem;
+            //}
 
             p {
               max-width: 26rem;
@@ -524,7 +530,7 @@
         .block-text {
           margin-top: 4.5rem;
 
-          h3 {
+          .is-h2 {
             margin-bottom: 3.6rem;
           }
 
@@ -543,7 +549,7 @@
           .block-text {
             padding-left: 7rem;
 
-            h3 {
+            .is-h2 {
               margin-bottom: 3.6rem;
             }
           }
@@ -576,9 +582,9 @@
               font-size: 1.571rem;
               line-height: 140%;
 
-              img {
-                margin-right: 1.2rem;
-              }
+              //img {
+              //  margin-right: 1.2rem;
+              //}
             }
           }
         }
@@ -597,7 +603,7 @@
             margin-right: 0;
             margin-top: 4.9rem;
 
-            h3 {
+            .is-h2 {
               margin-bottom: 3.6rem;
             }
 
@@ -662,8 +668,8 @@
             }
 
             .beacon-caption {
-              font-size: 1.571rem;
-              letter-spacing: 0.03rem;
+              //font-size: 1.571rem;
+              //letter-spacing: 0.03rem;
               margin-bottom: 3.6rem;
             }
           }
@@ -706,7 +712,7 @@
 }
 
 @media screen and (max-width: $widescreen) {
-  .landing-page {
+  .home {
     .section {
       .centered {
         max-width: none;
@@ -723,9 +729,9 @@
           margin: 0 !important;
           padding: 0 !important;
 
-          h3 {
-            font-size: 2.571rem;
-            line-height: 140%;
+          .is-h2 {
+            //font-size: 2.571rem;
+            //line-height: 140%;
             margin-bottom: 2rem;
           }
 
@@ -776,9 +782,9 @@
           }
 
           .block-text {
-            h3 {
-              max-width: 100%;
-            }
+            //h3 {
+            //  max-width: 100%;
+            //}
 
             p {
               max-width: 32rem;
@@ -805,7 +811,7 @@
             max-width: 28rem;
             margin: 5.857rem auto 0 !important;
 
-            h3 {
+            .is-h2 {
               margin-bottom: 1.75rem;
             }
 
@@ -827,7 +833,7 @@
           flex-direction: column-reverse;
 
           .block-text {
-            h3 {
+            .is-h2 {
               margin-bottom: 1.35rem;
             }
 
@@ -836,7 +842,7 @@
             }
 
             .beacon-caption {
-              font-size: 1.286rem;
+              //font-size: 1.286rem;
               margin-bottom: 4.7rem;
             }
           }
@@ -849,7 +855,7 @@
 
         .section-info {
           .block-text {
-            h3 {
+            .is-h2 {
               margin-bottom: 1.35rem;
             }
           }
@@ -872,7 +878,7 @@
           }
 
           .block-text {
-            h3 {
+            .is-h2 {
               margin-bottom: 1.35rem;
             }
 
@@ -893,7 +899,7 @@
           }
 
           .block-text {
-            h3 {
+            .is-h2 {
               max-width: 100%;
               margin-bottom: 1.35rem;
             }
@@ -1066,8 +1072,17 @@
   }
 }
 
+@include desktop {
+  .home {
+    .section {
+      padding-left: 5.71rem!important;
+      padding-right: 5.71rem!important;
+    }
+  }
+}
+
 @include mobile {
-  .landing-page {
+  .home {
     .section {
       flex-direction: column;
       position: relative;
@@ -1129,9 +1144,9 @@
         max-width: 100%;
 
         .block-text {
-          h3 {
-            font-size: 2rem;
-            line-height: 120%;
+          .is-h2 {
+            //font-size: 2rem;
+            //line-height: 120%;
             margin-bottom: 1.5rem;
           }
         }
@@ -1152,13 +1167,13 @@
             }
           }
 
-          .block-text {
-            h3 {
-              max-width: 18rem;
-              margin-left: auto;
-              margin-right: auto;
-            }
-          }
+          //.block-text {
+          //  h3 {
+          //    max-width: 18rem;
+          //    margin-left: auto;
+          //    margin-right: auto;
+          //  }
+          //}
         }
       }
 
@@ -1172,7 +1187,7 @@
             max-width: 100%;
             margin: 3rem auto 0!important;
 
-            h3 {
+            .is-h2 {
               margin-bottom: 1.5rem;
             }
 
@@ -1202,7 +1217,7 @@
 
         .section-info {
           .block-text {
-            h3 {
+            .is-h2 {
               margin-bottom: 1.15rem;
             }
 
@@ -1211,7 +1226,7 @@
             }
 
             .beacon-caption {
-              font-size: 1.143rem;
+              //font-size: 1.143rem;
               margin-bottom: 3.5rem;
             }
           }
@@ -1229,7 +1244,7 @@
           }
 
           .block-text {
-            h3 {
+            .is-h2 {
               margin-bottom: 1.05rem;
             }
 
@@ -1247,7 +1262,7 @@
           }
 
           .block-text {
-            h3 {
+            .is-h2 {
               margin-bottom: 1rem;
             }
 
@@ -1272,7 +1287,7 @@
           }
 
           .block-text {
-            h3 {
+            .is-h2 {
               margin-bottom: 1rem;
             }
 
@@ -1313,10 +1328,10 @@
                   margin-left: 0;
                   margin-bottom: 2.25rem;
 
-                  img {
-                    margin-right: 0.9rem;
-                    max-width: 2.857rem;
-                  }
+                  //img {
+                  //  margin-right: 0.9rem;
+                  //  max-width: 2.857rem;
+                  //}
                 }
               }
             }

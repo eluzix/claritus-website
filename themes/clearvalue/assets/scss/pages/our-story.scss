@@ -22,8 +22,8 @@
   }
 
   .hero.stretched-image {
-    min-height: calc(57.14rem + 6.143rem);
-    height: calc(57.14rem + 6.143rem);
+    //min-height: calc(57.14rem + 6.143rem);
+    //height: calc(57.14rem + 6.143rem);
     
     .hero-right {
       background-image: url("/images/our-story.jpg");
@@ -119,9 +119,9 @@
     }
 
     .hero.stretched-image {
-      min-height: auto;
-      height: calc(100vh + 6.143rem);
-      max-height: 100vh;
+      //min-height: auto;
+      //height: calc(100vh + 6.143rem);
+      //max-height: 100vh;
     }
 
     .story-text {
