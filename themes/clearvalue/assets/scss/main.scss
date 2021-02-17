@@ -352,7 +352,7 @@ input {
 
     img.logo {
       padding-top: 0.4rem;
-      content: url("/images/logo-beta.svg");
+    //  content: url("/images/logo-beta.svg");
     }
 
     .links {
@@ -386,10 +386,6 @@ input {
     }
   }
 
-  &.menu-open {
-    background-color: transparent;
-    z-index: 600;
-  }
 
   &.white-header {
     background: rgba(255, 255, 255, 0.9);
@@ -424,6 +420,30 @@ input {
       .burger span {
         background-color: $dark;
       }
+    }
+  }
+
+  &.menu-open {
+    background-color: $dark-blue;
+    z-index: 600;
+
+    .nav > a {
+      visibility: hidden;
+    }
+
+    .nav .links {
+      z-index: 600;
+      .button {
+        color: $dark;
+      }
+    }
+
+    .burger span {
+      background-color: $dark;
+    }
+
+    &.white-header {
+      background-color: transparent;
     }
   }
 }
@@ -750,6 +770,13 @@ input {
   .is-invisible-tablet {
     display: initial;
   }
+
+  //.header.menu-open {
+  //  background-color: transparent;
+  //  .nav > a {
+  //    visibility: hidden;
+  //  }
+  //}
 
   .footer {
     min-height: 37.143rem;

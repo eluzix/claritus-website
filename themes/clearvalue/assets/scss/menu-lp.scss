@@ -39,12 +39,14 @@
   .menu-content {
     width: 100%;
     max-width: 32.143rem;
-    background: #1F2430;
+    //background: #1F2430;
+    background: $white;
     height: 100vh;
     z-index: 99;
     position: absolute;
     right: 0;
-    padding: 6.643rem 2.643rem;
+    //padding: 6.643rem 2.643rem;
+    padding: 7.643rem 2.643rem;
 
     -webkit-transform: translateX(200%);
     -moz-transform: translateX(200%);
@@ -76,13 +78,15 @@
         font-weight: normal;
         font-size: 1.571rem;
         line-height: 180%;
-        color: $white;
+        //color: $white;
+        color: $dark;
         letter-spacing: 0.01em;
         font-feature-settings: 'liga' off;
 
         &:hover {
           color: $green !important;
-          background: rgba(255, 255, 255, 0.05);
+          //background: rgba(255, 255, 255, 0.05);
+          background: rgba(73, 83, 105, 0.05);
           border-radius: 10px;
         }
       }
@@ -94,22 +98,22 @@
   }
 }
 
-.header.white-header ~ .menu {
-  .menu-content {
-    background: $white;
-    padding: 7.643rem 2.643rem;
-  }
-
-  .menu-list li {
-    a {
-      color: $dark;
-
-      &:hover {
-        background: rgba(73, 83, 105, 0.05);
-      }
-    }
-  }
-}
+//.header.white-header ~ .menu {
+//  .menu-content {
+//    background: $white;
+//    padding: 7.643rem 2.643rem;
+//  }
+//
+//  .menu-list li {
+//    a {
+//      color: $dark;
+//
+//      &:hover {
+//        background: rgba(73, 83, 105, 0.05);
+//      }
+//    }
+//  }
+//}
 
 @include mobile {
   .menu {
