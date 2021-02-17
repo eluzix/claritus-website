@@ -65,22 +65,22 @@ const app = {
         return check
     },
 
-    homeScrollToPricing() {
-        const isP = document.querySelector('.section-1 a.is-p')
-        if (isP){
-            isP.addEventListener('click', (e) => {
-                e.cancelable = true;
-                e.preventDefault();
-
-                document.querySelector('.home-footer .pricing').scrollIntoView(
-                  {
-                      behavior: 'smooth'
-                  })
-
-                return false
-            })
-        }
-    },
+    // homeScrollToPricing() {
+    //     const isP = document.querySelector('.section-1 a.is-p')
+    //     if (isP){
+    //         isP.addEventListener('click', (e) => {
+    //             e.cancelable = true;
+    //             e.preventDefault();
+    //
+    //             document.querySelector('.home-footer .pricing').scrollIntoView(
+    //               {
+    //                   behavior: 'smooth'
+    //               })
+    //
+    //             return false
+    //         })
+    //     }
+    // },
 
     toggleMenu() {
         const menu = document.getElementById('menu')
@@ -458,7 +458,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // app.setupSnapScrolling();
     app.initMenuOpening();
-    app.homeScrollToPricing();
+    // app.homeScrollToPricing();
     app.setupSliderTestimonials();
     app.initScrollTop();
     app.initLazyLoad();

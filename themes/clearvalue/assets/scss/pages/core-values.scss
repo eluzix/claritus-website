@@ -34,18 +34,18 @@
     li {
       margin-bottom: 3.5rem;
 
-      h2 {
-        font-weight: 500;
-        font-size: 2.429rem;
-        line-height: 150%;
+      .is-h4 {
+        //font-weight: 500;
+        //font-size: 2.429rem;
+        //line-height: 150%;
         margin-bottom: 0.75rem;
       }
 
-      p {
-        font-size: 1.571rem;
-        line-height: 182%;
-        letter-spacing: 0.015rem;
-      }
+      //p {
+        //font-size: 1.571rem;
+        //line-height: 182%;
+        //letter-spacing: 0.015rem;
+      //}
     }
   }
 }
@@ -64,10 +64,10 @@
       li {
         margin-bottom: 3.5rem;
 
-        p {
-          font-size: 1.286rem;
-          letter-spacing: 0.013rem;
-        }
+        //.is-regular-text {
+        //  //font-size: 1.286rem;
+        //  letter-spacing: 0.013rem;
+        //}
       }
     }
   }
@@ -75,9 +75,9 @@
 
 @media screen and (max-width: 1280px) {
   .core-values {
-    .container {
-      max-width: 34.75rem;
-    }
+    //.container {
+    //  max-width: 34.75rem;
+    //}
 
     .hero.stretched-image {
       //min-height: auto;
@@ -97,23 +97,29 @@
       li {
         margin-bottom: 2.9rem;
 
-        h2 {
-          font-size: 1.714rem;
+        .is-h4 {
+          //font-size: 1.714rem;
           margin-bottom: 0.75rem;
         }
 
-        p {
-          font-size: 1.143rem;
-          letter-spacing: 0.01rem;
-        }
+        //p {
+        //  //font-size: 1.143rem;
+        //  letter-spacing: 0.01rem;
+        //}
       }
     }
   }
 }
 
 @include tablet-only {
-  .core-values .hero.stretched-image {
-    height: 50rem;
+  .core-values {
+    .container {
+      max-width: 34.75rem;
+    }
+    
+    .hero.stretched-image {
+      height: 50rem;
+    }
   }
 }
 
@@ -131,15 +137,15 @@
       li {
         margin-bottom: 2.4rem;
 
-        h2 {
-          font-size: 1.571rem;
-          line-height: 140%;
+        .is-h4 {
+          //font-size: 1.571rem;
+          //line-height: 140%;
           margin-bottom: 0.4rem;
         }
 
-        p {
-          font-size: 1rem;
-        }
+        //p {
+        //  //font-size: 1rem;
+        //}
       }
     }
 

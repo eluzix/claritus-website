@@ -324,7 +324,7 @@ input {
 
 .icon-close-modal {
   display: block;
-  background-image: url(/images/icon-close-modal.svg);
+  background-image: url(/images/icon-close.svg);
   width: 28px;
   height: 28px;
 }
@@ -525,11 +525,11 @@ input {
           margin-left: 1.5rem;
         }
 
-        .button {
-          &.is-login {
-            margin-right: 4.8rem;
-          }
-        }
+        //.button {
+        //  &.is-login {
+        //    margin-right: 4.8rem;
+        //  }
+        //}
       }
 
       img.logo {
@@ -667,7 +667,7 @@ input {
           font-size: 1rem;
 
           &.is-login {
-            margin-right: 1.75rem;
+            margin-right: 1rem;
           }
 
           &.is-join {

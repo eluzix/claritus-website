@@ -1,7 +1,7 @@
 {{ define "content" }}
 <div class="landing-page home">
-    {{ partial "header.html" . }}
-    {{ partial "menu-lp.html" }}
+    {{ partial "nav.html" . }}
+    {{ partial "menu.html" }}
 
     <section class="section hero">
         <div class="centered">
@@ -55,8 +55,8 @@
             <div class="block-text">
                 <div>
                     <h3>A Beacon in the Dark</h3>
-                    <p class="beacon-text">Claritus lets you access, track, and be in full control of your portfolio - all from ONE convenient interface. In a choppy sea of apps, services, and spreadsheets, Claritus is your beacon in the dark.</p>
-                    <p class="is-green beacon-caption">Simple, user-friendly, intuitive.</p>
+                    <p class="beacon-text is-regular-text">Claritus lets you access, track, and be in full control of your portfolio - all from ONE convenient interface. In a choppy sea of apps, services, and spreadsheets, Claritus is your beacon in the dark.</p>
+                    <p class="is-green beacon-caption is-regular-text">Simple, user-friendly, intuitive.</p>
                     <a class="button is-green is-full is-wide is-higher try-button"
                         href="{{ .Site.Params.appUrl }}/on-boarding" title="Try Claritus for Free">
                         Try <img src="/images/logo-white-beta.svg" class="icon-logo"> for Free
@@ -127,7 +127,7 @@
                     <img src="/images/icon-quotation.svg" class="quotation"/>
                     <p class="testimonial-text">fantastic! The app is really well designed, loads very fast and I really appreciate the subtle details that have been included. I'm very happy to have found it.</p>
                     <div class="testimonial-author">
-                        <img src="/images/person.png"/>
+<!--                        <img src="/images/person.png"/>-->
                         <span>Justin L.</span>
                     </div>
                 </div>
@@ -135,7 +135,7 @@
                     <img src="/images/icon-quotation.svg" class="quotation"/>
                     <p class="testimonial-text">I will really enjoy using Claritus to keep track of all my assets and liabilities.</p>
                     <div class="testimonial-author">
-                        <img src="/images/person.png"/>
+<!--                        <img src="/images/person.png"/>-->
                         <span>Andres S.</span>
                     </div>
                 </div>
@@ -143,7 +143,7 @@
                     <img src="/images/icon-quotation.svg" class="quotation"/>
                     <p class="testimonial-text">I'm psyched to lean into Claritus as my primary tool and replace my old spreadsheet.</p>
                     <div class="testimonial-author">
-                        <img src="/images/person.png"/>
+<!--                        <img src="/images/person.png"/>-->
                         <span>Andy P.</span>
                     </div>
                 </div>

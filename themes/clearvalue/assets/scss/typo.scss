@@ -61,6 +61,26 @@
   }
 }
 
+.is-h4 {
+  font-weight: 600;
+  font-size: 1.78rem;
+  line-height: 180%;
+
+  //@media screen and (max-width: 1280px) {
+  //  font-size: 2rem;
+  //}
+
+  @include tablet-only {
+    font-size: 1.28rem;
+    line-height: 140%;
+  }
+
+  @include mobile {
+    font-size: 1.14rem;
+    line-height: 140%;
+  }
+}
+
 .is-regular-text {
   font-weight: normal;
   font-size: 1.57rem;

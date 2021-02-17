@@ -20,8 +20,8 @@
                 <ul class="values-items">
                     {{ range .Params.values_list }}
                         <li>
-                            <h2 class="is-green">{{ .title }}</h2>
-                            <p>{{ .body | safeHTML}}</p>
+                            <h4 class="is-h4 is-green">{{ .title }}</h4>
+                            <p class="is-regular-text">{{ .body | safeHTML}}</p>
                         </li>
                     {{ end }}
                 </ul>
