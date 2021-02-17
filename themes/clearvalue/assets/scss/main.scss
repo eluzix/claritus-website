@@ -771,12 +771,12 @@ input {
     display: initial;
   }
 
-  //.header.menu-open {
-  //  background-color: transparent;
-  //  .nav > a {
-  //    visibility: hidden;
-  //  }
-  //}
+  .header.white-header.menu-open {
+    background-color: $white;
+    //.nav > a {
+    //  visibility: hidden;
+    //}
+  }
 
   .footer {
     min-height: 37.143rem;
