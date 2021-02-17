@@ -29,3 +29,19 @@
 {{ end }}
 
 {{ define "title" }}{{ .Title }}{{ end }}
+{{ define "StructData" }}
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "image": "https://claritus.io{{ .Params.thumbnail }}",
+        "url": "{{ .Permalink }}",
+        "headline": "{{ .Title }}",
+        "datePublished": "{{ .Params.publishDate }}",
+        "inLanguage": "en-US",
+        "isFamilyFriendly": "true",
+        "mainEntityOfPage": "True",
+        "publisher": {{ $.Site.Data.structuredOrganization }}
+    }
+</script>
+{{ end }}
