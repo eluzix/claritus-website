@@ -17,8 +17,6 @@ Securities portfolios can be either managed by you or managed by others for you.
 
 Aside from that, a **securities portfolio is dynamic** and has some changes from time to time, in regards to buying and selling securities, so they have the potential to change quite frequently.
 
-![](/uploads/nurture_grow_compressed.gif)
-
 Practically, the most efficient way to track a securities portfolio is to link Claritus to your financial account, where your portfolio is held, to do the job for you, and to “keep an eye” on your portfolio state, holdings, transactions, and dividends. This will enable you to easily track your portfolio in a consistent, and comprehensive way.
 
 It might be that you prefer not to link Claritus to your financial account, where your securities portfolio is held (or we simply don’t support this financial institute yet, apologies…we’re working on it..)
