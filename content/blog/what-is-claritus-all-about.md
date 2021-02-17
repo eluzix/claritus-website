@@ -8,7 +8,7 @@ content_class: blog-post
 header_class: white-header
 thumbnail: "/uploads/what-is-claritus-all-about.png"
 summary: Claritus’ mission is to bring financial peace of mind to those people who
-  have investments and assets on top of their day to day finances.
+  have investments and assets on top of their day to day finances. Read more.
 
 ---
 ![](/uploads/what-is-claritus-all-about.png)
