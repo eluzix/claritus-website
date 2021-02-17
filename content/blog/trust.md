@@ -10,6 +10,8 @@ header_class: white-header
 thumbnail: "/uploads/trust.jpg"
 
 ---
+![](/uploads/trust.jpg)
+
 We know when talking about your wealth and private financial state that trust plays a major role for you.
 Well, trust is something built with time, and it’s our obligation to gain yours and prove to you from the very beginning and all along the way that you can trust us.
 
