@@ -1,14 +1,14 @@
 ---
-title: "What is Claritus Minimal Securities Portfolio?"
-description: "We know you want to track and be updated, among other assets, also on a particular securities’ portfolio."
-date: 2021-02-14T10:31:01+03:00
-publishDate: 2021-02-14T10:31:01+03:00
-type: blog
+title: What is Claritus Minimal Securities Portfolio?
+description: We know you want to track and be updated, among other assets, also on
+  a particular securities’ portfolio.
+date: 2021-02-14T10:31:01.000+03:00
+publishDate: 2021-02-14T10:31:01.000+03:00
 content_class: blog-post
 header_class: white-header
-thumbnail: /images/thumbnail3.jpg
----
+thumbnail: "/images/thumbnail3.jpg"
 
+---
 We know you want to track and be updated, among other assets, also on a particular securities’ portfolio.
 
 Securities portfolios can be either managed by you or managed by others for you. Some may call this type of management discretionarily, managed account, etc.
@@ -16,6 +16,8 @@ Securities portfolios can be either managed by you or managed by others for you.
 **Securities portfolios may consist of various securities holdings**, they can consist of a few or consist of tens or even hundreds of different securities.
 
 Aside from that, a **securities portfolio is dynamic** and has some changes from time to time, in regards to buying and selling securities, so they have the potential to change quite frequently.
+
+![](/uploads/nurture_grow_compressed.gif)
 
 Practically, the most efficient way to track a securities portfolio is to link Claritus to your financial account, where your portfolio is held, to do the job for you, and to “keep an eye” on your portfolio state, holdings, transactions, and dividends. This will enable you to easily track your portfolio in a consistent, and comprehensive way.
 
@@ -37,10 +39,6 @@ So, what does it support? Well, it supports the **total value** of all your secu
 
 These 4 events: **Portfolio Value**, **Deposit**, **Withdrawal**, and **Dividend** are the only events that are necessary to keep tracking the portfolio performance without knowing what is in it exactly.
 
-
 The  ‘Minimal Securities portfolio’ was designed to capture fewer details, but still be able to calculate your financial returns in a  specific securities portfolio, and be part of all financial calculations that this specific securities portfolio includes.  Such as, calculating your entire net worth, calculating all of your securities portfolios together, and building your historical portfolio view and more.
 
-
 Your financial peace of mind is our mission
-
-
