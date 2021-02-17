@@ -1,4 +1,4 @@
-.landing-page {
+.home {
   background: $dark-blue;
   width: 100vw;
 
@@ -184,7 +184,7 @@
       .section-info {
         .block-image {
           box-shadow: 0px 108.622px 86.8976px rgba(42, 50, 87, 0.05), 0px 39.8261px 36.3037px rgba(42, 50, 87, 0.02), 0px 18.9939px 19.4097px rgba(42, 50, 87, 0.013), 0px 9.43317px 10.8809px rgba(42, 50, 87, 0.008), 0px 4.32611px 5.77878px rgba(42, 50, 87, 0.00663327), 0px 1.49625px 2.40468px rgba(42, 50, 87, 0.0041531);
-          border-radius: 20px;
+          border-radius: 1.428rem;
           padding: 2.5rem;
         }
       }
@@ -326,17 +326,23 @@
     &.section-daterange {
       .section-info {
         .block-image {
+          box-shadow: 0px 8px 35px 5px rgba(0, 0, 0, 0.05);
+          border-radius: 1.428rem;
+
           margin-right: 2rem;
-          margin-top: 3.25rem;
+          margin-top: 1.25rem;
 
           img {
+            width: 100%;
             border-radius: 1.428rem;
           }
         }
 
         .block-text {
           margin: 0 auto;
-
+          display: flex;
+          align-items: center;
+          
           h3 {
             margin-bottom: 1.5rem;
           }
@@ -448,7 +454,7 @@
 }
 
 @media screen and (max-width: $fullhd) {
-  .landing-page {
+  .home {
     .section {
       .join-button {
         max-width: 17.85rem;
@@ -706,7 +712,7 @@
 }
 
 @media screen and (max-width: $widescreen) {
-  .landing-page {
+  .home {
     .section {
       .centered {
         max-width: none;
@@ -1066,8 +1072,17 @@
   }
 }
 
+@include desktop {
+  .home {
+    .section {
+      padding-left: 5.71rem!important;
+      padding-right: 5.71rem!important;
+    }
+  }
+}
+
 @include mobile {
-  .landing-page {
+  .home {
     .section {
       flex-direction: column;
       position: relative;

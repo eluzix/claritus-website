@@ -109,25 +109,25 @@
     }
 
     h1.page-title {
-      font-weight: 600;
-      font-size: 5.14rem;
-      line-height: 120%;
+      //font-weight: 600;
+      //font-size: 5.14rem;
+      //line-height: 120%;
       margin-bottom: 5rem;
       color: $white;
     }
 
     h2 {
-      font-weight: 500;
-      font-size: 2.42rem;
-      line-height: 150%;
+      //font-weight: 500;
+      //font-size: 2.42rem;
+      //line-height: 150%;
       color: $white;
       margin-bottom: 1.42rem;
     }
 
     p {
-      font-weight: normal;
-      font-size: 1.57rem;
-      line-height: 180%;
+      //font-weight: normal;
+      //font-size: 1.57rem;
+      //line-height: 180%;
       color: $lighter-grey;
       max-width: 40.1rem;
     }
@@ -135,6 +135,10 @@
     &.stretched-image {
       padding-bottom: 0;
       margin-top: -$header-height-desktop;
+      min-height: auto;
+      max-height: 100vh;
+      //height: calc(57.14rem + 6.143rem);
+      height: 100vh;
 
       .hero-right {
         background-repeat: no-repeat;
@@ -151,7 +155,7 @@
       }
 
       h1 {
-        font-size: 4.57rem;
+        //font-size: 4.57rem;
         margin-bottom: 4.28rem;
       }
     }
@@ -247,17 +251,17 @@
       }
 
       h1.page-title {
-        font-size: 4rem;
+        //font-size: 4rem;
         margin-bottom: 3.57rem;
       }
 
       h2 {
-        font-size: 2rem;
+        //font-size: 2rem;
         margin-bottom: 0.71rem;
       }
 
       p {
-        font-size: 1.28rem;
+        //font-size: 1.28rem;
         max-width: 32rem;
       }
 
@@ -325,17 +329,17 @@
       }
 
       h1.page-title {
-        font-size: 2.85rem;
+        //font-size: 2.85rem;
         margin-bottom: 3.57rem;
       }
 
       h2 {
-        font-size: 1.71rem;
+        //font-size: 1.71rem;
         margin-bottom: 0.71rem;
       }
 
       p {
-        font-size: 1.14rem;
+        //font-size: 1.14rem;
         max-width: 32rem;
       }
 
@@ -471,19 +475,19 @@
       }
 
       h1.page-title {
-        font-size: 2.57rem;
+        //font-size: 2.57rem;
         margin-bottom: 3.57rem;
       }
 
       h2 {
-        font-size: 1.57rem;
+        //font-size: 1.57rem;
         margin-bottom: 0.71rem;
       }
 
-      p {
-        font-size: 1rem;
+      //p {
+        //font-size: 1rem;
         //max-width: 32rem;
-      }
+      //}
 
       &.stretched-image {
         .hero-right {

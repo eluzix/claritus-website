@@ -7,6 +7,8 @@
 @import "../bulma/sass/grid/columns";
 @import "../bulma/sass/elements/button";
 
+@import "typo";
+
 html {
   font-size: 14px;
 }
@@ -364,7 +366,11 @@ input {
         font-size: 1.286rem;
 
         &.is-login {
-          margin-right: 4.5rem;
+          margin-right: 1.75rem;
+        }
+
+        &:focus {
+          box-shadow: none;
         }
       }
 
