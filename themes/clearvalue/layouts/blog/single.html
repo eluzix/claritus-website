@@ -13,7 +13,7 @@
             <h1 class="title" title="{{ .Title }}">{{ .Title }}</h1>
 
             <article>
-                {{ .Content }}
+                {{ .Content | safeHTML }}
             </article>
         </div>
     </section>

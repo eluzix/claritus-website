@@ -5,8 +5,8 @@ heroText: Finally, a 360° view of your portfolio that lets you track, understan
 heroImg: /images/section-hero.png
 
 section1Title: Clear & Concise
-section1Text: At Claritus, we believe that everyone should have a clear, and understandable view of their assets and investments - without requiring a Master’s degree in Finance!
-section1Img: /images/video.png
+section1Text: At Claritus, we believe that you should have a clear, and understandable view of your assets and investments - without requiring a Master’s degree in Finance!
+section1Img: /images/clear-concise.svg
 
 section2Title: Privacy and Security Guaranteed
 section2Text: We know your privacy and security are of the utmost importance to you, which is why we are committed to the highest standards of data security and encryption. With Claritus, you know your data is <span class="is-underline">for your eyes only</span>.

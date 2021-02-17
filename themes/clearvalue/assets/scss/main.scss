@@ -427,9 +427,9 @@ input {
     background-color: $dark-blue;
     z-index: 600;
 
-    .nav > a {
-      visibility: hidden;
-    }
+    //.nav > a {
+    //  visibility: hidden;
+    //}
 
     .nav .links {
       z-index: 600;

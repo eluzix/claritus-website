@@ -143,18 +143,18 @@
           height: 100%;
           max-height: 35.714rem;
 
-          &:before {
-            display: block;
-            position: absolute;
-            content: '';
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 7.143rem;
-            height: 7.143rem;
-            border-radius: 50%;
-            background: $white url("/images/play.svg") no-repeat 54%;
-          }
+          //&:before {
+          //  display: block;
+          //  position: absolute;
+          //  content: '';
+          //  top: 50%;
+          //  left: 50%;
+          //  transform: translate(-50%, -50%);
+          //  width: 7.143rem;
+          //  height: 7.143rem;
+          //  border-radius: 50%;
+          //  background: $white url("/images/play.svg") no-repeat 54%;
+          //}
 
           img {
             background: linear-gradient(0deg, rgba(53, 61, 79, 0.5), rgba(53, 61, 79, 0.5));
