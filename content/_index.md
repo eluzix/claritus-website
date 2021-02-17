@@ -2,7 +2,7 @@
 title: A Simple Way to Keep <br/> Track of <span class="is-green">Your Portfolio</span>
 date: 2020-01-01T09:30:01+03:00
 heroText: Finally, a 360° view of your portfolio that lets you track, understand, and be in complete control of all of your assets and investments - all in one place!
-heroImg: /images/logo-white-beta.svg
+heroImg: /images/section-hero.png
 
 section1Title: Clear & Concise
 section1Text: At Claritus, we believe that everyone should have a clear, and understandable view of their assets and investments - without requiring a Master’s degree in Finance!

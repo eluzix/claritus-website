@@ -11,10 +11,10 @@
             <p class="hero-text">{{ .Params.heroText | safeHTML }}</p>
             <a class="button is-green is-full is-wide is-higher try-button"
                href="{{ .Site.Params.appUrl }}/on-boarding">
-                Try <img src="{{ .Params.heroImg }}" class="icon-logo"> for Free
+                Try <img src="/images/logo-white-beta.svg" class="icon-logo"> for Free
             </a>
 
-            <img src="/images/section-hero.png"/>
+            <img src="{{ .Params.heroImg }}"/>
         </div>
     </section>
 
