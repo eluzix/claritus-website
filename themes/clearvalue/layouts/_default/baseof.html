@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <base href="{{ .Site.BaseURL }}">
-    <title>{{ if .Params.MetaTitle }}{{ .Params.MetaTitle }}{{ else if .Params.Title}}{{ .Params.Title }}{{ else }}{{ block "title" . }}{{ .Site.Title }}{{ end }}{{ end }}</title>
+    <title>{{ if .Params.MetaTitle }}{{ .Params.MetaTitle | plainify }}{{ else if .Params.Title}}{{ .Params.Title | plainify }}{{ else }}{{ block "title" . }}{{ .Site.Title | plainify }}{{ end }}{{ end }}</title>
     {{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
     <meta name="description" content="{{ if .Params.Description }}{{ .Params.Description }}{{ else }}{{ .Site.Params.Description }}{{ end }}"/>
 <!--    {{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}-->
