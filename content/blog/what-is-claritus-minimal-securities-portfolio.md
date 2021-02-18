@@ -7,6 +7,8 @@ publishDate: 2021-02-14T10:31:01.000+03:00
 content_class: blog-post
 header_class: white-header
 thumbnail: "/images/thumbnail3.jpg"
+summary: A ‘Minimal Securities Portfolio’ was designed for manual work and as such,
+  our aim was for minimal work and maximum value.
 
 ---
 We know you want to track and be updated, among other assets, also on a particular securities’ portfolio.
@@ -16,8 +18,6 @@ Securities portfolios can be either managed by you or managed by others for you.
 **Securities portfolios may consist of various securities holdings**, they can consist of a few or consist of tens or even hundreds of different securities.
 
 Aside from that, a **securities portfolio is dynamic** and has some changes from time to time, in regards to buying and selling securities, so they have the potential to change quite frequently.
-
-![](/uploads/nurture_grow_compressed.gif)
 
 Practically, the most efficient way to track a securities portfolio is to link Claritus to your financial account, where your portfolio is held, to do the job for you, and to “keep an eye” on your portfolio state, holdings, transactions, and dividends. This will enable you to easily track your portfolio in a consistent, and comprehensive way.
 

@@ -1,13 +1,16 @@
 ---
-title: "Trust"
-description: "Trust is something built with time, and it’s our obligation to gain yours and prove to you from the very beginning and all along the way that you can trust us."
-date: 2021-02-14T10:30:01+03:00
-publishDate: 2021-02-14T10:30:01+03:00
-type: blog
+title: Trust
+description: Trust is something built with time, and it’s our obligation to gain yours
+  and prove to you from the very beginning and all along the way that you can trust
+  us.
+date: 2021-02-14T10:30:01.000+03:00
+publishDate: 2021-02-14T10:30:01.000+03:00
 content_class: blog-post
 header_class: white-header
-thumbnail: /images/thumbnail2.jpg
+thumbnail: "/uploads/trust.jpg"
+
 ---
+![](/uploads/trust.jpg)
 
 We know when talking about your wealth and private financial state that trust plays a major role for you.
 Well, trust is something built with time, and it’s our obligation to gain yours and prove to you from the very beginning and all along the way that you can trust us.
@@ -33,4 +36,3 @@ We take data security very seriously and welcome feedback of every kind. If you 
 We know this is our basic obligation and we are committed to your safety.
 
 Your financial peace of mind is our mission.
-
