@@ -22,8 +22,8 @@
   }
 
   .hero.stretched-image {
-    //min-height: calc(57.14rem + 6.143rem);
-    //height: calc(57.14rem + 6.143rem);
+    min-height: calc(57.14rem + 6.143rem);
+    height: calc(57.14rem + 6.143rem);
     
     .hero-right {
       background-image: url("/images/our-story.jpg");
@@ -55,6 +55,7 @@
 }
 
 @media screen and (max-width: $fullhd) {
+  
   .our-story {
     .container {
       max-width: 52.5rem;
@@ -68,19 +69,6 @@
         line-height: 120%;
       }
     }
-
-    //.hero {
-    //  min-height: 42.857rem;
-    //  background-image: url("/images/our-story-small.png");
-    //
-    //  .hero-left {
-    //    p {
-    //      max-width: 33rem;
-    //      font-size: 2rem;
-    //      transform: translateX(-2px);
-    //    }
-    //  }
-    //}
 
     .story-text {
       padding: 8.5rem 0 3.25rem;
