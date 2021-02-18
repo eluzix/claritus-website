@@ -354,6 +354,20 @@
   }
 }
 
+@include tablet-only {
+  .privacy {
+    .container {
+      max-width: unset;
+      padding-left: 8rem!important;
+      padding-right: 8rem!important;
+    }
+
+    .heading .page-title {
+      padding-left: 0;
+    }
+  }
+}
+
 @include mobile {
   .is-broken-mobile {
     word-break: break-all;

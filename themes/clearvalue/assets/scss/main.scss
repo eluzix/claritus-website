@@ -635,7 +635,7 @@ input {
 
   .footer {
     min-height: 13.714rem;
-    padding: 2.35rem 6.1rem 0;
+    padding: 2.35rem 6rem 0;
 
     .links-block {
       flex-wrap: wrap;
@@ -677,6 +677,15 @@ input {
       }
     }
   }
+}
+
+@include desktop {
+
+  .header .nav .links .button.is-join {
+    padding-left: 2.14rem!important;
+    padding-right: 2.14rem!important;
+  }
+
 }
 
 @include touch {

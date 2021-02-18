@@ -133,8 +133,16 @@
 }
 
 @include tablet-only {
-  .our-story .hero.stretched-image {
-    height: 50rem;
+  .our-story {
+    .container {
+      max-width: unset;
+      padding-left: 8rem!important;
+      padding-right: 8rem!important;
+    }
+
+    .hero.stretched-image {
+      height: 50rem;
+    }
   }
 }
 

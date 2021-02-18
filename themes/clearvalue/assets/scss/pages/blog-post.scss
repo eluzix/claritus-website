@@ -254,7 +254,9 @@
 @media screen and (max-width: $desktop) {
   .blog-post {
     .container {
-      max-width: 34.5rem;
+      max-width: unset;
+      padding-left: 8rem!important;
+      padding-right: 8rem!important;
     }
 
     .back-link {

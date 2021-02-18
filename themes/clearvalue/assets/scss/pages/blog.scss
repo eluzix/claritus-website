@@ -167,8 +167,15 @@
       }
     }
 
+    .columns {
+      margin-right: 0;
+      margin-left: 0;
+    }
+
     .container {
-      width: 43.57rem;
+      width: auto;
+      padding-left: 6.93rem!important;
+      padding-right: 6.93rem!important;
     }
 
     .post-card {

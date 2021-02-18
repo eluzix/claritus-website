@@ -385,8 +385,19 @@
 
 @include tablet-only {
   .about-us {
-    .container.is-small {
-      max-width: 34.75rem;
+    .container.is-small, .container.is-medium {
+      max-width: unset;
+      padding-left: 8rem!important;
+      padding-right: 8rem!important;
+    }
+
+    .about-pages .pages-overview {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .about-pages .pages-overview>div>div {
+      margin-bottom: 1.42rem;
     }
   }
 }

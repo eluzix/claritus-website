@@ -114,7 +114,9 @@
 @include tablet-only {
   .core-values {
     .container {
-      max-width: 34.75rem;
+      max-width: unset;
+      padding-left: 8rem!important;
+      padding-right: 8rem!important;
     }
     
     .hero.stretched-image {
