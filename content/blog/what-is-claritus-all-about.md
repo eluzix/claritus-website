@@ -6,12 +6,13 @@ date: 2021-02-17T10:31:01.000+03:00
 publishDate: 2021-02-17T10:31:01.000+03:00
 content_class: blog-post
 header_class: white-header
-thumbnail: "/uploads/what-is-claritus-all-about.png"
-summary: Claritus’ mission is to bring financial peace of mind to those people who
-  have investments and assets on top of their day to day finances. Read more.
+thumbnail: "/uploads/cover-1.jpg"
+summary: We believe financial awareness is a major and important need for each person
+  in the modern world. Each and every person should have financial awareness in accordance
+  to his or her financial state.
 
 ---
-![](/uploads/what-is-claritus-all-about.png)
+![](/uploads/cover-1.jpg)
 
 Claritus’ mission is to bring financial peace of mind to those people who have investments and assets on top of their day to day finances.
 
