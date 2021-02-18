@@ -331,6 +331,10 @@ input {
   background-image: url(/images/icon-close.svg);
   width: 28px;
   height: 28px;
+
+  &.is-white {
+    background-image: url(/images/icon-close-white.svg);
+  }
 }
 
 .header {

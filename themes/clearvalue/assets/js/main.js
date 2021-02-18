@@ -316,6 +316,8 @@ const app = {
                 });
             }
         };
+
+        openButtons[0].click()
     },
 
     validateForm(modal) {

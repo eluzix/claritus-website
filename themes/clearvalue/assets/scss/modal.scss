@@ -22,9 +22,10 @@
 .contact-us {
   color: $primary;
   z-index: 1000;
+  color: $white;
 
   .modal-content {
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: $dark-blue;
     padding: 20px;
     width: 100%;
     height: 100%;
@@ -52,10 +53,14 @@
       min-height: 27.5rem;
     }
 
-    h2 {
-      font-weight: 500;
-      font-size: 4rem;
-      line-height: 130%;
+    //h2 {
+    //  font-weight: 500;
+    //  font-size: 4rem;
+    //  line-height: 130%;
+    //}
+
+    .is-h2 {
+      margin-bottom: 1.42rem;
     }
 
     h3 {
@@ -64,10 +69,11 @@
     }
 
     p {
-      font-size: 1.375rem;
-      line-height: 180%;
-
-      margin-bottom: 3.125rem;
+      //font-size: 1.375rem;
+      //line-height: 180%;
+      max-width: 40rem;
+      
+      margin-bottom: 3.57rem;
     }
 
     input {
@@ -76,9 +82,10 @@
       border: 1px solid #D3D3D3;
       box-sizing: border-box;
       border-radius: 47px;
-      color: #676E80;
+      color: $lighter-grey;
       padding: 0 2.188rem;
       margin-bottom: 2.188rem;
+      background-color: $dark-blue;
     }
 
     textarea {
@@ -89,7 +96,8 @@
       border-radius: 30px;
       resize: none;
       padding: 2.125rem;
-      color: #676E80;
+      color: $lighter-grey;
+      background-color: $dark-blue;
     }
 
     input, textarea {
@@ -137,7 +145,7 @@
 
     .control {
       position: relative;
-      max-width: 26.125rem;
+      max-width: 32.85rem;
       text-align: center;
       box-sizing: border-box;
       clear: both;
@@ -159,6 +167,15 @@
     font-size: 0.75rem;
     margin-top: 0.5rem;
     line-height: 1rem;
+
+    a {
+      color: $lighter-grey;
+      text-decoration: underline;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
   }
 }
 
