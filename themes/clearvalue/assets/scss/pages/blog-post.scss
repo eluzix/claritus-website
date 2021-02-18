@@ -354,6 +354,12 @@
 
 @include mobile {
   .blog-post {
+    .container {
+      max-width: unset;
+      padding-left: 1.71rem!important;
+      padding-right: 1.71rem!important;
+    }
+
     .back-link {
       font-size: 0.857rem;
       padding-left: 2.9rem;
