@@ -52,31 +52,27 @@
       .post-thumbnail {
         height: 17.857rem;
         overflow: hidden;
-        margin-bottom: 2.85rem;
-    
+
         img {
           width: 100%;
           height: 100%;
           object-fit: cover;
         }
       }
-
-      .post-title {
-        margin-bottom: 1.85rem;
-      }
     }
   }
 
   .post-thumbnail {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
 
   .post-title {
+    display: inline-block;
     color: $dark;
     font-weight: 500;
     font-size: 2.428rem;
     line-height: 151%;
-    margin-bottom: 2.2rem;
+    margin-bottom: 1rem;
   }
 
   .post-excerpt {
@@ -131,13 +127,6 @@
   }
 }
 
-//@media screen and (max-width: $fullhd) {
-//
-//}
-//
-//@media screen and (max-width: $widescreen) {
-//
-//}
 
 @media screen and (max-width: 1280px) {
   .blog {

@@ -16,20 +16,20 @@
                 {{ range first 1 $paginator.Pages }}
                 <article class="post-card column is-full">
                     <div class="post-thumbnail">
-                        <img src="{{ .Params.thumbnail }}" alt="thumbnail">
+                        <a href="{{ .RelPermalink }}" title="Read more - {{ .Title | plainify }}"><img src="{{ .Params.thumbnail }}" alt="thumbnail"></a>
                     </div>
                     <a class="post-title" href="{{ .RelPermalink }}">{{ .Title }}</a>
-                    <p class="post-excerpt">{{ .Summary }}</p>
+                    <p><a class="post-excerpt" href="{{ .RelPermalink }}" title="Read more - {{ .Title | plainify }}">{{ .Summary }}</a></p>
                 </article>
                 {{ end }}
 
                 {{ range after 1 $paginator.Pages }}
                 <article class="post-card column is-half">
                     <div class="post-thumbnail">
-                        <img src="{{ .Params.thumbnail }}" alt="thumbnail">
+                        <a href="{{ .RelPermalink }}" title="Read more - {{ .Title | plainify }}"><img src="{{ .Params.thumbnail }}" alt="thumbnail"></a>
                     </div>
                     <a class="post-title" href="{{ .RelPermalink }}">{{ .Title }}</a>
-<!--                    <p class="post-excerpt">{{ .Summary }}</p>-->
+                    <p><a class="post-excerpt" href="{{ .RelPermalink }}" title="Read more - {{ .Title | plainify }}">{{ .Summary }}</a></p>
                 </article>
                 {{ end }}
             </div>
