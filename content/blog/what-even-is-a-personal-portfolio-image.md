@@ -6,7 +6,7 @@ date: 2021-02-14T10:31:01.000+03:00
 publishDate: 2021-02-14T10:31:01.000+03:00
 content_class: blog-post
 header_class: white-header
-thumbnail: "/images/thumbnail3.jpg"
+thumbnail: "/uploads/wealth_image_2-1.png"
 summary: A personal portfolio image contains, in a nutshell, all of your assets and
   all of your liabilities.
 
@@ -14,6 +14,8 @@ summary: A personal portfolio image contains, in a nutshell, all of your assets 
 To some, this may sound like a simple question, however, here at Claritus  we think we should take a few minutes to really dig into this topic and map out the various aspects of  a personal portfolio image.
 
 A personal portfolio image contains, in a nutshell, all of your assets and all of your liabilities.
+
+![](/uploads/wealth_image-1.png)
 
 For example, imagine you wrote down all your assets and liabilities   on a piece of paper. You would have created a list outlining your overall current financial holdings and obligations. Question is that a portfolio image? The answer is yes, and this would be the most narrow, simple, and flat way to describe a  portfolio.
 
@@ -27,7 +29,9 @@ Could  you measure your overall portfolio decisions made over time?...
 
 A portfolio image includes dozens if not hundreds of questions and math calculations that go beyond the flat paper list. These are relevant and necessary for nurturing your portfolio in a responsible, smart, fact-oriented way.
 
-Here at Claritus, we believe that your personal portfolio image should be updated for you automatically, as  often  as possible, and without the need to ‘rewrite’ it over and over again. 
+Here at Claritus, we believe that your personal portfolio image should be updated for you automatically, as  often  as possible, and without the need to ‘rewrite’ it over and over again.
+
+![](/uploads/wealth_image_2-1.png)
 
 We believe it would be useful for you to be able to see  your portfolio image whenever you wish, or when it crosses your mind .
 
