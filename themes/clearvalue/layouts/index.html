@@ -220,3 +220,13 @@
     {{ partial "footer.html" . }}
 </div>
 {{ end }}
+{{ define "StructData" }}
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "url": "https://claritus.io",
+        "logo": "https://claritus.io/images/logo-black.svg"
+    }
+</script>
+{{ end }}
