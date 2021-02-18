@@ -19,7 +19,7 @@ A personal portfolio image contains, in a nutshell, all of your assets and all o
 
 ![](/uploads/wealth_image_2-1-1.png)
 
-For example, imagine you wrote down all your assets and liabilities   on a piece of paper. You would have created a list outlining your overall current financial holdings and obligations. Question is that a portfolio image? The answer is yes, and this would be the most narrow, simple, and flat way to describe a  portfolio.
+For example, imagine you wrote down all your assets and liabilities on a piece of paper. You would have created a list outlining your overall current financial holdings and obligations. Question is that a portfolio image? The answer is yes, and this would be the most narrow, simple, and flat way to describe a  portfolio.
 
 Would this help you with future financial planning? Maybe.
 
