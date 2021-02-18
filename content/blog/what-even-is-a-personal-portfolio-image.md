@@ -17,7 +17,7 @@ To some, this may sound like a simple question, however, here at Claritus  we th
 
 A personal portfolio image contains, in a nutshell, all of your assets and all of your liabilities.
 
-![](/uploads/wealth_image-1.png)
+![](/uploads/wealth_image_2-1-1.png)
 
 For example, imagine you wrote down all your assets and liabilities   on a piece of paper. You would have created a list outlining your overall current financial holdings and obligations. Question is that a portfolio image? The answer is yes, and this would be the most narrow, simple, and flat way to describe a  portfolio.
 
