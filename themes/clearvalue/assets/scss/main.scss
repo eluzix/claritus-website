@@ -317,6 +317,10 @@ input {
   background-image: url(/images/icon-profile.svg);
   width: 24px;
   height: 24px;
+
+  &.is-white {
+    background-image: url(/images/icon-profile-white.svg);
+  }
 }
 
 .icon-email {
@@ -324,6 +328,10 @@ input {
   background-image: url(/images/icon-email.svg);
   width: 24px;
   height: 24px;
+
+  &.is-white {
+    background-image: url(/images/icon-email-white.svg);
+  }
 }
 
 .icon-close-modal {
