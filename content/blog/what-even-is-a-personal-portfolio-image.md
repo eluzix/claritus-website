@@ -31,7 +31,7 @@ A portfolio image includes dozens if not hundreds of questions and math calculat
 
 Here at Claritus, we believe that your personal portfolio image should be updated for you automatically, as  often  as possible, and without the need to ‘rewrite’ it over and over again.
 
-![](/uploads/wealth_image_2-1.png)
+![](/uploads/ezgif-com-gif-maker-5.gif)
 
 We believe it would be useful for you to be able to see  your portfolio image whenever you wish, or when it crosses your mind .
 
