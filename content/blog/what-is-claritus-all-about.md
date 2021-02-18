@@ -6,13 +6,13 @@ date: 2021-02-17T10:31:01.000+03:00
 publishDate: 2021-02-17T10:31:01.000+03:00
 content_class: blog-post
 header_class: white-header
-thumbnail: "/uploads/cover-1.jpg"
+thumbnail: "/uploads/big-hot-air-baloon-idyllic-landscape-with-green-grass-covered-morning-mountains-2-1.png"
 summary: We believe financial awareness is a major and important need for each person
   in the modern world. Each and every person should have financial awareness in accordance
   to his or her financial state.
 
 ---
-![](/uploads/cover-1.jpg)
+![](/uploads/big-hot-air-baloon-idyllic-landscape-with-green-grass-covered-morning-mountains-2-1.png)
 
 Claritus’ mission is to bring financial peace of mind to those people who have investments and assets on top of their day to day finances.
 
