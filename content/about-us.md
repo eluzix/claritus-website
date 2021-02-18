@@ -5,7 +5,7 @@ url: "/about-us"
 type: about-us
 content_class: about-us
 header_class: 
-hero_text: ''
+hero_text: Claritus is a simple-to-use, personal portfolio management solution
 
 ---
 Claritus is a simple-to-use, personal portfolio management solution that allows you to view all of your invested assets in one place. It’s the only service you’ll  need to track, understand, and nurture your wealth.
