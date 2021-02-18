@@ -33,12 +33,12 @@ Using our platform, you will find an easy and intuitive way to visualize all you
 
 As such, we dedicated a tremendous amount of time designing the platform in such a way that it is user friendly, easy to understand and not too intimidating.
 
-By using Claritus, you can easily upload, track and view your wealth all in one place. You can add any type of asset, investment or liability including {{< rawhtml >}}<u>cash accounts</u>, <u>stock portfolios</u>, <u>pension accounts</u>, insurance accounts, <u>real estate</u>, either physical or as RIT and even <u>crypto currencies</u>.{{< /rawhtml >}}
+By using Claritus, you can easily upload, track and view your wealth all in one place. You can add any type of asset, investment or liability including cash accounts, stock portfolios, pension accounts, insurance accounts, real estate, either physical or as RIT and even crypto currencies.
 
-Or maybe, you have {{< rawhtml >}}<u>employee stock ownership plan</u>{{< /rawhtml >}} (or plans)  or have invested in Venture Capital, Private Equity and more - well, you can upload those too.
+Or maybe, you have employee stock ownership plan (or plans) or have invested in Venture Capital, Private Equity and more - well, you can upload those too.
 
 Our assumption was that people work hard to gain financial security and from that point Claritus should assist them in visualizing their overall financial state.
 
-So, if you feel you need an easy to use, trustworthy and discrete companion to assist you in nurturing your wealth, please try our very early service of Claritus.
+So, if you feel you need an easy to use, trustworthy and discreet companion to assist you in nurturing your wealth, please try our very early service of Claritus.
 
-Your financial peace of mind is our mission.
+**Your financial peace of mind is our mission.**
