@@ -8,8 +8,12 @@ publishDate: 2021-02-14T10:31:01.000+03:00
 content_class: blog-post
 header_class: white-header
 thumbnail: "/uploads/value-our-customers.jpg"
+summary: Claritus was born out of a real, authentic and personal need and our overall
+  mission is to bring financial peace of mind to many more people with our platform.
 
 ---
+![](/uploads/value-our-customers.jpg)
+
 If you’re reading this post then you’re probably one of Claritus’ first users, what we call a beta user - or at least thinking of becoming one.
 
 Firstly, we want to thank you for your interest in Claritus. Claritus was born out of a real, authentic and personal need and our overall mission is to bring financial peace of mind to many more people with our platform.
