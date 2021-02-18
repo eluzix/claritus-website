@@ -89,7 +89,7 @@
     background-color: $dark-blue;
     color: $white;
     //min-height: 49.875rem;
-    min-height: calc(100vh - 6.143rem);
+    //min-height: calc(100vh - 6.143rem);
     padding-bottom: 3.57rem;
 
     .hero-left, .hero-right {
@@ -139,6 +139,10 @@
       max-height: 100vh;
       //height: calc(57.14rem + 6.143rem);
       height: 100vh;
+
+      .hero-left {
+        padding-left: 1.7rem;
+      }
 
       .hero-right {
         background-repeat: no-repeat;
@@ -268,6 +272,10 @@
       &.stretched-image {
         margin-top: -$header-height-desktop;
 
+        .hero-left {
+          padding-left: 0;
+        }
+
         .hero-right {
           width: 50%;
         }
@@ -362,7 +370,7 @@
         .hero-right:after {
           transform: rotate(90deg);
           height: 100vw;
-          width: 52%;
+          width: 60%;
         }
 
         h1 {
@@ -455,7 +463,7 @@
       flex-direction: column;
       justify-content: flex-start;
       align-items: center;
-      min-height: calc(100vh - 5.45rem);
+      //min-height: calc(100vh - 5.45rem);
       padding-left: 1.71rem;
       padding-right: 1.71rem;
 
@@ -509,7 +517,7 @@
             height: 100%;
             width: 100%;
             position: absolute;
-            top: 25%;
+            top: 32%;
           }
 
           & > div {

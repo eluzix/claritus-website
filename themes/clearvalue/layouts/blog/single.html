@@ -10,7 +10,7 @@
                 <a href="{{ ref . "blog.md" }}" class="back-link">Back to Claritus Blog</a>
             </div>
 
-            <h1 class="title" title="{{ .Title }}">{{ .Title }}</h1>
+            <h1 class="title is-h2" title="{{ .Title }}">{{ .Title }}</h1>
 
             <article>
                 {{ .Content | safeHTML }}
@@ -19,8 +19,8 @@
     </section>
 
     <section class="post-footer">
-        <div class="container">
-            <h3>Have questions? Comments? Need help? Contact us anytime at <a href="mailto:help@claritus.io" class="link contact-us-link is-green" title="email claritus.io">help@claritus.io</a></h3>
+        <div class="is-centered">
+            <h6 class="is-h4">Need help or have a question? Contact us anytime a <a href="mailto:help@claritus.io" class="link contact-us-link is-green" title="email claritus.io">help@claritus.io</a></h6>
             <a class="button is-green is-full open-contact-us-modal">Contact Us</a>
             <button class="is-hidden-mobile scroll-to-top">Go Up</button>
         </div>
