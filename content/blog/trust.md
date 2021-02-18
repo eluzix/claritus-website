@@ -8,6 +8,9 @@ publishDate: 2021-02-14T10:30:01.000+03:00
 content_class: blog-post
 header_class: white-header
 thumbnail: "/uploads/trust.jpg"
+summary: Trust is something built with time, and it’s our obligation to gain yours
+  and prove to you from the very beginning and all along the way that you can trust
+  us.
 
 ---
 ![](/uploads/trust.jpg)
