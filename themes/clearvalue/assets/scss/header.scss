@@ -1,7 +1,7 @@
 .header {
   position: fixed;
   width: 100vw;
-  height: $header-height;
+  height: $header-height-desktop;
   padding: 1.875rem $desktop-padding;
   background-color: $white;
   z-index: 99;
@@ -118,16 +118,18 @@
 @media screen and (max-width: $desktop) {
   .header {
     padding: 1.875rem $ipad-padding;
+
     .nav {
       padding: 0;
+
       .links {
         .button {
-
           &.is-join {
             max-width: 7.625rem;
           }
         }
       }
+
       &.on-section-1, &.on-section-footer {
         .links {
           .button {
@@ -147,6 +149,12 @@
   }
 }
 
+@include touch {
+  .header {
+    height: $header-height-mobile;
+  }
+}
+
 @include tablet-only {
   .header {
     padding: 1.875rem 3.125rem;
@@ -158,6 +166,7 @@
     //position: unset;
     padding: 1.875rem $mobile-padding;
     background-color: $white!important;
+
     .nav {
       position: relative;
 

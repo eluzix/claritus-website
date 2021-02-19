@@ -17,8 +17,10 @@ $grey-bg: #f5f6f7;
 //$dark-blue: #323947;
 
 $light-grey: #F8F9FB;
+$lighter-grey: #F8F8FB;
 $dark: #495369;
-$green: #21ce99;
+$dark-blue: #353D4F;
+$green: #12B583;
 
 $body-color: $primary;
 $body-background-color: $white;
@@ -38,11 +40,15 @@ $input-shadow: none;
 //$dark-shadow: rgba(0, 0, 0, 0.08);
 //$dark-box-shadow: rgba(0, 0, 0, 0.01);
 
-
 $light-green-gradient: linear-gradient(to top, #40ebb7, #25cf9b);
 $white-grey-gradient: linear-gradient(135deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 20%, white 70%);
 
-$header-height: 5rem;
+$header-height-desktop: 6.143rem;
+$header-height-mobile: 4.143rem;
+
 $desktop-padding: 5rem;
+$desktop-padding-lp: 5.75rem;
 $ipad-padding: 3.175rem;
 $mobile-padding: 1rem;
+
+$fullhd-lp: 1920px;

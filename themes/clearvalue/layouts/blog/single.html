@@ -1,26 +1,47 @@
 {{ define "content" }}
-<div class="content {{ .Params.content_class }} has-navbar-fixed-top">
+<div class="content {{ .Params.content_class }} no-header-scroll">
 
     {{ partial "nav" . }}
     {{ partial "menu.html" }}
 
-    <section class="container is-small">
-        <div>
-            <div>
-                <h1 class="title" title="{{ .Title }}">{{ .Title }}</h1>
-                <article>
-                    {{ .Content }}
-                </article>
+    <section class="post-content">
+        <div class="container">
+            <div class="navigation">
+                <a href="{{ ref . "blog.md" }}" class="back-link">Back to Claritus Blog</a>
             </div>
-        </div>
-        <div class="blog-footer">
-            <h3>Have questions? Comments? Need help?</h3>
-            <h3>Contact us anytime at <a href="mailto:help@claritus.io" class="link contact-us-link is-green" title="email claritus.io">help@claritus.io</a></h3>
 
-            <a class="button is-green is-full is-contact-us has-top-margin-30 open-contact-us-modal">Contact Us</a>
+            <h1 class="title is-h2" title="{{ .Title }}">{{ .Title }}</h1>
+
+            <article>
+                {{ .Content | safeHTML }}
+            </article>
+        </div>
+    </section>
+
+    <section class="post-footer">
+        <div class="is-centered">
+            <h6 class="is-h4">Need help or have a question? Contact us anytime a <a href="mailto:help@claritus.io" class="link contact-us-link is-green" title="email claritus.io">help@claritus.io</a></h6>
+            <a class="button is-green is-full open-contact-us-modal">Contact Us</a>
+            <button class="is-hidden-mobile scroll-to-top">Go Up</button>
         </div>
     </section>
 </div>
 {{ end }}
 
 {{ define "title" }}{{ .Title }}{{ end }}
+{{ define "StructData" }}
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "image": "https://claritus.io{{ .Params.thumbnail }}",
+        "url": "{{ .Permalink }}",
+        "headline": "{{ .Title }}",
+        "datePublished": "{{ .Params.publishDate }}",
+        "inLanguage": "en-US",
+        "isFamilyFriendly": "true",
+        "mainEntityOfPage": "True",
+        "publisher": {{ $.Site.Data.structuredOrganization }}
+    }
+</script>
+{{ end }}

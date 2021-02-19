@@ -1,0 +1,9 @@
+{
+  "@type": "Organization",
+  "name": "Claritus",
+  "email": "help@claritus.io",
+  "logo": {
+    "@type": "ImageObject",
+    "url": "https://claritus.io/images/logo-black.svg"
+  }
+}

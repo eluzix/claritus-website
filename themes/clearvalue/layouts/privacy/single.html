@@ -1,0 +1,24 @@
+{{ define "content" }}
+<div class="content {{ .Params.content_class }} no-header-scroll">
+
+    {{ partial "nav" . }}
+    {{ partial "menu.html" }}
+
+    <section class="heading">
+        <div class="container">
+            <h1 class="page-title" title="{{ .Title }}">{{ .Title }}</h1>
+        </div>
+    </section>
+
+    <section class="terms">
+        <div class="container">
+            <article>
+                {{ .Content }}
+            </article>
+        </div>
+    </section>
+</div>
+{{ end }}
+
+{{ define "title" }}{{ .Title }}{{ end }}
+

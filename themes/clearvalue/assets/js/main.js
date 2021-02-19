@@ -1,58 +1,43 @@
-const sliderIntervalTime = 6000000 // 5sec
+const sliderIntervalTime = 6000 * 1000
 
 const app = {
 
-    glide: null,
-
-    setupSnapScrolling() {
-        try {
-            const observer = new IntersectionObserver((entries) => {
-                const navbar = document.querySelector('header nav.nav')
-
-                entries.forEach((entry) => {
-                    if (entry.intersectionRatio >= 0.05) {
-                        entry.target.classList.add('is-visible')
-                        entry.target.classList.forEach((cls) => {
-                            if (cls.startsWith('section-')) {
-                                navbar.classList.add('on-' + cls)
-                            }
-                        })
-
-                        if (entry.target.classList.contains('section-slider') && app.glide === null) {
-                            app.setupSlider()
-                        }
-
-                    } else {
-                        entry.target.classList.remove('is-visible')
-                        entry.target.classList.forEach((cls) => {
-                            if (cls.startsWith('section-')) {
-                                navbar.classList.remove('on-' + cls)
-                            }
-                        })
-                    }
-                })
-            }, {
-                                                          rootMargin: '0px',
-                                                          threshold: [0.05]
-                                                      })
-
-            const sections = [...document.querySelectorAll('.home section')]
-            sections.forEach((section, index) => {
-                observer.observe(section)
-            })
-        } catch (e) {
-            console.log('[IntersectionObserver] error:', e)
-        }
-    },
-
-    setupSlider() {
-        if (document.querySelector('.home')) {
-            app.glide = new Glide('.glide', {
-                autoplay: 6000,
-                hoverpause: false,
-            }).mount()
-        }
-    },
+    // setupSnapScrolling() {
+    //     try {
+    //         const observer = new IntersectionObserver((entries) => {
+    //             const navbar = document.querySelector('header nav.nav')
+    //
+    //             entries.forEach((entry) => {
+    //                 if (entry.intersectionRatio >= 0.05) {
+    //                     entry.target.classList.add('is-visible')
+    //                     entry.target.classList.forEach((cls) => {
+    //                         if (cls.startsWith('section-')) {
+    //                             navbar.classList.add('on-' + cls)
+    //                         }
+    //                     })
+    //
+    //                 } else {
+    //                     entry.target.classList.remove('is-visible')
+    //                     entry.target.classList.forEach((cls) => {
+    //                         if (cls.startsWith('section-')) {
+    //                             navbar.classList.remove('on-' + cls)
+    //                         }
+    //                     })
+    //                 }
+    //             })
+    //         }, {
+    //                                                       rootMargin: '0px',
+    //                                                       threshold: [0.05]
+    //                                                   })
+    //
+    //         const sections = [...document.querySelectorAll('.home section')]
+    //         sections.forEach((section, index) => {
+    //             observer.observe(section)
+    //         })
+    //     } catch (e) {
+    //         console.log('[IntersectionObserver] error:', e)
+    //     }
+    // },
 
     initMenuOpening() {
         const control = document.getElementById('menu-burger')
@@ -71,30 +56,6 @@ const app = {
         }
     },
 
-    initGoUpButton() {
-
-        if (!app.isMobile()) {
-            let goUpDiv = document.createElement('div');
-            goUpDiv.className = 'go-up';
-            goUpDiv.innerHTML = '<img src="/images/icon-arrow-up.svg"><span>Go Up</span>';
-
-            goUpDiv.onclick = () => {
-                window.scrollTo(0,0);
-            };
-
-            document.body.appendChild(goUpDiv);
-
-            window.addEventListener('scroll', function(e) {
-                let element = document.querySelector('.go-up');
-                if (element && window.scrollY > 20) {
-                    element.classList.add('is-visible')
-                } else if (element){
-                    element.classList.remove('is-visible')
-                }
-            });
-        }
-    },
-
     isMobile: () => {
         let check = false;
         // eslint-disable-next-line
@@ -104,51 +65,22 @@ const app = {
         return check
     },
 
-    homeScrollToPricing() {
-        const isP = document.querySelector('.section-1 a.is-p')
-        if (isP){
-            isP.addEventListener('click', (e) => {
-                e.cancelable = true;
-                e.preventDefault();
-
-                document.querySelector('.home-footer .pricing').scrollIntoView(
-                  {
-                      behavior: 'smooth'
-                  })
-
-                return false
-            })
-        }
-    },
-
-    setupIntercomMessage() {
-        if (window.Intercom) {
-            const elements = document.querySelectorAll('.contact-us-link')
-            for (let i = 0; i < elements.length; i++) {
-                elements[i].addEventListener('click', (e) => {
-                    if (window.Intercom) {
-                        e.cancelable = true;
-                        e.preventDefault();
-                        app.openIntercomMessage()
-                        return false
-                    }
-                })
-            }
-        }
-    },
-
-    openIntercomMessage() {
-        if (window.Intercom) {
-            window.Intercom("showNewMessage");
-            window.setTimeout(() => {
-                const int = document.querySelector('.intercom-messenger-frame')
-                // console.log('>>>>>> int:', int)
-                if (int === null) {
-                    window.location.href = 'mailto:help@claritus.io';
-                }
-            }, 2000)
-        }
-    },
+    // homeScrollToPricing() {
+    //     const isP = document.querySelector('.section-1 a.is-p')
+    //     if (isP){
+    //         isP.addEventListener('click', (e) => {
+    //             e.cancelable = true;
+    //             e.preventDefault();
+    //
+    //             document.querySelector('.home-footer .pricing').scrollIntoView(
+    //               {
+    //                   behavior: 'smooth'
+    //               })
+    //
+    //             return false
+    //         })
+    //     }
+    // },
 
     toggleMenu() {
         const menu = document.getElementById('menu')
@@ -159,8 +91,8 @@ const app = {
         if (menu.classList.contains('menu--active')) {
             menu.classList.toggle('menu--active')
 
+            header.classList.remove('menu-open')
             setTimeout(() => {
-                header.classList.remove('menu-open')
                 burger.classList.remove('is-active')
                 menu.classList.toggle('is-block')
             }, 400)
@@ -171,144 +103,6 @@ const app = {
                 burger.classList.add('is-active')
                 menu.classList.toggle('menu--active')
             }, 200)
-        }
-    },
-
-    initContactUsModal() {
-        let modal = document.getElementById("contact-us-modal");
-
-        if (modal) {
-            let openButtons = document.querySelectorAll('.open-contact-us-modal, .contact-us-link');
-            openButtons.forEach(button => {
-                button.onclick = function(e) {
-                    e.preventDefault()
-                    modal.classList.add('is-active')
-                    // modal.style.display = "block";
-                }
-            });
-
-            let closeBtn = document.getElementById("close-contact-us");
-            closeBtn.onclick = function() {
-                // modal.style.display = "none";
-                modal.classList.remove('is-active')
-
-                let successMessage = modal.querySelector('.form-submit');
-                if (successMessage) {
-                    successMessage.classList.add('is-hidden')
-                }
-
-                let submittedForm = modal.querySelector('.form');
-                if (submittedForm) {
-                    submittedForm.classList.remove('is-hidden')
-                }
-            };
-
-            modal.querySelector('.form').onsubmit = function (e) {
-                e.preventDefault();
-
-                if (app.validateForm(modal)) {
-                    app.submitForm(modal);
-                } else {
-                    if (!app._contactModelValidated){
-                        app._contactModelValidated = true;
-
-                        modal.querySelectorAll('.input').forEach(element => {
-                            element.addEventListener('input', (e) => {
-                                app.validateForm(modal)
-                            })
-                        });
-                    }
-                }
-
-            };
-        }
-
-    },
-
-    validateForm(modal) {
-        let inputsAreValid = true;
-
-        modal.querySelectorAll('.input').forEach(element => {
-            if (!element.value ||
-                (element.type === 'email' && !app.validateEmail(element.value))) {
-                inputsAreValid = false;
-                element.classList.add('is-invalid');
-                element.parentElement.querySelector('.error-message').classList.add('is-active');
-            } else {
-                element.classList.remove('is-invalid');
-                element.parentElement.querySelector('.error-message').classList.remove('is-active')
-            }
-        });
-
-        return inputsAreValid;
-    },
-
-    validateEmail(mail) {
-        if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(mail)) {
-            return (true)
-        }
-        return (false)
-    },
-
-    submitForm(modal) {
-        grecaptcha.ready(function(){
-            grecaptcha.execute('6LeptuEZAAAAAH5olX9oeDX9C2Ck2KG_Dd2zXhKw', {action: 'submit'}).then(function(token) {
-                // Add your logic to submit to your backend server here.
-                let submittedForm = modal.querySelector('.form');
-
-                let url = 'https://nkm2iod3hf.execute-api.us-east-1.amazonaws.com/prod/contact-us';
-                // let url = 'https://29iax1x5e5.execute-api.us-east-1.amazonaws.com/dev/contact-us';
-                let data = {
-                    token: token,
-                    name: submittedForm.querySelector('.input[name=name]').value,
-                    email: submittedForm.querySelector('.input[name=email]').value,
-                    msg: submittedForm.querySelector('.input[name=message]').value,
-                };
-
-                let urlEncodedData = "",
-                    urlEncodedDataPairs = [],
-                    name;
-
-                for( name in data ) {
-                    urlEncodedDataPairs.push( encodeURIComponent( name ) + '=' + encodeURIComponent( data[name] ) );
-                }
-
-                urlEncodedData = urlEncodedDataPairs.join( '&' ).replace( /%20/g, '+' );
-
-                fetch(url,  {
-                    method: 'POST',
-                    mode: 'no-cors',
-                    headers: {
-                        'Content-Type': 'application/x-www-form-urlencoded'
-                    },
-                    body: urlEncodedData
-                }).catch(() => {
-                    //do nothing
-                })
-                
-                app.clearData();
-
-            }).catch((e) => {
-                console.error('grecaptcha error:', e)
-            })
-
-        })
-    },
-
-    clearData() {
-        let modal = document.getElementById("contact-us-modal");
-        let submittedForm = modal.querySelector('.form');
-        submittedForm.querySelector('.input[name=name]').value = '';
-        submittedForm.querySelector('.input[name=email]').value = '';
-        submittedForm.querySelector('.input[name=message]').value = '';
-
-        let successMessage = modal.querySelector('.form-submit.is-hidden');
-        if (successMessage) {
-            successMessage.classList.remove('is-hidden')
-        }
-
-        if (submittedForm) {
-            submittedForm.classList.add('is-hidden')
         }
     },
 
@@ -337,7 +131,7 @@ const app = {
                 if (kv.length > 1) {
                     const k = kv[0].toLowerCase()
                     if (k.startsWith('utm')){
-                         params[k] = decodeURIComponent(kv[1])
+                        params[k] = decodeURIComponent(kv[1])
                     }
                 }
             })
@@ -380,34 +174,294 @@ const app = {
             const apexDomain = document.domain.split('.').reverse().splice(0,2).reverse().join('.');
             document.cookie = `_cv_c=${encodeURIComponent(JSON.stringify(cookie))};path=/;max-age=2592000;domain=${apexDomain}`
         }
-    }
-};
-// function toggleMenu() {
-//     const menu = document.getElementById('menu')
-//
-//     if (menu.classList.contains('menu--active')) {
-//         menu.classList.toggle('menu--active')
-//
-//         setTimeout(() => {
-//             menu.classList.toggle('is-block')
-//         }, 500)
-//     } else {
-//         menu.classList.toggle('is-block')
-//         setTimeout(() => {
-//             menu.classList.toggle('menu--active')
-//         }, 300)
-//
-//     }
-// }
+    },
 
+    isHeaderInViewport(element) {
+        const rect = element.getBoundingClientRect();
+        return (
+          rect.top >= -100
+        );
+    },
+
+    setupSliderTestimonials() {
+        if (document.querySelector('.home')) {
+            let slider = new KeenSlider("#main-slider", {
+                loop: true,
+                created: function (instance) {
+                    let timerId = setInterval(() => {
+                        document
+                        .getElementById("arrow-right").click()
+                    }, sliderIntervalTime);
+                    document
+                    .getElementById("arrow-left")
+                    .addEventListener("click", function () {
+                        instance.prev();
+                    });
+                    document
+                    .getElementById("arrow-left-mobile")
+                    .addEventListener("click", function () {
+                        instance.prev();
+                    });
+
+                    document
+                    .getElementById("arrow-right")
+                    .addEventListener("click", function () {
+                        instance.next();
+                    });
+                    document
+                    .getElementById("arrow-right-mobile")
+                    .addEventListener("click", function () {
+                        instance.next();
+                    });
+                    let dots_wrapper = document.getElementById("dots");
+                    let slides = document.querySelectorAll(".keen-slider__slide");
+
+                    slides.forEach(function (t, idx) {
+                        let dot = document.createElement("button");
+                        dot.classList.add("dot");
+                        dots_wrapper.appendChild(dot);
+                        dot.addEventListener("click", function () {
+                            instance.moveToSlide(idx);
+                        });
+                    });
+                    updateClasses(instance);
+                },
+                slideChanged(instance) {
+                    updateClasses(instance);
+                },
+            });
+        }
+    },
+
+    initScrollTop() {
+        document.querySelectorAll('.scroll-to-top').forEach(item => {
+            item.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' })
+            })
+        })
+    },
+
+    initLazyLoad() {
+        const options = {
+            root: null,
+            rootMargin: "75px 0px",
+            threshold: 0.01,
+        };
+        const imagesCallback = function(entries, observer) {
+            for (let i = 0; i < entries.length; i++) {
+                if (entries[i].intersectionRatio > 0) {
+                    // Stop watching and load the image
+                    observer.unobserve(entries[i].target);
+                    let dataSrc = entries[i].target.dataset.src;
+
+                    if (dataSrc) {
+                        entries[i].target.src = dataSrc; //preload image
+                        delete entries[i].target.dataset.src;
+                    }
+
+                    entries[i].target.classList.remove("lazy-image");
+                }
+            }
+        };
+
+        const images = document.querySelectorAll(".lazy-image[data-src]");
+        const imagesObserver = new IntersectionObserver(imagesCallback, options);
+        for (let i = 0; i < images.length; i++) {
+            imagesObserver.observe(images[i]);
+        }
+    },
+
+    initContactUsModal() {
+        let modal = document.getElementById("contact-us-modal");
+
+        if (!modal) {
+            return;
+        }
+
+        let openButtons = document.querySelectorAll('.open-contact-us-modal, .contact-us-link');
+        openButtons.forEach(button => {
+            button.onclick = function(e) {
+                e.preventDefault();
+                modal.classList.add('is-active');
+            }
+        });
+
+        let closeBtn = document.getElementById("close-contact-us");
+        closeBtn.onclick = function() {
+            modal.classList.remove('is-active')
+
+            let successMessage = modal.querySelector('.form-submit');
+            if (successMessage) {
+                successMessage.classList.add('is-hidden')
+            }
+
+            let submittedForm = modal.querySelector('.form');
+            if (submittedForm) {
+                submittedForm.classList.remove('is-hidden')
+            }
+        };
+
+        modal.querySelector('.form').onsubmit = function (e) {
+            e.preventDefault();
+
+            if (app.validateForm(modal)) {
+                app.submitForm(modal);
+            } else if (!app._contactModelValidated) {
+                app._contactModelValidated = true;
+
+                modal.querySelectorAll('.input').forEach(element => {
+                    element.addEventListener('input', () => {
+                        app.validateForm(modal);
+                    })
+                });
+            }
+        };
+    },
+
+    validateForm(modal) {
+        let inputsAreValid = true;
+
+        modal.querySelectorAll('.input').forEach(element => {
+            if (!element.value ||
+              (element.type === 'email' && !app.validateEmail(element.value))) {
+                inputsAreValid = false;
+                element.classList.add('is-invalid');
+                element.parentElement.querySelector('.error-message').classList.add('is-active');
+            } else {
+                element.classList.remove('is-invalid');
+                element.parentElement.querySelector('.error-message').classList.remove('is-active')
+            }
+        });
+
+        return inputsAreValid;
+    },
+
+    validateEmail(mail) {
+        return /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(mail);
+    },
+
+    submitForm(modal) {
+        grecaptcha.ready(function() {
+            grecaptcha.execute('6LeptuEZAAAAAH5olX9oeDX9C2Ck2KG_Dd2zXhKw', {action: 'submit'}).then(function(token) {
+                // Add your logic to submit to your backend server here.
+                let submittedForm = modal.querySelector('.form');
+
+                let url = 'https://nkm2iod3hf.execute-api.us-east-1.amazonaws.com/prod/contact-us';
+                // let url = 'https://29iax1x5e5.execute-api.us-east-1.amazonaws.com/dev/contact-us';
+                let data = {
+                    token: token,
+                    name: submittedForm.querySelector('.input[name=name]').value,
+                    email: submittedForm.querySelector('.input[name=email]').value,
+                    msg: submittedForm.querySelector('.input[name=message]').value,
+                };
+
+                let urlEncodedData = "",
+                  urlEncodedDataPairs = [],
+                  name;
+
+                for ( name in data ) {
+                    urlEncodedDataPairs.push( encodeURIComponent( name ) + '=' + encodeURIComponent( data[name] ) );
+                }
+
+                urlEncodedData = urlEncodedDataPairs.join( '&' ).replace( /%20/g, '+' );
+
+                fetch(url,  {
+                    method: 'POST',
+                    mode: 'no-cors',
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded'
+                    },
+                    body: urlEncodedData
+                }).catch(() => {
+                    //do nothing
+                })
+
+                app.clearData();
+
+            }).catch((e) => {
+                console.error('grecaptcha error:', e)
+            })
+        })
+    },
+
+    clearData() {
+        let modal = document.getElementById("contact-us-modal");
+        let submittedForm = modal.querySelector('.form');
+        submittedForm.querySelector('.input[name=name]').value = '';
+        submittedForm.querySelector('.input[name=email]').value = '';
+        submittedForm.querySelector('.input[name=message]').value = '';
+
+        let successMessage = modal.querySelector('.form-submit.is-hidden');
+        if (successMessage) {
+            successMessage.classList.remove('is-hidden')
+        }
+
+        if (submittedForm) {
+            submittedForm.classList.add('is-hidden')
+        }
+    },
+};
+
+function updateClasses(instance) {
+    let slide = instance.details().relativeSlide;
+    let arrowLeft = document.getElementById("arrow-left");
+    let arrowLeftMobile = document.getElementById("arrow-left-mobile");
+    let arrowRight = document.getElementById("arrow-right");
+    let arrowRightMobile = document.getElementById("arrow-right-mobile");
+
+    if (slide === 0) {
+        arrowLeft.classList.add("arrow--disabled");
+        arrowLeftMobile.classList.add("arrow--disabled");
+    } else {
+        arrowLeft.classList.remove("arrow--disabled");
+        arrowLeftMobile.classList.remove("arrow--disabled");
+    }
+    if (slide === instance.details().size - 1) {
+        arrowRight.classList.add("arrow--disabled")
+        arrowRightMobile.classList.add("arrow--disabled")
+    } else {
+        arrowRight.classList.remove("arrow--disabled");
+        arrowRightMobile.classList.remove("arrow--disabled");
+    }
+
+    let dots = document.querySelectorAll(".dot");
+    dots.forEach(function(dot, idx) {
+        idx === slide
+          ? dot.classList.add("dot--active")
+          : dot.classList.remove("dot--active");
+    });
+}
+
+function checkHeaderVisibility() {
+    const headerElement = document.querySelector('header');
+    // const landingPageElement = document.querySelector('.landing-page');
+    const landingPageElement = document.querySelector('.root');
+    const noScroll = document.querySelector('.no-header-scroll');
+
+    // if (!headerElement || !landingPageElement) {
+    if (!headerElement || noScroll) {
+        return false;
+    }
+
+    let isVisible = app.isHeaderInViewport(landingPageElement);
+    if (isVisible) {
+        headerElement.classList.remove('white-header');
+        document.querySelector('.header-hidden-height').style.display = 'none';
+    } else {
+        headerElement.classList.add('white-header');
+        document.querySelector('.header-hidden-height').style.display = 'block';
+    }
+}
 
 document.addEventListener('DOMContentLoaded', function () {
+    window.addEventListener("scroll", checkHeaderVisibility, false);
 
-    app.setupSnapScrolling();
+    // app.setupSnapScrolling();
     app.initMenuOpening();
-    app.homeScrollToPricing();
-    // app.setupIntercomMessage();
-    // app.initGoUpButton();
+    // app.homeScrollToPricing();
+    app.setupSliderTestimonials();
+    app.initScrollTop();
+    app.initLazyLoad();
     app.initContactUsModal();
 
     try {
@@ -420,6 +474,5 @@ document.addEventListener('DOMContentLoaded', function () {
         window.Intercom('update', {
             'hide_default_launcher': true
         })
-
     }
 })

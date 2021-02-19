@@ -1,0 +1,43 @@
+{{ define "content" }}
+<div class="content {{ .Params.content_class }} no-header-scroll">
+
+    {{ partial "nav" . }}
+    {{ partial "menu.html" }}
+
+    <section class="heading">
+        <h1 class="page-title" title="{{ .Title }}">{{ .Title }}</h1>
+    </section>
+
+    {{ $paginator := .Paginate (where .Pages.ByPublishDate.Reverse ".Params.hidden" "ne" true) }}
+    <section class="posts">
+        <div class="container">
+            <div class="columns is-multiline">
+
+                {{ range first 1 $paginator.Pages }}
+                <article class="post-card column is-full">
+                    <div class="post-thumbnail">
+                        <a href="{{ .RelPermalink }}" title="Read more - {{ .Title | plainify }}"><img src="{{ .Params.thumbnail }}" alt="thumbnail"></a>
+                    </div>
+                    <a class="post-title" href="{{ .RelPermalink }}">{{ .Title }}</a>
+                    <p><a class="post-excerpt" href="{{ .RelPermalink }}" title="Read more - {{ .Title | plainify }}">{{ .Summary }}</a></p>
+                </article>
+                {{ end }}
+
+                {{ range after 1 $paginator.Pages }}
+                <article class="post-card column is-half">
+                    <div class="post-thumbnail">
+                        <a href="{{ .RelPermalink }}" title="Read more - {{ .Title | plainify }}"><img src="{{ .Params.thumbnail }}" alt="thumbnail"></a>
+                    </div>
+                    <a class="post-title" href="{{ .RelPermalink }}">{{ .Title }}</a>
+                    <p><a class="post-excerpt" href="{{ .RelPermalink }}" title="Read more - {{ .Title | plainify }}">{{ .Summary }}</a></p>
+                </article>
+                {{ end }}
+            </div>
+
+            {{ template "_internal/pagination.html" . }}
+        </div>
+    </section>
+</div>
+{{ end }}
+
+{{ define "title" }}{{ .Title }}{{ end }}

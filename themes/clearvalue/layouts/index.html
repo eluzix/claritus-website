@@ -1,193 +1,232 @@
 {{ define "content" }}
-
-<div class="home">
-    {{ partial "header.html" . }}
+<div class="landing-page home">
+    {{ partial "nav.html" . }}
     {{ partial "menu.html" }}
 
-    <section class="section section-1 is-full-mobile">
-        <div class="centered has-top-padding">
-            <div>
-                <h1 class="has-bottom-margin-50">A Simple Way to Keep Track of Your Wealth</h1>
-                <p class="has-bottom-margin-50">Finally, a 360° view of your assets that lets you track, understand, and be in complete control of your wealth - all in one place!</p>
-                <a class="button is-green is-full is-wide has-bottom-margin-25" href="{{ .Site.Params.appUrl }}/on-boarding">Try it now!</a>
-                <p><a href="#pricing" class="is-small is-p">Try <img class="is-v-middle" src="/images/logo-all-black.svg" alt="Claritus" /> for Free</a></p>
-            </div>
-        </div>
-        <div class="bg-image"></div>
-    </section>
+    <section class="section hero">
+        <div class="centered">
+            <h1 class="hero-title">
+                {{ .Title | safeHTML }}
+            </h1>
+            <p class="hero-text">{{ .Params.heroText | safeHTML }}</p>
+            <a class="button is-green is-full is-wide is-higher try-button"
+               href="{{ .Site.Params.appUrl }}/on-boarding">
+                Try <img src="/images/logo-white-beta.svg" class="icon-logo"> for Free
+            </a>
 
-    <section class="section section-2">
-        <div class="centered has-top-padding">
-            <div>
-                <h2 class="has-bottom-margin-50">A clear view of your assets</h2>
-                <p>At Claritus, we believe that EVERYONE should have a clear, understandable view of their wealth -
-                    without requiring a Master’s degree in Finance!</p>
-            </div>
-        </div>
-        <div class="bg-image"></div>
-    </section>
-
-    <section class="section section-3 is-full-mobile">
-        <div class="bg-image"></div>
-
-        <div class="centered has-top-padding is-left-mobile">
-            <div>
-                <h2 class="has-bottom-margin-50">A beacon in the dark</h2>
-                <p class="has-bottom-margin-50">Claritus lets you access, track, and be in full control of your finances from ONE convenient interface. In a choppy sea of apps, services, and spreadsheets, Claritus is your beacon in the dark.</p>
-                <h4 class="is-green">Simple, user-friendly, intuitive.</h4>
-            </div>
+            <img src="{{ .Params.heroImg }}"/>
         </div>
     </section>
 
-    <section class="section section-4 section-slider">{{ partial "glide.html" }}</section>
-
-<!--    <section class="section section-4 section-slider">-->
-<!--        <button id="arrow-left" class="arrow arrow&#45;&#45;left is-hidden-touch"><img src="/images/slider-left.svg" /></button>-->
-
-<!--        <div class="navigation-wrapper container">-->
-<!--            <button class="arrow arrow&#45;&#45;left is-hidden-desktop"><img src="/images/slider-left.svg" /></button>-->
-<!--            <div class="slider">-->
-<!--                <div id="main-slider" class="keen-slider">-->
-<!--                    <div class="keen-slider__slide number-slide1">-->
-<!--                        <div class="slide-image">-->
-<!--                            <img src="/images/banner-slide-1.png"/>-->
-<!--                        </div>-->
-<!--                        <div class="slide-content">-->
-<!--                            <h2 class="keen-slider__slide-title">-->
-<!--                                We Do the Work For You-->
-<!--                            </h2>-->
-<!--                            <div class="slide-text">-->
-<!--                                <p class="subtitle">-->
-<!--                                    Real-time data from over 17,000 global banks, brokerages,-->
-<!--                                    and other financial institutions - -->
-<!--                                    all at your fingertips.-->
-<!--                                </p>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                    <div class="keen-slider__slide number-slide2">-->
-<!--                        <div class="slide-image">-->
-<!--                            <img src="/images/banner-slide-2.png"/>-->
-<!--                        </div>-->
-<!--                        <div class="slide-content">-->
-<!--                            <h2 class="keen-slider__slide-title">-->
-<!--                                Track and Compare-->
-<!--                            </h2>-->
-<!--                            <div class="slide-text">-->
-<!--                                <p class="subtitle">-->
-<!--                                    Track and sort by any asset and compare between investment types and performances easily.-->
-<!--                                </p>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                    <div class="keen-slider__slide number-slide3">-->
-<!--                        <div class="slide-image">-->
-<!--                            <img src="/images/banner-slide-3.png"/>-->
-<!--                        </div>-->
-<!--                        <div class="slide-content">-->
-<!--                            <h2 class="keen-slider__slide-title">-->
-<!--                                A clear look forward and back-->
-<!--                            </h2>-->
-<!--                            <div class="slide-text">-->
-<!--                                <p class="subtitle">-->
-<!--                                    Upload your investments’ historical data, and measure-->
-<!--                                    their performances over time clearly and objectively.-->
-<!--                                </p>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <div class="home__left-content content-dots">-->
-<!--                <button class="arrow arrow&#45;&#45;left">-->
-<!--                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">-->
-<!--                        <circle cx="25" cy="25" r="22.75" stroke="#C4C4C4" stroke-width="0.5"/>-->
-<!--                        <path fill-rule="evenodd" clip-rule="evenodd" d="M20.3262 25.9188L25.7942 31.7008L24.5655 33L17 25L24.5655 17L25.7942 18.2992L20.3262 24.0812H33V25.9188H20.3262Z" fill="#323947"/>-->
-<!--                    </svg>-->
-
-<!--                </button>-->
-<!--                <div id="dots" class="dots"></div>-->
-<!--                <button-->
-<!--                        class="arrow arrow&#45;&#45;right">-->
-<!--                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">-->
-<!--                        <circle r="22.75" transform="matrix(-1 0 0 1 25 25)" stroke="#C4C4C4" stroke-width="0.5"/>-->
-<!--                        <path fill-rule="evenodd" clip-rule="evenodd" d="M29.6738 25.9188L24.2058 31.7008L25.4345 33L33 25L25.4345 17L24.2058 18.2992L29.6738 24.0812H17V25.9188H29.6738Z" fill="#323947"/>-->
-<!--                    </svg>-->
-<!--                </button>-->
-<!--            </div>-->
-<!--            <button class="arrow arrow&#45;&#45;right is-hidden-desktop"><img src="/images/slider-right.svg" /></button>-->
-<!--        </div>-->
-
-<!--        <button id="arrow-right" class="arrow arrow&#45;&#45;right is-hidden-touch"><img src="/images/slider-right.svg" /></button>-->
-<!--    </section>-->
-
-    <section class="section section-5 is-full-mobile">
-        <div class="centered is-left-mobile">
-            <div>
-                <h2 class="has-bottom-margin-50">Lifting the fog on a brighter future</h2>
-                <p>Claritus’s straight-forward, comprehensive view of your money’s performance allows to you acquire a deeper understanding of your assets. This allows you not only to maintain and
-                    nurture your wealth, but to make smarter decisions moving forward.</p>
-            </div>
-        </div>
-
-        <div class="bg-image"></div>
-    </section>
-
-    <section class="section section-6 is-reversed-mobile">
-        <div class="bg-image is-centered"></div>
-
-        <div class="centered left-align">
-            <div>
-                <h2 class="has-bottom-margin-50">Privacy and Security Guaranteed</h2>
-                <p>We know your privacy and security are of the utmost importance to you, which is why we are committed
-                    to the highest standards of data security and encryption.
-                    With Claritus, you know your data is <span class="is-underline">for your eyes only</span>. </p>
-            </div>
-        </div>
-    </section>
-
-    <section class="section home-footer section-footer" id="pricing">
-        <div>
-            <div class="pricing">
-                <a class="button is-green is-full is-wide is-hidden-tablet" href="{{ .Site.Params.appUrl }}/on-boarding">Try it now!</a>
-
-                <div class="pricing-box is-hidden">
-                    <p class="has-bottom-margin-24"><span class="price">$19.90</span>/month</p>
-                    <p class="is-small has-bottom-margin-24">or</p>
-                    <p><span class="price">$199</span>/year</p>
-                    <p class="is-small">($39 discount)</p>
+    <section class="section section-clear-view">
+        <div class="section-info">
+            <div class="block-text">
+                <div>
+                    <h2 class="is-h2">{{ .Params.section1Title | safeHTML}}</h2>
+                    <p>{{ .Params.section1Text | safeHTML}}</p>
                 </div>
+            </div>
 
-                <div class="pricing-content">
-                    <h2 class="has-bottom-margin-50">Simple, Transparent Pricing</h2>
-                    <p>At Claritus, we aim to bring you the highest-value tools for your money at a fair, minimal cost.<p>
-                    <p class="has-bottom-margin-50">Subscription prices are fixed, clear, and affordable. That means they’re the same for everyone and not based on your assets.
-                    In addition, there are no surprise costs or hidden fees, ever.</p>
-                    <p class="has-bottom-margin-50">Try <img class="is-v-middle" src="/images/logo-all-black.svg" alt="Claritus" /> for Free</p>
-                    <a class="button is-green is-full is-wide is-hidden-mobile" href="{{ .Site.Params.appUrl }}/on-boarding">Try it now!</a>
+            <div class="block-image">
+                <img src="{{ .Params.section1Img }}"/>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-privacy is-white">
+        <div class="section-info">
+            <div class="block-image">
+                <img src="{{ .Params.section2Img }}"/>
+            </div>
+            <div class="block-text">
+                <div>
+                    <h2 class="is-h2">{{ .Params.section2Title | safeHTML}}</h2>
+                    <p>{{ .Params.section2Text | safeHTML}}</p>
+                    <a href="/blog/trust" class="is-link">Learn more</a>
                 </div>
             </div>
         </div>
-        <div class="is-footer">
-            <div class="links">
-                <a href="/about-us" class="link" title="About Us">About Us</a>
-                <a href="/our-story" class="link" title="Our Story">Our Story</a>
-                <a href="/faq" class="link" title="FAQ">FAQ</a>
-                <a href="mailto:help@claritus.io" class="link contact-us-link" title="email claritus.io">Contact Us</a>
-                <a href="/privacy" class="link" title="Privacy">Privacy Policy</a>
-                <a href="/terms" class="link" title="Terms of Use">Terms of Use</a>
+    </section>
+
+    <section class="section section-beacon">
+        <div class="section-info">
+            <div class="block-text">
+                <div>
+                    <h2 class="is-h2">{{ .Params.section3Title | safeHTML}}</h2>
+                    <p class="beacon-text is-regular-text">{{ .Params.section3Text | safeHTML}}</p>
+                    <p class="is-green beacon-caption is-regular-text">{{ .Params.section3Text2 | safeHTML}}</p>
+                    <a class="button is-green is-full is-wide is-higher try-button"
+                        href="{{ .Site.Params.appUrl }}/on-boarding" title="Try Claritus for Free">
+                        Try <img src="/images/logo-white-beta.svg" class="icon-logo"> for Free
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-track is-white">
+        <div class="section-info">
+            <div class="block-text">
+                <div>
+                    <h2 class="is-h2 has-bottom-margin-20">{{ .Params.section4Title | safeHTML}}</h2>
+                    <p>{{ .Params.section4Text | safeHTML}}</p>
+                </div>
             </div>
 
-            <div class="social-block">
-                <div class="social has-bottom-margin-50">
-                    <a href="https://www.linkedin.com/company/claritus-io/" target="_blank" rel="noopener"><img src="/images/linkedin.svg" class="has-right-margin-40" /></a>
-                    <a href="https://www.facebook.com/Claritus.io" target="_blank" rel="noopener"><img src="/images/icon-facebook.svg" /></a>
-                    <img src="/images/logo-white.svg" class="logo"/>
-                </div>
-                <p class="copyright">&copy; 2020 Clear Value ltd.</p>
+            <div class="block-image has-border-shadow">
+                <img src="{{ .Params.section4Img }}"/>
             </div>
         </div>
 
     </section>
+
+    <section class="section section-daterange is-white">
+        <div class="section-info">
+            <div class="block-image has-border-shadow">
+                <img src="/images/nurture-grow.png" class="lazy-image" data-src="{{ .Params.section5Img }}"/>
+            </div>
+
+            <div class="block-text">
+                <div>
+                    <h2 class="is-h2">{{ .Params.section5Title | safeHTML}}</h2>
+                    <p>{{ .Params.section5Text | safeHTML}}</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="section section-automate is-white">
+        <div class="section-info">
+            <div class="block-text">
+                <div>
+                    <h2 class="is-h2">{{ .Params.section6Title | safeHTML}}</h2>
+                    <p>{{ .Params.section6Text | safeHTML}}</p>
+                </div>
+            </div>
+            <div class="block-image">
+                <img src="{{ .Params.section6Img }}"/>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-fog">
+        <div class="w-100">
+            <h2 class="has-bottom-margin-20 is-centered">{{ .Params.section7Title | safeHTML}}</h2>
+            <p class="info has-bottom-margin-40">{{ .Params.section7Text | safeHTML}}</p>
+        </div>
+    </section>
+
+    <section class="section section-testimonials is-white">
+        <div class="centered">
+            <h2>{{ .Params.section8Title | safeHTML}}</h2>
+            <div class="testimonials-block is-hidden-tablet">
+                {{ range .Params.testimonials }}
+                <div class="testimonial">
+                    <img src="/images/icon-quotation.svg" class="quotation"/>
+                    <p class="testimonial-text">{{ .title | safeHTML}}</p>
+                    <div class="testimonial-author">
+                        <span>{{ .author }}</span>
+                    </div>
+                </div>
+                {{ end }}
+            </div>
+            <div class="testimonials-block testimonials-slider navigation-wrapper container">
+                <div class="slider">
+                    <button id="arrow-left"
+                            class="arrow arrow--left is-hidden-mobile">
+                        <svg width="53" height="53" viewBox="0 0 53 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="26.5011" cy="26.4991" r="24.13" stroke="#C4C4C4" stroke-width="0.5"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M21.5453 27.4735L27.3414 33.6024L26.039 34.9795L18.0195 26.4995L26.039 18.0195L27.3414 19.3967L21.5453 25.5256H34.9795V27.4735H21.5453Z"
+                                  fill="#323947"/>
+                        </svg>
+                    </button>
+                    <div id="main-slider" class="keen-slider">
+                        {{ range $index, $elem := .Params.testimonials }}
+                        {{ $c := add $index 1 }}
+                        <div class="keen-slider__slide number-slide{{ $c }} testimonial">
+                            <img src="/images/icon-quotation.svg" class="quotation"/>
+                            <p class="testimonial-text">{{ $elem.title | safeHTML }}</p>
+                            <div class="testimonial-author">
+                                <span>{{ $elem.author }}</span>
+                            </div>
+                        </div>
+                        {{ end }}
+                    </div>
+                    <button
+                            id="arrow-right"
+                            class="arrow arrow--right is-hidden-mobile">
+                        <svg width="53" height="53" viewBox="0 0 53 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle r="24.13" transform="matrix(-1 0 0 1 26.4989 26.4991)" stroke="#C4C4C4"
+                                    stroke-width="0.5"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M31.4547 27.4735L25.6586 33.6024L26.961 34.9795L34.9805 26.4995L26.961 18.0195L25.6586 19.3967L31.4547 25.5256H18.0205V27.4735H31.4547Z"
+                                  fill="#323947"/>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="content-dots">
+                    <button id="arrow-left-mobile"
+                            class="arrow arrow--left is-visible-mobile">
+                        <svg width="53" height="53" viewBox="0 0 53 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="26.5011" cy="26.4991" r="24.13" stroke="#C4C4C4" stroke-width="0.5"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M21.5453 27.4735L27.3414 33.6024L26.039 34.9795L18.0195 26.4995L26.039 18.0195L27.3414 19.3967L21.5453 25.5256H34.9795V27.4735H21.5453Z"
+                                  fill="#323947"/>
+                        </svg>
+                    </button>
+                    <div id="dots" class="dots"></div>
+                    <button
+                            id="arrow-right-mobile"
+                            class="arrow arrow--right is-visible-mobile">
+                        <svg width="53" height="53" viewBox="0 0 53 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle r="24.13" transform="matrix(-1 0 0 1 26.4989 26.4991)" stroke="#C4C4C4"
+                                    stroke-width="0.5"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M31.4547 27.4735L25.6586 33.6024L26.961 34.9795L34.9805 26.4995L26.961 18.0195L25.6586 19.3967L31.4547 25.5256H18.0205V27.4735H31.4547Z"
+                                  fill="#323947"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-transparent">
+        <div class="section-info">
+            <div class="block-text">
+                <div>
+                    <h2>Transparent &<br/> Simple Pricing</h2>
+                    <p>At Claritus, we aim to provide you with the highest‑value solution for your money at a fair, and low subscription cost. There are no surprise costs or hidden fees, ever.</p>
+                    <p>Sign up to Claritus beta and enjoy our annual subscription for free, as a thank you for being one of our first users.</p>
+                    <p><a href="/blog/we-value-our-beta-customers/" class="learn-more is-link">Learn more</a></p>
+                    <a class="button is-green is-full is-wide is-higher try-button"
+                        href="{{ .Site.Params.appUrl }}/on-boarding">
+                         Try <img src="/images/logo-white-beta.svg" class="icon-logo"> for Free
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-footer">
+        <div class="centered">
+            <h4>{{ .Params.familyOffice | safeHTML }}</h4>
+        </div>
+    </section>
+
+    {{ partial "footer.html" . }}
 </div>
+{{ end }}
+{{ define "StructData" }}
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "url": "https://claritus.io",
+        "logo": "https://claritus.io/images/logo-black.svg"
+    }
+</script>
 {{ end }}

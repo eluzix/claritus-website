@@ -1,0 +1,37 @@
+---
+label: Blog Post
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: description
+  label: description
+- type: text
+  name: summary
+  label: summary
+- type: text
+  name: metaTitle
+  label: meta_title
+- type: datetime
+  name: date
+  label: date
+- type: datetime
+  name: publishDate
+  label: publishDate
+- type: text
+  name: type
+  label: type
+- type: text
+  name: content_class
+  label: content_class
+- type: text
+  name: header_class
+  label: header_class
+- type: boolean
+  name: hidden
+  label: hidden
+- type: file
+  name: thumbnail
+  label: thumbnail

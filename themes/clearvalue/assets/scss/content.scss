@@ -23,15 +23,6 @@
     color: $dark;
   }
 
-  h1 {
-    font-size: 4.5rem;
-    line-height: 120%;
-  }
-
-  p {
-    line-height: 1.5;
-  }
-
   .point-title {
     font-size: 2.125rem;
     line-height: 150%;
@@ -72,7 +63,6 @@
   }
 
   .hero-image {
-    //height: 100%;
     min-height: 20rem;
     margin-top: 5rem;
     width: 100vw;
@@ -81,47 +71,9 @@
     background-position: center;
   }
 
-  &.our-story {
-    font-size: 1.25rem;
-
-    .content-img {
-      display: none;
-    }
-
-    .hero-image {
-      background-image: url("/images/our-story-img.jpg");
-
-    }
-  }
-
-  &.about-us {
-    font-size: 1.25rem;
-
-    .content-img {
-      display: none;
-    }
-
-    .hero-image {
-      background-image: url("/images/about-us.jpg");
-
-    }
-  }
-
-  &.our-mission {
-    .hero-image {
-      background-image: url("/images/core-values-img.jpg");
-      background-position: right;
-    }
-
-    p {
-      margin-bottom: 3.125rem;
-    }
-  }
-
   &.about-claritus {
     .hero-image {
       background-image: url("/images/about-claritus.jpg");
-      //background-position: right;
     }
 
     article p:first-child {
@@ -131,126 +83,107 @@
     }
   }
 
-  &.terms article {
-    a {
-      color: $green;
-    }
-
-    ul {
-      li a {
-        color: $primary;
-      }
-    }
-
-    .toc ul li {
-      //background: url("/images/faq-bullet.svg") no-repeat 0 0.5rem;
-      background-size: 1.125rem;
-      //padding-left: 2.25rem;
-      margin-bottom: 1rem;
-      line-height: 180%;
-    }
-  }
-}
-
-.faq {
-  .container {
-    margin-top: 10rem;
-  }
-
-  h1 {
-    margin-bottom: 3.125rem;
-  }
-
-  h6 {
-    font-weight: normal;
-    font-size: 1.375rem;
-    line-height: 180%;
-    margin-bottom: 9.375rem;
-  }
-
-  article {
-    .faq-items {
-      list-style: none;
-
-      li {
-        background: url("/images/faq-bullet.svg") no-repeat 0 0;
-        padding-left: 3rem;
-        margin-bottom: 3.125rem;
-        background-size: 2.25rem;
-
-        h2 {
-          font-size: 2.125rem;
-          margin-bottom: 1rem;
-        }
-
-        p {
-          font-size: 1.375rem;
-          line-height: 180%;
-        }
-
-        a {
-          color: $green;
-
-          &:hover {
-            text-decoration: underline;
-          }
-        }
-      }
-    }
-  }
-}
-
-.about-us {
-
-  p {
-    font-size: 1.125rem;
-    margin-bottom: 1em;
-  }
-
-  .about-pages {
+  .hero {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 5rem;
+    justify-content: center;
+    background-color: $dark-blue;
+    color: $white;
+    //min-height: 49.875rem;
+    //min-height: calc(100vh - 6.143rem);
+    padding-bottom: 3.57rem;
 
-    & > div {
-      width: 40%;
+    .hero-left, .hero-right {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .hero-left {
+      justify-content: flex-end;
 
       & > div {
-        margin-bottom: 2rem;
+        max-width: 51.4rem;
+        margin-right: 2.14rem;
+      }
+    }
+
+    h1.page-title {
+      //font-weight: 600;
+      //font-size: 5.14rem;
+      //line-height: 120%;
+      margin-bottom: 5rem;
+      color: $white;
+    }
+
+    h2 {
+      //font-weight: 500;
+      //font-size: 2.42rem;
+      //line-height: 150%;
+      color: $white;
+      margin-bottom: 1.42rem;
+    }
+
+    p {
+      //font-weight: normal;
+      //font-size: 1.57rem;
+      //line-height: 180%;
+      color: $lighter-grey;
+      max-width: 40.1rem;
+    }
+
+    &.stretched-image {
+      padding-bottom: 0;
+      margin-top: -$header-height-desktop;
+      min-height: auto;
+      max-height: 100vh;
+      //height: calc(57.14rem + 6.143rem);
+      height: 100vh;
+
+      .hero-left {
+        padding-left: 1.7rem;
+      }
+
+      .hero-right {
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 70%;
+
+        &:after {
+          content: "";
+          display: block;
+          width: 100%;
+          height: 100%;
+          background: linear-gradient(90deg, #353D4F 7.13%, rgba(53, 61, 79, 0) 59.28%);
+        }
+      }
+
+      h1 {
+        //font-size: 4.57rem;
+        margin-bottom: 4.28rem;
+      }
+    }
+
+    &.hero-center {
+      min-height: auto;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 5rem 0;
+      margin-bottom: 5rem;
+      text-align: center;
+
+      & > * {
+        max-width: 65rem;
+      }
+
+      h1 {
+        font-size: 4.57rem;
+        margin-bottom: 2.14rem;
       }
 
       h2 {
-        font-size: 2.125rem;
-        color: $green;
-      }
-
-      p {
-        font-size: 1.375rem;
-        //color: $primary;
-      }
-
-      a {
-        //font-size: 1.125rem;
-        display: block;
-        text-align: right;
-        color: $dark;
-        text-decoration: underline;
-        font-weight: 500;
-      }
-    }
-  }
-}
-
-@media screen and (min-width: $widescreen) {
-  .about-us {
-    .about-header {
-      & > div:first-child {
-        margin-left: 10rem;
-      }
-
-      article {
-        width: 35rem;
+        font-size: 1.57rem;
       }
     }
   }
@@ -264,69 +197,33 @@
 
     article p {
       font-size: 1.125rem;
-      //font-weight: 400;
     }
 
-    //.hero-image {
-    //  min-height: 30rem;
-    //}
-
-    .container.is-small {
-      max-width: 40rem;
-    }
-  }
-
-  .about-us {
-    article {
-      width: 100%;
-      padding-right: 2rem;
-    }
-
-    //.about-content {
-    //  margin-bottom: 1.5rem;
-
-    .about-header {
-      margin-bottom: 10.625rem;
-
-      & > div:first-child {
-        margin-left: 0;
-      }
-
-      .bg-image {
-        min-height: 28rem;
-        background-size: cover;
+    .container {
+      &.is-small {
+        max-width: 40rem;
       }
     }
 
-    .about-pages {
-      //margin: 0;
-
-      & > div {
-        width: 17rem;
-
-        & > div {
-          height: 15rem;
-        }
-
-        p {
-          font-size: 1.125rem;
-          //color: $primary;
-        }
-      }
-    }
-
+    //.heading {
+    //  padding: 5.75rem 0 5.75rem;
+    //
+    //  .page-title {
+    //    font-size: 4rem;
+    //  }
+    //
+    //  .page-description {
+    //    font-size: 1.286rem;
+    //    margin: 1.5rem auto 0;
+    //  }
     //}
   }
 }
 
-
-@media screen and (max-width: $widescreen) {
+@media screen and (max-width: 1280px) {
+//
+//@media screen and (max-width: $widescreen) {
   .content {
-
-    //.hero-image {
-    //  min-height: 20rem;
-    //}
-
     h1 {
       font-size: 2.5rem;
     }
@@ -345,61 +242,66 @@
       font-size: 1.5rem;
     }
 
-    //.hero-image {
-    //  min-height: 25rem;
-    //}
-
-    .container.is-small {
-      max-width: 40rem;
-    }
-
     &.about-claritus {
       article p:first-child {
         font-size: 1.75rem;
       }
     }
-  }
 
-  .about-us .about-pages > div {
-    p, a {
-      font-size: 1rem;
-    }
-  }
+    .hero {
+      .hero-left > div {
+        max-width: 32rem;
+        margin-right: 2.14rem;
+      }
 
-  .faq {
-    h1 {
-      margin-bottom: 1rem;
-    }
-
-    h6 {
-      font-size: 1rem;
-      margin-bottom: 5.135rem;
-    }
-
-    article .faq-items li {
-      background-size: 2.25rem 2.25rem;
-      padding-left: 2.75rem;
-      padding-top: 0.25rem;
-
+      h1.page-title {
+        //font-size: 4rem;
+        margin-bottom: 3.57rem;
+      }
 
       h2 {
-        font-size: 1.5rem;
+        //font-size: 2rem;
+        margin-bottom: 0.71rem;
       }
 
       p {
-        font-size: 1rem;
+        //font-size: 1.28rem;
+        max-width: 32rem;
+      }
+
+      &.stretched-image {
+        margin-top: -$header-height-desktop;
+
+        .hero-left {
+          padding-left: 0;
+        }
+
+        .hero-right {
+          width: 50%;
+        }
+
+        h1 {
+          font-size: 3.57rem;
+        }
+      }
+
+      &.hero-center {
+        h1 {
+          font-size: 3.57rem;
+          margin-bottom: 1.42rem;
+        }
+
+        h2 {
+          font-size: 1.28rem;
+        }
       }
     }
   }
-
 }
 
-@include tablet-only {
+//@include tablet-only {
+@media screen and (max-width: 1023px) {
   .content {
-    //.hero-image {
-    //  min-height: 20rem;
-    //}
-
     .container {
       padding-left: 3rem;
       padding-right: 3rem;
@@ -414,42 +316,80 @@
         font-size: 1.5rem;
       }
     }
-  }
 
-  .about-us {
-    //.about-content {
-    //  margin-left: $ipad-padding;
-    //  margin-right: $ipad-padding;
-
-    .about-header {
-      margin-bottom: 6.25rem;
-    }
-
-
-    .about-pages {
+    .hero {
       flex-direction: column;
-      margin-top: 3.75rem;
+      justify-content: flex-start;
+      align-items: center;
+      //min-height: auto;
 
-      & > div {
-        width: auto;
-        margin-bottom: 2rem;
+      .hero-left, .hero-right {
+        width: 100%;
+        justify-content: center;
+        max-width: 34.7rem;
+      }
 
-        p, a {
-          font-size: 1rem;
+      .hero-left > div {
+        justify-content: center;
+        max-width: 34.7rem;
+        margin: 3rem 0 2.5rem 0 !important;
+        text-align: center;
+      }
+
+      h1.page-title {
+        //font-size: 2.85rem;
+        margin-bottom: 3.57rem;
+      }
+
+      h2 {
+        //font-size: 1.71rem;
+        margin-bottom: 0.71rem;
+      }
+
+      p {
+        //font-size: 1.14rem;
+        max-width: 32rem;
+      }
+
+      &.stretched-image {
+        flex-direction: column;
+
+        .hero-right, .hero-left {
+          max-width: 100vw;
+          width: 100vw;
+          height: 50%;
         }
 
-        & > div {
-          height: unset;
-          margin-bottom: 1rem;
+        .hero-left {
+          align-items: flex-end;
+          & > div {
+            margin: 0 0 1rem!important;
+          }
+        }
+
+        .hero-right:after {
+          transform: rotate(90deg);
+          height: 100vw;
+          width: 60%;
+        }
+
+        h1 {
+          font-size: 2.57rem;
+          margin-bottom: 1.14rem;
+        }
+      }
+
+      &.hero-center {
+        h1 {
+          font-size: 2.57rem;
+          margin-bottom: 1.42rem;
         }
 
         h2 {
-          font-size: 1.5rem;
+          font-size: 1.14rem;
         }
       }
     }
-
-    //}
   }
 }
 
@@ -466,13 +406,13 @@
       }
     }
 
-    h1 {
-      font-size: 2.625rem;
-    }
-
-    h2 {
-      font-size: 1.5rem;
-    }
+    //h1 {
+    //  font-size: 2.625rem;
+    //}
+    //
+    //h2 {
+    //  font-size: 1.5rem;
+    //}
 
     article {
       p, li {
@@ -486,38 +426,6 @@
 
     .hero-image {
       display: none;
-    }
-
-    &.our-story {
-      article p:first-child:after {
-        content: "";
-        display: block;
-        height: 23.5rem;
-        background: url("/images/our-story-img.jpg") no-repeat 0 0;
-        background-size: cover;
-        margin: 2rem -1.5rem;
-      }
-
-      //.container {
-      //  margin-top: 2rem;
-      //  padding: 0 1.5rem;
-      //}
-    }
-
-    &.our-mission {
-
-      article p:first-child:after {
-        content: "";
-        display: block;
-        height: 23.5rem;
-        background: url("/images/core-values-img.jpg") no-repeat 75% 75%;
-        margin: 2rem -1.5rem;
-      }
-
-      //.container {
-      //  margin-top: 2rem;
-      //  margin-bottom: 0;
-      //}
     }
 
     &.about-claritus {
@@ -537,78 +445,105 @@
       }
     }
 
-    &.terms {
-      .container {
-        margin-top: 5rem;
-      }
-    }
+    //.heading {
+    //  padding: 4rem 0 3rem;
+    //  margin-top: 5.45rem;
+    //
+    //  .page-title {
+    //    font-size: 2.571rem;
+    //  }
+    //
+    //  .page-description {
+    //    font-size: 1rem;
+    //    margin: 1.45rem auto 0;
+    //  }
+    //}
 
-  }
-
-  .faq {
-
-    h1 {
-      //font-size: 2.5rem;
-      margin-bottom: 1rem;
-    }
-
-    h6 {
-      font-size: 0.875rem;
-      margin-bottom: 5.135rem;
-    }
-
-    article .faq-items li {
-      h2 {
-        font-size: 1.5rem;
-      }
-
-      p {
-        font-size: 0.875rem;
-      }
-    }
-
-    article .faq-items li {
-      background: url("/images/faq-bullet.svg") no-repeat 0 0;
-      background-size: 1.5rem 1.5rem;
-      padding-left: 2rem;
-      padding-top: 0;
-    }
-  }
-
-  .about-us {
-    article p:first-child:after {
-      content: "";
-      display: block;
-      height: 23.5rem;
-      background: url("/images/about-us.jpg") no-repeat 0 0;
-      background-size: cover;
-      margin: 2rem -1.5rem;
-    }
-    .about-pages {
+    .hero {
       flex-direction: column;
-      margin-top: 3.75rem;
+      justify-content: flex-start;
+      align-items: center;
+      //min-height: calc(100vh - 5.45rem);
+      padding-left: 1.71rem;
+      padding-right: 1.71rem;
 
-      & > div {
-        width: 95%;
-        margin-bottom: 1rem;
+      .hero-left, .hero-right {
+        width: 100%;
+        //  display: flex;
+        justify-content: center;
+        //  align-items: center;
+        max-width: 34.7rem;
+      }
 
-        & > div {
-          height: auto;
+      .hero-left > div {
+        justify-content: center;
+        max-width: 34.7rem;
+        margin: 3rem 0 2.5rem;
+        text-align: center;
+      }
+
+      h1.page-title {
+        //font-size: 2.57rem;
+        margin-bottom: 3.57rem;
+      }
+
+      h2 {
+        //font-size: 1.57rem;
+        margin-bottom: 0.71rem;
+      }
+
+      //p {
+        //font-size: 1rem;
+        //max-width: 32rem;
+      //}
+
+      &.stretched-image {
+        .hero-right {
+          display: none;
         }
 
-        p {
-          font-size: 1rem;
-        }
+        .hero-left {
+          height: 100%;
+          align-items: flex-start;
+          margin-top: 10rem;
+          background-repeat: no-repeat;
+          background-size: cover;
 
-        a {
-          font-size: 1rem;
-          font-weight: 500;
+
+          &:after {
+            content: "";
+            display: block;
+            background: linear-gradient(180deg, #353D4F 7.13%, rgba(53, 61, 79, 0) 59.28%);
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 27%;
+          }
+
+          & > div {
+            position: relative;
+            z-index: 1;
+            margin: 0 auto!important;
+            padding: 0 1.7rem;
+          }
+        }
+        h1 {
+          font-size: 2.57rem;
+          margin-bottom: 1.14rem;
         }
       }
 
+      &.hero-center {
+        padding: 1.7rem;
 
-      h2 {
-        font-size: 1.75rem;
+        h1 {
+          font-size: 1.42rem;
+          margin-bottom: 1.42rem;
+        }
+
+        h2 {
+          font-size: 1rem;
+        }
       }
     }
   }

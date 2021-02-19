@@ -1,35 +1,77 @@
 {{ define "content" }}
-<div class="content {{ .Params.content_class }} has-navbar-fixed-top">
+<div class="content {{ .Params.content_class }} black-heading">
 
     {{ partial "nav" . }}
     {{ partial "menu.html" }}
-    <div class="hero-image"></div>
 
-    <section class="container is-small">
-        <div>
-            <div>
-                <h1 class="title" title="{{ .Title }}">{{ .Title }}</h1>
-                <article>
-                    {{ .Content }}
-                </article>
+<!--    <section class="heading">-->
+<!--    </section>-->
+
+    <section class="hero">
+        <div class="hero-left">
+            <div class="">
+                <h1 class="page-title is-h1" title="{{ .Title }}">{{ .Title | safeHTML }}</h1>
+                <h3 class="is-h3">{{ .Params.hero_title | safeHTML }}</h3>
+                <p class="is-regular-text">{{ .Params.hero_text | safeHTML }}</p>
             </div>
         </div>
+        <div class="hero-right">
+            <img src="/images/about-us.png" alt=""/>
+        </div>
+    </section>
 
-        <div class="about-pages">
-            <div>
+    <section class="about-text">
+        <div class="container is-small">
+            <article class="is-regular-text">
+                {{ .Content }}
+            </article>
+        </div>
+    </section>
+
+    <section class="our-team">
+        <div class="container is-medium">
+            <h3 class="is-h3">We look forward to hearing from you, <span class="members-names">Gabriel,&nbsp;&nbsp;Shai and Uzi.</span></h3>
+
+            <div class="team-members">
                 <div>
-                    <h2>Our Story</h2>
-                    <p>Claritus is the result of a very real and personal need we were all faced with.</p>
+                    <div class="pic pic-gabriel"></div>
+                    <h3 class="initials">Gabriel Bilcsyk</h3>
+                    <a href="https://www.linkedin.com/in/gabriel-bilczyk/" class="profession" target="_blank" rel="noopener nofollow">Chairman - <img src="/images/icon-linkedin-small.svg" /></a>
+<!--                    <p class="description">Nunc quam nec maecenas morbi. Molestie fermentum, elementum, sed nibh et laoreet</p>-->
                 </div>
-                <a href="{{ ref . "our-story.md" }}">Read more</a>
+                <div>
+                    <div class="pic pic-shai"></div>
+                    <h3 class="initials">Shai Azran</h3>
+                    <a href="https://www.linkedin.com/in/shai-azran/" class="profession" target="_blank" rel="noopener nofollow">CEO - <img src="/images/icon-linkedin-small.svg" /></a>
+<!--                    <p class="description">Nunc quam nec maecenas morbi. Molestie fermentum, elementum, sed nibh et laoreet</p>-->
+                </div>
+                <div>
+                    <div class="pic pic-uzi"></div>
+                    <h3 class="initials">Uzi Rafaeli</h3>
+                    <a href="https://www.linkedin.com/in/eluzix/" class="profession" target="_blank" rel="noopener nofollow">CTO - <img src="/images/icon-linkedin-small.svg" /></a>
+<!--                    <p class="description">Nunc quam nec maecenas morbi. Molestie fermentum, elementum, sed nibh et laoreet</p>-->
+                </div>
             </div>
-            <div>
-                <div>
-                <h2>Core Values</h2>
-                <p>Our values play a huge role
-                    in who we are, both as people and as a company</p>
+        </div>
+    </section>
+
+    <section class="about-pages">
+        <div class="container is-medium">
+            <div class="pages-overview">
+                <div class="story-page">
+                    <div>
+                        <h3 class="is-h3 is-green">Our story</h3>
+                        <p class="is-regular-text">Claritus is the result of a very real and personal need we were all faced with.</p>
+                    </div>
+                    <a class="is-link" href="{{ ref . "our-story.md" }}">Read more</a>
                 </div>
-                <a href="{{ ref . "core-values.md" }}">Read more</a>
+                <div class="values-page">
+                    <div>
+                        <h3 class="is-h3 is-green">Core Values</h3>
+                        <p class="is-regular-text">Our values play a huge role in who we are, both as people and as a company</p>
+                    </div>
+                    <a class="is-link" href="{{ ref . "core-values.md" }}">Read more</a>
+                </div>
             </div>
         </div>
     </section>

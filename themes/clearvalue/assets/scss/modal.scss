@@ -21,10 +21,11 @@
 
 .contact-us {
   z-index: 1000;
+  color: $white;
 
   .modal-content {
-    background-color: rgba(255, 255, 255, 0.95);
-    padding: 20px;
+    background-color: $dark-blue;
+    //padding: 20px;
     width: 100%;
     height: 100%;
 
@@ -34,9 +35,17 @@
   }
 
   .mailbox-block {
-    background: url(/images/icon-mailbox.svg) no-repeat center center;
+    background: url("/images/contact-us-bg.jpg") no-repeat center;
     width: 50%;
-    background-size: 45rem;
+    height: 100%;
+    background-size: cover;
+
+    .gradient {
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, #353D4F 0%, rgba(53, 61, 79, 0) 100%);
+      transform: matrix(-1, 0, 0, 1, 0, 0);
+    }
   }
 
   .form-block {
@@ -51,64 +60,64 @@
       min-height: 27.5rem;
     }
 
-    h2 {
-      font-weight: 500;
-      font-size: 4rem;
-      line-height: 130%;
+    //h2 {
+    //  font-weight: 500;
+    //  font-size: 4rem;
+    //  line-height: 130%;
+    //}
+
+    .is-h2 {
+      margin-bottom: 1.42rem;
     }
 
-    h3 {
-      font-size: 2.125rem;
-      font-weight: 500;
-    }
+    //h3 {
+    //  font-size: 2.125rem;
+    //  font-weight: 500;
+    //}
 
     p {
-      font-size: 1.375rem;
-      line-height: 180%;
-
-      margin-bottom: 3.125rem;
+      //font-size: 1.375rem;
+      //line-height: 180%;
+      max-width: 40rem;
+      
+      margin-bottom: 3.57rem;
     }
 
     input {
+      width: 100%;
       height: 3.375rem;
       border: 1px solid #D3D3D3;
       box-sizing: border-box;
       border-radius: 47px;
-
-      color: #676E80;
+      color: $lighter-grey;
       padding: 0 2.188rem;
-
       margin-bottom: 2.188rem;
-
-      &::placeholder, &:-ms-input-placeholder, &::-moz-placeholder, &:-moz-placeholder, &::-webkit-input-placeholder {
-        color: #676E80;
-      }
+      background-color: $dark-blue;
     }
 
     textarea {
-      height: 11.25rem;
       width: 100%;
+      height: 11.25rem;
       border: 1px solid #D3D3D3;
       box-sizing: border-box;
       border-radius: 30px;
       resize: none;
       padding: 2.125rem;
-      color: #676E80;
+      color: $lighter-grey;
+      background-color: $dark-blue;
+    }
 
-      &::placeholder, &:-ms-input-placeholder, &::-moz-placeholder, &:-moz-placeholder, &::-webkit-input-placeholder {
-        color: #676E80;
-
-        font-size: 0.75rem;
+    input, textarea {
+      &::placeholder {
+        color: #d0d0d0;
         line-height: 150%;
       }
 
       &:focus {
-        outline: none !important;
-        box-shadow: 0 0 8px #D3D3D3;
+        outline: none!important;
+        box-shadow: 0 0 4px #d3d3d3;
       }
-    }
 
-    input, textarea {
       &:active {
         border: 1px solid $dark;
         box-sizing: border-box;
@@ -142,8 +151,16 @@
     }
 
     .control {
-      max-width: 26.125rem;
+      position: relative;
+      max-width: 32.85rem;
       text-align: center;
+      box-sizing: border-box;
+      clear: both;
+      font-size: 1rem;
+
+      .icon.is-right {
+        margin: 0;
+      }
     }
 
     .has-icons-right .icon {
@@ -157,6 +174,15 @@
     font-size: 0.75rem;
     margin-top: 0.5rem;
     line-height: 1rem;
+
+    a {
+      color: $lighter-grey;
+      text-decoration: underline;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
   }
 }
 
@@ -180,25 +206,15 @@
 @media screen and (max-width: 1281px) {
   .contact-us {
 
-    .mailbox-block {
-      background-size: 35rem;
-    }
-
     .form-block {
       margin: 0;
       margin-left: 5%;
 
-      h2 {
-        font-size: 3.125rem;
-        line-height: 120%;
-
+      .is-h2 {
         margin-bottom: 1.875rem;
       }
 
       p {
-        font-size: 1.125rem;
-        line-height: 180%;
-
         margin-bottom: 1.875rem;
       }
 
@@ -209,17 +225,27 @@
   }
 }
 
-@media screen and (max-width: 835px) {
+@include until($desktop) {
   .contact-us {
+
+    .modal-content {
+      flex-direction: column;
+    }
+    
     .mailbox-block {
-      display: none;
+      width: 100%;
+      height: 20rem;
+      .gradient {
+        background: linear-gradient(0deg, #353D4F 0%, rgba(53, 61, 79, 0.991353) 6.67%, rgba(53, 61, 79, 0.96449) 13.33%, rgba(53, 61, 79, 0.91834) 20%, rgba(53, 61, 79, 0.852589) 26.67%, rgba(53, 61, 79, 0.768225) 33.33%, rgba(53, 61, 79, 0.668116) 40%, rgba(53, 61, 79, 0.557309) 46.67%, rgba(53, 61, 79, 0.442691) 53.33%, rgba(53, 61, 79, 0.331884) 60%, rgba(53, 61, 79, 0.231775) 66.67%, rgba(53, 61, 79, 0.147411) 73.33%, rgba(53, 61, 79, 0.0816599) 80%, rgba(53, 61, 79, 0.03551) 86.67%, rgba(53, 61, 79, 0.0086472) 93.33%, rgba(53, 61, 79, 0) 100%);
+        //transform: rotate(-90deg);
+        transform: none;
+      }
     }
 
     .form-block {
       max-width: 23.5rem;
       width: 100%;
       margin: 0 auto;
-      margin-top: 6rem;
       align-self: auto;
       overflow-y: scroll;
 
@@ -227,9 +253,13 @@
         padding: 1.75rem 2.188rem;
       }
     }
+  }
+}
 
-    .modal-content {
-      background-color: $white;
+@include mobile {
+  .contact-us {
+    .mailbox-block {
+      height: 25%;
     }
   }
 }

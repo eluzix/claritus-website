@@ -6,32 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <base href="{{ .Site.BaseURL }}">
-    <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
+    <title>{{ if .Params.MetaTitle }}{{ .Params.MetaTitle | plainify }}{{ else if .Params.Title}}{{ .Params.Title | plainify }}{{ else }}{{ block "title" . }}{{ .Site.Title | plainify }}{{ end }}{{ end }}</title>
     {{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
-    {{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
+    <meta name="description" content="{{ if .Params.Description  }}{{ .Params.Description | plainify }}{{ else }}{{ .Site.Params.Description | plainify }}{{ end }}"/>
+<!--    {{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}-->
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ .Permalink }}">
-    <meta property="og:title" content="{{ .Site.Title }}" />
-    {{ with .Site.Params.description }}<meta property="og:description" content="{{ . }}" />{{ end }}
+    <meta property="og:title" content="{{ if .Params.MetaTitle }}{{ .Params.MetaTitle | plainify }}{{ else if .Params.Title}}{{ .Params.Title | plainify }}{{ else }}{{ .Site.Title | plainify }}{{ end }}" />
+<!--    {{ with .Site.Params.description }}<meta property="og:description" content="{{ . }}" />{{ end }}-->
+    <meta name="og:description" content="{{ if .Params.Description }}{{ .Params.Description | plainify }}{{ else }}{{ .Site.Params.Description | plainify }}{{ end }}"/>
     <meta property="og:url" content="{{ .Permalink }}" />
-    <meta property="og:image" content="{{.Site.BaseURL}}images/claritus_preview.jpg">
+    <meta property="og:image" content="{{.Site.BaseURL}}images/claritus_preview.png">
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="{{ .Permalink }}">
-    <meta property="twitter:title" content="{{ .Site.Title }}">
-    {{ with .Site.Params.description }}<meta property="twitter:description" content="{{ . }}">{{ end }}
-    <meta property="twitter:image" content="{{.Site.BaseURL}}images/claritus_preview.jpg">
+    <meta property="twitter:title" content="{{ if .Params.MetaTitle }}{{ .Params.MetaTitle | plainify }}{{ else if .Params.Title }}{{ .Params.Title | plainify }}{{ else }}{{ .Site.Title | plainify }}{{ end }}">
+<!--    {{ with .Site.Params.description }}<meta property="twitter:description" content="{{ . }}">{{ end }}-->
+    <meta name="twitter:description" content="{{ if .Params.Description }}{{ .Params.Description | plainify }}{{ else }}{{ .Site.Params.Description | plainify }}{{ end }}"/>
+    <meta property="twitter:image" content="{{.Site.BaseURL}}images/claritus_preview.png">
     <link rel="canonical" href="{{ .Permalink }}">
 
+    <link rel="preconnect" href="https://app.claritus.io">
+    <link rel="prefetch" href="https://app.claritus.io/on-boarding" />
+    <link rel="dns-prefetch" href="https://app.claritus.io">
     <link rel="preconnect" href="https://www.googletagmanager.com">
     <link rel="dns-prefetch" href="https://www.googletagmanager.com">
     <link rel="preconnect" href="https://cdn.jsdelivr.net">
     <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
     <link rel="preconnect" href="https://consent.cookiefirst.com">
     <link rel="dns-prefetch" href="https://consent.cookiefirst.com">
-    <link rel="preload" as="image" href="/images/home-section-1.jpg">
+    {{if .IsHome}}
+    <link rel="preload" as="image" href="/images/section-hero.png">
+    <link rel="preload" as="image" href="/images/nurture-grow.gif">
+    {{ end }}
 
     {{ $sass := resources.Get "scss/main.scss" }}
     {{ $style := $sass | resources.ToCSS | resources.Minify  | fingerprint }}
@@ -42,23 +51,28 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/keen-slider@5.0.2/keen-slider.min.css"
+    />
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
 
     {{ with .OutputFormats.Get "RSS" }}
     <link href="{{ .RelPermalink }}" rel="alternate" type="application/rss+xml" />
     <link href="{{ .RelPermalink }}" rel="feed" type="application/rss+xml" />
     {{ end }}
 
-    {{if .IsHome}}
-    <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
-    {{ end }}
+<!--    {{if .IsHome}}-->
+<!--    <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>-->
+<!--    {{ end }}-->
 
     {{ $mainJs := resources.Get "js/main.js" }}
     {{ $js := $mainJs | resources.Minify | fingerprint }}
     <script src="{{ $js.Permalink }}"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide" async></script>
-    
+    <script src="https://cdn.jsdelivr.net/npm/keen-slider@5.0.2/keen-slider.min.js"></script>
+
+    {{ block "StructData" . }}{{ end }}
+
     {{ partial "tagmanager.html" . }}
     {{ hugo.Generator }}
 </head>
