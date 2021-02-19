@@ -8,7 +8,7 @@
         <h1 class="page-title" title="{{ .Title }}">{{ .Title }}</h1>
     </section>
 
-    {{ $paginator := .Paginate (.Pages.ByPublishDate.Reverse) }}
+    {{ $paginator := .Paginate (where .Pages.ByPublishDate.Reverse ".Params.hidden" "ne" true) }}
     <section class="posts">
         <div class="container">
             <div class="columns is-multiline">

@@ -5,6 +5,7 @@ url: "/about-us"
 type: about-us
 content_class: about-us
 header_class: 
+hero_title: '<span class="is-green">Claritus</span> is a simple-to-use, <br/>personal portfolio management solution.'
 hero_text: ''
 
 ---

@@ -10,9 +10,9 @@
     <section class="hero">
         <div class="hero-left">
             <div class="">
-                <h1 class="page-title is-h1" title="{{ .Title }}">{{ .Title }}</h1>
-                <h3 class="is-h3"><span class="is-green">Claritus</span> is a simple-to-use <br> personal wealth management service.</h3>
-                <p class="is-regular-text">{{ .Params.hero_text }}</p>
+                <h1 class="page-title is-h1" title="{{ .Title }}">{{ .Title | safeHTML }}</h1>
+                <h3 class="is-h3">{{ .Params.hero_title | safeHTML }}</h3>
+                <p class="is-regular-text">{{ .Params.hero_text | safeHTML }}</p>
             </div>
         </div>
         <div class="hero-right">
@@ -36,19 +36,19 @@
                 <div>
                     <div class="pic pic-gabriel"></div>
                     <h3 class="initials">Gabriel Bilcsyk</h3>
-                    <span class="profession">Chairman</span>
+                    <a href="https://www.linkedin.com/in/gabriel-bilczyk/" class="profession" target="_blank" rel="noopener nofollow">Chairman - <img src="/images/icon-linkedin-small.svg" /></a>
 <!--                    <p class="description">Nunc quam nec maecenas morbi. Molestie fermentum, elementum, sed nibh et laoreet</p>-->
                 </div>
                 <div>
                     <div class="pic pic-shai"></div>
                     <h3 class="initials">Shai Azran</h3>
-                    <span class="profession">CEO</span>
+                    <a href="https://www.linkedin.com/in/shai-azran/" class="profession" target="_blank" rel="noopener nofollow">CEO - <img src="/images/icon-linkedin-small.svg" /></a>
 <!--                    <p class="description">Nunc quam nec maecenas morbi. Molestie fermentum, elementum, sed nibh et laoreet</p>-->
                 </div>
                 <div>
                     <div class="pic pic-uzi"></div>
                     <h3 class="initials">Uzi Rafaeli</h3>
-                    <span class="profession">CTO</span>
+                    <a href="https://www.linkedin.com/in/eluzix/" class="profession" target="_blank" rel="noopener nofollow">CTO - <img src="/images/icon-linkedin-small.svg" /></a>
 <!--                    <p class="description">Nunc quam nec maecenas morbi. Molestie fermentum, elementum, sed nibh et laoreet</p>-->
                 </div>
             </div>
