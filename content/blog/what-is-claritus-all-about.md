@@ -10,6 +10,9 @@ thumbnail: "/uploads/big-hot-air-baloon-idyllic-landscape-with-green-grass-cover
 summary: We believe financial awareness is a major and important need for each person
   in the modern world. Each and every person should have financial awareness in accordance
   to his or her financial state.
+metaTitle: What is Claritus All About? Claritus’ mission is to bring financial peace
+  of mind to those people who have investments and assets on top of their day to day
+  finances.
 
 ---
 ![](/uploads/big-hot-air-baloon-idyllic-landscape-with-green-grass-covered-morning-mountains-2-1.png)
