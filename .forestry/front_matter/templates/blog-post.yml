@@ -29,6 +29,9 @@ fields:
 - type: text
   name: header_class
   label: header_class
+- type: boolean
+  name: hidden
+  label: hidden
 - type: file
   name: thumbnail
   label: thumbnail
