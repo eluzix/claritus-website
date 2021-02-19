@@ -151,6 +151,39 @@
   }
 }
 
+@media screen and (min-width: 1344px) and (max-width: 1441px) {
+  .about-us {
+    .hero .hero-left>div {
+      max-width: 43rem;
+      margin-left: 5rem;
+    }
+
+
+    .hero {
+      min-height: 39rem;
+      height: 39rem;
+
+      .is-h1 {
+        font-size: 4rem;
+        line-height: 120%;
+      }
+
+      .is-h3 {
+        font-size: 2rem;
+      }
+
+      .hero-right img {
+        width: 80%;
+      }
+    }
+
+    //.values {
+    //  padding-top: 5rem;
+    //}
+  }
+}
+
+
 @media screen and (max-width: $fullhd) {
   .about-us {
     .container {
@@ -279,7 +312,7 @@
     }
 
     .about-text {
-      padding: 8.7rem 0;
+      padding: 5rem 0;
 
       p {
         font-size: 1.143rem;
@@ -355,7 +388,7 @@
       padding: 8.45rem 0 2.8rem;
 
       .pages-overview {
-        padding: 0 8.65rem;
+        padding: 0;
 
         & > div {
           &:not(:last-child) {

@@ -54,6 +54,40 @@
   }
 }
 
+
+@media screen and (min-width: 1344px) and (max-width: 1441px) {
+  .our-story {
+
+
+    .hero .hero-left>div {
+      max-width: 43rem;
+      margin-left: 5rem;
+    }
+    .hero.stretched-image {
+      min-height: 46rem;
+      height: 46rem;
+
+      .is-h1 {
+        font-size: 4rem;
+        line-height: 120%;
+      }
+
+      .is-h3 {
+        font-size: 2rem;
+      }
+
+      .hero-right {
+        width: 60%;
+      }
+    }
+
+    //.values {
+    //  padding-top: 5rem;
+    //}
+  }
+}
+
+
 @media screen and (max-width: $fullhd) {
   
   .our-story {
@@ -94,7 +128,7 @@
 @media screen and (max-width: 1280px) {
   .our-story {
     .container {
-      max-width: 34.75rem;
+      max-width: 52.57rem;
     }
 
     .heading {
@@ -107,13 +141,13 @@
     }
 
     .hero.stretched-image {
-      //min-height: auto;
-      //height: calc(100vh + 6.143rem);
+      min-height: 40rem;
+      height: 40rem;
       //max-height: 100vh;
     }
 
     .story-text {
-      padding: 8.5rem 0 3.25rem;
+      padding: 5rem 0 3.25rem;
 
       p {
         font-size: 1.143rem;
