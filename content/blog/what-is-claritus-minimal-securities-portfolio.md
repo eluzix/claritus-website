@@ -6,12 +6,12 @@ date: 2021-02-14T10:31:01.000+03:00
 publishDate: 2021-02-14T10:31:01.000+03:00
 content_class: blog-post
 header_class: white-header
-thumbnail: "/uploads/minimal_portfolio-1.png"
+thumbnail: "/uploads/group-2949-1.png"
 summary: A ‘Minimal Securities Portfolio’ was designed for manual work and as such,
   our aim was for minimal work and maximum value.
 
 ---
-![](/uploads/minimal_portfolio-1.png)
+![](/uploads/group-2949-1.png)
 
 We know you want to track and be updated, among other assets, also on a particular securities’ portfolio.
 
