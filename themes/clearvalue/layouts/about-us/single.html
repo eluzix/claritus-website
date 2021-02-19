@@ -10,9 +10,9 @@
     <section class="hero">
         <div class="hero-left">
             <div class="">
-                <h1 class="page-title is-h1" title="{{ .Title }}">{{ .Title }}</h1>
-                <h3 class="is-h3"><span class="is-green">Claritus</span> is a simple-to-use <br> personal wealth management service.</h3>
-                <p class="is-regular-text">{{ .Params.hero_text }}</p>
+                <h1 class="page-title is-h1" title="{{ .Title }}">{{ .Title | safeHTML }}</h1>
+                <h3 class="is-h3">{{ .Params.hero_title | safeHTML }}</h3>
+                <p class="is-regular-text">{{ .Params.hero_text | safeHTML }}</p>
             </div>
         </div>
         <div class="hero-right">
