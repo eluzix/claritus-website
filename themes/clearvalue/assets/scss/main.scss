@@ -799,6 +799,10 @@ input {
     //}
   }
 
+  .header .nav .links .button.is-login {
+    justify-content: flex-end;
+  }
+
   .footer {
     min-height: 37.143rem;
     padding: 2.8rem 1.25rem 0 4rem;
