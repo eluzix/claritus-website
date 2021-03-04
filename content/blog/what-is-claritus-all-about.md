@@ -31,7 +31,7 @@ Sometimes, we don’t feel 'wealthy' enough to have a need for such tools.
 
 However, each and every of one of you that has dispensable cash, is a wealthy person. You’re right in thinking that there are 'modest' wealthy people and that there are ‘ultra 'wealthy people but nevertheless, whatever end of the spectrum you’re on - you’re considered wealthy.
 
-Here at Claritus we assume, all of our users want to take good care of their own wealth, irrelevant of the amount they have or do not have, and take care nurturing it correctly and responsibly. After all, each one of us has our own responsibilities, dreams and desires that we want our wealth to serve.
+Here at Claritus we assume, all of our customers want to take good care of their own wealth, irrelevant of the amount they have or do not have, and take care nurturing it correctly and responsibly. After all, each one of us has our own responsibilities, dreams and desires that we want our wealth to serve.
 
 Using our platform, you will find an easy and intuitive way to visualize all your wealth, including all of your assets, investments and liabilities. Claritus was created for ordinary people, not for financial experts or tech savvy people.
 
