@@ -398,7 +398,7 @@
           }
 
           p {
-            max-width: 40.5rem;
+            max-width: 50rem;
 
             &:not(:last-child) {
               margin-bottom: 2.9rem;
@@ -690,7 +690,7 @@
             }
 
             p {
-              max-width: 31rem;
+              max-width: 40rem;
 
               &:not(:last-child) {
                 margin-bottom: 2.3rem;
@@ -737,7 +737,7 @@
           }
 
           p {
-            max-width: 37.857rem;
+            max-width: 38rem;
             margin-top: 0;
             margin-right: auto;
             margin-left: auto;
@@ -760,7 +760,7 @@
         }
 
         .hero-text {
-          max-width: 34rem;
+          max-width: 38rem;
           margin-bottom: 2.75rem;
         }
 
@@ -783,12 +783,8 @@
           }
 
           .block-text {
-            //h3 {
-            //  max-width: 100%;
-            //}
-
             p {
-              max-width: 32rem;
+              max-width: 38rem;
             }
           }
         }
@@ -809,15 +805,18 @@
           }
 
           .block-text {
-            max-width: 28rem;
+            max-width: 100%;
             margin: 5.857rem auto 0 !important;
 
             .is-h2 {
-              margin-bottom: 1.75rem;
+              max-width: 28rem;
+              margin: 0 auto 1.75rem;
             }
 
-            p:not(:last-child) {
-              margin-bottom: 2.2rem;
+            p {
+              &:not(:last-child) {
+                margin-bottom: 2.2rem;
+              }
             }
           }
         }
@@ -839,7 +838,7 @@
             }
 
             .beacon-text {
-              max-width: 38.5rem;
+              max-width: 38rem;
             }
 
             .beacon-caption {
@@ -884,7 +883,7 @@
             }
 
             p {
-              max-width: 32rem;
+              max-width: 38rem;
             }
           }
         }
@@ -906,7 +905,7 @@
             }
 
             p {
-              max-width: 32rem;
+              max-width: 38rem;
             }
           }
         }
@@ -1036,16 +1035,10 @@
             }
 
             p {
+              max-width: 38rem;
+
               &:not(:last-child) {
                 margin-bottom: 2.2rem;
-              }
-
-              &:nth-child(2) {
-                max-width: 32rem;
-              }
-
-              &:nth-child(3) {
-                max-width: 38rem;
               }
             }
           }
@@ -1099,6 +1092,7 @@
       }
 
       p {
+        max-width: 24rem;
         padding-right: 0.571rem;
         padding-left: 0.571rem;
       }
@@ -1133,7 +1127,7 @@
         }
 
         .hero-text {
-          max-width: 20rem;
+          max-width: 24rem;
           margin-bottom: 2.7rem;
         }
 
@@ -1172,13 +1166,11 @@
             }
           }
 
-          //.block-text {
-          //  h3 {
-          //    max-width: 18rem;
-          //    margin-left: auto;
-          //    margin-right: auto;
-          //  }
-          //}
+          .block-text {
+            p {
+              max-width: 24rem;
+            }
+          }
         }
       }
 
@@ -1197,7 +1189,7 @@
             }
 
             p {
-              padding: 0;
+              max-width: 24rem;
 
               &:not(:last-child) {
                 margin-bottom: 1.75rem;
@@ -1227,6 +1219,7 @@
             }
 
             .beacon-text {
+              max-width: 24rem;
               margin-bottom: .7rem;
             }
 
@@ -1272,7 +1265,7 @@
             }
 
             p {
-              padding: 0;
+              max-width: 24rem;
             }
           }
         }
@@ -1372,7 +1365,7 @@
         }
 
         .info {
-          max-width: 26rem;
+          max-width: 24rem;
           font-size: 1.143rem;
           margin: 0 auto 6.1rem;
         }
@@ -1399,15 +1392,14 @@
             }
 
             p {
+              max-width: 24rem;
               letter-spacing: 0.009rem;
 
               &:nth-child(2) {
-                max-width: 20rem;
                 margin-bottom: 1.75rem;
               }
 
               &:nth-child(3) {
-                max-width: 23.5rem;
                 margin-bottom: 2.2rem;
               }
             }
