@@ -454,6 +454,16 @@
   }
 }
 
+@media screen and (min-width: $fullhd-lp) {
+  .home {
+    .section {
+      .learn-more {
+        font-size: 1.571rem;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: $fullhd) {
   .home {
     .section {
