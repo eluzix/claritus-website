@@ -195,7 +195,6 @@
       align-items: flex-start;
       padding-top: 14.286rem;
       background: url("/images/section-fog.png") no-repeat;
-      background-size: 100% auto;
       background-position: center 74.2%;
 
       .info {
@@ -628,8 +627,6 @@
       &.section-fog {
         min-height: 73.3rem;
         padding-top: 5.2rem;
-        background-image: url("/images/section-fog-small.png");
-        background-position: 50% 63.8%;
 
         h2 {
           margin-bottom: 3.429rem;
@@ -718,6 +715,15 @@
           letter-spacing: .015rem;
         }
       }
+    }
+  }
+}
+
+@include until(1281) {
+  .home {
+    .section.section-fog {
+      background-image: url("/images/section-fog-small.png");
+      background-position: 50% 63.8%;
     }
   }
 }
@@ -924,8 +930,7 @@
       &.section-fog {
         min-height: 64.7rem;
         padding-top: 8.8rem;
-        background-image: url("/images/section-fog-tablet.png");
-        background-position: 50% 76.4%;
+        background-position: 50% 80%;
 
         h2 {
           margin-bottom: 2.2rem;
@@ -1085,6 +1090,15 @@
       .button {
         height: 3.28rem;
       }
+    }
+  }
+}
+
+@include until(835) {
+  .home {
+    .section.section-fog {
+      background-image: url("/images/section-fog-tablet.png");
+      background-position: 50% 76.4%;
     }
   }
 }
@@ -1367,8 +1381,6 @@
       &.section-fog {
         min-height: 63.45rem;
         padding-top: 5.2rem;
-        background-image: url("/images/section-fog-mobile.png");
-        background-position: 50% 79.4%;
 
         h2 {
           margin-bottom: 1.3rem;
@@ -1461,6 +1473,15 @@
       & > div {
         width: 100%;
       }
+    }
+  }
+}
+
+@include until(376) {
+  .home {
+    .section.section-fog {
+      background-image: url("/images/section-fog-mobile.png");
+      background-position: 50% 79.4%;
     }
   }
 }
