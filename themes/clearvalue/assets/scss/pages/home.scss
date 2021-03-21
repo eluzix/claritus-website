@@ -195,7 +195,6 @@
       align-items: flex-start;
       padding-top: 14.286rem;
       background: url("/images/section-fog.png") no-repeat;
-      background-size: 100% auto;
       background-position: center 74.2%;
 
       .info {
@@ -398,7 +397,7 @@
           }
 
           p {
-            max-width: 40.5rem;
+            max-width: 50rem;
 
             &:not(:last-child) {
               margin-bottom: 2.9rem;
@@ -449,6 +448,16 @@
           right: -1px;
           top: 0;
         }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $fullhd-lp) {
+  .home {
+    .section {
+      .learn-more {
+        font-size: 1.571rem;
       }
     }
   }
@@ -618,8 +627,6 @@
       &.section-fog {
         min-height: 73.3rem;
         padding-top: 5.2rem;
-        background-image: url("/images/section-fog-small.png");
-        background-position: 50% 63.8%;
 
         h2 {
           margin-bottom: 3.429rem;
@@ -690,7 +697,7 @@
             }
 
             p {
-              max-width: 31rem;
+              max-width: 40rem;
 
               &:not(:last-child) {
                 margin-bottom: 2.3rem;
@@ -708,6 +715,15 @@
           letter-spacing: .015rem;
         }
       }
+    }
+  }
+}
+
+@include until(1281) {
+  .home {
+    .section.section-fog {
+      background-image: url("/images/section-fog-small.png");
+      background-position: 50% 63.8%;
     }
   }
 }
@@ -737,7 +753,7 @@
           }
 
           p {
-            max-width: 37.857rem;
+            max-width: 38rem;
             margin-top: 0;
             margin-right: auto;
             margin-left: auto;
@@ -760,7 +776,7 @@
         }
 
         .hero-text {
-          max-width: 34rem;
+          max-width: 38rem;
           margin-bottom: 2.75rem;
         }
 
@@ -783,12 +799,8 @@
           }
 
           .block-text {
-            //h3 {
-            //  max-width: 100%;
-            //}
-
             p {
-              max-width: 32rem;
+              max-width: 38rem;
             }
           }
         }
@@ -809,15 +821,18 @@
           }
 
           .block-text {
-            max-width: 28rem;
+            max-width: 100%;
             margin: 5.857rem auto 0 !important;
 
             .is-h2 {
-              margin-bottom: 1.75rem;
+              max-width: 28rem;
+              margin: 0 auto 1.75rem;
             }
 
-            p:not(:last-child) {
-              margin-bottom: 2.2rem;
+            p {
+              &:not(:last-child) {
+                margin-bottom: 2.2rem;
+              }
             }
           }
         }
@@ -839,7 +854,7 @@
             }
 
             .beacon-text {
-              max-width: 38.5rem;
+              max-width: 38rem;
             }
 
             .beacon-caption {
@@ -884,7 +899,7 @@
             }
 
             p {
-              max-width: 32rem;
+              max-width: 38rem;
             }
           }
         }
@@ -906,7 +921,7 @@
             }
 
             p {
-              max-width: 32rem;
+              max-width: 38rem;
             }
           }
         }
@@ -915,8 +930,7 @@
       &.section-fog {
         min-height: 64.7rem;
         padding-top: 8.8rem;
-        background-image: url("/images/section-fog-tablet.png");
-        background-position: 50% 76.4%;
+        background-position: 50% 80%;
 
         h2 {
           margin-bottom: 2.2rem;
@@ -1036,16 +1050,10 @@
             }
 
             p {
+              max-width: 38rem;
+
               &:not(:last-child) {
                 margin-bottom: 2.2rem;
-              }
-
-              &:nth-child(2) {
-                max-width: 32rem;
-              }
-
-              &:nth-child(3) {
-                max-width: 38rem;
               }
             }
           }
@@ -1086,6 +1094,15 @@
   }
 }
 
+@include until(835) {
+  .home {
+    .section.section-fog {
+      background-image: url("/images/section-fog-tablet.png");
+      background-position: 50% 76.4%;
+    }
+  }
+}
+
 @include mobile {
   .home {
     .section {
@@ -1099,6 +1116,7 @@
       }
 
       p {
+        max-width: 24rem;
         padding-right: 0.571rem;
         padding-left: 0.571rem;
       }
@@ -1133,7 +1151,7 @@
         }
 
         .hero-text {
-          max-width: 20rem;
+          max-width: 24rem;
           margin-bottom: 2.7rem;
         }
 
@@ -1172,13 +1190,11 @@
             }
           }
 
-          //.block-text {
-          //  h3 {
-          //    max-width: 18rem;
-          //    margin-left: auto;
-          //    margin-right: auto;
-          //  }
-          //}
+          .block-text {
+            p {
+              max-width: 24rem;
+            }
+          }
         }
       }
 
@@ -1197,7 +1213,7 @@
             }
 
             p {
-              padding: 0;
+              max-width: 24rem;
 
               &:not(:last-child) {
                 margin-bottom: 1.75rem;
@@ -1227,6 +1243,7 @@
             }
 
             .beacon-text {
+              max-width: 24rem;
               margin-bottom: .7rem;
             }
 
@@ -1272,7 +1289,7 @@
             }
 
             p {
-              padding: 0;
+              max-width: 24rem;
             }
           }
         }
@@ -1364,15 +1381,13 @@
       &.section-fog {
         min-height: 63.45rem;
         padding-top: 5.2rem;
-        background-image: url("/images/section-fog-mobile.png");
-        background-position: 50% 79.4%;
 
         h2 {
           margin-bottom: 1.3rem;
         }
 
         .info {
-          max-width: 26rem;
+          max-width: 24rem;
           font-size: 1.143rem;
           margin: 0 auto 6.1rem;
         }
@@ -1399,15 +1414,14 @@
             }
 
             p {
+              max-width: 24rem;
               letter-spacing: 0.009rem;
 
               &:nth-child(2) {
-                max-width: 20rem;
                 margin-bottom: 1.75rem;
               }
 
               &:nth-child(3) {
-                max-width: 23.5rem;
                 margin-bottom: 2.2rem;
               }
             }
@@ -1459,6 +1473,15 @@
       & > div {
         width: 100%;
       }
+    }
+  }
+}
+
+@include until(376) {
+  .home {
+    .section.section-fog {
+      background-image: url("/images/section-fog-mobile.png");
+      background-position: 50% 79.4%;
     }
   }
 }
