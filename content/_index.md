@@ -18,7 +18,7 @@ section3Text2: Simple, user-friendly, intuitive.
 
 section4Title: Track and Control
 section4Text: With real time data from more than 17,000 global financial institutions, brokerages, and other financial organizations, it’s never been easier <br/> to automatically keep track of your portfolio.
-section4Img: /images/section-2.png
+section4Img: /images/section-2.jpg
 
 section5Title: Nurture and Grow
 section5Text: Upload your investment history and measure your portfolio’s performance over time easily and accurately. You can also benefit from performance analytics and cross asset performance comparisons to help grow your wealth.
