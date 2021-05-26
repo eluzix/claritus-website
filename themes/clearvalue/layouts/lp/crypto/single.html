@@ -1,0 +1,191 @@
+{{ define "content" }}
+    <div class="{{ .Params.content_class }}">
+        {{ partial "nav.html" . }}
+        {{ partial "menu.html" }}
+
+        <section class="section hero">
+            <div class="centered">
+                <h1 class="hero-title">
+                    {{ .Title | safeHTML }}
+                </h1>
+                <p class="hero-text">{{ .Params.heroText | safeHTML }}</p>
+                <a class="button is-green is-full is-wide is-higher try-button"
+                href="{{ .Site.Params.appUrl }}/on-boarding">
+                    Try <img src="/images/logo-white-beta.svg" class="icon-logo"> for Free
+                </a>
+
+                <img src="{{ .Params.heroImg }}"/>
+            </div>
+        </section>
+
+        <section class="section section-track is-white">
+            <div class="section-info">
+                <div class="block-text">
+                    <div>
+                        <h2 class="is-h2 has-bottom-margin-20">{{ .Params.section1Title | safeHTML}}</h2>
+                        <p>{{ .Params.section1Text | safeHTML}}</p>
+                    </div>
+                </div>
+
+                <div class="block-image has-border-shadow is-centered">
+                    <img class="lazy-image" src="{{ .Params.section1ImgLazy }}" data-src="{{ .Params.section1Img }}"/>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-daterange is-white">
+            <div class="section-info">
+                <div class="block-image has-border-shadow">
+                    <img class="lazy-image" src="{{ .Params.section2ImgLazy }}" data-src="{{ .Params.section2Img }}"/>
+                </div>
+
+                <div class="block-text">
+                    <div>
+                        <h2 class="is-h2">{{ .Params.section2Title | safeHTML}}</h2>
+                        <p>{{ .Params.section2Text | safeHTML}}</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-automate is-white">
+            <div class="section-info">
+                <div class="block-text">
+                    <div>
+                        <h2 class="is-h2">{{ .Params.section3Title | safeHTML}}</h2>
+                        <p>{{ .Params.section3Text | safeHTML}}</p>
+                    </div>
+                </div>
+                <div class="block-image">
+                    <img class="lazy-image" src="{{ .Params.section3ImgLazy }}" data-src="{{ .Params.section3Img }}"/>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-clear-view">
+            <div class="section-info">
+                <div class="block-text">
+                    <div>
+                        <h2 class="is-h2">{{ .Params.section4Title | safeHTML}}</h2>
+                        <p>{{ .Params.section4Text | safeHTML}}</p>
+                    </div>
+                </div>
+
+                <div class="block-image">
+                    <img class="lazy-image" src="{{ .Params.section4ImgLazy }}" data-src="{{ .Params.section4Img }}"/>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-testimonials is-white">
+            <div class="centered">
+                <h2>{{ .Params.section5Title | safeHTML}}</h2>
+                <div class="testimonials-block is-hidden-tablet">
+                    {{ range .Params.testimonials }}
+                    <div class="testimonial">
+                        <img src="/images/icon-quotation.svg" class="quotation"/>
+                        <p class="testimonial-text">{{ .title | safeHTML}}</p>
+                        <div class="testimonial-author">
+                            <span>{{ .author }}</span>
+                        </div>
+                    </div>
+                    {{ end }}
+                </div>
+                <div class="testimonials-block testimonials-slider navigation-wrapper container">
+                    <div class="slider">
+                        <button id="arrow-left"
+                                class="arrow arrow--left is-hidden-mobile">
+                            <svg width="53" height="53" viewBox="0 0 53 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="26.5011" cy="26.4991" r="24.13" stroke="#C4C4C4" stroke-width="0.5"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M21.5453 27.4735L27.3414 33.6024L26.039 34.9795L18.0195 26.4995L26.039 18.0195L27.3414 19.3967L21.5453 25.5256H34.9795V27.4735H21.5453Z"
+                                    fill="#323947"/>
+                            </svg>
+                        </button>
+                        <div id="main-slider" class="keen-slider">
+                            {{ range $index, $elem := .Params.testimonials }}
+                            {{ $c := add $index 1 }}
+                            <div class="keen-slider__slide number-slide{{ $c }} testimonial">
+                                <img src="/images/icon-quotation.svg" class="quotation"/>
+                                <p class="testimonial-text">{{ $elem.title | safeHTML }}</p>
+                                <div class="testimonial-author">
+                                    <span>{{ $elem.author }}</span>
+                                </div>
+                            </div>
+                            {{ end }}
+                        </div>
+                        <button
+                                id="arrow-right"
+                                class="arrow arrow--right is-hidden-mobile">
+                            <svg width="53" height="53" viewBox="0 0 53 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle r="24.13" transform="matrix(-1 0 0 1 26.4989 26.4991)" stroke="#C4C4C4"
+                                        stroke-width="0.5"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M31.4547 27.4735L25.6586 33.6024L26.961 34.9795L34.9805 26.4995L26.961 18.0195L25.6586 19.3967L31.4547 25.5256H18.0205V27.4735H31.4547Z"
+                                    fill="#323947"/>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="content-dots">
+                        <button id="arrow-left-mobile"
+                                class="arrow arrow--left is-visible-mobile">
+                            <svg width="53" height="53" viewBox="0 0 53 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="26.5011" cy="26.4991" r="24.13" stroke="#C4C4C4" stroke-width="0.5"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M21.5453 27.4735L27.3414 33.6024L26.039 34.9795L18.0195 26.4995L26.039 18.0195L27.3414 19.3967L21.5453 25.5256H34.9795V27.4735H21.5453Z"
+                                    fill="#323947"/>
+                            </svg>
+                        </button>
+                        <div id="dots" class="dots"></div>
+                        <button
+                                id="arrow-right-mobile"
+                                class="arrow arrow--right is-visible-mobile">
+                            <svg width="53" height="53" viewBox="0 0 53 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle r="24.13" transform="matrix(-1 0 0 1 26.4989 26.4991)" stroke="#C4C4C4"
+                                        stroke-width="0.5"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M31.4547 27.4735L25.6586 33.6024L26.961 34.9795L34.9805 26.4995L26.961 18.0195L25.6586 19.3967L31.4547 25.5256H18.0205V27.4735H31.4547Z"
+                                    fill="#323947"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-transparent">
+            <div class="section-info">
+                <div class="block-text">
+                    <div>
+                        <h2>Transparent &<br/> Simple Pricing</h2>
+                        <p>At Claritus, we aim to provide you with the highest‑value solution for your money at a fair, and low subscription cost. There are no surprise costs or hidden fees, ever.</p>
+                        <p>Sign up to Claritus beta and enjoy our annual subscription for free, as a thank you for being one of our first users.</p>
+                        <p><a href="/blog/we-value-our-beta-customers/" class="learn-more is-link">Learn more</a></p>
+                        <a class="button is-green is-full is-wide is-higher try-button"
+                            href="{{ .Site.Params.appUrl }}/on-boarding">
+                            Try <img src="/images/logo-white-beta.svg" class="icon-logo"> for Free
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-privacy is-white">
+            <div class="section-info">
+                <div class="block-image">
+                    <img class="lazy-image" src="{{ .Params.section7ImgLazy }}" data-src="{{ .Params.section7Img }}"/>
+                </div>
+                <div class="block-text">
+                    <div>
+                        <h2 class="is-h2">{{ .Params.section7Title | safeHTML}}</h2>
+                        <p>{{ .Params.section7Text | safeHTML}}</p>
+                        <a href="/blog/trust" class="learn-more is-link">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        {{ partial "footer.html" . }}
+    </div>
+{{ end }}

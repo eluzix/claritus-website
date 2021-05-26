@@ -1,0 +1,72 @@
+@charset "utf-8";
+
+@import "../bulma/sass/utilities/all";
+@import "variables";
+
+@import "../bulma/sass/base/all";
+@import "../bulma/sass/grid/columns";
+@import "../bulma/sass/elements/button";
+
+@import "typo";
+@import "base";
+@import "menu-lp";
+@import "slider";
+@import "modal";
+@import "pages/home";
+
+.home {
+  .section.hero {
+    margin-bottom: 11.929rem;
+  }
+
+  .section.section-track .section-info .block-image {
+    padding: 1.786rem 0.714rem;
+  }
+
+  .section.section-daterange .section-info {
+    .block-image {
+      box-shadow: none;
+  
+      img {
+        width: auto;
+        max-width: 100%;
+        box-shadow: 0 8px 35px 5px rgba(0, 0, 0, 0.05);
+      }
+    }
+
+    .block-text {
+      justify-content: flex-start;
+    }
+  }
+
+  .section.section-clear-view {
+    margin-top: 14.071rem;
+    margin-bottom: 14.071rem;
+  }
+}
+
+@media screen and (max-width: $widescreen) {
+  .home {
+    .section.section-daterange .section-info .block-text {
+      justify-content: center;
+    }
+
+    .section.section-clear-view {
+      margin-top: 8.7rem;
+      margin-bottom: 12rem;
+    }
+  }
+}
+
+@include mobile {
+  .home {
+    .section.hero {
+      margin-bottom: 7.05rem;
+    }
+
+    .section.section-clear-view {
+      margin-top: 5.7rem;
+      margin-bottom: 3rem;
+    }
+  }
+}
