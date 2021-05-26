@@ -1,8 +1,8 @@
 ---
 date: 2021-05-26T06:58:58+00:00
 
-url: /lp/crypto
-type: lp/crypto
+url: /lp/crypto-tracking
+type: lp/crypto-tracking
 content_class: landing-page home home-crypto
 
 title: A Simple Way to Track Your <span class="is-green">Crypto</span>
