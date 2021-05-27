@@ -22,6 +22,7 @@ section2ImgLazy: /images/section-3-crypto-min.png
 section3Title: All In One
 section3Text: Aggregate the same coin at multiple locations to a single crypto portfolio to have a broader view of your entire portfolio. Seeing clearly your crypto diversification, your overall portfolio crypto returns and more.
 section3Img: /images/section-4-crypto.png
+section3ImgLazy: /images/section-4-crypto-min.png
 
 section4Title: Clear & Concise
 section4Text: At Claritus, we believe that you should have a clear, and understandable view of your assets and investments - without requiring a Master’s degree in Finance!
