@@ -9,20 +9,19 @@ title: A Simple Way to Track Your <span class="is-green">Crypto</span>
 heroText: Be in full control of your crypto investments with Claritus. One platform to track your crypto and all of your assets and investments - all in one place!
 heroImg: /images/section-hero-crypto.png
 
-section1Title: Track Any...
-section1Text: Track ANY crypto currency type that exists (as the most well known Bitcoin, Ethereum and others).
+section1Title: Track Any Coin
+section1Text: Track more than 6,000 cryptocurrencies. See your returns for one coin or all of your holdings in one place.
 section1Img: /images/section-2-crypto.png
 section1ImgLazy: /images/section-2-crypto-min.png
 
-section2Title: Transactions
-section2Text: track your crypto transactions to have better out-of-the-box return calculations for your crypto investment. 
+section2Title: Nurture and Grow
+section2Text: Upload your investment buy and sell transactions history and measure your portfolio’s performance over time easily and accurately. Analyzing and comparing performance can also help you increase your wealth.
 section2Img: /images/section-3-crypto.png
 section2ImgLazy: /images/section-3-crypto-min.png
 
-section3Title: aggregate
-section3Text: aggregate a few coin types to a single crypto portfolio to have a broader view of your entire portfolio. Seeing clearly your crypto diversification, your overall portfolio crypto returns and more.
-section3Img: /images/section-4.svg
-section3ImgLazy: /images/section-4-min.png
+section3Title: All In One
+section3Text: Aggregate the same coin at multiple locations to a single crypto portfolio to have a broader view of your entire portfolio. Seeing clearly your crypto diversification, your overall portfolio crypto returns and more.
+section3Img: /images/section-4-crypto.png
 
 section4Title: Clear & Concise
 section4Text: At Claritus, we believe that you should have a clear, and understandable view of your assets and investments - without requiring a Master’s degree in Finance!
