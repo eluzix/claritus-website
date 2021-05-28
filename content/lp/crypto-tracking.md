@@ -5,22 +5,22 @@ url: /lp/crypto-tracking
 type: lp/crypto-tracking
 content_class: landing-page home home-crypto
 
-title: A Simple Way to Track Your <span class="is-green">Crypto</span>
-heroText: Be in full control of your crypto investments with Claritus. One platform to track your crypto and all of your assets and investments - all in one place!
+title: Tracking <span class="is-green">Crypto</span> Made Easy
+heroText: It’s never been easier to track your Crypto. With Claritus you can track all your currencies, assets and investments in one place.
 heroImg: /images/section-hero-crypto.png
 
-section1Title: Track Any Coin
-section1Text: Track more than 6,000 cryptocurrencies. See your returns for one coin or all of your holdings in one place.
+section1Title: Coin Tracking
+section1Text: With more than 6,000 cryptocurrencies, you can track your returns for one or all of your coins in one place.
 section1Img: /images/section-2-crypto.png
 section1ImgLazy: /images/section-2-crypto-min.png
 
 section2Title: Nurture and Grow
-section2Text: Upload your investment buy and sell transactions history and measure your portfolio’s performance over time easily and accurately. Analyzing and comparing performance can also help you increase your wealth.
+section2Text: Increase your wealth by uploading your investment history and measuring your portfolio's performance over time easily and accurately.
 section2Img: /images/section-3-crypto.png
 section2ImgLazy: /images/section-3-crypto-min.png
 
-section3Title: All In One
-section3Text: Aggregate the same coin at multiple locations to a single crypto portfolio to have a broader view of your entire portfolio. Seeing clearly your crypto diversification, your overall portfolio crypto returns and more.
+section3Title: All in One Place
+section3Text: Aggregate the same coin in multiple locations in a single crypto portfolio so that you can clearly see your diversification, crypto returns and more.
 section3Img: /images/section-4-crypto.png
 section3ImgLazy: /images/section-4-crypto-min.png
 

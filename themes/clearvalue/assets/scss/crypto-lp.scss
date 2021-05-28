@@ -19,8 +19,14 @@
     margin-bottom: 11.929rem;
   }
 
-  .section.section-track .section-info .block-image {
-    padding: 1.786rem 0.714rem;
+  .section.section-track .section-info {
+    .block-image {
+      padding: 1.786rem 0.714rem;
+    }
+
+    .block-text p {
+      max-width: 40rem;
+    }
   }
 
   .section.section-daterange .section-info {
@@ -36,6 +42,10 @@
 
     .block-text {
       justify-content: flex-start;
+
+      p {
+        max-width: 42rem;
+      }
     }
   }
 
@@ -54,8 +64,12 @@
     .block-text {
       margin-right: 2rem;
 
+      .is-h2 {
+        max-width: 100%;
+      }
+
       p {
-        max-width: 40.5rem;
+        max-width: 40rem;
         padding: 0;
       }
     }
@@ -121,13 +135,27 @@
 
     .section.section-track {
       padding: 7.05rem 1.071rem 9rem;
+
+      .section-info .block-text p {
+        max-width: 24rem;
+        padding-right: .571rem;
+        padding-left: .571rem;
+      }
     }
 
     .section.section-daterange {
       padding-bottom: 9rem;
 
-      .section-info .block-image {
-        max-width: 24.57rem;
+      .section-info {
+        .block-image {
+          max-width: 24.57rem;
+        }
+
+        .block-text p {
+          max-width: 24rem;
+          padding-right: .571rem;
+          padding-left: .571rem;
+        }
       }
     }
 
