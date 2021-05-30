@@ -6,7 +6,7 @@
         <section class="section hero">
             <div class="centered">
                 <h1 class="hero-title">
-                    {{ .Title | safeHTML }}
+                    {{ .Params.heroTitle | safeHTML }}
                 </h1>
                 <p class="hero-text">{{ .Params.heroText | safeHTML }}</p>
                 <a class="button is-green is-full is-wide is-higher try-button"
@@ -189,3 +189,4 @@
         {{ partial "footer.html" . }}
     </div>
 {{ end }}
+{{ define "title" }}{{ .Title }}{{ end }}
