@@ -5,7 +5,8 @@ url: /lp/crypto-tracking
 type: lp/crypto-tracking
 content_class: landing-page home home-crypto
 
-title: Tracking <span class="is-green">Crypto</span> Made Easy
+title: Claritus - Tracking Crypto Made Easy
+heroTitle: Tracking <span class="is-green">Crypto</span> Made Easy
 Description: It’s never been easier to track your Crypto. With Claritus you can track all your currencies, assets and investments in one place.
 thumbnail: /images/section-hero-crypto.png
 heroText: It’s never been easier to track your Crypto. With Claritus you can track all your currencies, assets and investments in one place.
