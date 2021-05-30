@@ -5,22 +5,25 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <base href="{{ .Site.BaseURL }}">
-        <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
+        <title>{{ if .Params.MetaTitle }}{{ .Params.MetaTitle | plainify }}{{ else if .Params.Title}}{{ .Params.Title | plainify }}{{ else }}{{ block "title" . }}{{ .Site.Title | plainify }}{{ end }}{{ end }}</title>
         {{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
-        {{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
+        <meta name="description" content="{{ if .Params.Description  }}{{ .Params.Description | plainify }}{{ else }}{{ .Site.Params.Description | plainify }}{{ end }}"/>
 
         <!-- Open Graph / Facebook -->
-        <meta property="og:type" content="website" />
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="{{ .Permalink }}">
+        <meta property="og:title" content="{{ if .Params.MetaTitle }}{{ .Params.MetaTitle | plainify }}{{ else if .Params.Title}}{{ .Params.Title | plainify }}{{ else }}{{ .Site.Title | plainify }}{{ end }}" />
+        <!--    {{ with .Site.Params.description }}<meta property="og:description" content="{{ . }}" />{{ end }}-->
+        <meta name="og:description" content="{{ if .Params.Description }}{{ .Params.Description | plainify }}{{ else }}{{ .Site.Params.Description | plainify }}{{ end }}"/>
         <meta property="og:url" content="{{ .Permalink }}" />
-        <meta property="og:title" content="{{ .Site.Title }}" />
-        {{ with .Site.Params.description }}<meta property="og:description" content="{{ . }}" />{{ end }}
-        <meta property="og:image" content="{{.Site.BaseURL}}images/claritus_preview.jpg" />
+        <meta property="og:image" content="{{ if .Params.thumbnail }}{{.Site.Params.noTrailingBaseURL}}{{ .Params.thumbnail }}{{else}}{{.Site.BaseURL}}images/claritus_preview.png{{ end }}">
         <!-- Twitter -->
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="{{ .Permalink }}" />
-        <meta property="twitter:title" content="{{ .Site.Title }}" />
-        {{ with .Site.Params.description }}<meta property="twitter:description" content="{{ . }}" />{{ end }}
-        <meta property="twitter:image" content="{{.Site.BaseURL}}images/claritus_preview.jpg" />
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="{{ .Permalink }}">
+        <meta property="twitter:title" content="{{ if .Params.MetaTitle }}{{ .Params.MetaTitle | plainify }}{{ else if .Params.Title }}{{ .Params.Title | plainify }}{{ else }}{{ .Site.Title | plainify }}{{ end }}">
+        <!--    {{ with .Site.Params.description }}<meta property="twitter:description" content="{{ . }}">{{ end }}-->
+        <meta name="twitter:description" content="{{ if .Params.Description }}{{ .Params.Description | plainify }}{{ else }}{{ .Site.Params.Description | plainify }}{{ end }}"/>
+        <meta property="twitter:image" content="{{ if .Params.thumbnail }}{{.Site.Params.noTrailingBaseURL}}{{ .Params.thumbnail }}{{else}}{{.Site.BaseURL}}images/claritus_preview.png{{ end }}">
         <link rel="canonical" href="{{ .Permalink }}">
 
         <link rel="preconnect" href="https://app.claritus.io">
