@@ -51,11 +51,6 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/keen-slider@5.0.2/keen-slider.min.css"
-    />
-
 
     {{ with .OutputFormats.Get "RSS" }}
     <link href="{{ .RelPermalink }}" rel="alternate" type="application/rss+xml" />
@@ -69,7 +64,6 @@
     {{ $mainJs := resources.Get "js/main.js" }}
     {{ $js := $mainJs | resources.Minify | fingerprint }}
     <script src="{{ $js.Permalink }}"></script>
-    <script src="https://cdn.jsdelivr.net/npm/keen-slider@5.0.2/keen-slider.min.js"></script>
 
     {{ block "StructData" . }}{{ end }}
 
