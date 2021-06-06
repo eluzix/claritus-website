@@ -956,9 +956,11 @@
         }
 
         .testimonials-slider {
-          display: block;
-          position: relative;
-          visibility: visible;
+          &.active {
+            display: block;
+            position: relative;
+            visibility: visible;
+          }
 
           .slider {
             display: flex;

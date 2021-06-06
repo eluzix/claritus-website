@@ -184,10 +184,14 @@ const app = {
     },
 
     setupSliderTestimonials() {
-        if (document.querySelector('.home')) {
-            let slider = new KeenSlider("#main-slider", {
+        const slider = document.querySelector('.home .testimonials-slider')
+
+        if (slider) {
+            new KeenSlider("#main-slider", {
                 loop: true,
                 created: function (instance) {
+                    slider.classList.add('active');
+
                     let timerId = setInterval(() => {
                         document
                         .getElementById("arrow-right").click()
@@ -453,13 +457,42 @@ function checkHeaderVisibility() {
     }
 }
 
+function initSliderLazyLoad() {
+    const width  = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+    if (width < 1217) {
+        window.removeEventListener("resize", initSliderLazyLoad);
+
+        var link = document.createElement('link');
+        link.setAttribute('rel', 'stylesheet');
+        link.setAttribute('type', 'text/css');
+        link.setAttribute('href', 'https://cdn.jsdelivr.net/npm/keen-slider@5.0.2/keen-slider.min.css');
+
+        // load slider js/css
+        var script = document.createElement('script');
+        script.setAttribute('type', 'text/javascript');
+        script.setAttribute('async', false);
+        script.setAttribute('src', 'https://cdn.jsdelivr.net/npm/keen-slider@5.0.2/keen-slider.min.js');
+
+
+        const head = document.head || document.getElementsByTagName('head')[0];
+        head.appendChild(link);
+        head.appendChild(script);
+
+        script.addEventListener('load', function() {
+            app.setupSliderTestimonials();
+        });
+    }
+}
+
 document.addEventListener('DOMContentLoaded', function () {
     window.addEventListener("scroll", checkHeaderVisibility, false);
+    window.addEventListener("resize", initSliderLazyLoad);
+    initSliderLazyLoad();
 
     // app.setupSnapScrolling();
     app.initMenuOpening();
     // app.homeScrollToPricing();
-    app.setupSliderTestimonials();
     app.initScrollTop();
     app.initLazyLoad();
     app.initContactUsModal();
