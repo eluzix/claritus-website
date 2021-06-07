@@ -18,17 +18,32 @@
             </div>
         </section>
 
+        <section class="section section-automated-track is-white">
+            <div class="section-info">
+                <div class="block-image has-border-shadow">
+                    <img class="lazy-image" src="{{ .Params.section1ImgLazy }}" data-src="{{ .Params.section1Img }}"/>
+                </div>
+
+                <div class="block-text">
+                    <div>
+                        <h2 class="is-h2">{{ .Params.section1Title | safeHTML}}</h2>
+                        <p>{{ .Params.section1Text | safeHTML}}</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section class="section section-track is-white">
             <div class="section-info">
                 <div class="block-text">
                     <div>
-                        <h2 class="is-h2 has-bottom-margin-20">{{ .Params.section1Title | safeHTML}}</h2>
-                        <p>{{ .Params.section1Text | safeHTML}}</p>
+                        <h2 class="is-h2 has-bottom-margin-20">{{ .Params.section2Title | safeHTML}}</h2>
+                        <p>{{ .Params.section2Text | safeHTML}}</p>
                     </div>
                 </div>
 
                 <div class="block-image has-border-shadow is-centered">
-                    <img class="lazy-image" src="{{ .Params.section1ImgLazy }}" data-src="{{ .Params.section1Img }}"/>
+                    <img class="lazy-image" src="{{ .Params.section2ImgLazy }}" data-src="{{ .Params.section2Img }}"/>
                 </div>
             </div>
         </section>
@@ -36,13 +51,13 @@
         <section class="section section-daterange is-white">
             <div class="section-info">
                 <div class="block-image has-border-shadow">
-                    <img class="lazy-image" src="{{ .Params.section2ImgLazy }}" data-src="{{ .Params.section2Img }}"/>
+                    <img class="lazy-image" src="{{ .Params.section3ImgLazy }}" data-src="{{ .Params.section3Img }}"/>
                 </div>
 
                 <div class="block-text">
                     <div>
-                        <h2 class="is-h2">{{ .Params.section2Title | safeHTML}}</h2>
-                        <p>{{ .Params.section2Text | safeHTML}}</p>
+                        <h2 class="is-h2">{{ .Params.section3Title | safeHTML}}</h2>
+                        <p>{{ .Params.section3Text | safeHTML}}</p>
                     </div>
                 </div>
             </div>
@@ -52,12 +67,12 @@
             <div class="section-info">
                 <div class="block-text">
                     <div>
-                        <h2 class="is-h2">{{ .Params.section3Title | safeHTML}}</h2>
-                        <p>{{ .Params.section3Text | safeHTML}}</p>
+                        <h2 class="is-h2">{{ .Params.section4Title | safeHTML}}</h2>
+                        <p>{{ .Params.section4Text | safeHTML}}</p>
                     </div>
                 </div>
                 <div class="block-image">
-                    <img class="lazy-image" src="{{ .Params.section3ImgLazy }}" data-src="{{ .Params.section3Img }}"/>
+                    <img class="lazy-image" src="{{ .Params.section4ImgLazy }}" data-src="{{ .Params.section4Img }}"/>
                 </div>
             </div>
         </section>
@@ -66,20 +81,20 @@
             <div class="section-info">
                 <div class="block-text">
                     <div>
-                        <h2 class="is-h2">{{ .Params.section4Title | safeHTML}}</h2>
-                        <p>{{ .Params.section4Text | safeHTML}}</p>
+                        <h2 class="is-h2">{{ .Params.section5Title | safeHTML}}</h2>
+                        <p>{{ .Params.section5Text | safeHTML}}</p>
                     </div>
                 </div>
 
                 <div class="block-image">
-                    <img class="lazy-image" src="{{ .Params.section4ImgLazy }}" data-src="{{ .Params.section4Img }}"/>
+                    <img class="lazy-image" src="{{ .Params.section5ImgLazy }}" data-src="{{ .Params.section5Img }}"/>
                 </div>
             </div>
         </section>
 
         <section class="section section-testimonials is-white">
             <div class="centered">
-                <h2>{{ .Params.section5Title | safeHTML}}</h2>
+                <h2>{{ .Params.section6Title | safeHTML}}</h2>
                 <div class="testimonials-block is-hidden-tablet">
                     {{ range .Params.testimonials }}
                     <div class="testimonial">
@@ -174,12 +189,12 @@
         <section class="section section-privacy is-white">
             <div class="section-info">
                 <div class="block-image">
-                    <img class="lazy-image" src="{{ .Params.section7ImgLazy }}" data-src="{{ .Params.section7Img }}"/>
+                    <img class="lazy-image" src="{{ .Params.section8ImgLazy }}" data-src="{{ .Params.section8Img }}"/>
                 </div>
                 <div class="block-text">
                     <div>
-                        <h2 class="is-h2">{{ .Params.section7Title | safeHTML}}</h2>
-                        <p>{{ .Params.section7Text | safeHTML}}</p>
+                        <h2 class="is-h2">{{ .Params.section8Title | safeHTML}}</h2>
+                        <p>{{ .Params.section8Text | safeHTML}}</p>
                         <a href="/blog/trust" class="learn-more is-link">Learn more</a>
                     </div>
                 </div>
