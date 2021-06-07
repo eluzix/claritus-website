@@ -1,8 +1,10 @@
 ---
 date: 2021-05-26T06:58:58+00:00
+styleSource: scss/crypto-lp.scss
 
 url: /lp/crypto-tracking
-type: lp/crypto-tracking
+type: lp
+layout: crypto-tracking
 content_class: landing-page home home-crypto
 
 title: Claritus - Tracking Crypto Made Easy
