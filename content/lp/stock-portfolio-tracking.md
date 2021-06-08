@@ -31,8 +31,8 @@ section3ImgLazy: /images/section-3-portfolio-min.png
 
 section4Title: Clear & Concise
 section4Text: At Claritus, we believe that you should have a clear, and understandable view of your assets and investments - without requiring a Master’s degree in Finance!
-section4Img: /images/clear-concise-crypto.svg
-section4ImgLazy: /images/clear-concise-crypto-min.png
+section4Img: /images/clear-concise-stocks.svg
+section4ImgLazy: /images/clear-concise-stocks-min.png
 
 section5Title: What our early adopters saying about us...
 testimonials:
