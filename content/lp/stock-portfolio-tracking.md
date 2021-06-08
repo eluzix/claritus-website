@@ -8,7 +8,7 @@ layout: stock-portfolio-tracking
 content_class: landing-page home home-portfolio
 
 title: Claritus - Tracking Stock portfolio Made Easy
-heroTitle: Tracking <span class="is-green">Stock portfolio</span> Made Easy
+heroTitle: Tracking <span class="is-green">Stock Portfolio</span> Made Easy
 Description: It’s never been easier to track your stock portfolios. With Claritus you can track all your stock portfolios, assets and investments in one place.
 thumbnail: /images/section-hero-portfolio.png
 heroText: It’s never been easier to track your stock portfolios. With Claritus you can track all your stock portfolios, assets and investments in one place.
