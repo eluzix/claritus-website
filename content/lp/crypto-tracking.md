@@ -1,6 +1,7 @@
 ---
 date: 2021-05-26T06:58:58+00:00
 styleSource: scss/crypto-lp.scss
+sitemapExclude: true
 
 url: /lp/crypto-tracking
 type: lp
