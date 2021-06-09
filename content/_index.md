@@ -31,7 +31,7 @@ section6Img: /images/section-4.svg
 section7Title: Lifting the Fog on a Brighter Future
 section7Text: Claritus’s straight-forward, comprehensive view of your portfolio’s performance allows to you acquire a deeper understanding of your financials. Not only can you maintain and nurture your investments, but you can also  make smarter decisions moving forward.
 
-section8Title: What our early adopters saying about us...
+section8Title: What our early adopters are saying about us...
 testimonials:
     - title: fantastic! The app is really well designed, loads very fast and I really appreciate the subtle details that have been included. I'm very happy to have found it.
       author: Richard F.

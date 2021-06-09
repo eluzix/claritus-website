@@ -15,12 +15,12 @@ heroText: It’s never been easier to track your Crypto. With Claritus you can t
 heroImg: /images/section-hero-crypto.png
 
 section1Title: Automated Tracking
-section1Text: With real-time data from all major wallets and exchanges, you can automatically keep track of your crypto assets. It's Never Been Easier!
+section1Text: With real time data from all major wallets and exchanges, it’s never been easier to automatically keep track of your crypto assets.
 section1Img: /images/section-1-crypto.png
 section1ImgLazy: /images/section-1-crypto-min.png
 
-section2Title: Coin Tracking
-section2Text: With more than 6,000 cryptocurrencies, you can track your returns for one or all of your coins in one place.
+section2Title: Manual Coin Tracking
+section2Text: With more than 6,000 cryptocurrencies you can manually track your returns for one or all of your coins under one roof.
 section2Img: /images/section-2-crypto.png
 section2ImgLazy: /images/section-2-crypto-min.png
 
@@ -39,7 +39,7 @@ section5Text: At Claritus, we believe that you should have a clear, and understa
 section5Img: /images/clear-concise-crypto.svg
 section5ImgLazy: /images/clear-concise-crypto-min.png
 
-section6Title: What our early adopters saying about us...
+section6Title: What our early adopters are saying about us...
 testimonials:
     - title: fantastic! The app is really well designed, loads very fast and I really appreciate the subtle details that have been included. I'm very happy to have found it.
       author: Richard F.

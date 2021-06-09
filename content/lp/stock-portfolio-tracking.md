@@ -34,7 +34,7 @@ section4Text: At Claritus, we believe that you should have a clear, and understa
 section4Img: /images/clear-concise-stocks.svg
 section4ImgLazy: /images/clear-concise-stocks-min.png
 
-section5Title: What our early adopters saying about us...
+section5Title: What our early adopters are saying about us...
 testimonials:
     - title: fantastic! The app is really well designed, loads very fast and I really appreciate the subtle details that have been included. I'm very happy to have found it.
       author: Richard F.
