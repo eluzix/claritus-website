@@ -8,25 +8,25 @@ type: lp
 layout: stock-portfolio-tracking
 content_class: landing-page home home-portfolio
 
-title: Claritus - Tracking Stock portfolio Made Easy
-heroTitle: Tracking <span class="is-green">Stock Portfolio</span> Made Easy
-Description: It’s never been easier to track your stock portfolios. With Claritus you can track all your stock portfolios, assets and investments in one place.
+title: Claritus - Stock Portfolio Tracking Made Easy
+heroTitle: <span class="is-green">Stock Portfolio</span> Tracking Made Easy
+Description: With Claritus it’s never been easier to track all your stock portfolios, assets and investments in one place.
 thumbnail: /images/section-hero-portfolio.png
-heroText: It’s never been easier to track your stock portfolios. With Claritus you can track all your stock portfolios, assets and investments in one place.
+heroText: With Claritus it’s never been easier to track all your stock portfolios, assets and investments in one place.
 heroImg: /images/section-hero-portfolio.png
 
 section1Title: Track and Control
-section1Text: With real time data from more than 17,000 global financial institutions, brokerages, and other financial organizations, it’s never been easier to automatically keep track of your investments and assets.
+section1Text: With real time data from more than 17,000 global financial institutions, brokerages, and other financial organisations you can automatically keep track of your stock portfolios.
 section1Img: /images/section-1-portfolio.png
 section1ImgLazy: /images/section-1-portfolio-min.png
 
 section2Title: Nurture and Grow
-section2Text: Analyze your wealth's performance over time easily and accurately, and enjoy cross-asset performance comparisons to help grow your wealth.
+section2Text: Accurately analyse your stock portfolios performance over time, and enjoy our performance comparisons to help you grow your wealth.
 section2Img: /images/section-2-portfolio.png
 section2ImgLazy: /images/section-2-portfolio-min.png
 
 section3Title: All in One
-section3Text: View all of your stock portfolios in a single glance so you can clearly see the risk level, returns, diversification, etc.
+section3Text: Easily view your aggregated stock portfolio insights and performance, for all portfolios or for a single portfolio.
 section3Img: /images/section-3-portfolio.png
 section3ImgLazy: /images/section-3-portfolio-min.png
 
