@@ -117,6 +117,12 @@
   }
 }
 
+@media screen and (min-width: $fullhd) {
+  .section.section-track .section-info h2 {
+    max-width: 35rem;
+  }
+}
+
 @media screen and (max-width: $fullhd) {
   .home {
     .section.section-automated-track {
