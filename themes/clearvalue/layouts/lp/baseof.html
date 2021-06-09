@@ -35,9 +35,17 @@
         <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
         <link rel="preconnect" href="https://consent.cookiefirst.com">
         <link rel="dns-prefetch" href="https://consent.cookiefirst.com">
-        <link rel="preload" as="image" href="/images/section-hero-crypto.png">
 
-        {{ $sass := resources.Get "scss/crypto-lp.scss" }}
+        {{if .Params.heroImg}}
+        <link rel="preload" as="image" href="{{ .Params.heroImg }}">
+        {{ end }}
+
+        {{ $styleSource := "scss/main.scss" }}
+        {{if .Params.styleSource}}
+            {{ $styleSource = .Params.styleSource }}
+        {{ end }}
+
+        {{ $sass := resources.Get $styleSource }}
         {{ $style := $sass | resources.ToCSS | resources.Minify  | fingerprint }}
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="{{ $style.Permalink }}">
