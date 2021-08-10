@@ -1,7 +1,15 @@
 ---
-title: A Simple Way to Keep <br/> Track of <span class="is-green">Your Wealth</span>
 date: 2020-01-01T09:30:01+03:00
-heroText: Claritus is a technology-driven private wealth service that allows you to track, understand, and take control of your wealth - all in one place!
+styleSource: scss/portfolio-home-lp.scss
+sitemapExclude: true
+
+url: /lp/portfolio-tracking
+type: lp
+layout: portfolio-tracking
+content_class: landing-page home home-wealth
+
+title: A Simple Way to Keep <br/> Track of <span class="is-green">Your Portfolio</span>
+heroText: Finally, a 360° view of your portfolio that lets you track, understand, and be in complete control of all of your assets and investments - all in one place!
 heroImg: /images/section-hero.png
 
 section1Title: Clear & Concise
@@ -33,12 +41,12 @@ section7Text: Claritus’s straight-forward, comprehensive view of your portfoli
 
 section8Title: What our early adopters are saying about us...
 testimonials:
-    - title: fantastic! The app is really well designed, loads very fast and I really appreciate the subtle details that have been included. I'm very happy to have found it.
-      author: Richard F.
-    - title: I really like using Claritus to keep track of all my assets and liabilities.
-      author: Andress T.
-    - title: I'm really excited to switch to Claritus as my primary tool and replace my old spreadsheet.
-      author: Mike M.
+  - title: fantastic! The app is really well designed, loads very fast and I really appreciate the subtle details that have been included. I'm very happy to have found it.
+    author: Richard F.
+  - title: I really like using Claritus to keep track of all my assets and liabilities.
+    author: Andress T.
+  - title: I'm really excited to switch to Claritus as my primary tool and replace my old spreadsheet.
+    author: Mike M.
 
 familyOffice: If you're a Family Office, or financial professional and want to use Claritus for your clients, <br/> please contact us at <a href="mailto:Hello@Claritus.io" class="link contact-us-link is-green" title="email claritus.io">Hello@Claritus.io</a>
 ---
