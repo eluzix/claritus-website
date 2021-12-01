@@ -2,7 +2,6 @@
 content_class = "blog-post"
 date = 2021-11-30T22:00:00Z
 description = "Claritus Tags, a powerful yet easy-to-use tool that allows you to observe your holdings with greater clarity. Tags enable you to define your own groups of financial assets & liabilities with strong aggregation and financial calculations."
-draft = true
 header_class = ""
 hidden = true
 metaTitle = ""
