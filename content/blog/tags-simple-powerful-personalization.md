@@ -25,6 +25,6 @@ To demonstrate how powerful and simple those tags are, let us give you an exampl
 
 As a result, you have created a unique group based on the managed securities portfolios you've tagged. While viewing the tag, you will see financial data for all advised portfolios, including yields, the overall net worth of these combined portfolios, and other aggregations that Claritus currently offers or will be able to deliver in the future.
 
-**Start tagging your holdings today and see how helpful, powerful, and easy it is.**
+Start tagging your holdings today and see how helpful, powerful, and easy it is.
 
 Your financial peace of mind is our mission
