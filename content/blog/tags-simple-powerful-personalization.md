@@ -7,11 +7,11 @@ hidden = true
 metaTitle = ""
 publishDate = 2021-11-30T22:00:00Z
 summary = "Claritus Tags, a powerful yet easy-to-use tool that allows you to observe your holdings with greater clarity. Tags enable you to define your own groups of financial assets & liabilities with strong aggregation and financial calculations."
-thumbnail = "/uploads/tag-cloud-2.png"
+thumbnail = "/uploads/tag-cloud-black-1.png"
 title = "Tags: Simple & Powerful Personalization"
 
 +++
-![](/uploads/tag-cloud-2.png)
+![](/uploads/tag-cloud-black-1.png)
 
 We know each one is unique and with a unique financial situation. We know personal finance is not only numbers and returns, it’s not only aggregating financial data and manipulating financial calculations. Claritus was created to give you a clear and comprehensive view of your holdings with your own unique point of view.
 
