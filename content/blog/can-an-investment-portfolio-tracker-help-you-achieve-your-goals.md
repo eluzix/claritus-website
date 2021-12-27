@@ -24,7 +24,7 @@ If you’re like most investors, you probably own a collection of real estate, s
 
 ### Statements Everywhere…But No Real Answers
 
-![](/uploads/man-hold-his-head-failure-work-1.jpg)
+![Statements Everywhere…But No Real Answers](/uploads/man-hold-his-head-failure-work-1.jpg "Statements Everywhere…But No Real Answers")
 
 Account statements are a source of information but can’t do everything. For one, a static snapshot cannot help you monitor warning signals that one of your holdings may require your attention. It’s also difficult to see if you may have some overlap in portfolios accounts, resulting in your wealth getting overly concentrated in certain areas. And if you’re like me, you might have even lost track of an account or two in the past. There’s just too much information, and paper or pdf files can only do so much.
 
