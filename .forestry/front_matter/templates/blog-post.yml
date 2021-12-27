@@ -36,4 +36,5 @@ fields:
   name: thumbnail
   label: thumbnail
 pages:
+- content/blog/can-an-investment-portfolio-tracker-help-you-achieve-your-goals.md
 - content/blog/tags-simple-powerful-personalization.md
