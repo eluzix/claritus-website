@@ -7,7 +7,7 @@ hidden = true
 metaTitle = "Can an Investment Portfolio Tracker Help You Achieve Your Goals ?"
 publishDate = ""
 summary = "As your wealth grows, you would think your financial confidence would automatically increase along with it.  However, many successful people find that they often feel uncertain about the day to day management of their increasing asset portfolio.  How can you keep on top of everything and make sure your money is invested effectively?  Using an investment portfolio tracker may be the tool you need to regain control and make better decisions.  "
-thumbnail = ""
+thumbnail = "/uploads/high-competition-business-cloud-winner-copy-1.png"
 title = "Can an Investment Portfolio Tracker Help You Achieve Your Goals ?"
 type = ""
 
