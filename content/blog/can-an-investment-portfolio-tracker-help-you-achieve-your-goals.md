@@ -13,13 +13,13 @@ title = "Can an Investment Portfolio Tracker Help You Achieve Your Goals ?"
 +++
 As your wealth grows, you would think your financial confidence would automatically increase along with it. However, many successful people find that they often feel uncertain about the day to day management of their increasing asset portfolio. How can you keep on top of everything and make sure your money is invested effectively? Using an investment portfolio tracker may be the tool you need to regain control and make better decisions.
 
-## **What Can an Investment Portfolio Tracker Do For You?**
+### **What Can an Investment Portfolio Tracker Do For You?**
 
 There’s nothing simple about managing your wealth in today’s rapidly changing landscape. First, there's a lot to consider with rising inflation, low interest rates, high asset prices and record government debt. Then, as you add more accounts and complexity, it can be challenging to see the big picture and consider how changes in the market will impact your financial plan.
 
 If you’re like most investors, you probably own a collection of real estate, stocks, retirement accounts, checking and saving accounts, bonds, or certificates of deposits. In addition, you may also have private equity, venture capital, or cryptocurrency investments. That’s a lot to manage.
 
-## **Statements Everywhere…But No Real Answers**
+### **Statements Everywhere…But No Real Answers**
 
 Account statements are a source of information but can’t do everything. For one, a static snapshot cannot help you monitor warning signals that one of your holdings may require your attention. It’s also difficult to see if you may have some overlap in portfolios accounts, resulting in your wealth getting overly concentrated in certain areas. And if you’re like me, you might have even lost track of an account or two in the past. There’s just too much information, and paper or pdf files can only do so much.
 
