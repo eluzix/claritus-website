@@ -7,12 +7,12 @@ hidden = true
 metaTitle = "Can an Investment Portfolio Tracker Help You Achieve Your Goals ?"
 publishDate = ""
 summary = "As your wealth grows, you would think your financial confidence would automatically increase along with it.  However, many successful people find that they often feel uncertain about the day to day management of their increasing asset portfolio.  How can you keep on top of everything and make sure your money is invested effectively?  Using an investment portfolio tracker may be the tool you need to regain control and make better decisions.  "
-thumbnail = "/uploads/high-competition-business-cloud-winner-copy-1-copy-1.png"
+thumbnail = "/uploads/high-competition-business-cloud-winner-copy-1-copy-1-1-1.png"
 title = "Can an Investment Portfolio Tracker Help You Achieve Your Goals ?"
 type = ""
 
 +++
-![](/uploads/high-competition-business-cloud-winner-copy-1-copy-1.png)
+![](/uploads/high-competition-business-cloud-winner-copy-1-copy-1-1-1.png)
 
 As your wealth grows, you would think your financial confidence would automatically increase along with it. However, many successful people find that they often feel uncertain about the day to day management of their increasing asset portfolio. How can you keep on top of everything and make sure your money is invested effectively? Using an investment portfolio tracker may be the tool you need to regain control and make better decisions.
 
@@ -24,7 +24,7 @@ If you’re like most investors, you probably own a collection of real estate, s
 
 ### Statements Everywhere…But No Real Answers
 
-![](/uploads/man-hold-his-head-failure-work-1-1-1.png)Account statements are a source of information but can’t do everything. For one, a static snapshot cannot help you monitor warning signals that one of your holdings may require your attention. It’s also difficult to see if you may have some overlap in portfolios accounts, resulting in your wealth getting overly concentrated in certain areas. And if you’re like me, you might have even lost track of an account or two in the past. There’s just too much information, and paper or pdf files can only do so much.
+![](/uploads/man-hold-his-head-failure-work-1-1-2.png)Account statements are a source of information but can’t do everything. For one, a static snapshot cannot help you monitor warning signals that one of your holdings may require your attention. It’s also difficult to see if you may have some overlap in portfolios accounts, resulting in your wealth getting overly concentrated in certain areas. And if you’re like me, you might have even lost track of an account or two in the past. There’s just too much information, and paper or pdf files can only do so much.
 
 When your assets reach a more substantial level, there’s too much at stake. You want all of your money to be managed properly and working for you. If you don’t recognize problems early enough in your portfolio, you could end up losing more than you need to. The longer that goes on, the more costly it can become. In the meantime, you’re also losing out on other opportunities.
 
@@ -67,5 +67,3 @@ We help you gain other critical insights into your investments. We’ve added we
 * Our **Grouping** capabilities lets you aggregate data from several investments, and create any custom groups you desire
 
 Ready to give it a try? [Sign Up](https://claritus.io/)
-
-  
