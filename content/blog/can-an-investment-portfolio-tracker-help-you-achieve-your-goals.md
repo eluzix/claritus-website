@@ -24,7 +24,7 @@ If you’re like most investors, you probably own a collection of real estate, s
 
 ### Statements Everywhere…But No Real Answers
 
-![](/uploads/group-2933.png)
+![](/uploads/man-hold-his-head-failure-work-1-1-1.png)
 
 Account statements are a source of information but can’t do everything. For one, a static snapshot cannot help you monitor warning signals that one of your holdings may require your attention. It’s also difficult to see if you may have some overlap in portfolios accounts, resulting in your wealth getting overly concentrated in certain areas. And if you’re like me, you might have even lost track of an account or two in the past. There’s just too much information, and paper or pdf files can only do so much.
 
@@ -56,7 +56,7 @@ Plus, you’ll probably want more information such as up-to-date market values, 
 
 We all know emotions and money don’t mix. However, we’re often busy and make expensive mistakes when we don’t have the facts in front of us. Then, it’s too easy to make an emotionally-driven move. This is where a portfolio tracker excels: you have a clear big picture view, which helps you approach your investments with discipline. Using this tool, it is much easier to adopt a data-driven approach. This is an essential step toward better decisions, fewer mistakes, and achieving your goals faster.
 
-Bottom line… .there are many investment portfolio tracking programs out there, and most are very good at what they do. But once you reach ax certain level, those cannot always help you adequately manage a more diverse portfolio.
+Bottom line… .there are many investment portfolio tracking programs out there, and most are very good at what they do. But once you reach a certain level, those cannot always help you adequately manage a more diverse portfolio.
 
 ### Looking for More Clarity in your Financial Life?
 
@@ -70,6 +70,6 @@ We help you gain other critical insights into your investments. We’ve added we
 
 Ready to give it a try? [Sign Up](https://claritus.io/)
 
-    </br>
+  
 
 ![](/uploads/group-2903-1.png)
