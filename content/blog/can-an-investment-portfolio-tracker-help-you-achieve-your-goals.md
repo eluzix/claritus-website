@@ -58,9 +58,7 @@ Bottom line… .there are many investment portfolio tracking programs out there,
 
 ### Looking for More Clarity in your Financial Life?
 
-![](/uploads/group-2903-1.png)
-
-[Claritus](https://claritus.io/) is a portfolio tracking platform that can help you make better decisions and feel more confident about your money.
+![](/uploads/claritus-device-1.png)[Claritus](https://claritus.io/) is a portfolio tracking platform that can help you make better decisions and feel more confident about your money.
 
 We help you gain other critical insights into your investments. We’ve added wealth analytics that help you do more:
 
