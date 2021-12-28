@@ -24,9 +24,7 @@ If you’re like most investors, you probably own a collection of real estate, s
 
 ### Statements Everywhere…But No Real Answers
 
-![](/uploads/man-hold-his-head-failure-work-1-1-1.png)
-
-Account statements are a source of information but can’t do everything. For one, a static snapshot cannot help you monitor warning signals that one of your holdings may require your attention. It’s also difficult to see if you may have some overlap in portfolios accounts, resulting in your wealth getting overly concentrated in certain areas. And if you’re like me, you might have even lost track of an account or two in the past. There’s just too much information, and paper or pdf files can only do so much.
+![](/uploads/man-hold-his-head-failure-work-1-1-1.png)Account statements are a source of information but can’t do everything. For one, a static snapshot cannot help you monitor warning signals that one of your holdings may require your attention. It’s also difficult to see if you may have some overlap in portfolios accounts, resulting in your wealth getting overly concentrated in certain areas. And if you’re like me, you might have even lost track of an account or two in the past. There’s just too much information, and paper or pdf files can only do so much.
 
 When your assets reach a more substantial level, there’s too much at stake. You want all of your money to be managed properly and working for you. If you don’t recognize problems early enough in your portfolio, you could end up losing more than you need to. The longer that goes on, the more costly it can become. In the meantime, you’re also losing out on other opportunities.
 
@@ -60,6 +58,8 @@ Bottom line… .there are many investment portfolio tracking programs out there,
 
 ### Looking for More Clarity in your Financial Life?
 
+![](/uploads/group-2903-1.png)
+
 [Claritus](https://claritus.io/) is a portfolio tracking platform that can help you make better decisions and feel more confident about your money.
 
 We help you gain other critical insights into your investments. We’ve added wealth analytics that help you do more:
@@ -71,5 +71,3 @@ We help you gain other critical insights into your investments. We’ve added we
 Ready to give it a try? [Sign Up](https://claritus.io/)
 
   
-
-![](/uploads/group-2903-1.png)
