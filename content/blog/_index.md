@@ -6,4 +6,5 @@ url: /blog
 type: blog
 content_class: blog
 header_class: white-header
+lastmod: 2022-01-01T09:30:01+03:00
 ---

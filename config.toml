@@ -11,6 +11,10 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
 enableRobotsTXT = true
 enableGitInfo = true
 
+[frontmatter]
+date = ["date", "publishDate", "lastmod"]
+lastmod = ["lastmod", ":git", "date", "publishDate"]
+
 [params]
     description = "Finally, a 360° view of your portfolio that lets you track, understand, and be in complete control of all of your assets and investments - all in one place!"
     gtagConfig = 'UA-159218662-2'
