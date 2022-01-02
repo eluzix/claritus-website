@@ -28,11 +28,13 @@ faq_list:
     that will help you control your wealth and make better-informed decisions for
     the future.
 - title: How do you protect my privacy?
-  body: We hold your privacy, security, and anonymity in the highest importance -
+  body: 'We hold your privacy, security, and anonymity in the highest importance -
     to the extent that even we don’t have access to your data. Our loyalty is first
     and foremost to you, our customer - no hidden agendas, no dual loyalties, no matter
     what. In addition, we will never share or sell your information with any third
-    parties
+    parties.  Find out more about Claritus''s privacy <a href="https://claritus.io/blog/trust/">here</a>.
+
+'
 - title: What about Claritus’s security?
   body: 'Claritus applies bank-quality security standards. All of your information
     is secured and encrypted both at rest and in transit. The system uses Yodlee to
