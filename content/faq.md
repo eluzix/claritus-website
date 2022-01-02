@@ -39,7 +39,7 @@ faq_list:
   body: 'Claritus applies bank-quality security standards. All of your information
     is secured and encrypted both at rest and in transit. The system uses Yodlee to
     get read-only access to those accounts you choose to link. Find out more about
-    Claritus''s security and privacy policies <a href="https://claritus.io/blog/trust/">here</a>.
+    Claritus'' security <a href="https://claritus.io/blog/trust/">here</a>.
 
 '
 - title: How does Claritus calculate my yield?
