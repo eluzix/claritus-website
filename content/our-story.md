@@ -1,12 +1,12 @@
 ---
 title: Our Story
+description: Claritus is the result of a very real and personal need we were all faced with.
 date: 2020-07-01T09:30:01.000+03:00
 url: "/our-story"
 type: our-story
 content_class: our-story
 header_class: 
-hero_text: Claritus is the result of a very real and personal need we were all faced
-  with.
+hero_text: Claritus is the result of a very real and personal need we were all faced with.
 
 ---
 A few years ago, I was fortunate enough to achieve financial freedom through hard work, determination and persistence. I suddenly found myself looking ahead at an open horizon that allowed me to pick and choose how I would like to continue my journey. I knew that my top priorities were spending more time with my loved ones, and managing our finances and investments in an intelligent and responsible manner.

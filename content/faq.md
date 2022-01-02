@@ -1,5 +1,6 @@
 ---
 title: "Frequently Asked Questions"
+description: Claritus is a simple-to-use personal wealth service that allows you to view all of your invested assets in one place. 
 date: 2020-04-27T09:30:01+03:00
 url: /faq
 type: faq

@@ -1,5 +1,6 @@
 ---
 title: "Core Values"
+description: Claritus core values - Privacy, Loyalty, Integrity, Simplicity and Quality
 date: 2020-04-27T09:30:01+03:00
 url: /core-values
 type: core-values
