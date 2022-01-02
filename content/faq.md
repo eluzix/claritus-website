@@ -32,7 +32,7 @@ faq_list:
     to the extent that even we don’t have access to your data. Our loyalty is first
     and foremost to you, our customer - no hidden agendas, no dual loyalties, no matter
     what. In addition, we will never share or sell your information with any third
-    parties.  Find out more about Claritus''s privacy <a href="https://claritus.io/blog/trust/">here</a>.
+    parties. Find out more about Claritus'' privacy <a href="https://claritus.io/blog/trust/">here</a>.
 
 '
 - title: What about Claritus’s security?
