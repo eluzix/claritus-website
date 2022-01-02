@@ -1,5 +1,5 @@
 ---
-title: Claritus Blog
+title: Claritus updates and a view of personal wealth management | Claritus Blog
 description: Our blog will help you track, understand, and be in complete control
   of your wealth. Try Claritus for free!
 date: 2020-07-01T09:30:01.000+03:00
