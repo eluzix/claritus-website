@@ -12,6 +12,9 @@ fields:
   name: summary
   label: summary
 - type: text
+  name: homeSummary
+  label: homeSummary
+- type: text
   name: metaTitle
   label: meta_title
 - type: datetime
@@ -20,6 +23,9 @@ fields:
 - type: datetime
   name: publishDate
   label: publishDate
+- type: datetime
+  name: lastmod
+  label: Last Modified Date
 - type: text
   name: type
   label: type
