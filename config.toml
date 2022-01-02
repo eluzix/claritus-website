@@ -24,3 +24,6 @@ lastmod = ["lastmod", ":git", "date", "publishDate"]
 
 [permalinks]
   posts = "blog/:title"
+
+[sitemap]
+changefreq = "weekly"
