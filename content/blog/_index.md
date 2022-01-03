@@ -1,5 +1,5 @@
 ---
-title: Claritus updates and a view of personal wealth management | Claritus Blog
+title: Claritus Blog
 description: Learn what's new with Claritus, how it can help you track your portfolio,
   and articles on wealth management, personal finance, investments, and more.
 date: 2020-07-01T09:30:01.000+03:00

@@ -1,5 +1,6 @@
 ---
 title: What even is a personal portfolio image?
+metaTitle: What even is a personal portfolio image?
 description: A personal portfolio image contains, in a nutshell, all of your assets
   and all of your liabilities
 date: 2021-02-14T10:31:01.000+03:00

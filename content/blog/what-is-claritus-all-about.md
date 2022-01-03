@@ -1,5 +1,6 @@
 ---
 title: What is Claritus All About?
+metaTitle: What is Claritus All About?
 description: Claritus’ mission is to bring financial peace of mind to those people
   who have investments and assets on top of their day to day finances.
 date: 2021-02-17T10:31:01.000+03:00

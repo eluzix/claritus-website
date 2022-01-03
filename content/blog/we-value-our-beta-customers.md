@@ -1,5 +1,6 @@
 ---
 title: We Value our Beta Customers!
+metaTitle: We Value our Beta Customers!
 description: Claritus was born out of a real, authentic and personal need and our
   overall mission is to bring financial peace of mind to many more people with our
   platform.

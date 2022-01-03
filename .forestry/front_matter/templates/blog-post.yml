@@ -6,6 +6,9 @@ fields:
   name: title
   label: title
 - type: text
+  name: metaTitle
+  label: meta_title
+- type: text
   name: description
   label: description
 - type: text

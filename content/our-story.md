@@ -1,5 +1,6 @@
 ---
 title: Our Story
+metaTitle: Our Story
 description: Claritus is the result of a very real and personal need we were all faced with.
 date: 2020-07-01T09:30:01.000+03:00
 url: "/our-story"
