@@ -323,8 +323,6 @@
     }
 
     &.section-daterange {
-      padding-bottom: 10.8rem;
-
       .section-info {
         .block-image {
           box-shadow: 0px 8px 35px 5px rgba(0, 0, 0, 0.05);
@@ -357,6 +355,7 @@
     }
 
     &.section-latest-posts {
+      padding-top: 10.8rem;
       padding-bottom: 5.7rem;
 
       .section-info {
@@ -1459,8 +1458,8 @@
       }
 
       &.section-latest-posts {
-        padding-bottom: 5.7rem;
-        
+        padding-top: 0;
+
         .section-info {
           .block-content {
             max-width: 24rem;
@@ -1489,7 +1488,7 @@
       }
 
       &.section-automate {
-        padding: 7.8rem 0 6.9rem;
+        padding: 0 0 6.9rem;
 
         .section-info {
           .block-image {
