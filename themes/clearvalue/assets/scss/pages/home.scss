@@ -419,29 +419,29 @@
       }
     }
 
-    // &.section-automate {
-    //   padding: 14.2rem 0 14.25rem;
+    &.section-automate {
+      padding: 14.2rem 0 14.25rem;
 
-    //   .section-info {
-    //     .block-image {
-    //       flex: 63%;
-    //     }
+      .section-info {
+        .block-image {
+          flex: 63%;
+        }
 
-    //     .block-text {
-    //       margin-right: 13rem;
-    //       margin-top: 3.9rem;
+        .block-text {
+          margin-right: 13rem;
+          margin-top: 3.9rem;
 
-    //       .is-h2 {
-    //         max-width: 29rem;
-    //         margin-bottom: 1.5rem;
-    //       }
+          .is-h2 {
+            max-width: 29rem;
+            margin-bottom: 1.5rem;
+          }
 
-    //       p {
-    //         padding-left: 0.4rem;
-    //       }
-    //     }
-    //   }
-    // }
+          p {
+            padding-left: 0.4rem;
+          }
+        }
+      }
+    }
 
     &.section-transparent {
       min-height: 64.286rem;
@@ -665,29 +665,29 @@
         }
       }
 
-      // &.section-automate {
-      //   padding: 14rem 0 14.15rem;
+      &.section-automate {
+        padding: 14rem 0 14.15rem;
 
-      //   .section-info {
-      //     .block-image {
-      //       flex: 75%;
-      //       margin-right: -1.5rem;
-      //     }
+        .section-info {
+          .block-image {
+            flex: 75%;
+            margin-right: -1.5rem;
+          }
 
-      //     .block-text {
-      //       margin-right: 0;
-      //       margin-top: 4.9rem;
+          .block-text {
+            margin-right: 0;
+            margin-top: 4.9rem;
 
-      //       .is-h2 {
-      //         margin-bottom: 3.6rem;
-      //       }
+            .is-h2 {
+              margin-bottom: 3.6rem;
+            }
 
-      //       p {
-      //         padding-left: 0;
-      //       }
-      //     }
-      //   }
-      // }
+            p {
+              padding-left: 0;
+            }
+          }
+        }
+      }
 
       &.section-fog {
         min-height: 73.3rem;
@@ -1029,27 +1029,27 @@
         }
       }
 
-      // &.section-automate {
-      //   padding: 8.571rem 0 8.3rem;
+      &.section-automate {
+        padding: 8.571rem 0 8.3rem;
 
-      //   .section-info {
-      //     .block-image {
-      //       max-width: 30rem;
-      //       margin: 3.571rem auto 0;
-      //     }
+        .section-info {
+          .block-image {
+            max-width: 30rem;
+            margin: 3.571rem auto 0;
+          }
 
-      //     .block-text {
-      //       .is-h2 {
-      //         max-width: 100%;
-      //         margin-bottom: 1.35rem;
-      //       }
+          .block-text {
+            .is-h2 {
+              max-width: 100%;
+              margin-bottom: 1.35rem;
+            }
 
-      //       p {
-      //         max-width: 38rem;
-      //       }
-      //     }
-      //   }
-      // }
+            p {
+              max-width: 38rem;
+            }
+          }
+        }
+      }
 
       &.section-fog {
         min-height: 64.7rem;
@@ -1488,32 +1488,32 @@
         }
       }
 
-      // &.section-automate {
-      //   padding: 7.8rem 0 6.9rem;
+      &.section-automate {
+        padding: 7.8rem 0 6.9rem;
 
-      //   .section-info {
-      //     .block-image {
-      //       max-width: 26rem;
-      //       margin: 2.5rem auto 0;
+        .section-info {
+          .block-image {
+            max-width: 26rem;
+            margin: 2.5rem auto 0;
 
-      //       img {
-      //         border-radius: 5px;
-      //       }
-      //     }
+            img {
+              border-radius: 5px;
+            }
+          }
 
-      //     .block-text {
-      //       .is-h2 {
-      //         margin-bottom: 1rem;
-      //       }
+          .block-text {
+            .is-h2 {
+              margin-bottom: 1rem;
+            }
 
-      //       p {
-      //         padding-right: .571rem;
-      //         padding-left: .571rem;
-      //         max-width: 24rem;
-      //       }
-      //     }
-      //   }
-      // }
+            p {
+              padding-right: .571rem;
+              padding-left: .571rem;
+              max-width: 24rem;
+            }
+          }
+        }
+      }
 
       &.section-testimonials {
         padding: 5.7rem 0 8.8rem;
