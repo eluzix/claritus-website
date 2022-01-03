@@ -109,7 +109,15 @@
                             <a href="{{ .RelPermalink }}" title="Read more - {{ .Title | plainify }}"><img src="{{ .Params.thumbnail }}" alt="thumbnail"></a>
                         </div>
                         <a class="post-title" href="{{ .RelPermalink }}">{{ .Title }}</a>
-                        <p><a class="post-excerpt" href="{{ .RelPermalink }}" title="Read more - {{ .Title | plainify }}">{{ .Summary }}</a></p>
+                        <p>
+                            <a class="post-excerpt" href="{{ .RelPermalink }}" title="Read more - {{ .Title | plainify }}">
+                                {{ if (not (isset .Params "homepage_summary")) | or (eq .Params.homepage_summary "") }}
+                                    {{ .Summary }}
+                                {{ else }}
+                                    {{ .Params.homepage_summary }}
+                                {{ end }}
+                            </a>
+                        </p>
                         <a href="{{ .RelPermalink }}" class="read-more is-link">Read More</a>
                     </article>
                     {{ end }}
