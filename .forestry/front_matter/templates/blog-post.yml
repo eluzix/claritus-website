@@ -12,8 +12,8 @@ fields:
   name: summary
   label: summary
 - type: text
-  name: homeSummary
-  label: homeSummary
+  name: homepage_summary
+  label: homepage_summary
 - type: text
   name: metaTitle
   label: meta_title
