@@ -1,0 +1,131 @@
+backend:
+  name: github
+  repo: Clear-Value/claritus-website
+  branch: dev
+
+media_folder: "static/uploads" # Media files will be stored in the repo under static/images/uploads
+public_folder: "/uploads" # The src attribute for uploaded media will begin with /images/uploads
+
+collections:
+  - label: "Pages"
+    name: "pages"
+    delete: false
+    files:
+      - label: "Homepage"
+        name: "home"
+        file: "content/_index.md"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Publish Date", name: "date", widget: "datetime"}
+          - {label: "Update Date", name: "lastmod", widget: "datetime"}
+
+          - {label: "Hero Text", name: "heroText", widget: "string"}
+          - {label: "Hero Image", name: "heroImg", widget: "image"}
+
+          - {label: "Section 1 Title", name: "section1Title", widget: "string"}
+          - {label: "Section 1 Text", name: "section1Text", widget: "string"}
+          - {label: "Section 1 Image", name: "section1Img", widget: "image"}
+
+          - {label: "Section 2 Title", name: "section2Title", widget: "string"}
+          - {label: "Section 2 Text", name: "section2Text", widget: "string"}
+          - {label: "Section 2 Image", name: "section2Img", widget: "image"}
+
+          - {label: "Section 3 Title", name: "section3Title", widget: "string"}
+          - {label: "Section 3 Text", name: "section3Text", widget: "string"}
+          - {label: "Section 3 Image", name: "section3Img", widget: "image"}
+
+          - {label: "Section 4 Title", name: "section4Title", widget: "string"}
+          - {label: "Section 4 Text", name: "section4Text", widget: "string"}
+          - {label: "Section 4 Image", name: "section4Img", widget: "image"}
+
+          - {label: "Section 5 Title", name: "section5Title", widget: "string"}
+          - {label: "Section 5 Text", name: "section5Text", widget: "string"}
+          - {label: "Section 5 Image", name: "section5Img", widget: "image"}
+
+          - {label: "Section 6 Title", name: "section6Title", widget: "string"}
+
+          - {label: "Section 7 Title", name: "section7Title", widget: "string"}
+          - {label: "Section 7 Text", name: "section7Text", widget: "string"}
+
+          - {label: "Section 8 Title", name: "section8Title", widget: "string"}
+          - label: Testimonials
+            name: testimonials
+            widget: list
+            fields:
+              - { label: "Title", name: "title", widget: string }
+              - { label: "Author", name: "author", widget: string }
+
+          - {label: "Family Office Text", name: "familyOffice", widget: "string"}
+      - label: "Blog Main Page"
+        name: "blog-main"
+        file: "content/blog/_index.md"
+        fields:
+          - {label: "Content", name: "content_class", widget: "hidden", default: "blog"}
+          - {label: "Header", name: "header_class", widget: "hidden", default: ""}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Meta Title", name: "metaTitle", widget: "string"}
+          - {label: "Meta Description", name: "description", widget: "string"}
+          - {label: "Publish Date", name: "date", widget: "datetime"}
+          - {label: "Update Date", name: "lastmod", widget: "datetime"}
+
+          - {label: "Summary", name: "summary", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
+      - label: "About Us"
+        name: "about-us"
+        file: "content/about-us.md"
+        fields:
+          - {label: "Content", name: "content_class", widget: "hidden", default: "about-us"}
+          - {label: "Header", name: "header_class", widget: "hidden", default: ""}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Meta Title", name: "metaTitle", widget: "string"}
+          - {label: "Meta Description", name: "description", widget: "string"}
+          - {label: "Publish Date", name: "date", widget: "datetime"}
+          - {label: "Update Date", name: "lastmod", widget: "datetime"}
+
+          - {label: "Hero Title", name: "hero_title", widget: "string"}
+          - {label: "Hero Text", name: "hero_text", widget: "string", required: false}
+          - {label: "Body", name: "body", widget: "markdown"}
+      - label: "Core Values"
+        name: "core-values"
+        file: "content/core-values.md"
+        fields:
+          - {label: "Content", name: "content_class", widget: "hidden", default: "core-values"}
+          - {label: "Header", name: "header_class", widget: "hidden", default: ""}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Meta Title", name: "metaTitle", widget: "string"}
+          - {label: "Meta Description", name: "description", widget: "string"}
+          - {label: "Publish Date", name: "date", widget: "datetime"}
+          - {label: "Update Date", name: "lastmod", widget: "datetime"}
+
+          - {label: "Hero Text", name: "hero_text", widget: "string"}
+
+          - label: "Core Values"
+            name: values_list
+            widget: list
+            fields:
+              - { label: "Title", name: "title", widget: string }
+              - { label: "Body", name: "body", widget: string }
+
+          - {label: "Body", name: "body", widget: "markdown"}
+  - name: "blog" # Used in routes, e.g., /admin/collections/blog
+    label: "Blog" # Used in the UI
+    folder: "content/blog" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}"
+    fields: # The fields for each document, usually in front matter
+      - {label: "Content", name: "content_class", widget: "hidden", default: "blog-post"}
+      - {label: "Header", name: "header_class", widget: "hidden", default: ""}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Meta Title", name: "metaTitle", widget: "string"}
+      - {label: "Meta Description", name: "description", widget: "string"}
+
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Update Date", name: "lastmod", widget: "datetime"}
+      - {label: "Hidden", name: "hidden", widget: "boolean", default: "false"}
+
+      - {label: "Summary", name: "summary", widget: "text"}
+      - {label: "Homepage Summary", name: "homepage_summary", widget: "text", required: false}
+
+      - {label: "Featured Image", name: "thumbnail", widget: "image", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+
