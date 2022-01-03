@@ -24,9 +24,7 @@ section5Title: Nurture and Grow
 section5Text: Upload your investment history and measure your portfolio’s performance over time easily and accurately. You can also benefit from performance analytics and cross asset performance comparisons to help grow your wealth.
 section5Img: /images/nurture-grow.gif
 
-section6Title: Automate and Simplify
-section6Text: Let Claritus do the work for you by automatically uploading your current spreadsheet to your account and automating how you track, understand and control your wealth.
-section6Img: /images/section-4.svg
+section6Title: Latest Blog Posts
 
 section7Title: Lifting the Fog on a Brighter Future
 section7Text: Claritus’s straight-forward, comprehensive view of your portfolio’s performance allows to you acquire a deeper understanding of your financials. Not only can you maintain and nurture your investments, but you can also  make smarter decisions moving forward.
