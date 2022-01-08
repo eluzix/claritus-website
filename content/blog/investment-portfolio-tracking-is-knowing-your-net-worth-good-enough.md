@@ -3,8 +3,8 @@ content_class = "blog-post"
 date = 2022-01-07T22:00:00Z
 description = "Today’s diversified portfolio looks quite different than one from past decades.  As your net worth rises, you will likely own far more than just stocks and bonds.  In addition, you may have a collection of other assets, including real estate, cryptocurrency, venture capital, private lending, and other more unique holdings.  "
 draft = true
-header_class = ""
-hidden = false
+header_class = "white-header"
+hidden = true
 homepage_summary = "A portfolio tracking spreadsheet or net worth tracker can help you figure out how much you own. But is that enough?"
 lastmod = ""
 metaTitle = "Investment Portfolio Tracking:  Is Knowing Your Net Worth Good Enough?"
@@ -12,6 +12,7 @@ publishDate = 2022-01-07T22:00:00Z
 summary = "A portfolio tracking spreadsheet or net worth tracker can help you figure out how much you own. But is that enough?"
 thumbnail = ""
 title = "Investment Portfolio Tracking:  Is Knowing Your Net Worth Good Enough?"
+type = ""
 
 +++
 Today’s diversified portfolio looks quite different than one from past decades. As your net worth rises, you will likely own far more than just stocks and bonds. In addition, you may have a collection of other assets, including real estate, cryptocurrency, venture capital, private lending, and other more unique holdings.
@@ -62,8 +63,9 @@ Having the facts in front of you can keep you focused on the cold, hard facts in
 
 For example, you can compare your financial advisor’s performance against the appropriate benchmark index, so you can see if they are doing a good job for you.
 
-###   
-**How Claritus Advanced Analytics Help You Invest Better**
+### 
+
+### **How Claritus Advanced Analytics Help You Invest Better**
 
 Let’s go back to our hypothetical friend Paul. With the Claritus investment tracking platform, Paul can now get a clear big picture view of his investments. But that’s not all it gets him:
 
