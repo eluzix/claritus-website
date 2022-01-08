@@ -85,4 +85,4 @@ Staying organized and in control is a challenge for most everyone in today’s c
 
 [Claritus](https://claritus.io/) is an innovative portfolio tracking platform that can help you make better decisions and feel more confident about your money.
 
-Try Claritus free today—no credit card required.
+Ready to give it a try? [Sign Up](https://app.claritus.io/on-boarding)
