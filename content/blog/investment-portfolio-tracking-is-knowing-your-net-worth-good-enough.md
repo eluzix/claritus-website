@@ -70,7 +70,7 @@ Let’s go back to our hypothetical friend Paul. With the Claritus investment tr
 * Because Claritus allows Paul to monitor all his assets, not just traditional accounts, he gets an accurate picture of his entire portfolio.
 * With this big picture view, Paul can rebalance his holdings across all assets. This way, he can keep more control of his overall risk.
 
-![](/uploads/claritus_analytics.gif)
+[caritus_imov_1080.mp4](/uploads/caritus_imov_1080.mp4 "caritus_imov_1080.mp4")
 
 ### **Better Decisions Can Yield Many Benefits**
 
