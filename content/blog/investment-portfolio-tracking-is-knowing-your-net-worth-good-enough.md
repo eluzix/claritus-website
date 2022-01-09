@@ -62,8 +62,6 @@ Having the facts in front of you can keep you focused on the cold, hard facts in
 
 For example, you can compare your financial advisor’s performance against the appropriate benchmark index, so you can see if they are doing a good job for you.
 
-### 
-
 ### **How Claritus Advanced Analytics Help You Invest Better**
 
 Let’s go back to our hypothetical friend Paul. With the Claritus investment tracking platform, Paul can now get a clear big picture view of his investments. But that’s not all it gets him:
@@ -82,8 +80,8 @@ Like most high income and high net worth investors, Paul is very interested in m
 
 Staying organized and in control is a challenge for most everyone in today’s complex world. But as your wealth grows, you can’t afford to let things drift. That’s where portfolio tracking software can help you regain control and make better decisions about current and future investments.
 
-### **_Ready to get your investments organized and under control?_**
+### **Ready to get your investments organized and under control?**
 
-[Claritus](https://claritus.io/) is an innovative portfolio tracking platform that can help you make better decisions and feel more confident about your money.
+![](/uploads/claritus_device-1.png)[Claritus](https://claritus.io/) is an innovative portfolio tracking platform that can help you make better decisions and feel more confident about your money.
 
 Ready to give it a try? [Sign Up](https://app.claritus.io/on-boarding)
