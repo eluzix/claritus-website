@@ -10,7 +10,7 @@ lastmod = ""
 metaTitle = "Investment Portfolio Tracking:  Is Knowing Your Net Worth Good Enough?"
 publishDate = 2022-01-07T22:00:00Z
 summary = "A portfolio tracking spreadsheet or net worth tracker can help you figure out how much you own. But is that enough?"
-thumbnail = ""
+thumbnail = "/uploads/knowing-your-net-worth-1.jpg"
 title = "Investment Portfolio Tracking:  Is Knowing Your Net Worth Good Enough?"
 type = ""
 
@@ -25,7 +25,7 @@ While a net worth tracker provides some information, it doesn’t do much for yo
 
 With these tools, you can’t necessarily tell where your risks or opportunities lie. You also can’t easily see if your portfolio is appropriately balanced or if some of your allocations are overweight compared to where they should be.
 
-But those insights are needed to manage risk and take control of both wealth building and preservation. Without that, you may have blind spots which can compound and lead to future problems.
+ But those insights are needed to manage risk and take control of both wealth building and preservation. Without that, you may have blind spots which can compound and lead to future problems.
 
 That’s why you need more than a simple net worth tracker. So it’s no surprise more investors are turning to an Investment Portfolio Tracker to help them monitor their holdings and make better decisions.
 
