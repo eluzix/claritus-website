@@ -2,7 +2,6 @@
 content_class = "blog-post"
 date = 2022-01-07T22:00:00Z
 description = "Today’s diversified portfolio looks quite different than one from past decades.  As your net worth rises, you will likely own far more than just stocks and bonds.  In addition, you may have a collection of other assets, including real estate, cryptocurrency, venture capital, private lending, and other more unique holdings.  "
-draft = true
 header_class = "white-header"
 hidden = true
 homepage_summary = "A portfolio tracking spreadsheet or net worth tracker can help you figure out how much you own. But is that enough?"
@@ -15,7 +14,7 @@ title = "Investment Portfolio Tracking:  Is Knowing Your Net Worth Good Enough?"
 type = ""
 
 +++
-Today’s diversified portfolio looks quite different than one from past decades. As your net worth rises, you will likely own far more than just stocks and bonds. In addition, you may have a collection of other assets, including real estate, cryptocurrency, venture capital, private lending, and other more unique holdings.
+![](/uploads/knowing-your-net-worth-1.jpg)Today’s diversified portfolio looks quite different than one from past decades. As your net worth rises, you will likely own far more than just stocks and bonds. In addition, you may have a collection of other assets, including real estate, cryptocurrency, venture capital, private lending, and other more unique holdings.
 
 Now, of course, a portfolio tracking spreadsheet or net worth tracker can help you figure out how much you own. That’s simple…collect updated information on values and subtract your liabilities. But is that enough?
 
@@ -25,7 +24,7 @@ While a net worth tracker provides some information, it doesn’t do much for yo
 
 With these tools, you can’t necessarily tell where your risks or opportunities lie. You also can’t easily see if your portfolio is appropriately balanced or if some of your allocations are overweight compared to where they should be.
 
- But those insights are needed to manage risk and take control of both wealth building and preservation. Without that, you may have blind spots which can compound and lead to future problems.
+But those insights are needed to manage risk and take control of both wealth building and preservation. Without that, you may have blind spots which can compound and lead to future problems.
 
 That’s why you need more than a simple net worth tracker. So it’s no surprise more investors are turning to an Investment Portfolio Tracker to help them monitor their holdings and make better decisions.
 
