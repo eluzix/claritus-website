@@ -124,7 +124,7 @@ collections:
       - {label: "Hidden", name: "hidden", widget: "boolean", default: "false"}
 
       - {label: "Summary", name: "summary", widget: "text"}
-      - {label: "Homepage Summary", name: "homepage_summary", widget: "text", required: false}
+      - {label: "Custom Summary", name: "custom_summary", widget: "text", required: false}
 
       - {label: "Featured Image", name: "thumbnail", widget: "image", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
