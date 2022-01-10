@@ -7,7 +7,7 @@ hidden = false
 metaTitle = "Tags: Simple & Powerful Personalization"
 publishDate = 2021-11-30T22:00:00Z
 summary = "Claritus Tags, a powerful yet easy-to-use tool that allows you to observe your holdings with greater clarity. Tags enable you to define your own groups of financial assets & liabilities with strong aggregation and financial calculations."
-homepage_summary = "Claritus Tags, a powerful yet easy-to-use tool that allows you to observe your holdings with greater clarity."
+custom_summary = "Claritus Tags, a powerful yet easy-to-use tool that allows you to observe your holdings with greater clarity."
 thumbnail = "/uploads/tag-cloud-black-1.png"
 title = "Tags: Simple & Powerful Personalization"
 

@@ -30,12 +30,14 @@ section3Text: Easily view your aggregated stock portfolio insights and performan
 section3Img: /images/section-3-portfolio.png
 section3ImgLazy: /images/section-3-portfolio-min.png
 
-section4Title: Clear & Concise
-section4Text: At Claritus, we believe that you should have a clear, and understandable view of your assets and investments - without requiring a Master’s degree in Finance!
-section4Img: /images/clear-concise-stocks.svg
-section4ImgLazy: /images/clear-concise-stocks-min.png
+section4Title: Latest Blog Posts
 
-section5Title: What our early adopters are saying about us...
+section5Title: Clear & Concise
+section5Text: At Claritus, we believe that you should have a clear, and understandable view of your assets and investments - without requiring a Master’s degree in Finance!
+section5Img: /images/clear-concise-stocks.svg
+section5ImgLazy: /images/clear-concise-stocks-min.png
+
+section6Title: What our early adopters are saying about us...
 testimonials:
     - title: fantastic! The app is really well designed, loads very fast and I really appreciate the subtle details that have been included. I'm very happy to have found it.
       author: Richard F.

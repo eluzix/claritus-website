@@ -77,7 +77,6 @@
                 <img src="{{ .Params.section4Img }}"/>
             </div>
         </div>
-
     </section>
 
     <section class="section section-daterange is-white">
@@ -93,19 +92,16 @@
                 </div>
             </div>
         </div>
-
     </section>
 
-    <section class="section section-automate is-white">
+    <section class="section section-latest-posts is-white">
         <div class="section-info">
-            <div class="block-text">
-                <div>
-                    <h2 class="is-h2">{{ .Params.section6Title | safeHTML}}</h2>
-                    <p>{{ .Params.section6Text | safeHTML}}</p>
-                </div>
+            <div class="block-header">
+                <h2 class="is-h2">{{ .Params.section6Title | safeHTML}}</h2>
             </div>
-            <div class="block-image">
-                <img src="{{ .Params.section6Img }}"/>
+
+            <div class="block-content">
+                {{ partial "latest-blog-posts.html" . }}
             </div>
         </div>
     </section>
