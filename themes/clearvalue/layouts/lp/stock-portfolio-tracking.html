@@ -69,28 +69,7 @@
                 </div>
     
                 <div class="block-content">
-                    <div class="columns is-multiline">
-    
-                        {{ range (first 2 (where (where .Site.RegularPages "Type" "blog") ".Params.hidden" "ne" true).ByPublishDate.Reverse) }}
-                        <article class="post-card column is-half">
-                            <div class="post-thumbnail">
-                                <a href="{{ .RelPermalink }}" title="Read more - {{ .Title | plainify }}"><img src="{{ .Params.thumbnail }}" alt="thumbnail"></a>
-                            </div>
-                            <a class="post-title" href="{{ .RelPermalink }}">{{ .Title }}</a>
-                            <p>
-                                <a class="post-excerpt" href="{{ .RelPermalink }}" title="Read more - {{ .Title | plainify }}">
-                                    {{ if (not (isset .Params "custom_summary")) | or (eq .Params.custom_summary "") }}
-                                        {{ .Summary }}
-                                    {{ else }}
-                                        {{ .Params.custom_summary }}
-                                    {{ end }}
-                                </a>
-                            </p>
-                            <a href="{{ .RelPermalink }}" class="read-more is-link">Read More</a>
-                        </article>
-                        {{ end }}
-    
-                    </div>
+                    {{ partial "latest-blog-posts.html" . }}
                 </div>
             </div>
         </section>
