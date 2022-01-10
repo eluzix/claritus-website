@@ -71,7 +71,7 @@ Let’s go back to our hypothetical friend Paul. With the Claritus investment tr
 * With this big picture view, Paul can rebalance his holdings across all assets. This way, he can keep more control of his overall risk.
 
 {{< rawhtml >}}
-<video autoplay muted loop playsinline width="100%" src="/uploads/caritus_imov_1080.mp4" style="border:1px solid black;"></video>
+<video autoplay="autoplay" muted loop playsinline width="100%" src="/uploads/caritus_imov_1080.mp4"></video>
 {{</ rawhtml >}}
 
 ### **Better Decisions Can Yield Many Benefits**

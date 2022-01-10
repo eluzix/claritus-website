@@ -404,6 +404,16 @@ const app = {
             submittedForm.classList.add('is-hidden')
         }
     },
+
+    initBlogVideo() {
+        try{
+            const videos = document.querySelectorAll('.blog-post .post-content video')
+            if (videos && videos.length > 0){
+                videos[0].play()
+            }
+        }catch(e) {}
+    },
+
 };
 
 function updateClasses(instance) {
@@ -485,6 +495,7 @@ function initSliderLazyLoad() {
     }
 }
 
+
 document.addEventListener('DOMContentLoaded', function () {
     window.addEventListener("scroll", checkHeaderVisibility, false);
     window.addEventListener("resize", initSliderLazyLoad);
@@ -496,6 +507,7 @@ document.addEventListener('DOMContentLoaded', function () {
     app.initScrollTop();
     app.initLazyLoad();
     app.initContactUsModal();
+    app.initBlogVideo();
 
     try {
         app.utmCookie()
