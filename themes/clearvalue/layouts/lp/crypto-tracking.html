@@ -77,24 +77,36 @@
             </div>
         </section>
 
+        <section class="section section-latest-posts is-white">
+            <div class="section-info">
+                <div class="block-header">
+                    <h2 class="is-h2">{{ .Params.section5Title | safeHTML}}</h2>
+                </div>
+    
+                <div class="block-content">
+                    {{ partial "latest-blog-posts.html" . }}
+                </div>
+            </div>
+        </section>
+
         <section class="section section-clear-view">
             <div class="section-info">
                 <div class="block-text">
                     <div>
-                        <h2 class="is-h2">{{ .Params.section5Title | safeHTML}}</h2>
-                        <p>{{ .Params.section5Text | safeHTML}}</p>
+                        <h2 class="is-h2">{{ .Params.section6Title | safeHTML}}</h2>
+                        <p>{{ .Params.section6Text | safeHTML}}</p>
                     </div>
                 </div>
 
                 <div class="block-image">
-                    <img class="lazy-image" src="{{ .Params.section5ImgLazy }}" data-src="{{ .Params.section5Img }}"/>
+                    <img class="lazy-image" src="{{ .Params.section6ImgLazy }}" data-src="{{ .Params.section6Img }}"/>
                 </div>
             </div>
         </section>
 
         <section class="section section-testimonials is-white">
             <div class="centered">
-                <h2>{{ .Params.section6Title | safeHTML}}</h2>
+                <h2>{{ .Params.section7Title | safeHTML}}</h2>
                 <div class="testimonials-block is-hidden-tablet">
                     {{ range .Params.testimonials }}
                     <div class="testimonial">

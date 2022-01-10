@@ -354,6 +354,30 @@
       }
     }
 
+    &.section-automate {
+      padding-top: 14.2rem;
+
+      .section-info {
+        .block-image {
+          flex: 63%;
+        }
+
+        .block-text {
+          margin-right: 13rem;
+          margin-top: 3.9rem;
+
+          .is-h2 {
+            max-width: 29rem;
+            margin-bottom: 1.5rem;
+          }
+
+          p {
+            padding-left: 0.4rem;
+          }
+        }
+      }
+    }
+
     &.section-latest-posts {
       padding-top: 10.8rem;
       padding-bottom: 10.8rem;
@@ -413,30 +437,6 @@
               font-weight: normal;
               letter-spacing: 0.01rem;
             }
-          }
-        }
-      }
-    }
-
-    &.section-automate {
-      padding: 14.2rem 0 14.25rem;
-
-      .section-info {
-        .block-image {
-          flex: 63%;
-        }
-
-        .block-text {
-          margin-right: 13rem;
-          margin-top: 3.9rem;
-
-          .is-h2 {
-            max-width: 29rem;
-            margin-bottom: 1.5rem;
-          }
-
-          p {
-            padding-left: 0.4rem;
           }
         }
       }
@@ -665,7 +665,7 @@
       }
 
       &.section-automate {
-        padding: 14rem 0 14.15rem;
+        padding-top: 14rem;
 
         .section-info {
           .block-image {
@@ -999,6 +999,28 @@
         }
       }
 
+      &.section-automate {
+        padding-top: 8.571rem;
+
+        .section-info {
+          .block-image {
+            max-width: 30rem;
+            margin: 3.571rem auto 0;
+          }
+
+          .block-text {
+            .is-h2 {
+              max-width: 100%;
+              margin-bottom: 1.35rem;
+            }
+
+            p {
+              max-width: 38rem;
+            }
+          }
+        }
+      }
+
       &.section-latest-posts {
         .section-info {
           text-align: left;
@@ -1023,28 +1045,6 @@
               width: 100%;
               padding-top: 2.67rem;
               padding-bottom: 0;
-            }
-          }
-        }
-      }
-
-      &.section-automate {
-        padding: 8.571rem 0 8.3rem;
-
-        .section-info {
-          .block-image {
-            max-width: 30rem;
-            margin: 3.571rem auto 0;
-          }
-
-          .block-text {
-            .is-h2 {
-              max-width: 100%;
-              margin-bottom: 1.35rem;
-            }
-
-            p {
-              max-width: 38rem;
             }
           }
         }
@@ -1416,7 +1416,7 @@
       }
 
       &.section-track {
-        padding: 7.05rem 0 8rem;
+        padding: 7.05rem 0 9rem;
 
         .section-info {
           .block-image {
@@ -1438,7 +1438,7 @@
       }
 
       &.section-daterange {
-        padding-bottom: 7.8rem;
+        padding-bottom: 9rem;
 
         .section-info {
           .block-image {
@@ -1451,6 +1451,34 @@
             }
 
             p {
+              max-width: 24rem;
+            }
+          }
+        }
+      }
+
+      &.section-automate {
+        padding-top: 0;
+        padding-bottom: 9rem;
+
+        .section-info {
+          .block-image {
+            max-width: 26rem;
+            margin: 2.5rem auto 0;
+
+            img {
+              border-radius: 5px;
+            }
+          }
+
+          .block-text {
+            .is-h2 {
+              margin-bottom: 1rem;
+            }
+
+            p {
+              padding-right: .571rem;
+              padding-left: .571rem;
               max-width: 24rem;
             }
           }
@@ -1482,33 +1510,6 @@
               .read-more {
                 font-size: 1rem;
               }
-            }
-          }
-        }
-      }
-
-      &.section-automate {
-        padding: 0 0 6.9rem;
-
-        .section-info {
-          .block-image {
-            max-width: 26rem;
-            margin: 2.5rem auto 0;
-
-            img {
-              border-radius: 5px;
-            }
-          }
-
-          .block-text {
-            .is-h2 {
-              margin-bottom: 1rem;
-            }
-
-            p {
-              padding-right: .571rem;
-              padding-left: .571rem;
-              max-width: 24rem;
             }
           }
         }

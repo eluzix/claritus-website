@@ -35,12 +35,14 @@ section4Text: Aggregate the same coin in multiple locations in a single crypto p
 section4Img: /images/section-4-crypto.png
 section4ImgLazy: /images/section-4-crypto-min.png
 
-section5Title: Clear & Concise
-section5Text: At Claritus, we believe that you should have a clear, and understandable view of your assets and investments - without requiring a Master’s degree in Finance!
-section5Img: /images/clear-concise-crypto.svg
-section5ImgLazy: /images/clear-concise-crypto-min.png
+section5Title: Latest Blog Posts
 
-section6Title: What our early adopters are saying about us...
+section6Title: Clear & Concise
+section6Text: At Claritus, we believe that you should have a clear, and understandable view of your assets and investments - without requiring a Master’s degree in Finance!
+section6Img: /images/clear-concise-crypto.svg
+section6ImgLazy: /images/clear-concise-crypto-min.png
+
+section7Title: What our early adopters are saying about us...
 testimonials:
     - title: fantastic! The app is really well designed, loads very fast and I really appreciate the subtle details that have been included. I'm very happy to have found it.
       author: Richard F.
