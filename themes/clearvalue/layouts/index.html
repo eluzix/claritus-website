@@ -111,10 +111,10 @@
                         <a class="post-title" href="{{ .RelPermalink }}">{{ .Title }}</a>
                         <p>
                             <a class="post-excerpt" href="{{ .RelPermalink }}" title="Read more - {{ .Title | plainify }}">
-                                {{ if (not (isset .Params "homepage_summary")) | or (eq .Params.homepage_summary "") }}
+                                {{ if (not (isset .Params "custom_summary")) | or (eq .Params.custom_summary "") }}
                                     {{ .Summary }}
                                 {{ else }}
-                                    {{ .Params.homepage_summary }}
+                                    {{ .Params.custom_summary }}
                                 {{ end }}
                             </a>
                         </p>
