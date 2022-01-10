@@ -1,5 +1,6 @@
 +++
 content_class = "blog-post"
+custom_summary = "A portfolio tracking spreadsheet or net worth tracker can help you figure out how much you own. But is that enough?"
 date = 2022-01-07T22:00:00Z
 description = "Today’s diversified portfolio looks quite different than one from past decades.  As your net worth rises, you will likely own far more than just stocks and bonds.  In addition, you may have a collection of other assets, including real estate, cryptocurrency, venture capital, private lending, and other more unique holdings.  "
 header_class = "white-header"
