@@ -65,6 +65,10 @@ For example, you can compare your financial advisor’s performance against the 
 
 ### **How Claritus Advanced Analytics Help You Invest Better**
 
+{{< rawhtml >}}  
+<video autoplay="autoplay" muted loop playsinline width="100%" src="/uploads/caritus_imov_1080.mp4"></video>   
+{{</ rawhtml >}}
+
 Let’s go back to our hypothetical friend Paul. With the Claritus investment tracking platform, Paul can now get a clear big picture view of his investments. But that’s not all it gets him:
 
 * Paul can set up custom tags and create groups to compare the performance of his two financial advisors, both against market benchmarks and each other. This can help him decide which advisor to shift more assets to down the road.
