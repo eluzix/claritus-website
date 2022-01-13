@@ -5,10 +5,14 @@
     {{ if ne .Params.sitemapExclude true }}
     {{- if .Permalink -}}
     <url>
-        <loc>{{ .Permalink }}</loc>{{ if not .Lastmod.IsZero }}
-        <lastmod>{{ safeHTML ( .Lastmod.Format "2006-01-02T15:04:05-07:00" ) }}</lastmod>{{ end }}{{ with .Sitemap.ChangeFreq }}
-        <changefreq>{{ . }}</changefreq>{{ end }}{{ if ge .Sitemap.Priority 0.0 }}
-        <priority>{{ .Sitemap.Priority }}</priority>{{ end }}{{ if .IsTranslated }}{{ range .Translations }}
+        <loc>{{ .Permalink }}</loc>
+        {{ if or (.IsSection) (eq .Kind "home") }}
+        <lastmod>{{ safeHTML ( now.Format "2006-01-02T15:04:05-07:00" ) }}</lastmod>
+        <changefreq>daily</changefreq>
+        {{ else }}
+        {{ if not .Lastmod.IsZero }}<lastmod>{{ safeHTML ( .Lastmod.Format "2006-01-02T15:04:05-07:00" ) }}</lastmod>{{ end }}
+        <changefreq>{{ .Sitemap.ChangeFreq }}</changefreq>{{ end }}
+        {{ if ge .Sitemap.Priority 0.0 }}<priority>{{ .Sitemap.Priority }}</priority>{{ end }}{{ if .IsTranslated }}{{ range .Translations }}
         <xhtml:link
                 rel="alternate"
                 hreflang="{{ .Language.Lang }}"
@@ -20,7 +24,5 @@
                 href="{{ .Permalink }}"
         />{{ end }}
     </url>
-    {{ end }}
-    {{- end -}}
-    {{ end }}
+    {{ end }} {{- end -}} {{ end }}
 </urlset>
