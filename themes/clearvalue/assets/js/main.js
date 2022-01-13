@@ -166,6 +166,7 @@ const app = {
             if (addParams){
                 params['session'] = Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
                 params['referrer'] = document.referrer
+                params['dt'] = Math.round(Date.now()/1000)
                 cookie.unshift(params)
             }
         }
