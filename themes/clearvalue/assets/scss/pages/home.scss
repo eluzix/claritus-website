@@ -206,8 +206,57 @@
       }
     }
 
+    &.section-tracked-assets {
+      padding: 11.429rem 0 21.429rem;
+
+      h2 {
+        margin-bottom: 8.275rem;
+      }
+
+      .assets-info {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        max-width: 92rem;
+        padding: 2.286rem;
+        border-radius: 1.143rem;
+        box-shadow: 0px 8px 40px rgba(46, 56, 79, 0.12);
+
+        .assets-info-card {
+          padding: 0.25rem 0 0.6rem;
+          text-align: left;
+
+          &:first-child {
+            padding-right: 6.55rem;
+            margin-right: 5.25rem;
+            border-right: 1px solid #C7CBD5;
+          }
+
+          .assets-info-title {
+            font-size: 2.286rem;
+            font-weight: normal;
+            line-height: 150%;
+            color: #7E8699;
+            margin-bottom: 1.65rem;
+          }
+          
+          .assets-info-value {
+            font-weight: 500;
+            font-size: 4.571rem;
+            line-height: 130%;
+            color: $green;
+
+            b {
+              font-weight: 600;
+              font-size: 5.714rem;
+            }
+          }
+        }
+      }
+    }
+
     &.section-testimonials {
-      padding: 10.8rem 0 9rem;
+      padding-bottom: 9rem;
 
       .centered {
         max-width: 100%;

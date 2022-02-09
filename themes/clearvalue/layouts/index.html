@@ -113,9 +113,25 @@
         </div>
     </section>
 
-    <section class="section section-testimonials is-white">
+    <section class="section section-tracked-assets is-white">
         <div class="centered">
             <h2>{{ .Params.section8Title | safeHTML}}</h2>
+            <div class="assets-info">
+                <div class="assets-info-card">
+                    <h4 class="assets-info-title">Assets Value</h4>
+                    <p class="assets-info-value">{{ .Params.assetsValue | safeHTML }}</p>
+                </div>
+                <div class="assets-info-card">
+                    <h4 class="assets-info-title">Tracked Assets</h4>
+                    <p class="assets-info-value">{{ .Params.trackedAssets | safeHTML }}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-testimonials is-white">
+        <div class="centered">
+            <h2>{{ .Params.section9Title | safeHTML}}</h2>
             <div class="testimonials-block is-hidden-tablet">
                 {{ range .Params.testimonials }}
                 <div class="testimonial">
