@@ -37,7 +37,11 @@ section5Text: At Claritus, we believe that you should have a clear, and understa
 section5Img: /images/clear-concise-stocks.svg
 section5ImgLazy: /images/clear-concise-stocks-min.png
 
-section6Title: What our early adopters are saying about us...
+section6Title: Tracked Assets
+assetsValue: <b>$2.2</b> Billion
+trackedAssets: <b>15,000</b> Assets
+
+section7Title: What our early adopters are saying about us...
 testimonials:
     - title: fantastic! The app is really well designed, loads very fast and I really appreciate the subtle details that have been included. I'm very happy to have found it.
       author: Richard F.
@@ -46,8 +50,8 @@ testimonials:
     - title: I'm really excited to switch to Claritus as my primary tool and replace my old spreadsheet.
       author: Mike M.
 
-section7Title: Privacy and Security Guaranteed
-section7Text: We know your privacy and security are of the utmost importance to you, which is why we are committed to the highest standards of data security and encryption. With Claritus, you know your data is <span class="is-underline">for your eyes only</span>.
-section7Img: /images/section-5.jpg
-section7ImgLazy: /images/section-5-min.jpg
+section8Title: Privacy and Security Guaranteed
+section8Text: We know your privacy and security are of the utmost importance to you, which is why we are committed to the highest standards of data security and encryption. With Claritus, you know your data is <span class="is-underline">for your eyes only</span>.
+section8Img: /images/section-5.jpg
+section8ImgLazy: /images/section-5-min.jpg
 ---

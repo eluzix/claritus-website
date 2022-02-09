@@ -22,7 +22,7 @@
         <div class="section-info">
             <div class="block-text">
                 <div>
-                    <h2 class="is-h2">{{ .Params.section1Title | safeHTML}}</h2>
+                    <h2 class="is-h2 section-title">{{ .Params.section1Title | safeHTML}}</h2>
                     <p>{{ .Params.section1Text | safeHTML}}</p>
                 </div>
             </div>
@@ -40,7 +40,7 @@
             </div>
             <div class="block-text">
                 <div>
-                    <h2 class="is-h2">{{ .Params.section2Title | safeHTML}}</h2>
+                    <h2 class="is-h2 section-title">{{ .Params.section2Title | safeHTML}}</h2>
                     <p>{{ .Params.section2Text | safeHTML}}</p>
                     <a href="/blog/trust" class="learn-more is-link">Learn more</a>
                 </div>
@@ -52,7 +52,7 @@
         <div class="section-info">
             <div class="block-text">
                 <div>
-                    <h2 class="is-h2">{{ .Params.section3Title | safeHTML}}</h2>
+                    <h2 class="is-h2 section-title">{{ .Params.section3Title | safeHTML}}</h2>
                     <p class="beacon-text is-regular-text">{{ .Params.section3Text | safeHTML}}</p>
                     <p class="is-green beacon-caption is-regular-text">{{ .Params.section3Text2 | safeHTML}}</p>
                     <a class="button is-green is-full is-wide is-higher try-button"
@@ -68,7 +68,7 @@
         <div class="section-info">
             <div class="block-text">
                 <div>
-                    <h2 class="is-h2 has-bottom-margin-20">{{ .Params.section4Title | safeHTML}}</h2>
+                    <h2 class="is-h2 has-bottom-margin-20 section-title">{{ .Params.section4Title | safeHTML}}</h2>
                     <p>{{ .Params.section4Text | safeHTML}}</p>
                 </div>
             </div>
@@ -87,7 +87,7 @@
 
             <div class="block-text">
                 <div>
-                    <h2 class="is-h2">{{ .Params.section5Title | safeHTML}}</h2>
+                    <h2 class="is-h2 section-title">{{ .Params.section5Title | safeHTML}}</h2>
                     <p>{{ .Params.section5Text | safeHTML}}</p>
                 </div>
             </div>
@@ -97,7 +97,7 @@
     <section class="section section-latest-posts is-white">
         <div class="section-info">
             <div class="block-header">
-                <h2 class="is-h2">{{ .Params.section6Title | safeHTML}}</h2>
+                <h2 class="is-h2 section-title">{{ .Params.section6Title | safeHTML}}</h2>
             </div>
 
             <div class="block-content">
@@ -108,14 +108,14 @@
 
     <section class="section section-fog">
         <div class="w-100">
-            <h2 class="has-bottom-margin-20 is-centered">{{ .Params.section7Title | safeHTML}}</h2>
+            <h2 class="has-bottom-margin-20 is-centered section-title">{{ .Params.section7Title | safeHTML}}</h2>
             <p class="info has-bottom-margin-40">{{ .Params.section7Text | safeHTML}}</p>
         </div>
     </section>
 
     <section class="section section-tracked-assets is-white">
         <div class="centered">
-            <h2>{{ .Params.section8Title | safeHTML}}</h2>
+            <h2 class="section-title">{{ .Params.section8Title | safeHTML}}</h2>
             <div class="assets-info">
                 <div class="assets-info-card">
                     <h4 class="assets-info-title">Assets Value</h4>
@@ -131,7 +131,7 @@
 
     <section class="section section-testimonials is-white">
         <div class="centered">
-            <h2>{{ .Params.section9Title | safeHTML}}</h2>
+            <h2 class="section-title">{{ .Params.section9Title | safeHTML}}</h2>
             <div class="testimonials-block is-hidden-tablet">
                 {{ range .Params.testimonials }}
                 <div class="testimonial">
@@ -210,7 +210,7 @@
         <div class="section-info">
             <div class="block-text">
                 <div>
-                    <h2>Transparent &<br/> Simple Pricing</h2>
+                    <h2 class="section-title">Transparent &<br/> Simple Pricing</h2>
                     <p>At Claritus, we aim to provide you with the highest‑value solution for your money at a fair, and low subscription cost. There are no surprise costs or hidden fees, ever.</p>
                     <p>Sign up to Claritus beta and enjoy our annual subscription for free, as a thank you for being one of our first users.</p>
                     <p><a href="/blog/we-value-our-beta-customers/" class="learn-more is-link">Learn more</a></p>

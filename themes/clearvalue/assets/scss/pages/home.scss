@@ -58,6 +58,10 @@
     &.is-white {
       background: $white;
       color: $primary;
+
+      .section-title {
+        color: $dark;
+      }
     }
 
     &.hero {
@@ -263,7 +267,6 @@
       }
 
       h2 {
-        color: $dark;
         margin-bottom: 8.2rem;
         margin-left: -1.6rem;
       }
