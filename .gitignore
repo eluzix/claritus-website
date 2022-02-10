@@ -12,6 +12,7 @@ yarn-error.log*
 *.njsproj
 *.sln
 *.iml
+*.lock
 
 
 resources/
