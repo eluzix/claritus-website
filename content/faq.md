@@ -1,5 +1,6 @@
 ---
-title: Frequently Asked Questions
+title: FAQ
+metaTitle: Frequently Asked Questions
 description: Claritus is a simple-to-use personal wealth service that allows you to
   view all of your assets in one place.
 date: 2020-04-27T09:30:01.000+03:00
@@ -56,6 +57,6 @@ faq_list:
 
 ---
 {{< rawhtml >}}
-Here some common questions about Claritus.<br/>
-Can't find an answer, contact us as <a href="mailto:help@claritus.io" class="is-green">help@claritus.io</a>
+Here are some common questions about Claritus.<br/>
+Can't find an answer, contact us at <a href="mailto:help@claritus.io" class="is-green">help@claritus.io</a>
 {{< /rawhtml >}}
