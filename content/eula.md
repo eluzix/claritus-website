@@ -1,5 +1,5 @@
 ---
-title: "Clear Value End User License Agreement"
+title: "Claritus Financial Solutions End User License Agreement"
 date: 2020-04-27T09:30:01+03:00
 url: /terms
 content_class: privacy
@@ -7,13 +7,13 @@ type: privacy
 content_class: privacy
 header_class: white-header
 ---
-Clear Value Ltd., ("Clear Value", "we", "us" or "our") operates a platform,
+Claritus Financial Solutions, Inc., ("Claritus Financial Solutions", "we", "us" or "our") operates a platform,
 accessible at (https://claritus.io) (the "Site") and through any app that we make available
 (the "App" and together with the "Site" the "Platform").
 PLEASE READ THE FOLLOWING CAREFULLY BEFORE INSTALLING AND/OR USING THE PLATFORM.
 
 By clicking the "accept" or "ok" button, or installing and/or using the Platform you expressly
-acknowledge and agree that you are entering into a legal agreement with Clear Value and have
+acknowledge and agree that you are entering into a legal agreement with Claritus Financial Solutions and have
 understood and agree to comply with, and be legally bound by, the terms and conditions of this
 End User License Agreement ("Agreement").
 You hereby waive any applicable rights to require an original (non-electronic) signature or
@@ -56,12 +56,12 @@ If you create an Account, you must provide accurate and complete information for
 You are solely responsible for the activity that occurs in your Account, and you must
 keep your Account password secure.  You must notify us immediately of any unauthorized use of your Account.
  You are responsible for maintaining the confidentiality of the login details for your Account and
- for any activities that occur under your Account. Clear Value encourages you to use "strong" passwords
+ for any activities that occur under your Account. Claritus Financial Solutions encourages you to use "strong" passwords
  (passwords that use a combination of upper and lower case letters, numbers and symbols) with your Account.
  You should also maintain appropriate anti-virus and anti-malware software on your Device,
  so that your Account login information is not compromised through your own negligence.
  If you have any concerns about the login details for your Account or think they have been misused,
- please contact Clear Value at [help@claritus.io](mailto:help@claritus.io).
+ please contact Claritus Financial Solutions at [help@claritus.io](mailto:help@claritus.io).
  Please note that we shall have the right to terminate and/or delete any Account that
  was not active during a period of 6 months.
 
@@ -87,7 +87,7 @@ then the Features may be limited or not operate.
 8. **Intellectual Property Rights.**
 
     1. *Ownership.* The Platform is licensed and not sold to you under this Agreement and you
-    acknowledge that Clear Value and its licensors retain all title, ownership rights and Intellectual
+    acknowledge that Claritus Financial Solutions and its licensors retain all title, ownership rights and Intellectual
     Property Rights (defined below) in and to the Platform (and its related software).
     We reserve all rights not expressly granted herein to the Platform. "**Intellectual Property Rights**"
     means any and all rights in and to any and all trade secrets, patents, copyrights, service marks,
@@ -99,12 +99,12 @@ then the Features may be limited or not operate.
     and including without limitation, the text, information, documents, descriptions, products,
     software, graphics, photos, sounds, videos, interactive features, and services (the "**Materials**"),
     and the trademarks, service marks and logos contained therein
-    ("**Marks**", and together with the Materials, the "**Content**"), is the property of Clear Value and/or its
+    ("**Marks**", and together with the Materials, the "**Content**"), is the property of Claritus Financial Solutions and/or its
     licensors and may be protected by applicable copyright or other intellectual property laws and treaties.
-    "Clear Value" and the Clear Value logo are Marks of Clear Value and its affiliates.
+    "Claritus Financial Solutions" and the Claritus Financial Solutions logo are Marks of Claritus Financial Solutions and its affiliates.
     All other Marks used on the Platform are the trademarks, service marks, or logos of their respective owners.
 
-    3. *Use of Content.* The content on the Clear Value is provided to you "as is" for
+    3. *Use of Content.* The content on the Claritus Financial Solutions is provided to you "as is" for
     your personal use only and may not be used, copied, distributed, transmitted, broadcast, displayed,
     sold, licensed, de-compiled, or otherwise exploited for any other purposes whatsoever without our
     prior written consent.  If you download or print a copy of the content you must retain all
@@ -123,7 +123,7 @@ then the Features may be limited or not operate.
 
     1. The Platform enables you to view your financial information as retrieved from Third Party Sources
     that you have chosen, as may be available in the Platform from time to time.
-    Clear Value does not warrant that the Platform allows automatic connectivity with all
+    Claritus Financial Solutions does not warrant that the Platform allows automatic connectivity with all
     relevant Third Party Sources, and should a specific Third Party Source is not listed in the Platform,
     you may manually insert such Third Party Source details to the Platform.
 
@@ -131,7 +131,7 @@ then the Features may be limited or not operate.
     appropriateness, usefulness, or Intellectual Property Rights (defined below) of, or relating to,
     any information provided by and/or retrieved from the Third Party Sources, as well as any
     information and/or report and/or analysis that is based on such information, and you shall have no claim
-    against Clear Value with respect thereof.
+    against Claritus Financial Solutions with respect thereof.
 
 10. **Payments.**
 
@@ -169,26 +169,26 @@ You are solely responsible for maintaining the security of your Device from unau
 
         **THE PLATFORM DOES NOT PROVIDE FINANCIAL ADVICE AND DOES NOT REPLACE ANY PROFESSIONAL FINANCIAL
         ADVICE OR GUIDANCE THAT YOU MAY REQUIRE.**
-        ACCORDINGLY, CLEAR VALUE IS NOT RESPONSIBLE FOR ANY DAMAGES THAT MAY RESULT DIRECTLY OR INDIRECTLY
+        ACCORDINGLY, CLARITUS FINANCIAL SOLUTIONS IS NOT RESPONSIBLE FOR ANY DAMAGES THAT MAY RESULT DIRECTLY OR INDIRECTLY
         FROM YOUR RELIANCE ON ANY OF THE INFORMATION PROVIDED TO YOU ON THE PLATFORM AND/OR YOUR USE OR
-        MISUSE OF THE PLATFORM AND SERVICES. CLEAR VALUE DISCLAIMS ANY LIABILITY IN THIS REGARD.
+        MISUSE OF THE PLATFORM AND SERVICES. CLARITUS FINANCIAL SOLUTIONS DISCLAIMS ANY LIABILITY IN THIS REGARD.
 
     3. Applicable law may not allow the exclusion of certain warranties, so to that extent such exclusions
     may not apply.
 
 13. **Limitation of Liability.**
 
-    1. UNDER NO CIRCUMSTANCES SHALL CLEAR VALUE BE LIABLE FOR ANY SPECIAL INDIRECT, INCIDENTAL, PUNITIVE
+    1. UNDER NO CIRCUMSTANCES SHALL CLARITUS FINANCIAL SOLUTIONS BE LIABLE FOR ANY SPECIAL INDIRECT, INCIDENTAL, PUNITIVE
     OR CONSEQUENTIAL DAMAGES, OR FOR ANY LOSS OF DATA, REVENUE, BUSINESS OR REPUTATION, THAT ARISES
     UNDER OR IN CONNECTION WITH THIS AGREEMENT, OR THAT RESULTS FROM THE USE OF, OR THE INABILITY TO USE,
-    THE PLATFORM AND/OR SERVICES EVEN IF CLEAR VALUE HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+    THE PLATFORM AND/OR SERVICES EVEN IF CLARITUS FINANCIAL SOLUTIONS HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
 
-    2. IN ANY EVENT, CLEAR VALUE'S TOTAL AGGREGATE LIABILITY FOR ALL DAMAGES AND LOSSES THAT ARISE
+    2. IN ANY EVENT, CLARITUS FINANCIAL SOLUTIONS' TOTAL AGGREGATE LIABILITY FOR ALL DAMAGES AND LOSSES THAT ARISE
     UNDER OR IN CONNECTION WITH THIS AGREEMENT, OR THAT RESULT FROM YOUR USE OF OR INABILITY TO USE
     THE PLATFORM, SHALL NOT IN ANY CIRCUMSTANCE EXCEED THE TOTAL AMOUNTS, IF ANY, ACTUALLY PAID BY YOU
-    TO CLEAR VALUE FOR USING THE PLATFORM WITHIN THE THREE (3) MONTHS PRECEDING THE DATE OF BRINGING A CLAIM.
+    TO CLARITUS FINANCIAL SOLUTIONS FOR USING THE PLATFORM WITHIN THE THREE (3) MONTHS PRECEDING THE DATE OF BRINGING A CLAIM.
 
-14. **Indemnity.** You agree to defend, indemnify and hold harmless Clear Value and our affiliates,
+14. **Indemnity.** You agree to defend, indemnify and hold harmless Claritus Financial Solutions and our affiliates,
 and our respective officers, directors, employees and agents, from and against any and all claims,
 damages, obligations, losses, liabilities, costs and expenses (including but not limited to attorney's fees)
 arising from: (i) your use of, or inability to use, the Platform; (ii) your violation of this Agreement;
@@ -210,7 +210,7 @@ Revision is accompanied by a separate license agreement which will govern the Re
 source software that are subject to third party terms and conditions ("**Third Party Terms**").
 If there is a conflict between any Third Party Terms and the terms of this Agreement,
 then the Third Party Terms shall prevail but solely in connection with the related third party open source software.
-Notwithstanding anything in this Agreement to the contrary, Clear Value makes no warranty or indemnity
+Notwithstanding anything in this Agreement to the contrary, Claritus Financial Solutions makes no warranty or indemnity
 hereunder with respect to any third party open source software.
 
 17. **Term and Termination.**
@@ -229,7 +229,7 @@ hereunder with respect to any third party open source software.
 
 
 18. **Assignment.** This Agreement, and any rights and licenses granted hereunder, may not be transferred
-or assigned by you but may be assigned by Clear Value without restriction or notification.
+or assigned by you but may be assigned by Claritus Financial Solutions without restriction or notification.
 
 19. **Governing Law and Disputes.** This Agreement shall be governed by and construed in accordance
 with the laws of the State of Israel without regard to its conflict of laws rules.
@@ -238,10 +238,10 @@ and waive any jurisdictional, venue, or inconvenient forum objections to such co
 Notwithstanding the foregoing, we may seek injunctive relief in any court of competent jurisdiction.
 
 20. **General.** This Agreement, and any other legal notices published by us in connection with the Platform,
-shall constitute the entire agreement between you and Clear Value concerning the Platform.
+shall constitute the entire agreement between you and Claritus Financial Solutions concerning the Platform.
 In the event of a conflict between this Agreement and any such legal notices, the terms of the
 applicable notice shall prevail with respect to the subject matter of such notice.  No amendment to this
-Agreement will be binding unless in writing and signed by Clear Value.  If any provision of this Agreement
+Agreement will be binding unless in writing and signed by Claritus Financial Solutions.  If any provision of this Agreement
 is deemed invalid by a court of competent jurisdiction, the invalidity of such provision shall not affect
 the validity of the remaining provisions of this Agreement, which shall remain in full force and effect.
 No waiver of any term of this Agreement shall be deemed a further or continuing waiver of such term or
@@ -258,12 +258,12 @@ OTHERWISE, SUCH CAUSE OF ACTION IS PERMANENTLY BARRED.
 
         1. You acknowledge and agree that:
 
-            1. this Agreement is concluded between Clear Value and you only, and not with Apple, and  Clear Value and its licensors, and not Apple, are solely responsible for the App and the content thereof.
+            1. this Agreement is concluded between Claritus Financial Solutions and you only, and not with Apple, and  Claritus Financial Solutions and its licensors, and not Apple, are solely responsible for the App and the content thereof.
             2. your use of the App is also subject to the Usage Rules established by Apple, including those set forth in the Apple App Store Terms of Service, effective as of the date that you enter into this Agreement.
             3. the License granted herein is limited to a non-transferable right to use the App on an Apple iPhone, iPod Touch, iPad, or other Apple-branded product that you own or control and that runs the iOS;
-            4. Clear Value  is solely responsible for providing any maintenance and support services with respect to the App, as specified in this Agreement, or as required under applicable law.  Apple has no obligation whatsoever to furnish any maintenance and support services with respect to the App;
-            5. Clear Value is solely responsible for any product warranties, whether express or implied by law, to the extent not effectively disclaimed.  In the event of any failure of the App to conform to any applicable warranty, you may notify Apple, and Apple will, to the extent applicable, refund any purchase price paid (if any) by you for the App to you.  To the maximum extent permitted by applicable law, Apple will have no other warranty obligation whatsoever with respect to the App, and, any other claims, losses, liabilities, damages, costs or expenses attributable to any failure to conform to any warranty will be Clear Value's sole responsibility;
-            6. Clear Value , and not Apple, is responsible for addressing any product claims you, or any third party, may have relating to the App or your possession and/or use of the App, including, but not limited to: (a) product liability claims; (b) any claim that the App fails to conform to any applicable legal or regulatory requirement; and (c) claims arising under consumer protection or similar legislation;
+            4. Claritus Financial Solutions is solely responsible for providing any maintenance and support services with respect to the App, as specified in this Agreement, or as required under applicable law.  Apple has no obligation whatsoever to furnish any maintenance and support services with respect to the App;
+            5. Claritus Financial Solutions is solely responsible for any product warranties, whether express or implied by law, to the extent not effectively disclaimed.  In the event of any failure of the App to conform to any applicable warranty, you may notify Apple, and Apple will, to the extent applicable, refund any purchase price paid (if any) by you for the App to you.  To the maximum extent permitted by applicable law, Apple will have no other warranty obligation whatsoever with respect to the App, and, any other claims, losses, liabilities, damages, costs or expenses attributable to any failure to conform to any warranty will be Claritus Financial Solutions' sole responsibility;
+            6. Claritus Financial Solutions, and not Apple, is responsible for addressing any product claims you, or any third party, may have relating to the App or your possession and/or use of the App, including, but not limited to: (a) product liability claims; (b) any claim that the App fails to conform to any applicable legal or regulatory requirement; and (c) claims arising under consumer protection or similar legislation;
             7. in the event of any third party claim that the App or your possession and use of the App infringes that third party’s intellectual property rights, Apple shall not be responsible for the investigation, defense, settlement and discharge of any such intellectual property infringement claim;
             8. Apple, and its subsidiaries, are third party beneficiaries of this Agreement, and that, upon your acceptance of the terms and conditions of this Agreement, Apple will have the right (and will be deemed to have accepted the right) to enforce this Agreement against you as a third party beneficiary thereof.
 
@@ -272,7 +272,7 @@ OTHERWISE, SUCH CAUSE OF ACTION IS PERMANENTLY BARRED.
         country; and (b) you are not listed on any U.S. Government list of prohibited or restricted parties.
 
         3. If you have any questions, complaints, or claims regarding the App,
-        please contact Clear Value at: [help@claritus.io](mailto:help@claritus.io)
+        please contact Claritus Financial Solutions at: [help@claritus.io](mailto:help@claritus.io)
 
         4. By entering into this Agreement you, to the extent legally permitted, hereby waive any
         applicable law requiring that this Agreement be localized to meet your language and other local requirements.
