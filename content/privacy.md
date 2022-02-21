@@ -7,8 +7,8 @@ type: privacy
 content_class: privacy
 header_class: white-header
 ---
-This privacy policy (”Privacy Policy”) governs how we, Clear Value Ltd.
-(”Clear Value” ”we”, ”our” or ”us”) use Personal Information (defined below) that we collect,
+This privacy policy (”Privacy Policy”) governs how we, Claritus Financial Solutions, Inc.
+(”Claritus” ”we”, ”our” or ”us”) use Personal Information (defined below) that we collect,
 receive and store pertaining to you (”User”, ”you”) in connection with the following use cases:
 
 When you browse or visit our website, (https://claritus.io) ("Website")
@@ -214,7 +214,7 @@ we will notify you by posting a notice through our Services or by other means.
     * We may use your designated email address to: (i) send you updates or news regarding the Services and our products; and/or (ii) respond to a "Contact Us" or administrative request (for example, to change your password).
     * We may transfer your Personal Information to our local or foreign subsidiaries or affiliated companies for the purpose of storing or processing such information on our behalf. Such information may be transferred to other countries (including US). We require that these parties agree to process such information in compliance with our Privacy Policy.
     * We may share your Personal Information with our third party service providers and partners, but only to assist us with our business operations and to provide our Services to you and other users. Such information may be transferred to other countries. We use commercially reasonable efforts to only engage or interact with third party service providers and partners that post a privacy policy governing their processing of Personal Information.
-    * We may disclose your Personal Information or any information you submitted via the Services if we have a good faith belief that disclosure of such information is helpful or reasonably necessary to: (i) comply with any applicable law, regulation, legal process or governmental request; (ii) enforce our Terms, including investigations of potential violations thereof; (iii) detect, prevent, or otherwise address fraud or security issues; or (iv) protect against harm to the rights, property or safety of Clear Value, our users, yourself or the public.
+    * We may disclose your Personal Information or any information you submitted via the Services if we have a good faith belief that disclosure of such information is helpful or reasonably necessary to: (i) comply with any applicable law, regulation, legal process or governmental request; (ii) enforce our Terms, including investigations of potential violations thereof; (iii) detect, prevent, or otherwise address fraud or security issues; or (iv) protect against harm to the rights, property or safety of Claritus, our users, yourself or the public.
 
 8. ###### **USE BY CHILDREN**
 
