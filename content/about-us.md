@@ -1,7 +1,7 @@
 ---
 header_class: null
 content_class: about-us
-title: About Us
+title: About Us - Claritus is a simple-to-use, personal portfolio management
 metaTitle: About Us
 date: 2020-10-11T10:30:01.000+03:00
 lastmod: 2022-01-03T20:38:33.374Z
