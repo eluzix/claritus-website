@@ -1,6 +1,6 @@
 ---
 content_class: blog-post
-header_class: ""
+header_class: "white-header"
 title: Strategies in Volatile Market
 metaTitle: The right strategy is key to avoiding loss when trading in a volatile market.
 description: The right strategy is key to avoiding loss when trading in a
