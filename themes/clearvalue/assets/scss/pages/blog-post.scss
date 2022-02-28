@@ -173,6 +173,19 @@
       }
     }
   }
+
+  .disclaimer {
+    margin-top: 4rem;
+    font-size: 1rem;
+    color: $primary;
+    line-height: 1.4;
+
+    &:before {
+      content: "*";
+      display: inline-block;
+      margin-right: 0.3rem;
+    }
+  }
 }
 
 @media screen and (max-width: $fullhd) {
