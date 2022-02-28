@@ -19,6 +19,7 @@ custom_summary: Investment into any market comes with risk, but in a year where
   down the barrel of bear markets that make investment losses look a lot more
   likely.
 thumbnail: /uploads/strategies-in-volatile-market.jpg
+disclaimer: true
 ---
 ![](/uploads/strategies-in-volatile-market.jpg)Investment into any market comes with risk, but in a year where stocks have started on [their worst footing since 2016](https://www.nytimes.com/2022/01/21/business/economy/stock-markets-down-inflation.html) in light of recent pullbacks from the Central Bank, many investors are finding themselves staring down the barrel of bear markets that make investment losses look a lot more likely.
 
@@ -40,3 +41,5 @@ Holding a position in a volatile market can be daunting, but there are equal ris
 
 ### **Making good decisions**
 When you take each of these strategies into account, it is clear that dealing with volatile markets always comes back to one thing – your understanding of what’s happening across your investment portfolio, and what that means for your prospects overall. By providing a simple way to track and control your wealth, the Claritus app is therefore an invaluable tool for helping you to make good decisions during the most volatile of periods. For investors worried about current market changes, [signing up for what Claritus has to offer](https://app.claritus.io/on-boarding) today is an especially wise way to provide some much-needed investment peace-of-mind that keeps losses at bay once and for all.
+
+![](/uploads/claritus_device-1.png)

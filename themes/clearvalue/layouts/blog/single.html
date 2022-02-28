@@ -15,8 +15,9 @@
             <article>
                 {{ .Content | safeHTML }}
             </article>
-
-            {{ partial "disclaimer" . }}
+            {{ if eq .Params.disclaimer true}}
+                {{ partial "disclaimer" . }}
+            {{ end }}
         </div>
     </section>
 

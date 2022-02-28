@@ -41,6 +41,9 @@ fields:
 - type: boolean
   name: hidden
   label: hidden
+- type: boolean
+  name: disclaimer
+  label: disclaimer
 - type: file
   name: thumbnail
   label: thumbnail

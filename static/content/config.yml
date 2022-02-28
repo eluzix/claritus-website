@@ -122,6 +122,7 @@ collections:
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Update Date", name: "lastmod", widget: "datetime"}
       - {label: "Hidden", name: "hidden", widget: "boolean", default: "false"}
+      - {label: "Disclaimer", name: "disclaimer", widget: "boolean", default: "false"}
 
       - {label: "Summary", name: "summary", widget: "text"}
       - {label: "Custom Summary", name: "custom_summary", widget: "text", required: false}
