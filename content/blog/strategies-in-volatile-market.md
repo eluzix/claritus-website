@@ -8,16 +8,12 @@ description: The right strategy is key to avoiding loss when trading in a
   reduce volatility risks.
 date: 2022-02-25T11:02:21.718Z
 lastmod: 2022-02-25T11:02:21.729Z
-hidden: "false"
 summary: Investment into any market comes with risk, but in a year where stocks
   have started on their worst footing since 2016 in light of recent pullbacks
   from the Central Bank, many investors are finding themselves staring down the
   barrel of bear markets that make investment losses look a lot more likely.
-custom_summary: Investment into any market comes with risk, but in a year where
-  stocks have started on their worst footing since 2016 in light of recent
-  pullbacks from the Central Bank, many investors are finding themselves staring
-  down the barrel of bear markets that make investment losses look a lot more
-  likely.
+custom_summary: In a year where stocks have started on their worst footing since 2016, many investors are finding themselves staring
+  down the barrel of bear markets that make investment losses look a lot more likely.
 thumbnail: /uploads/strategies-in-volatile-market.jpg
 disclaimer: true
 ---
