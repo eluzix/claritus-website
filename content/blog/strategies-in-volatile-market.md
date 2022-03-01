@@ -1,21 +1,23 @@
 ---
 content_class: blog-post
-header_class: "white-header"
+header_class: white-header
 title: Strategies in Volatile Market
-metaTitle: The right strategy is key to avoiding loss when trading in a volatile market.
-description: The right strategy is key to avoiding loss when trading in a
-  volatile market. Here, we discuss the best options for investors looking to
-  reduce volatility risks.
-date: 2022-02-25T11:02:21.718Z
-lastmod: 2022-02-25T11:02:21.729Z
-summary: Investment into any market comes with risk, but in a year where stocks
-  have started on their worst footing since 2016 in light of recent pullbacks
-  from the Central Bank, many investors are finding themselves staring down the
-  barrel of bear markets that make investment losses look a lot more likely.
-custom_summary: In a year where stocks have started on their worst footing since 2016, many investors are finding themselves staring
-  down the barrel of bear markets that make investment losses look a lot more likely.
-thumbnail: /uploads/strategies-in-volatile-market.jpg
+metaTitle: Strategies in Volatile Market
+description: The right strategy is key to avoiding loss when trading in a volatile
+  market. Here, we discuss the best options for investors looking to reduce volatility
+  risks.
+date: 2022-02-25T11:02:21.718+00:00
+lastmod: 2022-02-25T11:02:21.729+00:00
+summary: Investment into any market comes with risk, but in a year where stocks have
+  started on their worst footing since 2016 in light of recent pullbacks from the
+  Central Bank, many investors are finding themselves staring down the barrel of bear
+  markets that make investment losses look a lot more likely.
+custom_summary: In a year where stocks have started on their worst footing since 2016,
+  many investors are finding themselves staring down the barrel of bear markets that
+  make investment losses look a lot more likely.
+thumbnail: "/uploads/strategies-in-volatile-market.jpg"
 disclaimer: true
+
 ---
 ![](/uploads/strategies-in-volatile-market.jpg)Investment into any market comes with risk, but in a year where stocks have started on [their worst footing since 2016](https://www.nytimes.com/2022/01/21/business/economy/stock-markets-down-inflation.html) in light of recent pullbacks from the Central Bank, many investors are finding themselves staring down the barrel of bear markets that make investment losses look a lot more likely.
 
