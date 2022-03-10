@@ -232,8 +232,8 @@ hereunder with respect to any third party open source software.
 or assigned by you but may be assigned by Claritus without restriction or notification.
 
 19. **Governing Law and Disputes.** This Agreement shall be governed by and construed in accordance
-with the laws of the State of Israel without regard to its conflict of laws rules.
-You agree to submit to the personal and exclusive jurisdiction of the courts located in Tel Aviv-Yaffo,
+with the laws of the United States of America without regard to its conflict of laws rules.
+You agree to submit to the personal and exclusive jurisdiction of the courts located in New York,
 and waive any jurisdictional, venue, or inconvenient forum objections to such courts.
 Notwithstanding the foregoing, we may seek injunctive relief in any court of competent jurisdiction.
 
