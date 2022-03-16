@@ -4,17 +4,29 @@
     {{ partial "menu.html" }}
 
     <section class="section hero">
-        <div class="centered">
-            <h1 class="hero-title">
-                {{ .Title | safeHTML }}
-            </h1>
-            <p class="hero-text">{{ .Params.heroText | safeHTML }}</p>
-            <a class="button is-green is-full is-wide is-higher try-button"
-               href="{{ .Site.Params.appUrl }}/on-boarding">
-                Try <img src="/images/logo-white-beta.svg" class="icon-logo"> for Free
-            </a>
+        <div class="">
+            <div class="leveled">
+                <div class="level-left">
+                    <div>
+                        <h1 class="hero-title">
+                            {{ .Title | safeHTML }}
+                        </h1>
+                        <p class="hero-text">{{ .Params.heroText | safeHTML }}</p>
+                    </div>
+                    <div>
+                        <a class="button is-green is-full is-wide is-higher try-button"
+                           href="{{ .Site.Params.appUrl }}/on-boarding">
+                            Try <img src="/images/logo-full-white.svg" alt="Claritus logo in white color" class="icon-logo"> for Free
+                        </a>
+                    </div>
+                </div>
+                <div class="level-right">
+                    <img class="hero-image" src="{{ .Params.heroImg }}"/>
+                </div>
+            </div>
 
-            <img src="{{ .Params.heroImg }}"/>
+            {{ partial "social-proof.html" . }}
+
         </div>
     </section>
 
@@ -57,7 +69,7 @@
                     <p class="is-green beacon-caption is-regular-text">{{ .Params.section3Text2 | safeHTML}}</p>
                     <a class="button is-green is-full is-wide is-higher try-button"
                         href="{{ .Site.Params.appUrl }}/on-boarding" title="Try Claritus for Free">
-                        Try <img src="/images/logo-white-beta.svg" class="icon-logo"> for Free
+                        Try <img src="/images/logo-full-white.svg" class="icon-logo"> for Free
                     </a>
                 </div>
             </div>
@@ -216,7 +228,7 @@
                     <p><a href="/blog/we-value-our-beta-customers/" class="learn-more is-link">Learn more</a></p>
                     <a class="button is-green is-full is-wide is-higher try-button"
                         href="{{ .Site.Params.appUrl }}/on-boarding">
-                         Try <img src="/images/logo-white-beta.svg" class="icon-logo"> for Free
+                         Try <img src="/images/logo-full-white.svg" class="icon-logo"> for Free
                     </a>
                 </div>
             </div>
