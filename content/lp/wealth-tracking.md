@@ -32,7 +32,7 @@ section3ImgLazy: /images/section-3-wealth-min.png
 
 section4Title: Latest Blog Posts
 
-section5Title: Clear & Concise
+section5Title: One place for all your assets
 section5Text: At Claritus, we believe that you should have a clear, and understandable view of your assets and investments - without requiring a Master’s degree in Finance!
 section5Img: /images/clear-concise-wealth.svg
 section5ImgLazy: /images/clear-concise-wealth.svg
@@ -41,7 +41,7 @@ section6Title: Tracked Assets
 assetsValue: <b>$2.2</b> Billion
 trackedAssets: <b>15,000</b> Assets
 
-section7Title: What our early adopters are saying about us...
+section7Title: What our customers say about us
 testimonials:
     - title: fantastic! The app is really well designed, loads very fast and I really appreciate the subtle details that have been included. I'm very happy to have found it. 
       author: Richard F.

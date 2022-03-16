@@ -167,6 +167,7 @@
 
   @include mobile {
     background-color: $white;
+    margin-top: 4rem;
     margin-left: -2rem;
     margin-right: -2rem;
     padding: 1.25rem 2rem;
@@ -215,17 +216,17 @@
       border-left: none;
 
       & > img {
-        max-width: 1.25rem;
-        margin-right: 0.75rem;
+        max-width: 2rem;
+        margin-right: 0.5rem;
       }
 
       & > div {
         font-weight: 600;
-        font-size: 0.875rem;
+        font-size: 1rem;
         line-height: 150%;
 
         span:first-child {
-          font-size: 0.875rem;
+          font-size: 1rem;
           line-height: 150%;
         }
       }
@@ -233,6 +234,10 @@
 
     .sp-trust {
       padding-left: 0;
+
+      div:first-child {
+        line-height: 120%;
+      }
 
       &:before {
         content: "";

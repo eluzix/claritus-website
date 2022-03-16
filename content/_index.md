@@ -4,7 +4,7 @@ date: 2020-01-01T09:30:01+03:00
 heroText: Claritus is a technology-driven private wealth service that allows you to track, understand, and take control of your wealth - all in one place!
 heroImg: /images/section-hero.png
 
-section1Title: Clear & Concise
+section1Title: One place for all your assets
 section1Text: At Claritus, we believe that you should have a clear, and understandable view of your assets and investments - without requiring a Master’s degree in Finance!
 section1Img: /images/clear-concise-dark.svg
 
@@ -33,7 +33,7 @@ section8Title: Tracked Assets
 assetsValue: <b>$2.2</b> Billion
 trackedAssets: <b>15,000</b> Assets
 
-section9Title: What our early adopters are saying about us...
+section9Title: What our customers say about us
 testimonials:
     - title: fantastic! The app is really well designed, loads very fast and I really appreciate the subtle details that have been included. I'm very happy to have found it.
       author: Richard F.
