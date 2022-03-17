@@ -8,7 +8,7 @@ type: lp
 layout: portfolio-tracking
 content_class: landing-page home home-wealth
 
-title: A Simple Way to Keep <br/> Track of <span class="is-green">Your Portfolio</span>
+title: A Simple Way to Keep Track of <span class="is-green">Your Portfolio</span>
 heroText: Finally, a 360° view of your portfolio that lets you track, understand, and be in complete control of all of your assets and investments - all in one place!
 heroImg: /images/section-hero.png
 
