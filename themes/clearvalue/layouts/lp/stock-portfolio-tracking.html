@@ -4,17 +4,28 @@
         {{ partial "menu.html" }}
 
         <section class="section hero">
-            <div class="centered">
-                <h1 class="hero-title">
-                    {{ .Params.heroTitle | safeHTML }}
-                </h1>
-                <p class="hero-text">{{ .Params.heroText | safeHTML }}</p>
-                <a class="button is-green is-full is-wide is-higher try-button"
-                href="{{ .Site.Params.appUrl }}/on-boarding">
-                    Try <img src="/images/logo-full-white.svg" class="icon-logo"> for Free
-                </a>
+            <div class="">
+                <div class="leveled">
+                    <div class="level-left">
+                        <div>
+                            <h1 class="hero-title">
+                                {{ .Title | safeHTML }}
+                            </h1>
+                            <p class="hero-text">{{ .Params.heroText | safeHTML }}</p>
+                        </div>
+                        <div>
+                            <a class="button is-green is-full is-wide is-higher try-button"
+                               href="{{ .Site.Params.appUrl }}/on-boarding">
+                                Try <img src="/images/logo-full-white.svg" alt="Claritus logo in white color" class="icon-logo"> for Free
+                            </a>
+                        </div>
+                    </div>
+                    <div class="level-right">
+                        <img class="hero-image" src="{{ .Params.heroImg }}"/>
+                    </div>
+                </div>
 
-                <img src="{{ .Params.heroImg }}"/>
+                {{ partial "social-proof.html" . }}
             </div>
         </section>
 
@@ -85,22 +96,6 @@
 
                 <div class="block-image">
                     <img class="lazy-image" src="{{ .Params.section5ImgLazy }}" data-src="{{ .Params.section5Img }}"/>
-                </div>
-            </div>
-        </section>
-
-        <section class="section section-tracked-assets is-white">
-            <div class="centered">
-                <h2 class="section-title">{{ .Params.section6Title | safeHTML}}</h2>
-                <div class="assets-info">
-                    <div class="assets-info-card">
-                        <h4 class="assets-info-title">Assets Value</h4>
-                        <p class="assets-info-value">{{ .Params.assetsValue | safeHTML }}</p>
-                    </div>
-                    <div class="assets-info-card">
-                        <h4 class="assets-info-title">Total Tracked Assets</h4>
-                        <p class="assets-info-value">{{ .Params.trackedAssets | safeHTML }}</p>
-                    </div>
                 </div>
             </div>
         </section>
