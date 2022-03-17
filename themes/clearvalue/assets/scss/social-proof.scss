@@ -1,5 +1,5 @@
 .social-proof {
-  margin-top: 8rem;
+  margin-top: 7rem;
 
   .mobile-image {
     display: none;
@@ -130,6 +130,8 @@
   }
 
   @include tablet-only {
+    margin-top: 6rem;
+
     .sp-assets {
       font-size: 1.125rem;
       padding-right: 1.625rem;
@@ -167,7 +169,7 @@
 
   @include mobile {
     background-color: $white;
-    margin-top: 4rem;
+    margin-top: 6rem;
     margin-left: -2rem;
     margin-right: -2rem;
     padding: 1.25rem 2rem;
