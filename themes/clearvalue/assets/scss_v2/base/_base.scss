@@ -21,6 +21,7 @@ h4,
 h5,
 .h5 {
   margin: 0;
+  font-weight: 700;
 }
 
 p {
@@ -40,6 +41,7 @@ section {
 a,
 svg,
 button {
+  text-decoration: none;
   transition: all 0.3s ease;
 }
 
@@ -74,15 +76,6 @@ textarea {
     outline: none;
   }
 }
-
-//h2 {
-//  font-size: 24px;
-//  font-weight: 500;
-//
-//  @media (min-width: map_get($grid-breakpoints, xl)) {
-//    font-size: 30px;
-//  }
-//}
 
 #otstup {
   height: 1500px;

@@ -1,58 +1,26 @@
 .btn {
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	overflow: hidden;
-	position: relative;
-	text-transform: uppercase;
-	color: #fff;
-	span {
-		position: relative;
-		z-index: 2;
-	}
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  color: #fff;
+  padding: 18px 26px;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
 
-	svg {
-		position: relative;
-		z-index: 2;
-		margin-left: 5px;
-		fill: #fff;
-		transform: rotate(-90deg);
-	}
-	&:hover {
-		box-shadow: none;
-	}
-	&:focus {
-		box-shadow: none;
-	}
-	&--small {
-		font-size: 14px;
-		padding: 12px 24px;
-	}
-}
+  &:hover {
+    box-shadow: none;
+  }
 
-.btn-primary {
-}
+  &:focus {
+    box-shadow: none;
+  }
 
-.btn-secondary {
-	&:before {
-		content: "";
-		position: absolute;
-		left: 0;
-		top: 0;
-		width: 100%;
-		height: 100%;
-		background-image: linear-gradient(179.51deg, #2fa0ef 6.85%, #2081c5 97.7%);
-		transition: all 0.5s ease;
-	}
-	&:hover {
-		&:before {
-			opacity: 0;
-		}
-	}
-}
+  &--primary {
+    background: linear-gradient(90.36deg, #46DD94 -0.66%, #23D3AB 101.59%, #17D6B3 101.59%);
+  }
 
-.btn-primary:not(:disabled):not(.disabled):active,
-.btn-primary:not(:disabled):not(.disabled).active,
-.show > .btn-primary.dropdown-toggle {
-	box-shadow: none;
 }
