@@ -1,0 +1,27 @@
+//Fonts
+@import "../fonts/fonts";
+
+//Config
+@import "config/variables";
+@import "libs/bootstrap";
+@import "config/placeholders";
+@import "config/mixins";
+
+//Base
+@import "base/base";
+@import "base/layout";
+
+//UI
+@import "utilites";
+
+//Modules
+//@import "modules/rangeslider.css";
+//@import "modules/range";
+//@import "modules/select";
+
+//Layout
+@import "layout/header";
+//@import "layout/footer";
+
+//Home
+@import "layout/home";

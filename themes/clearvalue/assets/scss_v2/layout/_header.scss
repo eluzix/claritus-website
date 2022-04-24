@@ -1,0 +1,130 @@
+//header {
+//    padding: 10px;
+//    position: fixed;
+//    width: 100%;
+//    left: 0;
+//    top: 0;
+//    z-index: 10;
+//    background-color: #fff;
+//
+//    @media (min-width: map_get($grid-breakpoints, md)) {
+//        padding: 10px 20px;
+//    }
+//
+//    @media (min-width: 1200px) {
+//        background-color: transparent;
+//    }
+//
+//    @media (min-width: map_get($grid-breakpoints, xl)) {
+//        padding: 20px;
+//    }
+//}
+//
+//.header-content {
+//    display: flex;
+//    align-items: center;
+//
+//    @media (min-width: map_get($grid-breakpoints, xl)) {
+//        align-items: flex-start;
+//    }
+//}
+//
+//.header-logo {
+//    display: inline-flex;
+//    margin-right: auto;
+//
+//    img {
+//        height: 55px;
+//        width: auto;
+//
+//        @media (min-width: map_get($grid-breakpoints, md)) {
+//            height: 95px;
+//        }
+//
+//        @media (min-width: 1200px) {
+//            height: 55px;
+//        }
+//
+//        @media (min-width: map_get($grid-breakpoints, xl)) {
+//            height: 125px;
+//        }
+//    }
+//}
+//
+//.header-phone {
+//    display: flex;
+//
+//    @media (min-width: map_get($grid-breakpoints, md)) {
+//        flex-direction: column;
+//    }
+//
+//    @media (min-width: 1200px) {
+//        flex-direction: row;
+//    }
+//}
+//.header-contact {
+//    padding: 10px 0;
+//    font-weight: 500;
+//    display: inline-flex;
+//    align-items: center;
+//    margin-left: 10px;
+//
+//    @media (min-width: map_get($grid-breakpoints, md)) {
+//        margin-left: 40px;
+//    }
+//
+//    @media (min-width: map_get($grid-breakpoints, xl)) {
+//        padding: 15px 0;
+//    }
+//
+//    svg {
+//        fill: $primary;
+//        margin-right: 5px;
+//    }
+//
+//    &--mail {
+//        svg {
+//            width: 40px;
+//            height: 40px;
+//
+//            @media (min-width: map_get($grid-breakpoints, md)) {
+//                width: 15px;
+//                height: 15px;
+//            }
+//        }
+//        span {
+//            display: none;
+//
+//            @media (min-width: map_get($grid-breakpoints, md)) {
+//                display: block;
+//            }
+//        }
+//    }
+//}
+//
+//.header-phone-btn {
+//    svg {
+//        fill: $primary;
+//    }
+//
+//    @media (min-width: map_get($grid-breakpoints, md)) {
+//        display: none;
+//    }
+//}
+//
+//.header-phone-toggle {
+//    display: none;
+//    position: absolute;
+//    left: 0;
+//    top: 100%;
+//    background-color: #fff;
+//    padding: 10px;
+//
+//    @media (min-width: map_get($grid-breakpoints, md)) {
+//        display: block;
+//        position: static;
+//        padding: 0;
+//        background-color: transparent;
+//        margin-left: auto;
+//    }
+//}

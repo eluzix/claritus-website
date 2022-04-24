@@ -42,7 +42,7 @@
     <link rel="preload" as="image" href="/images/nurture-grow.gif">
     {{ end }}
 
-    {{ $sass := resources.Get "scss/main.scss" }}
+    {{ $sass := resources.Get "scss_v2/app.scss" }}
     {{ $style := $sass | resources.ToCSS | resources.Minify  | fingerprint }}
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ $style.Permalink }}">
@@ -80,10 +80,10 @@
 <div class="root">
     {{ block "content" . }}{{ end }}
 
-    {{if not .IsHome}}
-        {{ partial "footer.html" . }}
-    {{ end }}
-    {{ partial "contact-us-modal.html" . }}
+<!--    {{if not .IsHome}}-->
+<!--        {{ partial "footer.html" . }}-->
+<!--    {{ end }}-->
+<!--    {{ partial "contact-us-modal.html" . }}-->
 </div>
 
 {{ template "_internal/google_analytics.html" . }}

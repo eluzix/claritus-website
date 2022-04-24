@@ -1,0 +1,58 @@
+.btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	position: relative;
+	text-transform: uppercase;
+	color: #fff;
+	span {
+		position: relative;
+		z-index: 2;
+	}
+
+	svg {
+		position: relative;
+		z-index: 2;
+		margin-left: 5px;
+		fill: #fff;
+		transform: rotate(-90deg);
+	}
+	&:hover {
+		box-shadow: none;
+	}
+	&:focus {
+		box-shadow: none;
+	}
+	&--small {
+		font-size: 14px;
+		padding: 12px 24px;
+	}
+}
+
+.btn-primary {
+}
+
+.btn-secondary {
+	&:before {
+		content: "";
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background-image: linear-gradient(179.51deg, #2fa0ef 6.85%, #2081c5 97.7%);
+		transition: all 0.5s ease;
+	}
+	&:hover {
+		&:before {
+			opacity: 0;
+		}
+	}
+}
+
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled).active,
+.show > .btn-primary.dropdown-toggle {
+	box-shadow: none;
+}
