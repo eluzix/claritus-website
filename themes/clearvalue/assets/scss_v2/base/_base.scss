@@ -8,6 +8,7 @@ body {
   font-size: $font-size-base;
   font-family: $font-family-base;
   font-weight: $font-weight-base;
+  color: $body-color;
 }
 
 h1,
@@ -22,6 +23,12 @@ h5,
 .h5 {
   margin: 0;
   font-weight: 700;
+  color: $dark-11;
+}
+
+h2 {
+  font-size: 40px;
+  line-height: 52px;
 }
 
 p {

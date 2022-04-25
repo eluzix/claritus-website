@@ -1,0 +1,21 @@
+
+section.secure-section {
+  position: relative;
+  padding: 200px 0;
+}
+
+.secure-bg {
+  img {
+    @extend %absolute;
+    object-fit: cover;
+    object-position: center right;
+  }
+}
+
+.secure-title {
+  margin-bottom: 32px;
+}
+
+.secure-text {
+  margin-bottom: 40px;
+}
