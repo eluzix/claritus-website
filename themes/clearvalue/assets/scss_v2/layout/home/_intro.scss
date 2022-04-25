@@ -21,6 +21,7 @@ section.home-intro-section {
 
 .home-intro {
   position: relative;
+  padding: 50px 0;
 
   &__title {
     font-size: 50px;
@@ -44,3 +45,63 @@ section.home-intro-section {
     height: 100%;
   }
 }
+
+.intro-overview-wrap {
+  margin-top: 100px;
+  display: flex;
+
+  .intro-overview {
+    display: inline-flex;
+
+    &__icon {
+      width: 28px;
+      height: 28px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background-color: $gray-400;
+      margin-right: 10px;
+
+      svg {
+        fill: #fff;
+      }
+    }
+
+    &-content {
+      &__title {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 26px;
+        color: #fff;
+      }
+
+      &__text {
+        color: $gray-400;
+        margin-top: 8px;
+
+        svg {
+          width: 15px;
+          height: 15px;
+          fill: $gray-400;
+          margin: 0 5px;
+        }
+      }
+    }
+
+    &:after {
+      content: '';
+      width: 1px;
+      background-color: $gray-400;
+      height: 100%;
+      margin: 0 40px;
+    }
+
+    &:last-child {
+      &:after {
+        display: none;
+      }
+    }
+  }
+}
+

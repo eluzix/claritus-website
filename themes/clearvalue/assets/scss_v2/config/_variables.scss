@@ -1,12 +1,10 @@
 // Colors
-$white: #fff;
-$light: #F9FBFF;
-$gray: #757575;
-$danger: #FF9D9D;
-$danger-dark: #FF4A4A;
-$success: #28a745;
-$dark: #0F0F10;
+$gray-100: #C6CBDD;
+$gray-200: #E3E5ED;
+$gray-400: #A4A9BB;
+$green: #45DD95;
 $primary: #2967F0;
+$gradient-primary: linear-gradient(90.36deg, #46DD94 -0.66%, #23D3AB 101.59%, #17D6B3 101.59%);
 
 //Base config
 $body-color: #343347;
@@ -36,12 +34,8 @@ $container-max-widths: (
 $box-shadow-primary: 0px 14px 28px rgba(203, 203, 203, 0.25);
 $box-shadow-secondary: 0px 4px 10px rgba(0, 0, 0, 0.1);
 
-// Button
-$btn-padding-x: 40px;
-$btn-padding-y: 14px;
-
 // Transition
-$transition-time-main: .5s;
+$transition-time-main: all 0.3s ease;
 
 // Font
 $font-size: 1rem;

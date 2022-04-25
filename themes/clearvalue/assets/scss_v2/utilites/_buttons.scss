@@ -20,7 +20,11 @@
   }
 
   &--primary {
-    background: linear-gradient(90.36deg, #46DD94 -0.66%, #23D3AB 101.59%, #17D6B3 101.59%);
+    background: $gradient-primary;
+  }
+
+  &--transparent {
+    @extend %text-gradient;
   }
 
 }

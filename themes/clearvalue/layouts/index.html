@@ -1,311 +1,320 @@
 {{ define "content" }}
-<div class="landing-page home">
-    <!--    {{ partial "nav.html" . }}-->
-    <!--    {{ partial "menu.html" }}-->
 
-    <section class="home-intro-section">
+{{ partial "header.html" }}
 
-        <!--        <svg width="15" height="15">-->
-        <!--            <use xlink:href="#arrow-icon"></use>-->
-        <!--        </svg>-->
+<!--Intro section -->
+<section class="home-intro-section">
 
-        <figure class="home-intro-bg">
-            <img src="/images/home-intro-bg.svg" alt="">
-        </figure>
+    <figure class="home-intro-bg">
+        <img src="/images/home-intro-bg.svg" alt="">
+    </figure>
 
+    <div class="home-intro">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6">
+                    <h1 class="home-intro__title">
+                        {{ .Title | safeHTML }}
+                    </h1>
 
-        <div class="home-intro">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-6">
-                        <h1 class="home-intro__title">
-                            {{ .Title | safeHTML }}
-                        </h1>
+                    <p class="home-intro__text">
+                        {{ .Params.heroText | safeHTML }}
+                    </p>
 
-                        <p class="home-intro__text">
-                            {{ .Params.heroText | safeHTML }}
-                        </p>
+                    <a href="#" class="btn btn--primary home-intro__btn">
+                        Try for Free
+                    </a>
 
-                        <a href="#" class="btn btn--primary home-intro__btn">
-                            Try for Free
-                        </a>
+                    <div class="intro-overview-wrap">
 
-                        <div class="intro-overview-wrap">
+                        {{ range .Params.homeOverview }}
+                        <div class="intro-overview">
+                            <figure class="intro-overview__icon">
+                                <svg width="15" height="15">
+                                    <use xlink:href="#{{ .icon }}"></use>
+                                </svg>
+                            </figure>
 
-                            {{ range .Params.homeOverview }}
-                            <div class="intro-overview">
-                                <figure class="intro-overview__icon">
-                                    <svg width="15" height="15">
-                                        <use xlink:href="#{{ .icon }}"></use>
-                                    </svg>
-                                </figure>
-                                <div class="intro-overview-content">
-                                    <h3 class="intro-overview-content__title">
-                                        {{ .title }}
-                                    </h3>
-                                    <p class="intro-overview-content__text">
-                                        {{ .text | safeHTML }}
-                                    </p>
-                                </div>
-
+                            <div class="intro-overview-content">
+                                <h3 class="intro-overview-content__title">
+                                    {{ .title }}
+                                </h3>
+                                <p class="intro-overview-content__text">
+                                    {{ .text | safeHTML }}
+                                </p>
                             </div>
-                            {{ end }}
-                            <span></span>
-                            <div class="intro-overview__item">
 
-                            </div>
                         </div>
+                        {{ end }}
+
                     </div>
                 </div>
             </div>
-
-            <img src="/images/home-intro-img.png" alt="" class="home-intro__img">
         </div>
-    </section>
+
+        <img src="/images/home-intro-img.png" alt="" class="home-intro__img">
+    </div>
+</section>
+
+<!--Financial institutes-->
+
+<section class="financials-institutes-section">
+    <h2 class="financials-title">
+        Trusted by over 17k financial institutions
+    </h2>
+
+    <div class="financials">
+
+        {{ range .Params.financialInstitutes }}
+        <img src="{{ . }}" alt="" class="financials__item">
+        {{ end }}
+
+    </div>
+</section>
 
 
-    <div id="otstup"></div>
+<div id="otstup"></div>
 
-    <!--    <section class="section hero">-->
-    <!--        <div class="">-->
-    <!--            <div class="leveled">-->
-    <!--                <div class="level-left">-->
-    <!--                    <div>-->
-    <!--                        <h1 class="hero-title">-->
-    <!--                            {{ .Title | safeHTML }}-->
-    <!--                        </h1>-->
-    <!--                        <p class="hero-text">{{ .Params.heroText | safeHTML }}</p>-->
-    <!--                    </div>-->
-    <!--                    <div>-->
-    <!--                        <a class="button is-green is-full is-wide is-higher try-button"-->
-    <!--                           href="{{ .Site.Params.appUrl }}/on-boarding">-->
-    <!--                            Try <img src="/images/logo-full-white.svg" alt="Claritus logo in white color" class="icon-logo"> for Free-->
-    <!--                        </a>-->
-    <!--                    </div>-->
-    <!--                </div>-->
-    <!--                <div class="level-right">-->
-    <!--                    <img class="hero-image" src="{{ .Params.heroImg }}" decoding="async"/>-->
-    <!--                </div>-->
-    <!--            </div>-->
+<!--    <section class="section hero">-->
+<!--        <div class="">-->
+<!--            <div class="leveled">-->
+<!--                <div class="level-left">-->
+<!--                    <div>-->
+<!--                        <h1 class="hero-title">-->
+<!--                            {{ .Title | safeHTML }}-->
+<!--                        </h1>-->
+<!--                        <p class="hero-text">{{ .Params.heroText | safeHTML }}</p>-->
+<!--                    </div>-->
+<!--                    <div>-->
+<!--                        <a class="button is-green is-full is-wide is-higher try-button"-->
+<!--                           href="{{ .Site.Params.appUrl }}/on-boarding">-->
+<!--                            Try <img src="/images/logo-full-white.svg" alt="Claritus logo in white color" class="icon-logo"> for Free-->
+<!--                        </a>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="level-right">-->
+<!--                    <img class="hero-image" src="{{ .Params.heroImg }}" decoding="async"/>-->
+<!--                </div>-->
+<!--            </div>-->
 
-    <!--            {{ partial "social-proof.html" . }}-->
+<!--            {{ partial "social-proof.html" . }}-->
 
-    <!--        </div>-->
-    <!--    </section>-->
+<!--        </div>-->
+<!--    </section>-->
 
-    <!--    <section class="section section-clear-view">-->
-    <!--        <div class="section-info">-->
-    <!--            <div class="block-text">-->
-    <!--                <div>-->
-    <!--                    <h2 class="is-h2 section-title">{{ .Params.section1Title | safeHTML}}</h2>-->
-    <!--                    <p>{{ .Params.section1Text | safeHTML}}</p>-->
-    <!--                </div>-->
-    <!--            </div>-->
+<!--    <section class="section section-clear-view">-->
+<!--        <div class="section-info">-->
+<!--            <div class="block-text">-->
+<!--                <div>-->
+<!--                    <h2 class="is-h2 section-title">{{ .Params.section1Title | safeHTML}}</h2>-->
+<!--                    <p>{{ .Params.section1Text | safeHTML}}</p>-->
+<!--                </div>-->
+<!--            </div>-->
 
-    <!--            <div class="block-image">-->
-    <!--                <img src="{{ .Params.section1Img }}" decoding="async"/>-->
-    <!--            </div>-->
-    <!--        </div>-->
-    <!--    </section>-->
+<!--            <div class="block-image">-->
+<!--                <img src="{{ .Params.section1Img }}" decoding="async"/>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </section>-->
 
-    <!--    <section class="section section-privacy is-white">-->
-    <!--        <div class="section-info">-->
-    <!--            <div class="block-image">-->
-    <!--                <img src="{{ .Params.section2Img }}" decoding="async"/>-->
-    <!--            </div>-->
-    <!--            <div class="block-text">-->
-    <!--                <div>-->
-    <!--                    <h2 class="is-h2 section-title">{{ .Params.section2Title | safeHTML}}</h2>-->
-    <!--                    <p>{{ .Params.section2Text | safeHTML}}</p>-->
-    <!--                    <a href="/blog/trust" class="learn-more is-link">Learn more</a>-->
-    <!--                </div>-->
-    <!--            </div>-->
-    <!--        </div>-->
-    <!--    </section>-->
+<!--    <section class="section section-privacy is-white">-->
+<!--        <div class="section-info">-->
+<!--            <div class="block-image">-->
+<!--                <img src="{{ .Params.section2Img }}" decoding="async"/>-->
+<!--            </div>-->
+<!--            <div class="block-text">-->
+<!--                <div>-->
+<!--                    <h2 class="is-h2 section-title">{{ .Params.section2Title | safeHTML}}</h2>-->
+<!--                    <p>{{ .Params.section2Text | safeHTML}}</p>-->
+<!--                    <a href="/blog/trust" class="learn-more is-link">Learn more</a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </section>-->
 
-    <!--    <section class="section section-beacon">-->
-    <!--        <div class="section-info">-->
-    <!--            <div class="block-text">-->
-    <!--                <div>-->
-    <!--                    <h2 class="is-h2 section-title">{{ .Params.section3Title | safeHTML}}</h2>-->
-    <!--                    <p class="beacon-text is-regular-text">{{ .Params.section3Text | safeHTML}}</p>-->
-    <!--                    <p class="is-green beacon-caption is-regular-text">{{ .Params.section3Text2 | safeHTML}}</p>-->
-    <!--                    <a class="button is-green is-full is-wide is-higher try-button"-->
-    <!--                        href="{{ .Site.Params.appUrl }}/on-boarding" title="Try Claritus for Free">-->
-    <!--                        Try <img src="/images/logo-full-white.svg" class="icon-logo"> for Free-->
-    <!--                    </a>-->
-    <!--                </div>-->
-    <!--            </div>-->
-    <!--        </div>-->
-    <!--    </section>-->
+<!--    <section class="section section-beacon">-->
+<!--        <div class="section-info">-->
+<!--            <div class="block-text">-->
+<!--                <div>-->
+<!--                    <h2 class="is-h2 section-title">{{ .Params.section3Title | safeHTML}}</h2>-->
+<!--                    <p class="beacon-text is-regular-text">{{ .Params.section3Text | safeHTML}}</p>-->
+<!--                    <p class="is-green beacon-caption is-regular-text">{{ .Params.section3Text2 | safeHTML}}</p>-->
+<!--                    <a class="button is-green is-full is-wide is-higher try-button"-->
+<!--                        href="{{ .Site.Params.appUrl }}/on-boarding" title="Try Claritus for Free">-->
+<!--                        Try <img src="/images/logo-full-white.svg" class="icon-logo"> for Free-->
+<!--                    </a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </section>-->
 
-    <!--    <section class="section section-track is-white">-->
-    <!--        <div class="section-info">-->
-    <!--            <div class="block-text">-->
-    <!--                <div>-->
-    <!--                    <h2 class="is-h2 has-bottom-margin-20 section-title">{{ .Params.section4Title | safeHTML}}</h2>-->
-    <!--                    <p>{{ .Params.section4Text | safeHTML}}</p>-->
-    <!--                </div>-->
-    <!--            </div>-->
+<!--    <section class="section section-track is-white">-->
+<!--        <div class="section-info">-->
+<!--            <div class="block-text">-->
+<!--                <div>-->
+<!--                    <h2 class="is-h2 has-bottom-margin-20 section-title">{{ .Params.section4Title | safeHTML}}</h2>-->
+<!--                    <p>{{ .Params.section4Text | safeHTML}}</p>-->
+<!--                </div>-->
+<!--            </div>-->
 
-    <!--            <div class="block-image has-border-shadow is-centered">-->
-    <!--                <img src="{{ .Params.section4Img }}" decoding="async"/>-->
-    <!--            </div>-->
-    <!--        </div>-->
-    <!--    </section>-->
+<!--            <div class="block-image has-border-shadow is-centered">-->
+<!--                <img src="{{ .Params.section4Img }}" decoding="async"/>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </section>-->
 
-    <!--    <section class="section section-daterange is-white">-->
-    <!--        <div class="section-info">-->
-    <!--            <div class="block-image has-border-shadow">-->
-    <!--                <img src="/images/nurture-grow.png" class="lazy-image" data-src="{{ .Params.section5Img }}" decoding="async"/>-->
-    <!--            </div>-->
+<!--    <section class="section section-daterange is-white">-->
+<!--        <div class="section-info">-->
+<!--            <div class="block-image has-border-shadow">-->
+<!--                <img src="/images/nurture-grow.png" class="lazy-image" data-src="{{ .Params.section5Img }}" decoding="async"/>-->
+<!--            </div>-->
 
-    <!--            <div class="block-text">-->
-    <!--                <div>-->
-    <!--                    <h2 class="is-h2 section-title">{{ .Params.section5Title | safeHTML}}</h2>-->
-    <!--                    <p>{{ .Params.section5Text | safeHTML}}</p>-->
-    <!--                </div>-->
-    <!--            </div>-->
-    <!--        </div>-->
-    <!--    </section>-->
-    <!--    -->
-    <!--    <section class="section section-latest-posts is-white">-->
-    <!--        <div class="section-info">-->
-    <!--            <div class="block-header">-->
-    <!--                <h2 class="is-h2 section-title">{{ .Params.section6Title | safeHTML}}</h2>-->
-    <!--            </div>-->
+<!--            <div class="block-text">-->
+<!--                <div>-->
+<!--                    <h2 class="is-h2 section-title">{{ .Params.section5Title | safeHTML}}</h2>-->
+<!--                    <p>{{ .Params.section5Text | safeHTML}}</p>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </section>-->
+<!--    -->
+<!--    <section class="section section-latest-posts is-white">-->
+<!--        <div class="section-info">-->
+<!--            <div class="block-header">-->
+<!--                <h2 class="is-h2 section-title">{{ .Params.section6Title | safeHTML}}</h2>-->
+<!--            </div>-->
 
-    <!--            <div class="block-content">-->
-    <!--                {{ partial "latest-blog-posts.html" . }}-->
-    <!--            </div>-->
-    <!--        </div>-->
-    <!--    </section>-->
+<!--            <div class="block-content">-->
+<!--                {{ partial "latest-blog-posts.html" . }}-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </section>-->
 
-    <!--    <section class="section section-fog">-->
-    <!--        <div class="w-100">-->
-    <!--            <h2 class="has-bottom-margin-20 is-centered section-title">{{ .Params.section7Title | safeHTML}}</h2>-->
-    <!--            <p class="info has-bottom-margin-40">{{ .Params.section7Text | safeHTML}}</p>-->
-    <!--        </div>-->
-    <!--    </section>-->
+<!--    <section class="section section-fog">-->
+<!--        <div class="w-100">-->
+<!--            <h2 class="has-bottom-margin-20 is-centered section-title">{{ .Params.section7Title | safeHTML}}</h2>-->
+<!--            <p class="info has-bottom-margin-40">{{ .Params.section7Text | safeHTML}}</p>-->
+<!--        </div>-->
+<!--    </section>-->
 
-    <!--&lt;!&ndash;    <section class="section section-tracked-assets is-white">&ndash;&gt;-->
-    <!--&lt;!&ndash;        <div class="centered">&ndash;&gt;-->
-    <!--&lt;!&ndash;            <h2 class="section-title">{{ .Params.section8Title | safeHTML}}</h2>&ndash;&gt;-->
-    <!--&lt;!&ndash;            <div class="assets-info">&ndash;&gt;-->
-    <!--&lt;!&ndash;                <div class="assets-info-card">&ndash;&gt;-->
-    <!--&lt;!&ndash;                    <h4 class="assets-info-title">Assets Value</h4>&ndash;&gt;-->
-    <!--&lt;!&ndash;                    <p class="assets-info-value">{{ .Params.assetsValue | safeHTML }}</p>&ndash;&gt;-->
-    <!--&lt;!&ndash;                </div>&ndash;&gt;-->
-    <!--&lt;!&ndash;                <div class="assets-info-card">&ndash;&gt;-->
-    <!--&lt;!&ndash;                    <h4 class="assets-info-title">Total Tracked Assets</h4>&ndash;&gt;-->
-    <!--&lt;!&ndash;                    <p class="assets-info-value">{{ .Params.trackedAssets | safeHTML }}</p>&ndash;&gt;-->
-    <!--&lt;!&ndash;                </div>&ndash;&gt;-->
-    <!--&lt;!&ndash;            </div>&ndash;&gt;-->
-    <!--&lt;!&ndash;        </div>&ndash;&gt;-->
-    <!--&lt;!&ndash;    </section>&ndash;&gt;-->
+<!--&lt;!&ndash;    <section class="section section-tracked-assets is-white">&ndash;&gt;-->
+<!--&lt;!&ndash;        <div class="centered">&ndash;&gt;-->
+<!--&lt;!&ndash;            <h2 class="section-title">{{ .Params.section8Title | safeHTML}}</h2>&ndash;&gt;-->
+<!--&lt;!&ndash;            <div class="assets-info">&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="assets-info-card">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <h4 class="assets-info-title">Assets Value</h4>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <p class="assets-info-value">{{ .Params.assetsValue | safeHTML }}</p>&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="assets-info-card">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <h4 class="assets-info-title">Total Tracked Assets</h4>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <p class="assets-info-value">{{ .Params.trackedAssets | safeHTML }}</p>&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;    </section>&ndash;&gt;-->
 
-    <!--    <section class="section section-testimonials is-white">-->
-    <!--        <div class="centered">-->
-    <!--            <h2 class="section-title">{{ .Params.section9Title | safeHTML}}</h2>-->
-    <!--            <div class="testimonials-block is-hidden-tablet">-->
-    <!--                {{ range .Params.testimonials }}-->
-    <!--                <div class="testimonial">-->
-    <!--                    <img src="/images/icon-quotation.svg" class="quotation"/>-->
-    <!--                    <p class="testimonial-text">{{ .title | safeHTML}}</p>-->
-    <!--                    <div class="testimonial-author">-->
-    <!--                        <span>{{ .author }}</span>-->
-    <!--                    </div>-->
-    <!--                </div>-->
-    <!--                {{ end }}-->
-    <!--            </div>-->
-    <!--            <div class="testimonials-block testimonials-slider navigation-wrapper container">-->
-    <!--                <div class="slider">-->
-    <!--                    <button id="arrow-left"-->
-    <!--                            class="arrow arrow&#45;&#45;left is-hidden-mobile">-->
-    <!--                        <svg width="53" height="53" viewBox="0 0 53 53" fill="none" xmlns="http://www.w3.org/2000/svg">-->
-    <!--                            <circle cx="26.5011" cy="26.4991" r="24.13" stroke="#C4C4C4" stroke-width="0.5"/>-->
-    <!--                            <path fill-rule="evenodd" clip-rule="evenodd"-->
-    <!--                                  d="M21.5453 27.4735L27.3414 33.6024L26.039 34.9795L18.0195 26.4995L26.039 18.0195L27.3414 19.3967L21.5453 25.5256H34.9795V27.4735H21.5453Z"-->
-    <!--                                  fill="#323947"/>-->
-    <!--                        </svg>-->
-    <!--                    </button>-->
-    <!--                    <div id="main-slider" class="keen-slider">-->
-    <!--                        {{ range $index, $elem := .Params.testimonials }}-->
-    <!--                        {{ $c := add $index 1 }}-->
-    <!--                        <div class="keen-slider__slide number-slide{{ $c }} testimonial">-->
-    <!--                            <img src="/images/icon-quotation.svg" class="quotation"/>-->
-    <!--                            <p class="testimonial-text">{{ $elem.title | safeHTML }}</p>-->
-    <!--                            <div class="testimonial-author">-->
-    <!--                                <span>{{ $elem.author }}</span>-->
-    <!--                            </div>-->
-    <!--                        </div>-->
-    <!--                        {{ end }}-->
-    <!--                    </div>-->
-    <!--                    <button-->
-    <!--                            id="arrow-right"-->
-    <!--                            class="arrow arrow&#45;&#45;right is-hidden-mobile">-->
-    <!--                        <svg width="53" height="53" viewBox="0 0 53 53" fill="none" xmlns="http://www.w3.org/2000/svg">-->
-    <!--                            <circle r="24.13" transform="matrix(-1 0 0 1 26.4989 26.4991)" stroke="#C4C4C4"-->
-    <!--                                    stroke-width="0.5"/>-->
-    <!--                            <path fill-rule="evenodd" clip-rule="evenodd"-->
-    <!--                                  d="M31.4547 27.4735L25.6586 33.6024L26.961 34.9795L34.9805 26.4995L26.961 18.0195L25.6586 19.3967L31.4547 25.5256H18.0205V27.4735H31.4547Z"-->
-    <!--                                  fill="#323947"/>-->
-    <!--                        </svg>-->
-    <!--                    </button>-->
-    <!--                </div>-->
+<!--    <section class="section section-testimonials is-white">-->
+<!--        <div class="centered">-->
+<!--            <h2 class="section-title">{{ .Params.section9Title | safeHTML}}</h2>-->
+<!--            <div class="testimonials-block is-hidden-tablet">-->
+<!--                {{ range .Params.testimonials }}-->
+<!--                <div class="testimonial">-->
+<!--                    <img src="/images/icon-quotation.svg" class="quotation"/>-->
+<!--                    <p class="testimonial-text">{{ .title | safeHTML}}</p>-->
+<!--                    <div class="testimonial-author">-->
+<!--                        <span>{{ .author }}</span>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                {{ end }}-->
+<!--            </div>-->
+<!--            <div class="testimonials-block testimonials-slider navigation-wrapper container">-->
+<!--                <div class="slider">-->
+<!--                    <button id="arrow-left"-->
+<!--                            class="arrow arrow&#45;&#45;left is-hidden-mobile">-->
+<!--                        <svg width="53" height="53" viewBox="0 0 53 53" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+<!--                            <circle cx="26.5011" cy="26.4991" r="24.13" stroke="#C4C4C4" stroke-width="0.5"/>-->
+<!--                            <path fill-rule="evenodd" clip-rule="evenodd"-->
+<!--                                  d="M21.5453 27.4735L27.3414 33.6024L26.039 34.9795L18.0195 26.4995L26.039 18.0195L27.3414 19.3967L21.5453 25.5256H34.9795V27.4735H21.5453Z"-->
+<!--                                  fill="#323947"/>-->
+<!--                        </svg>-->
+<!--                    </button>-->
+<!--                    <div id="main-slider" class="keen-slider">-->
+<!--                        {{ range $index, $elem := .Params.testimonials }}-->
+<!--                        {{ $c := add $index 1 }}-->
+<!--                        <div class="keen-slider__slide number-slide{{ $c }} testimonial">-->
+<!--                            <img src="/images/icon-quotation.svg" class="quotation"/>-->
+<!--                            <p class="testimonial-text">{{ $elem.title | safeHTML }}</p>-->
+<!--                            <div class="testimonial-author">-->
+<!--                                <span>{{ $elem.author }}</span>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        {{ end }}-->
+<!--                    </div>-->
+<!--                    <button-->
+<!--                            id="arrow-right"-->
+<!--                            class="arrow arrow&#45;&#45;right is-hidden-mobile">-->
+<!--                        <svg width="53" height="53" viewBox="0 0 53 53" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+<!--                            <circle r="24.13" transform="matrix(-1 0 0 1 26.4989 26.4991)" stroke="#C4C4C4"-->
+<!--                                    stroke-width="0.5"/>-->
+<!--                            <path fill-rule="evenodd" clip-rule="evenodd"-->
+<!--                                  d="M31.4547 27.4735L25.6586 33.6024L26.961 34.9795L34.9805 26.4995L26.961 18.0195L25.6586 19.3967L31.4547 25.5256H18.0205V27.4735H31.4547Z"-->
+<!--                                  fill="#323947"/>-->
+<!--                        </svg>-->
+<!--                    </button>-->
+<!--                </div>-->
 
-    <!--                <div class="content-dots">-->
-    <!--                    <button id="arrow-left-mobile"-->
-    <!--                            class="arrow arrow&#45;&#45;left is-visible-mobile">-->
-    <!--                        <svg width="53" height="53" viewBox="0 0 53 53" fill="none" xmlns="http://www.w3.org/2000/svg">-->
-    <!--                            <circle cx="26.5011" cy="26.4991" r="24.13" stroke="#C4C4C4" stroke-width="0.5"/>-->
-    <!--                            <path fill-rule="evenodd" clip-rule="evenodd"-->
-    <!--                                  d="M21.5453 27.4735L27.3414 33.6024L26.039 34.9795L18.0195 26.4995L26.039 18.0195L27.3414 19.3967L21.5453 25.5256H34.9795V27.4735H21.5453Z"-->
-    <!--                                  fill="#323947"/>-->
-    <!--                        </svg>-->
-    <!--                    </button>-->
-    <!--                    <div id="dots" class="dots"></div>-->
-    <!--                    <button-->
-    <!--                            id="arrow-right-mobile"-->
-    <!--                            class="arrow arrow&#45;&#45;right is-visible-mobile">-->
-    <!--                        <svg width="53" height="53" viewBox="0 0 53 53" fill="none" xmlns="http://www.w3.org/2000/svg">-->
-    <!--                            <circle r="24.13" transform="matrix(-1 0 0 1 26.4989 26.4991)" stroke="#C4C4C4"-->
-    <!--                                    stroke-width="0.5"/>-->
-    <!--                            <path fill-rule="evenodd" clip-rule="evenodd"-->
-    <!--                                  d="M31.4547 27.4735L25.6586 33.6024L26.961 34.9795L34.9805 26.4995L26.961 18.0195L25.6586 19.3967L31.4547 25.5256H18.0205V27.4735H31.4547Z"-->
-    <!--                                  fill="#323947"/>-->
-    <!--                        </svg>-->
-    <!--                    </button>-->
-    <!--                </div>-->
-    <!--            </div>-->
-    <!--        </div>-->
-    <!--    </section>-->
+<!--                <div class="content-dots">-->
+<!--                    <button id="arrow-left-mobile"-->
+<!--                            class="arrow arrow&#45;&#45;left is-visible-mobile">-->
+<!--                        <svg width="53" height="53" viewBox="0 0 53 53" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+<!--                            <circle cx="26.5011" cy="26.4991" r="24.13" stroke="#C4C4C4" stroke-width="0.5"/>-->
+<!--                            <path fill-rule="evenodd" clip-rule="evenodd"-->
+<!--                                  d="M21.5453 27.4735L27.3414 33.6024L26.039 34.9795L18.0195 26.4995L26.039 18.0195L27.3414 19.3967L21.5453 25.5256H34.9795V27.4735H21.5453Z"-->
+<!--                                  fill="#323947"/>-->
+<!--                        </svg>-->
+<!--                    </button>-->
+<!--                    <div id="dots" class="dots"></div>-->
+<!--                    <button-->
+<!--                            id="arrow-right-mobile"-->
+<!--                            class="arrow arrow&#45;&#45;right is-visible-mobile">-->
+<!--                        <svg width="53" height="53" viewBox="0 0 53 53" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+<!--                            <circle r="24.13" transform="matrix(-1 0 0 1 26.4989 26.4991)" stroke="#C4C4C4"-->
+<!--                                    stroke-width="0.5"/>-->
+<!--                            <path fill-rule="evenodd" clip-rule="evenodd"-->
+<!--                                  d="M31.4547 27.4735L25.6586 33.6024L26.961 34.9795L34.9805 26.4995L26.961 18.0195L25.6586 19.3967L31.4547 25.5256H18.0205V27.4735H31.4547Z"-->
+<!--                                  fill="#323947"/>-->
+<!--                        </svg>-->
+<!--                    </button>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </section>-->
 
-    <!--    <section class="section section-transparent">-->
-    <!--        <div class="section-info">-->
-    <!--            <div class="block-text">-->
-    <!--                <div>-->
-    <!--                    <h2 class="section-title">Transparent &<br/> Simple Pricing</h2>-->
-    <!--                    <p>At Claritus, we aim to provide you with the highest‑value solution for your money at a fair, and low subscription cost. There are no surprise costs or hidden fees, ever.</p>-->
-    <!--                    <p>Sign up to Claritus and enjoy our annual subscription for free, as a thank you for being one of our first users.</p>-->
-    <!--                    <p><a href="/blog/we-value-our-beta-customers/" class="learn-more is-link">Learn more</a></p>-->
-    <!--                    <a class="button is-green is-full is-wide is-higher try-button"-->
-    <!--                        href="{{ .Site.Params.appUrl }}/on-boarding">-->
-    <!--                         Try <img src="/images/logo-full-white.svg" class="icon-logo"> for Free-->
-    <!--                    </a>-->
-    <!--                </div>-->
-    <!--            </div>-->
-    <!--        </div>-->
-    <!--    </section>-->
+<!--    <section class="section section-transparent">-->
+<!--        <div class="section-info">-->
+<!--            <div class="block-text">-->
+<!--                <div>-->
+<!--                    <h2 class="section-title">Transparent &<br/> Simple Pricing</h2>-->
+<!--                    <p>At Claritus, we aim to provide you with the highest‑value solution for your money at a fair, and low subscription cost. There are no surprise costs or hidden fees, ever.</p>-->
+<!--                    <p>Sign up to Claritus and enjoy our annual subscription for free, as a thank you for being one of our first users.</p>-->
+<!--                    <p><a href="/blog/we-value-our-beta-customers/" class="learn-more is-link">Learn more</a></p>-->
+<!--                    <a class="button is-green is-full is-wide is-higher try-button"-->
+<!--                        href="{{ .Site.Params.appUrl }}/on-boarding">-->
+<!--                         Try <img src="/images/logo-full-white.svg" class="icon-logo"> for Free-->
+<!--                    </a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </section>-->
 
-    <!--    <section class="section section-footer">-->
-    <!--        <div class="centered">-->
-    <!--            <h4>{{ .Params.familyOffice | safeHTML }}</h4>-->
-    <!--        </div>-->
-    <!--    </section>-->
+<!--    <section class="section section-footer">-->
+<!--        <div class="centered">-->
+<!--            <h4>{{ .Params.familyOffice | safeHTML }}</h4>-->
+<!--        </div>-->
+<!--    </section>-->
 
-    <!--    {{ partial "footer.html" . }}-->
-</div>
+<!--    {{ partial "footer.html" . }}-->
+
 {{ end }}
 {{ define "StructData" }}
 <script type="application/ld+json">
