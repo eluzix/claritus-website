@@ -71,9 +71,6 @@
     <!--    <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>-->
     <!--    {{ end }}-->
 
-    {{ $mainJs := resources.Get "js/main.js" }}
-    {{ $js := $mainJs | resources.Minify | fingerprint }}
-    <script src="{{ $js.Permalink }}"></script>
 
     {{ block "StructData" . }}{{ end }}
 
@@ -98,6 +95,12 @@
     {{ partial "symbols.html" . }}
     <!--    {{ partial "contact-us-modal.html" . }}-->
 </div>
+
+<!-- JavaScript -->
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+{{ $mainJs := resources.Get "js/app.js" }}
+{{ $js := $mainJs | resources.Minify | fingerprint }}
+<script src="{{ $js.Permalink }}"></script>
 
 {{ template "_internal/google_analytics.html" . }}
 </body>

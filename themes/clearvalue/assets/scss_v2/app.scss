@@ -1,11 +1,16 @@
+
+
 //Fonts
 @import "../fonts/fonts";
 
 //Config
 @import "config/variables";
-@import "libs/bootstrap";
 @import "config/placeholders";
 @import "config/mixins";
+
+//Libs
+@import "libs/bootstrap";
+@import "libs/flickity/flickity.min.css";
 
 //Base
 @import "base/base";
@@ -15,7 +20,7 @@
 @import "utilites";
 
 //Modules
-//@import "modules/range";
+@import "modules/slider";
 //@import "modules/select";
 
 //Layout

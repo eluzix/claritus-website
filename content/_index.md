@@ -57,6 +57,25 @@ benchmarkTitle: Benchmark yourself against others
 benchmarkText: Use our comparison feature to see how your allocation compared to other investors similar to your strategy. Share insights, investing ideas and strategies every day.
 
 
+##Feedbacks
+feedbackTitle: What customers are saying
+
+feedbacks:
+- feedbackText: Fantastic! The app is really well designed, loads very fast and I really appreciate the subtle details that have been included. I'm very happy to have found it.
+  feedbackName: Robert Fox
+
+- feedbackText: Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor
+  feedbackName: Robert Fox
+
+- feedbackText: Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent ele porttitor rhoncus dolor purus non enim praesent ele 
+  feedbackName: Robert Fox
+
+- feedbackText: Fantastic! The app is really well designed, loads very fast and I really appreciate the subtle details that have been included. I'm very happy to have found it.
+  feedbackName: Robert Fox
+
+- feedbackText: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquam fuga laborum laudantium porro, praesentium quam saepe sit tempora voluptatem.
+  feedbackName: Robert Fox
+
 
 ---
 
