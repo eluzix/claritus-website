@@ -1,0 +1,36 @@
+
+section.simple-pricing-section {
+  padding: 210px 0;
+}
+
+.simple-pricing {
+  width: 100%;
+  max-width: 580px;
+
+  &__title {
+    margin-bottom: 32px;
+  }
+
+  &__text {
+    margin-bottom: 40px;
+  }
+
+  &__btns {
+    display: flex;
+    align-items: center;
+
+    .btn {
+      padding: 14px 16px;
+      margin-right: 16px;
+    }
+  }
+}
+
+.simple-pricing-img {
+  position: absolute;
+  left: 30%;
+  height: 100%;
+  top: 0;
+  z-index: -1;
+  transform: translateX(-50%);
+}

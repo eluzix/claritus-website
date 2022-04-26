@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function (event) {
-    var elem = document.querySelector('.feedback-slider');
-    var flkty = new Flickity(elem, {
+    const slider = document.querySelector('.feedback-slider');
+    const flkty = new Flickity(slider, {
         // options
         wrapAround: true,
         prevNextButtons: false,
@@ -18,8 +18,15 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
     faqButtons.forEach((button) => {
         button.addEventListener('click', () => {
-            button.closest('.faq').classList.toggle('faq--opened');
+
+            const activeElem = document.querySelector('.faq--opened');
+            const faqBlock = button.closest('.faq');
+
+            if (activeElem && activeElem !== faqBlock) {
+                activeElem.classList.remove('faq--opened')
+            }
+
+            faqBlock.classList.toggle('faq--opened');
         })
     })
-
 });

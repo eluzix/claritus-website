@@ -127,6 +127,9 @@ faqSecondColumn:
 
 ##Simple pricing
 
+pricingTitle: Transparent & Simple Pricing
+
+pricingText: Try Claritus free for 14 days - no credit card needed. Upon completing your free trial, you can choose from one of the following plans.
 
 
 
