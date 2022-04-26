@@ -126,7 +126,7 @@
 
 <section class="financial-cover-section">
 
-    <img src="/images/financials-cover.png" alt="" class="financial-cover-img">
+    <img src="/images/financials-cover.jpg" alt="" class="financial-cover-img">
 
     <div class="container">
         <div class="row justify-content-end">
@@ -210,29 +210,68 @@
 
 <section class="faq-section">
     <div class="container">
-        <div class="faq-wrap">
-            <div class="faq">
-                Fantastic! The app is really well designed, loads very fast and I really appreciate the subtle details that have been included. I'm very happy to have found it.
-                feedbackName: Robert Fox
+
+        <h2 class="faq-title">
+            {{ .Params.faqTitle }}
+        </h2>
+
+        <div class="row">
+            <div class="col-xl-6">
+                {{ range .Params.faqFirstColumn }}
+                <div class="faq">
+                    <button class="faq__question">
+                        {{ .question }}
+
+                        <span class="faq-question-icon"></span>
+                    </button>
+
+                    <div class="faq-content">
+                        <p class="faq-content__answer">
+                            {{ .answer }}
+                        </p>
+                    </div>
+                </div>
+                {{ end }}
             </div>
-            <div class="faq">
-                Fantastic! The app is really well designed, loads very fast and I really appreciate the subtle details that have been included. I'm very happy to have found it.
-                feedbackName: Robert Fox
+
+            <div class="col-xl-6">
+                {{ range .Params.faqSecondColumn }}
+                <div class="faq">
+                    <button class="faq__question">
+                        {{ .question }}
+
+                        <span class="faq-question-icon"></span>
+                    </button>
+
+                    <div class="faq-content">
+                        <p class="faq-content__answer">
+                            {{ .answer }}
+                        </p>
+                    </div>
+                </div>
+                {{ end }}
             </div>
-            <div class="faq">
-                Fantastic! The app is really well designed, loads very fast and I really appreciate the subtle details that have been included. I'm very happy to have found it.
-                feedbackName: Robert Fox
-            </div>
-            <div class="faq">
-                Fantastic! The app is really well designed, loads very fast and I really appreciate the subtle details that have been included. I'm very happy to have found it. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab architecto assumenda deleniti dignissimos dolorum ducimus eius eos illo illum ipsa itaque libero minus molestiae natus nisi odio odit optio provident quaerat qui quis reiciendis sint suscipit tempora, totam unde vel veniam? Accusantium aspernatur culpa eius, esse numquam quasi ullam veritatis!
-            </div>
-            <div class="faq">
-                Fantastic! The app is really well designed, loads very fast and I really appreciate the subtle details that have been included. I'm very happy to have found it.
-                feedbackName: Robert Fox
-            </div>
-            <div class="faq">
-                Fantastic! The app is really well designed, loads very fast and I really appreciate the subtle details that have been included. I'm very happy to have found it.
-                feedbackName: Robert Fox
+        </div>
+    </div>
+</section>
+
+<section class="simple-pricing-section">
+    <div class="container">
+        <div class="row justify-content-end">
+            <div class="col-xl-6">
+                <h2 class="pricing-title">
+                    {{ .Params.historyTitle }}
+                </h2>
+
+                <p class="pricing-text">
+                    {{ .Params.historyText | safeHTML }}
+                </p>
+
+                <div class="pricing-btns">
+                    <a href="#" class="btn btn--primary">
+                        Try now for free
+                    </a>
+                </div>
             </div>
         </div>
     </div>

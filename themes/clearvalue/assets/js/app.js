@@ -11,5 +11,15 @@ document.addEventListener("DOMContentLoaded", function (event) {
         adaptiveHeight: false,
     });
 
-    console.log(flkty)
+
+    // Faq
+
+    const faqButtons = document.querySelectorAll('.faq__question');
+
+    faqButtons.forEach((button) => {
+        button.addEventListener('click', () => {
+            button.closest('.faq').classList.toggle('faq--opened');
+        })
+    })
+
 });

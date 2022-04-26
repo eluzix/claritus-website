@@ -83,5 +83,52 @@ historyTitle: Your History Matters
 
 historyText: Measure your portfolio’s performance over time easily and accurately. <br/> Your holding history has huge value, with Claritus you benefit from performance analytics and cross asset performance comparisons to help grow your wealth.
 
+
+##FAQ
+faqTitle: Frequently Asked Questions
+
+faqFirstColumn:
+
+- question: What is Claritus?
+
+  answer: Keeping track of a single invested asset is a challenging and tedious task, let alone a number of assets scattered across several accounts. Whether you invest in the stock market, real estate, or any other alternative investment type, Claritus provides you with a clear image of ALL your combined assets in one place, anytime you need it
+
+- question: What is Claritus?
+
+  answer: Keeping track of a single invested asset is a challenging and tedious task, let alone a number of assets scattered across several accounts. Whether you invest in the stock market, real estate, or any other alternative investment type, Claritus provides you with a clear image of ALL your combined assets in one place, anytime you need it
+
+- question: What is Claritus?
+
+  answer: Keeping track of a single invested asset is a challenging and tedious task, let alone a number of assets scattered across several accounts. Whether you invest in the stock market, real estate, or any other alternative investment type, Claritus provides you with a clear image of ALL your combined assets in one place, anytime you need it
+
+- question: What is Claritus?
+
+  answer: Keeping track of a single invested asset is a challenging and tedious task, let alone a number of assets scattered across several accounts. Whether you invest in the stock market, real estate, or any other alternative investment type, Claritus provides you with a clear image of ALL your combined assets in one place, anytime you need it
+
+
+faqSecondColumn:
+
+- question: What is Claritus?
+
+  answer: Keeping track of a single invested asset is a challenging and tedious task, let alone a number of assets scattered across several accounts. Whether you invest in the stock market, real estate, or any other alternative investment type, Claritus provides you with a clear image of ALL your combined assets in one place, anytime you need it
+
+- question: What is Claritus?
+
+  answer: Keeping track of a single invested asset is a challenging and tedious task, let alone a number of assets scattered across several accounts. Whether you invest in the stock market, real estate, or any other alternative investment type, Claritus provides you with a clear image of ALL your combined assets in one place, anytime you need it
+
+- question: What is Claritus?
+
+  answer: Keeping track of a single invested asset is a challenging and tedious task, let alone a number of assets scattered across several accounts. Whether you invest in the stock market, real estate, or any other alternative investment type, Claritus provides you with a clear image of ALL your combined assets in one place, anytime you need it
+
+- question: What is Claritus?
+
+  answer: Keeping track of a single invested asset is a challenging and tedious task, let alone a number of assets scattered across several accounts. Whether you invest in the stock market, real estate, or any other alternative investment type, Claritus provides you with a clear image of ALL your combined assets in one place, anytime you need it
+
+
+##Simple pricing
+
+
+
+
 ---
 
