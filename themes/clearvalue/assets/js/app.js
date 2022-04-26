@@ -1,4 +1,6 @@
 document.addEventListener("DOMContentLoaded", function (event) {
+
+    // Slider
     const slider = document.querySelector('.feedback-slider');
     const flkty = new Flickity(slider, {
         // options
@@ -10,6 +12,15 @@ document.addEventListener("DOMContentLoaded", function (event) {
         contain: true,
         adaptiveHeight: false,
     });
+
+    document.querySelector('.slider-arrow--prev').addEventListener('click', function () {
+        flkty.previous(false, false);
+    });
+
+    document.querySelector('.slider-arrow--next').addEventListener('click', function () {
+        flkty.next(false, false);
+    });
+
 
     // header
     let scrollPosition = window.scrollY;

@@ -14,6 +14,7 @@
 .feedback-slider {
   width: 100%;
   outline: none;
+  padding-bottom: 40px;
 
   &__item {
     width: 25%;
@@ -43,3 +44,36 @@
   }
 }
 
+.slider-arrows {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider-arrow {
+  width: 48px;
+  height: 48px;
+  background-color: #fff;
+  border: 1px solid $gray-100;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 20px;
+  border-radius: 50%;
+
+  svg {
+    fill: $gray-500;
+  }
+
+  &:hover {
+    background-color: $gray-100;
+
+    svg {
+      fill: #fff;
+    }
+  }
+
+  &--prev {
+    transform: rotate(-180deg);
+  }
+}
