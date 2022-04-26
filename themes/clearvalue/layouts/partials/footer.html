@@ -1,27 +1,81 @@
-<footer class="footer">
-    <div class="links-block">
-        <div class="links">
-            <a href="/about-us/" class="link" title="About Us">About Us</a>
-            <a href="/our-story/" class="link" title="Our Story">Our Story</a>
-            <a href="/faq/" class="link" title="FAQ">FAQ</a>
-            <a href="/blog/" class="link" title="Blog">Blog</a>
-            <a href="mailto:help@claritus.io" class="link contact-us-link" title="Contact Us">Contact Us</a>
-            <a href="/privacy/" class="link" title="Privacy">Privacy Policy</a>
-            <a href="/terms/" class="link" title="Terms of Use">Terms</a>
-        </div>
+<footer class="footer-section">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-3">
+                <a href="/" class="footer-logo">
+                    <img src="/images/logo-white.png" alt="Claritus logo">
+                </a>
 
-        <div class="social-block">
-            <div class="social">
-                <a href="https://www.linkedin.com/company/claritus-io/" target="_blank" rel="nofollow noopener" title="Claritus linkedin profile"><img src="/images/linkedin-fill.svg" class="has-right-margin-40"></a>
-                <a href="https://www.facebook.com/Claritus.io" target="_blank" rel="nofollow noopener" title="Claritus facebook profile"><img src="/images/icon-facebook.svg"></a>
-                <a href="https://twitter.com/Claritus_app" target="_blank" rel="nofollow noopener" title="Claritus twitter profile"><img src="/images/icon-twitter-fill.svg"></a>
-                <div class="logo is-hidden-mobile">
-                    <img src="/images/logo-all-white.svg"/>
+                <p class="footer-logo-description">
+                    Keep Track of Your Wealth, Simply
+                </p>
+
+                <div class="footer-social">
+                    <a href="#" class="footer-social__item">
+                        <svg width="24" height="24">
+                            <use xlink:href="#twitter-icon"></use>
+                        </svg>
+                    </a>
+
+                    <a href="#" class="footer-social__item">
+                        <svg width="24" height="24">
+                            <use xlink:href="#facebook-icon"></use>
+                        </svg>
+                    </a>
+
+                    <a href="#" class="footer-social__item">
+                        <svg width="24" height="24">
+                            <use xlink:href="#linkedin-icon"></use>
+                        </svg>
+                    </a>
                 </div>
-                <button class="is-visible-mobile scroll-to-top"></button>
+            </div>
+            <div class="col-xl-4">
+                <form class="footer-subscribe">
+                    <h3 class="footer-subscribe__title">
+                        Subscribe to get the latest updates
+                    </h3>
+
+                    <input type="text" class="footer-subscribe__field" placeholder="Add your email...">
+
+                    <label class="checkbox footer-subscribe__checkbox">
+                        <input type="checkbox">
+                        <span class="checkbox__field"></span>
+                        <p class="checkbox__label">Accept Terms of Service and Privacy Policy</p>
+                    </label>
+
+                    <button type="submit" class="footer-subscribe__btn btn btn--primary">Subscribe</button>
+                </form>
+            </div>
+            <div class="col-xl-3">
+                <div class="footer-list">
+                    <a href="#" class="footer-list__item"> About Us</a>
+                    <a href="#" class="footer-list__item"> Our Story</a>
+                    <a href="#" class="footer-list__item"> Contact Us</a>
+                    <a href="#" class="footer-list__item">Terms</a>
+                    <a href="#" class="footer-list__item"> Privacy Policy</a>
+                </div>
+            </div>
+            <div class="col-xl-2">
+                <div class="footer-list">
+                    <a href="#" class="footer-list__item"> How Claritus work</a>
+                    <a href="#" class="footer-list__item"> Why Claritus</a>
+                    <a href="#" class="footer-list__item">Security</a>
+                    <a href="#" class="footer-list__item">Pricing</a>
+                    <a href="#" class="footer-list__item">Blog</a>
+                    <a href="#" class="footer-list__item"> Refer a friend</a>
+                    <a href="#" class="footer-list__item"> Help Center</a>
+                </div>
             </div>
         </div>
     </div>
 
-    <p class="copyright">&copy; {{ now.Year }} Claritus Financial Solutions, Inc.</p>
+    <div class="dev-line">
+        <p class="dev-line__text">
+            © 2022 Claritus Financial Solutions, Inc.
+        </p>
+    </div>
 </footer>
+
+
+<!--<div id="otstup"></div>-->

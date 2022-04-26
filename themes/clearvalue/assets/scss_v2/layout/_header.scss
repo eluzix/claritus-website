@@ -5,6 +5,17 @@ header.header-section {
   width: 100%;
   z-index: 100;
   padding: 24px 0;
+  transition: all 0.3s ease;
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 0;
+    transition: all 0.3s ease;
+  }
 }
 
 .header-logo {
@@ -16,6 +27,7 @@ header.header-section {
   &__img {
     @extend %absolute;
     @extend %obj-cover;
+    transition: all 0.3s ease;
 
     &--dark {
       opacity: 0;
@@ -47,3 +59,32 @@ header.header-section {
     margin-left: 16px;
   }
 }
+
+header.header--fixed {
+  box-shadow: 0 12px 24px rgba(5, 13, 66, 0.12);
+  padding: 16px 0;
+
+  &:before {
+    background-color: #fff;
+    height: 100%;
+  }
+
+  .header-logo {
+    &__img {
+      &--dark {
+        opacity: 1;
+      }
+
+      &--white {
+        opacity: 0;
+      }
+    }
+  }
+
+  .header-nav {
+    &__item {
+      color: $dark-7;
+    }
+  }
+}
+

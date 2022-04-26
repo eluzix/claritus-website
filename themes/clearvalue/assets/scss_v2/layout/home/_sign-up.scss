@@ -1,0 +1,30 @@
+
+section.sign-up-section {
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+
+.sign-up {
+  padding: 40px 100px;
+  background-size: cover;
+  background-position: center center;
+  box-shadow: 0 6px 40px rgba(152, 161, 220, 0.12);
+  border-radius: 16px;
+  text-align: center;
+
+  &__title {
+    font-size: 32px;
+    line-height: 42px;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+  }
+
+  &__text {
+    color: $gray-200;
+    margin-bottom: 32px;
+  }
+
+  &__btn {
+    padding: 11px 16px;
+  }
+}
