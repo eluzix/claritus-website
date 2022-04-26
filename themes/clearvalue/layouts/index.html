@@ -192,8 +192,16 @@
 <section class="history-section">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-xl-6">
+            <div class="col-xl-7">
+                <h2 class="history-title">
+                    {{ .Params.historyTitle }}
+                </h2>
 
+                <p class="history-text">
+                    {{ .Params.historyText | safeHTML }}
+                </p>
+
+                <figure class="history-img"></figure>
             </div>
         </div>
     </div>

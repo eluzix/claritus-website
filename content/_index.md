@@ -77,5 +77,11 @@ feedbacks:
   feedbackName: Robert Fox
 
 
+##History
+
+historyTitle: Your History Matters
+
+historyText: Measure your portfolio’s performance over time easily and accurately. <br/> Your holding history has huge value, with Claritus you benefit from performance analytics and cross asset performance comparisons to help grow your wealth.
+
 ---
 
