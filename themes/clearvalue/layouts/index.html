@@ -40,7 +40,7 @@
 			</div>
 		</div>
 
-		<img src="/images/home-intro-img.png" alt="" class="home-intro__img"/>
+		<img data-src="/images/home-intro-img.png" alt="" class="home-intro__img lozad"/>
 	</div>
 </section>
 
@@ -50,7 +50,7 @@
 	<div class="financials">
 		{{ range .Params.financialInstitutes }}
 		<figure class="financials__item">
-			<img src="{{ . }}" alt=""/>
+			<img data-src="{{ . }}" alt="" class="lozad"/>
 		</figure>
 		{{ end }}
 	</div>
@@ -71,7 +71,7 @@
 		</div>
 	</div>
 
-	<img src="/images/assets-bg.jpg" alt="" class="assets-bg"/>
+	<img data-src="/images/assets-bg.jpg" alt="" class="assets-bg lozad"/>
 </section>
 
 <section class="secure-section">
@@ -87,10 +87,11 @@
 		</div>
 	</div>
 
-	<picture class="secure-bg">
+	<picture data-iesrc="/images/secure-bg-mob.svg" class="secure-bg lozad">
 		<source srcset="/images/secure-bg-fullhd.svg" media="(min-width: 1200px)"/>
 		<source srcset="/images/secure-bg-tablet.svg" media="(min-width: 768px)"/>
-		<img src="/images/secure-bg-mob.svg" alt=""/>
+		<source srcset="/images/secure-bg-mob.svg" media="(min-width: 320px)"/>
+<!--		<img src="/images/secure-bg-mob.svg" alt=""/>-->
 	</picture>
 </section>
 
@@ -107,7 +108,7 @@
 		</div>
 	</div>
 
-	<img src="/images/financials-cover.jpg" alt="" class="financial-cover-img"/>
+	<img data-src="/images/financials-cover.jpg" alt="" class="financial-cover-img lozad"/>
 </section>
 
 <section class="benchmark-section">
@@ -230,7 +231,7 @@
 		</div>
 	</div>
 
-	<img src="/images/simple-pricing-img.jpg" alt="" class="simple-pricing-img"/>
+	<img data-src="/images/simple-pricing-img.jpg" alt="" class="simple-pricing-img lozad"/>
 </section>
 
 <section class="sign-up-section">

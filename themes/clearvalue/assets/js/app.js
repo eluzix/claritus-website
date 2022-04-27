@@ -1,28 +1,35 @@
-document.addEventListener("DOMContentLoaded", function (event) {
+window.addEventListener("load", function (event) {
+  // Lazy load
+  const observer = lozad();
+  observer.observe();
+
   // Slider
   const slider = document.querySelector(".feedback-slider");
-  const flkty = new Flickity(slider, {
-    // options
-    wrapAround: true,
-    prevNextButtons: false,
-    cellAlign: "left",
-    draggable: true,
-    pageDots: false,
-    contain: true,
-    adaptiveHeight: false,
-  });
 
-  document
-    .querySelector(".slider-arrow--prev")
-    .addEventListener("click", function () {
-      flkty.previous(false, false);
+  if (slider) {
+    const flkty = new Flickity(slider, {
+      // options
+      wrapAround: true,
+      prevNextButtons: false,
+      cellAlign: "left",
+      draggable: true,
+      pageDots: false,
+      contain: true,
+      adaptiveHeight: false,
     });
 
-  document
-    .querySelector(".slider-arrow--next")
-    .addEventListener("click", function () {
-      flkty.next(false, false);
-    });
+    document
+      .querySelector(".slider-arrow--prev")
+      .addEventListener("click", function () {
+        flkty.previous(false, false);
+      });
+
+    document
+      .querySelector(".slider-arrow--next")
+      .addEventListener("click", function () {
+        flkty.next(false, false);
+      });
+  }
 
   // header
   let scrollPosition = window.scrollY;
