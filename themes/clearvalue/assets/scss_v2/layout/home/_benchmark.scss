@@ -1,6 +1,9 @@
-
 section.benchmark-section {
-  padding: 100px 0;
+  padding-bottom: 56px;
+
+  @media (min-width: map_get($grid-breakpoints, xl)) {
+    padding: 100px 0;
+  }
 }
 
 .benchmark-title {
@@ -8,7 +11,12 @@ section.benchmark-section {
 }
 
 .benchmark-img {
-  background-color: #17205B;
+  background-color: #17205b;
   border-radius: 16px;
-  padding-top: 400/720*100%;
+  padding-top: 400/720 * 100%;
+  margin-top: 48px;
+
+  @media (min-width: map_get($grid-breakpoints, xl)) {
+    margin-top: 0;
+  }
 }

@@ -4,8 +4,12 @@ header.header-section {
   top: 0;
   width: 100%;
   z-index: 100;
-  padding: 24px 0;
+  padding: 8px 0;
   transition: all 0.3s ease;
+
+  @media (min-width: map_get($grid-breakpoints, md)) {
+    padding: 24px 0;
+  }
 
   &:before {
     content: '';
@@ -20,18 +24,27 @@ header.header-section {
 
 .header-logo {
   display: inline-flex;
-  height: 24px;
-  width: 110px;
   position: relative;
+
+  @media (min-width: map_get($grid-breakpoints, md)) {
+    height: 24px;
+    width: 110px;
+  }
 
   &__img {
     @extend %absolute;
     @extend %obj-cover;
     transition: all 0.3s ease;
 
+
     &--dark {
       opacity: 0;
     }
+  }
+
+  .header-logo-mobile {
+    height: 24px;
+    width: auto;
   }
 }
 
@@ -62,7 +75,10 @@ header.header-section {
 
 header.header--fixed {
   box-shadow: 0 12px 24px rgba(5, 13, 66, 0.12);
-  padding: 16px 0;
+
+  @media (min-width: map_get($grid-breakpoints, md)) {
+    padding: 16px 0;
+  }
 
   &:before {
     background-color: #fff;
@@ -84,6 +100,12 @@ header.header--fixed {
   .header-nav {
     &__item {
       color: $dark-7;
+    }
+  }
+
+  .nav-btn {
+    span {
+      background-color: $dark-7;
     }
   }
 }

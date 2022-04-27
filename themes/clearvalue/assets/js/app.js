@@ -35,6 +35,14 @@ document.addEventListener("DOMContentLoaded", function (event) {
         }
     });
 
+    // Burger
+    const burgerBtn = document.querySelector('.nav-btn');
+
+    burgerBtn.addEventListener('click', () => {
+        burgerBtn.classList.toggle('nav-btn--opened');
+    })
+
+
     // Faq
     const faqButtons = document.querySelectorAll('.faq__question');
 

@@ -1,11 +1,29 @@
-
 section.simple-pricing-section {
-  padding: 210px 0;
+  padding-top: 48px;
+
+  @media (min-width: map_get($grid-breakpoints, md)) {
+    padding-top: 80px;
+  }
+
+  @media (min-width: map_get($grid-breakpoints, lg)) {
+    padding: 100px 0;
+  }
+
+  @media (min-width: map_get($grid-breakpoints, xl)) {
+    padding: 210px 0;
+  }
 }
 
 .simple-pricing {
   width: 100%;
-  max-width: 580px;
+
+  @media (min-width: map_get($grid-breakpoints, lg)) {
+    max-width: 400px;
+  }
+
+  @media (min-width: map_get($grid-breakpoints, xl)) {
+    max-width: 580px;
+  }
 
   &__title {
     margin-bottom: 32px;
@@ -27,10 +45,19 @@ section.simple-pricing-section {
 }
 
 .simple-pricing-img {
-  position: absolute;
-  left: 30%;
-  height: 100%;
-  top: 0;
-  z-index: -1;
-  transform: translateX(-50%);
+  width: 100%;
+
+  @media (min-width: map_get($grid-breakpoints, lg)) {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: auto;
+    z-index: -1;
+  }
+
+  @media (min-width: map_get($grid-breakpoints, xl)) {
+    left: 30%;
+    transform: translateX(-50%);
+  }
 }

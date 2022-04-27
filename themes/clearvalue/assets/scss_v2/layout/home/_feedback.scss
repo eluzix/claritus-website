@@ -1,11 +1,20 @@
 
 section.feedback-section {
-  padding-top: 124px;
+  padding-top: 80px;
   padding-bottom: 64px;
   background-color: $purple-2;
+
+  @media (min-width: map_get($grid-breakpoints, xl)) {
+    padding-top: 124px;
+  }
 }
 
 .feedback-title {
   text-align: center;
-  margin-bottom: 56px;
+  margin-bottom: 40px;
+
+
+  @media (min-width: map_get($grid-breakpoints, md)) {
+    margin-bottom: 56px;
+  }
 }

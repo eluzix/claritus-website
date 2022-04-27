@@ -1,17 +1,31 @@
-
 section.faq-section {
-  padding: 80px 0;
+  padding: 64px 0 24px;
   background-color: $purple-2;
+
+  @media (min-width: map_get($grid-breakpoints, xl)) {
+    padding: 80px 0 40px;
+  }
 }
 
 .faq-title {
-  margin-bottom: 56px;
+  margin-bottom: 32px;
+  font-size: 32px;
+
+  @media (min-width: map_get($grid-breakpoints, md)) {
+    font-size: 40px;
+    margin-bottom: 56px;
+  }
 }
 
 .faq {
-  border: 1px solid #C6CBDD;
+  border: 1px solid #c6cbdd;
   background-color: #fff;
   border-radius: 12px;
+  margin-bottom: 18px;
+
+  @media (min-width: map_get($grid-breakpoints, md)) {
+    margin-bottom: 40px;
+  }
 
   &__question {
     padding: 24px;
@@ -32,7 +46,7 @@ section.faq-section {
       transform: translateY(-50%);
 
       &:before {
-        content: '';
+        content: "";
         width: 14px;
         height: 2px;
         background-color: $gray-500;
@@ -43,7 +57,7 @@ section.faq-section {
       }
 
       &:after {
-        content: '';
+        content: "";
         width: 14px;
         height: 2px;
         background-color: $gray-500;
@@ -68,7 +82,6 @@ section.faq-section {
     }
   }
 }
-
 
 .faq--opened {
   .faq__question {

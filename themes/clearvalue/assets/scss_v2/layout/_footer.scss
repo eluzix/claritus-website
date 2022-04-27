@@ -1,6 +1,10 @@
 footer.footer-section {
   background-color: $dark-11;
-  padding: 40px 100px 0;
+  padding-top: 40px;
+
+  @media (min-width: map_get($grid-breakpoints, xl)) {
+    padding: 40px 100px 0;
+  }
 }
 
 .footer-logo {
@@ -22,6 +26,11 @@ footer.footer-section {
 .footer-social {
   display: flex;
   align-items: center;
+  margin-bottom: 32px;
+
+  @media (min-width: map_get($grid-breakpoints, xl)) {
+    margin-bottom: 0;
+  }
 
   &__item {
     fill: $gray-400;
@@ -32,6 +41,15 @@ footer.footer-section {
 .footer-subscribe {
   width: 100%;
   max-width: 450px;
+  margin-bottom: 32px;
+
+  @media (min-width: map_get($grid-breakpoints, md)) {
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: map_get($grid-breakpoints, xl)) {
+    margin-bottom: 0;
+  }
 
   &__title {
     font-weight: 700;
@@ -62,7 +80,6 @@ footer.footer-section {
     font-size: 14px;
     margin-top: 16px;
   }
-
 }
 
 .checkbox {
@@ -109,8 +126,11 @@ footer.footer-section {
 }
 
 .dev-line {
-  padding: 0 40px;
   margin-top: 40px;
+
+  @media (min-width: map_get($grid-breakpoints, xl)) {
+    padding: 0 40px;
+  }
 
   &__text {
     padding: 16px 0;
