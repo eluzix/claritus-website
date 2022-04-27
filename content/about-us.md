@@ -13,7 +13,7 @@ introDescription: Claritus is a simple-to-use, personal portfolio management sol
 
 teamTitle: Founding Team
 
-teamText: Claritus was founded by three industry veterans, each with over 20 years of experience. Gabriel co-founded Israel's first unicorn company, Conduit. Uzi and Shai founded four companies together, one of which is Pheed, which was sold in 2014. <br/> 
+teamText: Claritus was founded by three industry veterans, each with over 20 years of experience. Gabriel co-founded Israel's first unicorn company, Conduit. Uzi and Shai founded four companies together, one of which is Pheed, which was sold in 2014. <br/><br/> 
   Claritus was founded in response to a real need, a personal need that became a passion for a great comprehensive service.
 
 teamMembers:

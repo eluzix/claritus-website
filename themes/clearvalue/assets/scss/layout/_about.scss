@@ -1,13 +1,24 @@
 //Intro section
 
 section.about-intro-section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   height: 100vh;
-  max-height: 680px;
-  padding: 144px 0;
+  padding-top: 140px;
   background-color: $dark-11;
+  min-height: 600px;
+
+  @media (min-width: map_get($grid-breakpoints, md)) {
+    max-height: 750px;
+    min-height: 0;
+  }
+
+  @media (min-width: map_get($grid-breakpoints, xl)) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 144px 0;
+    max-height: 680px;
+    min-height: 0;
+  }
 }
 
 .about-intro-bg {
@@ -19,9 +30,15 @@ section.about-intro-section {
 
 .about-intro-title {
   font-weight: 500;
-  font-size: 50px;
-  line-height: 130%;
+  font-size: 32px;
   color: #fff;
+  margin-bottom: 24px;
+
+  @media (min-width: map_get($grid-breakpoints, md)) {
+    font-size: 50px;
+    line-height: 130%;
+    text-align: left;
+  }
 }
 
 .about-intro-description {
@@ -31,8 +48,13 @@ section.about-intro-section {
 //About content
 
 section.about-content-section {
-  padding-top: 120px;
-  padding-bottom: 100px;
+  padding-top: 48px;
+  padding-bottom: 40px;
+
+  @media (min-width: map_get($grid-breakpoints, xl)) {
+    padding-top: 120px;
+    padding-bottom: 100px;
+  }
 }
 
 .about-content {
@@ -49,37 +71,76 @@ section.about-content-section {
 //Team members
 
 section.team-section {
-  padding: 100px 0;
+  padding: 40px 0;
   background-color: $purple-100;
+
+  @media (min-width: map_get($grid-breakpoints, xl)) {
+    padding: 100px 0;
+  }
 }
 
 .team-bg {
   position: absolute;
   left: 50%;
-  bottom: 25%;
+  bottom: 60%;
   transform: translateX(-50%);
+
+  @media (min-width: map_get($grid-breakpoints, md)) {
+    bottom: 15%;
+  }
+
+  @media (min-width: map_get($grid-breakpoints, xl)) {
+    bottom: 25%;
+  }
 }
 
 .team-title {
-  text-align: center;
   font-weight: 500;
-  font-size: 50px;
-  margin-bottom: 32px;
+  font-size: 24px;
+  margin-bottom: 24px;
+
+  @media (min-width: map_get($grid-breakpoints, md)) {
+    text-align: center;
+    margin-bottom: 32px;
+    font-size: 50px;
+  }
 }
 
 .team-text {
-  column-count: 2;
-  column-gap: 64px;
+  @media (min-width: map_get($grid-breakpoints, xl)) {
+    column-count: 2;
+    column-gap: 64px;
+  }
 }
 
 .team-members {
-  margin-top: 56px;
+  margin-top: 40px;
   display: flex;
-  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  @media (min-width: map_get($grid-breakpoints, md)) {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 56px;
+  }
+
+  @media (min-width: map_get($grid-breakpoints, xl)) {
+    justify-content: center;
+  }
 
   .member {
     text-align: center;
-    margin: 0 60px;
+    margin-bottom: 32px;
+
+    @media (min-width: map_get($grid-breakpoints, md)) {
+      margin-bottom: 0 24px;
+    }
+
+    @media (min-width: map_get($grid-breakpoints, xl)) {
+      margin: 0 60px;
+    }
 
     &__photo {
       width: 160px;
@@ -120,21 +181,33 @@ section.team-section {
 //Our story
 
 section.our-story-section {
-  padding: 100px 0;
+  padding: 40px 0;
+
+  @media (min-width: map_get($grid-breakpoints, md)) {
+    padding: 100px 0;
+  }
 }
 
 .our-story-title {
-  text-align: center;
   font-weight: 500;
-  font-size: 50px;
-  margin-bottom: 32px;
+  font-size: 24px;
+  margin-bottom: 24px;
+
+  @media (min-width: map_get($grid-breakpoints, md)) {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 32px;
+  }
 }
 
 .our-story {
-  column-count: 2;
-  column-gap: 64px;
   font-weight: 400;
   font-size: 18px;
   line-height: 170%;
   color: $dark-7;
+
+  @media (min-width: map_get($grid-breakpoints, xl)) {
+    column-count: 2;
+    column-gap: 64px;
+  }
 }
