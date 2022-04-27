@@ -8,6 +8,7 @@ $gray-100: #c6cbdd;
 $gray-200: #e3e5ed;
 $gray-400: #a4a9bb;
 $gray-500: #7e829e;
+$gray-600: #5a5e7b;
 $green: #45dd95;
 $primary: #2967f0;
 $purple-100: #f8f8fe;
@@ -42,6 +43,8 @@ $container-max-widths: (
   xl: 1160px,
   xxl: 1166px,
 );
+
+//$grid-gutter-width: 64px;
 
 //Box shadow
 $box-shadow-primary: 0px 14px 28px rgba(203, 203, 203, 0.25);

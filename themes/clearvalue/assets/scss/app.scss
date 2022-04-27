@@ -21,12 +21,13 @@
 
 //Modules
 @import "modules/slider";
-//@import "modules/select";
+@import "modules/sign-up";
 
 //Layout
 @import "layout/header";
 @import "layout/footer";
 
-//Home
 @import "layout/home";
 @import "layout/about";
+@import "layout/blog/blog-page";
+@import "layout/blog/single-article";

@@ -72,6 +72,42 @@ header.header-section {
   }
 }
 
+header.header-section--white {
+  background-color: #fff;
+
+  & + section {
+    margin-top: 50px;
+
+    @media (min-width: map_get($grid-breakpoints, md)) {
+      margin-top: 80px;
+    }
+  }
+
+  .header-logo {
+    &__img {
+      &--dark {
+        opacity: 1;
+      }
+
+      &--white {
+        opacity: 0;
+      }
+    }
+  }
+
+  .header-nav {
+    &__item {
+      color: $dark-7;
+    }
+  }
+
+  .nav-btn {
+    span {
+      background-color: $dark-7;
+    }
+  }
+}
+
 header.header--fixed {
   box-shadow: 0 12px 24px rgba(5, 13, 66, 0.12);
 

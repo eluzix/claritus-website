@@ -1,0 +1,118 @@
+section.blog-intro-section {
+  padding-top: 64px;
+
+  @media (min-width: map_get($grid-breakpoints, xl)) {
+    padding: 40px 0;
+  }
+
+  @media (min-width: map_get($grid-breakpoints, xxl)) {
+    padding: 160px 0;
+  }
+}
+
+.blog-intro-title {
+  font-weight: 500;
+  font-size: 32px;
+  color: $dark-9;
+  margin-bottom: 24px;
+
+  @media (min-width: map_get($grid-breakpoints, md)) {
+    font-size: 50px;
+    line-height: 130%;
+    text-align: center;
+  }
+
+  @media (min-width: map_get($grid-breakpoints, xl)) {
+    text-align: left;
+  }
+}
+
+.blog-intro-description {
+  font-size: 16px;
+  line-height: 170%;
+  color: $gray-600;
+
+  @media (min-width: map_get($grid-breakpoints, md)) {
+    text-align: center;
+  }
+
+  @media (min-width: map_get($grid-breakpoints, xl)) {
+    text-align: left;
+  }
+}
+
+.blog-intro-img {
+  width: 100%;
+  margin-top: 40px;
+
+  @media (min-width: map_get($grid-breakpoints, xl)) {
+    position: absolute;
+    left: 47%;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: auto;
+    margin-top: 0;
+  }
+
+  img {
+    width: 100%;
+
+    @media (min-width: map_get($grid-breakpoints, xl)) {
+      height: 100%;
+      object-fit: cover;
+      object-position: top right;
+    }
+  }
+}
+
+//Blog articles
+
+section.blog-articles-section {
+  padding: 48px 0 20px;
+
+  @media (min-width: map_get($grid-breakpoints, xl)) {
+    padding: 120px 0 60px;
+  }
+}
+
+.post-col {
+  padding: 0 20px;
+
+  @media (min-width: map_get($grid-breakpoints, xl)) {
+    padding: 0 32px;
+  }
+}
+
+.post {
+  margin-bottom: 64px;
+
+  &__img {
+    display: inline-flex;
+    width: 100%;
+    position: relative;
+    border-radius: 16px 16px 0px 0px;
+    padding-top: 220/345 * 100%;
+    overflow: hidden;
+
+    img {
+      @extend %absolute;
+      @extend %obj-cover;
+      transition: all 0.5s ease;
+    }
+
+    &:hover {
+      img {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  &__title {
+    display: block;
+    margin-top: 24px;
+    font-weight: 700;
+    font-size: 18px;
+    color: $dark-9;
+  }
+}

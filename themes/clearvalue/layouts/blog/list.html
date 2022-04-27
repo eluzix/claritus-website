@@ -1,42 +1,54 @@
 {{ define "content" }}
 
-<header class="header-section">
-    {{ partial "header.html" }}
+<header class="header-section header-section--white">
+	{{ partial "header.html" }}
+
+	{{ partial "header-nav-menu.html" }}
 </header>
 
-{{ partial "header-nav-menu.html" }}
 
 <section class="blog-intro-section">
+	<div class="container">
+		<div class="row">
+			<div class="col-xl-5">
+				<h1 class="blog-intro-title">{{ .Title }}</h1>
+				<p class="blog-intro-description">
+					{{ .Description }}
+				</p>
+			</div>
+		</div>
+	</div>
 
+	<figure class="blog-intro-img">
+		<img src="/images/blog-img.jpg" alt="">
+	</figure>
 </section>
 
-<div class="content {{ .Params.content_class }} no-header-scroll">
 
-    <section class="heading">
-        <h1 class="page-title" title="{{ .Title }}">{{ .Title }}</h1>
-    </section>
+{{ $paginator := .Paginate (where .Pages.ByPublishDate.Reverse ".Params.hidden" "ne" true) }}
 
-    {{ $paginator := .Paginate (where .Pages.ByPublishDate.Reverse ".Params.hidden" "ne" true) }}
-    <section class="posts">
-        <div class="container">
-            <div class="columns is-multiline">
+<section class="blog-articles-section">
+	<div class="container">
+		<div class="row">
 
-                {{ range $paginator.Pages }}
+			{{ range $paginator.Pages }}
+			<div class="col-md-6 col-xl-4 post-col">
+				<article class="post">
+					<a href="{{ .RelPermalink }}" class="post__img">
+						<img src="{{ .Params.thumbnail }}" alt="thumbnail">
+					</a>
 
-                <article class="post-card column is-half">
-                    <div class="post-thumbnail">
-                        <a href="{{ .RelPermalink }}" title="Read more - {{ .Title | plainify }}"><img src="{{ .Params.thumbnail }}" alt="thumbnail"></a>
-                    </div>
-                    <a class="post-title" href="{{ .RelPermalink }}">{{ .Title }}</a>
-                    <p><a class="post-excerpt" href="{{ .RelPermalink }}" title="Read more - {{ .Title | plainify }}">{{ .Summary }}</a></p>
-                </article>
-                {{ end }}
-            </div>
+					<a href="{{ .RelPermalink }}" class="post__title">
+						{{ .Title }}
+					</a>
+				</article>
+			</div>
+			{{ end }}
 
-            {{ template "_internal/pagination.html" . }}
-        </div>
-    </section>
-</div>
+		</div>
+	</div>
+</section>
+
 {{ end }}
 
 {{ define "title" }}{{ .Title }}{{ end }}
