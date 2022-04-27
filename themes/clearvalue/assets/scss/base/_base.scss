@@ -1,0 +1,98 @@
+body,
+html {
+  overflow: visible;
+  overflow-x: hidden;
+}
+
+body {
+  font-size: $font-size-base;
+  font-family: $font-family-base;
+  font-weight: $font-weight-base;
+  color: $body-color;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5 {
+  margin: 0;
+  font-weight: 700;
+  color: $dark-11;
+}
+
+h2 {
+  font-size: 24px;
+
+  @media (min-width: map_get($grid-breakpoints, md)) {
+    font-size: 32px;
+  }
+
+  @media (min-width: map_get($grid-breakpoints, xl)) {
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+}
+
+p {
+  line-height: 170%;
+  margin: 0;
+}
+
+section {
+  position: relative;
+  overflow: hidden;
+  //background-color: #fff;
+  //display: flex;
+  //align-items: center;
+  //padding: 30px 0;
+}
+
+a,
+svg,
+button {
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+img {
+  display: inline-flex;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+figure {
+  margin: 0;
+}
+
+label,
+button,
+input,
+textarea {
+  transition: all 0.5s ease;
+  outline: none;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+#otstup {
+  height: 1500px;
+}

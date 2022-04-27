@@ -1,22 +1,51 @@
 ---
-header_class: null
-content_class: about-us
-title: About Us
-metaTitle: About Us - Claritus is a simple-to-use, personal portfolio management
-date: 2020-10-11T10:30:01.000+03:00
-lastmod: 2022-01-03T20:38:33.374Z
-url: /about-us
-hero_title: <span class="is-green">Claritus</span> is a simple-to-use,
-  <br/>personal portfolio management solution.
-hero_text: ""
+##config
 type: about-us
-description: Claritus is a simple-to-use, personal portfolio management solution
-  that allows you to view all of your invested assets in one place.
+
+
+##intro
+introTitle: Your financial peace of mind is our mission
+
+introDescription: Claritus is a simple-to-use, personal portfolio management solution.
+
+
+##Team
+
+teamTitle: Founding Team
+
+teamText: Claritus was founded by three industry veterans, each with over 20 years of experience. Gabriel co-founded Israel's first unicorn company, Conduit. Uzi and Shai founded four companies together, one of which is Pheed, which was sold in 2014. <br/> 
+  Claritus was founded in response to a real need, a personal need that became a passion for a great comprehensive service.
+
+teamMembers:
+- name: Gabriel Bilczyk
+  position: Chairman
+  linkedIn: https://www.google.com/
+  photo: /images/team-members/member-1.png
+
+- name: Shai Azran
+  position: CEO
+  linkedIn: https://www.google.com/
+  photo: /images/team-members/member-2.png
+
+- name: Uzi Rafaeli
+  position: CTO
+  linkedIn: https://www.google.com/
+  photo: /images/team-members/member-3.png
+
+
+##Our story
+
+ourStoryTitle: Our Story
+
+ourStory: 'Claritus was born out of a very real and personal need. Our previous careers had enabled us to achieve financial freedom. All of us learned that managing wealth is extremely challenging, there is so much to consider, and it all takes a lot of time and expertise. <br/><br/> While searching for a reliable, comprehensive, and unbiased solution that would allow us to easily view, analyze, and nurture our wealth, we soon realized that none of the options available have the necessary what it takes. <br/><br/> That got us wondering: How many more people were out there facing the same challenges we were facing? Together, we decided then that it was up to us to come up with a viable solution to simply keep track of wealth. <br/><br/> <strong>That was the birth of Claritus.</strong>'
+
 ---
-Claritus is a simple-to-use, personal portfolio management solution that allows you to view all of your invested assets in one place. It’s the only service you’ll  need to track, understand, and nurture your wealth.
+Claritus is an easy-to-use, personal portfolio management solution that lets you view all of your investments in one place. This is the only service you'll need to track, analyze, and nurture your wealth.
 
-Built on a powerful, financial-data platform and designed with a friendly, intuitive interface, Claritus not only gives you a full view of your money and investments but provides accurate insights and assessments. We plan on expanding the solution to include many more capabilities that will enable you to actively manage and control your portfolio.
+Based on an extensive financial data platform and equipped with a friendly, intuitive interface, Claritus provides a complete overview of your money and investments and offers accurate insights and assessments.
 
-With over 20 years (each) of tech-startup experience, and following our own personal needs, we have created Claritus with a passion to bring clarity and financial peace of mind to us and others like us. It’s the solution we use, and we hope you will find it just as useful as we do.
+As we expand the solution, it will include a ton more functionality that will enable you to manage and control your portfolio actively.
 
-We would love to hear what you think of Claritus and would appreciate any feedback  needs and wishes to take  our solution to new heights. Your feedback is invaluable to Claritus’s growth. Please don’t hesitate to get in touch at [feedbacks@claritus.io](mailto:feedbacks@claritus.io)
+Claritus was built out of a personal need that many of us share. Listening to our customers is vital to understanding their needs and gaining valuable insights. In our opinion, this is the best way to take our solution to new heights.
+
+We hope to have you aboard and hear your perspective soon. 

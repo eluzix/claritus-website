@@ -1,0 +1,140 @@
+//Intro section
+
+section.about-intro-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  max-height: 680px;
+  padding: 144px 0;
+  background-color: $dark-11;
+}
+
+.about-intro-bg {
+  img {
+    @extend %absolute;
+    @extend %obj-cover;
+  }
+}
+
+.about-intro-title {
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 130%;
+  color: #fff;
+}
+
+.about-intro-description {
+  color: $gray-100;
+}
+
+//About content
+
+section.about-content-section {
+  padding-top: 120px;
+  padding-bottom: 100px;
+}
+
+.about-content {
+  color: $dark-7;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 170%;
+
+  p {
+    margin-bottom: 20px;
+  }
+}
+
+//Team members
+
+section.team-section {
+  padding: 100px 0;
+  background-color: $purple-100;
+}
+
+.team-bg {
+  position: absolute;
+  left: 50%;
+  bottom: 25%;
+  transform: translateX(-50%);
+}
+
+.team-title {
+  text-align: center;
+  font-weight: 500;
+  font-size: 50px;
+  margin-bottom: 32px;
+}
+
+.team-text {
+  column-count: 2;
+  column-gap: 64px;
+}
+
+.team-members {
+  margin-top: 56px;
+  display: flex;
+  justify-content: center;
+
+  .member {
+    text-align: center;
+    margin: 0 60px;
+
+    &__photo {
+      width: 160px;
+      height: 160px;
+      background-color: #fff;
+      border: 1px solid $gray-100;
+      border-radius: 50%;
+      overflow: hidden;
+      position: relative;
+      margin-bottom: 24px;
+
+      img {
+        @extend %absolute;
+        @extend %obj-cover;
+      }
+    }
+
+    &__name {
+      font-weight: 700;
+      font-size: 18px;
+      color: $dark-9;
+      margin-bottom: 12px;
+    }
+
+    &__position {
+      font-size: 16px;
+      margin-bottom: 8px;
+    }
+
+    &__linkedin {
+      svg {
+        fill: $gray-400;
+      }
+    }
+  }
+}
+
+//Our story
+
+section.our-story-section {
+  padding: 100px 0;
+}
+
+.our-story-title {
+  text-align: center;
+  font-weight: 500;
+  font-size: 50px;
+  margin-bottom: 32px;
+}
+
+.our-story {
+  column-count: 2;
+  column-gap: 64px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 170%;
+  color: $dark-7;
+}

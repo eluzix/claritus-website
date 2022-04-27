@@ -1,0 +1,22 @@
+section.benchmark-section {
+  padding-bottom: 56px;
+
+  @media (min-width: map_get($grid-breakpoints, xl)) {
+    padding: 100px 0;
+  }
+}
+
+.benchmark-title {
+  margin-bottom: 32px;
+}
+
+.benchmark-img {
+  background-color: #17205b;
+  border-radius: 16px;
+  padding-top: 400/720 * 100%;
+  margin-top: 48px;
+
+  @media (min-width: map_get($grid-breakpoints, xl)) {
+    margin-top: 0;
+  }
+}

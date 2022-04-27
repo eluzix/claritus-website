@@ -1,0 +1,77 @@
+.nav-btn {
+  cursor: pointer;
+  transition: all 0.4s ease;
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+
+  .burger {
+    width: 24px;
+    height: 24px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    &__line {
+      width: 20px;
+      height: 20px;
+      position: relative;
+      z-index: 3;
+
+      span {
+        height: 2px;
+        background-color: $gray-400;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        transform-origin: center center;
+        transition: transform 0.2s ease, margin 0.2s ease 0.2s, width 0.2s ease 0.2s, opacity 0.2s ease 0.2s,
+        background-color 0.4s ease, left 0.2s ease 0.2s;
+      }
+
+      span.bar1 {
+        bottom: 50%;
+        transform: translateY(50%);
+        margin-bottom: 5px;
+      }
+
+      span.bar2 {
+        bottom: 50%;
+        transform: translateY(50%);
+      }
+
+      span.bar3 {
+        top: 50%;
+        transform: translateY(-50%);
+        margin-top: 5px;
+      }
+    }
+  }
+}
+
+.nav-btn--opened {
+  .burger__line {
+    span {
+      //left: 6px;
+      //width: 20px !important;
+      transition: transform 0.2s ease 0.2s, margin 0.2s ease, width 0.2s ease, left 0.2s ease,
+      background-color 0.4s ease;
+
+    }
+
+    span.bar1 {
+      margin: 0;
+      transform: rotate(45deg) translateY(50%);
+    }
+
+    span.bar2 {
+      opacity: 0;
+    }
+
+    span.bar3 {
+      margin: 0;
+      transform: rotate(-45deg) translateY(-50%);
+      width: 100%;
+    }
+  }
+}

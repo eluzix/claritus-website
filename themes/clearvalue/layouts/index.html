@@ -1,5 +1,12 @@
 {{ define "content" }}
 
+<header class="header-section">
+	{{ partial "header.html" }}
+</header>
+
+{{ partial "header-nav-menu.html" }}
+
+
 <!--Intro section -->
 <section class="home-intro-section">
 	<figure class="home-intro-bg">
@@ -91,7 +98,7 @@
 		<source srcset="/images/secure-bg-fullhd.svg" media="(min-width: 1200px)"/>
 		<source srcset="/images/secure-bg-tablet.svg" media="(min-width: 768px)"/>
 		<source srcset="/images/secure-bg-mob.svg" media="(min-width: 320px)"/>
-<!--		<img src="/images/secure-bg-mob.svg" alt=""/>-->
+		<!--		<img src="/images/secure-bg-mob.svg" alt=""/>-->
 	</picture>
 </section>
 
@@ -234,31 +241,11 @@
 	<img data-src="/images/simple-pricing-img.jpg" alt="" class="simple-pricing-img lozad"/>
 </section>
 
-<section class="sign-up-section">
-	<div class="container">
-		<div class="row justify-content-center">
-			<div class="col-lg-10">
-				<div
-						class="sign-up"
-						style="background-image: url('/images/sign-up-bg.jpg')"
-				>
-					<h2 class="sign-up__title">Sign up today</h2>
+{{ partial "sign-up.html" }}
 
-					<p class="sign-up__text">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,
-						purus sit amet luctus venenatis, lectus
-					</p>
+{{ end }}
 
-					<a href="#" class="btn btn--primary sign-up__btn">
-						Try now for free
-					</a>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-
-{{ end }} {{ define "StructData" }}
+{{ define "StructData" }}
 <script type="application/ld+json">
 	{
 		"@context": "https://schema.org",

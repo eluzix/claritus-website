@@ -1,0 +1,32 @@
+
+
+//Fonts
+@import "../fonts/fonts";
+
+//Config
+@import "config/variables";
+@import "config/placeholders";
+@import "config/mixins";
+
+//Libs
+@import "libs/bootstrap";
+@import "libs/flickity/flickity.min.css";
+
+//Base
+@import "base/base";
+@import "base/layout";
+
+//UI
+@import "utilites";
+
+//Modules
+@import "modules/slider";
+//@import "modules/select";
+
+//Layout
+@import "layout/header";
+@import "layout/footer";
+
+//Home
+@import "layout/home";
+@import "layout/about";

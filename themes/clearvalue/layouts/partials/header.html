@@ -1,93 +1,50 @@
-<header class="header-section">
-	<div class="container">
-		<div class="row no-gutters align-items-center">
-			<div class="col-auto col-xl-3">
-				<a href="/" class="header-logo">
-					<img src="/images/logo-white.png" alt="Claritus logo"
-						 class="header-logo__img header-logo__img--white d-none d-md-block">
-					<img src="/images/logo-dark.png" alt="Claritus logo"
-						 class="header-logo__img header-logo__img--dark d-none d-md-block">
+<div class="container">
+	<div class="row no-gutters align-items-center">
+		<div class="col-auto col-xl-3">
+			<a href="/" class="header-logo">
+				<img src="/images/logo-white.png" alt="Claritus logo"
+					 class="header-logo__img header-logo__img--white d-none d-md-block">
+				<img src="/images/logo-dark.png" alt="Claritus logo"
+					 class="header-logo__img header-logo__img--dark d-none d-md-block">
 
-					<img src="/images/header-logo-mobile.png" alt="Claritus logo"
-						 class="header-logo-mobile d-md-none">
-				</a>
-			</div>
-
-			<div class="col-auto d-xl-none">
-				<button class="nav-btn d-flex align-items-center">
-					<div class="burger">
-						<div class="burger__line">
-							<span class="bar1"></span>
-							<span class="bar2"></span>
-							<span class="bar3"></span>
-						</div>
-					</div>
-				</button>
-			</div>
-
-			<div class="col d-none d-xl-flex align-items-center justify-content-center">
-				<nav class="header-nav">
-					<a href="#" class="header-nav__item">About Us</a>
-					<a href="#" class="header-nav__item">Security</a>
-					<a href="#" class="header-nav__item">Pricing</a>
-					<a href="#" class="header-nav__item">Blog</a>
-				</nav>
-			</div>
-			<div class="col col-xl-3">
-				<div class="header-auth">
-					<a href="#" class="header-auth__btn btn btn--transparent">
-						Sign in
-					</a>
-
-					<a href="#" class="header-auth__btn btn btn--primary">
-						Sign Up
-					</a>
-				</div>
-			</div>
-		</div>
-	</div>
-</header>
-
-<div class="header-nav-menu d-xl-none">
-	<div class="nav-menu-mask"></div>
-
-	<div class="nav-menu">
-		<div class="nav-menu-header">
-			<a href="/" class="nav-menu-header__logo">
-				<img src="/images/logo-dark.png" alt="Claritus logo">
+				<img src="/images/header-logo-mobile.png" alt="Claritus logo"
+					 class="header-logo-mobile d-md-none">
 			</a>
+		</div>
 
-			<button class="nav-menu-header__close">
-				<svg width="10" height="10">
-					<use xlink:href="#close-icon"></use>
-				</svg>
+		<div class="col-auto d-xl-none">
+			<button class="nav-btn d-flex align-items-center">
+				<div class="burger">
+					<div class="burger__line">
+						<span class="bar1"></span>
+						<span class="bar2"></span>
+						<span class="bar3"></span>
+					</div>
+				</div>
 			</button>
 		</div>
 
-		<nav class="nav-menu-list">
-			<a href="#" class="nav-menu-list__item">
-				About Us
-			</a>
-			<a href="#" class="nav-menu-list__item">
-				Security
-			</a>
-			<a href="#" class="nav-menu-list__item">
-				Pricing
-			</a>
-			<a href="#" class="nav-menu-list__item">
-				Blog
-			</a>
-		</nav>
+		<div class="col d-none d-xl-flex align-items-center justify-content-center">
+			<nav class="header-nav">
+				<a href="/about-us/" class="header-nav__item">About Us</a>
+				<a href="/our-story/" class="header-nav__item">Security</a>
+				<a href="#" class="header-nav__item">Pricing</a>
+				<a href="/blog/" class="header-nav__item">Blog</a>
+			</nav>
+		</div>
+		<div class="col col-xl-3">
+			<div class="header-auth">
+				<a href="{{ .Site.Params.appUrl }}/sign-in" class="header-auth__btn btn btn--transparent">
+					Sign in
+				</a>
 
-		<div class="nav-menu-auth">
-			<a href="#" class="nav-menu-auth__btn btn btn--transparent">
-				Sign in
-			</a>
-
-			<a href="#" class="nav-menu-auth__btn btn btn--primary">
-				Sign Up
-			</a>
+				<a href="{{ .Site.Params.appUrl }}/on-boarding" class="header-auth__btn btn btn--primary">
+					Sign Up
+				</a>
+			</div>
 		</div>
 	</div>
-
 </div>
+
+
+

@@ -1,12 +1,14 @@
-{{ define "content" }}
-<div class="content {{ .Params.content_class }} has-navbar-fixed-top">
 
-    <section class="container">
-        <h1 class="title is-centered" title="{{ .Title }}">{{ .Title }}</h1>
-        <article>
-            {{ .Content }}
-        </article>
-    </section>
+{{ define "content" }}
+<div class="content has-navbar-fixed-top">
+
+
+	<section class="container">
+		<h1 class="title is-centered" title="{{ .Title }}">{{ .Title }}</h1>
+		<article>
+			{{ .Content }}
+		</article>
+	</section>
 </div>
 {{ end }}
 

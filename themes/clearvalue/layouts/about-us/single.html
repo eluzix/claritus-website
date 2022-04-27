@@ -1,81 +1,99 @@
-<!--{{ define "content" }}-->
-<!--<div class="content {{ .Params.content_class }} black-heading">-->
+{{ define "content" }}
 
-<!--    {{ partial "nav" . }}-->
-<!--    {{ partial "menu.html" }}-->
+<header class="header-section">
+	{{ partial "header.html" }}
+</header>
 
-<!--&lt;!&ndash;    <section class="heading">&ndash;&gt;-->
-<!--&lt;!&ndash;    </section>&ndash;&gt;-->
+{{ partial "header-nav-menu.html" }}
 
-<!--    <section class="hero">-->
-<!--        <div class="hero-left">-->
-<!--            <div class="">-->
-<!--                <h1 class="page-title is-h1" title="{{ .Title }}">{{ .Title | safeHTML }}</h1>-->
-<!--                <h3 class="is-h3">{{ .Params.hero_title | safeHTML }}</h3>-->
-<!--                <p class="is-regular-text">{{ .Params.hero_text | safeHTML }}</p>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--        <div class="hero-right">-->
-<!--            <img src="/images/about-us.png" alt=""/>-->
-<!--        </div>-->
-<!--    </section>-->
+<section class="about-intro-section">
 
-<!--    <section class="about-text">-->
-<!--        <div class="container is-small">-->
-<!--            <article class="is-regular-text">-->
-<!--                {{ .Content }}-->
-<!--            </article>-->
-<!--        </div>-->
-<!--    </section>-->
+	<picture class="about-intro-bg">
+		<source srcset="/images/about-intro-bg.svg" media="(min-width: 1200px)"/>
+		<source srcset="/images/about-intro-bg.svg" media="(min-width: 768px)"/>
+		<source srcset="/images/about-intro-bg.svg" media="(min-width: 320px)"/>
+		<img src="/images/about-intro-bg.svg" alt=""/>
+	</picture>
 
-<!--    <section class="our-team">-->
-<!--        <div class="container is-medium">-->
-<!--            <h3 class="is-h3">We look forward to hearing from you, <span class="members-names">Gabriel,&nbsp;&nbsp;Shai and Uzi.</span></h3>-->
+	<div class="container">
+		<div class="row">
+			<div class="col-xl-7">
+				<h1 class="about-intro-title">
+					{{ .Params.introTitle | safeHTML }}
+				</h1>
 
-<!--            <div class="team-members">-->
-<!--                <div>-->
-<!--                    <div class="pic pic-gabriel"></div>-->
-<!--                    <h3 class="initials">Gabriel Bilczyk</h3>-->
-<!--                    <a href="https://www.linkedin.com/in/gabriel-bilczyk/" class="profession" target="_blank" rel="noopener nofollow">Chairman - <img src="/images/icon-linkedin-small.svg" /></a>-->
-<!--&lt;!&ndash;                    <p class="description">Nunc quam nec maecenas morbi. Molestie fermentum, elementum, sed nibh et laoreet</p>&ndash;&gt;-->
-<!--                </div>-->
-<!--                <div>-->
-<!--                    <div class="pic pic-shai"></div>-->
-<!--                    <h3 class="initials">Shai Azran</h3>-->
-<!--                    <a href="https://www.linkedin.com/in/shai-azran/" class="profession" target="_blank" rel="noopener nofollow">CEO - <img src="/images/icon-linkedin-small.svg" /></a>-->
-<!--&lt;!&ndash;                    <p class="description">Nunc quam nec maecenas morbi. Molestie fermentum, elementum, sed nibh et laoreet</p>&ndash;&gt;-->
-<!--                </div>-->
-<!--                <div>-->
-<!--                    <div class="pic pic-uzi"></div>-->
-<!--                    <h3 class="initials">Uzi Rafaeli</h3>-->
-<!--                    <a href="https://www.linkedin.com/in/eluzix/" class="profession" target="_blank" rel="noopener nofollow">CTO - <img src="/images/icon-linkedin-small.svg" /></a>-->
-<!--&lt;!&ndash;                    <p class="description">Nunc quam nec maecenas morbi. Molestie fermentum, elementum, sed nibh et laoreet</p>&ndash;&gt;-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </section>-->
+				<p class="about-intro-description">
+					{{ .Params.introDescription | safeHTML}}
+				</p>
+			</div>
+		</div>
+	</div>
+</section>
 
-<!--    <section class="about-pages">-->
-<!--        <div class="container is-medium">-->
-<!--            <div class="pages-overview">-->
-<!--                <div class="story-page">-->
-<!--                    <div>-->
-<!--                        <h3 class="is-h3 is-green">Our story</h3>-->
-<!--                        <p class="is-regular-text">Claritus is the result of a very real and personal need we were all faced with.</p>-->
-<!--                    </div>-->
-<!--                    <a class="is-link" href="{{ ref . "our-story.md" }}">Read more</a>-->
-<!--                </div>-->
-<!--                <div class="values-page">-->
-<!--                    <div>-->
-<!--                        <h3 class="is-h3 is-green">Core Values</h3>-->
-<!--                        <p class="is-regular-text">Our values play a huge role in who we are, both as people and as a company</p>-->
-<!--                    </div>-->
-<!--                    <a class="is-link" href="{{ ref . "core-values.md" }}">Read more</a>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </section>-->
-<!--</div>-->
-<!--{{ end }}-->
+<section class="about-content-section">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-xl-7">
+				<div class="about-content">
+					{{ .Content }}
+				</div>
 
-<!--{{ define "title" }}{{ .Title }}{{ end }}-->
+				<a href="#" class="btn btn--primary btn--small">
+					Try Claritus for free
+				</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<section class="team-section">
+
+	<img src="/images/team-bg.svg" alt="" class="team-bg">
+
+	<div class="container">
+		<h2 class="team-title">
+			{{ .Params.teamTitle | safeHTML }}
+		</h2>
+
+		<p class="team-text">
+			{{ .Params.teamText | safeHTML }}
+		</p>
+
+		<div class="team-members">
+			{{ range .Params.teamMembers }}
+			<div class="member">
+
+				<figure class="member__photo">
+					<img src="{{ .photo }}" alt="">
+				</figure>
+				<h3 class="member__name">{{ .name }}</h3>
+				<p class="member__position">{{ .position }}</p>
+				<a href="{{ .linkedIn }}" class="member__linkedin">
+					<svg width="24" height="24">
+						<use xlink:href="#linkedin-icon"></use>
+					</svg>
+				</a>
+
+			</div>
+			{{ end }}
+		</div>
+	</div>
+</section>
+
+<section class="our-story-section">
+	<div class="container">
+
+		<h2 class="our-story-title">{{ .Params.ourStoryTitle | safeHTML}}</h2>
+
+		<div class="our-story">
+			{{ .Params.ourStory | safeHTML}}
+		</div>
+	</div>
+</section>
+
+{{ partial "sign-up.html" }}
+
+{{ end }}
+
+{{ define "title" }}{{ .Title }}{{ end }}

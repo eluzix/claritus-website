@@ -1,0 +1,31 @@
+section.history-section {
+  padding: 56px 0;
+
+  @media (min-width: map_get($grid-breakpoints, md)) {
+    text-align: center;
+    padding: 80px 0;
+  }
+
+  @media (min-width: map_get($grid-breakpoints, xl)) {
+    padding: 100px 0;
+  }
+}
+
+.history-title {
+  margin-bottom: 24px;
+
+  @media (min-width: map_get($grid-breakpoints, md)) {
+    margin-bottom: 32px;
+  }
+}
+
+.history-text {
+  margin-bottom: 48px;
+}
+
+.history-img {
+  background-color: #17205b;
+  border-radius: 16px;
+  padding-top: 400/720 * 100%;
+  width: 100%;
+}

@@ -48,7 +48,7 @@
 	<link rel="preconnect" href="https://consent.cookiefirst.com">
 	<link rel="dns-prefetch" href="https://consent.cookiefirst.com">
 
-	{{ $sass := resources.Get "scss_v2/app.scss" }}
+	{{ $sass := resources.Get "scss/app.scss" }}
 	{{ $style := $sass | resources.ToCSS | resources.Minify | fingerprint }}
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="{{ $style.Permalink }}">
@@ -70,7 +70,7 @@
 
 <body class="{{ if .Site.Params.rtl }}rtl{{ end }}">
 
-{{ partial "header.html" }}
+
 
 {{ block "content" . }}{{ end }}
 

@@ -1,0 +1,62 @@
+// Colors
+$dark-1: #f0f0f3;
+$dark-7: #3f4463;
+$dark-8: #2b2f4a;
+$dark-9: #1a1f43;
+$dark-11: #030931;
+$gray-100: #c6cbdd;
+$gray-200: #e3e5ed;
+$gray-400: #a4a9bb;
+$gray-500: #7e829e;
+$green: #45dd95;
+$primary: #2967f0;
+$purple-100: #f8f8fe;
+$purple-200: #e2e4f1;
+$gradient-primary: linear-gradient(
+  90.36deg,
+  #46dd94 -0.66%,
+  #23d3ab 101.59%,
+  #17d6b3 101.59%
+);
+
+//Base config
+$body-color: #2b2f4a;
+$body-bg: #fff;
+$font-family-base: "DM Sans", sans-serif;
+$font-size-base: 1.125rem;
+$font-weight-base: 400;
+$box-shadow: none;
+
+//Grid columns
+$grid-breakpoints: (
+  xs: 0,
+  md: 768px,
+  lg: 992px,
+  xl: 1220px,
+  xxl: 1400px,
+);
+
+$container-max-widths: (
+  md: 670px,
+  lg: 960px,
+  xl: 1160px,
+  xxl: 1166px,
+);
+
+//Box shadow
+$box-shadow-primary: 0px 14px 28px rgba(203, 203, 203, 0.25);
+$box-shadow-secondary: 0px 4px 10px rgba(0, 0, 0, 0.1);
+
+// Transition
+$transition-time-main: all 0.3s ease;
+
+// Font
+$font-size: 1rem;
+$font-family-primary: "Futura", sans-serif;
+
+// ============ Links
+$link-color: $body-color;
+
+$link-hover-color: $primary;
+
+$link-hover-decoration: none;

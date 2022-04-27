@@ -1,0 +1,39 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  color: #fff;
+  padding: 11px 16px;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+
+  @media (min-width: map_get($grid-breakpoints, xl)) {
+    padding: 18px 32px;
+    font-size: 16px;
+  }
+
+  &:hover {
+    box-shadow: none;
+  }
+
+  &:focus {
+    box-shadow: none;
+  }
+
+  &--small {
+    padding: 11px 16px;
+  }
+
+  &--primary {
+    background: $gradient-primary;
+  }
+
+  &--transparent {
+    @extend %text-gradient;
+  }
+
+}
