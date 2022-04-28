@@ -83,4 +83,24 @@ window.addEventListener("load", function (event) {
       faqBlock.classList.toggle("faq--opened");
     });
   });
+
+  // Tab
+
+  const tabNavBtns = document.querySelectorAll(".tab-nav__item");
+
+  tabNavBtns.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const activeTab = document.querySelector(".tab-nav__item--active");
+
+      if (activeTab === btn) return;
+
+      const planName = btn.dataset.plan;
+
+      activeTab.classList.remove("tab-nav__item--active");
+      btn.classList.add("tab-nav__item--active");
+
+      document.querySelector('.tab--active').classList.remove("tab--active");
+      document.querySelector(`#${planName}`).classList.add("tab--active");
+    });
+  });
 });

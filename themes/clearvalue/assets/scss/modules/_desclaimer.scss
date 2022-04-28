@@ -1,0 +1,8 @@
+.disclaimer {
+  font-size: 16px;
+  color: $gray-400;
+
+  @media (min-width: map_get($grid-breakpoints, md)) {
+    padding: 0 24px;
+  }
+}

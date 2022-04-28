@@ -1,0 +1,253 @@
+section.pricing-intro-section {
+  padding-top: 56px;
+}
+
+.pricing-title {
+  text-align: center;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 130%;
+  color: $dark-9;
+  margin-bottom: 24px;
+}
+
+.pricing-text {
+  text-align: center;
+  margin-bottom: 40px;
+  color: $gray-600;
+}
+
+//Pricing
+
+section.pricing-section {
+  padding: 80px 0;
+}
+
+.pricing-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center center;
+  z-index: -1;
+}
+
+.tab-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+
+  &__item {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 64px;
+    width: 220px;
+    background: #ffffff;
+    border: 1px solid #e3e5ed;
+    font-weight: 700;
+    font-size: 20px;
+    //overflow: hidden;
+    color: $dark-7;
+    position: relative;
+    transition: all 0.5s ease;
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(
+        90.36deg,
+        #46dd94 -0.66%,
+        #23d3ab 101.59%,
+        #17d6b3 101.59%
+      );
+      z-index: 1;
+      opacity: 0;
+      transition: opacity 0.5s ease;
+    }
+
+    span {
+      position: relative;
+      z-index: 2;
+    }
+
+    &:first-child {
+      border-radius: 40px 0 0 40px;
+
+      &:before {
+        border-radius: 40px 0 0 40px;
+      }
+    }
+
+    &:last-child {
+      border-radius: 0 40px 40px 0;
+
+      &:before {
+        border-radius: 0 40px 40px 0;
+      }
+    }
+
+    &--active {
+      border: none;
+      color: #fff;
+
+      &:before {
+        opacity: 1;
+      }
+
+      .action-type {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.action-type {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 60%;
+  bottom: 100%;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  color: #00b08b;
+  margin-bottom: 10px;
+  opacity: 0;
+  transition: all 0.5s ease;
+
+  svg {
+    margin-left: 5px;
+    fill: #00b08b;
+    transform: rotate(-59.71deg);
+  }
+}
+
+.tab {
+  background-color: #fff;
+  box-shadow: 0 16px 64px rgba(126, 130, 158, 0.16);
+  border: 1px solid $gray-200;
+  border-radius: 16px;
+  display: none;
+
+  &--active {
+    display: block;
+  }
+
+  .tab-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 16px;
+    border-bottom: 1px solid $gray-200;
+
+    &__label {
+      align-self: flex-end;
+      padding: 8px 16px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 21px;
+      color: #fff;
+      background-color: #6266c6;
+      border-radius: 24px;
+      margin-bottom: 14px;
+    }
+
+    &__title {
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 42px;
+      color: $dark-9;
+    }
+  }
+}
+
+.tab-content {
+  padding: 40px 50px;
+
+  .price {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    &__value {
+      font-weight: 700;
+      font-size: 50px;
+      line-height: 130%;
+      color: $dark-9;
+    }
+
+    &__period {
+      font-weight: 400;
+      font-size: 16px;
+      color: $gray-400;
+      margin-bottom: 12px;
+    }
+  }
+
+  .billing {
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    color: $gray-600;
+    margin-bottom: 8px;
+  }
+
+  .action {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    color: #6266c6;
+  }
+}
+
+.tab-content-list {
+  margin-top: 40px;
+
+  .tab-list-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    font-size: 18px;
+    color: $gray-600;
+    padding: 5px 0;
+
+    &__icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: $green;
+      margin-right: 8px;
+
+      svg {
+        fill: #fff;
+      }
+    }
+  }
+}
+
+.tab-content-btn {
+  margin-top: 32px;
+  text-align: center;
+}
+
+//Faq
+
+.pricing-faq-title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  margin-bottom: 56px;
+}
