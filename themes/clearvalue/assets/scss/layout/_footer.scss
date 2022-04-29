@@ -60,18 +60,10 @@ footer.footer-section {
   }
 
   &__field {
-    height: 32px;
-    border: 1px solid $gray-500;
-    border-radius: 8px;
-    font-size: 12px;
-    line-height: 16px;
-    width: 100%;
-    padding: 0 8px;
-    background-color: transparent;
     margin-bottom: 12px;
 
-    &::placeholder {
-      color: $gray-400;
+    input {
+      border-color: $gray-500;
     }
   }
 

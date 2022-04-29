@@ -1,17 +1,61 @@
 {{ define "content" }}
 
 <header class="header-section">
-	{{ partial "header.html" }}
-
-	{{ partial "header-nav-menu.html" }}
+    {{ partial "header.html" }} {{ partial "header-nav-menu.html" }}
 </header>
 
+<section class="contact-section">
+    <img src="/images/contact-us-bg.jpg" alt="" class="contact-bg"/>
 
+    <div class="container contact-us-container">
+        <div class="row">
+            <div class="col-xl-5">
+                <h1 class="contact-title">Contact Us</h1>
 
+                <p class="contact-text">
+                    If you have any questions, inquiries, or any feedback, please send us
+                    a message
+                </p>
+            </div>
 
+            <div class="col-xl-7">
+                <form class="contact-form" name="contact" novalidate>
+                    <div class="field">
+                        <label>Name</label>
+                        <input type="text" placeholder="Enter your Name" name="name" class="field__input"/>
+                        <p class="error-message">Please enter your name</p>
+                    </div>
 
+                    <div class="field">
+                        <label>Email</label>
+                        <input type="text" placeholder="Enter your Email" name="email" class="field__input"/>
+                        <p class="error-message">Please enter a valid email address</p>
+                    </div>
 
+                    <div class="field">
+                        <label>Message</label>
+                        <textarea
+                                placeholder="Enter your Message"
+                                name="message" class="field__input"
+                        ></textarea>
 
-{{ end }}
+                        <span class="error-message">Please enter your message</span>
+                    </div>
 
-{{ define "title" }}{{ .Title }}{{ end }}
+                    <div class="recaptcha">
+                        This site is protected by reCAPTCHA and the Google
+                        <a href="https://policies.google.com/privacy">Privacy Policy</a> and
+                        <a href="https://policies.google.com/terms">Terms of Service</a>
+                        apply.
+                    </div>
+
+                    <button class="btn btn--primary btn--small w-100" type="submit">
+                        Send
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{ end }} {{ define "title" }}{{ .Title }}{{ end }}

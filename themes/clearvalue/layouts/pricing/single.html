@@ -1,181 +1,181 @@
 {{ define "content" }}
 
 <header class="header-section header-section--white">
-	{{ partial "header.html" }}
+    {{ partial "header.html" }}
 
-	{{ partial "header-nav-menu.html" }}
+    {{ partial "header-nav-menu.html" }}
 </header>
 
 
 <section class="pricing-intro-section">
-	<div class="container">
-		<div class="row justify-content-center">
-			<div class="col-xl-8">
-				<h1 class="pricing-title">
-					{{ .Title }}
-				</h1>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-8">
+                <h1 class="pricing-title">
+                    {{ .Title }}
+                </h1>
 
-				<p class="pricing-text">
-					{{ .Description }}
-				</p>
+                <p class="pricing-text">
+                    {{ .Description }}
+                </p>
 
-				<div class="d-flex justify-content-center">
-					<a href="#" class="btn btn--primary">
-						Start your free trial
-					</a>
-				</div>
-			</div>
-		</div>
-	</div>
+                <div class="d-flex justify-content-center">
+                    <a href="#" class="btn btn--primary">
+                        Start your free trial
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
 <section class="pricing-section">
-	<img src="/images/prising-bg.svg" alt="" class="pricing-bg">
+    <img src="/images/prising-bg.svg" alt="" class="pricing-bg">
 
-	<div class="container">
-		<div class="row justify-content-center">
-			<div class="col-xl-6">
-				<div class="tab-nav">
-					<button type="button" class="tab-nav__item" data-plan="monthly-plan">
-						<span class="label">Monthly</span>
-					</button>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-6">
+                <div class="tab-nav">
+                    <button type="button" class="tab-nav__item" data-plan="monthly-plan">
+                        <span class="label">Monthly</span>
+                    </button>
 
-					<button type="button" class="tab-nav__item tab-nav__item--active" data-plan="yearly-plan">
+                    <button type="button" class="tab-nav__item tab-nav__item--active" data-plan="yearly-plan">
 
-						<div class="action-type">
-							Save $30
-							<svg width="25" height="19">
-								<use xlink:href="#arrow-long-icon"></use>
-							</svg>
-						</div>
+                        <div class="action-type">
+                            Save $30
+                            <svg width="25" height="19">
+                                <use xlink:href="#arrow-long-icon"></use>
+                            </svg>
+                        </div>
 
-						<span class="label">Yearly</span>
-					</button>
-				</div>
+                        <span class="label">Yearly</span>
+                    </button>
+                </div>
 
-				<div class="tab-wrap">
-					<div id="monthly-plan" class="tab">
-						<div class="tab-header">
+                <div class="tab-wrap">
+                    <div id="monthly-plan" class="tab">
+                        <div class="tab-header">
 
-							<h3 class="tab-header__title">
-								{{ .Params.monthlyPlanTitle }}
-							</h3>
-						</div>
+                            <h3 class="tab-header__title">
+                                {{ .Params.monthlyPlanTitle }}
+                            </h3>
+                        </div>
 
-						<div class="tab-content">
-							<h3 class="price">
+                        <div class="tab-content">
+                            <h3 class="price">
 								<span class="price__value">
 									${{ .Params.monthlyPlanPrice }}
 								</span>
-								<span class="price__period">/per month</span>
-							</h3>
+                                <span class="price__period">/per month</span>
+                            </h3>
 
-							<p class="billing">billed annually</p>
-							<p class="action">2 month free!</p>
+                            <p class="billing">billed annually</p>
+                            <p class="action">2 month free!</p>
 
-							<ul class="tab-content-list">
+                            <ul class="tab-content-list">
 
-								{{ range .Params.monthlyPlanList }}
-								<li class="tab-list-item">
-									<figure class="tab-list-item__icon">
-										<svg width="10" height="9">
-											<use xlink:href="#check-icon"></use>
-										</svg>
-									</figure>
-									{{ . }}
-								</li>
-								{{ end }}
+                                {{ range .Params.monthlyPlanList }}
+                                <li class="tab-list-item">
+                                    <figure class="tab-list-item__icon">
+                                        <svg width="10" height="9">
+                                            <use xlink:href="#check-icon"></use>
+                                        </svg>
+                                    </figure>
+                                    {{ . }}
+                                </li>
+                                {{ end }}
 
 
-							</ul>
+                            </ul>
 
-							<div class="tab-content-btn">
-								<button type="button" class="btn btn--primary">
-									Start your free trial
-								</button>
-							</div>
-						</div>
-					</div>
+                            <div class="tab-content-btn">
+                                <button type="button" class="btn btn--primary">
+                                    Start your free trial
+                                </button>
+                            </div>
+                        </div>
+                    </div>
 
-					<div id="yearly-plan" class="tab tab--active">
-						<div class="tab-header">
+                    <div id="yearly-plan" class="tab tab--active">
+                        <div class="tab-header">
 
-							<p class="tab-header__label">
-								the most popular plan
-							</p>
+                            <p class="tab-header__label">
+                                the most popular plan
+                            </p>
 
-							<h3 class="tab-header__title">
-								{{ .Params.yearlyPlanTitle }}
-							</h3>
-						</div>
+                            <h3 class="tab-header__title">
+                                {{ .Params.yearlyPlanTitle }}
+                            </h3>
+                        </div>
 
-						<div class="tab-content">
-							<h3 class="price">
+                        <div class="tab-content">
+                            <h3 class="price">
 								<span class="price__value">
 									${{ .Params.yearlyPlanPrice }}
 								</span>
-								<span class="price__period">/per year</span>
-							</h3>
+                                <span class="price__period">/per year</span>
+                            </h3>
 
-							<p class="billing">billed annually</p>
-							<p class="action">2 month free!</p>
+                            <p class="billing">billed annually</p>
+                            <p class="action">2 month free!</p>
 
-							<ul class="tab-content-list">
+                            <ul class="tab-content-list">
 
-								{{ range .Params.yearlyPlanList }}
-								<li class="tab-list-item">
-									<figure class="tab-list-item__icon">
-										<svg width="10" height="9">
-											<use xlink:href="#check-icon"></use>
-										</svg>
-									</figure>
-									{{ . }}
-								</li>
-								{{ end }}
+                                {{ range .Params.yearlyPlanList }}
+                                <li class="tab-list-item">
+                                    <figure class="tab-list-item__icon">
+                                        <svg width="10" height="9">
+                                            <use xlink:href="#check-icon"></use>
+                                        </svg>
+                                    </figure>
+                                    {{ . }}
+                                </li>
+                                {{ end }}
 
 
-							</ul>
+                            </ul>
 
-							<div class="tab-content-btn">
-								<button type="button" class="btn btn--primary">
-									Start your free trial
-								</button>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+                            <div class="tab-content-btn">
+                                <button type="button" class="btn btn--primary">
+                                    Start your free trial
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </section>
 
 
 <section class="pricing-faq-section">
-	<div class="container">
+    <div class="container">
 
-		<h2 class="pricing-faq-title">
-			{{ .Params.priceFaqTitle }}
-		</h2>
+        <h2 class="pricing-faq-title">
+            {{ .Params.priceFaqTitle }}
+        </h2>
 
-		<div class="row">
-			{{ range .Params.priceFaq }}
-			<div class="col-xl-6">
-				<div class="faq">
-					<button class="faq__question">
-						{{ .question }}
+        <div class="row">
+            {{ range .Params.priceFaq }}
+            <div class="col-xl-6">
+                <div class="faq">
+                    <button class="faq__question">
+                        {{ .question }}
 
-						<span class="faq-question-icon"></span>
-					</button>
+                        <span class="faq-question-icon"></span>
+                    </button>
 
-					<div class="faq-content">
-						<p class="faq-content__answer">{{ .answer }}</p>
-					</div>
-				</div>
-			</div>
-			{{ end }}
-		</div>
-	</div>
+                    <div class="faq-content">
+                        <p class="faq-content__answer">{{ .answer }}</p>
+                    </div>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
 </section>
 
 {{ partial "sign-up.html" }}

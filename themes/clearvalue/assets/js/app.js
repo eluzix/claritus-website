@@ -99,8 +99,46 @@ window.addEventListener("load", function (event) {
       activeTab.classList.remove("tab-nav__item--active");
       btn.classList.add("tab-nav__item--active");
 
-      document.querySelector('.tab--active').classList.remove("tab--active");
+      document.querySelector(".tab--active").classList.remove("tab--active");
       document.querySelector(`#${planName}`).classList.add("tab--active");
     });
   });
+
+  // Contact us
+
+  const modal = document.querySelector(".contact-form");
+
+  modal.onsubmit = function (e) {
+    e.preventDefault();
+
+    if (!validateForm()) return;
+  };
+
+  function submitForm() {}
+
+  function validateForm() {
+    let isValidForm = true;
+
+    const fields = modal.querySelectorAll(".field__input");
+
+    fields.forEach((input) => {
+      if (
+        !input.value ||
+        (input.type === "email" && validateEmail(input.value))
+      ) {
+        isValidForm = false;
+        input.closest(".field").classList.add("field--error");
+      } else {
+        input.closest(".field").classList.remove("field--error");
+      }
+    });
+
+    return isValidForm;
+  }
+
+  function validateEmail(mail) {
+    return /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(
+      mail
+    );
+  }
 });

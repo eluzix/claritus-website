@@ -1,0 +1,62 @@
+.field {
+  margin-bottom: 24px;
+  position: relative;
+
+  label {
+    font-weight: 500;
+    font-size: 12px;
+    color: $gray-500;
+    padding: 0 8px;
+    margin-bottom: 8px;
+  }
+
+  input {
+    height: 32px;
+    border: 1px solid $gray-200;
+    border-radius: 8px;
+    font-size: 12px;
+    line-height: 16px;
+    width: 100%;
+    padding: 0 8px;
+    background-color: transparent;
+
+    &::placeholder {
+      color: $gray-400;
+    }
+  }
+
+  textarea {
+    border: 1px solid $gray-200;
+    border-radius: 8px;
+    font-size: 12px;
+    line-height: 16px;
+    width: 100%;
+    padding: 12px 8px;
+    resize: none;
+    height: 200px;
+
+    &::placeholder {
+      color: $gray-400;
+    }
+  }
+
+  .error-message {
+    position: absolute;
+    left: 8px;
+    top: 100%;
+    color: red;
+    font-size: 10px;
+    transition: all 0.5s ease;
+    opacity: 0;
+
+    &--active {
+      opacity: 1;
+    }
+  }
+
+  &--error {
+    .error-message {
+      opacity: 1;
+    }
+  }
+}

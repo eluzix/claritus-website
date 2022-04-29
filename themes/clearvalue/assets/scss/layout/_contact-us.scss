@@ -1,0 +1,79 @@
+section.contact-section {
+  min-height: 100vh;
+  padding: 120px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (min-width: map_get($grid-breakpoints, md)) {
+    padding: 120px 0;
+  }
+}
+
+.contact-bg {
+  @extend %absolute;
+  @extend %obj-cover;
+}
+
+//.contact-us-container {
+//  @media (max-width: map_get($grid-breakpoints, md)) {
+//    padding: 0;
+//  }
+//}
+
+.contact-title {
+  font-weight: 500;
+  font-size: 32px;
+  color: #fff;
+  margin-bottom: 24px;
+
+  @media (min-width: map_get($grid-breakpoints, md)) {
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  @media (min-width: map_get($grid-breakpoints, xl)) {
+    text-align: left;
+  }
+}
+
+.contact-text {
+  font-size: 18px;
+  color: $gray-100;
+  margin-bottom: 40px;
+
+  @media (min-width: map_get($grid-breakpoints, md)) {
+    text-align: center;
+  }
+
+  @media (min-width: map_get($grid-breakpoints, xl)) {
+    text-align: left;
+  }
+}
+
+//Form
+
+.contact-form {
+  background-color: #fff;
+  padding: 32px 16px;
+  margin: 0 -15px;
+
+  @media (min-width: map_get($grid-breakpoints, md)) {
+    border-radius: 16px;
+    margin: 0;
+    padding: 40px;
+  }
+}
+
+.recaptcha {
+  font-size: 10px;
+  line-height: 13px;
+  text-align: center;
+  color: $gray-400;
+  margin-bottom: 24px;
+
+  a {
+    color: $dark-8;
+  }
+}
