@@ -10,11 +10,10 @@
         <div class="container contact-us-container">
             <div class="row">
                 <div class="col-xl-5">
-                    <h1 class="contact-title">Contact Us</h1>
+                    <h1 class="contact-title">{{ .Title }}</h1>
 
                     <p class="contact-text">
-                        If you have any questions, inquiries, or any feedback, please send us
-                        a message
+                        {{ .Description }}
                     </p>
                 </div>
 
@@ -63,7 +62,7 @@
     <div class="submit-message-wrap">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-xl-5">
+                <div class="col-md-7 col-xl-5">
                     <h2 class="submit-message-title">Thank you!</h2>
                     <p class="submit-message-text">Your email has been successfully sent! </p>
                     <a href="/" class="btn btn--primary btn--small w-100">Go back to home</a>
