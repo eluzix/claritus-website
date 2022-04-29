@@ -19,7 +19,8 @@ thumbnail: "/uploads/strategies-in-volatile-market.jpg"
 disclaimer: true
 
 ---
-![](/uploads/strategies-in-volatile-market.jpg)Investment into any market comes with risk, but in a year where stocks have started on [their worst footing since 2016](https://www.nytimes.com/2022/01/21/business/economy/stock-markets-down-inflation.html) in light of recent pullbacks from the Central Bank, many investors are finding themselves staring down the barrel of bear markets that make investment losses look a lot more likely.
+
+Investment into any market comes with risk, but in a year where stocks have started on [their worst footing since 2016](https://www.nytimes.com/2022/01/21/business/economy/stock-markets-down-inflation.html) in light of recent pullbacks from the Central Bank, many investors are finding themselves staring down the barrel of bear markets that make investment losses look a lot more likely.
 
 Characterized as a market that experiences prolonged price declines during which security [prices fall by 20% or more](https://www.investopedia.com/terms/b/bearmarket.asp), the general volatility of a bear market isn’t something that any investor embraces. However, with stocks already struggling in the wake of the pandemic, and with current conflicts in Ukraine quickly sending risk assets like stocks tumbling even further, dealing in volatile markets is becoming increasingly common across even promising investor portfolios. 
 

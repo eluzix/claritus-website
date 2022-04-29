@@ -15,7 +15,7 @@ title = "Investment Portfolio Tracking:  Is Knowing Your Net Worth Good Enough?"
 type = ""
 
 +++
-![](/uploads/knowing-your-net-worth-1.jpg)Today’s diversified portfolio looks quite different than one from past decades. As your net worth rises, you will likely own far more than just stocks and bonds. In addition, you may have a collection of other assets, including real estate, cryptocurrency, venture capital, private lending, and other more unique holdings.
+Today’s diversified portfolio looks quite different than one from past decades. As your net worth rises, you will likely own far more than just stocks and bonds. In addition, you may have a collection of other assets, including real estate, cryptocurrency, venture capital, private lending, and other more unique holdings.
 
 Now, of course, a portfolio tracking spreadsheet or net worth tracker can help you figure out how much you own. That’s simple…collect updated information on values and subtract your liabilities. But is that enough?
 

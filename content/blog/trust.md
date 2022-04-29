@@ -13,7 +13,6 @@ summary: Trust is something built with time, and it’s our obligation to gain y
   us.
 
 ---
-![](/uploads/trust.jpg)
 
 We know when talking about your wealth and private financial state that trust plays a major role for you.
 

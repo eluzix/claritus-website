@@ -12,7 +12,6 @@ thumbnail = "/uploads/tag-cloud-black-1.png"
 title = "Tags: Simple & Powerful Personalization"
 
 +++
-![](/uploads/tag-cloud-black-1.png)
 
 We know each one is unique and with a unique financial situation. We know personal finance is not only numbers and returns, it’s not only aggregating financial data and manipulating financial calculations. Claritus was created to give you a clear and comprehensive view of your holdings with your own unique point of view.
 

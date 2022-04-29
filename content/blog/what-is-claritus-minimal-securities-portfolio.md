@@ -12,7 +12,6 @@ summary: A ‘Minimal Securities Portfolio’ was designed for manual work and a
   our aim was for minimal work and maximum value.
 
 ---
-![](/uploads/group-2949-2.png)
 
 We know you want to track and be updated, among other assets, also on a particular securities’ portfolio.
 

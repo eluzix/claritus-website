@@ -13,7 +13,6 @@ summary: Claritus was born out of a real, authentic and personal need and our ov
   mission is to bring financial peace of mind to many more people with our platform.
 
 ---
-![](/uploads/value-our-customers.jpg)
 
 If you’re reading this post then you’re probably one of Claritus’ first users, what we call a beta user - or at least thinking of becoming one.
 

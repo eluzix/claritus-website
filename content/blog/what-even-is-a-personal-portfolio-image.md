@@ -12,7 +12,7 @@ summary: A personal portfolio image contains, in a nutshell, all of your assets 
   all of your liabilities.
 
 ---
-![](/uploads/wealth_image_cover-5.png)
+
 
 To some, this may sound like a simple question, however, here at Claritus  we think we should take a few minutes to really dig into this topic and map out the various aspects of  a personal portfolio image.
 
