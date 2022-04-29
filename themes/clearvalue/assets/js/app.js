@@ -129,10 +129,10 @@ window.addEventListener("load", function (event) {
         .then(async function (token) {
           const submittedForm = document.querySelector(".contact-form");
 
-          let url =
-            "https://nkm2iod3hf.execute-api.us-east-1.amazonaws.com/prod/contact-us";
+          // let url =
+            // "https://nkm2iod3hf.execute-api.us-east-1.amazonaws.com/prod/contact-us";
 
-          // let url = "www.google.com";
+          let url = "www.google.com";
 
           let data = {
             token: token,

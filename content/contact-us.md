@@ -1,11 +1,9 @@
 ---
 type: contact-us
 
-title: Transparent & Simple Pricing
-description: Try Claritus free for 14 days - no credit card needed. Upon completing your free trial, you can choose from one of the following plans.
+title: Contact Us
+description: If you have any questions, inquiries, or any feedback, please send us a message
+
 url: "/contact-us"
-
-
-
 
 ---
