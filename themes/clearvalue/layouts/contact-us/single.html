@@ -6,53 +6,68 @@
 
 <section class="contact-section">
     <img src="/images/contact-us-bg.jpg" alt="" class="contact-bg"/>
+    <div class="contact-wrap">
+        <div class="container contact-us-container">
+            <div class="row">
+                <div class="col-xl-5">
+                    <h1 class="contact-title">Contact Us</h1>
 
-    <div class="container contact-us-container">
-        <div class="row">
-            <div class="col-xl-5">
-                <h1 class="contact-title">Contact Us</h1>
+                    <p class="contact-text">
+                        If you have any questions, inquiries, or any feedback, please send us
+                        a message
+                    </p>
+                </div>
 
-                <p class="contact-text">
-                    If you have any questions, inquiries, or any feedback, please send us
-                    a message
-                </p>
+                <div class="col-xl-7">
+                    <form id="contact-us-modal" class="contact-form form" name="contact" novalidate>
+                        <div class="field">
+                            <label>Name</label>
+                            <input type="text" placeholder="Enter your Name" name="name" class="field__input"/>
+                            <p class="error-message">Please enter your name</p>
+                        </div>
+
+                        <div class="field">
+                            <label>Email</label>
+                            <input type="email" placeholder="Enter your Email" name="email" class="field__input"/>
+                            <p class="error-message">Please enter a valid email address</p>
+                        </div>
+
+                        <div class="field">
+                            <label>Message</label>
+                            <textarea
+                                    placeholder="Enter your Message"
+                                    name="message" class="field__input"
+                            ></textarea>
+
+                            <span class="error-message">Please enter your message</span>
+                        </div>
+
+                        <div class="recaptcha">
+                            This site is protected by reCAPTCHA and the Google
+                            <a href="https://policies.google.com/privacy">Privacy Policy</a> and
+                            <a href="https://policies.google.com/terms">Terms of Service</a>
+                            apply.
+                        </div>
+
+                        <button class="btn btn--primary btn--small w-100" type="submit">
+                            <span class="btn__text">Send</span>
+
+                            <div class="loader"></div>
+                        </button>
+                    </form>
+                </div>
             </div>
+        </div>
+    </div>
 
-            <div class="col-xl-7">
-                <form class="contact-form" name="contact" novalidate>
-                    <div class="field">
-                        <label>Name</label>
-                        <input type="text" placeholder="Enter your Name" name="name" class="field__input"/>
-                        <p class="error-message">Please enter your name</p>
-                    </div>
-
-                    <div class="field">
-                        <label>Email</label>
-                        <input type="text" placeholder="Enter your Email" name="email" class="field__input"/>
-                        <p class="error-message">Please enter a valid email address</p>
-                    </div>
-
-                    <div class="field">
-                        <label>Message</label>
-                        <textarea
-                                placeholder="Enter your Message"
-                                name="message" class="field__input"
-                        ></textarea>
-
-                        <span class="error-message">Please enter your message</span>
-                    </div>
-
-                    <div class="recaptcha">
-                        This site is protected by reCAPTCHA and the Google
-                        <a href="https://policies.google.com/privacy">Privacy Policy</a> and
-                        <a href="https://policies.google.com/terms">Terms of Service</a>
-                        apply.
-                    </div>
-
-                    <button class="btn btn--primary btn--small w-100" type="submit">
-                        Send
-                    </button>
-                </form>
+    <div class="submit-message-wrap">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-5">
+                    <h2 class="submit-message-title">Thank you!</h2>
+                    <p class="submit-message-text">Your email has been successfully sent! </p>
+                    <a href="/" class="btn btn--primary btn--small w-100">Go back to home</a>
+                </div>
             </div>
         </div>
     </div>

@@ -112,9 +112,102 @@ window.addEventListener("load", function (event) {
     e.preventDefault();
 
     if (!validateForm()) return;
+
+    submitContactForm();
   };
 
-  function submitForm() {}
+  function submitContactForm() {
+    const submitBtn = modal.querySelector("button[type=submit]");
+    submitBtn.classList.add("btn--loading");
+    submitBtn.disabled = true;
+
+    grecaptcha.ready(function () {
+      grecaptcha
+        .execute("6LeptuEZAAAAAH5olX9oeDX9C2Ck2KG_Dd2zXhKw", {
+          action: "submit",
+        })
+        .then(async function (token) {
+          const submittedForm = document.querySelector(".contact-form");
+
+          let url =
+            "https://nkm2iod3hf.execute-api.us-east-1.amazonaws.com/prod/contact-us";
+
+          // let url = "www.google.com";
+
+          let data = {
+            token: token,
+            name: submittedForm.querySelector("[name=name]").value,
+            email: submittedForm.querySelector("[name=email]").value,
+            msg: submittedForm.querySelector("[name=message]").value,
+          };
+
+          let urlEncodedData = "",
+            urlEncodedDataPairs = [],
+            name;
+
+          for (name in data) {
+            urlEncodedDataPairs.push(
+              encodeURIComponent(name) + "=" + encodeURIComponent(data[name])
+            );
+          }
+
+          urlEncodedData = urlEncodedDataPairs.join("&").replace(/%20/g, "+");
+
+          try {
+            const response = await fetch(url, {
+              method: "POST",
+              mode: "no-cors",
+              headers: {
+                "Content-Type": "application/x-www-form-urlencoded",
+              },
+              body: urlEncodedData,
+            });
+
+            if (!response.ok) {
+              throw new Error();
+            }
+
+            document
+              .querySelector(".contact-section")
+              .classList.add("contact-section--submitted");
+          } catch (e) {
+            console.log("error sending mail", e);
+          }
+
+          submitBtn.classList.remove("btn--loading");
+          submitBtn.disabled = false;
+
+          // fetch(url, {
+          //   method: "POST",
+          //   mode: "no-cors",
+          //   headers: {
+          //     "Content-Type": "application/x-www-form-urlencoded",
+          //   },
+          //   body: urlEncodedData,
+          // })
+          //   .then(() => {
+          //     document
+          //       .querySelector(".contact-section")
+          //       .classList.add("contact-section--submitted");
+          //   })
+          //   .catch((e) => {
+          //     //do nothing
+          //     console.log('error sending mail', e)
+          //   })
+          //   .finally(() => {
+          //     submitBtn.classList.remove("btn--loading");
+          //     submitBtn.disabled = false;
+          //   });
+
+          // app.clearData();
+        })
+        .catch((e) => {
+          console.error("grecaptcha error:", e);
+          submitBtn.classList.remove("btn--loading");
+          submitBtn.disabled = false;
+        });
+    });
+  }
 
   function validateForm() {
     let isValidForm = true;
@@ -124,7 +217,7 @@ window.addEventListener("load", function (event) {
     fields.forEach((input) => {
       if (
         !input.value ||
-        (input.type === "email" && validateEmail(input.value))
+        (input.type === "email" && !validateEmail(input.value))
       ) {
         isValidForm = false;
         input.closest(".field").classList.add("field--error");

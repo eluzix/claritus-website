@@ -20,7 +20,7 @@
 	</div>
 
 	<figure class="blog-intro-img">
-		<img src="/images/blog-img.jpg" alt="">
+		<img data-src="/images/blog-img.jpg" alt="" class="lozad">
 	</figure>
 </section>
 
@@ -35,7 +35,7 @@
 			<div class="col-md-6 col-xl-4 post-col">
 				<article class="post">
 					<a href="{{ .RelPermalink }}" class="post__img">
-						<img src="{{ .Params.thumbnail }}" alt="thumbnail">
+						<img data-src="{{ .Params.thumbnail }}" alt="thumbnail" class="lozad">
 					</a>
 
 					<a href="{{ .RelPermalink }}" class="post__title">

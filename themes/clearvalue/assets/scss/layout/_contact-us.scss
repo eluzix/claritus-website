@@ -77,3 +77,45 @@ section.contact-section {
     color: $dark-8;
   }
 }
+
+.contact-wrap {
+  position: relative;
+  transition: opacity 0.5s ease;
+  z-index: 2;
+}
+
+.submit-message-wrap {
+  @extend %absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  z-index: 1;
+
+  @media (min-width: map_get($grid-breakpoints, xl)) {
+    text-align: center;
+  }
+}
+
+.submit-message-title {
+  font-weight: 500;
+  font-size: 50px;
+  margin-bottom: 24px;
+  color: #fff;
+}
+
+.submit-message-text {
+  color: $gray-100;
+  margin-bottom: 40px;
+}
+
+.contact-section--submitted {
+  .contact-wrap {
+    opacity: 0;
+  }
+
+  .submit-message-wrap {
+    opacity: 1;
+  }
+}
