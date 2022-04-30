@@ -1,0 +1,62 @@
+{{ define "content" }}
+
+<header class="header-section header-section--white">
+    {{ partial "header.html" }} {{ partial "header-nav-menu.html" }}
+</header>
+
+<section class="security-intro-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-5">
+                <h1 class="security-intro-title">
+                    {{ .Title }}
+                </h1>
+
+                <p class="security-intro-text">
+                    {{ .Description }}
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <img src="/images/security/security-intro-bg.svg" alt="" class="security-intro-bg">
+</section>
+
+
+<section class="security-content-section">
+    <div class="container">
+        <div class="security-content-item">
+            <div class="row">
+                <div class="col-xl-6">
+                    <figure class="security-content-img">
+                        <img src="/images/security/security-content-img-1.svg" alt="">
+                    </figure>
+                </div>
+                <div class="col-xl-6">
+                    <h2 class="security-content-title">
+                        Your information is protected
+                    </h2>
+
+                    <p class="security-content-description">
+                        We are fully committed to providing the highest level of security to our customers.
+                    </p>
+                    <div class="security-content">
+                        <h3>Encryption</h3>
+                        <p>All your information is encrypted with AES-256-GCM encryption while in transit and in rest
+                            for maximum security.</p>
+                        <h3>Encryption</h3>
+                        <p>All your information is encrypted with AES-256-GCM encryption while in transit and in rest
+                            for maximum security.</p>
+                        <h3>Encryption</h3>
+                        <p>All your information is encrypted with AES-256-GCM encryption while in transit and in rest
+                            for maximum security.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{ partial "sign-up.html" }}
+
+{{ end }} {{ define "title" }}{{ .Title }}{{ end }}

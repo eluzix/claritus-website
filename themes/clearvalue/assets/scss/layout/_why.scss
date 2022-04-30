@@ -14,7 +14,7 @@ section.why-intro-section {
 
   @media (min-width: map_get($grid-breakpoints, xl)) {
     position: absolute;
-    left: 40%;
+    left: 45%;
     top: 0;
     height: 100%;
     margin-top: 0;
@@ -42,7 +42,7 @@ section.why-intro-section {
 //Why content
 
 section.why-content-section {
-  padding: 60px 0;
+  padding: 60px 0 0;
 }
 
 .why-content-title {

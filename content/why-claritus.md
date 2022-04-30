@@ -1,10 +1,14 @@
 ---
 type: why-claritus
 
-title: Contact Us 
-description: If you have any questions, inquiries, or any feedback, please send us a message
+title: Why Claritus
+whySubtitle: Your financial peace of mind is our mission.
+description:   Claritus is a powerful yet easy to use, trustworthy and discreet companion to assist you in nurturing your wealth.
 
 url: "/why-claritus"
+
+whyExcellenceMainTitle: Not yet another “networth tracker” but the best dynamic wealth analytics in the market
+
 
 whyExcellence:
 - title: See your wealth the way you want it

@@ -8,14 +8,13 @@
     <div class="container">
         <div class="row">
             <div class="col-xl-5">
-                <h1 class="why-intro-title">Why Claritus</h1>
+                <h1 class="why-intro-title">{{ .Title }}</h1>
                 <p class="why-intro-subtitle">
-                    Your financial peace of mind is our mission.
+                    {{ .Params.whySubtitle }}
                 </p>
 
                 <p class="why-intro-description">
-                    Claritus is a powerful yet easy to use, trustworthy and discreet companion to assist you in
-                    nurturing your wealth.
+                    {{ .Description }}
                 </p>
             </div>
         </div>
@@ -30,7 +29,7 @@
         <div class="row justify-content-center">
             <div class="col-xl-9">
                 <h2 class="why-content-title">
-                    Not yet another “networth tracker” but the best dynamic wealth analytics in the market
+                    {{ .Params.whyExcellenceMainTitle }}
                 </h2>
             </div>
         </div>

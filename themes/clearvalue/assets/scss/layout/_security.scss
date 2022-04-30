@@ -1,0 +1,22 @@
+section.security-intro-section {
+  padding: 50px 0;
+  min-height: 524px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.security-intro-title {
+  font-weight: 500;
+  font-size: 50px;
+  color: $dark-9;
+  margin-bottom: 32px;
+}
+
+.security-intro-bg {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  top: 0;
+  z-index: -1;
+}
