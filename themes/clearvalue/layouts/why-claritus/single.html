@@ -1,9 +1,74 @@
 {{ define "content" }}
 
-<header class="header-section">
+<header class="header-section header-section--white">
     {{ partial "header.html" }} {{ partial "header-nav-menu.html" }}
 </header>
 
+<section class="why-intro-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-5">
+                <h1 class="why-intro-title">Why Claritus</h1>
+                <p class="why-intro-subtitle">
+                    Your financial peace of mind is our mission.
+                </p>
 
+                <p class="why-intro-description">
+                    Claritus is a powerful yet easy to use, trustworthy and discreet companion to assist you in
+                    nurturing your wealth.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <img src="/images/why-images/why-intro-img.png" alt="" class="why-intro-img"/>
+</section>
+
+<section class="why-content-section">
+    <div class="container">
+
+        <div class="row justify-content-center">
+            <div class="col-xl-9">
+                <h2 class="why-content-title">
+                    Not yet another “networth tracker” but the best dynamic wealth analytics in the market
+                </h2>
+            </div>
+        </div>
+
+        <div class="why-content">
+            {{ .Content }}
+        </div>
+
+        <figure class="why-content-img">
+            <img src="/images/why-images/why-graph-img.png" alt=""/>
+        </figure>
+    </div>
+</section>
+
+<section class="why-excellence-section">
+    <div class="container">
+
+        <div class="why-excellence">
+            {{ range .Params.whyExcellence }}
+            <div class="row">
+                <div class="col-xl-7">
+                    <h3 class="why-excellence-title">
+                        {{ .title | safeHTML }}
+                    </h3>
+
+                    <p class="why-excellence-description">
+                        {{ .description | safeHTML}}
+                    </p>
+                </div>
+
+                <img src="{{ .img }}" alt="" class="why-excellence-img"/>
+            </div>
+            {{ end }}
+        </div>
+
+    </div>
+</section>
+
+{{ partial "sign-up.html" }}
 
 {{ end }} {{ define "title" }}{{ .Title }}{{ end }}

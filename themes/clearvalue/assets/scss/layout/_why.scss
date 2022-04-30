@@ -1,0 +1,143 @@
+section.why-intro-section {
+  padding: 130px 0;
+
+  @media (min-width: map_get($grid-breakpoints, xl)) {
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.why-intro-img {
+  margin-top: 40px;
+
+  @media (min-width: map_get($grid-breakpoints, xl)) {
+    position: absolute;
+    left: 40%;
+    top: 0;
+    height: 100%;
+    margin-top: 0;
+  }
+}
+
+.why-intro-title {
+  font-weight: 500;
+  font-size: 50px;
+  color: $dark-9;
+  margin-bottom: 32px;
+}
+
+.why-intro-subtitle {
+  font-weight: 500;
+  font-size: 24px;
+  color: $dark-9;
+  margin-bottom: 20px;
+}
+
+.why-intro-description {
+  color: $dark-7;
+}
+
+//Why content
+
+section.why-content-section {
+  padding: 60px 0;
+}
+
+.why-content-title {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  color: $dark-9;
+  margin-bottom: 32px;
+}
+
+.why-content {
+  column-count: 2;
+  column-gap: 64px;
+
+  p {
+    margin-bottom: 12px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 170%;
+  }
+
+  ul {
+    li {
+      margin-bottom: 12px;
+      padding-left: 15px;
+      position: relative;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 170%;
+
+      &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 13px;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background-color: $dark-9;
+      }
+    }
+  }
+}
+
+.why-content-img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: -1;
+  margin-top: -10%;
+
+  img {
+    width: 100%;
+  }
+}
+
+.why-excellence {
+  .row {
+    position: relative;
+    align-items: center;
+
+    @media (min-width: map_get($grid-breakpoints, xl)) {
+      padding: 100px 0;
+      min-height: 600px;
+    }
+
+    .why-excellence-img {
+      position: absolute;
+      height: auto;
+      max-height: 100%;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &:nth-of-type(odd) {
+      justify-content: flex-end;
+
+      .why-excellence-img {
+        right: 60%;
+      }
+    }
+
+    &:nth-of-type(even) {
+      .why-excellence-img {
+        left: 80%;
+        transform: translateX(-50%) translateY(-50%);
+      }
+    }
+  }
+}
+
+.why-excellence-title {
+  font-weight: 500;
+  font-size: 40px;
+  color: $dark-9;
+  margin-bottom: 32px;
+}
