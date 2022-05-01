@@ -1,3 +1,30 @@
+function initNewsletter() {
+  const button = document.querySelector('.footer-subscribe button.footer-subscribe__btn')
+  console.log('>>>>>>> button:', button)
+  button.onclick = (e)=>{
+    e.preventDefault();
+    let email = document.getElementById('footer-newsletter-email').value
+    if (!email || email.trim() === '') {
+      return
+    }
+
+    email = encodeURIComponent(email.trim())
+
+    fetch('https://f6gcz330p3.execute-api.us-east-1.amazonaws.com/newsletter?email=' + email,  {
+      method: 'POST',
+      mode: 'no-cors',
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded'
+      },
+    }).then(() => {
+      console.log('!!!!')
+    }).catch((e) => {
+      //do nothing
+      console.error(e)
+    })
+  }
+}
+
 window.addEventListener("load", function (event) {
   // Lazy load
   const observer = lozad();
@@ -242,4 +269,8 @@ window.addEventListener("load", function (event) {
   document.querySelector(".scroll-top").addEventListener("click", () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
+
+  // newsletter
+  initNewsletter()
 });
+
