@@ -26,37 +26,60 @@
 <section class="security-content-section">
     <div class="container">
         <div class="security-content-item">
-            <div class="row">
-                <div class="col-xl-6">
+            <div class="row align-items-center">
+                <div class="col-xl-5">
                     <figure class="security-content-img">
-                        <img src="/images/security/security-content-img-1.svg" alt="">
+                        <img src="{{ .Params.protectedImg }}" alt="">
                     </figure>
                 </div>
-                <div class="col-xl-6">
+                <div class="col-xl-7">
                     <h2 class="security-content-title">
-                        Your information is protected
+                        {{ .Params.protectedTitle | safeHTML }}
+                    </h2>
+                    <p class="security-content-description">
+                        {{ .Params.protectedText | safeHTML }}
+                    </p>
+                    <div class="security-content">
+                        {{ .Params.protectedContent | safeHTML }}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="security-content-item">
+            <div class="row align-items-center">
+                <div class="col-xl-7">
+                    <h2 class="security-content-title">
+                        {{ .Params.respectTitle | safeHTML }}
                     </h2>
 
                     <p class="security-content-description">
-                        We are fully committed to providing the highest level of security to our customers.
+                        {{ .Params.respectText | safeHTML }}
                     </p>
                     <div class="security-content">
-                        <h3>Encryption</h3>
-                        <p>All your information is encrypted with AES-256-GCM encryption while in transit and in rest
-                            for maximum security.</p>
-                        <h3>Encryption</h3>
-                        <p>All your information is encrypted with AES-256-GCM encryption while in transit and in rest
-                            for maximum security.</p>
-                        <h3>Encryption</h3>
-                        <p>All your information is encrypted with AES-256-GCM encryption while in transit and in rest
-                            for maximum security.</p>
+                        {{ .Params.respectContent | safeHTML }}
                     </div>
+                </div>
+                <div class="col-xl-5">
+                    <figure class="security-content-img">
+                        <img src="{{ .Params.respectImg }}" alt="">
+                    </figure>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-{{ partial "sign-up.html" }}
+<section class="security-disclaimer-section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-10 col-xxl-9">
+                <div class="security-disclaimer">
+                    {{ .Params.securityDisclaimer }}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 {{ end }} {{ define "title" }}{{ .Title }}{{ end }}
