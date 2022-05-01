@@ -75,7 +75,7 @@
         <div class="row justify-content-center">
             <div class="col-xl-10 col-xxl-9">
                 <div class="security-disclaimer">
-                    {{ .Params.securityDisclaimer }}
+                    {{ .Params.securityDisclaimer | safeHTML }}
                 </div>
             </div>
         </div>

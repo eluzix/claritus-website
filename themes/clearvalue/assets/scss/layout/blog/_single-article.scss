@@ -50,6 +50,7 @@ section.post-intro-section {
   img {
     width: 100%;
     height: auto;
+    object-fit: cover;
 
     @media (min-width: map_get($grid-breakpoints, md)) {
       position: absolute;

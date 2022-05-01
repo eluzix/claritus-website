@@ -1,10 +1,10 @@
 ---
 ## Home intro
-title: Keep Track of Your Wealth, Simply
+title: Keep track of your wealth, Simply
 
 date: 2020-01-01T09:30:01+03:00
 
-heroText: Claritus is a technology-driven private wealth service that allows you to track, understand, and take control of your wealth - all in one place!
+heroText: Track, analyze, and be in complete control of all of your assets and investments - all in one place!
 
 heroImg: /images/section-hero.png
 
@@ -31,30 +31,30 @@ financialInstitutes:
 
 ##Assets 
 
-assetsTitle: All Your Assets in One Place
+assetsTitle: All your assets in one place
 
-assetsText: With Claritus you can easily track ALL of your assets and investments  and have an automatic clear view of your holdings, without using spreadsheets and without needing a Finance Master’s degree!
+assetsText: It’s time to take control of your assets and with Claritus you can easily track ALL of your assets and investments! You will have an automatic and clear view of your holdings, without using spreadsheets and without needing a degree in finance!!
 
 
 ##Private secure
 
 secureTitle: Private & Secure
 
-secureText: Your privacy and security are our top priorities. All data is encrypted and stored according to the highest standards. With Claritus, your data is for your eyes only.
+secureText: Your privacy, security and anonymity are our top priorities. All of your information is secure and encrypted at all times. We really mean at all times! Your data is fully encrypted at rest and in- transit. All of your information and credentials are always safe with Claritus!
 
 
 ##Cover financials
 
 coverFinancialsTitle: Covers more than 17,000 financial institutions
 
-coverFinancialsText: More than 17,000 global financial institutions, brokerages, and other financial organizations provide real-time data.
+coverFinancialsText: Claritus supports more than 17,000 global financial institutions, brokerages, and other financial organizations to provide automatic and up-to-date data.
 
 
 ##Benchmark
 
 benchmarkTitle: Benchmark yourself against others
 
-benchmarkText: Use our comparison feature to see how your allocation compared to other investors similar to your strategy. Share insights, investing ideas and strategies every day.
+benchmarkText: Use our comparison feature to see how your allocation compares to other investors similar to you. Share insights, investing ideas and strategies every day.
 
 
 ##Feedbacks
@@ -79,9 +79,10 @@ feedbacks:
 
 ##History
 
-historyTitle: Your History Matters
+historyTitle: Your history matters
 
-historyText: Measure your portfolio’s performance over time easily and accurately. <br/> Your holding history has huge value, with Claritus you benefit from performance analytics and cross asset performance comparisons to help grow your wealth.
+historyText: With Claritus, you can measure your portfolio's performance over time easily and accurately. Use Claritus' dynamic analytics and portfolio cross-asset comparisons to make intelligent and informed financial decisions.
+  <br/></br>Your holding history has huge value
 
 
 ##FAQ
@@ -89,38 +90,22 @@ faqTitle: Frequently Asked Questions
 
 faqFirstColumn:
 
-- question: What is Claritus?
+- question: Why Claritus?
 
   answer: Keeping track of a single invested asset is a challenging and tedious task, let alone a number of assets scattered across several accounts. Whether you invest in the stock market, real estate, or any other alternative investment type, Claritus provides you with a clear image of ALL your combined assets in one place, anytime you need it
 
-- question: What is Claritus?
-
-  answer: Keeping track of a single invested asset is a challenging and tedious task, let alone a number of assets scattered across several accounts. Whether you invest in the stock market, real estate, or any other alternative investment type, Claritus provides you with a clear image of ALL your combined assets in one place, anytime you need it
-
-- question: What is Claritus?
-
-  answer: Keeping track of a single invested asset is a challenging and tedious task, let alone a number of assets scattered across several accounts. Whether you invest in the stock market, real estate, or any other alternative investment type, Claritus provides you with a clear image of ALL your combined assets in one place, anytime you need it
-
-- question: What is Claritus?
+- question: Is my privacy protected?
 
   answer: Keeping track of a single invested asset is a challenging and tedious task, let alone a number of assets scattered across several accounts. Whether you invest in the stock market, real estate, or any other alternative investment type, Claritus provides you with a clear image of ALL your combined assets in one place, anytime you need it
 
 
 faqSecondColumn:
 
-- question: What is Claritus?
+- question: How does Claritus work?
 
   answer: Keeping track of a single invested asset is a challenging and tedious task, let alone a number of assets scattered across several accounts. Whether you invest in the stock market, real estate, or any other alternative investment type, Claritus provides you with a clear image of ALL your combined assets in one place, anytime you need it
 
-- question: What is Claritus?
-
-  answer: Keeping track of a single invested asset is a challenging and tedious task, let alone a number of assets scattered across several accounts. Whether you invest in the stock market, real estate, or any other alternative investment type, Claritus provides you with a clear image of ALL your combined assets in one place, anytime you need it
-
-- question: What is Claritus?
-
-  answer: Keeping track of a single invested asset is a challenging and tedious task, let alone a number of assets scattered across several accounts. Whether you invest in the stock market, real estate, or any other alternative investment type, Claritus provides you with a clear image of ALL your combined assets in one place, anytime you need it
-
-- question: What is Claritus?
+- question: Will Claritus ever sell my data?
 
   answer: Keeping track of a single invested asset is a challenging and tedious task, let alone a number of assets scattered across several accounts. Whether you invest in the stock market, real estate, or any other alternative investment type, Claritus provides you with a clear image of ALL your combined assets in one place, anytime you need it
 
@@ -129,9 +114,8 @@ faqSecondColumn:
 
 pricingTitle: Transparent & Simple Pricing
 
-pricingText: Try Claritus free for 14 days - no credit card needed. Upon completing your free trial, you can choose from one of the following plans.
-
-
+pricingText: Claritus offers our customers an exceptional solution for a fair, and low subscription cost. There will never be hidden fees or costs. We believe in being transparent and up front with our customers at all times.
+  <br/><br/>Try Claritus free for 14 days - no credit card required
 
 ---
 
