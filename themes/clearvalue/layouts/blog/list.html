@@ -6,32 +6,33 @@
 	{{ partial "header-nav-menu.html" }}
 </header>
 
+{{ $paginator := .Paginate (where .Pages.ByPublishDate.Reverse ".Params.hidden" "ne" true) }}
 
 <section class="blog-intro-section">
+	{{ range first 1 $paginator.Pages }}
 	<div class="container">
 		<div class="row">
 			<div class="col-xl-5">
-				<h1 class="blog-intro-title">{{ .Title }}</h1>
-				<p class="blog-intro-description">
+				<a href="{{ .RelPermalink }}"><h1 class="blog-intro-title">{{ .Title }}</h1></a>
+				<a href="{{ .RelPermalink }}"><p class="blog-intro-description">
 					{{ .Description }}
-				</p>
+				</p></a>
 			</div>
 		</div>
 	</div>
 
 	<figure class="blog-intro-img">
-		<img data-src="/images/blog-img.jpg" alt="" class="lozad">
+		<a href="{{ .RelPermalink }}"><img data-src="{{ .Params.thumbnail }}" alt="" class="lozad"></a>
 	</figure>
+	{{ end }}
 </section>
 
-
-{{ $paginator := .Paginate (where .Pages.ByPublishDate.Reverse ".Params.hidden" "ne" true) }}
 
 <section class="blog-articles-section">
 	<div class="container">
 		<div class="row">
 
-			{{ range $paginator.Pages }}
+			{{ range after 1 $paginator.Pages }}
 			<div class="col-md-6 col-xl-4 post-col">
 				<article class="post">
 					<a href="{{ .RelPermalink }}" class="post__img">
