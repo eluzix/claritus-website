@@ -108,13 +108,15 @@ window.addEventListener("load", function (event) {
 
   const modal = document.querySelector(".contact-form");
 
-  modal.onsubmit = function (e) {
-    e.preventDefault();
+  if (modal) {
+    modal.onsubmit = function (e) {
+      e.preventDefault();
 
-    if (!validateForm()) return;
+      if (!validateForm()) return;
 
-    submitContactForm();
-  };
+      submitContactForm();
+    };
+  }
 
   function submitContactForm() {
     const submitBtn = modal.querySelector("button[type=submit]");
@@ -130,7 +132,7 @@ window.addEventListener("load", function (event) {
           const submittedForm = document.querySelector(".contact-form");
 
           // let url =
-            // "https://nkm2iod3hf.execute-api.us-east-1.amazonaws.com/prod/contact-us";
+          // "https://nkm2iod3hf.execute-api.us-east-1.amazonaws.com/prod/contact-us";
 
           let url = "www.google.com";
 
@@ -234,4 +236,10 @@ window.addEventListener("load", function (event) {
       mail
     );
   }
+
+  // Scroll top
+
+  document.querySelector(".scroll-top").addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
 });

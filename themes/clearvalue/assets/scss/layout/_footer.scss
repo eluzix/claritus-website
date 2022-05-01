@@ -1,6 +1,7 @@
 footer.footer-section {
   background-color: $dark-11;
   padding-top: 40px;
+  position: relative;
 
   @media (min-width: map_get($grid-breakpoints, xl)) {
     padding: 40px 100px 0;
@@ -130,5 +131,34 @@ footer.footer-section {
     color: $gray-400;
     text-align: center;
     border-top: 1px solid $dark-7;
+  }
+}
+
+.scroll-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  top: -80px;
+  right: 100px;
+  font-weight: 400;
+  font-size: 14px;
+  color: $gray-600;
+
+  &__icon {
+    width: 32px;
+    height: 32px;
+    border: 1px solid $gray-200;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transform: rotate(90deg);
+    margin-bottom: 6px;
+  }
+
+  @media (min-width: map_get($grid-breakpoints, xxl)) {
+    right: 300px;
   }
 }
