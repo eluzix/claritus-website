@@ -65,6 +65,7 @@ footer.footer-section {
 
     input {
       border-color: $gray-500;
+      color: $dark-1;
     }
   }
 
@@ -72,6 +73,19 @@ footer.footer-section {
     padding: 7px 36px;
     font-size: 14px;
     margin-top: 16px;
+  }
+
+  .footer-subscribe-step1.hidden {
+    display: none;
+  }
+  .footer-subscribe-step2 {
+    display: none;
+    &.active {
+      display: block;
+      font-size: 16px;
+      line-height: 21px;
+      color: $dark-1;
+    }
   }
 }
 

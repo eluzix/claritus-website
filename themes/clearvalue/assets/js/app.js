@@ -17,7 +17,8 @@ function initNewsletter() {
         'Content-Type': 'application/x-www-form-urlencoded'
       },
     }).then(() => {
-      console.log('!!!!')
+      document.querySelector('.footer-subscribe-step1').classList.add('hidden')
+      document.querySelector('.footer-subscribe-step2').classList.add('active')
     }).catch((e) => {
       //do nothing
       console.error(e)
