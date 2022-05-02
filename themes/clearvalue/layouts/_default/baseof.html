@@ -58,8 +58,6 @@
 
     {{ $sass := resources.Get "scss/app.scss" }}
     {{ $style := $sass | resources.ToCSS | resources.Minify | fingerprint }}
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{{ $style.Permalink }}">
 
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -86,6 +84,9 @@
 </head>
 
 <body class="{{ if .Site.Params.rtl }}rtl{{ end }}">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ $style.Permalink }}">
+
 {{ partial "cookie.html" . }}
 <!-- Google Tag Manager (noscript) -->
 <noscript>
