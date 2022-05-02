@@ -102,6 +102,11 @@ window.addEventListener("load", function (event) {
   const observer = lozad();
   observer.observe();
 
+  const hpAssetImg = document.querySelector('.assets-section .assets-bg')
+  if (hpAssetImg) {
+    observer.triggerLoad(hpAssetImg);
+  }
+
   // Slider
   const slider = document.querySelector(".feedback-slider");
 
