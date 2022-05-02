@@ -1,99 +1,121 @@
 function initNewsletter() {
-  const button = document.querySelector('.footer-subscribe button.footer-subscribe__btn')
-  console.log('>>>>>>> button:', button)
-  button.onclick = (e)=>{
+  const button = document.querySelector(
+    ".footer-subscribe button.footer-subscribe__btn"
+  );
+  console.log(">>>>>>> button:", button);
+  button.onclick = (e) => {
     e.preventDefault();
-    let email = document.getElementById('footer-newsletter-email').value
-    if (!email || email.trim() === '') {
-      return
+    let email = document.getElementById("footer-newsletter-email").value;
+    if (!email || email.trim() === "") {
+      return;
     }
 
-    email = encodeURIComponent(email.trim())
+    email = encodeURIComponent(email.trim());
 
-    fetch('https://f6gcz330p3.execute-api.us-east-1.amazonaws.com/newsletter?email=' + email,  {
-      method: 'POST',
-      mode: 'no-cors',
-      headers: {
-        'Content-Type': 'application/x-www-form-urlencoded'
-      },
-    }).then(() => {
-      document.querySelector('.footer-subscribe-step1').classList.add('hidden')
-      document.querySelector('.footer-subscribe-step2').classList.add('active')
-    }).catch((e) => {
-      //do nothing
-      console.error(e)
-    })
-  }
+    fetch(
+      "https://f6gcz330p3.execute-api.us-east-1.amazonaws.com/newsletter?email=" +
+        email,
+      {
+        method: "POST",
+        mode: "no-cors",
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded",
+        },
+      }
+    )
+      .then(() => {
+        document
+          .querySelector(".footer-subscribe-step1")
+          .classList.add("hidden");
+        document
+          .querySelector(".footer-subscribe-step2")
+          .classList.add("active");
+      })
+      .catch((e) => {
+        //do nothing
+        console.error(e);
+      });
+  };
 }
 
 function getUTMCookie() {
   const cstr = document.cookie
-      .split('; ')
-      .find(row => row.startsWith('_cv_c'))
+    .split("; ")
+    .find((row) => row.startsWith("_cv_c"));
 
-  if (cstr){
+  if (cstr) {
     try {
-      return JSON.parse(decodeURIComponent(cstr.split('=')[1]))
+      return JSON.parse(decodeURIComponent(cstr.split("=")[1]));
     } catch (e) {
-      console.error('[getUTMCookie] error parsing cookie:', e)
+      console.error("[getUTMCookie] error parsing cookie:", e);
     }
   }
 
-  return []
+  return [];
 }
 
 function utmCookie() {
-  const params = {}
+  const params = {};
   if (window.location.search) {
-    const pairs = window.location.search.substring(1).split('&')
+    const pairs = window.location.search.substring(1).split("&");
     pairs.forEach((pair) => {
-      const kv = pair.split('=')
+      const kv = pair.split("=");
       if (kv.length > 1) {
-        const k = kv[0].toLowerCase()
-        if (k.startsWith('utm')){
-          params[k] = decodeURIComponent(kv[1])
+        const k = kv[0].toLowerCase();
+        if (k.startsWith("utm")) {
+          params[k] = decodeURIComponent(kv[1]);
         }
       }
-    })
+    });
   }
 
-  const cookie = getUTMCookie()
-  if (Object.keys(params).length > 0){
+  const cookie = getUTMCookie();
+  if (Object.keys(params).length > 0) {
     const comparableCookies = cookie.map((item) => {
       const filtered = Object.keys(item)
-          .filter(key => key.toLowerCase().startsWith('utm'))
-          .reduce((obj, key) => {
-            return {
-              ...obj,
-              [key]: item[key]
-            };
-          }, {});
+        .filter((key) => key.toLowerCase().startsWith("utm"))
+        .reduce((obj, key) => {
+          return {
+            ...obj,
+            [key]: item[key],
+          };
+        }, {});
 
-      return filtered
-    })
+      return filtered;
+    });
 
-    const paramsStr = JSON.stringify(params)
-    let addParams = true
+    const paramsStr = JSON.stringify(params);
+    let addParams = true;
 
-    for (let i in comparableCookies){
-      if (paramsStr === JSON.stringify(comparableCookies[i])){
+    for (let i in comparableCookies) {
+      if (paramsStr === JSON.stringify(comparableCookies[i])) {
         // ignore the same cookie
-        addParams = false
-        break
+        addParams = false;
+        break;
       }
     }
 
-    if (addParams){
-      params['session'] = Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
-      params['referrer'] = document.referrer
-      params['dt'] = Math.round(Date.now()/1000)
-      cookie.unshift(params)
+    if (addParams) {
+      params["session"] =
+        Math.random().toString(36).substring(2, 15) +
+        Math.random().toString(36).substring(2, 15) +
+        Math.random().toString(36).substring(2, 15);
+      params["referrer"] = document.referrer;
+      params["dt"] = Math.round(Date.now() / 1000);
+      cookie.unshift(params);
     }
   }
 
   if (cookie.length > 0) {
-    const apexDomain = document.domain.split('.').reverse().splice(0,2).reverse().join('.');
-    document.cookie = `_cv_c=${encodeURIComponent(JSON.stringify(cookie))};path=/;max-age=2592000;domain=${apexDomain}`
+    const apexDomain = document.domain
+      .split(".")
+      .reverse()
+      .splice(0, 2)
+      .reverse()
+      .join(".");
+    document.cookie = `_cv_c=${encodeURIComponent(
+      JSON.stringify(cookie)
+    )};path=/;max-age=2592000;domain=${apexDomain}`;
   }
 }
 
@@ -102,7 +124,7 @@ window.addEventListener("load", function (event) {
   const observer = lozad();
   observer.observe();
 
-  const hpAssetImg = document.querySelector('.assets-section .assets-bg')
+  const hpAssetImg = document.querySelector(".assets-section .assets-bg");
   if (hpAssetImg) {
     observer.triggerLoad(hpAssetImg);
   }
@@ -192,21 +214,23 @@ window.addEventListener("load", function (event) {
 
   const tabNavBtns = document.querySelectorAll(".tab-nav__item");
 
-  tabNavBtns.forEach((btn) => {
-    btn.addEventListener("click", () => {
-      const activeTab = document.querySelector(".tab-nav__item--active");
+  if (tabNavBtns.length) {
+    tabNavBtns.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const activeTab = document.querySelector(".tab-nav__item--active");
 
-      if (activeTab === btn) return;
+        if (activeTab === btn) return;
 
-      const planName = btn.dataset.plan;
+        const planName = btn.dataset.plan;
 
-      activeTab.classList.remove("tab-nav__item--active");
-      btn.classList.add("tab-nav__item--active");
+        activeTab.classList.remove("tab-nav__item--active");
+        btn.classList.add("tab-nav__item--active");
 
-      document.querySelector(".tab--active").classList.remove("tab--active");
-      document.querySelector(`#${planName}`).classList.add("tab--active");
+        document.querySelector(".tab--active").classList.remove("tab--active");
+        document.querySelector(`#${planName}`).classList.add("tab--active");
+      });
     });
-  });
+  }
 
   // Contact us
 
@@ -349,12 +373,12 @@ window.addEventListener("load", function (event) {
 
   //cookies
   try {
-    utmCookie()
+    utmCookie();
   } catch (e) {
-    console.error('[utmCookie] error:', e)
+    console.error("[utmCookie] error:", e);
   }
 
   // newsletter
-  initNewsletter()
+  initNewsletter();
 });
 
