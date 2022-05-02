@@ -26,6 +26,77 @@ function initNewsletter() {
   }
 }
 
+function getUTMCookie() {
+  const cstr = document.cookie
+      .split('; ')
+      .find(row => row.startsWith('_cv_c'))
+
+  if (cstr){
+    try {
+      return JSON.parse(decodeURIComponent(cstr.split('=')[1]))
+    } catch (e) {
+      console.error('[getUTMCookie] error parsing cookie:', e)
+    }
+  }
+
+  return []
+}
+
+function utmCookie() {
+  const params = {}
+  if (window.location.search) {
+    const pairs = window.location.search.substring(1).split('&')
+    pairs.forEach((pair) => {
+      const kv = pair.split('=')
+      if (kv.length > 1) {
+        const k = kv[0].toLowerCase()
+        if (k.startsWith('utm')){
+          params[k] = decodeURIComponent(kv[1])
+        }
+      }
+    })
+  }
+
+  const cookie = getUTMCookie()
+  if (Object.keys(params).length > 0){
+    const comparableCookies = cookie.map((item) => {
+      const filtered = Object.keys(item)
+          .filter(key => key.toLowerCase().startsWith('utm'))
+          .reduce((obj, key) => {
+            return {
+              ...obj,
+              [key]: item[key]
+            };
+          }, {});
+
+      return filtered
+    })
+
+    const paramsStr = JSON.stringify(params)
+    let addParams = true
+
+    for (let i in comparableCookies){
+      if (paramsStr === JSON.stringify(comparableCookies[i])){
+        // ignore the same cookie
+        addParams = false
+        break
+      }
+    }
+
+    if (addParams){
+      params['session'] = Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
+      params['referrer'] = document.referrer
+      params['dt'] = Math.round(Date.now()/1000)
+      cookie.unshift(params)
+    }
+  }
+
+  if (cookie.length > 0) {
+    const apexDomain = document.domain.split('.').reverse().splice(0,2).reverse().join('.');
+    document.cookie = `_cv_c=${encodeURIComponent(JSON.stringify(cookie))};path=/;max-age=2592000;domain=${apexDomain}`
+  }
+}
+
 window.addEventListener("load", function (event) {
   // Lazy load
   const observer = lozad();
@@ -270,6 +341,13 @@ window.addEventListener("load", function (event) {
   document.querySelector(".scroll-top").addEventListener("click", () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
+
+  //cookies
+  try {
+    utmCookie()
+  } catch (e) {
+    console.error('[utmCookie] error:', e)
+  }
 
   // newsletter
   initNewsletter()

@@ -44,11 +44,16 @@
     <link rel="dns-prefetch" href="https://www.googletagmanager.com">
     <link rel="preconnect" href="https://cdn.jsdelivr.net">
     <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://unpkg.com">
+    <link rel="dns-prefetch" href="https://unpkg.com">
     <link rel="preconnect" href="https://consent.cookiefirst.com">
     <link rel="dns-prefetch" href="https://consent.cookiefirst.com">
+
     {{if .IsHome}}
-    <link rel="preload" as="image" href="/images/section-hero.png">
-    <link rel="preload" as="image" href="/images/nurture-grow.gif">
+    <link rel="preload" as="image" href="/images/home-intro-img.png">
+    <link rel="preload" as="image" href="/images/home-intro-bg.svg">
+    <link rel="preload" as="image" href="/images/assets-bg.jpg">
+    <link rel="preload" as="image" href="/images/secure-bg-mob.svg">
     {{ end }}
 
     {{ $sass := resources.Get "scss/app.scss" }}
