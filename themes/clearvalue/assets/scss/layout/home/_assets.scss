@@ -1,5 +1,6 @@
 section.assets-section {
   padding: 56px 0;
+  min-height: 300px;
 
   @media (min-width: map_get($grid-breakpoints, xl)) {
     padding-top: 80px;
