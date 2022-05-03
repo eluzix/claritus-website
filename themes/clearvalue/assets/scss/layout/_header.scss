@@ -55,7 +55,29 @@ header.header-section {
   &__item {
     color: $gray-100;
     font-weight: 500;
-    padding: 0 rem(20);
+    margin: 0 rem(20);
+    position: relative;
+
+    &:after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-top: 6px;
+      height: 2px;
+      background-color: #fff;
+      opacity: 0;
+    }
+
+    &.active {
+      color: #fff;
+
+      &:after {
+        opacity: 1;
+      }
+    }
   }
 }
 
@@ -230,6 +252,15 @@ header.header--fixed {
         bottom: 0;
         height: 1px;
         background-color: $gray-200;
+      }
+
+      &.active {
+        background-color: #e6fbf5;
+        color: $green-dark;
+
+        &:after {
+          display: none;
+        }
       }
     }
   }

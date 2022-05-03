@@ -381,6 +381,18 @@ window.addEventListener("load", function (event) {
   // newsletter
   initNewsletter();
 
+  // Set active link
+
+  const main_route = window.location.pathname.split("/")[1];
+
+  const links = document.querySelectorAll(`[data-link=${main_route}]`);
+
+  if (links.length) {
+    links.forEach((link) => {
+      link.classList.add("active");
+    });
+  }
+
   // Typed text
 
   function typeText(element) {

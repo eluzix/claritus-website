@@ -1,49 +1,49 @@
 <div class="container">
-	<div class="row no-gutters align-items-center">
-		<div class="col-auto col-xl-3">
-			<a href="/" class="header-logo">
-				<img src="/images/logo-white.png" alt="Claritus logo"
-					 class="header-logo__img header-logo__img--white d-none d-md-block">
-				<img src="/images/logo-dark.png" alt="Claritus logo"
-					 class="header-logo__img header-logo__img--dark d-none d-md-block">
+    <div class="row no-gutters align-items-center">
+        <div class="col-auto col-xl-3">
+            <a href="/" class="header-logo">
+                <img src="/images/logo-white.png" alt="Claritus logo"
+                     class="header-logo__img header-logo__img--white d-none d-md-block">
+                <img src="/images/logo-dark.png" alt="Claritus logo"
+                     class="header-logo__img header-logo__img--dark d-none d-md-block">
 
-				<img src="/images/header-logo-mobile.png" alt="Claritus logo"
-					 class="header-logo-mobile d-md-none">
-			</a>
-		</div>
+                <img src="/images/header-logo-mobile.png" alt="Claritus logo"
+                     class="header-logo-mobile d-md-none">
+            </a>
+        </div>
 
-		<div class="col-auto d-xl-none">
-			<button class="nav-btn d-flex align-items-center">
-				<div class="burger">
-					<div class="burger__line">
-						<span class="bar1"></span>
-						<span class="bar2"></span>
-						<span class="bar3"></span>
-					</div>
-				</div>
-			</button>
-		</div>
+        <div class="col-auto d-xl-none">
+            <button class="nav-btn d-flex align-items-center">
+                <div class="burger">
+                    <div class="burger__line">
+                        <span class="bar1"></span>
+                        <span class="bar2"></span>
+                        <span class="bar3"></span>
+                    </div>
+                </div>
+            </button>
+        </div>
 
-		<div class="col d-none d-xl-flex align-items-center justify-content-center">
-			<nav class="header-nav">
-				<a href="/about-us/" class="header-nav__item">About Us</a>
-				<a href="/security/" class="header-nav__item">Security</a>
-				<a href="/pricing/" class="header-nav__item">Pricing</a>
-				<a href="/blog/" class="header-nav__item">Blog</a>
-			</nav>
-		</div>
-		<div class="col col-xl-3">
-			<div class="header-auth">
-				<a href="{{ .Site.Params.appUrl }}/sign-in" class="header-auth__btn btn btn--transparent">
-					Sign in
-				</a>
+        <div class="col d-none d-xl-flex align-items-center justify-content-center">
+            <nav class="header-nav">
+                <a href="/about-us/" data-link="about-us" class="header-nav__item">About Us</a>
+                <a href="/security/" data-link="security" class="header-nav__item">Security</a>
+                <a href="/pricing/" data-link="pricing" class="header-nav__item">Pricing</a>
+                <a href="/blog/" data-link="blog" class="header-nav__item">Blog</a>
+            </nav>
+        </div>
+        <div class="col col-xl-3">
+            <div class="header-auth">
+                <a href="{{ .Site.Params.appUrl }}/sign-in" class="header-auth__btn btn btn--transparent">
+                    Sign in
+                </a>
 
-				<a href="{{ .Site.Params.appUrl }}/on-boarding" class="header-auth__btn btn btn--primary">
-					Sign Up
-				</a>
-			</div>
-		</div>
-	</div>
+                <a href="{{ .Site.Params.appUrl }}/on-boarding" class="header-auth__btn btn btn--primary">
+                    Sign Up
+                </a>
+            </div>
+        </div>
+    </div>
 </div>
 
 
