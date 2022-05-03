@@ -22,7 +22,7 @@ It may seem like a whole lot of unnecessary work on your part, having to enter d
     <li>Sort and Filter your returns, whether by single asset, asset type/group, or overall</li>
 </ul>
 
-<img src="/images/blog-best-practices.png">
+<img data-src="/images/blog-best-practices.png" class="lozad">
 {{< /rawhtml >}}
 
 Here are our ‘Best Practices’ guidelines for getting the most out of Claritus:
