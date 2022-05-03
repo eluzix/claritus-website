@@ -15,7 +15,8 @@ homeOverview:
 
 - icon: protect-icon
   title: Private & Secured
-  text: Bank-Level security <svg width="15" height="15"> <use xlink:href="#info-icon"></use> </svg>
+  text: Bank-Level security
+  popupText: Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto corporis harum maiores non perferendis repudiandae sequi suscipit tenetur, voluptatum.
 
 ##Financials institutes
 financialsTitle: Trusted by over 17k financial institutions
