@@ -371,21 +371,11 @@ window.addEventListener("load", function (event) {
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
 
-  //cookies
-  try {
-    utmCookie();
-  } catch (e) {
-    console.error("[utmCookie] error:", e);
-  }
-
-  // newsletter
-  initNewsletter();
-
   // Set active link
 
   const rout = window.location.pathname.split("/")[1];
 
-  const links = document.querySelectorAll(`[data-link=${rout}]`);
+  const links = document.querySelectorAll(`[data-link='${rout}]'`);
 
   if (links.length) {
     links.forEach((link) => {
@@ -433,4 +423,14 @@ window.addEventListener("load", function (event) {
   if (element) {
     typeText(element);
   }
+
+  //cookies
+  try {
+    utmCookie();
+  } catch (e) {
+    console.error("[utmCookie] error:", e);
+  }
+
+  // newsletter
+  initNewsletter();
 });
