@@ -3,8 +3,11 @@ section.typical-section {
 }
 
 .typical-header {
-  text-align: center;
   margin-bottom: 32px;
+
+  @media (min-width: map_get($grid-breakpoints, md)) {
+    text-align: center;
+  }
 
   &__logo {
     display: inline-flex;
@@ -25,9 +28,13 @@ section.typical-section {
   }
 
   &__title {
-    font-weight: 500;
-    font-size: 50px;
+    font-weight: 700;
+    font-size: 32px;
     color: $dark-9;
+
+    @media (min-width: map_get($grid-breakpoints, md)) {
+      font-size: 50px;
+    }
   }
 }
 
@@ -144,6 +151,74 @@ section.typical-section {
           font-size: 18px;
           line-height: 170%;
           color: $dark-7;
+        }
+      }
+    }
+  }
+}
+
+.how-work-content {
+  video,
+  img {
+    width: 100%;
+    height: auto;
+    margin-top: 24px;
+    margin-bottom: 64px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    @media (min-width: map_get($grid-breakpoints, md)) {
+      margin-bottom: 80px;
+    }
+  }
+
+  img {
+    border-radius: 24px;
+  }
+
+  p,
+  li {
+    margin-bottom: 12px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 170%;
+    color: $dark-7;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 16px 0;
+  }
+
+  h3 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 31px;
+  }
+
+  a {
+    color: $green-dark;
+  }
+
+  ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 0 0 20px 0;
+
+    li {
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      p {
+        &:last-child {
+          margin-bottom: 0;
         }
       }
     }

@@ -1,0 +1,27 @@
+{{ define "content" }}
+
+<header class="header-section header-section--white">
+    {{ partial "header.html" }}
+    {{ partial "header-nav-menu.html" }}
+</header>
+
+<section class="typical-section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-7">
+                <div class="typical-header">
+                    <h1 class="typical-header__title">{{ .Title }}</h1>
+                </div>
+
+                <div class="how-work-content {{ .Params.content_class }}">
+                    {{ .Content }}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{ partial "sign-up.html" }}
+
+{{ end }} {{ define "title" }}{{ .Title }}{{ end }}
+
