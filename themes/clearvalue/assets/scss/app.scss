@@ -17,12 +17,13 @@
 @import "base/layout";
 
 //UI
-@import "utilites";
+@import "ui";
 
 //Modules
 @import "modules/slider";
 @import "modules/sign-up";
 @import "modules/desclaimer";
+@import "modules/faq";
 
 //Layout
 @import "layout/header";
@@ -36,3 +37,4 @@
 @import "layout/contact-us";
 @import "layout/why";
 @import "layout/security";
+@import "layout/typical";

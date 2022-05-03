@@ -8,26 +8,20 @@ content_class: privacy
 header_class: white-header
 ---
 This privacy policy (”Privacy Policy”) governs how we, Claritus Financial Solutions, Inc.
-(”Claritus” ”we”, ”our” or ”us”) use Personal Information (defined below) that we collect,
-receive and store pertaining to you (”User”, ”you”) in connection with the following use cases:
+(”Claritus” ”we”, ”our” or ”us”) use Personal Information (defined below) that we collect, receive and store pertaining to you (”User”, ”you”) in connection with the following use cases:
 
-When you browse or visit our website, (https://claritus.io) ("Website")
+- When you browse or visit our website, (https://claritus.io) ("Website")
 
-When you make use of, or interact with our platform which is available through our Website and mobile
-application (”Platform”).
+- When you make use of, or interact with our platform which is available through our Website and mobile application (”Platform”).
 
-{{< rawhtml >}}<p>When you sign up for an account or login to our Platform <br/>
-When you make use of the platform for its intended use (e.g., to  view your financial information and to gain insights into such information)<br/>
-The Website together with the Platform is referred to herein as the ”Services”.</p>{{< /rawhtml >}}
+- When you sign up for an account or login to our Platform <br/> When you make use of the platform for its intended use (e.g., to  view your financial information and to gain insights into such information)<br/> he Website together with the Platform is referred to herein as the ”Services”.
 
-We greatly respect your privacy, which is why we make every effort to provide a platform that would live
-up to the highest of user privacy standards. Please read this Privacy Policy carefully, so you can fully
-understand our practices in relation to Personal Information.
+- We greatly respect your privacy, which is why we make every effort to provide a platform that would live up to the highest of user privacy standards. Please read this Privacy Policy carefully, so you can fully understand our practices in relation to Personal Information.
 
 
 {{< rawhtml >}}<div class="toc">{{< /rawhtml >}}
 
-#### Table of contents:
+## Table of contents:
 
 * [Introduction](/privacy#introduction)
 * [Terms of use](/privacy#terms-of-use)
@@ -81,7 +75,13 @@ we will notify you by posting a notice through our Services or by other means.
 
 4. ###### **WHAT INFORMATION WE COLLECT, WHY WE COLLECT IT, AND HOW IT IS USED**
 
+
+
     {{< rawhtml >}}
+    <video class="lozad" width="100%" autoplay muted> 
+        <source data-src="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4" type="video/mp4">
+    </video>
+
     <div class="table-wrapper">
         <table class="table">
             <thead>

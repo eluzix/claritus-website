@@ -20,7 +20,8 @@
                 </p>
 
                 <div class="d-flex justify-content-center">
-                    <a href="https://app.claritus.io/on-boarding" title="Start your free trial" class="btn btn--primary">
+                    <a href="https://app.claritus.io/on-boarding" title="Start your free trial"
+                       class="btn btn--primary">
                         Start your free trial
                     </a>
                 </div>
@@ -34,7 +35,7 @@
 
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-xl-6">
+            <div class="col-lg-8 col-xl-6">
                 <div class="tab-nav">
                     <button type="button" class="tab-nav__item" data-plan="monthly-plan">
                         <span class="label">Monthly</span>
@@ -81,10 +82,12 @@
                                             <use xlink:href="#check-icon"></use>
                                         </svg>
                                     </figure>
-                                    {{ . }}
+
+                                    <p class="tab-list-item__text">
+                                        {{ . }}
+                                    </p>
                                 </li>
                                 {{ end }}
-
 
                             </ul>
 
@@ -98,14 +101,13 @@
 
                     <div id="yearly-plan" class="tab tab--active">
                         <div class="tab-header">
+                            <h3 class="tab-header__title">
+                                {{ .Params.yearlyPlanTitle }}
+                            </h3>
 
                             <p class="tab-header__label">
                                 the most popular plan
                             </p>
-
-                            <h3 class="tab-header__title">
-                                {{ .Params.yearlyPlanTitle }}
-                            </h3>
                         </div>
 
                         <div class="tab-content">
@@ -128,7 +130,10 @@
                                             <use xlink:href="#check-icon"></use>
                                         </svg>
                                     </figure>
-                                    {{ . }}
+
+                                    <p class="tab-list-item__text">
+                                        {{ . }}
+                                    </p>
                                 </li>
                                 {{ end }}
 

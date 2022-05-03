@@ -4,7 +4,7 @@ date: 2020-04-27T09:30:01+03:00
 url: /terms
 content_class: privacy
 type: privacy
-content_class: privacy
+content_class: terms
 header_class: white-header
 ---
 Claritus Financial Solutions, Inc., ("Claritus", "we", "us" or "our") operates a platform,
