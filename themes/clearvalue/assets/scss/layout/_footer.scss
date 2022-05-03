@@ -4,24 +4,24 @@ footer.footer-section {
   position: relative;
 
   @media (min-width: map_get($grid-breakpoints, xl)) {
-    padding: rem(40) 100px 0;
+    padding: rem(40) rem(100) 0;
   }
 }
 
 .footer-logo {
   display: inline-flex;
-  margin-bottom: 12px;
+  margin-bottom: 0.75rem;
 
   img {
-    height: 24px;
+    height: 1.5rem;
     width: auto;
   }
 }
 
 .footer-logo-description {
-  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
   color: $gray-100;
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 .footer-social {
@@ -41,7 +41,7 @@ footer.footer-section {
 
 .footer-subscribe {
   width: 100%;
-  max-width: 450px;
+  max-width: rem(450);
   margin-bottom: 2rem;
 
   @media (min-width: map_get($grid-breakpoints, md)) {
@@ -61,7 +61,7 @@ footer.footer-section {
   }
 
   &__field {
-    margin-bottom: 12px;
+    margin-bottom: 0.75rem;
 
     input {
       border-color: $gray-500;
@@ -70,8 +70,8 @@ footer.footer-section {
   }
 
   &__btn {
-    padding: 7px 36px;
-    font-size: 14px;
+    padding: rem(7) rem(36);
+    font-size: 0.875rem;
     margin-top: 1rem;
   }
 
@@ -105,12 +105,12 @@ footer.footer-section {
     background-color: $dark-11;
     border: 1px solid $dark-7;
     border-radius: 4px;
-    margin-right: 12px;
+    margin-right: 0.75rem;
   }
 
   &__label {
     font-weight: 400;
-    font-size: 14px;
+    font-size: 0.875rem;
     line-height: 1.125rem;
     color: $gray-100;
   }
@@ -126,7 +126,7 @@ footer.footer-section {
 
   &__item {
     font-weight: 500;
-    font-size: 14px;
+    font-size: 0.875rem;
     color: $gray-100;
     margin-bottom: 1rem;
   }
@@ -141,7 +141,7 @@ footer.footer-section {
 
   &__text {
     padding: 1rem 0;
-    font-size: 14px;
+    font-size: 0.875rem;
     color: $gray-400;
     text-align: center;
     border-top: 1px solid $dark-7;
@@ -155,9 +155,9 @@ footer.footer-section {
   flex-direction: column;
   position: absolute;
   top: -80px;
-  right: 100px;
+  right: rem(100);
   font-weight: 400;
-  font-size: 14px;
+  font-size: 0.875rem;
   color: $gray-600;
 
   &__icon {
@@ -173,6 +173,6 @@ footer.footer-section {
   }
 
   @media (min-width: map_get($grid-breakpoints, xxl)) {
-    right: 300px;
+    right: rem(300);
   }
 }

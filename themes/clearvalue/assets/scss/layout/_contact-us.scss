@@ -1,12 +1,12 @@
 section.contact-section {
   min-height: 100vh;
-  padding: 120px 0 0;
+  padding: rem(120) 0 0;
   display: flex;
   align-items: center;
   justify-content: center;
 
   @media (min-width: map_get($grid-breakpoints, md)) {
-    padding: 120px 0;
+    padding: rem(120) 0;
   }
 }
 
@@ -25,10 +25,10 @@ section.contact-section {
   font-weight: 500;
   font-size: 2rem;
   color: #fff;
-  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
 
   @media (min-width: map_get($grid-breakpoints, md)) {
-    font-size: 50px;
+    font-size: rem(50);
     font-weight: 700;
     text-align: center;
   }
@@ -67,11 +67,11 @@ section.contact-section {
 }
 
 .recaptcha {
-  font-size: 10px;
+  font-size: rem(10);
   line-height: 13px;
   text-align: center;
   color: $gray-400;
-  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
 
   a {
     color: $dark-8;
@@ -100,8 +100,8 @@ section.contact-section {
 
 .submit-message-title {
   font-weight: 500;
-  font-size: 50px;
-  margin-bottom: 24px;
+  font-size: rem(50);
+  margin-bottom: 1.5rem;
   color: #fff;
 }
 

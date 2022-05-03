@@ -1,8 +1,8 @@
 section.benchmark-section {
-  padding-bottom: 56px;
+  padding-bottom: 3.5rem;
 
   @media (min-width: map_get($grid-breakpoints, xl)) {
-    padding: 100px 0;
+    padding: rem(100) 0;
   }
 }
 
@@ -14,7 +14,7 @@ section.benchmark-section {
   background-color: #17205b;
   border-radius: 1rem;
   padding-top: 400/720 * 100%;
-  margin-top: 48px;
+  margin-top: 3rem;
 
   @media (min-width: map_get($grid-breakpoints, xl)) {
     margin-top: 0;

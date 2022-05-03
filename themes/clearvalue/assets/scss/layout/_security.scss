@@ -1,6 +1,6 @@
 section.security-intro-section {
-  padding: 50px 0;
-  min-height: 524px;
+  padding: rem(50) 0;
+  min-height: rem(524);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -8,7 +8,7 @@ section.security-intro-section {
 
 .security-intro-title {
   font-weight: 500;
-  font-size: 50px;
+  font-size: rem(50);
   color: $dark-9;
   margin-bottom: 2rem;
 }
@@ -24,7 +24,7 @@ section.security-intro-section {
 .security-content-section {
   .container {
     .security-content-item {
-      padding: 100px 0;
+      padding: rem(100) 0;
       border-bottom: 1px solid $gray-200;
 
       &:last-child {
@@ -60,29 +60,28 @@ section.security-intro-section {
 
   h3 {
     font-weight: 500;
-    font-size: 24px;
+    font-size: 1.5rem;
     color: $dark-9;
-    margin-bottom: 12px;
+    margin-bottom: 0.75rem;
   }
 
   p {
-    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
     color: $dark-7;
   }
 }
 
-
 .security-disclaimer-section {
-  padding-bottom: 80px;
+  padding-bottom: rem(80);
 }
 
 .security-disclaimer {
   background-color: $purple-200;
   border-radius: 1rem;
-  padding: 56px 64px;
+  padding: 3.5rem 4rem;
   text-align: center;
   font-weight: 700;
-  font-size: 20px;
+  font-size: rem(20);
   line-height: 150%;
   color: $dark-7;
 }

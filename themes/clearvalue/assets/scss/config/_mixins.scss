@@ -1,4 +1,4 @@
 @mixin img-object($size, $posY, $posX) {
-	object-fit: $size;
-	object-position: $posY $posX;
+  object-fit: $size;
+  object-position: $posY $posX;
 }

@@ -1,9 +1,7 @@
-
-
 .faq {
   border: 1px solid #c6cbdd;
   background-color: #fff;
-  border-radius: 12px;
+  border-radius: 0.75rem;
   margin-bottom: 1.125rem;
 
   @media (min-width: map_get($grid-breakpoints, md)) {
@@ -11,7 +9,7 @@
   }
 
   &__question {
-    padding: 24px;
+    padding: 1.5rem;
     padding-right: 61px;
     width: 100%;
     text-align: left;
@@ -21,8 +19,8 @@
     transition: padding 0.3s ease;
 
     .faq-question-icon {
-      width: 14px;
-      height: 14px;
+      width: 0.875rem;
+      height: 0.875rem;
       display: inline-flex;
       position: absolute;
       right: 30px;
@@ -31,7 +29,7 @@
 
       &:before {
         content: "";
-        width: 14px;
+        width: 0.875rem;
         height: 2px;
         background-color: $gray-500;
         position: absolute;
@@ -42,7 +40,7 @@
 
       &:after {
         content: "";
-        width: 14px;
+        width: 0.875rem;
         height: 2px;
         background-color: $gray-500;
         position: absolute;
@@ -60,7 +58,7 @@
     transition: max-height 0.3s ease;
 
     &__answer {
-      padding: 0 24px 24px 24px;
+      padding: 0 1.5rem 1.5rem 1.5rem;
       max-width: 445px;
       font-size: 1rem;
     }

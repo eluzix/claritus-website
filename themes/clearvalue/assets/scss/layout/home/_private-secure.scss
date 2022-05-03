@@ -1,17 +1,17 @@
 section.secure-section {
   position: relative;
-  padding-top: 50px;
+  padding-top: rem(50);
 
   @media (min-width: map_get($grid-breakpoints, lg)) {
-    padding: 70px 0;
+    padding: rem(70) 0;
   }
 
   @media (min-width: map_get($grid-breakpoints, xl)) {
-    padding: 165px 0;
+    padding: rem(165) 0;
   }
 
   @media (min-width: map_get($grid-breakpoints, xxl)) {
-    padding: 200px 0;
+    padding: rem(200) 0;
   }
 }
 

@@ -1,23 +1,16 @@
 //Intro section
 
 section.about-intro-section {
-  height: 100vh;
   padding-top: rem(140);
   background-color: $dark-11;
-  min-height: 600px;
-
-  @media (min-width: map_get($grid-breakpoints, md)) {
-    max-height: 750px;
-    min-height: 0;
-  }
+  min-height: rem(600);
 
   @media (min-width: map_get($grid-breakpoints, xl)) {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 144px 0;
-    max-height: 680px;
-    min-height: 0;
+    padding: rem(144) 0;
+    min-height: rem(680);
   }
 }
 
@@ -35,7 +28,7 @@ section.about-intro-section {
   margin-bottom: 1.5rem;
 
   @media (min-width: map_get($grid-breakpoints, md)) {
-    font-size: 50px;
+    font-size: rem(50);
     line-height: 130%;
     text-align: left;
   }
@@ -48,12 +41,12 @@ section.about-intro-section {
 //About content
 
 section.about-content-section {
-  padding-top: 48px;
+  padding-top: 3rem;
   padding-bottom: rem(40);
 
   @media (min-width: map_get($grid-breakpoints, xl)) {
-    padding-top: 120px;
-    padding-bottom: 100px;
+    padding-top: rem(120);
+    padding-bottom: rem(100);
   }
 }
 
@@ -64,7 +57,7 @@ section.about-content-section {
   line-height: 170%;
 
   p {
-    margin-bottom: 20px;
+    margin-bottom: rem(20);
   }
 }
 
@@ -75,7 +68,7 @@ section.team-section {
   background-color: $purple-100;
 
   @media (min-width: map_get($grid-breakpoints, xl)) {
-    padding: 100px 0;
+    padding: rem(100) 0;
   }
 }
 
@@ -102,14 +95,14 @@ section.team-section {
   @media (min-width: map_get($grid-breakpoints, md)) {
     text-align: center;
     margin-bottom: 2rem;
-    font-size: 50px;
+    font-size: rem(50);
   }
 }
 
 .team-text {
   @media (min-width: map_get($grid-breakpoints, xl)) {
     column-count: 2;
-    column-gap: 64px;
+    column-gap: 4rem;
   }
 }
 
@@ -123,7 +116,7 @@ section.team-section {
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
-    margin-top: 56px;
+    margin-top: 3.5rem;
   }
 
   @media (min-width: map_get($grid-breakpoints, xl)) {
@@ -139,12 +132,12 @@ section.team-section {
     }
 
     @media (min-width: map_get($grid-breakpoints, xl)) {
-      margin: 0 60px;
+      margin: 0 rem(60);
     }
 
     &__photo {
-      width: 160px;
-      height: 160px;
+      width: rem(160);
+      height: rem(160);
       background-color: #fff;
       border: 1px solid $gray-100;
       border-radius: 50%;
@@ -162,12 +155,12 @@ section.team-section {
       font-weight: 700;
       font-size: 1.125rem;
       color: $dark-9;
-      margin-bottom: 12px;
+      margin-bottom: 0.75rem;
     }
 
     &__position {
       font-size: 1rem;
-      margin-bottom: 8px;
+      margin-bottom: 0.5rem;
     }
 
     &__linkedin {
@@ -184,7 +177,7 @@ section.our-story-section {
   padding: rem(40) 0;
 
   @media (min-width: map_get($grid-breakpoints, md)) {
-    padding: 100px 0;
+    padding: rem(100) 0;
   }
 }
 
@@ -194,7 +187,7 @@ section.our-story-section {
   margin-bottom: 1.5rem;
 
   @media (min-width: map_get($grid-breakpoints, md)) {
-    font-size: 50px;
+    font-size: rem(50);
     text-align: center;
     margin-bottom: 2rem;
   }
@@ -208,6 +201,6 @@ section.our-story-section {
 
   @media (min-width: map_get($grid-breakpoints, xl)) {
     column-count: 2;
-    column-gap: 64px;
+    column-gap: 4rem;
   }
 }

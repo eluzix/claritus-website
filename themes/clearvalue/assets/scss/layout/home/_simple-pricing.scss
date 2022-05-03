@@ -1,16 +1,16 @@
 section.simple-pricing-section {
-  padding-top: 48px;
+  padding-top: 3rem;
 
   @media (min-width: map_get($grid-breakpoints, md)) {
-    padding-top: 80px;
+    padding-top: rem(80);
   }
 
   @media (min-width: map_get($grid-breakpoints, lg)) {
-    padding: 100px 0;
+    padding: rem(100) 0;
   }
 
   @media (min-width: map_get($grid-breakpoints, xl)) {
-    padding: 210px 0;
+    padding: rem(210) 0;
   }
 }
 
@@ -18,11 +18,11 @@ section.simple-pricing-section {
   width: 100%;
 
   @media (min-width: map_get($grid-breakpoints, lg)) {
-    max-width: 400px;
+    max-width: rem(400);
   }
 
   @media (min-width: map_get($grid-breakpoints, xl)) {
-    max-width: 580px;
+    max-width: rem(580);
   }
 
   &__title {
@@ -38,7 +38,7 @@ section.simple-pricing-section {
     align-items: center;
 
     .btn {
-      padding: 14px 1rem;
+      padding: 0.875rem 1rem;
       margin-right: 1rem;
     }
   }

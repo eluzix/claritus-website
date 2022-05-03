@@ -20,7 +20,12 @@
 }
 
 %text-gradient {
-  background-image: -webkit-linear-gradient(90.36deg, #46DD94 -0.66%, #23D3AB 101.59%, #17D6B3 101.59%);
+  background-image: -webkit-linear-gradient(
+    90.36deg,
+    #46dd94 -0.66%,
+    #23d3ab 101.59%,
+    #17d6b3 101.59%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

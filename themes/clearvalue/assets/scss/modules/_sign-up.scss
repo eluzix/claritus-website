@@ -1,13 +1,13 @@
 section.sign-up-section {
-  padding: 50px 0;
+  padding: rem(50) 0;
 
   @media (min-width: map_get($grid-breakpoints, md)) {
-    padding-bottom: 80px;
+    padding-bottom: rem(80);
   }
 
   @media (min-width: map_get($grid-breakpoints, xl)) {
-    padding-top: 80px;
-    padding-bottom: 100px;
+    padding-top: rem(80);
+    padding-bottom: rem(100);
   }
 }
 
@@ -20,28 +20,28 @@ section.sign-up-section {
   text-align: center;
 
   @media (min-width: map_get($grid-breakpoints, md)) {
-    padding: rem(40) 48px;
+    padding: rem(40) 3rem;
   }
 
   @media (min-width: map_get($grid-breakpoints, xl)) {
-    padding: rem(40) 100px;
+    padding: rem(40) rem(100);
   }
 
   &__title {
-    font-size: 24px;
+    font-size: 1.5rem;
     color: #ffffff;
     margin-bottom: 1rem;
 
     @media (min-width: map_get($grid-breakpoints, xl)) {
       font-size: 2rem;
       line-height: 42px;
-      margin-bottom: 24px;
+      margin-bottom: 1.5rem;
     }
   }
 
   &__text {
     color: $gray-200;
-    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
 
     @media (min-width: map_get($grid-breakpoints, xl)) {
       margin-bottom: 2rem;

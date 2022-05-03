@@ -1,12 +1,12 @@
 section.blog-intro-section {
-  padding-top: 64px;
+  padding-top: 4rem;
 
   @media (min-width: map_get($grid-breakpoints, xl)) {
     padding: rem(40) 0;
   }
 
   @media (min-width: map_get($grid-breakpoints, xxl)) {
-    padding: 160px 0;
+    padding: rem(160) 0;
   }
 }
 
@@ -17,7 +17,7 @@ section.blog-intro-section {
   margin-bottom: 1.5rem;
 
   @media (min-width: map_get($grid-breakpoints, md)) {
-    font-size: 50px;
+    font-size: rem(50);
     line-height: 130%;
     text-align: center;
   }
@@ -70,15 +70,15 @@ section.blog-intro-section {
 //Blog articles
 
 section.blog-articles-section {
-  padding: 48px 0 20px;
+  padding: 3rem 0 rem(20);
 
   @media (min-width: map_get($grid-breakpoints, xl)) {
-    padding: 120px 0 60px;
+    padding: rem(120) 0 rem(60);
   }
 }
 
 .post-col {
-  padding: 0 20px;
+  padding: 0 rem(20);
 
   @media (min-width: map_get($grid-breakpoints, xl)) {
     padding: 0 2rem;
@@ -86,7 +86,7 @@ section.blog-articles-section {
 }
 
 .post {
-  margin-bottom: 64px;
+  margin-bottom: 4rem;
 
   &__img {
     display: inline-flex;
