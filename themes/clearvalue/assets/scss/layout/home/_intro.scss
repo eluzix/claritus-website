@@ -216,3 +216,28 @@ section.home-intro-section {
     }
   }
 }
+
+.typed-text {
+  color: $green-dark;
+  position: relative;
+
+  &:after {
+    content: "";
+    position: absolute;
+    right: -5px;
+    top: 0;
+    height: 100%;
+    width: 2px;
+    background-color: $green-dark;
+    //animation: flashing 1s linear infinite;
+  }
+}
+
+@keyframes flashing {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

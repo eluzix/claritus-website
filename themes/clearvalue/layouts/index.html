@@ -17,7 +17,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-xl-6">
-                    <h1 class="home-intro__title">{{ .Title | safeHTML }}</h1>
+                    <h1 class="home-intro__title">
+                        {{ .Title | safeHTML }}
+                        <span class="typed-text" data-typed="Simply"></span>
+                    </h1>
 
                     <p class="home-intro__text">{{ .Params.heroText | safeHTML }}</p>
 

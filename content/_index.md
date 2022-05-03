@@ -1,6 +1,6 @@
 ---
 ## Home intro
-title: Keep track of your wealth, Simply
+title: Keep track of your wealth, 
 
 date: 2020-01-01T09:30:01+03:00
 

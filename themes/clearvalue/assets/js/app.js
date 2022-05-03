@@ -380,5 +380,45 @@ window.addEventListener("load", function (event) {
 
   // newsletter
   initNewsletter();
-});
 
+  // Typed text
+
+  function typeText(element) {
+    let txt = element.dataset.typed;
+    let iteratorIncrement = 0;
+    let iteratorDecrement = txt.length;
+    let speed = 300;
+
+    typeWriterIncrement();
+
+    function typeWriterIncrement() {
+      if (iteratorIncrement < txt.length) {
+        element.innerHTML += txt.charAt(iteratorIncrement);
+        iteratorIncrement++;
+        setTimeout(typeWriterIncrement, speed);
+      } else {
+        setTimeout(() => {
+          iteratorDecrement = txt.length;
+          typeWriterDecrement();
+        }, 1500);
+      }
+    }
+
+    function typeWriterDecrement() {
+      if (iteratorDecrement >= 0) {
+        element.innerHTML = txt.slice(0, iteratorDecrement);
+        iteratorDecrement--;
+        setTimeout(typeWriterDecrement, speed * 0.5);
+      } else {
+        iteratorIncrement = 0;
+        typeWriterIncrement();
+      }
+    }
+  }
+
+  const element = document.querySelector(".typed-text");
+
+  if (element) {
+    typeText(element);
+  }
+});
