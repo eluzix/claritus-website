@@ -35,7 +35,7 @@ h2 {
 
   @media (min-width: map_get($grid-breakpoints, xl)) {
     font-size: rem(40);
-    line-height: 52px;
+    line-height: rem(52);
   }
 }
 

@@ -71,7 +71,7 @@ section.post-intro-section {
 
   svg {
     transform: rotate(180deg);
-    margin-right: 13px;
+    margin-right: rem(13);
     fill: $gray-500;
   }
 }

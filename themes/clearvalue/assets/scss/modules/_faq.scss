@@ -10,7 +10,7 @@
 
   &__question {
     padding: 1.5rem;
-    padding-right: 61px;
+    padding-right: rem(61);
     width: 100%;
     text-align: left;
     font-weight: 500;
@@ -23,7 +23,7 @@
       height: 0.875rem;
       display: inline-flex;
       position: absolute;
-      right: 30px;
+      right: rem(30);
       top: 50%;
       transform: translateY(-50%);
 
@@ -59,7 +59,7 @@
 
     &__answer {
       padding: 0 1.5rem 1.5rem 1.5rem;
-      max-width: 445px;
+      max-width: rem(445);
       font-size: 1rem;
     }
   }
@@ -75,6 +75,6 @@
   }
 
   .faq-content {
-    max-height: 300px;
+    max-height: rem(300);
   }
 }

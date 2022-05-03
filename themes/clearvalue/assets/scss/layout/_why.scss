@@ -111,7 +111,7 @@ section.why-content-section {
   ul {
     li {
       margin-bottom: 0.75rem;
-      padding-left: 15px;
+      padding-left: rem(15);
       position: relative;
       font-weight: 400;
       font-size: 1.125rem;
@@ -121,9 +121,9 @@ section.why-content-section {
         content: "";
         position: absolute;
         left: 0;
-        top: 13px;
-        width: 6px;
-        height: 6px;
+        top: rem(13);
+        width: rem(6);
+        height: rem(6);
         border-radius: 50%;
         background-color: $dark-9;
       }

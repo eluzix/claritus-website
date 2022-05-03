@@ -135,14 +135,14 @@ section.pricing-section {
   bottom: 100%;
   font-weight: 500;
   font-size: 1.125rem;
-  line-height: 23px;
+  line-height: rem(23);
   color: #00b08b;
   margin-bottom: rem(10);
   opacity: 0;
   transition: all 0.5s ease;
 
   svg {
-    margin-left: 5px;
+    margin-left: rem(5);
     fill: #00b08b;
     transform: rotate(-59.71deg);
   }
@@ -170,7 +170,7 @@ section.pricing-section {
     &__title {
       font-weight: 700;
       font-size: 2rem;
-      line-height: 42px;
+      line-height: rem(42);
       color: $dark-9;
     }
 
@@ -178,7 +178,7 @@ section.pricing-section {
       padding: 0.5rem 1rem;
       font-weight: 500;
       font-size: 1rem;
-      line-height: 21px;
+      line-height: rem(21);
       color: #fff;
       background-color: #6266c6;
       margin-top: 0.5rem;
@@ -216,7 +216,7 @@ section.pricing-section {
 
   .billing {
     font-size: 1rem;
-    line-height: 21px;
+    line-height: rem(21);
     text-align: center;
     color: $gray-600;
     margin-bottom: 0.5rem;
@@ -225,7 +225,7 @@ section.pricing-section {
   .action {
     font-weight: 700;
     font-size: 1rem;
-    line-height: 21px;
+    line-height: rem(21);
     text-align: center;
     color: #6266c6;
   }
@@ -238,7 +238,7 @@ section.pricing-section {
     display: flex;
     margin-bottom: 0.75rem;
 
-    padding: 5px 0;
+    padding: rem(5) 0;
 
     &__icon {
       display: inline-flex;
@@ -249,7 +249,7 @@ section.pricing-section {
       border-radius: 50%;
       background-color: $green;
       margin-right: 0.5rem;
-      margin-top: 5px;
+      margin-top: rem(5);
 
       svg {
         fill: #fff;
@@ -280,6 +280,6 @@ section.pricing-section {
   @media (min-width: map_get($grid-breakpoints, md)) {
     font-weight: 700;
     font-size: rem(40);
-    line-height: 52px;
+    line-height: rem(52);
   }
 }

@@ -45,7 +45,7 @@ https://flickity.metafizzy.co
 }
 .flickity-button:focus {
   outline: 0;
-  box-shadow: 0 0 0 5px #19f;
+  box-shadow: 0 0 0 rem(5) #19f;
 }
 .flickity-button:active {
   opacity: 0.6;

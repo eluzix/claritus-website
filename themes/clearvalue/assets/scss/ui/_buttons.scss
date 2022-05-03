@@ -5,11 +5,11 @@
   overflow: hidden;
   position: relative;
   color: #fff;
-  padding: 11px 1rem;
+  padding: rem(11) 1rem;
   border-radius: 0.5rem;
   font-weight: 500;
   font-size: 0.875rem;
-  line-height: 21px;
+  line-height: rem(21);
 
   @media (min-width: map_get($grid-breakpoints, xl)) {
     padding: 1.125rem 2rem;
@@ -39,7 +39,7 @@
   }
 
   &--small {
-    padding: 11px 1rem;
+    padding: rem(11) 1rem;
   }
 
   &--primary {

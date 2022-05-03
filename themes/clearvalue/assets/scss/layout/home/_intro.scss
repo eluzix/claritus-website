@@ -125,8 +125,8 @@ section.home-intro-section {
     }
 
     &__icon {
-      width: 28px;
-      height: 28px;
+      width: rem(28);
+      height: rem(28);
       display: inline-flex;
       align-items: center;
       justify-content: center;
@@ -145,7 +145,7 @@ section.home-intro-section {
       &__title {
         font-weight: 700;
         font-size: rem(20);
-        line-height: 26px;
+        line-height: rem(26);
         color: #fff;
       }
 

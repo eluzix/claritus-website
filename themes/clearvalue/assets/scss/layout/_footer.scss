@@ -35,7 +35,7 @@ footer.footer-section {
 
   &__item {
     fill: $gray-400;
-    margin-right: 25px;
+    margin-right: rem(25);
   }
 }
 
@@ -55,7 +55,7 @@ footer.footer-section {
   &__title {
     font-weight: 700;
     font-size: 1rem;
-    line-height: 21px;
+    line-height: rem(21);
     color: $dark-1;
     margin-bottom: 1rem;
   }
@@ -83,7 +83,7 @@ footer.footer-section {
     &.active {
       display: block;
       font-size: 1rem;
-      line-height: 21px;
+      line-height: rem(21);
       color: $dark-1;
     }
   }
@@ -100,8 +100,8 @@ footer.footer-section {
   }
 
   &__field {
-    width: 22px;
-    height: 22px;
+    width: rem(22);
+    height: rem(22);
     background-color: $dark-11;
     border: 1px solid $dark-7;
     border-radius: 4px;

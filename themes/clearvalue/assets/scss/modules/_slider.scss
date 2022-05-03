@@ -43,7 +43,7 @@
 .feedback {
   background-color: #fff;
   border-radius: 0.75rem;
-  padding: 2rem 26px;
+  padding: 2rem rem(26);
   min-height: 100%;
   display: flex;
   flex-direction: column;
@@ -59,7 +59,7 @@
     flex-grow: 1;
 
     @media (min-width: map_get($grid-breakpoints, md)) {
-      font-size: 22px;
+      font-size: rem(22);
     }
   }
 

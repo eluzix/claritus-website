@@ -33,7 +33,7 @@
       span.bar1 {
         bottom: 50%;
         transform: translateY(50%);
-        margin-bottom: 5px;
+        margin-bottom: rem(5);
       }
 
       span.bar2 {
@@ -44,7 +44,7 @@
       span.bar3 {
         top: 50%;
         transform: translateY(-50%);
-        margin-top: 5px;
+        margin-top: rem(5);
       }
     }
   }

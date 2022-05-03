@@ -98,7 +98,7 @@ section.typical-section {
       h6 {
         font-weight: 500;
         font-size: 2rem;
-        line-height: 42px;
+        line-height: rem(42);
         margin-bottom: 2rem;
       }
 
@@ -199,7 +199,7 @@ section.typical-section {
   h3 {
     font-weight: 500;
     font-size: 1.5rem;
-    line-height: 31px;
+    line-height: rem(31);
   }
 
   a {
