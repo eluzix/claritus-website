@@ -383,9 +383,9 @@ window.addEventListener("load", function (event) {
 
   // Set active link
 
-  const main_route = window.location.pathname.split("/")[1];
+  const rout = window.location.pathname.split("/")[1];
 
-  const links = document.querySelectorAll(`[data-link=${main_route}]`);
+  const links = document.querySelectorAll(`[data-link=${rout}]`);
 
   if (links.length) {
     links.forEach((link) => {

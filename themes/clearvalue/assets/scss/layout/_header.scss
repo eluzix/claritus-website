@@ -167,6 +167,21 @@ header.header--fixed {
   }
 }
 
+header.header--fixed,
+header.header-section--white {
+  .header-nav {
+    &__item {
+      &.active {
+        color: $dark-11;
+
+        &:after {
+          background-color: $dark-11;
+        }
+      }
+    }
+  }
+}
+
 //header nav menu
 .header-nav-menu {
   position: fixed;
