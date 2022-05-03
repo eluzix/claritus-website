@@ -90,26 +90,55 @@ section.post-content-section {
 }
 
 .post-content {
-  p {
+  p, li {
     margin-bottom: rem(20);
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 170%;
     color: $dark-7;
 
     a {
       color: $green;
     }
   }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-top: 2rem;
+    margin-bottom: rem(20);
+  }
 
   h3 {
-    margin-bottom: rem(20);
     font-weight: 500;
     font-size: 1.5rem;
-    line-height: 31px;
     color: $dark-9;
   }
 
-  img {
+  img, video {
     width: 100%;
     border-radius: 1.5rem;
     margin-bottom: 1.5rem;
+  }
+
+  ul, ol {
+    list-style-type: disc;
+    padding: 0 0 0 rem(20);
+    margin: 0 0 rem(20) 0;
+
+    li {
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      p {
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
   }
 }
