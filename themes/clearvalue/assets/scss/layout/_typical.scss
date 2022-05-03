@@ -3,7 +3,7 @@ section.typical-section {
 }
 
 .typical-header {
-  margin-bottom: 32px;
+  margin-bottom: 2rem;
 
   @media (min-width: map_get($grid-breakpoints, md)) {
     text-align: center;
@@ -17,8 +17,8 @@ section.typical-section {
     height: 72px;
     background-color: #fff;
     border-radius: 50%;
-    box-shadow: 0 0 32px rgba(203, 207, 227, 0.6);
-    margin-bottom: 40px;
+    box-shadow: 0 0 2rem rgba(203, 207, 227, 0.6);
+    margin-bottom: rem(40);
 
     img {
       width: 38px;
@@ -29,7 +29,7 @@ section.typical-section {
 
   &__title {
     font-weight: 700;
-    font-size: 32px;
+    font-size: 2rem;
     color: $dark-9;
 
     @media (min-width: map_get($grid-breakpoints, md)) {
@@ -43,7 +43,7 @@ section.typical-section {
   li {
     margin-bottom: 12px;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 170%;
     color: $dark-7;
   }
@@ -54,7 +54,7 @@ section.typical-section {
   h4,
   h5,
   h6 {
-    margin: 16px 0;
+    margin: 1rem 0;
   }
 
   a {
@@ -92,14 +92,14 @@ section.typical-section {
 
       &::marker {
         font-weight: 500;
-        font-size: 32px;
+        font-size: 2rem;
       }
 
       h6 {
         font-weight: 500;
-        font-size: 32px;
+        font-size: 2rem;
         line-height: 42px;
-        margin-bottom: 32px;
+        margin-bottom: 2rem;
       }
 
       p {
@@ -113,12 +113,12 @@ section.typical-section {
         li {
           margin-bottom: 12px;
           font-weight: 400;
-          font-size: 18px;
+          font-size: 1.125rem;
           line-height: 170%;
           color: $dark-7;
 
           &::marker {
-            font-size: 18px;
+            font-size: 1.125rem;
             font-weight: 400;
           }
         }
@@ -130,16 +130,16 @@ section.typical-section {
   img {
     width: 100%;
     height: auto;
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
   }
 
   &.terms {
     ol {
-      margin: 16px 0 16px 0;
+      margin: 1rem 0 1rem 0;
       padding: 0 0 0 20px;
 
       li {
-        margin-bottom: 16px;
+        margin-bottom: 1rem;
 
         &:last-child {
           margin-bottom: 0;
@@ -148,7 +148,7 @@ section.typical-section {
         &::marker {
           margin-bottom: 12px;
           font-weight: 400;
-          font-size: 18px;
+          font-size: 1.125rem;
           line-height: 170%;
           color: $dark-7;
         }
@@ -182,7 +182,7 @@ section.typical-section {
   li {
     margin-bottom: 12px;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 170%;
     color: $dark-7;
   }
@@ -193,7 +193,7 @@ section.typical-section {
   h4,
   h5,
   h6 {
-    margin: 16px 0;
+    margin: 1rem 0;
   }
 
   h3 {

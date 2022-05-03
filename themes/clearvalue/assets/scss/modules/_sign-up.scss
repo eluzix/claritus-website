@@ -12,28 +12,28 @@ section.sign-up-section {
 }
 
 .sign-up {
-  padding: 16px;
+  padding: 1rem;
   background-size: cover;
   background-position: center center;
-  box-shadow: 0 6px 40px rgba(152, 161, 220, 0.12);
-  border-radius: 16px;
+  box-shadow: 0 6px rem(40) rgba(152, 161, 220, 0.12);
+  border-radius: 1rem;
   text-align: center;
 
   @media (min-width: map_get($grid-breakpoints, md)) {
-    padding: 40px 48px;
+    padding: rem(40) 48px;
   }
 
   @media (min-width: map_get($grid-breakpoints, xl)) {
-    padding: 40px 100px;
+    padding: rem(40) 100px;
   }
 
   &__title {
     font-size: 24px;
     color: #ffffff;
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
 
     @media (min-width: map_get($grid-breakpoints, xl)) {
-      font-size: 32px;
+      font-size: 2rem;
       line-height: 42px;
       margin-bottom: 24px;
     }
@@ -44,11 +44,11 @@ section.sign-up-section {
     margin-bottom: 24px;
 
     @media (min-width: map_get($grid-breakpoints, xl)) {
-      margin-bottom: 32px;
+      margin-bottom: 2rem;
     }
   }
 
   &__btn {
-    padding: 11px 16px;
+    padding: 11px 1rem;
   }
 }

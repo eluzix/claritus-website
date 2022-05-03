@@ -26,11 +26,11 @@ section.simple-pricing-section {
   }
 
   &__title {
-    margin-bottom: 32px;
+    margin-bottom: 2rem;
   }
 
   &__text {
-    margin-bottom: 40px;
+    margin-bottom: rem(40);
   }
 
   &__btns {
@@ -38,8 +38,8 @@ section.simple-pricing-section {
     align-items: center;
 
     .btn {
-      padding: 14px 16px;
-      margin-right: 16px;
+      padding: 14px 1rem;
+      margin-right: 1rem;
     }
   }
 }

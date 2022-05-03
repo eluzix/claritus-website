@@ -65,10 +65,10 @@ header.header-section {
   justify-content: flex-end;
 
   &__btn {
-    padding: 7px 16px;
+    padding: 7px 1rem;
     font-size: 14px;
-    line-height: 18px;
-    margin-left: 16px;
+    line-height: 1.125rem;
+    margin-left: 1rem;
   }
 }
 
@@ -112,7 +112,7 @@ header.header--fixed {
   box-shadow: 0 12px 24px rgba(5, 13, 66, 0.12);
 
   @media (min-width: map_get($grid-breakpoints, md)) {
-    padding: 16px 0;
+    padding: 1rem 0;
   }
 
   &:before {
@@ -197,8 +197,8 @@ header.header--fixed {
     }
 
     &__close {
-      width: 18px;
-      height: 18px;
+      width: 1.125rem;
+      height: 1.125rem;
       display: inline-flex;
       align-items: center;
       justify-content: center;
@@ -218,7 +218,7 @@ header.header--fixed {
     &__item {
       padding: 12px;
       font-weight: 500;
-      font-size: 16px;
+      font-size: 1rem;
       color: #1a1f43;
       position: relative;
 
@@ -238,7 +238,7 @@ header.header--fixed {
     margin-top: auto;
     display: flex;
     flex-direction: column;
-    padding: 16px 32px;
+    padding: 1rem 2rem;
 
     &__btn {
       padding: 7px;

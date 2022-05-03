@@ -33,17 +33,21 @@ section.assets-section {
 }
 
 .assets-title {
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
 
   @media (min-width: map_get($grid-breakpoints, md)) {
-    margin-bottom: 32px;
+    margin-bottom: 2rem;
+  }
+
+  @media (min-width: map_get($grid-breakpoints, xl)) {
+    margin-bottom: rem(40);
   }
 }
 
 .assets-text {
-  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
 
   @media (min-width: map_get($grid-breakpoints, md)) {
-    margin-bottom: 40px;
+    margin-bottom: rem(40);
   }
 }

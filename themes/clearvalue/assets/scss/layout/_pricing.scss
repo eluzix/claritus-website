@@ -8,7 +8,7 @@ section.pricing-intro-section {
 
 .pricing-title {
   font-weight: 700;
-  font-size: 32px;
+  font-size: 2rem;
   color: $dark-9;
   margin-bottom: 24px;
 
@@ -21,7 +21,7 @@ section.pricing-intro-section {
 }
 
 .pricing-text {
-  margin-bottom: 40px;
+  margin-bottom: rem(40);
   color: $gray-600;
 
   @media (min-width: map_get($grid-breakpoints, xl)) {
@@ -55,7 +55,7 @@ section.pricing-section {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 40px;
+  margin-bottom: rem(40);
 
   &__item {
     display: inline-flex;
@@ -97,18 +97,18 @@ section.pricing-section {
     }
 
     &:first-child {
-      border-radius: 40px 0 0 40px;
+      border-radius: rem(40) 0 0 rem(40);
 
       &:before {
-        border-radius: 40px 0 0 40px;
+        border-radius: rem(40) 0 0 rem(40);
       }
     }
 
     &:last-child {
-      border-radius: 0 40px 40px 0;
+      border-radius: 0 rem(40) rem(40) 0;
 
       &:before {
-        border-radius: 0 40px 40px 0;
+        border-radius: 0 rem(40) rem(40) 0;
       }
     }
 
@@ -134,7 +134,7 @@ section.pricing-section {
   left: 60%;
   bottom: 100%;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 23px;
   color: #00b08b;
   margin-bottom: 10px;
@@ -150,9 +150,9 @@ section.pricing-section {
 
 .tab {
   background-color: #fff;
-  box-shadow: 0 16px 64px rgba(126, 130, 158, 0.16);
+  box-shadow: 0 1rem 64px rgba(126, 130, 158, 0.16);
   border: 1px solid $gray-200;
-  border-radius: 16px;
+  border-radius: 1rem;
   display: none;
 
   &--active {
@@ -175,9 +175,9 @@ section.pricing-section {
     }
 
     &__label {
-      padding: 8px 16px;
+      padding: 8px 1rem;
       font-weight: 500;
-      font-size: 16px;
+      font-size: 1rem;
       line-height: 21px;
       color: #fff;
       background-color: #6266c6;
@@ -188,10 +188,10 @@ section.pricing-section {
 }
 
 .tab-content {
-  padding: 40px 16px;
+  padding: rem(40) 1rem;
 
   @media (min-width: map_get($grid-breakpoints, md)) {
-    padding: 40px 50px;
+    padding: rem(40) 50px;
   }
 
   .price {
@@ -208,14 +208,14 @@ section.pricing-section {
 
     &__period {
       font-weight: 400;
-      font-size: 16px;
+      font-size: 1rem;
       color: $gray-400;
       margin-bottom: 12px;
     }
   }
 
   .billing {
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 21px;
     text-align: center;
     color: $gray-600;
@@ -224,7 +224,7 @@ section.pricing-section {
 
   .action {
     font-weight: 700;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 21px;
     text-align: center;
     color: #6266c6;
@@ -232,7 +232,7 @@ section.pricing-section {
 }
 
 .tab-content-list {
-  margin-top: 40px;
+  margin-top: rem(40);
 
   .tab-list-item {
     display: flex;
@@ -257,7 +257,7 @@ section.pricing-section {
     }
 
     &__text {
-      font-size: 18px;
+      font-size: 1.125rem;
       color: $gray-600;
       flex: 1;
       line-height: 170%;
@@ -279,7 +279,7 @@ section.pricing-section {
 
   @media (min-width: map_get($grid-breakpoints, md)) {
     font-weight: 700;
-    font-size: 40px;
+    font-size: rem(40);
     line-height: 52px;
   }
 }

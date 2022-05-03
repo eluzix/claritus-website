@@ -12,10 +12,10 @@ section.history-section {
 }
 
 .history-title {
-  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
 
   @media (min-width: map_get($grid-breakpoints, md)) {
-    margin-bottom: 32px;
+    margin-bottom: 2rem;
   }
 }
 
@@ -25,7 +25,7 @@ section.history-section {
 
 .history-img {
   background-color: #17205b;
-  border-radius: 16px;
+  border-radius: 1rem;
   padding-top: 400/720 * 100%;
   width: 100%;
 }

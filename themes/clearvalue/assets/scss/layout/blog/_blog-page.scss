@@ -2,7 +2,7 @@ section.blog-intro-section {
   padding-top: 64px;
 
   @media (min-width: map_get($grid-breakpoints, xl)) {
-    padding: 40px 0;
+    padding: rem(40) 0;
   }
 
   @media (min-width: map_get($grid-breakpoints, xxl)) {
@@ -12,9 +12,9 @@ section.blog-intro-section {
 
 .blog-intro-title {
   font-weight: 500;
-  font-size: 32px;
+  font-size: 2rem;
   color: $dark-9;
-  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
 
   @media (min-width: map_get($grid-breakpoints, md)) {
     font-size: 50px;
@@ -28,13 +28,13 @@ section.blog-intro-section {
 }
 
 .blog-intro-description {
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 170%;
   color: $gray-600;
 
   @media (min-width: map_get($grid-breakpoints, md)) {
     text-align: center;
-    font-size: 18px;
+    font-size: 1.125rem;
   }
 
   @media (min-width: map_get($grid-breakpoints, xl)) {
@@ -44,7 +44,7 @@ section.blog-intro-section {
 
 .blog-intro-img {
   width: 100%;
-  margin-top: 40px;
+  margin-top: rem(40);
 
   @media (min-width: map_get($grid-breakpoints, xl)) {
     position: absolute;
@@ -81,7 +81,7 @@ section.blog-articles-section {
   padding: 0 20px;
 
   @media (min-width: map_get($grid-breakpoints, xl)) {
-    padding: 0 32px;
+    padding: 0 2rem;
   }
 }
 
@@ -92,7 +92,7 @@ section.blog-articles-section {
     display: inline-flex;
     width: 100%;
     position: relative;
-    border-radius: 16px 16px 0px 0px;
+    border-radius: 1rem 1rem 0px 0px;
     padding-top: 220/345 * 100%;
     overflow: hidden;
 
@@ -111,9 +111,9 @@ section.blog-articles-section {
 
   &__title {
     display: block;
-    margin-top: 24px;
+    margin-top: 1.5rem;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 1.125rem;
     color: $dark-9;
   }
 }

@@ -2,7 +2,7 @@ section.why-intro-section {
   padding: 50px 0;
 
   @media (min-width: map_get($grid-breakpoints, md)) {
-    padding: 40px 0;
+    padding: rem(40) 0;
   }
 
   @media (min-width: map_get($grid-breakpoints, lg)) {
@@ -19,7 +19,7 @@ section.why-intro-section {
 }
 
 .why-intro-img {
-  margin-top: 40px;
+  margin-top: rem(40);
   width: 100%;
 
   @media (min-width: map_get($grid-breakpoints, lg)) {
@@ -43,13 +43,13 @@ section.why-intro-section {
 
 .why-intro-title {
   font-weight: 700;
-  font-size: 32px;
+  font-size: 2rem;
   color: $dark-9;
-  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
 
   @media (min-width: map_get($grid-breakpoints, md)) {
     font-size: 50px;
-    margin-bottom: 32px;
+    margin-bottom: 2rem;
   }
 }
 
@@ -60,7 +60,7 @@ section.why-intro-section {
   margin-bottom: 20px;
 
   @media (min-width: map_get($grid-breakpoints, md)) {
-    font-size: 24px;
+    font-size: 1.5rem;
   }
 }
 
@@ -71,7 +71,7 @@ section.why-intro-section {
 //Why content
 
 section.why-content-section {
-  padding: 40px 0 0;
+  padding: rem(40) 0 0;
 
   @media (min-width: map_get($grid-breakpoints, md)) {
     padding: 60px 0 0;
@@ -80,17 +80,17 @@ section.why-content-section {
 
 .why-content-title {
   font-weight: 500;
-  font-size: 24px;
+  font-size: 1.5rem;
   color: $dark-9;
-  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
 
   @media (min-width: map_get($grid-breakpoints, md)) {
-    font-size: 32px;
-    margin-bottom: 32px;
+    font-size: 2rem;
+    margin-bottom: 2rem;
   }
 
   @media (min-width: map_get($grid-breakpoints, xl)) {
-    font-size: 40px;
+    font-size: rem(40);
     text-align: center;
   }
 }
@@ -104,7 +104,7 @@ section.why-content-section {
   p {
     margin-bottom: 12px;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 170%;
   }
 
@@ -114,7 +114,7 @@ section.why-content-section {
       padding-left: 15px;
       position: relative;
       font-weight: 400;
-      font-size: 18px;
+      font-size: 1.125rem;
       line-height: 170%;
 
       &:before {
@@ -199,9 +199,9 @@ section.why-content-section {
 
 .why-excellence-title {
   font-weight: 700;
-  font-size: 24px;
+  font-size: 1.5rem;
   color: $dark-9;
-  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
 
   @media (min-width: map_get($grid-breakpoints, md)) {
     margin-bottom: 32px;
@@ -209,6 +209,6 @@ section.why-content-section {
 
   @media (min-width: map_get($grid-breakpoints, xl)) {
     font-weight: 500;
-    font-size: 40px;
+    font-size: rem(40);
   }
 }

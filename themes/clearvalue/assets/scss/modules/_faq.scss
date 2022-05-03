@@ -4,10 +4,10 @@
   border: 1px solid #c6cbdd;
   background-color: #fff;
   border-radius: 12px;
-  margin-bottom: 18px;
+  margin-bottom: 1.125rem;
 
   @media (min-width: map_get($grid-breakpoints, md)) {
-    margin-bottom: 40px;
+    margin-bottom: rem(40);
   }
 
   &__question {
@@ -16,7 +16,7 @@
     width: 100%;
     text-align: left;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 1.125rem;
     position: relative;
     transition: padding 0.3s ease;
 
@@ -62,7 +62,7 @@
     &__answer {
       padding: 0 24px 24px 24px;
       max-width: 445px;
-      font-size: 16px;
+      font-size: 1rem;
     }
   }
 }
