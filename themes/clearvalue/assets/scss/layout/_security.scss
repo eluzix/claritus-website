@@ -1,31 +1,47 @@
 section.security-intro-section {
   padding: rem(50) 0;
   min-height: rem(524);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
+  @media (min-width: map_get($grid-breakpoints, xl)) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .security-intro-title {
   font-weight: 500;
-  font-size: rem(50);
+  font-size: rem(32);
   color: $dark-9;
   margin-bottom: 2rem;
+
+  @media (min-width: map_get($grid-breakpoints, md)) {
+    font-size: rem(50);
+  }
 }
 
 .security-intro-bg {
-  position: absolute;
-  right: 0;
-  height: 100%;
-  top: 0;
-  z-index: -1;
+  width: 100%;
+
+  @media (min-width: map_get($grid-breakpoints, xl)) {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: auto;
+    top: 0;
+    z-index: -1;
+  }
 }
 
 .security-content-section {
   .container {
     .security-content-item {
-      padding: rem(100) 0;
+      padding: rem(50) 0;
       border-bottom: 1px solid $gray-200;
+
+      @media (min-width: map_get($grid-breakpoints, xl)) {
+        padding: rem(100) 0;
+      }
 
       &:last-child {
         border-bottom: none;
@@ -46,9 +62,13 @@ section.security-intro-section {
 
 .security-content-title {
   font-weight: 700;
-  font-size: rem(40);
+  font-size: rem(32);
   color: $dark-9;
   margin-bottom: 1rem;
+
+  @media (min-width: map_get($grid-breakpoints, md)) {
+    font-size: rem(40);
+  }
 }
 
 .security-content-description {
@@ -78,10 +98,15 @@ section.security-intro-section {
 .security-disclaimer {
   background-color: $purple-200;
   border-radius: 1rem;
-  padding: 3.5rem 4rem;
+  padding: rem(20);
   text-align: center;
   font-weight: 700;
-  font-size: rem(20);
+  font-size: rem(18);
   line-height: 150%;
   color: $dark-7;
+
+  @media (min-width: map_get($grid-breakpoints, md)) {
+    padding: 3.5rem 4rem;
+    font-size: rem(20);
+  }
 }

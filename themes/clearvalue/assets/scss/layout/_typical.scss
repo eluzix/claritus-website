@@ -80,11 +80,19 @@ section.typical-section {
   }
 
   ol {
-    margin: rem(60) 0 rem(20) 0;
+    margin: rem(40) 0 rem(20) 0;
     padding: 0 0 0 rem(20);
 
+    @media (min-width: map_get($grid-breakpoints, md)) {
+      margin: rem(60) 0 rem(20) 0;
+    }
+
     li {
-      margin-bottom: rem(60);
+      margin-bottom: rem(40);
+
+      @media (min-width: map_get($grid-breakpoints, md)) {
+        margin-bottom: rem(60);
+      }
 
       &:last-child {
         margin-bottom: 0;
@@ -92,14 +100,22 @@ section.typical-section {
 
       &::marker {
         font-weight: 500;
-        font-size: 2rem;
+        font-size: 1.125rem;
+
+        @media (min-width: map_get($grid-breakpoints, md)) {
+          font-size: 2rem;
+        }
       }
 
       h6 {
         font-weight: 500;
-        font-size: 2rem;
-        line-height: rem(42);
+        font-size: 1.125rem;
         margin-bottom: 2rem;
+
+        @media (min-width: map_get($grid-breakpoints, md)) {
+          font-size: 2rem;
+          line-height: rem(42);
+        }
       }
 
       p {
@@ -131,6 +147,86 @@ section.typical-section {
     width: 100%;
     height: auto;
     margin-bottom: 1rem;
+  }
+
+  .table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+
+    &:not(:last-child) {
+      margin-bottom: 2.875rem;
+    }
+
+    &::-webkit-scrollbar {
+      height: 6px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background-color: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #a8a8a8;
+      border-radius: 4px;
+    }
+  }
+
+  table {
+    width: 100%;
+    min-width: rem(700);
+
+    th,
+    td {
+      padding: 0.5rem;
+      line-height: 150%;
+      font-size: rem(14);
+
+      @media (min-width: map_get($grid-breakpoints, md)) {
+        padding: 1rem 0.75rem;
+        font-size: 1rem;
+      }
+
+      @media (min-width: map_get($grid-breakpoints, xl)) {
+        padding: 0.5rem;
+        font-size: rem(14);
+      }
+
+      ul {
+        padding-top: 0.75rem;
+
+        &:first-child {
+          padding-top: 0;
+        }
+
+        li {
+          font-size: rem(14);
+          line-height: 150%;
+          padding: rem(14) 0;
+
+          @media (min-width: map_get($grid-breakpoints, md)) {
+            font-size: 1rem;
+          }
+
+          @media (min-width: map_get($grid-breakpoints, xl)) {
+            font-size: rem(14);
+          }
+        }
+      }
+    }
+
+    th {
+      color: #fff;
+      border: 1px solid $dark-7;
+      background-color: $dark-7;
+
+      &:not(:last-child) {
+        border-right-color: #dddfe1;
+      }
+    }
+
+    td {
+      border: 1px solid #dddfe1;
+    }
   }
 
   &.terms {

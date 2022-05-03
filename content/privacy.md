@@ -78,9 +78,6 @@ we will notify you by posting a notice through our Services or by other means.
 
 
     {{< rawhtml >}}
-    <video width="100%" autoplay loop muted playsinline> 
-        <source src="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4" type="video/mp4">
-    </video>
 
     <div class="table-wrapper">
         <table class="table">

@@ -26,12 +26,8 @@
 <section class="security-content-section">
     <div class="container">
         <div class="security-content-item">
-            <div class="row align-items-center">
-                <div class="col-xl-5">
-                    <figure class="security-content-img">
-                        <img src="{{ .Params.protectedImg }}" alt="">
-                    </figure>
-                </div>
+            <div class="row align-items-center flex-xl-row-reverse">
+
                 <div class="col-xl-7">
                     <h2 class="security-content-title">
                         {{ .Params.protectedTitle | safeHTML }}
@@ -42,6 +38,12 @@
                     <div class="security-content">
                         {{ .Params.protectedContent | safeHTML }}
                     </div>
+                </div>
+
+                <div class="col-xl-5">
+                    <figure class="security-content-img">
+                        <img src="{{ .Params.protectedImg }}" alt="">
+                    </figure>
                 </div>
             </div>
         </div>
