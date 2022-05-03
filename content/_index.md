@@ -16,7 +16,7 @@ homeOverview:
 - icon: protect-icon
   title: Private & Secured
   text: Bank-Level security
-  popupText: Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto corporis harum maiores non perferendis repudiandae sequi suscipit tenetur, voluptatum.
+  popupText: We know your privacy and security are of the utmost importance to you, which is why we are committed to the highest standards of data security and encryption. With Claritus, you know your data is for your eyes only.
 
 ##Financials institutes
 financialsTitle: Trusted by over 17k financial institutions
