@@ -375,7 +375,7 @@ window.addEventListener("load", function (event) {
 
   const rout = window.location.pathname.split("/")[1];
 
-  const links = document.querySelectorAll(`[data-link='${rout}]'`);
+  const links = document.querySelectorAll(`[data-link='${rout}']`);
 
   if (links.length) {
     links.forEach((link) => {
