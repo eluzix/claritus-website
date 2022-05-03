@@ -1,23 +1,16 @@
 //Intro section
 
 section.about-intro-section {
-  height: 100vh;
-  padding-top: 140px;
+  padding-top: rem(140);
   background-color: $dark-11;
-  min-height: 600px;
-
-  @media (min-width: map_get($grid-breakpoints, md)) {
-    max-height: 750px;
-    min-height: 0;
-  }
+  min-height: rem(600);
 
   @media (min-width: map_get($grid-breakpoints, xl)) {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 144px 0;
-    max-height: 680px;
-    min-height: 0;
+    padding: rem(144) 0;
+    min-height: rem(680);
   }
 }
 
@@ -30,12 +23,12 @@ section.about-intro-section {
 
 .about-intro-title {
   font-weight: 500;
-  font-size: 32px;
+  font-size: 2rem;
   color: #fff;
-  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
 
   @media (min-width: map_get($grid-breakpoints, md)) {
-    font-size: 50px;
+    font-size: rem(50);
     line-height: 130%;
     text-align: left;
   }
@@ -48,34 +41,34 @@ section.about-intro-section {
 //About content
 
 section.about-content-section {
-  padding-top: 48px;
-  padding-bottom: 40px;
+  padding-top: 3rem;
+  padding-bottom: rem(40);
 
   @media (min-width: map_get($grid-breakpoints, xl)) {
-    padding-top: 120px;
-    padding-bottom: 100px;
+    padding-top: rem(120);
+    padding-bottom: rem(100);
   }
 }
 
 .about-content {
   color: $dark-7;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 170%;
 
   p {
-    margin-bottom: 20px;
+    margin-bottom: rem(20);
   }
 }
 
 //Team members
 
 section.team-section {
-  padding: 40px 0;
+  padding: rem(40) 0;
   background-color: $purple-100;
 
   @media (min-width: map_get($grid-breakpoints, xl)) {
-    padding: 100px 0;
+    padding: rem(100) 0;
   }
 }
 
@@ -96,25 +89,25 @@ section.team-section {
 
 .team-title {
   font-weight: 500;
-  font-size: 24px;
-  margin-bottom: 24px;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
 
   @media (min-width: map_get($grid-breakpoints, md)) {
     text-align: center;
-    margin-bottom: 32px;
-    font-size: 50px;
+    margin-bottom: 2rem;
+    font-size: rem(50);
   }
 }
 
 .team-text {
   @media (min-width: map_get($grid-breakpoints, xl)) {
     column-count: 2;
-    column-gap: 64px;
+    column-gap: 4rem;
   }
 }
 
 .team-members {
-  margin-top: 40px;
+  margin-top: rem(40);
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -123,7 +116,7 @@ section.team-section {
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
-    margin-top: 56px;
+    margin-top: 3.5rem;
   }
 
   @media (min-width: map_get($grid-breakpoints, xl)) {
@@ -132,25 +125,25 @@ section.team-section {
 
   .member {
     text-align: center;
-    margin-bottom: 32px;
+    margin-bottom: 2rem;
 
     @media (min-width: map_get($grid-breakpoints, md)) {
-      margin-bottom: 0 24px;
+      margin-bottom: 0 1.5rem;
     }
 
     @media (min-width: map_get($grid-breakpoints, xl)) {
-      margin: 0 60px;
+      margin: 0 rem(60);
     }
 
     &__photo {
-      width: 160px;
-      height: 160px;
+      width: rem(160);
+      height: rem(160);
       background-color: #fff;
       border: 1px solid $gray-100;
       border-radius: 50%;
       overflow: hidden;
       position: relative;
-      margin-bottom: 24px;
+      margin-bottom: 1.5rem;
 
       img {
         @extend %absolute;
@@ -160,14 +153,14 @@ section.team-section {
 
     &__name {
       font-weight: 700;
-      font-size: 18px;
+      font-size: 1.125rem;
       color: $dark-9;
-      margin-bottom: 12px;
+      margin-bottom: 0.75rem;
     }
 
     &__position {
-      font-size: 16px;
-      margin-bottom: 8px;
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
     }
 
     &__linkedin {
@@ -181,33 +174,33 @@ section.team-section {
 //Our story
 
 section.our-story-section {
-  padding: 40px 0;
+  padding: rem(40) 0;
 
   @media (min-width: map_get($grid-breakpoints, md)) {
-    padding: 100px 0;
+    padding: rem(100) 0;
   }
 }
 
 .our-story-title {
   font-weight: 500;
-  font-size: 24px;
-  margin-bottom: 24px;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
 
   @media (min-width: map_get($grid-breakpoints, md)) {
-    font-size: 50px;
+    font-size: rem(50);
     text-align: center;
-    margin-bottom: 32px;
+    margin-bottom: 2rem;
   }
 }
 
 .our-story {
   font-weight: 400;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 170%;
   color: $dark-7;
 
   @media (min-width: map_get($grid-breakpoints, xl)) {
     column-count: 2;
-    column-gap: 64px;
+    column-gap: 4rem;
   }
 }

@@ -1,6 +1,6 @@
 .feedback-slider-wrap {
   width: 100%;
-  max-width: 1600px;
+  max-width: rem(1600);
   margin: 0 auto;
   position: relative;
   overflow: hidden;
@@ -13,11 +13,11 @@
 .feedback-slider {
   width: 100%;
   outline: none;
-  padding-bottom: 40px;
+  padding-bottom: rem(40);
 
   &__item {
     width: 85%;
-    padding: 16px;
+    padding: 1rem;
     display: inline-flex;
     min-height: 100%;
 
@@ -27,7 +27,7 @@
 
     @media (min-width: map_get($grid-breakpoints, lg)) {
       width: 40%;
-      padding: 24px;
+      padding: 1.5rem;
     }
 
     @media (min-width: map_get($grid-breakpoints, xl)) {
@@ -42,20 +42,20 @@
 
 .feedback {
   background-color: #fff;
-  border-radius: 12px;
-  padding: 32px 26px;
+  border-radius: 0.75rem;
+  padding: 2rem 26px;
   min-height: 100%;
   display: flex;
   flex-direction: column;
-  box-shadow: 0px 12px 24px rgba(5, 13, 66, 0.12);
+  box-shadow: 0px 0.75rem 1.5rem rgba(5, 13, 66, 0.12);
 
   @media (min-width: map_get($grid-breakpoints, md)) {
-    padding: 32px;
+    padding: 2rem;
   }
 
   &__text {
     font-weight: 500;
-    font-size: 18px;
+    font-size: 1.125rem;
     flex-grow: 1;
 
     @media (min-width: map_get($grid-breakpoints, md)) {
@@ -64,7 +64,7 @@
   }
 
   &__name {
-    margin-top: 32px;
+    margin-top: 2rem;
   }
 }
 
@@ -75,14 +75,14 @@
 }
 
 .slider-arrow {
-  width: 48px;
-  height: 48px;
+  width: 3rem;
+  height: 3rem;
   background-color: #fff;
   border: 1px solid $gray-100;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  margin: 0 20px;
+  margin: 0 rem(20);
   border-radius: 50%;
 
   svg {

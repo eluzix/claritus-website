@@ -11,7 +11,7 @@ $gray-500: #7e829e;
 $gray-600: #5a5e7b;
 $green: #45dd95;
 $primary: #2967f0;
-$green-dark: #00B08B;
+$green-dark: #00b08b;
 $purple-100: #f8f8fe;
 $purple-200: #e2e4f1;
 $gradient-primary: linear-gradient(
@@ -45,10 +45,10 @@ $container-max-widths: (
   xxl: 1220px,
 );
 
-//$grid-gutter-width: 64px;
+//$grid-gutter-width: 4rem;
 
 //Box shadow
-$box-shadow-primary: 0px 14px 28px rgba(203, 203, 203, 0.25);
+$box-shadow-primary: 0px 0.875rem 28px rgba(203, 203, 203, 0.25);
 $box-shadow-secondary: 0px 4px 10px rgba(0, 0, 0, 0.1);
 
 // Transition

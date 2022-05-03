@@ -1,23 +1,23 @@
 .field {
-  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
   position: relative;
 
   label {
     font-weight: 500;
-    font-size: 12px;
+    font-size: 0.75rem;
     color: $gray-500;
-    padding: 0 8px;
-    margin-bottom: 8px;
+    padding: 0 0.5rem;
+    margin-bottom: 0.5rem;
   }
 
   input {
-    height: 32px;
+    height: 2rem;
     border: 1px solid $gray-200;
-    border-radius: 8px;
-    font-size: 12px;
-    line-height: 16px;
+    border-radius: 0.5rem;
+    font-size: 0.75rem;
+    line-height: 1rem;
     width: 100%;
-    padding: 0 8px;
+    padding: 0 0.5rem;
     background-color: transparent;
 
     &::placeholder {
@@ -27,13 +27,13 @@
 
   textarea {
     border: 1px solid $gray-200;
-    border-radius: 8px;
-    font-size: 12px;
-    line-height: 16px;
+    border-radius: 0.5rem;
+    font-size: 0.75rem;
+    line-height: 1rem;
     width: 100%;
-    padding: 12px 8px;
+    padding: 0.75rem 0.5rem;
     resize: none;
-    height: 200px;
+    height: rem(200);
 
     &::placeholder {
       color: $gray-400;
@@ -42,10 +42,10 @@
 
   .error-message {
     position: absolute;
-    left: 8px;
+    left: 0.5rem;
     top: 100%;
     color: red;
-    font-size: 10px;
+    font-size: rem(10);
     transition: all 0.5s ease;
     opacity: 0;
 

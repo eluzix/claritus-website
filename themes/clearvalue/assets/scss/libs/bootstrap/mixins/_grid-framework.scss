@@ -1,4 +1,8 @@
-@mixin make-grid-columns($columns: $grid-columns, $gutter: $grid-gutter-width, $breakpoints: $grid-breakpoints) {
+@mixin make-grid-columns(
+  $columns: $grid-columns,
+  $gutter: $grid-gutter-width,
+  $breakpoints: $grid-breakpoints
+) {
   %grid-column {
     position: relative;
     width: 100%;
@@ -42,16 +46,22 @@
         }
       }
 
-      .order#{$infix}-first { order: -1; }
+      .order#{$infix}-first {
+        order: -1;
+      }
 
-      .order#{$infix}-last { order: $columns + 1; }
+      .order#{$infix}-last {
+        order: $columns + 1;
+      }
 
       @for $i from 0 through $columns {
-        .order#{$infix}-#{$i} { order: $i; }
+        .order#{$infix}-#{$i} {
+          order: $i;
+        }
       }
 
       @for $i from 0 through ($columns - 1) {
-        @if not ($infix == "" and $i == 0) {
+        @if not($infix == "" and $i == 0) {
           .offset#{$infix}-#{$i} {
             @include make-col-offset($i, $columns);
           }
