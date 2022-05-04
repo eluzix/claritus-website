@@ -119,20 +119,40 @@ function utmCookie() {
   }
 }
 
-window.addEventListener("load", function (event) {
-  // Lazy load
-  const observer = lozad();
-  observer.observe();
+// Init header
+function initHeaderScroll() {
+  let scrollPosition = window.scrollY;
+  const header = document.querySelector(".header-section");
 
-  const hpAssetImg = document.querySelector(".assets-section .assets-bg");
-  if (hpAssetImg) {
-    observer.triggerLoad(hpAssetImg);
-  }
+  window.addEventListener("scroll", function () {
+    scrollPosition = window.scrollY;
+    if (scrollPosition > 50) {
+      header.classList.add("header--fixed");
+    } else {
+      header.classList.remove("header--fixed");
+    }
+  });
+}
 
-  // Slider
+// Init slider
+function initSlider() {
   const slider = document.querySelector(".feedback-slider");
 
-  if (slider) {
+  if (!slider) return;
+
+  // load slider js
+  const script = document.createElement("script");
+  script.setAttribute("type", "text/javascript");
+  script.setAttribute("async", true);
+  script.setAttribute(
+    "src",
+    "https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"
+  );
+
+  const head = document.head || document.getElementsByTagName("head")[0];
+  head.appendChild(script);
+
+  script.addEventListener("load", function () {
     const flkty = new Flickity(slider, {
       // options
       wrapAround: true,
@@ -155,22 +175,35 @@ window.addEventListener("load", function (event) {
       .addEventListener("click", function () {
         flkty.next(false, false);
       });
-  }
+  });
+}
 
-  // header
-  let scrollPosition = window.scrollY;
-  const header = document.querySelector(".header-section");
+// Init lazy load
+function initLazyLoad() {
+  const script = document.createElement("script");
+  script.setAttribute("type", "text/javascript");
+  script.setAttribute("async", true);
+  script.setAttribute(
+    "src",
+    "https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"
+  );
 
-  window.addEventListener("scroll", function () {
-    scrollPosition = window.scrollY;
-    if (scrollPosition > 50) {
-      header.classList.add("header--fixed");
-    } else {
-      header.classList.remove("header--fixed");
+  const head = document.head || document.getElementsByTagName("head")[0];
+  head.appendChild(script);
+
+  script.addEventListener("load", function () {
+    const observer = lozad();
+    observer.observe();
+
+    const hpAssetImg = document.querySelector(".assets-section .assets-bg");
+    if (hpAssetImg) {
+      observer.triggerLoad(hpAssetImg);
     }
   });
+}
 
-  // Burger
+// Init burger menu
+function initBurgerMenu() {
   const navMenu = document.querySelector(".header-nav-menu");
   const burgerBtn = document.querySelector(".nav-btn");
   const closeMenuBtn = document.querySelector(".nav-menu-header__close");
@@ -193,9 +226,13 @@ window.addEventListener("load", function (event) {
     navMenu.classList.remove("header-nav-menu--active");
     burgerBtn.classList.remove("nav-btn--opened");
   }
+}
 
-  // Faq
+// Init FAQ
+function initFaq() {
   const faqButtons = document.querySelectorAll(".faq__question");
+
+  if (!faqButtons.length) return;
 
   faqButtons.forEach((button) => {
     button.addEventListener("click", () => {
@@ -209,35 +246,37 @@ window.addEventListener("load", function (event) {
       faqBlock.classList.toggle("faq--opened");
     });
   });
+}
 
-  // Tab
-
+// Init tabs
+function initTabs() {
   const tabNavBtns = document.querySelectorAll(".tab-nav__item");
 
-  if (tabNavBtns.length) {
-    tabNavBtns.forEach((btn) => {
-      btn.addEventListener("click", () => {
-        const activeTab = document.querySelector(".tab-nav__item--active");
+  if (!tabNavBtns.length) return;
 
-        if (activeTab === btn) return;
+  tabNavBtns.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const activeTab = document.querySelector(".tab-nav__item--active");
 
-        const planName = btn.dataset.plan;
+      if (activeTab === btn) return;
 
-        activeTab.classList.remove("tab-nav__item--active");
-        btn.classList.add("tab-nav__item--active");
+      const planName = btn.dataset.plan;
 
-        document.querySelector(".tab--active").classList.remove("tab--active");
-        document.querySelector(`#${planName}`).classList.add("tab--active");
-      });
+      activeTab.classList.remove("tab-nav__item--active");
+      btn.classList.add("tab-nav__item--active");
+
+      document.querySelector(".tab--active").classList.remove("tab--active");
+      document.querySelector(`#${planName}`).classList.add("tab--active");
     });
-  }
+  });
+}
 
-  // Contact us
+// Init contact form
+function initContactFormSubmit() {
+  const form = document.querySelector(".contact-form");
 
-  const modal = document.querySelector(".contact-form");
-
-  if (modal) {
-    modal.onsubmit = function (e) {
+  if (form) {
+    form.onsubmit = function (e) {
       e.preventDefault();
 
       if (!validateForm()) return;
@@ -247,7 +286,7 @@ window.addEventListener("load", function (event) {
   }
 
   function submitContactForm() {
-    const submitBtn = modal.querySelector("button[type=submit]");
+    const submitBtn = form.querySelector("button[type=submit]");
     submitBtn.classList.add("btn--loading");
     submitBtn.disabled = true;
 
@@ -259,10 +298,9 @@ window.addEventListener("load", function (event) {
         .then(async function (token) {
           const submittedForm = document.querySelector(".contact-form");
 
-          // let url =
-          // "https://nkm2iod3hf.execute-api.us-east-1.amazonaws.com/prod/contact-us";
+          let url =
+            "https://nkm2iod3hf.execute-api.us-east-1.amazonaws.com/prod/contact-us";
 
-          let url = "www.google.com";
 
           let data = {
             token: token,
@@ -306,30 +344,6 @@ window.addEventListener("load", function (event) {
 
           submitBtn.classList.remove("btn--loading");
           submitBtn.disabled = false;
-
-          // fetch(url, {
-          //   method: "POST",
-          //   mode: "no-cors",
-          //   headers: {
-          //     "Content-Type": "application/x-www-form-urlencoded",
-          //   },
-          //   body: urlEncodedData,
-          // })
-          //   .then(() => {
-          //     document
-          //       .querySelector(".contact-section")
-          //       .classList.add("contact-section--submitted");
-          //   })
-          //   .catch((e) => {
-          //     //do nothing
-          //     console.log('error sending mail', e)
-          //   })
-          //   .finally(() => {
-          //     submitBtn.classList.remove("btn--loading");
-          //     submitBtn.disabled = false;
-          //   });
-
-          // app.clearData();
         })
         .catch((e) => {
           console.error("grecaptcha error:", e);
@@ -342,7 +356,7 @@ window.addEventListener("load", function (event) {
   function validateForm() {
     let isValidForm = true;
 
-    const fields = modal.querySelectorAll(".field__input");
+    const fields = form.querySelectorAll(".field__input");
 
     fields.forEach((input) => {
       if (
@@ -364,26 +378,15 @@ window.addEventListener("load", function (event) {
       mail
     );
   }
+}
 
-  // Scroll top
+// Init typed text
+function initTypedText() {
+  const element = document.querySelector(".typed-text");
 
-  document.querySelector(".scroll-top").addEventListener("click", () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  });
+  if (!element) return;
 
-  // Set active link
-
-  const rout = window.location.pathname.split("/")[1];
-
-  const links = document.querySelectorAll(`[data-link='${rout}']`);
-
-  if (links.length) {
-    links.forEach((link) => {
-      link.classList.add("active");
-    });
-  }
-
-  // Typed text
+  typeText(element);
 
   function typeText(element) {
     let txt = element.dataset.typed;
@@ -417,12 +420,63 @@ window.addEventListener("load", function (event) {
       }
     }
   }
+}
 
-  const element = document.querySelector(".typed-text");
+// Init header active link
+function initHeaderActiveLink() {
+  const rout = window.location.pathname.split("/")[1];
 
-  if (element) {
-    typeText(element);
-  }
+  const links = document.querySelectorAll(`[data-link='${rout}']`);
+
+  if (!links.length) return;
+
+  links.forEach((link) => {
+    link.classList.add("active");
+  });
+}
+
+// Init scroll top
+function initScrollTopHandler() {
+  const anchor = document.querySelector(".scroll-top");
+
+  if (!anchor) return;
+
+  anchor.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+}
+
+// Trigering functions
+window.addEventListener("load", function (event) {
+  // Lazy load
+  initLazyLoad();
+
+  // Slider
+  initSlider();
+
+  // header
+  initHeaderScroll();
+
+  // Burger
+  initBurgerMenu();
+
+  // Faq
+  initFaq();
+
+  // Tab
+  initTabs();
+
+  // Contact us
+  initContactFormSubmit();
+
+  // Scroll top
+  initScrollTopHandler();
+
+  // Set active link
+  initHeaderActiveLink();
+
+  // Typed text
+  initTypedText();
 
   //cookies
   try {
