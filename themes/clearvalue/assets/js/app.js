@@ -2,13 +2,16 @@ function initNewsletter() {
   const button = document.querySelector(
     ".footer-subscribe button.footer-subscribe__btn"
   );
-  console.log(">>>>>>> button:", button);
+
   button.onclick = (e) => {
     e.preventDefault();
     let email = document.getElementById("footer-newsletter-email").value;
     if (!email || email.trim() === "") {
       return;
     }
+
+    button.classList.add("btn--loading");
+    button.disabled = true;
 
     email = encodeURIComponent(email.trim());
 
@@ -30,10 +33,16 @@ function initNewsletter() {
         document
           .querySelector(".footer-subscribe-step2")
           .classList.add("active");
+
+        button.classList.remove("btn--loading");
+        button.disabled = false;
       })
       .catch((e) => {
         //do nothing
         console.error(e);
+
+        button.classList.remove("btn--loading");
+        button.disabled = false;
       });
   };
 }
@@ -301,7 +310,6 @@ function initContactFormSubmit() {
           let url =
             "https://nkm2iod3hf.execute-api.us-east-1.amazonaws.com/prod/contact-us";
 
-
           let data = {
             token: token,
             name: submittedForm.querySelector("[name=name]").value,
@@ -392,7 +400,7 @@ function initTypedText() {
     let txt = element.dataset.typed;
     let iteratorIncrement = 0;
     let iteratorDecrement = txt.length;
-    let speed = 300;
+    let speed = 200;
 
     typeWriterIncrement();
 
@@ -405,7 +413,7 @@ function initTypedText() {
         setTimeout(() => {
           iteratorDecrement = txt.length;
           typeWriterDecrement();
-        }, 1500);
+        }, 1000);
       }
     }
 
