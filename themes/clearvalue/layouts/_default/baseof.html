@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <base href="{{ .Site.BaseURL }}">
-    <title>{{ if .Params.MetaTitle }}{{ .Params.MetaTitle | plainify }}{{ else if .Params.Title}}{{ .Params.Title | plainify }}{{ else }}{{ block "title" . }}{{ .Site.Title | plainify }}{{ end }}{{ end }}</title>
+    <title>{{ if .Params.MetaTitle }}{{ .Params.MetaTitle | plainify }}{{ else if .Params.Title}}{{ .Params.Title |
+        plainify }}{{ else }}{{ block "title" . }}{{ .Site.Title | plainify }}{{ end }}{{ end }}</title>
     {{ with .Site.Params.author }}
     <meta name="author" content="{{ . }}">
     {{ end }}
@@ -73,19 +74,20 @@
     {{ $mainJs := resources.Get "js/app.js" }}
     {{ $js := $mainJs | resources.Minify | fingerprint }}
 
-<!--    <script async src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>-->
-<!--    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>-->
+    <!--    <script async src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>-->
+    <!--    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>-->
     <script src="{{ $js.Permalink }}"></script>
 
     {{ block "StructData" . }}{{ end }}
 
     {{ partial "tagmanager.html" . }}
     {{ hugo.Generator }}
+
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
 </head>
 
 <body class="{{ if .Site.Params.rtl }}rtl{{ end }}">
-<!--<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">-->
-<link rel="stylesheet" href="{{ $style.Permalink }}">
+
 
 {{ partial "cookie.html" . }}
 <!-- Google Tag Manager (noscript) -->
