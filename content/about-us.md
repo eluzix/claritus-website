@@ -37,12 +37,11 @@ teamMembers:
 
 ourStoryTitle: Our Story
 
-ourStory: Claritus was born out of a very real and personal need. Our previous careers have allowed us to achieve financial freedom. We all learned that managing wealth is extremely challenging, there is so much to consider, and it takes a lot of time and expertise.
-  <br/><br/>
-  While searching for a reliable, comprehensive, and unbiased solution that would allow us to easily view, analyze, and grow our wealth, we soon realized that none of the options available have what it takes.
-  <br/><br/>
-  This got us thinking; How many other  people were out there facing the same challenges we were facing? Together, we decided that it was up to us to come up with a viable solution to simply keep track of our wealth.
-  <br/><br/> <strong>That was the birth of Claritus.</strong>
+ourStoryFirstCol: Claritus was born out of a very real and personal need. Our previous careers have allowed us to achieve financial freedom. We all learned that managing wealth is extremely challenging, there is so much to consider, and it takes a lot of time and expertise.<br/><br/>
+  While searching for a reliable, comprehensive, and unbiased solution that would allow us to easily view, analyze, and grow our wealth, we soon realized that none of the options available have what it takes.<br/><br/>
+
+ourStorySecondCol: This got us thinking; How many other  people were out there facing the same challenges we were facing? Together, we decided that it was up to us to come up with a viable solution to simply keep track of our wealth.<br/><br/> <strong>That was the birth of Claritus.</strong>
+
 
 ---
 Claritus is an easy-to-use, personal portfolio management solution that lets you view all of your investments in one place. This is the only service you'll need to track, analyze, and grow your wealth.

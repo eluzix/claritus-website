@@ -199,8 +199,8 @@ section.our-story-section {
   line-height: 170%;
   color: $dark-7;
 
-  @media (min-width: map_get($grid-breakpoints, xl)) {
-    column-count: 2;
-    column-gap: 4rem;
-  }
+  //@media (min-width: map_get($grid-breakpoints, xl)) {
+  //  column-count: 2;
+  //  column-gap: 4rem;
+  //}
 }

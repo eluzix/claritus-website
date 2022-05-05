@@ -84,8 +84,13 @@
 
 		<h2 class="our-story-title">{{ .Params.ourStoryTitle | safeHTML}}</h2>
 
-		<div class="our-story">
-			{{ .Params.ourStory | safeHTML}}
+		<div class="row">
+			<div class="our-story col-xl-6">
+				{{ .Params.ourStoryFirstCol | safeHTML}}
+			</div>
+			<div class="our-story col-xl-6">
+				{{ .Params.ourStorySecondCol | safeHTML}}
+			</div>
 		</div>
 	</div>
 </section>
