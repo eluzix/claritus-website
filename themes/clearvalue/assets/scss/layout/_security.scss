@@ -1,35 +1,55 @@
 section.security-intro-section {
   padding: rem(50) 0;
-  min-height: rem(524);
+  min-height: rem(610);
+  margin-top: 0;
 
   @media (min-width: map_get($grid-breakpoints, xl)) {
     display: flex;
     align-items: center;
     justify-content: center;
+    min-height: rem(560);
+    margin-top: 0 !important;
+  }
+
+  @media (min-width: map_get($grid-breakpoints, xxl)) {
+    min-height: rem(740);
+  }
+}
+
+.security-intro-bg {
+  width: 100%;
+  margin-top: -20px;
+
+  @media (min-width: map_get($grid-breakpoints, xl)) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: -1;
+    margin-top: 0;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+
+    @media (min-width: map_get($grid-breakpoints, xl)) {
+      object-fit: cover;
+      object-position: right center;
+      width: 100%;
+      height: 100%;
+    }
   }
 }
 
 .security-intro-title {
-  font-weight: 500;
+  font-weight: 700;
   font-size: rem(32);
   color: $dark-9;
   margin-bottom: 2rem;
 
   @media (min-width: map_get($grid-breakpoints, md)) {
     font-size: rem(50);
-  }
-}
-
-.security-intro-bg {
-  width: 100%;
-
-  @media (min-width: map_get($grid-breakpoints, xl)) {
-    position: absolute;
-    right: 0;
-    height: 100%;
-    width: auto;
-    top: 0;
-    z-index: -1;
   }
 }
 
@@ -43,8 +63,18 @@ section.security-intro-section {
         padding: rem(100) 0;
       }
 
+      &:first-child {
+        @media (min-width: map_get($grid-breakpoints, xl)) {
+          padding-top: rem(48);
+        }
+      }
+
       &:last-child {
         border-bottom: none;
+
+        @media (min-width: map_get($grid-breakpoints, xl)) {
+          padding-bottom: rem(48);
+        }
       }
     }
   }
@@ -92,21 +122,31 @@ section.security-intro-section {
 }
 
 .security-disclaimer-section {
-  padding-bottom: rem(80);
+  padding: rem(80) 0;
 }
 
 .security-disclaimer {
   background-color: $purple-200;
   border-radius: 1rem;
-  padding: rem(20);
+  padding: 1rem;
   text-align: center;
   font-weight: 700;
-  font-size: rem(18);
-  line-height: 150%;
+  font-size: rem(20);
   color: $dark-7;
+  max-width: rem(880);
+  margin: 0 auto;
+  position: relative;
 
   @media (min-width: map_get($grid-breakpoints, md)) {
-    padding: 3.5rem 4rem;
-    font-size: rem(20);
+    padding: rem(40) rem(60);
+  }
+
+  @media (min-width: map_get($grid-breakpoints, xl)) {
+    padding: rem(56) rem(64);
+    line-height: 150%;
+  }
+
+  a {
+    color: $dark-7;
   }
 }

@@ -7,7 +7,7 @@
 <section class="security-intro-section">
     <div class="container">
         <div class="row">
-            <div class="col-xl-5">
+            <div class="col-xl-6 col-xxl-5">
                 <h1 class="security-intro-title">
                     {{ .Title }}
                 </h1>
@@ -19,7 +19,12 @@
         </div>
     </div>
 
-    <img src="/images/security/security-intro-bg.svg" alt="" class="security-intro-bg">
+    <picture class="security-intro-bg">
+        <source srcset="/images/security/security-intro-bg-desk-fullhd.svg" media="(min-width: 1400px)">
+        <source srcset="/images/security/security-intro-bg-desk-hd.svg" media="(min-width: 1200px)">
+        <source srcset="/images/security/security-intro-bg-tablet.svg" media="(min-width: 744px)">
+        <img src="/images/security/security-intro-bg-mob.svg" alt="Security Claritus">
+    </picture>
 </section>
 
 
@@ -75,8 +80,18 @@
 <section class="security-disclaimer-section">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-xl-10 col-xxl-9">
+            <div class="col-xl-10">
                 <div class="security-disclaimer">
+
+                    <button type="button" class="scroll-top d-none d-xl-flex">
+                        <figure class="scroll-top__icon">
+                            <svg width="15" height="15">
+                                <use xlink:href="#arrow-long-icon"></use>
+                            </svg>
+                        </figure>
+                        Go Up
+                    </button>
+
                     {{ .Params.securityDisclaimer | safeHTML }}
                 </div>
             </div>
