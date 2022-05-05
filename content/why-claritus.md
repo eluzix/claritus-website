@@ -9,6 +9,9 @@ url: "/why-claritus"
 
 whyExcellenceMainTitle: Not just another “networth tracker” but the best dynamic wealth analytics in the market
 
+whyExcellenceMainDescription: "Yes, there are some other  services that allow you to track your networth but that's precisely what they are,“networth tracking” apps. In order to make good and informed decisions you need to be able to see the big picture and evaluate your overall situation. This means  seeing the possibilities and the problems.
+With Claritus you will get:"
+
 
 whyExcellence:
 - title: See your wealth the way you want it
@@ -29,8 +32,6 @@ whyExcellence:
 
 ---
 
-Yes, there are some other  services that allow you to track your networth but that's precisely what they are,“networth tracking” apps. In order to make good and informed decisions you need to be able to see the big picture and evaluate your overall situation. This means  seeing the possibilities and the problems. 
-With Claritus you will get:
 - A comprehensive view that includes all of your assets; not just stocks, crypto, bonds, and bank accounts.
 - A complete history of each investment, so you can follow trends, seasonality, and other factors over both short and long-term time frames.
 - Automatic and instantaneous value updates to save you time.

@@ -95,6 +95,19 @@ section.why-content-section {
   }
 }
 
+.why-content-description {
+  margin-bottom: 12px;
+
+  @media (min-width: map_get($grid-breakpoints, md)) {
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: map_get($grid-breakpoints, xl)) {
+    margin-bottom: 32px;
+    text-align: center;
+  }
+}
+
 .why-content {
   @media (min-width: map_get($grid-breakpoints, xl)) {
     column-count: 2;
