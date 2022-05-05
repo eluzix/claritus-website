@@ -54,9 +54,9 @@ footer.footer-section {
 
   &__title {
     font-weight: 700;
-    font-size: 1rem;
+    font-size: 0.875rem;
     line-height: rem(21);
-    color: $dark-1;
+    color: #eeeef4;
     margin-bottom: 1rem;
   }
 
@@ -78,8 +78,10 @@ footer.footer-section {
   .footer-subscribe-step1.hidden {
     display: none;
   }
+
   .footer-subscribe-step2 {
     display: none;
+
     &.active {
       display: block;
       font-size: 1rem;
