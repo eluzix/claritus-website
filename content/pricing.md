@@ -2,12 +2,19 @@
 type: pricing
 
 title: Transparent & Simple Pricing
+
 description: Try Claritus for a free 14 day trial - no credit card required. Upon completing your free trial, you can choose from one of the following plans.
+
 date: 2022-01-03T07:30:01+00:00
+
 url: "/pricing"
+
 content_class: blog
+
 header_class: white-header
+
 lastmod: 2022-01-02T06:30:01.000+00:00
+
 metaTitle: Claritus updates and a view of personal wealth management | Claritus Blog
 
 
