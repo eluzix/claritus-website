@@ -2,15 +2,14 @@
 type: why-claritus
 
 title: Why Claritus
-whySubtitle: Our mission is your financial peace of mind.
-description: Claritus is a powerful yet easy to use, trustworthy and discreet companion to assist you in growing your wealth.
 
-url: "/why-claritus"
+whySubtitle: Our mission is your financial peace of mind.
+
+description: Claritus is a powerful yet easy to use, trustworthy and discreet companion to assist you in growing your wealth.
 
 whyExcellenceMainTitle: Not just another “networth tracker” but the best dynamic wealth analytics in the market
 
-whyExcellenceMainDescription: "Yes, there are some other  services that allow you to track your networth but that's precisely what they are,“networth tracking” apps. In order to make good and informed decisions you need to be able to see the big picture and evaluate your overall situation. This means  seeing the possibilities and the problems.
-With Claritus you will get:"
+whyExcellenceMainDescription: "Yes, there are some other  services that allow you to track your networth but that's precisely what they are,“networth tracking” apps. In order to make good and informed decisions you need to be able to see the big picture and evaluate your overall situation. This means  seeing the possibilities and the problems. With Claritus you will get:"
 
 
 whyExcellence:

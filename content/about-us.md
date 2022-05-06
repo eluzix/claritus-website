@@ -1,4 +1,10 @@
 ---
+type: about-us
+
+title: Our mission is your financial peace of mind
+
+description: Claritus is a simple-to-use, personal portfolio management solution.
+
 ##config
 type: about-us
 
