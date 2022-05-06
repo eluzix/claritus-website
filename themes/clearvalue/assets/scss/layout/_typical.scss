@@ -1,13 +1,16 @@
 section.typical-section {
-  padding: 3.5rem 0;
+  padding: rem(20) 0 3.5rem 0;
+
+  @media (min-width: map_get($grid-breakpoints, md)) {
+    padding: 3.5rem 0;
+  }
 }
 
 .typical-header {
   margin-bottom: 2rem;
+  text-align: center;
 
-  @media (min-width: map_get($grid-breakpoints, md)) {
-    text-align: center;
-  }
+
 
   &__logo {
     display: inline-flex;
@@ -31,14 +34,20 @@ section.typical-section {
     font-weight: 700;
     font-size: 2rem;
     color: $dark-9;
+    text-align: left;
 
     @media (min-width: map_get($grid-breakpoints, md)) {
       font-size: rem(50);
+      text-align: center;
     }
   }
 }
 
 .typical-content {
+  width: 100%;
+  max-width: rem(680);
+  margin: 0 auto;
+
   p,
   li {
     margin-bottom: 0.75rem;
@@ -55,6 +64,19 @@ section.typical-section {
   h5,
   h6 {
     margin: 1rem 0;
+    font-weight: 500;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.125rem;
+  }
+
+  h4 {
+    font-size: 1rem;
   }
 
   a {
@@ -88,10 +110,10 @@ section.typical-section {
     }
 
     li {
-      margin-bottom: rem(40);
+      margin-bottom: rem(56);
 
       @media (min-width: map_get($grid-breakpoints, md)) {
-        margin-bottom: rem(60);
+        margin-bottom: rem(80);
       }
 
       &:last-child {
@@ -100,7 +122,7 @@ section.typical-section {
 
       &::marker {
         font-weight: 500;
-        font-size: 1.125rem;
+        font-size: 1.5rem;
 
         @media (min-width: map_get($grid-breakpoints, md)) {
           font-size: 2rem;
@@ -109,12 +131,13 @@ section.typical-section {
 
       h6 {
         font-weight: 500;
-        font-size: 1.125rem;
-        margin-bottom: 2rem;
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
 
         @media (min-width: map_get($grid-breakpoints, md)) {
           font-size: 2rem;
           line-height: rem(42);
+          margin-bottom: 2rem;
         }
       }
 
@@ -151,7 +174,14 @@ section.typical-section {
 
   .table-wrapper {
     width: 100%;
+    overflow: hidden;
     overflow-x: auto;
+
+    @media (min-width: map_get($grid-breakpoints, xl)) {
+      width: auto;
+      margin-left: -80px;
+      margin-right: -80px;
+    }
 
     &:not(:last-child) {
       margin-bottom: 2.875rem;
@@ -174,58 +204,46 @@ section.typical-section {
   table {
     width: 100%;
     min-width: rem(700);
+    border-collapse: collapse;
 
-    th,
-    td {
-      padding: 0.5rem;
-      line-height: 150%;
-      font-size: rem(14);
-
-      @media (min-width: map_get($grid-breakpoints, md)) {
-        padding: 1rem 0.75rem;
-        font-size: 1rem;
-      }
-
-      @media (min-width: map_get($grid-breakpoints, xl)) {
-        padding: 0.5rem;
+    tr {
+      th,
+      td {
+        padding: rem(16) rem(12);
+        line-height: 150%;
         font-size: rem(14);
-      }
+        margin: 0;
+        vertical-align: top;
+        border: 1px solid $gray-200;
 
-      ul {
-        padding-top: 0.75rem;
+        ul {
+          padding: rem(12) 0 0 rem(20);
 
-        &:first-child {
-          padding-top: 0;
-        }
-
-        li {
-          font-size: rem(14);
-          line-height: 150%;
-          padding: rem(14) 0;
-
-          @media (min-width: map_get($grid-breakpoints, md)) {
-            font-size: 1rem;
-          }
-
-          @media (min-width: map_get($grid-breakpoints, xl)) {
+          li {
             font-size: rem(14);
+            line-height: 150%;
+            padding: 0;
+            margin-bottom: rem(12);
+
+            &:last-child {
+              margin-bottom: 0;
+            }
           }
         }
       }
-    }
 
-    th {
-      color: #fff;
-      border: 1px solid $dark-7;
-      background-color: $dark-7;
-
-      &:not(:last-child) {
-        border-right-color: #dddfe1;
+      th {
+        font-weight: 700;
+        color: $dark-11;
       }
-    }
 
-    td {
-      border: 1px solid #dddfe1;
+      td {
+        &.has-bg {
+          background-color: #eeeef4;
+          font-weight: 500;
+          color: $dark-9;
+        }
+      }
     }
   }
 
