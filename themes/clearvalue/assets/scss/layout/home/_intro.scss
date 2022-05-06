@@ -82,6 +82,13 @@ section.home-intro-section {
       margin-top: rem(40);
       justify-content: flex-start;
     }
+
+    .btn {
+      @media (min-width: map_get($grid-breakpoints, xl)) {
+        padding-left: rem(25);
+        padding-right: rem(25);
+      }
+    }
   }
 }
 
