@@ -413,7 +413,7 @@ function initTypedText() {
         setTimeout(() => {
           iteratorDecrement = txt.length;
           typeWriterDecrement();
-        }, 1000);
+        }, 3000);
       }
     }
 
