@@ -11,11 +11,6 @@
   font-size: 0.875rem;
   line-height: rem(21);
 
-  @media (min-width: map_get($grid-breakpoints, xl)) {
-    padding: 1.125rem 2rem;
-    font-size: 1rem;
-  }
-
   &:after {
     content: "";
     @extend %absolute;
@@ -56,6 +51,37 @@
     background: $gradient-primary;
   }
 
+  &--secondary {
+    color: $green-dark;
+
+    .btn__first-layer {
+      display: block;
+      position: absolute;
+      content: "";
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      border-radius: inherit;
+      background: $gradient-primary;
+      z-index: 1;
+    }
+
+    .btn__second-layer {
+      opacity: 1;
+      display: block;
+      position: absolute;
+      content: "";
+      top: 1px;
+      right: 1px;
+      bottom: 1px;
+      left: 1px;
+      border-radius: inherit;
+      background-color: #fff;
+      z-index: 1;
+    }
+  }
+
   &--transparent {
     @extend %text-gradient;
   }
@@ -64,6 +90,16 @@
     &:after {
       opacity: 1;
     }
+  }
+
+  &--fixed-size {
+    padding: rem(18) 2rem rem(17);
+    font-size: 1rem;
+  }
+
+  @media (min-width: map_get($grid-breakpoints, xl)) {
+    padding: rem(18) 2rem rem(17);
+    font-size: 1rem;
   }
 }
 

@@ -106,8 +106,11 @@
 
                 <p class="secure-text">{{ .Params.secureText }}</p>
 
-                <a href="/security/" title="Learn more about Claritus' security and privacy" class="btn btn--primary">
-                    Learn more </a>
+                <a href="/security/" title="Learn more about Claritus' security and privacy" class="btn btn--secondary btn--fixed-size">
+                    <span class="btn__first-layer"></span>
+                    <span class="btn__second-layer"></span>
+                    <span class="btn__text">Learn more</span>
+                </a>
             </div>
         </div>
     </div>
@@ -129,6 +132,12 @@
                 </h2>
 
                 <p class="cover-financials-text">{{ .Params.coverFinancialsText }}</p>
+
+                <a href="{{ .Site.Params.appUrl }}/on-boarding" class="btn btn--secondary btn--fixed-size">
+                    <span class="btn__first-layer"></span>
+                    <span class="btn__second-layer"></span>
+                    <span class="btn__text">Sign up</span>
+                </a>
             </div>
         </div>
     </div>
