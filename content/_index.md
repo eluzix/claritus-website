@@ -1,6 +1,6 @@
 ---
 ## Home intro
-title: Keep track of your wealth, 
+title: Keep Track of Your Wealth, 
 
 date: 2020-01-01T09:30:01+03:00
 
@@ -32,7 +32,7 @@ financialInstitutes:
 
 ##Assets 
 
-assetsTitle: All your assets in one place
+assetsTitle: All Your Assets in One Place
 
 assetsText: It’s time to take control of your assets and with Claritus you can easily track ALL of your assets and investments! You will have an automatic and clear view of your holdings, without using spreadsheets and without needing a degree in finance!!
 
@@ -46,20 +46,20 @@ secureText: Your privacy, security and anonymity are our top priorities. All of 
 
 ##Cover financials
 
-coverFinancialsTitle: Covers more than 17,000 financial institutions
+coverFinancialsTitle: Covers More Than 17,000 Financial Institutions
 
 coverFinancialsText: Claritus supports more than 17,000 global financial institutions, brokerages, and other financial organizations to provide automatic and up-to-date data.
 
 
 ##Benchmark
 
-benchmarkTitle: Benchmark yourself against others
+benchmarkTitle: Benchmark Yourself Against Others
 
 benchmarkText: Use our comparison feature to see how your allocation compares to other investors similar to you. Share insights, investing ideas and strategies every day.
 
 
 ##Feedbacks
-feedbackTitle: What customers are saying
+feedbackTitle: What Customers are Saying
 
 feedbacks:
 - feedbackText: Fantastic! The app is really well designed, loads very fast and I really appreciate the subtle details that have been included. I'm very happy to have found it.
@@ -80,7 +80,7 @@ feedbacks:
 
 ##History
 
-historyTitle: Your history matters
+historyTitle: Your History Matters
 
 historyText: With Claritus, you can measure your portfolio's performance over time easily and accurately. Use Claritus' dynamic analytics and portfolio cross-asset comparisons to make intelligent and informed financial decisions.
   <br/></br>Your holding history has huge value
