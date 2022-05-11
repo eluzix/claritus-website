@@ -89,7 +89,7 @@ section.blog-articles-section {
   margin-bottom: 4rem;
 
   &__img {
-    display: inline-flex;
+    display: flex;
     width: 100%;
     position: relative;
     border-radius: 1rem 1rem 0px 0px;
@@ -106,12 +106,22 @@ section.blog-articles-section {
       img {
         transform: scale(1.1);
       }
+
+      + .post__title {
+        color: $green-dark;
+      }
+    }
+
+    &:active {
+      + .post__title {
+        color: #008669;
+      }
     }
   }
 
   &__title {
     display: block;
-    margin-top: 1.5rem;
+    padding-top: 1.5rem;
     font-weight: 700;
     font-size: 1.125rem;
     color: $dark-9;
