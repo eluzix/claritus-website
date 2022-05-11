@@ -208,6 +208,11 @@ function initLazyLoad() {
     if (hpAssetImg) {
       observer.triggerLoad(hpAssetImg);
     }
+
+    const videos = document.querySelector(".how-work-content video");
+    if (videos) {
+      observer.triggerLoad(videos);
+    }
   });
 }
 
