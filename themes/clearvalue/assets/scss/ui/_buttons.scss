@@ -5,11 +5,11 @@
   overflow: hidden;
   position: relative;
   color: #fff;
-  padding: rem(11) 1rem;
+  padding: rem(11) rem(24);
   border-radius: 0.5rem;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 0.875rem;
-  line-height: rem(21);
+  line-height: rem(18);
 
   &:after {
     content: "";
@@ -33,18 +33,14 @@
     box-shadow: none;
   }
 
-  &--small {
-    padding: rem(11) 1rem;
+  @media (min-width: map_get($grid-breakpoints, xl)) {
+    padding: rem(18) 2rem rem(17);
+    font-size: 1rem;
+    line-height: rem(21);
   }
 
-  &--medium {
-    padding: rem(11) 1rem;
-    font-size: 0.875rem;
-
-    @media (min-width: map_get($grid-breakpoints, xl)) {
-      padding: rem(14) 1rem;
-      font-size: 1rem;
-    }
+  &--small {
+    padding: rem(11) rem(24);
   }
 
   &--primary {
@@ -90,16 +86,6 @@
     &:after {
       opacity: 1;
     }
-  }
-
-  &--fixed-size {
-    padding: rem(18) 2rem rem(17);
-    font-size: 1rem;
-  }
-
-  @media (min-width: map_get($grid-breakpoints, xl)) {
-    padding: rem(18) 2rem rem(17);
-    font-size: 1rem;
   }
 }
 
