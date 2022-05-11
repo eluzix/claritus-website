@@ -209,9 +209,11 @@ function initLazyLoad() {
       observer.triggerLoad(hpAssetImg);
     }
 
-    const videos = document.querySelector(".how-work-content video");
-    if (videos) {
-      observer.triggerLoad(videos);
+    const videos = document.querySelectorAll(".how-work-content video");
+    if (videos && videos.length) {
+      videos.forEach((v) => {
+        observer.triggerLoad(v)
+      })
     }
   });
 }
