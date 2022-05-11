@@ -2,8 +2,9 @@
 type: about-us
 
 title: Our mission is your financial peace of mind
+metaTitle: About us - Our mission is your financial peace of mind
 
-description: Claritus is a simple-to-use, personal portfolio management solution.
+description: Claritus is an easy-to-use, personal portfolio management solution that lets you view all of your investments in one place. This is the only service you’ll need to track, analyze, and grow your wealth.
 
 ##config
 type: about-us
