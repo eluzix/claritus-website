@@ -115,5 +115,13 @@ section.blog-articles-section {
     font-weight: 700;
     font-size: 1.125rem;
     color: $dark-9;
+
+    &:hover {
+      color: $green-dark;
+    }
+
+    &:active {
+      color: #008669;
+    }
   }
 }
