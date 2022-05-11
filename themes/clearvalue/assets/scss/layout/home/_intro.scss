@@ -1,7 +1,11 @@
 section.home-intro-section {
   //min-height: 100vh;
   z-index: 1;
-  padding-top: rem(100);
+  padding-top: rem(114);
+
+  @media (min-width: map_get($grid-breakpoints, md)) {
+    padding-top: rem(114);
+  }
 
   @media (min-width: map_get($grid-breakpoints, xl)) {
     padding: rem(180) 0 rem(140) 0;
@@ -41,32 +45,20 @@ section.home-intro-section {
 
   &__title {
     color: #fff;
-    margin-bottom: 1.5rem;
-    font-size: 2rem;
+    margin-bottom: rem(24);
+    font-size: rem(32);
+    line-height: rem(42);
 
     @media (min-width: map_get($grid-breakpoints, md)) {
-      //font-size: rem(50);
       font-size: rem(50);
-      text-align: center;
-    }
-
-    @media (min-width: map_get($grid-breakpoints, xl)) {
-      text-align: left;
+      line-height: 130%;
     }
   }
 
   &__text {
     color: #e3e5ed;
-    font-size: 1rem;
-
-    @media (min-width: map_get($grid-breakpoints, md)) {
-      font-size: 1.125rem;
-      text-align: center;
-    }
-
-    @media (min-width: map_get($grid-breakpoints, xl)) {
-      text-align: left;
-    }
+    font-size: rem(18);
+    line-height: 170%;
   }
 
   &__btn {
@@ -75,19 +67,6 @@ section.home-intro-section {
 
     @media (min-width: map_get($grid-breakpoints, md)) {
       margin-top: rem(40);
-      justify-content: center;
-    }
-
-    @media (min-width: map_get($grid-breakpoints, xl)) {
-      margin-top: rem(40);
-      justify-content: flex-start;
-    }
-
-    .btn {
-      @media (min-width: map_get($grid-breakpoints, xl)) {
-        padding-left: rem(25);
-        padding-right: rem(25);
-      }
     }
   }
 }
@@ -114,20 +93,22 @@ section.home-intro-section {
 
   @media (min-width: map_get($grid-breakpoints, md)) {
     flex-direction: row;
-    justify-content: center;
+    margin-top: rem(40);
   }
 
   @media (min-width: map_get($grid-breakpoints, xl)) {
     margin-top: rem(100);
-    justify-content: flex-start;
   }
 
   .intro-overview {
     display: inline-flex;
     margin-bottom: 1.5rem;
 
-    @media (min-width: map_get($grid-breakpoints, xl)) {
+    @media (min-width: map_get($grid-breakpoints, md)) {
       margin-bottom: 0;
+    }
+
+    @media (min-width: map_get($grid-breakpoints, xl)) {
       width: 50%;
     }
 
