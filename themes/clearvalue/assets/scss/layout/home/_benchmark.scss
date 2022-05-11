@@ -11,12 +11,5 @@ section.benchmark-section {
 }
 
 .benchmark-img {
-  background-color: #17205b;
-  border-radius: 1rem;
-  padding-top: 400/720 * 100%;
-  margin-top: 3rem;
-
-  @media (min-width: map_get($grid-breakpoints, xl)) {
-    margin-top: 0;
-  }
+  
 }

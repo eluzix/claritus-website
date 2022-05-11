@@ -53,9 +53,9 @@ coverFinancialsText: Claritus supports more than 17,000 global financial institu
 
 ##Benchmark
 
-benchmarkTitle: Benchmark Yourself Against Others
+benchmarkTitle: Clearing the Investment Fog
 
-benchmarkText: Use our comparison feature to see how your allocation compares to other investors similar to you. Share insights, investing ideas and strategies every day.
+benchmarkText: Investors live in a constant fog today by not having visibility of their entire wealth. Claritus combines past insights and today's portfolio, so you always know that you know. Claritus is the platform every investor needs to make decisions with clarity and confidence.
 
 
 ##Feedbacks
