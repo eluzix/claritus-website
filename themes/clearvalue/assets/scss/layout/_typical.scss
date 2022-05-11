@@ -2,7 +2,7 @@ section.typical-section {
   padding: rem(20) 0 3.5rem 0;
 
   @media (min-width: map_get($grid-breakpoints, md)) {
-    padding: 3.5rem 0;
+    padding: 3.5rem 0 rem(120);
   }
 }
 
@@ -10,17 +10,15 @@ section.typical-section {
   margin-bottom: 2rem;
   text-align: center;
 
-
-
   &__logo {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 4rem;
-    height: 4rem;
-    background-color: #fff;
+    width: rem(72);
+    height: rem(72);
     border-radius: 50%;
-    box-shadow: 0 0 2rem rgba(203, 207, 227, 0.6);
+    background-color: #fff;
+    box-shadow: 0px 0px 32px rgba(203, 207, 227, 0.6);
     margin-bottom: rem(40);
 
     img {
@@ -31,8 +29,9 @@ section.typical-section {
   }
 
   &__title {
-    font-weight: 700;
-    font-size: 2rem;
+    font-weight: 500;
+    font-size: rem(50);
+    line-height: 130%;
     color: $dark-9;
     text-align: left;
 
@@ -50,10 +49,10 @@ section.typical-section {
 
   p,
   li {
-    margin-bottom: 0.75rem;
+    margin-bottom: rem(12);
     font-weight: 400;
-    font-size: 1.125rem;
-    line-height: 170%;
+    font-size: rem(18);
+    line-height: rem(31);
     color: $dark-7;
   }
 
@@ -68,7 +67,9 @@ section.typical-section {
   }
 
   h2 {
-    font-size: 1.5rem;
+    font-weight: 500;
+    font-size: rem(24);
+    line-height: rem(31);
   }
 
   h3 {
@@ -81,6 +82,10 @@ section.typical-section {
 
   a {
     color: $green-dark;
+
+    &.bold-link {
+      font-weight: 700;
+    }
   }
 
   ul {
@@ -98,15 +103,40 @@ section.typical-section {
           margin-bottom: 0;
         }
       }
+
+      > a {
+        font-weight: 400;
+        font-size: rem(18);
+        line-height: 170%;
+        color: $dark-7;
+        transition: opacity 0.2s;
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
     }
   }
 
   ol {
     margin: rem(40) 0 rem(20) 0;
-    padding: 0 0 0 rem(20);
+    padding: 0;
 
     @media (min-width: map_get($grid-breakpoints, md)) {
-      margin: rem(60) 0 rem(20) 0;
+      margin: rem(80) 0 rem(20) 0;
+    }
+
+    &.internal-list {
+      margin-top: 0;
+      list-style-position: inside;
+
+      li {
+        margin-bottom: rem(32);
+
+        p {
+          display: inline;
+        }
+      }
     }
 
     li {
@@ -130,6 +160,7 @@ section.typical-section {
       }
 
       h6 {
+        color: $dark-9;
         font-weight: 500;
         font-size: 1.5rem;
         margin-bottom: 1.5rem;
@@ -176,15 +207,17 @@ section.typical-section {
     width: 100%;
     overflow: hidden;
     overflow-x: auto;
+    border-radius: rem(16);
+    border: 1px solid $gray-200;
 
     @media (min-width: map_get($grid-breakpoints, xl)) {
       width: auto;
-      margin-left: -80px;
-      margin-right: -80px;
+      margin-left: -90px;
+      margin-right: -90px;
     }
 
     &:not(:last-child) {
-      margin-bottom: 2.875rem;
+      margin-bottom: rem(32);
     }
 
     &::-webkit-scrollbar {
@@ -204,6 +237,7 @@ section.typical-section {
   table {
     width: 100%;
     min-width: rem(700);
+    table-layout: fixed;
     border-collapse: collapse;
 
     tr {
@@ -214,10 +248,18 @@ section.typical-section {
         font-size: rem(14);
         margin: 0;
         vertical-align: top;
-        border: 1px solid $gray-200;
+
+        &:not(:last-child) {
+          border-right: 1px solid $gray-200;
+        }
 
         ul {
+          margin: 0;
           padding: rem(12) 0 0 rem(20);
+
+          &.no-title {
+            padding-top: 0;
+          }
 
           li {
             font-size: rem(14);
@@ -233,18 +275,33 @@ section.typical-section {
       }
 
       th {
-        font-weight: 700;
         color: $dark-11;
+        font-weight: 700;
+        line-height: rem(18);
       }
 
       td {
         &.has-bg {
-          background-color: #eeeef4;
-          font-weight: 500;
           color: $dark-9;
+          font-weight: 500;
+          line-height: rem(18);
+          background-color: #eeeef4;
+        }
+      }
+
+      &:not(:last-child):not(.no-border) {
+        th,
+        td {
+          border-bottom: 1px solid $gray-200;
         }
       }
     }
+  }
+
+  .update-date {
+    font-size: rem(18);
+    line-height: rem(23);
+    margin: rem(80) 0 0;
   }
 
   &.terms {
@@ -268,6 +325,24 @@ section.typical-section {
         }
       }
     }
+  }
+
+  &.privacy {
+    > ol {
+      list-style: none;
+      counter-reset: ordered-list;
+
+      li {
+        h6 {
+          text-indent: rem(16);
+
+          &::before {
+            counter-increment: ordered-list;
+            content: counter(ordered-list)". ";
+          }
+        }
+      }
+    } 
   }
 }
 
