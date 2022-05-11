@@ -131,18 +131,23 @@ section.pricing-section {
   display: flex;
   flex-direction: column;
   position: absolute;
-  left: 60%;
+  right: rem(0);
   bottom: 100%;
   font-weight: 500;
   font-size: 1.125rem;
   line-height: rem(23);
   color: #00b08b;
-  margin-bottom: rem(10);
+  margin-bottom: rem(14);
   opacity: 0;
   transition: all 0.5s ease;
 
+  @media (min-width: map_get($grid-breakpoints, md)) {
+    right: rem(-16);
+  }
+
   svg {
-    margin-left: rem(5);
+    margin-left: rem(40);
+    margin-top: rem(4);
     fill: #00b08b;
     transform: rotate(-59.71deg);
   }
