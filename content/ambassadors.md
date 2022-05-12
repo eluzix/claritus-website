@@ -7,13 +7,13 @@ url: /ambassadors
 type: ambassadors
 ---
 
-Our referral plan is our appreciation program to give back to our customers like you for being our ambassadors.
+We consider our referral program to be our appreciation program to give back to our loyal customers like you for being our ambassadors.
 
-We wanted to simplify it for you. All you have to do is be a customer of Claritus and recommend it to your friends and colleagues.
+Here at Claritus we like to keep it simple. All you have to do is be a customer of Claritus and recommend Claritus to your friends and colleagues.
 
 Once your friend has signed up, let us know at [hello@Claritus.io](hello@Claritus.io), and both of you will get $50 worth of credits* towards your subscription.
 
-That's our way of saying thank you.
+This is our way of saying thank you for being a loyal customer!
 
 {{< rawhtml >}}
 <div class="terms-title">* Ambassador terms apply.</div>
