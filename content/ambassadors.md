@@ -11,7 +11,7 @@ We consider our referral program to be our appreciation program to give back to 
 
 Here at Claritus we like to keep it simple. All you have to do is be a customer of Claritus and recommend Claritus to your friends and colleagues.
 
-Once your friend has signed up, let us know at [hello@Claritus.io](hello@Claritus.io), and both of you will get $50 worth of credits* towards your subscription.
+Once your friend has signed up, let us know at [hello@claritus.io](mailto:hello@claritus.io), and both of you will get $50 worth of credits* towards your subscription.
 
 This is our way of saying thank you for being a loyal customer!
 
