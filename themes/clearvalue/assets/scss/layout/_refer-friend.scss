@@ -24,7 +24,7 @@ section.refer-friend-section {
 
 .refer-friend {
   width: 100%;
-  max-width: rem(680);
+  max-width: rem(690);
   min-height: rem(610);
   margin: 0 auto 0;
 
@@ -47,5 +47,25 @@ section.refer-friend-section {
     font-size: rem(18);
     line-height: 170%;
     color: $dark-9;
+    margin-bottom: 1.25rem;
+  }
+
+  a {
+    color: $green-dark;
+  }
+
+  .terms-title {
+    margin-top: rem(80);
+    margin-bottom: rem(12);
+  }
+
+  ul {
+    list-style-image: url('/images/bullet.svg');
+    //list-style-position: inside;
+    li {
+      margin-left: rem(12);
+      margin-bottom: rem(12);
+      line-height: 170%;
+    }
   }
 }
