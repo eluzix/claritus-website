@@ -209,6 +209,11 @@ function initLazyLoad() {
       observer.triggerLoad(hpAssetImg);
     }
 
+    const hpVideo = document.querySelector(".history-section video");
+    if (hpVideo) {
+      observer.triggerLoad(hpVideo);
+    }
+
     const videos = document.querySelectorAll(".how-work-content video");
     if (videos && videos.length) {
       videos.forEach((v) => {
