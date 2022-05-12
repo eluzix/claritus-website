@@ -133,14 +133,17 @@ function initHeaderScroll() {
   let scrollPosition = window.scrollY;
   const header = document.querySelector(".header-section");
 
-  window.addEventListener("scroll", function () {
+  const onScroll = () => {
     scrollPosition = window.scrollY;
     if (scrollPosition > 50) {
       header.classList.add("header--fixed");
     } else {
       header.classList.remove("header--fixed");
     }
-  });
+  }
+
+  onScroll()
+  window.addEventListener("scroll", onScroll);
 }
 
 // Init slider
@@ -433,7 +436,7 @@ function initTypedText() {
     let txt = element.dataset.typed;
     let iteratorIncrement = 0;
     let iteratorDecrement = txt.length;
-    let speed = 200;
+    let speed = 125;
 
     typeWriterIncrement();
 
@@ -489,14 +492,14 @@ function initScrollTopHandler() {
 
 // Trigering functions
 window.addEventListener("load", function (event) {
+  // header
+  initHeaderScroll();
+
   // Lazy load
   initLazyLoad();
 
   // Slider
   initSlider();
-
-  // header
-  initHeaderScroll();
 
   // Burger
   initBurgerMenu();

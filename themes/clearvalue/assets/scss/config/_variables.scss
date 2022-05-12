@@ -10,16 +10,13 @@ $gray-400: #a4a9bb;
 $gray-500: #7e829e;
 $gray-600: #5a5e7b;
 $green: #45dd95;
-$primary: #2967f0;
+$green-light: #ADE8D3;
 $green-dark: #00b08b;
+$primary: #2967f0;
 $purple-100: #f8f8fe;
 $purple-200: #e2e4f1;
-$gradient-primary: linear-gradient(
-  90.36deg,
-  #46dd94 -0.66%,
-  #23d3ab 101.59%,
-  #17d6b3 101.59%
-);
+$gradient-primary: linear-gradient(90.36deg, #2FAE71 -0.66%, #23D3AB 101.59%, #0C9F85 101.59%);
+$gradient-primary-strong: linear-gradient(90.36deg, #179D5D -0.66%, #23D3AB 101.59%, #038E75 101.59%);
 
 //Base config
 $body-color: #2b2f4a;
@@ -42,7 +39,7 @@ $container-max-widths: (
   md: 700px,
   lg: 960px,
   xl: 1160px,
-  xxl: 1220px,
+  xxl: 1230px,
 );
 
 //$grid-gutter-width: 4rem;

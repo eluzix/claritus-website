@@ -22,6 +22,7 @@ footer.footer-section {
   margin-bottom: 1.5rem;
   color: $gray-100;
   font-size: 0.875rem;
+  line-height: rem(18);
 }
 
 .footer-social {
@@ -35,13 +36,14 @@ footer.footer-section {
 
   &__item {
     fill: $gray-400;
-    margin-right: rem(25);
+    margin-right: rem(24);
   }
 }
 
 .footer-subscribe {
   width: 100%;
   margin-bottom: 2rem;
+  padding-top: rem(4);
 
   @media (min-width: map_get($grid-breakpoints, md)) {
     margin-bottom: rem(40);
@@ -57,21 +59,23 @@ footer.footer-section {
     font-size: 0.875rem;
     line-height: rem(21);
     color: #eeeef4;
-    margin-bottom: 1rem;
+    margin-bottom: rem(12);
   }
 
   &__field {
-    margin-bottom: 0.75rem;
+    margin-bottom: rem(16);
 
     input {
-      border-color: $gray-500;
       color: $dark-1;
+      font-size: rem(14);
+      border-color: $gray-500;
     }
   }
 
   &__btn {
-    padding: rem(7) rem(15);
+    padding: rem(7) rem(16);
     font-size: 0.875rem;
+    line-height: rem(18);
     margin-top: 1rem;
   }
 
@@ -94,43 +98,69 @@ footer.footer-section {
 .checkbox {
   display: flex;
   align-items: center;
+  width: fit-content;
   cursor: pointer;
   user-select: none;
 
-  input {
+  .checkbox__input {
     display: none;
   }
 
-  &__field {
-    width: rem(22);
-    height: rem(22);
-    background-color: $dark-11;
+  &__check {
+    position: relative;
+    width: rem(16);
+    height: rem(16);
+    background-color: $dark-9;
     border: 1px solid $dark-7;
     border-radius: 4px;
-    margin-right: 0.75rem;
+    margin-right: rem(8);
+
+    &:before {
+      display: none;
+      position: absolute;
+      content: '';
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: rem(16);
+      height: rem(16);
+      background: url('/images/check-icon.svg') no-repeat center;
+    }
   }
 
   &__label {
     font-weight: 400;
-    font-size: 0.875rem;
-    line-height: 1.125rem;
+    font-size: rem(12);
+    line-height: rem(16);
     color: $gray-100;
+
+    a {
+      color: inherit;
+      text-decoration: underline;
+    }
   }
 
-  input:checked + .checkbox__field {
-    background-color: #fff;
+  .checkbox__input:checked + .checkbox__check {
+    &:before {
+      display: block;
+    }
   }
 }
 
 .footer-list {
   display: flex;
   flex-direction: column;
+  padding-top: rem(8);
 
   &__item {
     font-weight: 500;
     font-size: 0.875rem;
+    line-height: rem(18);
     color: $gray-100;
-    margin-bottom: 1rem;
+    
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
   }
 }
 
@@ -144,6 +174,7 @@ footer.footer-section {
   &__text {
     padding: 1rem 0;
     font-size: 0.875rem;
+    line-height: rem(18);
     color: $gray-400;
     text-align: center;
     border-top: 1px solid $dark-7;

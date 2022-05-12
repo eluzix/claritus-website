@@ -13,58 +13,60 @@
         <img src="/images/home-intro-bg.svg" alt=""/>
     </figure>
 
-    <div class="home-intro">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-6">
-                    <h1 class="home-intro__title">
-                        {{ .Title | safeHTML }}
-                        <span class="typed-text" data-typed="Simply"></span>
-                    </h1>
+    <div class="container">
+        <div class="row no-gutters">
+            <div class="home-intro home-block">
+                <h1 class="home-intro__title">
+                    {{ .Title | safeHTML }}
+                    <em class="typed-text" data-typed="Simply"></em>
+                </h1>
 
-                    <p class="home-intro__text">{{ .Params.heroText | safeHTML }}</p>
+                <p class="home-intro__text">{{ .Params.heroText | safeHTML }}</p>
 
-                    <div class="home-intro__btn">
-                        <a href="#" class="btn btn--primary"> Try for Free </a>
-                    </div>
+                <div class="home-intro__btn">
+                    <a href="#" class="btn btn--primary"> Try for Free </a>
+                </div>
 
-                    <div class="intro-overview-wrap">
-                        {{ range .Params.homeOverview }}
-                        <div class="intro-overview">
-                            <figure class="intro-overview__icon">
-                                <svg width="15" height="15">
-                                    <use xlink:href="#{{ .icon }}"></use>
-                                </svg>
-                            </figure>
+                <div class="intro-overview-wrap">
+                    {{ range .Params.homeOverview }}
+                    <div class="intro-overview">
+                        <figure class="intro-overview__icon">
+                            <svg width="15" height="15">
+                                <use xlink:href="#{{ .icon }}"></use>
+                            </svg>
+                        </figure>
 
-                            <div class="intro-overview-content">
-                                <h3 class="intro-overview-content__title">{{ .title }}</h3>
-                                <div class="intro-overview-content__text">
-                                    {{ .text | safeHTML }}
+                        <div class="intro-overview-content">
+                            <h3 class="intro-overview-content__title">{{ .title }}</h3>
+                            <div class="intro-overview-content__text intro-overview-content__text--has-popup">
+                                {{ .text | safeHTML }}
 
-                                    {{ if .popupText }}
-                                    <div class="popup">
-                                        <button class="popup__btn">
-                                            <svg width="15" height="15">
-                                                <use xlink:href="#info-icon"></use>
-                                            </svg>
-                                        </button>
-                                        <div class="popup__message">
-                                            {{ .popupText }}
-                                        </div>
+                                {{ if .popupText }}
+                                <div class="popup">
+                                    <button class="popup__btn">
+                                        <svg width="15" height="15">
+                                            <use xlink:href="#info-icon"></use>
+                                        </svg>
+                                    </button>
+                                    <div class="popup__message">
+                                        {{ .popupText }}
                                     </div>
-                                    {{ end }}
                                 </div>
+                                {{ end }}
                             </div>
                         </div>
-                        {{ end }}
                     </div>
+                    {{ end }}
                 </div>
             </div>
         </div>
     </div>
 
-    <img src="/images/home-intro-img.png" alt="" class="home-intro-img lozad"/>
+    <picture data-iesrc="/images/home-intro-fullhd.png" class="home-intro-picture lozad">
+        <source srcset="/images/home-intro-fullhd.png" media="(min-width: 1220px)"/>
+        <source srcset="/images/home-intro-fullhd.png" media="(min-width: 768px)"/>
+        <source srcset="/images/home-intro-fullhd.png" media="(min-width: 320px)"/>
+    </picture>
 </section>
 
 <section class="financials-institutes-section">
@@ -80,31 +82,32 @@
 </section>
 
 <section class="assets-section">
-    <div class="assets-wrap">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-11 col-lg-8 col-xl-7">
-                    <h2 class="assets-title">{{ .Params.assetsTitle }}</h2>
+    <div class="container">
+        <div class="row no-gutters">
+            <div class="assets home-block">
+                <h2 class="assets__title">{{ .Params.assetsTitle }}</h2>
 
-                    <p class="assets-text">{{ .Params.assetsText }}</p>
+                <p class="assets__text">{{ .Params.assetsText }}</p>
 
-                    <a href="https://app.claritus.io/on-boarding" title="Try Claritus free for 14 days"
-                       class="btn btn--primary"> Try now </a>
-                </div>
+                <a href="https://app.claritus.io/on-boarding" title="Try Claritus free for 14 days" class="btn btn--primary"> Try now </a>
             </div>
         </div>
     </div>
 
-    <img data-src="/images/assets-bg.jpg" alt="" class="assets-bg lozad"/>
+    <picture data-iesrc="/images/assets-bg-fullhd.png" class="assets-picture lozad">
+        <source srcset="/images/assets-bg-fullhd.png" media="(min-width: 1220px)"/>
+        <source srcset="/images/assets-bg-fullhd.png" media="(min-width: 768px)"/>
+        <source srcset="/images/assets-bg-fullhd.png" media="(min-width: 320px)"/>
+    </picture>
 </section>
 
 <section class="secure-section">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-7 col-xl-6">
-                <h2 class="secure-title">{{ .Params.secureTitle }}</h2>
+        <div class="row no-gutters">
+            <div class="secure home-block">
+                <h2 class="secure__title">{{ .Params.secureTitle }}</h2>
 
-                <p class="secure-text">{{ .Params.secureText }}</p>
+                <p class="secure__text">{{ .Params.secureText }}</p>
 
                 <a href="/security/" title="Learn more about Claritus' security and privacy" class="btn btn--secondary">
                     <span class="btn__first-layer"></span>
@@ -115,23 +118,22 @@
         </div>
     </div>
 
-    <picture data-iesrc="/images/secure-bg-mob.svg" class="secure-bg lozad">
-        <source srcset="/images/secure-bg-fullhd.svg" media="(min-width: 1200px)"/>
+    <picture data-iesrc="/images/secure-bg-mob.svg" class="secure-picture lozad">
+        <source srcset="/images/secure-bg-fullhd.svg" media="(min-width: 1220px)"/>
         <source srcset="/images/secure-bg-tablet.svg" media="(min-width: 768px)"/>
         <source srcset="/images/secure-bg-mob.svg" media="(min-width: 320px)"/>
-        <!--		<img src="/images/secure-bg-mob.svg" alt=""/>-->
     </picture>
 </section>
 
 <section class="financial-cover-section">
     <div class="container">
-        <div class="row justify-content-end">
-            <div class="col-lg-7 col-xl-6">
-                <h2 class="cover-financials-title">
+        <div class="row no-gutters">
+            <div class="financial-cover home-block">
+                <h2 class="financial-cover__title">
                     {{ .Params.coverFinancialsTitle }}
                 </h2>
 
-                <p class="cover-financials-text">{{ .Params.coverFinancialsText }}</p>
+                <p class="financial-cover__text">{{ .Params.coverFinancialsText }}</p>
 
                 <a href="{{ .Site.Params.appUrl }}/on-boarding" class="btn btn--secondary">
                     <span class="btn__first-layer"></span>
@@ -142,24 +144,29 @@
         </div>
     </div>
 
-    <img data-src="/images/financials-cover.jpg" alt="" class="financial-cover-img lozad"/>
+    <picture data-iesrc="/images/institutions-fullhd.png" class="financial-cover-picture lozad">
+        <source srcset="/images/institutions-fullhd.png" media="(min-width: 1220px)"/>
+        <source srcset="/images/institutions-fullhd.png" media="(min-width: 768px)"/>
+        <source srcset="/images/institutions-fullhd.png" media="(min-width: 320px)"/>
+    </picture>
 </section>
 
 <section class="benchmark-section">
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-xl-7">
-                <h2 class="benchmark-title">{{ .Params.benchmarkTitle }}</h2>
+        <div class="row no-gutters">
+            <div class="benchmark home-block">
+                <h2 class="benchmark__title">{{ .Params.benchmarkTitle }}</h2>
 
-                <p class="benchmark-text">{{ .Params.benchmarkText }}</p>
-            </div>
-            <div class="col-lg-8 col-xl-7">
-                <figure class="benchmark-img">
-                    <img src="/images/all-assets-img.png" alt="" class="lozad"/>
-                </figure>
+                <p class="benchmark__text">{{ .Params.benchmarkText }}</p>
             </div>
         </div>
     </div>
+
+    <picture data-iesrc="/images/all-assets-fullhd.png" class="benchmark-picture lozad">
+        <source srcset="/images/all-assets-fullhd.png" media="(min-width: 1220px)"/>
+        <source srcset="/images/all-assets-fullhd.png" media="(min-width: 768px)"/>
+        <source srcset="/images/all-assets-fullhd.png" media="(min-width: 320px)"/>
+    </picture>
 </section>
 
 <section class="feedback-section">
@@ -196,20 +203,18 @@
 
 <section class="history-section">
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-xl-7">
-                <h2 class="history-title">{{ .Params.historyTitle }}</h2>
+        <div class="row no-gutters">
+            <div class="history home-block">
+                <h2 class="history__title">{{ .Params.historyTitle }}</h2>
 
-                <p class="history-text">{{ .Params.historyText | safeHTML }}</p>
-            </div>
-
-            <div class="col-md-8 col-xl-7">
-                <video class="lozad history-img" data-poster="https://claritus.s3.amazonaws.com/website/videos/your-history-matters.jpg" width="100%" autoplay muted loop playsinline>
-                    <source data-src="https://claritus.s3.amazonaws.com/website/videos/your-history-matters.mp4" type="video/mp4">
-                </video>
+                <p class="history__text">{{ .Params.historyText | safeHTML }}</p>
             </div>
         </div>
     </div>
+
+    <video class="lozad history-video" data-poster="https://claritus.s3.amazonaws.com/website/videos/your-history-matters.jpg" width="100%" autoplay muted loop playsinline>
+        <source data-src="https://claritus.s3.amazonaws.com/website/videos/your-history-matters.mp4" type="video/mp4">
+    </video>
 </section>
 
 <section class="faq-section">
@@ -254,8 +259,8 @@
 
 <section class="simple-pricing-section">
     <div class="container">
-        <div class="row no-gutters justify-content-end">
-            <div class="simple-pricing">
+        <div class="row no-gutters">
+            <div class="simple-pricing home-block">
                 <h2 class="simple-pricing__title">{{ .Params.pricingTitle }}</h2>
 
                 <p class="simple-pricing__text">{{ .Params.pricingText | safeHTML }}</p>
@@ -274,7 +279,11 @@
         </div>
     </div>
 
-    <img data-src="/images/simple-pricing-img.jpg" alt="" class="simple-pricing-img lozad"/>
+    <picture data-iesrc="/images/pricing-fullhd.png" class="simple-pricing-picture lozad">
+        <source srcset="/images/pricing-fullhd.png" media="(min-width: 1220px)"/>
+        <source srcset="/images/pricing-fullhd.png" media="(min-width: 768px)"/>
+        <source srcset="/images/pricing-fullhd.png" media="(min-width: 320px)"/>
+    </picture>
 </section>
 
 {{ partial "sign-up.html" }}

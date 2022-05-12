@@ -1,15 +1,41 @@
 section.benchmark-section {
-  padding-bottom: 3.5rem;
+  
 
   @media (min-width: map_get($grid-breakpoints, xl)) {
-    padding: rem(100) 0;
+    padding: rem(332) 0 rem(100);
   }
 }
 
-.benchmark-title {
-  margin-bottom: 2rem;
+.benchmark {
+  position: absolute;
+  top: rem(126);
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
 }
 
-.benchmark-img {
+.benchmark__title {
+  margin-bottom: rem(16);
+
+  @media (min-width: map_get($grid-breakpoints, md)) {
+    margin-bottom: rem(24);
+  }
+
+  @media (min-width: map_get($grid-breakpoints, xl)) {
+    margin-bottom: rem(32);
+  }
+}
+
+.benchmark__text {
   
+}
+
+.benchmark-picture {
+  img {
+    display: block;
+    margin: rem(-96) auto;
+    width: 100%;
+    max-width: rem(1035);
+    height: auto;
+  }
 }

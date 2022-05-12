@@ -3,7 +3,7 @@ section.faq-section {
   background-color: $purple-200;
 
   @media (min-width: map_get($grid-breakpoints, xl)) {
-    padding: rem(80) 0 rem(40);
+    padding: rem(80) 0 rem(50);
   }
 }
 
