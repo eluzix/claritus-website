@@ -87,7 +87,9 @@ Check your return for any investment, asset type or tag. Choose your time frame 
 time.
 
 {{< rawhtml >}}
-<img data-src="/images/contact-us-bg.jpg" alt="" class="lozad">
+<video class="lozad" data-poster="https://claritus.s3.amazonaws.com/website/videos/see-your-investments-return.jpg" width="100%" autoplay muted loop playsinline>
+    <source data-src="https://claritus.s3.amazonaws.com/website/videos/see-your-investments-return.mp4" type="video/mp4">
+</video>
 {{< /rawhtml >}}
 
 ### Organize your investments the way you want
@@ -95,7 +97,9 @@ time.
 Group investments with tags and get an instant view into their combined performance.
 
 {{< rawhtml >}}
-<img data-src="/images/contact-us-bg.jpg" alt="" class="lozad">
+<video class="lozad" data-poster="https://claritus.s3.amazonaws.com/website/videos/organize-your-investments.jpg" width="100%" autoplay muted loop playsinline>
+    <source data-src="https://claritus.s3.amazonaws.com/website/videos/organize-your-investments.mp4" type="video/mp4">
+</video>
 {{< /rawhtml >}}
 
 ### See your monthly reports
