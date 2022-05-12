@@ -1,0 +1,28 @@
+{{ define "content" }}
+
+<header class="header-section header-section--white">
+    {{ partial "header.html" }}
+    {{ partial "header-nav-menu.html" }}
+</header>
+
+<section class="refer-friend-section">
+    <img data-src="/images/refer-friend-img.png" alt="" class="refer-friend-img lozad"/>
+
+    <div class="container">
+        <div class="row no-gutters justify-content-center">
+            <div class="refer-friend">
+                <h1 class="refer-friend__title">
+                    {{ .Title }}
+                </h1>
+            
+                <div class="refer-friend__content">
+                    {{ .Content }}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{ end }}
+
+{{ define "title" }}{{ .Title }}{{ end }}
