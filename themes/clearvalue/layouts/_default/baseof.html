@@ -24,7 +24,7 @@
           content="{{ if .Params.Description }}{{ .Params.Description | plainify }}{{ else }}{{ .Site.Params.Description | plainify }}{{ end }}"/>
     <meta property="og:url" content="{{ .Permalink }}"/>
     <meta property="og:image"
-          content="{{ if .Params.thumbnail }}{{.Site.Params.noTrailingBaseURL}}{{ .Params.thumbnail }}{{else}}{{.Site.BaseURL}}images/claritus_preview.png{{ end }}">
+          content="{{ if .Params.thumbnail }}{{.Site.Params.noTrailingBaseURL}}{{ .Params.thumbnail }}{{else}}{{.Site.BaseURL}}/images/claritus_preview.png{{ end }}">
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="{{ .Permalink }}">
@@ -34,7 +34,7 @@
     <meta name="twitter:description"
           content="{{ if .Params.Description }}{{ .Params.Description | plainify }}{{ else }}{{ .Site.Params.Description | plainify }}{{ end }}"/>
     <meta property="twitter:image"
-          content="{{ if .Params.thumbnail }}{{.Site.Params.noTrailingBaseURL}}{{ .Params.thumbnail }}{{else}}{{.Site.BaseURL}}images/claritus_preview.png{{ end }}">
+          content="{{ if .Params.thumbnail }}{{.Site.Params.noTrailingBaseURL}}{{ .Params.thumbnail }}{{else}}{{.Site.BaseURL}}/images/claritus_preview.png{{ end }}">
     <link rel="canonical" href="{{ .Permalink }}">
 
     <link rel="preconnect" href="https://app.claritus.io">
