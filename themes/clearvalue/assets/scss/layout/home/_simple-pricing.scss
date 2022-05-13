@@ -1,13 +1,9 @@
 section.simple-pricing-section {
   // padding-top: 3rem;
 
-  // @media (min-width: map_get($grid-breakpoints, md)) {
-  //   padding-top: rem(80);
-  // }
-
-  // @media (min-width: map_get($grid-breakpoints, lg)) {
-  //   padding: rem(100) 0;
-  // }
+  @media (min-width: map_get($grid-breakpoints, md)) {
+    padding: rem(80) 0 rem(566);
+  }
 
   @media (min-width: map_get($grid-breakpoints, xl)) {
     padding: rem(206) 0 rem(182);
@@ -19,7 +15,10 @@ section.simple-pricing-section {
 }
 
 .simple-pricing {
-  margin-left: auto;
+  
+  @media (min-width: map_get($grid-breakpoints, xl)) {
+    margin-left: auto;
+  }
 }
 
 .simple-pricing__title {
@@ -53,13 +52,27 @@ section.simple-pricing-section {
 
 .simple-pricing-picture {
   img {
-    position: absolute;
+    position: static;
     width: 100%;
-    max-width: rem(737);
+    max-width: rem(375);
     height: auto;
     z-index: -1;
 
+    @media (min-width: map_get($grid-breakpoints, md)) {
+      position: absolute;
+      width: rem(737);
+      max-width: 100vw;
+      left: 50%;
+      bottom: rem(-28);
+      transform: translateX(-50%);
+    }
+
     @media (min-width: map_get($grid-breakpoints, xl)) {
+      width: 100%;
+      max-width: rem(737);
+      left: auto;
+      bottom: auto;
+      transform: translateX(0);
       top: rem(-3);
       right: 49.75%;
     }

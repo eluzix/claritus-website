@@ -3,9 +3,10 @@ section.home-intro-section {
   z-index: 1;
   // padding-top: rem(114);
 
-  // @media (min-width: map_get($grid-breakpoints, md)) {
-  //   padding-top: rem(114);
-  // }
+  @media (min-width: map_get($grid-breakpoints, md)) {
+    padding: rem(114) 0 rem(460);
+  }
+
   @media (min-width: map_get($grid-breakpoints, xl)) {
     padding: rem(170) 0 rem(80);
   }
@@ -24,7 +25,7 @@ section.home-intro-section {
   z-index: -1;
 
   @media (min-width: map_get($grid-breakpoints, md)) {
-    height: calc(100% - 300px);
+    height: calc(100% - 270px);
   }
 
   @media (min-width: map_get($grid-breakpoints, xl)) {
@@ -69,15 +70,28 @@ section.home-intro-section {
 
 .home-intro-picture {
   img {
-    position: absolute;
+    position: static;
     width: 100%;
-    max-width: rem(823);
+    max-width: rem(375);
     height: auto;
     z-index: -1;
 
+    @media (min-width: map_get($grid-breakpoints, md)) {
+      position: absolute;
+      bottom: rem(-46);
+      left: 50%;
+      transform: translateX(-50%);
+      width: rem(709);
+      max-width: 100vw;
+    }
+
     @media (min-width: map_get($grid-breakpoints, xl)) {
       top: rem(74);
+      bottom: auto;
       left: 46.5%;
+      transform: translateX(0);
+      width: 100%;
+      max-width: rem(823);
     }
   
     @media (min-width: map_get($grid-breakpoints, xxl)) {

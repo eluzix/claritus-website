@@ -6,12 +6,12 @@ section.secure-section {
   //   padding: rem(70) 0;
   // }
 
-  // @media (min-width: map_get($grid-breakpoints, xl)) {
-  //   padding: rem(165) 0;
-  // }
+  @media (min-width: map_get($grid-breakpoints, md)) {
+    padding: rem(84) 0 rem(260);
+  }
 
   @media (min-width: map_get($grid-breakpoints, xl)) {
-    padding: rem(220) 0 rem(100);
+    padding: rem(210) 0 rem(100);
   }
 
   @media (min-width: map_get($grid-breakpoints, xxl)) {
@@ -41,12 +41,17 @@ section.secure-section {
 
 .secure-picture {
   img {
-    position: absolute;
-    top: rem(-20);
-    left: 34%;
     z-index: -1;
 
+    @media (min-width: map_get($grid-breakpoints, md)) {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+
     @media (min-width: map_get($grid-breakpoints, xl)) {
+      right: auto;
+      bottom: auto;
       top: rem(44);
       left: 20%;
     }

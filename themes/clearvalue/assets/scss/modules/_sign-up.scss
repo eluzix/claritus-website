@@ -31,11 +31,12 @@ section.sign-up-section {
   }
 
   &__title {
-    font-size: 1.5rem;
+    font-size: rem(24);
+    line-height: rem(31);
     color: #ffffff;
     margin-bottom: 1rem;
 
-    @media (min-width: map_get($grid-breakpoints, xl)) {
+    @media (min-width: map_get($grid-breakpoints, md)) {
       font-size: 2rem;
       line-height: rem(42);
     }
@@ -49,9 +50,14 @@ section.sign-up-section {
     color: $gray-200;
     margin-bottom: 1.5rem;
 
-    @media (min-width: map_get($grid-breakpoints, xl)) {
+    @media (min-width: map_get($grid-breakpoints, md)) {
       margin-bottom: 2rem;
     }
+  }
+
+  &__button {
+    font-size: rem(16);
+    line-height: rem(21);
   }
 }
 

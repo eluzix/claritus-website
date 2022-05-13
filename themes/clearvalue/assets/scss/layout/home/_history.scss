@@ -1,9 +1,9 @@
 section.history-section {
   // padding: 3.5rem 0;
 
-  // @media (min-width: map_get($grid-breakpoints, md)) {
-  //   padding: rem(80) 0;
-  // }
+  @media (min-width: map_get($grid-breakpoints, md)) {
+    padding: rem(80) 0 rem(80);
+  }
 
   @media (min-width: map_get($grid-breakpoints, xl)) {
     padding: rem(72) 0 rem(128);
@@ -45,10 +45,12 @@ section.history-section {
 
 .history-video {
   display: block;
-  max-width: rem(667);
+  width: 100%;
+  max-width: rem(568);
   margin: 0 auto;
-//  background-color: #17205b;
   border-radius: 1rem;
-//  padding-top: 400/720 * 100%;
-//  width: 100%;
+
+  @media (min-width: map_get($grid-breakpoints, xl)) {
+    max-width: rem(678);
+  }
 }

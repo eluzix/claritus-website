@@ -17,12 +17,12 @@
 
   &__item {
     width: 85%;
-    padding: 1rem;
+    padding: 0 1rem;
     display: inline-flex;
     min-height: 100%;
 
     @media (min-width: map_get($grid-breakpoints, md)) {
-      width: 60%;
+      width: 54%;
     }
 
     @media (min-width: map_get($grid-breakpoints, lg)) {
