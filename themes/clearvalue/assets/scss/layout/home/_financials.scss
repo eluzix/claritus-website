@@ -1,5 +1,9 @@
 section.financials-institutes-section {
-  padding: 1.5rem 0;
+  padding: 0;
+
+  @media (min-width: map_get($grid-breakpoints, xxl)) {
+    padding: 1.5rem 0;
+  }
 }
 
 .financials-title {
@@ -39,6 +43,7 @@ section.financials-institutes-section {
 
     @media (min-width: map_get($grid-breakpoints, xxl)) {
       margin: 0 rem(36);
+      padding: 0;
     }
 
     img {

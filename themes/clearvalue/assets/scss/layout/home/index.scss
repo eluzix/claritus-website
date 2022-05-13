@@ -1,2 +1,6 @@
 @import "intro", "financials", "assets", "private-secure", "cover-financials",
   "benchmark", "feedback", "history", "faq", "simple-pricing";
+
+.home-block {
+  max-width: rem(580);
+}

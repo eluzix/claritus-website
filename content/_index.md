@@ -63,19 +63,19 @@ benchmarkText: Investors live in a constant fog today by not having visibility o
 feedbackTitle: What Customers are Saying
 
 feedbacks:
-- feedbackText: Fantastic! The app is really well designed, loads very fast and I really appreciate the subtle details that have been included. I'm very happy to have found it.
+- feedbackText: “Fantastic! The app is really well designed, loads very fast and I really appreciate the subtle details that have been included. I'm very happy to have found it.”
   feedbackName: Robert Fox
 
-- feedbackText: Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor
+- feedbackText: “Fantastic! The app is really well designed, loads very fast and I really appreciate the subtle details that have been included. I'm very happy to have found it.”
   feedbackName: Robert Fox
 
-- feedbackText: Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent ele porttitor rhoncus dolor purus non enim praesent ele 
+- feedbackText: “Fantastic! The app is really well designed, loads very fast and I really appreciate the subtle details that have been included. I'm very happy to have found it.”
   feedbackName: Robert Fox
 
-- feedbackText: Fantastic! The app is really well designed, loads very fast and I really appreciate the subtle details that have been included. I'm very happy to have found it.
+- feedbackText: “Fantastic! The app is really well designed, loads very fast and I really appreciate the subtle details that have been included. I'm very happy to have found it.”
   feedbackName: Robert Fox
 
-- feedbackText: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquam fuga laborum laudantium porro, praesentium quam saepe sit tempora voluptatem.
+- feedbackText: “Fantastic! The app is really well designed, loads very fast and I really appreciate the subtle details that have been included. I'm very happy to have found it.”
   feedbackName: Robert Fox
 
 

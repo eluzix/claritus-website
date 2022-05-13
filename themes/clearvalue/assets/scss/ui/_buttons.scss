@@ -10,6 +10,7 @@
   font-weight: 700;
   font-size: 0.875rem;
   line-height: rem(18);
+  transition: none;
 
   &:after {
     content: "";
@@ -40,11 +41,19 @@
   }
 
   &--small {
-    padding: rem(11) rem(24);
+    padding: rem(9) rem(24) rem(10);
   }
 
   &--primary {
     background: $gradient-primary;
+
+    &:focus:not(:disabled), &:focus-visible:not(:disabled) {
+      outline: 2px solid $green-light;
+    }
+
+    &:hover:not(:disabled), &:active:not(:disabled) {
+      background: $gradient-primary-strong;
+    }
   }
 
   &--secondary {
@@ -75,6 +84,19 @@
       border-radius: inherit;
       background-color: #fff;
       z-index: 1;
+    }
+
+    &:focus:not(:disabled), &:focus-visible:not(:disabled) {
+      color: $green-dark;
+      outline: 2px solid $green-light;
+    }
+
+    &:hover:not(:disabled), &:active:not(:disabled) {
+      color: #008669;
+
+      .btn__first-layer {
+        background: $gradient-primary-strong;
+      }
     }
   }
 
