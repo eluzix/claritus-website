@@ -3,8 +3,11 @@ section.assets-section {
   // min-height: rem(300);
 
   @media (min-width: map_get($grid-breakpoints, xl)) {
+    padding-top: rem(146);
+  }
+
+  @media (min-width: map_get($grid-breakpoints, xxl)) {
     padding-top: rem(80);
-    // padding-bottom: 0;
   }
 }
 

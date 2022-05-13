@@ -22,7 +22,7 @@ respectContent: <h3>Access your data</h3><p>Only a very small team has access to
 respectImg: /images/security/security-content-img-2.svg
 
 
-securityDisclaimer: We are committed to protecting your data and appreciate all feedback. If you ever have any questions, comments or concerns we encourage you to contact us at <a href="mailto:help@claritus.io">help@claritus.io</a>.
+securityDisclaimer: We are committed to protecting your data and appreciate all feedback. If you ever have any questions, comments or concerns we encourage you to contact us at <a href="mailto:help@claritus.io">help@claritus.io</a>
 
 
 ---

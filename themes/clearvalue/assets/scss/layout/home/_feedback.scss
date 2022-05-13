@@ -4,6 +4,10 @@ section.feedback-section {
   background-color: $purple-200;
 
   @media (min-width: map_get($grid-breakpoints, xl)) {
+    padding-top: rem(74);
+  }
+
+  @media (min-width: map_get($grid-breakpoints, xxl)) {
     padding-top: rem(124);
   }
 }

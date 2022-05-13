@@ -10,6 +10,10 @@ section.secure-section {
   //   padding: rem(165) 0;
   // }
 
+  @media (min-width: map_get($grid-breakpoints, xl)) {
+    padding: rem(220) 0 rem(100);
+  }
+
   @media (min-width: map_get($grid-breakpoints, xxl)) {
     padding: rem(214) 0 rem(100);
   }
@@ -41,5 +45,15 @@ section.secure-section {
     top: rem(-20);
     left: 34%;
     z-index: -1;
+
+    @media (min-width: map_get($grid-breakpoints, xl)) {
+      top: rem(44);
+      left: 20%;
+    }
+  
+    @media (min-width: map_get($grid-breakpoints, xxl)) {
+      top: rem(-20);
+      left: 34%;
+    }
   }
 }

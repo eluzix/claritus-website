@@ -10,6 +10,10 @@ section.simple-pricing-section {
   // }
 
   @media (min-width: map_get($grid-breakpoints, xl)) {
+    padding: rem(206) 0 rem(182);
+  }
+
+  @media (min-width: map_get($grid-breakpoints, xxl)) {
     padding: rem(236) 0 rem(204);
   }
 }
@@ -50,11 +54,19 @@ section.simple-pricing-section {
 .simple-pricing-picture {
   img {
     position: absolute;
-    top: rem(-3);
-    right: 50.55%;
     width: 100%;
     max-width: rem(737);
     height: auto;
     z-index: -1;
+
+    @media (min-width: map_get($grid-breakpoints, xl)) {
+      top: rem(-3);
+      right: 49.75%;
+    }
+
+    @media (min-width: map_get($grid-breakpoints, xxl)) {
+      top: rem(-3);
+      right: 50.55%;
+    }
   }
 }

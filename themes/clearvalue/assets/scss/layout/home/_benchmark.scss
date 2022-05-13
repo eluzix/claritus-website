@@ -4,6 +4,10 @@ section.benchmark-section {
   @media (min-width: map_get($grid-breakpoints, xl)) {
     padding: rem(332) 0 rem(100);
   }
+
+  @media (min-width: map_get($grid-breakpoints, xxl)) {
+    padding: rem(332) 0 rem(100);
+  }
 }
 
 .benchmark {
@@ -12,6 +16,14 @@ section.benchmark-section {
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
+
+  @media (min-width: map_get($grid-breakpoints, xl)) {
+    top: rem(106);
+  }
+
+  @media (min-width: map_get($grid-breakpoints, xxl)) {
+    top: rem(126);
+  }
 }
 
 .benchmark__title {

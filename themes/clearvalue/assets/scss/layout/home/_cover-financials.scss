@@ -10,6 +10,10 @@ section.financial-cover-section {
   //   padding: rem(150) 0;
   // }
 
+  @media (min-width: map_get($grid-breakpoints, xl)) {
+    padding: rem(302) 0 rem(100);
+  }
+
   @media (min-width: map_get($grid-breakpoints, xxl)) {
     padding: rem(310) 0 rem(100);
   }
@@ -42,11 +46,20 @@ section.financial-cover-section {
 .financial-cover-picture {
   img {
     position: absolute;
-    top: rem(87);
-    right: 41.75%;
     width: 100%;
-    max-width: rem(916);
     height: auto;
     z-index: -1;
+
+    @media (min-width: map_get($grid-breakpoints, xl)) {
+      top: rem(79);
+      right: 37.5%;
+      max-width: 67vw;
+    }
+
+    @media (min-width: map_get($grid-breakpoints, xxl)) {
+      top: rem(87);
+      right: 41.75%;
+      max-width: rem(916);
+    }
   }
 }

@@ -6,6 +6,10 @@ section.history-section {
   // }
 
   @media (min-width: map_get($grid-breakpoints, xl)) {
+    padding: rem(72) 0 rem(128);
+  }
+
+  @media (min-width: map_get($grid-breakpoints, xxl)) {
     padding: rem(100) 0 rem(128);
   }
 }

@@ -6,12 +6,12 @@ section.home-intro-section {
   // @media (min-width: map_get($grid-breakpoints, md)) {
   //   padding-top: rem(114);
   // }
-
   @media (min-width: map_get($grid-breakpoints, xl)) {
-    padding: rem(180) 0 rem(140) 0;
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
+    padding: rem(170) 0 rem(80);
+  }
+
+  @media (min-width: map_get($grid-breakpoints, xxl)) {
+    padding: rem(180) 0 rem(144);
   }
 }
 
@@ -70,12 +70,20 @@ section.home-intro-section {
 .home-intro-picture {
   img {
     position: absolute;
-    top: rem(126);
-    left: 51%;
     width: 100%;
     max-width: rem(823);
     height: auto;
     z-index: -1;
+
+    @media (min-width: map_get($grid-breakpoints, xl)) {
+      top: rem(74);
+      left: 46.5%;
+    }
+  
+    @media (min-width: map_get($grid-breakpoints, xxl)) {
+      top: rem(126);
+      left: 51%;
+    }
   }
 }
 
@@ -90,6 +98,10 @@ section.home-intro-section {
   }
 
   @media (min-width: map_get($grid-breakpoints, xl)) {
+    margin-top: rem(54);
+  }
+
+  @media (min-width: map_get($grid-breakpoints, xxl)) {
     margin-top: rem(108);
   }
 
