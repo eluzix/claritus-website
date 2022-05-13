@@ -74,12 +74,12 @@ section.simple-pricing-section {
       left: auto;
       bottom: auto;
       transform: translateX(0);
-      top: rem(-3);
+      top: rem(50);
       right: 49.75%;
     }
 
     @media (min-width: map_get($grid-breakpoints, xxl)) {
-      top: rem(-3);
+      top: rem(80);
       right: 50.55%;
     }
   }
