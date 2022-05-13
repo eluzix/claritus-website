@@ -28,9 +28,11 @@ h5,
 
 h2 {
   font-size: 1.5rem;
+  line-height: rem(31);
 
   @media (min-width: map_get($grid-breakpoints, md)) {
     font-size: 2rem;
+    line-height: rem(42);
   }
 
   @media (min-width: map_get($grid-breakpoints, xl)) {

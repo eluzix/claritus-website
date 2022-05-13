@@ -1,5 +1,7 @@
 section.benchmark-section {
-  
+  @media (min-width: map_get($grid-breakpoints, md)) {
+    padding-bottom: rem(486);
+  }
 
   @media (min-width: map_get($grid-breakpoints, xl)) {
     padding: rem(332) 0 rem(100);
@@ -11,13 +13,17 @@ section.benchmark-section {
 }
 
 .benchmark {
-  position: absolute;
-  top: rem(126);
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
+  
+
+  // @media (min-width: map_get($grid-breakpoints, xl)) {
+    
+  // }
 
   @media (min-width: map_get($grid-breakpoints, xl)) {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
     top: rem(106);
   }
 
@@ -45,9 +51,27 @@ section.benchmark-section {
 .benchmark-picture {
   img {
     display: block;
-    margin: rem(-96) auto;
     width: 100%;
-    max-width: rem(1035);
+    max-width: rem(375);
     height: auto;
+
+    @media (min-width: map_get($grid-breakpoints, md)) {
+      position: absolute;
+      min-width: rem(1035);
+      max-width: rem(1035);
+      left: 50%;
+      bottom: rem(-38);
+      transform: translateX(-51%);
+    }
+
+    @media (min-width: map_get($grid-breakpoints, xl)) {
+      position: static;
+      min-width: unset;
+      max-width: rem(1035);
+      margin: rem(-96) auto;
+      left: auto;
+      bottom: auto;
+      transform: translateX(0);
+    }
   }
 }

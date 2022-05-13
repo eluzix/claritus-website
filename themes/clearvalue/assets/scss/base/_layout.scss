@@ -1,3 +1,59 @@
+.container {
+  padding-left: rem(16);
+  padding-right: rem(16);
+}
+
+.row {
+  margin-left: rem(-16);
+  margin-right: rem(-16);
+
+  > .col,
+  > [class*="col-"] {
+    padding-left: rem(16);
+    padding-right: rem(16);
+  }
+
+  &.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+
+    > .col,
+    > [class*="col-"] {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}
+
+@media (min-width: map_get($grid-breakpoints, md)) {
+  .container {
+    padding-left: rem(24);
+    padding-right: rem(24);
+  }
+
+  .row {
+    margin-left: rem(-24);
+    margin-right: rem(-24);
+
+    > .col,
+    > [class*="col-"] {
+      padding-left: rem(24);
+      padding-right: rem(24);
+    }
+
+    &.no-gutters {
+      margin-right: 0;
+      margin-left: 0;
+
+      > .col,
+      > [class*="col-"] {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+  }
+}
+
 @media (min-width: map_get($grid-breakpoints, xl)) {
   .container {
     padding-left: 2rem;
@@ -8,25 +64,21 @@
     margin-left: -2rem;
     margin-right: -2rem;
 
+    > .col,
+    > [class*="col-"] {
+      padding-left: rem(24);
+      padding-right: rem(24);
+    }
+
     &.no-gutters {
       margin-right: 0;
       margin-left: 0;
-    }
-  }
 
-  .col-xl-1,
-  .col-xl-2,
-  .col-xl-3,
-  .col-xl-4,
-  .col-xl-5,
-  .col-xl-6,
-  .col-xl-7,
-  .col-xl-8,
-  .col-xl-9,
-  .col-xl-10,
-  .col-xl-11,
-  .col-xl {
-    padding-left: 2rem;
-    padding-right: 2rem;
+      > .col,
+      > [class*="col-"] {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
   }
 }

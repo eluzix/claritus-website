@@ -2,10 +2,17 @@
   border: 1px solid #c6cbdd;
   background-color: #fff;
   border-radius: 0.75rem;
-  margin-bottom: 1.125rem;
+  width: 100%;
+  max-width: rem(552);
+  margin: 0 auto 1.125rem;
 
   @media (min-width: map_get($grid-breakpoints, md)) {
-    margin-bottom: rem(40);
+    margin: 0 auto rem(40);
+  }
+
+  @media (min-width: map_get($grid-breakpoints, xl)) {
+    max-width: unset;
+    margin: 0 0 rem(40);
   }
 
   &__question {

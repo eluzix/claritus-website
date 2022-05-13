@@ -1,9 +1,9 @@
 section.faq-section {
-  padding: 4rem 0 1.5rem;
+  padding: 4rem 0 rem(40);
   background-color: $purple-200;
 
   @media (min-width: map_get($grid-breakpoints, xl)) {
-    padding: rem(66) 0 rem(14);
+    padding: rem(66) 0 rem(40);
   }
 
   @media (min-width: map_get($grid-breakpoints, xl)) {
@@ -12,11 +12,13 @@ section.faq-section {
 }
 
 .faq-title {
-  margin-bottom: 2rem;
+  max-width: rem(552);
+  margin: 0 auto 2rem;
   font-size: 2rem;
 
-  @media (min-width: map_get($grid-breakpoints, md)) {
+  @media (min-width: map_get($grid-breakpoints, xl)) {
     font-size: rem(40);
-    margin-bottom: 3.5rem;
+    max-width: unset;
+    margin: 0 0 3.5rem;
   }
 }
