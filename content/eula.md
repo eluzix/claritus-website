@@ -135,10 +135,31 @@ then the Features may be limited or not operate.
 
 10. **Payments.**
 
-    1. Your subscription to the Platform granted hereunder is currently for free, however, we may in the
-    future charge a fee for certain features and/or uses.  You will not be charged for any such uses of the
-    Platform unless you first agree to such charges, but please be aware that any failure to pay applicable
-    charges may result in you not having access to some or all of the Platform.
+    1. **Subscriptions**
+       1. _Period_
+       
+          A subscription is required to access the service or to certain parts of the service. The type of subscription plan you select when purchasing the subscription will determine how often you will be charged in advance (monthly or annually).
+          Unless canceled by you or the Company, Your Subscription will renew automatically at the end of each period under the same terms.
+       2. _Canceling your Subscription_
+       
+          If you want to cancel the renewal of your subscription, you can do so through your account settings. The service will be available until the end of your current subscription period. The fees you have already paid for the current subscription period will not be refunded.
+       3. _Billing and Fees_
+       
+          The company may require you to provide accurate and complete billing information, including full name, address, state, zip code, telephone number, and valid payment information.
+          Should automatic billing fail to occur for any reason, the company will issue an electronic invoice indicating that you must proceed manually, within a specific deadline date, with the full payment corresponding to the billing period as shown on the invoice. 
+          The company has the right to modify the Subscription fees at any time and at its sole discretion. Subscription fee changes will take effect at the end of the current subscription period.
+          Any change in subscription fees will be notified to You in advance so that you can terminate your subscription before the change becomes effective.
+          To continue using the service after the subscription fee change goes into effect, you must agree to pay the revised subscription fee.
+       4. _Refunds_
+       
+          Paid subscription fees are non-refundable except when required by law.
+          The company may grant specific refund requests for Subscriptions at its sole discretion on a case-by-case basis.
+       5. _Free Trial_
+       
+          The company may offer a free trial at its sole discretion.
+          To sign up for the free trial, you may need to enter your billing information.
+          The company will not charge your billing information until the free trial has expired. You will be automatically charged the applicable subscription fees for the type of subscription you selected if you do not cancel your subscription within the free trial period.
+          The company reserves the right to modify or cancel any free trial offer at any time and without notice.
 
     2. Please be aware that your use of the Platform may require and utilize internet connection or data access.
     To the extent that third party service provider or carrier charges for your internet or data usage are
