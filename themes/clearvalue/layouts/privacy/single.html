@@ -9,17 +9,30 @@
         <div class="row justify-content-center">
             <div class="col-xl-8">
                 <div class="typical-header">
-
                     <figure class="typical-header__logo">
                         <img src="/images/typical-logo.svg" alt="">
                     </figure>
 
                     <h1 class="typical-header__title">{{ .Title }}</h1>
-
                 </div>
 
                 <div class="typical-content {{ .Params.content_class }}">
                     {{ .Content }}
+                </div>
+
+                <div class="typical-footer">
+                    <p class="update-date">
+                        <b>Last updated: {{ .Params.update_date }}</b>
+                    </p>
+
+                    <button type="button" class="scroll-top d-none d-xl-flex">
+                        <figure class="scroll-top__icon">
+                            <svg width="15" height="15">
+                                <use xlink:href="#arrow-long-icon"></use>
+                            </svg>
+                        </figure>
+                        Go Up
+                    </button>
                 </div>
             </div>
         </div>

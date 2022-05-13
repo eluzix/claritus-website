@@ -6,6 +6,7 @@ content_class: privacy
 type: privacy
 content_class: privacy
 header_class: white-header
+update_date: "April 12, 2020"
 ---
 This privacy policy (”Privacy Policy”) governs how we, Claritus Financial Solutions, Inc.
 (”Claritus” ”we”, ”our” or ”us”) use Personal Information (defined below) that we collect, receive and store pertaining to you (”User”, ”you”) in connection with the following use cases:
@@ -309,6 +310,3 @@ we will notify you by posting a notice through our Services or by other means.
     If you have any questions, concerns or complaints regarding our compliance with this notice and the
     Information protection laws, or if you wish to exercise your rights, we encourage you to first contact
     us at {{< rawhtml >}}<a class="bold-link" href="mailto:help@claritus.io">help@claritus.io</a>{{< /rawhtml >}}.
-
-
-{{< rawhtml >}} <p class="update-date"><strong>Last updated: April 12, 2020</strong></p> {{< /rawhtml >}}
