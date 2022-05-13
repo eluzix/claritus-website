@@ -1,10 +1,6 @@
 section.secure-section {
   position: relative;
-  // padding-top: rem(50);
-
-  // @media (min-width: map_get($grid-breakpoints, lg)) {
-  //   padding: rem(70) 0;
-  // }
+  padding: rem(68) 0 rem(290);
 
   @media (min-width: map_get($grid-breakpoints, md)) {
     padding: rem(84) 0 rem(260);
@@ -41,7 +37,11 @@ section.secure-section {
 
 .secure-picture {
   img {
+    display: block;
     z-index: -1;
+    position: absolute;
+    right: 0;
+    bottom: 0;
 
     @media (min-width: map_get($grid-breakpoints, md)) {
       position: absolute;

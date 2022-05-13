@@ -88,12 +88,22 @@ header.header-section {
   justify-content: flex-end;
 
   &__btn {
-    padding: rem(9) rem(24) rem(10);
-    font-size: rem(16);
-    line-height: rem(21);
+    padding: rem(7) rem(16) rem(7);
+    font-size: rem(14);
+    line-height: rem(18);
     
     &:not(:last-child) {
-      margin-right: rem(32);
+      margin-right: rem(16);
+    }
+
+    @media (min-width: map_get($grid-breakpoints, md)) {
+      padding: rem(9) rem(24) rem(10);
+      font-size: rem(16);
+      line-height: rem(21);
+      
+      &:not(:last-child) {
+        margin-right: rem(32);
+      }
     }
 
     &.btn--secondary {

@@ -1,6 +1,5 @@
 section.assets-section {
-  // padding: 3.5rem 0;
-  // min-height: rem(300);
+  padding-top: rem(364);
 
   @media (min-width: map_get($grid-breakpoints, md)) {
     padding-top: rem(242);
@@ -17,30 +16,21 @@ section.assets-section {
 
 .assets {
   position: absolute;
-  top: rem(88);
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
-
-  // position: relative;
-  // z-index: 2;
+  top: rem(68);
+  left: 0;
+  max-width: rem(612);
+  padding: 0 rem(16);
 
   @media (min-width: map_get($grid-breakpoints, md)) {
+    text-align: center;
     top: rem(68);
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   @media (min-width: map_get($grid-breakpoints, xl)) {
     top: rem(88);
   }
-
-  // @media (min-width: map_get($grid-breakpoints, xl)) {
-  //   position: absolute;
-  //   left: 0;
-  //   top: 0;
-  //   width: 100%;
-  //   margin-bottom: 0;
-  //   padding-top: rem(88);
-  // }
 }
 
 .assets__title {
@@ -68,7 +58,5 @@ section.assets-section {
     display: block;
     width: 100%;
     height: auto;
-
-    
   }
 }
