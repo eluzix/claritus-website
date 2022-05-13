@@ -30,6 +30,14 @@ financialInstitutes:
 - /images/financials/financial-5.png
 - /images/financials/financial-6.png
 
+financialInstitutesMob:
+- /images/financials/financial-1-mob.png
+- /images/financials/financial-2-mob.png
+- /images/financials/financial-3-mob.png
+- /images/financials/financial-4-mob.png
+- /images/financials/financial-5-mob.png
+- /images/financials/financial-6-mob.png
+
 
 ##Assets 
 

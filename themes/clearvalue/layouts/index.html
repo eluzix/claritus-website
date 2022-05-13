@@ -72,8 +72,16 @@
 <section class="financials-institutes-section">
     <h2 class="financials-title">{{ .Params.financialsTitle }}</h2>
 
-    <div class="financials">
+    <div class="financials d-none d-xl-flex">
         {{ range .Params.financialInstitutes }}
+        <figure class="financials__item">
+            <img data-src="{{ . }}" alt="" class="lozad"/>
+        </figure>
+        {{ end }}
+    </div>
+
+    <div class="financials d-xl-none">
+        {{ range .Params.financialInstitutesMob }}
         <figure class="financials__item">
             <img data-src="{{ . }}" alt="" class="lozad"/>
         </figure>
