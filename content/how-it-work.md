@@ -38,7 +38,9 @@ performance.
 Link your accounts to get the up to date values, holdings and transactions automatically.
 
 {{< rawhtml >}}
-<img data-src="/images/contact-us-bg.jpg" alt="" class="lozad">
+<video class="lozad" data-poster="https://claritus.s3.amazonaws.com/website/videos/link-your-investment.jpg" width="100%" autoplay muted loop playsinline>
+    <source data-src="https://claritus.s3.amazonaws.com/website/videos/link-your-investment.mp4" type="video/mp4">
+</video>
 {{< /rawhtml >}}
 
 ### Import historical transactions
