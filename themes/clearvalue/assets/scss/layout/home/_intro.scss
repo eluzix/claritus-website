@@ -81,8 +81,12 @@ section.home-intro-section {
     height: auto;
     z-index: -1;
 
-    @media (min-width: 500px) {
-      bottom: rem(-90);
+    @media (min-width: 400px) {
+      bottom: rem(-80);
+    }
+
+    @media (min-width: 550px) {
+      bottom: rem(-115);
     }
 
     @media (min-width: map_get($grid-breakpoints, md)) {
