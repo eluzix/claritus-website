@@ -18,7 +18,10 @@
             <div class="home-intro home-block">
                 <h1 class="home-intro__title">
                     {{ .Title | safeHTML }}
-                    <em class="typed-text" data-typed="Simply"></em>
+                    <span class="typed-text">
+                        <em class="typed-text__filler">Simply</em>
+                        <em class="typed-text__content" data-typed="Simply"></em>
+                    </span>
                 </h1>
 
                 <p class="home-intro__text">{{ .Params.heroText | safeHTML }}</p>

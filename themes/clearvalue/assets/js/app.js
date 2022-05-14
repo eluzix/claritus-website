@@ -426,7 +426,7 @@ function initContactFormSubmit() {
 
 // Init typed text
 function initTypedText() {
-  const element = document.querySelector(".typed-text");
+  const element = document.querySelector(".typed-text__content");
 
   if (!element) return;
 

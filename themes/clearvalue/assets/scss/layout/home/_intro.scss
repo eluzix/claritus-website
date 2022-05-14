@@ -228,8 +228,19 @@ section.home-intro-section {
 }
 
 .typed-text {
-  color: $green-dark;
   position: relative;
+  display: inline-block;
+}
+
+.typed-text__filler {
+  color: transparent;
+}
+
+.typed-text__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: $green-dark;
 
   &:after {
     display: block;
