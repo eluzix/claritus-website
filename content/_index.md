@@ -22,21 +22,14 @@ homeOverview:
 ##Financials institutes
 financialsTitle: Trusted by over 17k financial institutions
 
+##Institutes icons. IMPORTANT: if icon will change don't forget to update tablet version for it
 financialInstitutes:
-- /images/financials/financial-1.png
-- /images/financials/financial-2.png
-- /images/financials/financial-3.png
-- /images/financials/financial-4.png
-- /images/financials/financial-5.png
-- /images/financials/financial-6.png
-
-financialInstitutesMob:
-- /images/financials/financial-1-mob.png
-- /images/financials/financial-2-mob.png
-- /images/financials/financial-3-mob.png
-- /images/financials/financial-4-mob.png
-- /images/financials/financial-5-mob.png
-- /images/financials/financial-6-mob.png
+- financial-1
+- financial-2
+- financial-3
+- financial-4
+- financial-5
+- financial-6
 
 
 ##Assets 

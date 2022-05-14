@@ -1,11 +1,6 @@
 section.feedback-section {
-  margin-top: rem(-92);
   padding: rem(56) 0 rem(56);
   background-color: $purple-200;
-
-  @media (min-width: map_get($grid-breakpoints, md)) {
-    margin-top: 0;
-  }
 
   @media (min-width: map_get($grid-breakpoints, xl)) {
     padding: rem(74) 0 rem(64);

@@ -1,5 +1,6 @@
 {{ define "content" }}
 
+
 <header class="header-section">
     {{ partial "header.html" }}
 
@@ -10,7 +11,8 @@
 <!--Intro section -->
 <section class="home-intro-section">
     <figure class="home-intro-bg">
-        <img src="/images/home-intro-bg.svg" alt=""/>
+        <img src="/images/home-intro-bg-fullhd.svg" class="d-none d-xl-flex" alt=""/>
+        <img src="/images/home-intro-bg-tablet.svg" class="d-xl-none" alt=""/>
     </figure>
 
     <div class="container">
@@ -66,8 +68,7 @@
     </div>
 
     <picture data-iesrc="/images/home-intro-fullhd.png" class="home-intro-picture lozad">
-        <source srcset="/images/home-intro-fullhd.png" media="(min-width: 1220px)"/>
-        <source srcset="/images/home-intro-tablet.png" media="(min-width: 744px)"/>
+        <source srcset="/images/home-intro-fullhd.png" media="(min-width: 744px)"/>
         <source srcset="/images/home-intro-mob.png" media="(min-width: 300px)"/>
     </picture>
 </section>
@@ -75,18 +76,11 @@
 <section class="financials-institutes-section">
     <h2 class="financials-title">{{ .Params.financialsTitle }}</h2>
 
-    <div class="financials d-none d-xl-flex">
+    <div class="financials ">
         {{ range .Params.financialInstitutes }}
         <figure class="financials__item">
-            <img data-src="{{ . }}" alt="" class="lozad"/>
-        </figure>
-        {{ end }}
-    </div>
-
-    <div class="financials d-xl-none">
-        {{ range .Params.financialInstitutesMob }}
-        <figure class="financials__item">
-            <img data-src="{{ . }}" alt="" class="lozad"/>
+            <img data-src="/images/financials/{{ . }}.png" alt="" class="lozad d-none d-xl-flex"/>
+            <img data-src="/images/financials/{{ . }}-tablet.png" alt="" class="lozad d-xl-none"/>
         </figure>
         {{ end }}
     </div>
@@ -157,8 +151,7 @@
     </div>
 
     <picture data-iesrc="/images/institutions-fullhd.png" class="financial-cover-picture lozad">
-        <source srcset="/images/institutions-fullhd.png" media="(min-width: 1220px)"/>
-        <source srcset="/images/institutions-tablet.png" media="(min-width: 744px)"/>
+        <source srcset="/images/institutions-fullhd.png" media="(min-width: 744px)"/>
         <source srcset="/images/institutions-mob.png" media="(min-width: 300px)"/>
     </picture>
 </section>
@@ -220,12 +213,12 @@
 
                 <p class="history__text">{{ .Params.historyText | safeHTML }}</p>
             </div>
+
+            <video class="lozad history-video" data-poster="https://claritus.s3.amazonaws.com/website/videos/your-history-matters.jpg" width="100%" autoplay muted loop playsinline>
+                <source data-src="https://claritus.s3.amazonaws.com/website/videos/your-history-matters.mp4" type="video/mp4">
+            </video>
         </div>
     </div>
-
-    <video class="lozad history-video" data-poster="https://claritus.s3.amazonaws.com/website/videos/your-history-matters.jpg" width="100%" autoplay muted loop playsinline>
-        <source data-src="https://claritus.s3.amazonaws.com/website/videos/your-history-matters.mp4" type="video/mp4">
-    </video>
 </section>
 
 <section class="faq-section">
@@ -278,9 +271,9 @@
 
                 <div class="simple-pricing__btns">
                     <a href="https://app.claritus.io/on-boarding" title="Try Claritus free for 14 days"
-                       class="btn btn--primary"> Try now for free </a>
+                       class="btn btn--primary simple-pricing__btn"> Try now for free </a>
 
-                    <a href="#" class="btn btn--secondary"> 
+                    <a href="#" class="btn btn--secondary simple-pricing__btn"> 
                         <span class="btn__first-layer"></span>
                         <span class="btn__second-layer"></span>
                         <span class="btn__text">Learn more</span>
@@ -291,8 +284,7 @@
     </div>
 
     <picture data-iesrc="/images/pricing-fullhd.png" class="simple-pricing-picture lozad">
-        <source srcset="/images/pricing-fullhd.png" media="(min-width: 1220px)"/>
-        <source srcset="/images/pricing-tablet.png" media="(min-width: 744px)"/>
+        <source srcset="/images/pricing-fullhd.png" media="(min-width: 744px)"/>
         <source srcset="/images/pricing-mob.png" media="(min-width: 300px)"/>
     </picture>
 </section>

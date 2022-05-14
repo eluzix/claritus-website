@@ -8,7 +8,7 @@ header.header-section {
   transition: all 0.3s ease;
 
   @media (min-width: map_get($grid-breakpoints, md)) {
-    padding: rem(19) 0;
+    padding: rem(20) 0;
   }
 
   &:before {
@@ -192,7 +192,7 @@ header.header--fixed {
   box-shadow: 0 0.75rem 1.5rem rgba(5, 13, 66, 0.12);
 
   @media (min-width: map_get($grid-breakpoints, md)) {
-    padding: rem(19) 0;
+    padding: rem(20) 0;
   }
 
   &:before {

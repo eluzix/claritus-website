@@ -1,13 +1,6 @@
 section.financials-institutes-section {
-  padding: 0;
-  margin-top: rem(-58);
-
-  @media (min-width: map_get($grid-breakpoints, md)) {
-    margin-top: 0;
-  }
-
   @media (min-width: map_get($grid-breakpoints, xxl)) {
-    padding: 1.5rem 0;
+    padding-top: rem(25);
   }
 }
 
@@ -40,23 +33,18 @@ section.financials-institutes-section {
 
   &__item {
     width: 33.333%;
-    padding: 0 rem(15);
-    margin-bottom: rem(20);
+    margin-bottom: rem(10);
+    padding: 0 rem(16);
 
     @media (min-width: map_get($grid-breakpoints, md)) {
       width: auto;
-      justify-content: space-between;
+      justify-content: center;
       margin-bottom: 0;
+      padding: 0 rem(20);
     }
 
     @media (min-width: map_get($grid-breakpoints, xl)) {
-      justify-content: center;
-      margin: 0 rem(15);
-    }
-
-    @media (min-width: map_get($grid-breakpoints, xxl)) {
-      margin: 0 rem(36);
-      padding: 0;
+      padding: 0 rem(35);
     }
 
     img {

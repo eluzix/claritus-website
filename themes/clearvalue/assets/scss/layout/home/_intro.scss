@@ -1,17 +1,17 @@
 section.home-intro-section {
-  z-index: 1;
-  padding: rem(114) 0 0;
+  padding: rem(112) 0 75vw;
+  overflow: visible;
 
   @media (min-width: map_get($grid-breakpoints, md)) {
-    padding: rem(114) 0 rem(460);
+    padding: rem(112) 0 rem(461);
   }
 
   @media (min-width: map_get($grid-breakpoints, xl)) {
-    padding: rem(170) 0 rem(80);
+    padding: rem(168) 0 rem(78);
   }
 
   @media (min-width: map_get($grid-breakpoints, xxl)) {
-    padding: rem(180) 0 rem(144);
+    padding: rem(180) 0 rem(142);
   }
 }
 
@@ -20,11 +20,15 @@ section.home-intro-section {
   left: 0;
   top: 0;
   width: 100%;
-  height: calc(100% - 150px);
+  height: calc(100% - 102px);
   z-index: -1;
 
+  @media (min-width: 500px) {
+    height: calc(100% - 160px);
+  }
+
   @media (min-width: map_get($grid-breakpoints, md)) {
-    height: calc(100% - 270px);
+    height: calc(100% - 295px);
   }
 
   @media (min-width: map_get($grid-breakpoints, xl)) {
@@ -70,29 +74,34 @@ section.home-intro-section {
 .home-intro-picture {
   img {
     display: block;
+    position: absolute;
+    left: 0;
+    bottom: rem(-54);
     width: 100%;
-    margin-top: rem(-38);
+    height: auto;
+    z-index: -1;
+
+    @media (min-width: 500px) {
+      bottom: rem(-90);
+    }
 
     @media (min-width: map_get($grid-breakpoints, md)) {
-      position: absolute;
-      bottom: rem(-46);
+      max-width: rem(709);
+      bottom: rem(-44);
       left: 50%;
       transform: translateX(-50%);
-      width: rem(709);
-      max-width: 100vw;
-      margin-top: 0;
     }
 
     @media (min-width: map_get($grid-breakpoints, xl)) {
+      max-width: rem(823);
       top: rem(74);
       bottom: auto;
       left: 46.5%;
       transform: translateX(0);
-      width: 100%;
-      max-width: rem(823);
     }
   
     @media (min-width: map_get($grid-breakpoints, xxl)) {
+      max-width: rem(823);
       top: rem(126);
       left: 51%;
     }

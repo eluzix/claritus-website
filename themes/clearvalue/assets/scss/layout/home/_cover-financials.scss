@@ -1,17 +1,17 @@
 section.financial-cover-section {
-  position: relative;
+  overflow: visible;
+  padding: 0 0 106vw;
   
-
   @media (min-width: map_get($grid-breakpoints, md)) {
-    padding: rem(44) 0 rem(606);
+    padding: 0 0 rem(606);
   }
 
   @media (min-width: map_get($grid-breakpoints, xl)) {
-    padding: rem(302) 0 rem(100);
+    padding: rem(237) 0 rem(205);
   }
 
   @media (min-width: map_get($grid-breakpoints, xxl)) {
-    padding: rem(310) 0 rem(100);
+    padding: rem(217) 0 rem(226);
   }
 }
 
@@ -45,33 +45,37 @@ section.financial-cover-section {
 .financial-cover-picture {
   img {
     display: block;
+    position: absolute;
+    left: 0;
+    bottom: rem(-75);
     width: 100%;
-    margin-top: rem(-84);
+    height: auto;
+    z-index: -1;
+
+    @media (min-width: 500px) {
+      bottom: rem(-100);
+    }
 
     @media (min-width: map_get($grid-breakpoints, md)) {
-      position: absolute;
-      bottom: 0;
+      max-width: rem(728);
+      bottom: rem(44);
       left: 50%;
-      transform: translateX(-50%);
-      width: rem(744);
-      max-width: 100vw;
-      margin-top: 0;
+      transform: translateX(-46%);
     }
 
     @media (min-width: map_get($grid-breakpoints, xl)) {
+      max-width: 67vw;
+      top: rem(74);
+      right: 37%;
       bottom: auto;
       left: auto;
       transform: translateX(0);
-      top: rem(79);
-      right: 37.5%;
-      width: 100%;
-      max-width: 67vw;
     }
 
     @media (min-width: map_get($grid-breakpoints, xxl)) {
-      top: rem(87);
-      right: 41.75%;
       max-width: rem(916);
+      top: 0;
+      right: 41.75%;
     }
   }
 }
