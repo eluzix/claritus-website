@@ -79,16 +79,16 @@ feedbacks:
 - feedbackText: “Awesome, GREAT product”
   feedbackName: Darryl J.
 
-- feedbackText: "I discovered your site today and so far have found it very easy to use and intuitive."
+- feedbackText: “I discovered your site today and so far have found it very easy to use and intuitive.“
   feedbackName: Micheal E.
 
-- feedbackText: "I think the webapp has a nice, simple, easy-to-navigate UI."
+- feedbackText: “I think the webapp has a nice, simple, easy-to-navigate UI.“
   feedbackName: Salvador W.
 
-- feedbackText: "I was looking for a dashboard like yours that does pretty much what yours does."
+- feedbackText: “I was looking for a dashboard like yours that does pretty much what yours does.“
   feedbackName: Raymond K.
 
-- feedbackText: "Over all this platform shows great promise and is just what I was looking for"
+- feedbackText: “Over all this platform shows great promise and is just what I was looking for“
   feedbackName: A.G
 
 
