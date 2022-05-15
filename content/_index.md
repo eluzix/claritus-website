@@ -65,19 +65,31 @@ feedbackTitle: What Customers are Saying
 
 feedbacks:
 - feedbackText: “first of all congratulations, you and your team have developed an amazing service!”
-  feedbackName: Wesley S Hileman
+  feedbackName: Wesley H.
 
 - feedbackText: “I just signed up for Claritus on the recommendation of a colleague. I like the work you've done so far.”
-  feedbackName: George Simmers
+  feedbackName: George S.
 
 - feedbackText: “Hello! Amazing site, I’ve been looking for something like this for ages!11”
   feedbackName: F.M
 
 - feedbackText: “user interface really clean and intuitive. Easy to get started.”
-  feedbackName: Ruth Shaffer
+  feedbackName: Ruth S.
 
 - feedbackText: “Awesome, GREAT product”
-  feedbackName: B. Ruiz
+  feedbackName: Darryl J.
+
+- feedbackText: "I discovered your site today and so far have found it very easy to use and intuitive."
+  feedbackName: Micheal E.
+
+- feedbackText: "I think the webapp has a nice, simple, easy-to-navigate UI."
+  feedbackName: Salvador W.
+
+- feedbackText: "I was looking for a dashboard like yours that does pretty much what yours does."
+  feedbackName: Raymond K.
+
+- feedbackText: "Over all this platform shows great promise and is just what I was looking for"
+  feedbackName: A.G
 
 
 ##History
