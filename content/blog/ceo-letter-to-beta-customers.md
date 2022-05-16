@@ -1,16 +1,14 @@
 ---
 content_class: blog-post
 header_class: white-header
-title: CEO's Letter To Beta Customers
-metaTitle: CEO's Letter To Beta Customers 
+title: Claritus CEO Letter To Beta Customers
+metaTitle: Claritus CEO Letter To Beta Customers 
 description: Claritus has moved from Beta to its early commercial phase. 
     Our user interface has been completely revamped to make Claritus even more convenient and simple.
 date: 2022-04-25T11:02:21.718+00:00
 lastmod: 2022-04-25T11:02:21.729+00:00
 hidden: true
 ---
-
-My name is Shai Azran, and I'm the CEO and co-founder of Claritus. This email is sent to you for being one of our valuable Beta customers!
 
 I'm very excited to share that Claritus has moved from Beta to its early commercial phase following your support. Our user interface has been completely revamped to make Claritus even more convenient and simple.
 
