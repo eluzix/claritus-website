@@ -70,6 +70,26 @@ footer.footer-section {
       font-size: rem(14);
       border-color: $gray-500;
     }
+
+    .footer-newsletter-error {
+      color: #cc3330;
+      font-size: rem(12);
+      line-height: rem(16);
+      margin-top: rem(6);
+      align-items: center;
+      display: none;
+
+      svg {
+        fill: #cc3330;
+        margin-right: rem(9);
+      }
+    }
+
+    &--error {
+      .footer-newsletter-error {
+        display: inline-flex;
+      }
+    }
   }
 
   &__btn {
@@ -117,13 +137,13 @@ footer.footer-section {
     &:before {
       display: none;
       position: absolute;
-      content: '';
+      content: "";
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
       width: rem(16);
       height: rem(16);
-      background: url('/images/check-icon.svg') no-repeat center;
+      background: url("/images/check-icon.svg") no-repeat center;
     }
   }
 
@@ -156,7 +176,7 @@ footer.footer-section {
     font-size: 0.875rem;
     line-height: rem(18);
     color: $gray-100;
-    
+
     &:not(:last-child) {
       margin-bottom: 1rem;
     }

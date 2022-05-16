@@ -5,15 +5,22 @@ function initNewsletter() {
 
   button.onclick = (e) => {
     e.preventDefault();
-    let email = document.getElementById("footer-newsletter-email").value;
-    if (!email || email.trim() === "") {
+    let email = document.getElementById("footer-newsletter-email");
+
+    const field = email.closest(".footer-subscribe__field");
+
+    field.classList.remove("footer-subscribe__field--error");
+
+    if (!email.value.trim() || !validateEmail(email.value)) {
+      field.classList.add("footer-subscribe__field--error");
+
       return;
     }
 
     button.classList.add("btn--loading");
     button.disabled = true;
 
-    email = encodeURIComponent(email.trim());
+    email = encodeURIComponent(email.value.trim());
 
     fetch(
       "https://f6gcz330p3.execute-api.us-east-1.amazonaws.com/newsletter?email=" +
@@ -140,9 +147,9 @@ function initHeaderScroll() {
     } else {
       header.classList.remove("header--fixed");
     }
-  }
+  };
 
-  onScroll()
+  onScroll();
   window.addEventListener("scroll", onScroll);
 }
 
@@ -188,24 +195,26 @@ function initSlider() {
         flkty.next(false, false);
       });
 
-    slider.classList.add("feedback-slider--initialized")
+    slider.classList.add("feedback-slider--initialized");
   });
 }
 
 // Init lazy load
 function initMissingLazyLoad() {
   if (!lozad) {
-    return
+    return;
   }
 
   const observer = lozad();
   observer.observe();
-  
-  const lazyImages = document.querySelectorAll('.lozad:not([data-loaded="true"])')
+
+  const lazyImages = document.querySelectorAll(
+    '.lozad:not([data-loaded="true"])'
+  );
   if (lazyImages && lazyImages.length) {
-      lazyImages.forEach((im) => {
-          observer.triggerLoad(im)
-      })
+    lazyImages.forEach((im) => {
+      observer.triggerLoad(im);
+    });
   }
 }
 
@@ -360,7 +369,7 @@ function initContactFormSubmit() {
             },
             body: urlEncodedData,
           }).then(() => {
-            console.log('[email sent]')
+            console.log("[email sent]");
           });
 
           setTimeout(() => {
@@ -399,12 +408,12 @@ function initContactFormSubmit() {
 
     return isValidForm;
   }
+}
 
-  function validateEmail(mail) {
-    return /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(
-      mail
-    );
-  }
+function validateEmail(mail) {
+  return /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(
+    mail
+  );
 }
 
 // Init typed text

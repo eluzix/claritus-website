@@ -21,17 +21,17 @@ section.benchmark-section {
     text-align: center;
     margin: 0 auto;
   }
-}
 
-.benchmark__title {
-  margin-bottom: rem(16);
+  &__title {
+    margin-bottom: rem(16);
 
-  @media (min-width: map_get($grid-breakpoints, md)) {
-    margin-bottom: rem(24);
-  }
+    @media (min-width: map_get($grid-breakpoints, md)) {
+      margin-bottom: rem(24);
+    }
 
-  @media (min-width: map_get($grid-breakpoints, xl)) {
-    margin-bottom: rem(32);
+    @media (min-width: map_get($grid-breakpoints, xl)) {
+      margin-bottom: rem(32);
+    }
   }
 }
 

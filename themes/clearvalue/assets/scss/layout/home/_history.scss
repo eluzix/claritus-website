@@ -33,6 +33,7 @@ section.history-section {
 
 .history__text {
   margin-bottom: rem(48);
+  //font-size: rem(18);
 
   @media (min-width: map_get($grid-breakpoints, md)) {
     margin-bottom: rem(56);
