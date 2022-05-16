@@ -193,40 +193,21 @@ function initSlider() {
 }
 
 // Init lazy load
-// function initLazyLoad() {
-//   const script = document.createElement("script");
-//   script.setAttribute("type", "text/javascript");
-//   script.setAttribute("async", true);
-//   script.setAttribute(
-//     "src",
-//     "https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"
-//   );
-//
-//   const head = document.head || document.getElementsByTagName("head")[0];
-//   head.appendChild(script);
-//
-//   script.addEventListener("load", function () {
-//     const observer = lozad();
-//     observer.observe();
-//
-//     const hpAssetImg = document.querySelector(".assets-section .assets-bg");
-//     if (hpAssetImg) {
-//       observer.triggerLoad(hpAssetImg);
-//     }
-//
-//     const hpVideo = document.querySelector(".history-section video");
-//     if (hpVideo) {
-//       observer.triggerLoad(hpVideo);
-//     }
-//
-//     const videos = document.querySelectorAll(".how-work-content video");
-//     if (videos && videos.length) {
-//       videos.forEach((v) => {
-//         observer.triggerLoad(v)
-//       })
-//     }
-//   });
-// }
+function initMissingLazyLoad() {
+  if (!lozad) {
+    return
+  }
+
+  const observer = lozad();
+  observer.observe();
+  
+  const lazyImages = document.querySelectorAll('.lozad:not([data-loaded="true"])')
+  if (lazyImages && lazyImages.length) {
+      lazyImages.forEach((im) => {
+          observer.triggerLoad(im)
+      })
+  }
+}
 
 // Init burger menu
 function initBurgerMenu() {
@@ -498,7 +479,7 @@ window.addEventListener("load", function (event) {
   initHeaderScroll();
 
   // Lazy load
-  // initLazyLoad();
+  initMissingLazyLoad();
 
   // Slider
   initSlider();
