@@ -3,9 +3,8 @@ content_class: blog-post
 header_class: white-header
 title: CEO's Letter To Beta Customers
 metaTitle: CEO's Letter To Beta Customers 
-description: The right strategy is key to avoiding loss when trading in a volatile
-    market. Here, we discuss the best options for investors looking to reduce volatility
-    risks.
+description: Claritus has moved from Beta to its early commercial phase. 
+    Our user interface has been completely revamped to make Claritus even more convenient and simple.
 date: 2022-04-25T11:02:21.718+00:00
 lastmod: 2022-04-25T11:02:21.729+00:00
 hidden: true
