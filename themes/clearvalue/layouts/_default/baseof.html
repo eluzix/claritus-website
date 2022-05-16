@@ -91,10 +91,7 @@
                 const observer = lozad();
                 observer.observe();
                 
-                console.log('TEST1', document.querySelector('.home-intro-section'))
                 if (document.querySelector('.home-intro-section')) {
-                    console.log('TEST2')
-
                     const lazyImages = document.querySelectorAll('.lozad')
                     if (lazyImages && lazyImages.length) {
                         lazyImages.forEach((im) => {
