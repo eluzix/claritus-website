@@ -4,7 +4,7 @@ type: about-us
 title: Our mission is your financial peace of mind
 metaTitle: About us - Our mission is your financial peace of mind
 
-description: Claritus is an easy-to-use, personal portfolio management solution that lets you view all of your investments in one place. This is the only service you’ll need to track, analyze, and grow your wealth.
+description: Investors today live in a constant fog by not having visibility of their entire wealth. Claritus combines past insights and today's portfolio, so investors are always in the know.
 
 ##config
 type: about-us
@@ -51,10 +51,11 @@ ourStorySecondCol: This got us thinking; How many other  people were out there f
 
 
 ---
-Claritus is an easy-to-use, personal portfolio management solution that lets you view all of your investments in one place. This is the only service you'll need to track, analyze, and grow your wealth.
 
-Claritus' AI technology-driven financial data platform gives you a complete image of your wealth, intelligent insights, and comparisons with a user-friendly and intuitive interface.
+Claritus is an easy-to-use, personal wealth management solution that lets investors view all of their assets and investments in one place.
+It doesn't matter if you have one or several assets scattered over multiple accounts. With Claritus, everything can be organized and tracked in one convenient place.
 
-Claritus was built out of a personal need that many of us share. Listening to our customers is imperative to understanding their needs and gaining valuable insights. In our opinion, this is the best way to take our solution to new heights.
+We know everyone is unique and has a distinctive financial situation. We understand personal finance is not only numbers and returns; it's not only aggregating financial data and manipulating financial calculations. Claritus was created to give you a clear and comprehensive view of your wealth with your own unique point of view.
 
-We hope to have you  on board and hear your perspective soon.  
+Claritus is the only platform every investor needs to make decisions with clarity and confidence.
+ 
