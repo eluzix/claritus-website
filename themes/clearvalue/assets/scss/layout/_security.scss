@@ -45,11 +45,14 @@ section.security-intro-section {
 .security-intro-title {
   font-weight: 700;
   font-size: rem(32);
+  line-height: rem(42);
   color: $dark-9;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 
   @media (min-width: map_get($grid-breakpoints, md)) {
     font-size: rem(50);
+    line-height: 130%;
+    margin-bottom: 2rem;
   }
 }
 
@@ -92,12 +95,21 @@ section.security-intro-section {
 
 .security-content-title {
   font-weight: 700;
-  font-size: rem(32);
+  font-size: rem(24);
+  line-height: rem(31);
   color: $dark-9;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 
   @media (min-width: map_get($grid-breakpoints, md)) {
+    font-size: rem(32);
+    line-height: rem(42);
+    margin-bottom: 2rem;
+  }
+
+  @media (min-width: map_get($grid-breakpoints, xl)) {
     font-size: rem(40);
+    line-height: rem(52);
+    margin-bottom: 1rem;
   }
 }
 
@@ -106,13 +118,23 @@ section.security-intro-section {
 }
 
 .security-content {
-  margin-top: 2rem;
+  margin-top: 1.5rem;
+
+  @media (min-width: map_get($grid-breakpoints, md)) {
+    margin-top: 2rem;
+  }
 
   h3 {
     font-weight: 500;
-    font-size: 1.5rem;
+    font-size: rem(18);
+    line-height: rem(23);
     color: $dark-9;
     margin-bottom: 0.75rem;
+
+    @media (min-width: map_get($grid-breakpoints, md)) {
+      font-size: 1.5rem;
+      line-height: rem(31);
+    }
   }
 
   p {
