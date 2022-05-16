@@ -98,15 +98,10 @@ section.pricing-section {
       top: 0;
       width: 100%;
       height: 100%;
-      background-image: linear-gradient(
-        90.36deg,
-        #46dd94 -0.66%,
-        #23d3ab 101.59%,
-        #17d6b3 101.59%
-      );
-      z-index: 1;
+      background-image: $gradient-primary;
       opacity: 0;
       transition: opacity 0.5s ease;
+      z-index: 1;
     }
 
     span {
