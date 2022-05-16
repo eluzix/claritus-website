@@ -50,6 +50,24 @@ status = 301
 force = true
 
 [[redirects]]
+from = "https://claritus.io/faq/"
+to = "https://claritus.io/how-it-work/"
+status = 301
+force = true
+
+[[redirects]]
+from = "https://claritus.io/core-values/"
+to = "https://claritus.io/about-us/"
+status = 301
+force = true
+
+[[redirects]]
+from = "https://claritus.io/our-story/"
+to = "https://claritus.io/about-us/#our-story"
+status = 301
+force = true
+
+[[redirects]]
 from = "https://clearvalue.io/*"
 to = "https://claritus.io/:splat"
 status = 301
