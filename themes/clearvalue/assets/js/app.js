@@ -187,6 +187,8 @@ function initSlider() {
       .addEventListener("click", function () {
         flkty.next(false, false);
       });
+
+    slider.classList.add("feedback-slider--initialized")
   });
 }
 

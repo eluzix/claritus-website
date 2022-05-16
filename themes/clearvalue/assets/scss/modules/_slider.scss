@@ -11,16 +11,22 @@
 }
 
 .feedback-slider {
+  display: flex;
   width: 100%;
   outline: none;
   padding-bottom: rem(40);
 
-  &__item {
-    width: 85%;
-    padding: 0 1rem;
-    display: inline-flex;
-    min-height: 100%;
+  &--initialized {
+    display: block;
+  }
 
+  &__item {
+    flex-shrink: 0;
+    display: inline-flex;
+    width: 85%;
+    min-height: 100%;
+    padding: 0 1rem;
+    
     @media (min-width: map_get($grid-breakpoints, md)) {
       width: 54%;
     }
