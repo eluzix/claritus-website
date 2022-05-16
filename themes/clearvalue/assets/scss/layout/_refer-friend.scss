@@ -54,6 +54,14 @@ section.refer-friend-section {
     color: $green-dark;
   }
 
+  .refer-terms {
+    font-weight: 400;
+    font-size: rem(12);
+    line-height: ren(16);
+    /* Neutrals/N5 */
+    color: $gray-500;
+  }
+
   .terms-title {
     margin-top: rem(80);
     margin-bottom: rem(12);
@@ -64,7 +72,7 @@ section.refer-friend-section {
     //list-style-position: inside;
     li {
       margin-left: rem(12);
-      margin-bottom: rem(12);
+      margin-bottom: rem(8);
       line-height: 170%;
     }
   }
