@@ -97,7 +97,7 @@ section.home-intro-section {
     }
 
     @media (min-width: map_get($grid-breakpoints, xl)) {
-      max-width: rem(823);
+      max-width: rem(814);
       top: rem(74);
       bottom: auto;
       left: 46.5%;
@@ -105,7 +105,7 @@ section.home-intro-section {
     }
   
     @media (min-width: map_get($grid-breakpoints, xxl)) {
-      max-width: rem(823);
+      max-width: rem(814);
       top: rem(126);
       left: 51%;
     }
