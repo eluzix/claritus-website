@@ -247,6 +247,7 @@ section.home-intro-section {
   & > span {
     display:inline-block;
     -webkit-transform:skewX(-10deg);
+    transform: skewX(-10deg);
   }
 }
 
