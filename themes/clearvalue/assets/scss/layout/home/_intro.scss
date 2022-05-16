@@ -243,6 +243,11 @@ section.home-intro-section {
 .typed-text {
   position: relative;
   display: inline-block;
+
+  & > span {
+    display:inline-block;
+    -webkit-transform:skewX(-10deg);
+  }
 }
 
 .typed-text__filler {
