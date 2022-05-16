@@ -39,6 +39,7 @@ monthlyPlanList:
 ##Yearly 
 
 yearlyPlanTitle: Annual plan
+oldYearlyPlanPrice: 180
 yearlyPlanPrice: 150
 yearlyPlanList:
 - Automatic connections though Secured read-only APIs
