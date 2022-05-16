@@ -19,7 +19,7 @@ whyExcellence:
   img: /images/why-images/content-img-1.png
 
 - title: See a complete view of your investments
-  description: It doesn’t matter if you have one asset or several assets scattered over multiple accounts, with Claritus everything can be organized and tracked in one convenient place. It doesn’t matter where your investments are. Your investments can be in the stock market, real estate, cryptocurrency, or any other alternative investment. Claritus will help you have a clear picture of all your combined assets in one convenient place!
+  description: It doesn’t matter if you have one asset or several assets scattered over multiple accounts, with Claritus everything can be organized and tracked in one convenient place.
   img: /images/why-images/content-img-2.png
 
 - title: Top notch security & privacy
