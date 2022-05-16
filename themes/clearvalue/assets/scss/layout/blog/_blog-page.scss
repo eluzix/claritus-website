@@ -1,17 +1,27 @@
 section.blog-intro-section {
   padding-top: 4rem;
 
+  @media (min-width: map_get($grid-breakpoints, md)) {
+    padding-top: rem(40);
+  }
+
   @media (min-width: map_get($grid-breakpoints, xl)) {
-    padding: rem(40) 0;
+    padding-top: rem(60);
+    min-height: rem(400);
+
   }
 
   @media (min-width: map_get($grid-breakpoints, xxl)) {
-    padding: rem(160) 0;
+    padding: rem(157) 0;
+    min-height: rem(600);
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
 .blog-intro-title {
-  font-weight: 500;
+  font-weight: 700;
   font-size: 2rem;
   color: $dark-9;
   margin-bottom: 1.5rem;
@@ -123,7 +133,8 @@ section.blog-articles-section {
     display: block;
     padding-top: 1.5rem;
     font-weight: 700;
-    font-size: 1.125rem;
+    font-size: rem(18);
+    line-height: rem(23);
     color: $dark-9;
 
     &:hover {
