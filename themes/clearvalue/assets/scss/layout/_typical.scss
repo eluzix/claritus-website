@@ -374,15 +374,10 @@ section.typical-section {
   img {
     width: 100%;
     height: auto;
-    margin-top: 1.5rem;
     margin-bottom: 4rem;
 
     &:last-child {
       margin-bottom: 0;
-    }
-
-    @media (min-width: map_get($grid-breakpoints, md)) {
-      margin-bottom: rem(80);
     }
   }
 
@@ -433,6 +428,17 @@ section.typical-section {
           margin-bottom: 0;
         }
       }
+    }
+  }
+
+  .video-container {
+    margin-top: 1.5rem;
+    background-color: $purple-200;
+    padding: rem(20);
+    border-radius: rem(24);
+
+    @media (min-width: map_get($grid-breakpoints, md)) {
+      margin-bottom: rem(80);
     }
   }
 }
