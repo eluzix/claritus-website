@@ -213,10 +213,11 @@
 
                 <p class="history__text">{{ .Params.historyText | safeHTML }}</p>
             </div>
-
-            <video class="lozad history-video" data-poster="https://claritus.s3.amazonaws.com/website/videos/your-history-matters.jpg" width="100%" autoplay muted loop playsinline>
-                <source data-src="https://claritus.s3.amazonaws.com/website/videos/your-history-matters.mp4" type="video/mp4">
-            </video>
+            <div class="history-video">
+                <video class="lozad" data-poster="https://claritus.s3.amazonaws.com/website/videos/your-history-matters.jpg" width="100%" autoplay muted loop playsinline>
+                    <source data-src="https://claritus.s3.amazonaws.com/website/videos/your-history-matters.mp4" type="video/mp4">
+                </video>
+            </div>
         </div>
     </div>
 </section>
