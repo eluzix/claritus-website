@@ -25,7 +25,7 @@ teamText: <p>Claritus was founded by three industry veteran entrepreneurs, each 
 teamMembers:
 - name: Gabriel Bilczyk
   position: Chairman
-  linkedIn: https://wzww.linkedin.com/in/gabriel-bilczyk/
+  linkedIn: https://www.linkedin.com/in/gabriel-bilczyk/
   photo: /images/team-members/member-1.png
 
 - name: Shai Azran
