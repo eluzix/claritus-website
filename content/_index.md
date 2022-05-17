@@ -108,11 +108,11 @@ faqFirstColumn:
 
 - question: Why Claritus?
 
-  answer: Keeping track of your wealth can be a difficult task, but Claritus makes it easier than ever before! It doesn’t matter if you have one asset or several assets scattered over numerous accounts, with Claritus everything can be organized and tracked in one convenient place.
+  answer: To make good and informed decisions, you need to be able to see the big picture and evaluate your overall situation. Claritus is a powerful yet easy to use, trustworthy and discreet companion to assist you in growing your wealth.
 
 - question: Is my privacy protected?
 
-  answer: The privacy, security, and anonymity of our customers is our top priority! Claritus prides itself on their highest level of security, so much so that we do not even have access to your data!
+  answer: Your privacy and anonymity are extremely important to us. Our loyalty is first and foremost to you - no hidden agendas, no dual loyalty, no matter what.
 
 
 faqSecondColumn:
@@ -123,7 +123,7 @@ faqSecondColumn:
 
 - question: Will Claritus ever sell my data?
 
-  answer: No. Never.
+  answer: Claritus will never sell or share your data or personal information to a third party! Our loyalty stands with you, our customer and your trust in us is our top priority.
 
 
 ##Simple pricing
