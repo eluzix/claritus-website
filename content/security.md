@@ -2,7 +2,10 @@
 type: security
 
 title: We Always Put Your Privacy And Security First
+metaTitle: Bank-Grade Security - We always put your privacy and security first
 description: Claritus is designed to meet the highest bank-grade security standards. We keep your privacy and security in mind at all times.
+date: 2022-05-16T06:30:01.000+00:00
+lastmod: 2022-05-16T06:30:01.000+00:00
 
 url: "/security"
 

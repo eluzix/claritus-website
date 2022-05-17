@@ -6,6 +6,7 @@ date: 2020-07-01T09:30:01+03:00
 url: /about-claritus
 type: hero-content
 content_class: about-claritus
+sitemapExclude: true
 ---
 
 Welcome to Claritus.

@@ -1,6 +1,7 @@
 ---
 title: "Claritus End User License Agreement"
 date: 2020-04-27T09:30:01+03:00
+lastmod: 2022-05-16T06:30:01.000+00:00
 url: /terms
 content_class: privacy
 type: privacy

@@ -2,7 +2,9 @@
 title: "We reward our ambassadors"
 metaTitle: "Claritus Ambassadors - refer a friend"
 description: "Our referral plan is our appreciation program to give back to our customers like you for being our ambassadors."
-date: 2020-07-01T09:30:01+03:00
+date: 2022-05-16T06:30:01.000+00:00
+lastmod: 2022-05-16T06:30:01.000+00:00
+
 url: /ambassadors
 type: ambassadors
 ---

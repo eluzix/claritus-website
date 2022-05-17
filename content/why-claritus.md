@@ -1,11 +1,12 @@
 ---
 type: why-claritus
-
 title: Why Claritus
+metaTitle: Claritus - Not just another networth tracker
+description: Claritus is a powerful yet easy to use, trustworthy and discreet companion to assist you in growing your wealth.
+date: 2022-05-16T06:30:01.000+00:00
+lastmod: 2022-05-16T06:30:01.000+00:00
 
 whySubtitle: Our mission is your financial peace of mind.
-
-description: Claritus is a powerful yet easy to use, trustworthy and discreet companion to assist you in growing your wealth.
 
 whyExcellenceMainTitle: Not Just Another Networth Tracker
 

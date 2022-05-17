@@ -3,8 +3,8 @@ type: about-us
 
 title: Our mission is your financial peace of mind
 metaTitle: About us - Our mission is your financial peace of mind
-
 description: Investors today live in a constant fog by not having visibility of their entire wealth. Claritus combines past insights and today's portfolio, so investors are always in the know.
+lastmod: 2022-05-16T06:30:01.000+00:00
 
 ##config
 type: about-us
@@ -25,7 +25,7 @@ teamText: <p>Claritus was founded by three industry veteran entrepreneurs, each 
 teamMembers:
 - name: Gabriel Bilczyk
   position: Chairman
-  linkedIn: https://wzww.linkedin.com/in/gabriel-bilczyk/
+  linkedIn: https://www.linkedin.com/in/gabriel-bilczyk/
   photo: /images/team-members/member-1.png
 
 - name: Shai Azran

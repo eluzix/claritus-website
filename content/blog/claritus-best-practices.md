@@ -9,6 +9,7 @@ content_class: blog-post
 header_class: white-header
 thumbnail: /images/thumbnail.png
 hidden: true
+sitemapExclude: true
 ---
 
 Whether you’re new to Claritus and want to play around and orient yourself, or like to follow step-by-step instructions and take your time before committing to a service, Claritus gives you the option to enter your information manually, at your own pace.
