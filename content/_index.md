@@ -108,22 +108,22 @@ faqFirstColumn:
 
 - question: Why Claritus?
 
-  answer: Keeping track of a single invested asset is a challenging and tedious task, let alone a number of assets scattered across several accounts. Whether you invest in the stock market, real estate, or any other alternative investment type, Claritus provides you with a clear image of ALL your combined assets in one place, anytime you need it
+  answer: Keeping track of your wealth can be a difficult task, but Claritus makes it easier than ever before! It doesn’t matter if you have one asset or several assets scattered over numerous accounts, with Claritus everything can be organized and tracked in one convenient place.
 
 - question: Is my privacy protected?
 
-  answer: Keeping track of a single invested asset is a challenging and tedious task, let alone a number of assets scattered across several accounts. Whether you invest in the stock market, real estate, or any other alternative investment type, Claritus provides you with a clear image of ALL your combined assets in one place, anytime you need it
+  answer: The privacy, security, and anonymity of our customers is our top priority! Claritus prides itself on their highest level of security, so much so that we do not even have access to your data!
 
 
 faqSecondColumn:
 
 - question: How does Claritus work?
 
-  answer: Keeping track of a single invested asset is a challenging and tedious task, let alone a number of assets scattered across several accounts. Whether you invest in the stock market, real estate, or any other alternative investment type, Claritus provides you with a clear image of ALL your combined assets in one place, anytime you need it
+  answer: All you need to do is enter your investment portfolio, bank account, and any alternative asset into Claritus. This can be done automatically or manually, either way the tracking begins. Claritus does all the behind the scenes work of crunching the numbers and presents you with a clear and instantaneous view of your assets.
 
 - question: Will Claritus ever sell my data?
 
-  answer: Keeping track of a single invested asset is a challenging and tedious task, let alone a number of assets scattered across several accounts. Whether you invest in the stock market, real estate, or any other alternative investment type, Claritus provides you with a clear image of ALL your combined assets in one place, anytime you need it
+  answer: No. Never.
 
 
 ##Simple pricing
