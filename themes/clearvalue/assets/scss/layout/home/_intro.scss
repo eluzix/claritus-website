@@ -270,6 +270,8 @@ section.home-intro-section {
     height: 100%;
     width: 2px;
     background-color: $green-dark;
+    -webkit-transform:skewX(10deg);
+    transform: skewX(10deg);
     //animation: flashing 1s linear infinite;
   }
 }
