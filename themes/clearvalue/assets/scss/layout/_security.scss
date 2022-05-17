@@ -59,11 +59,11 @@ section.security-intro-section {
 .security-content-section {
   .container {
     .security-content-item {
-      padding: rem(50) 0;
-      border-bottom: 1px solid $gray-200;
+      padding-top: rem(48);
 
       @media (min-width: map_get($grid-breakpoints, xl)) {
         padding: rem(100) 0;
+        border-bottom: 1px solid $gray-200;
       }
 
       &:first-child {
@@ -74,6 +74,7 @@ section.security-intro-section {
 
       &:last-child {
         border-bottom: none;
+        padding-bottom: 0;
 
         @media (min-width: map_get($grid-breakpoints, xl)) {
           padding-bottom: rem(48);
@@ -144,7 +145,11 @@ section.security-intro-section {
 }
 
 .security-disclaimer-section {
-  padding: rem(80) 0;
+  padding: rem(48) 0;
+
+  @media (min-width: map_get($grid-breakpoints, md)) {
+    padding: rem(80) 0;
+  }
 }
 
 .security-disclaimer {

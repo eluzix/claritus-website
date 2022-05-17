@@ -18,6 +18,7 @@
   &__question {
     padding: 1.5rem;
     padding-right: rem(61);
+    color: $dark-9;
     width: 100%;
     text-align: left;
     font-weight: 500;
@@ -69,6 +70,7 @@
       padding: 0 1.5rem 1.5rem 1.5rem;
       max-width: rem(445);
       font-size: 1rem;
+      color: $dark-7;
     }
   }
 }
