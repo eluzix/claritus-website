@@ -8,7 +8,7 @@ type: our-story
 content_class: our-story
 header_class: 
 hero_text: Claritus is the result of a very real and personal need we were all faced with.
-
+sitemapExclude: true
 ---
 A few years ago, I was fortunate enough to achieve financial freedom through hard work, determination and persistence. I suddenly found myself looking ahead at an open horizon that allowed me to pick and choose how I would like to continue my journey. I knew that my top priorities were spending more time with my loved ones, and managing our finances and investments in an intelligent and responsible manner.
 

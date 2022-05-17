@@ -4,6 +4,7 @@ title: Keep Track of Your Wealth,
 metaTitle: Track, analyze, and be in complete control of all of your assets and investments - all in one place!
 description: Claritus gives you a complete overview of your money and investments, offering accurate insight and assessments
 date: 2020-01-01T09:30:01+03:00
+lastmod: 2022-05-16T06:30:01.000+00:00
 
 heroText: Track, analyze, and be in complete control of all of your assets and investments - all in one place!
 

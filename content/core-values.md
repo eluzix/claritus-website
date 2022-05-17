@@ -19,4 +19,5 @@ values_list:
       body: "Claritus aims to bring the best possible tool for our customers’ money. We aren’t interested in taking a piece of their pie. Our subscription pricing is affordable and the same for everyone, and never calculated on a percentage of anyone’s wealth."
     - title: Simplicity
       body: "We make sure all data is presented in the simplest, friendliest way - in plain English and in plain numbers - so that our customers can easily absorb and understand the full scope of their assets."
+sitemapExclude: true
 ---

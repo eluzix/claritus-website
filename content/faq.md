@@ -55,6 +55,7 @@ faq_list:
 - title: How do I contact you for any reason?
   body: You can contact us anytime <a href="mailto:help@claritus.io">help@claritus.io</a>.
 
+sitemapExclude: true
 ---
 {{< rawhtml >}}
 Here are some common questions about Claritus.<br/>

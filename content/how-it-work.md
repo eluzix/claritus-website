@@ -1,5 +1,6 @@
 ---
 title: "How Claritus works"
+metaTitle: "See how Claritus works"
 
 date: 2020-04-27T09:30:01+03:00
 

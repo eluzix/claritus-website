@@ -8,6 +8,7 @@ description: Claritus has moved from Beta to its early commercial phase.
 date: 2022-04-25T11:02:21.718+00:00
 lastmod: 2022-04-25T11:02:21.729+00:00
 hidden: true
+sitemapExclude: true
 ---
 
 I’m very excited to share that Claritus has moved from Beta to its early commercial phase following your support. Our user interface has been completely revamped to make Claritus even more convenient and simple for you.
