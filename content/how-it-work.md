@@ -17,8 +17,8 @@ See any investment history, change over time and important annotation on a simpl
 
 {{< rawhtml >}}
 <div class="video-container">
-    <video class="lozad" data-poster="https://claritus.s3.amazonaws.com/website/videos/investment-change-over-time.jpg" width="100%" autoplay muted loop playsinline>
-        <source data-src="https://claritus.s3.amazonaws.com/website/videos/investment-change-over-time.mp4" type="video/mp4">
+    <video class="lozad" data-poster="https://d35c20tx62tmpd.cloudfront.net/website/videos/investment-change-over-time.jpg" width="100%" autoplay muted loop playsinline>
+        <source data-src="https://d35c20tx62tmpd.cloudfront.net/website/videos/investment-change-over-time.mp4" type="video/mp4">
     </video>
 </div>
 {{< /rawhtml >}}
@@ -31,8 +31,8 @@ performance.
 
 {{< rawhtml >}}
 <div class="video-container">
-    <video class="lozad" data-poster="https://claritus.s3.amazonaws.com/website/videos/add-investment-manually.jpg" width="100%" autoplay muted loop playsinline>
-        <source data-src="https://claritus.s3.amazonaws.com/website/videos/add-investment-manually.mp4" type="video/mp4">
+    <video class="lozad" data-poster="https://d35c20tx62tmpd.cloudfront.net/website/videos/add-investment-manually.jpg" width="100%" autoplay muted loop playsinline>
+        <source data-src="https://d35c20tx62tmpd.cloudfront.net/website/videos/add-investment-manually.mp4" type="video/mp4">
     </video>
 </div>
 {{< /rawhtml >}}
@@ -43,8 +43,8 @@ Link your accounts to get the up to date values, holdings and transactions autom
 
 {{< rawhtml >}}
 <div class="video-container">
-    <video class="lozad" data-poster="https://claritus.s3.amazonaws.com/website/videos/link-your-investment.jpg" width="100%" autoplay muted loop playsinline>
-        <source data-src="https://claritus.s3.amazonaws.com/website/videos/link-your-investment.mp4" type="video/mp4">
+    <video class="lozad" data-poster="https://d35c20tx62tmpd.cloudfront.net/website/videos/link-your-investment.jpg" width="100%" autoplay muted loop playsinline>
+        <source data-src="https://d35c20tx62tmpd.cloudfront.net/website/videos/link-your-investment.mp4" type="video/mp4">
     </video>
 </div>
 {{< /rawhtml >}}
@@ -55,8 +55,8 @@ Already have a list of your investment transactions? Upload it to see history an
 
 {{< rawhtml >}}
 <div class="video-container">
-    <video class="lozad" data-poster="https://claritus.s3.amazonaws.com/website/videos/import-historical-transactions.jpg" width="100%" autoplay muted loop playsinline>
-        <source data-src="https://claritus.s3.amazonaws.com/website/videos/import-historical-transactions.mp4" type="video/mp4">
+    <video class="lozad" data-poster="https://d35c20tx62tmpd.cloudfront.net/website/videos/import-historical-transactions.jpg" width="100%" autoplay muted loop playsinline>
+        <source data-src="https://d35c20tx62tmpd.cloudfront.net/website/videos/import-historical-transactions.mp4" type="video/mp4">
     </video>
 </div>
 {{< /rawhtml >}}
@@ -67,8 +67,8 @@ Quickly find any investment, liability or tag simply by searching them.
 
 {{< rawhtml >}}
 <div class="video-container">
-    <video class="lozad" data-poster="https://claritus.s3.amazonaws.com/website/videos/search-for-investments.jpg" width="100%" autoplay muted loop playsinline>
-        <source data-src="https://claritus.s3.amazonaws.com/website/videos/search-for-investments.mp4" type="video/mp4">
+    <video class="lozad" data-poster="https://d35c20tx62tmpd.cloudfront.net/website/videos/search-for-investments.jpg" width="100%" autoplay muted loop playsinline>
+        <source data-src="https://d35c20tx62tmpd.cloudfront.net/website/videos/search-for-investments.mp4" type="video/mp4">
     </video>
 </div>
 {{< /rawhtml >}}
@@ -79,8 +79,8 @@ Organize your investments papers and documents in one place.
 
 {{< rawhtml >}}
 <div class="video-container">
-    <video class="lozad" data-poster="https://claritus.s3.amazonaws.com/website/videos/upload-investment-documents.jpg" width="100%" autoplay muted loop playsinline>
-        <source data-src="https://claritus.s3.amazonaws.com/website/videos/upload-investment-documents.mp4" type="video/mp4">
+    <video class="lozad" data-poster="https://d35c20tx62tmpd.cloudfront.net/website/videos/upload-investment-documents.jpg" width="100%" autoplay muted loop playsinline>
+        <source data-src="https://d35c20tx62tmpd.cloudfront.net/website/videos/upload-investment-documents.mp4" type="video/mp4">
     </video>
 </div>
 {{< /rawhtml >}}
@@ -91,8 +91,8 @@ Don’t want to link your brokerage account? Search for the symbol and add it ma
 
 {{< rawhtml >}}
 <div class="video-container">
-    <video class="lozad" data-poster="https://claritus.s3.amazonaws.com/website/videos/add-investment-manually.jpg" width="100%" autoplay muted loop playsinline>
-        <source data-src="https://claritus.s3.amazonaws.com/website/videos/add-investment-manually.mp4" type="video/mp4">
+    <video class="lozad" data-poster="https://d35c20tx62tmpd.cloudfront.net/website/videos/add-investment-manually.jpg" width="100%" autoplay muted loop playsinline>
+        <source data-src="https://d35c20tx62tmpd.cloudfront.net/website/videos/add-investment-manually.mp4" type="video/mp4">
     </video>
 </div>
 {{< /rawhtml >}}
@@ -104,8 +104,8 @@ time.
 
 {{< rawhtml >}}
 <div class="video-container">
-    <video class="lozad" data-poster="https://claritus.s3.amazonaws.com/website/videos/see-your-investments-return.jpg" width="100%" autoplay muted loop playsinline>
-        <source data-src="https://claritus.s3.amazonaws.com/website/videos/see-your-investments-return.mp4" type="video/mp4">
+    <video class="lozad" data-poster="https://d35c20tx62tmpd.cloudfront.net/website/videos/see-your-investments-return.jpg" width="100%" autoplay muted loop playsinline>
+        <source data-src="https://d35c20tx62tmpd.cloudfront.net/website/videos/see-your-investments-return.mp4" type="video/mp4">
     </video>
 </div>
 {{< /rawhtml >}}
@@ -116,8 +116,8 @@ Group investments with tags and get an instant view into their combined performa
 
 {{< rawhtml >}}
 <div class="video-container">
-    <video class="lozad" data-poster="https://claritus.s3.amazonaws.com/website/videos/organize-your-investments.jpg" width="100%" autoplay muted loop playsinline>
-        <source data-src="https://claritus.s3.amazonaws.com/website/videos/organize-your-investments.mp4" type="video/mp4">
+    <video class="lozad" data-poster="https://d35c20tx62tmpd.cloudfront.net/website/videos/organize-your-investments.jpg" width="100%" autoplay muted loop playsinline>
+        <source data-src="https://d35c20tx62tmpd.cloudfront.net/website/videos/organize-your-investments.mp4" type="video/mp4">
     </video>
 </div>
 {{< /rawhtml >}}
@@ -128,8 +128,8 @@ Get a quick overview of how your investments did the previous months.
 
 {{< rawhtml >}}
 <div class="video-container">
-    <video class="lozad" data-poster="https://claritus.s3.amazonaws.com/website/videos/see-monthly-report.jpg" width="100%" autoplay muted loop playsinline>
-        <source data-src="https://claritus.s3.amazonaws.com/website/videos/see-monthly-report.mp4" type="video/mp4">
+    <video class="lozad" data-poster="https://d35c20tx62tmpd.cloudfront.net/website/videos/see-monthly-report.jpg" width="100%" autoplay muted loop playsinline>
+        <source data-src="https://d35c20tx62tmpd.cloudfront.net/website/videos/see-monthly-report.mp4" type="video/mp4">
     </video>
 </div>
 {{< /rawhtml >}}
