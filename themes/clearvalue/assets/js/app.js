@@ -23,7 +23,7 @@ function initNewsletter() {
     email = encodeURIComponent(email.value.trim());
 
     fetch(
-      "https://f6gcz330p3.execute-api.us-east-1.amazonaws.com/newsletter?email=" +
+      "https://6sdobm19id.execute-api.us-east-1.amazonaws.com/newsletter?email=" +
         email,
       {
         method: "POST",
