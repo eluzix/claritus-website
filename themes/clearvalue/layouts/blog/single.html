@@ -6,11 +6,11 @@
 	{{ partial "header-nav-menu.html" }}
 </header>
 
-
+{{ if .Params.Thumbnail }}
 <section class="post-intro-section">
 	<div class="container">
 		<div class="row">
-			<div class="col-xl-4 col-xxl-5">
+			<div class="col-xl-5 col-xxl-5">
 				<a href="/blog" class="post-back-link">
 					<svg width="6" height="11">
 						<use xlink:href="#arrow-icon"></use>
@@ -31,10 +31,21 @@
 	</figure>
 </section>
 
+{{ end }}
+
 <section class="post-content-section">
 	<div class="container">
 		<div class="row justify-content-center">
 			<div class="col-xl-7">
+				<a href="/blog" class="post-back-link">
+					<svg width="6" height="11">
+						<use xlink:href="#arrow-icon"></use>
+					</svg>
+					Back to Blog
+				</a>
+				<div class="blog-intro-title">
+					{{ .Title }}
+				</div>
 				<div class="post-content">
 					{{ .Content | safeHTML }}
 				</div>

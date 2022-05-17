@@ -2,31 +2,45 @@ section.pricing-intro-section {
   padding-top: rem(88);
 
   @media (min-width: map_get($grid-breakpoints, md)) {
-    padding-top: 3.5rem;
+    padding-top: rem(56);
+  }
+
+  @media (min-width: map_get($grid-breakpoints, xxl)) {
+    padding-top: rem(80);
   }
 }
 
 .pricing-title {
   font-weight: 700;
   font-size: 2rem;
+  line-height: rem(42);
   color: $dark-9;
   margin-bottom: 1.5rem;
 
   @media (min-width: map_get($grid-breakpoints, md)) {
-    padding-top: 3.5rem;
     text-align: center;
-    font-weight: 500;
+    font-weight: 700;
     font-size: rem(50);
+    line-height: 130%;
   }
 }
 
 .pricing-text {
-  margin-bottom: rem(40);
   color: $gray-600;
+  margin-bottom: rem(32);
+
+  @media (min-width: map_get($grid-breakpoints, md)) {
+    margin-bottom: rem(40);
+  }
 
   @media (min-width: map_get($grid-breakpoints, xl)) {
     text-align: center;
   }
+}
+
+.pricing-btn {
+  font-size: rem(20);
+  line-height: rem(26);
 }
 
 //Pricing
@@ -55,7 +69,11 @@ section.pricing-section {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: rem(40);
+  margin-bottom: rem(46);
+
+  @media (min-width: map_get($grid-breakpoints, xxl)) {
+    margin-bottom: rem(54);
+  }
 
   &__item {
     display: inline-flex;
@@ -63,7 +81,7 @@ section.pricing-section {
     justify-content: center;
     height: 4rem;
     width: 50%;
-    max-width: rem(220);
+    max-width: rem(224);
     background: #ffffff;
     border: 1px solid #e3e5ed;
     font-weight: 700;
@@ -80,15 +98,10 @@ section.pricing-section {
       top: 0;
       width: 100%;
       height: 100%;
-      background-image: linear-gradient(
-        90.36deg,
-        #46dd94 -0.66%,
-        #23d3ab 101.59%,
-        #17d6b3 101.59%
-      );
-      z-index: 1;
+      background-image: $gradient-primary;
       opacity: 0;
       transition: opacity 0.5s ease;
+      z-index: 1;
     }
 
     span {
@@ -127,11 +140,17 @@ section.pricing-section {
   }
 }
 
+.tab-wrap {
+  width: 100%;
+  max-width: rem(600);
+  margin: 0 auto;
+}
+
 .action-type {
   display: flex;
   flex-direction: column;
   position: absolute;
-  right: rem(0);
+  right: rem(12);
   bottom: 100%;
   font-weight: 500;
   font-size: 1.125rem;
@@ -141,12 +160,8 @@ section.pricing-section {
   opacity: 0;
   transition: all 0.5s ease;
 
-  @media (min-width: map_get($grid-breakpoints, md)) {
-    right: rem(-16);
-  }
-
   svg {
-    margin-left: rem(40);
+    margin-left: rem(36);
     margin-top: rem(4);
     fill: #00b08b;
     transform: rotate(-59.71deg);
@@ -192,17 +207,54 @@ section.pricing-section {
   }
 }
 
+#monthly-plan {
+  .tab-content .price {
+    margin-right: rem(-47);
+  }
+}
+
+#yearly-plan {
+  .tab-content .price {
+    margin-right: rem(-66);
+  }
+}
+
 .tab-content {
+  position: relative;
   padding: rem(40) 1rem;
 
   @media (min-width: map_get($grid-breakpoints, md)) {
     padding: rem(40) rem(50);
   }
 
+  .old-price {
+    position: absolute;
+    top: rem(14);
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 700;
+    font-size: rem(20);
+    line-height: rem(26);
+    color: $gray-500;
+
+    &:after {
+      display: block;
+      position: absolute;
+      content: "";
+      top: rem(12);
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: $gray-600;
+      transform: rotate(-12.91deg);
+    }
+  }
+
   .price {
     display: flex;
     align-items: flex-end;
     justify-content: center;
+    // margin-right: rem(-66);
 
     &__value {
       font-weight: 700;

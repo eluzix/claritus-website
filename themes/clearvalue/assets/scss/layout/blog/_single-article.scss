@@ -115,6 +115,10 @@ section.post-content-section {
     font-weight: 500;
     font-size: 1.5rem;
     color: $dark-9;
+
+    strong, b {
+      font-weight: 500;
+    }
   }
 
   img, video {

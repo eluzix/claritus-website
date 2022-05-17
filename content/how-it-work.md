@@ -16,9 +16,11 @@ content_class: terms
 See any investment history, change over time and important annotation on a simple and intuitive graph.
 
 {{< rawhtml >}}
-<video class="lozad" data-poster="https://claritus.s3.amazonaws.com/website/videos/investment-change-over-time.jpg" width="100%" autoplay muted loop playsinline>
-    <source data-src="https://claritus.s3.amazonaws.com/website/videos/investment-change-over-time.mp4" type="video/mp4">
-</video>
+<div class="video-container">
+    <video class="lozad" data-poster="https://claritus.s3.amazonaws.com/website/videos/investment-change-over-time.jpg" width="100%" autoplay muted loop playsinline>
+        <source data-src="https://claritus.s3.amazonaws.com/website/videos/investment-change-over-time.mp4" type="video/mp4">
+    </video>
+</div>
 {{< /rawhtml >}}
 
 
@@ -28,9 +30,11 @@ Don’t want to link your account? You can add an investment manually and get po
 performance.
 
 {{< rawhtml >}}
-<video class="lozad" data-poster="https://claritus.s3.amazonaws.com/website/videos/add-investment-manually.jpg" width="100%" autoplay muted loop playsinline>
-    <source data-src="https://claritus.s3.amazonaws.com/website/videos/add-investment-manually.mp4" type="video/mp4">
-</video>
+<div class="video-container">
+    <video class="lozad" data-poster="https://claritus.s3.amazonaws.com/website/videos/add-investment-manually.jpg" width="100%" autoplay muted loop playsinline>
+        <source data-src="https://claritus.s3.amazonaws.com/website/videos/add-investment-manually.mp4" type="video/mp4">
+    </video>
+</div>
 {{< /rawhtml >}}
 
 ### Link your investment/bank account
@@ -38,9 +42,11 @@ performance.
 Link your accounts to get the up to date values, holdings and transactions automatically.
 
 {{< rawhtml >}}
-<video class="lozad" data-poster="https://claritus.s3.amazonaws.com/website/videos/link-your-investment.jpg" width="100%" autoplay muted loop playsinline>
-    <source data-src="https://claritus.s3.amazonaws.com/website/videos/link-your-investment.mp4" type="video/mp4">
-</video>
+<div class="video-container">
+    <video class="lozad" data-poster="https://claritus.s3.amazonaws.com/website/videos/link-your-investment.jpg" width="100%" autoplay muted loop playsinline>
+        <source data-src="https://claritus.s3.amazonaws.com/website/videos/link-your-investment.mp4" type="video/mp4">
+    </video>
+</div>
 {{< /rawhtml >}}
 
 ### Import historical transactions
@@ -48,9 +54,11 @@ Link your accounts to get the up to date values, holdings and transactions autom
 Already have a list of your investment transactions? Upload it to see history and past performance.
 
 {{< rawhtml >}}
-<video class="lozad" data-poster="https://claritus.s3.amazonaws.com/website/videos/import-historical-transactions.jpg" width="100%" autoplay muted loop playsinline>
-    <source data-src="https://claritus.s3.amazonaws.com/website/videos/import-historical-transactions.mp4" type="video/mp4">
-</video>
+<div class="video-container">
+    <video class="lozad" data-poster="https://claritus.s3.amazonaws.com/website/videos/import-historical-transactions.jpg" width="100%" autoplay muted loop playsinline>
+        <source data-src="https://claritus.s3.amazonaws.com/website/videos/import-historical-transactions.mp4" type="video/mp4">
+    </video>
+</div>
 {{< /rawhtml >}}
 
 ### Search for investments
@@ -58,9 +66,11 @@ Already have a list of your investment transactions? Upload it to see history an
 Quickly find any investment, liability or tag simply by searching them.
 
 {{< rawhtml >}}
-<video class="lozad" data-poster="https://claritus.s3.amazonaws.com/website/videos/search-for-investments.jpg" width="100%" autoplay muted loop playsinline>
-    <source data-src="https://claritus.s3.amazonaws.com/website/videos/search-for-investments.mp4" type="video/mp4">
-</video>
+<div class="video-container">
+    <video class="lozad" data-poster="https://claritus.s3.amazonaws.com/website/videos/search-for-investments.jpg" width="100%" autoplay muted loop playsinline>
+        <source data-src="https://claritus.s3.amazonaws.com/website/videos/search-for-investments.mp4" type="video/mp4">
+    </video>
+</div>
 {{< /rawhtml >}}
 
 ### Upload investment documents
@@ -68,9 +78,11 @@ Quickly find any investment, liability or tag simply by searching them.
 Organize your investments papers and documents in one place.
 
 {{< rawhtml >}}
-<video class="lozad" data-poster="https://claritus.s3.amazonaws.com/website/videos/upload-investment-documents.jpg" width="100%" autoplay muted loop playsinline>
-    <source data-src="https://claritus.s3.amazonaws.com/website/videos/upload-investment-documents.mp4" type="video/mp4">
-</video>
+<div class="video-container">
+    <video class="lozad" data-poster="https://claritus.s3.amazonaws.com/website/videos/upload-investment-documents.jpg" width="100%" autoplay muted loop playsinline>
+        <source data-src="https://claritus.s3.amazonaws.com/website/videos/upload-investment-documents.mp4" type="video/mp4">
+    </video>
+</div>
 {{< /rawhtml >}}
 
 ### Add stock manually
@@ -78,9 +90,11 @@ Organize your investments papers and documents in one place.
 Don’t want to link your brokerage account? Search for the symbol and add it manually.
 
 {{< rawhtml >}}
-<video class="lozad" data-poster="https://claritus.s3.amazonaws.com/website/videos/add-investment-manually.jpg" width="100%" autoplay muted loop playsinline>
-    <source data-src="https://claritus.s3.amazonaws.com/website/videos/add-investment-manually.mp4" type="video/mp4">
-</video>
+<div class="video-container">
+    <video class="lozad" data-poster="https://claritus.s3.amazonaws.com/website/videos/add-investment-manually.jpg" width="100%" autoplay muted loop playsinline>
+        <source data-src="https://claritus.s3.amazonaws.com/website/videos/add-investment-manually.mp4" type="video/mp4">
+    </video>
+</div>
 {{< /rawhtml >}}
 
 ### See your investments return/appreciation
@@ -89,9 +103,11 @@ Check your return for any investment, asset type or tag. Choose your time frame 
 time.
 
 {{< rawhtml >}}
-<video class="lozad" data-poster="https://claritus.s3.amazonaws.com/website/videos/see-your-investments-return.jpg" width="100%" autoplay muted loop playsinline>
-    <source data-src="https://claritus.s3.amazonaws.com/website/videos/see-your-investments-return.mp4" type="video/mp4">
-</video>
+<div class="video-container">
+    <video class="lozad" data-poster="https://claritus.s3.amazonaws.com/website/videos/see-your-investments-return.jpg" width="100%" autoplay muted loop playsinline>
+        <source data-src="https://claritus.s3.amazonaws.com/website/videos/see-your-investments-return.mp4" type="video/mp4">
+    </video>
+</div>
 {{< /rawhtml >}}
 
 ### Organize your investments the way you want
@@ -99,9 +115,11 @@ time.
 Group investments with tags and get an instant view into their combined performance.
 
 {{< rawhtml >}}
-<video class="lozad" data-poster="https://claritus.s3.amazonaws.com/website/videos/organize-your-investments.jpg" width="100%" autoplay muted loop playsinline>
-    <source data-src="https://claritus.s3.amazonaws.com/website/videos/organize-your-investments.mp4" type="video/mp4">
-</video>
+<div class="video-container">
+    <video class="lozad" data-poster="https://claritus.s3.amazonaws.com/website/videos/organize-your-investments.jpg" width="100%" autoplay muted loop playsinline>
+        <source data-src="https://claritus.s3.amazonaws.com/website/videos/organize-your-investments.mp4" type="video/mp4">
+    </video>
+</div>
 {{< /rawhtml >}}
 
 ### See your monthly reports
@@ -109,7 +127,9 @@ Group investments with tags and get an instant view into their combined performa
 Get a quick overview of how your investments did the previous months.
 
 {{< rawhtml >}}
-<video class="lozad" data-poster="https://claritus.s3.amazonaws.com/website/videos/see-monthly-report.jpg" width="100%" autoplay muted loop playsinline>
-    <source data-src="https://claritus.s3.amazonaws.com/website/videos/see-monthly-report.mp4" type="video/mp4">
-</video>
+<div class="video-container">
+    <video class="lozad" data-poster="https://claritus.s3.amazonaws.com/website/videos/see-monthly-report.jpg" width="100%" autoplay muted loop playsinline>
+        <source data-src="https://claritus.s3.amazonaws.com/website/videos/see-monthly-report.mp4" type="video/mp4">
+    </video>
+</div>
 {{< /rawhtml >}}

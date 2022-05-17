@@ -64,7 +64,7 @@ benchmarkText: Investors live in a constant fog today by not having visibility o
 feedbackTitle: What Customers are Saying
 
 feedbacks:
-- feedbackText: “first of all congratulations, you and your team have developed an amazing service!”
+- feedbackText: “First of all congratulations, you and your team have developed an amazing service!”
   feedbackName: Wesley H.
 
 - feedbackText: “I just signed up for Claritus on the recommendation of a colleague. I like the work you've done so far.”
@@ -73,7 +73,7 @@ feedbacks:
 - feedbackText: “Hello! Amazing site, I’ve been looking for something like this for ages!11”
   feedbackName: F.M
 
-- feedbackText: “user interface really clean and intuitive. Easy to get started.”
+- feedbackText: “User interface really clean and intuitive. Easy to get started.”
   feedbackName: Ruth S.
 
 - feedbackText: “Awesome, GREAT product”

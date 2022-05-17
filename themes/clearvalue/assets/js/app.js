@@ -227,7 +227,11 @@ function initBurgerMenu() {
 
   burgerBtn.addEventListener("click", () => {
     burgerBtn.classList.toggle("nav-btn--opened");
-    navMenu.classList.toggle("header-nav-menu--active");
+
+    navMenu.style.display = "block";
+    setTimeout(() => {
+      navMenu.classList.toggle("header-nav-menu--active");
+    }, 1);
   });
 
   closeMenuBtn.addEventListener("click", () => {
@@ -239,8 +243,12 @@ function initBurgerMenu() {
   });
 
   function closeNavMenu() {
-    navMenu.classList.remove("header-nav-menu--active");
     burgerBtn.classList.remove("nav-btn--opened");
+    
+    navMenu.classList.remove("header-nav-menu--active");
+    setTimeout(() => {
+      navMenu.style.display = "none";
+    }, 500);
   }
 }
 
