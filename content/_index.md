@@ -71,7 +71,7 @@ feedbacks:
 - feedbackText: “I just signed up for Claritus on the recommendation of a colleague. I like the work you've done so far.”
   feedbackName: George S.
 
-- feedbackText: “Hello! Amazing site, I’ve been looking for something like this for ages!11”
+- feedbackText: “Hello! Amazing site, I’ve been looking for something like this for ages!!!”
   feedbackName: F.M
 
 - feedbackText: “User interface really clean and intuitive. Easy to get started.”
