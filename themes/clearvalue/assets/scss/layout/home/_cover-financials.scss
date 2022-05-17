@@ -75,7 +75,8 @@ section.financial-cover-section {
     @media (min-width: map_get($grid-breakpoints, xxl)) {
       max-width: rem(916);
       top: 0;
-      right: 41.75%;
+      right: 50%;
+      transform: translateX(150px);
     }
   }
 }
