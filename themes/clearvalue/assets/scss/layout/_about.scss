@@ -4,20 +4,36 @@ section.about-intro-section {
   padding-top: rem(140);
   background-color: $dark-11;
   min-height: rem(600);
+  padding-bottom: rem(340);
+
+  @media (min-width: map_get($grid-breakpoints, md)) {
+    min-height: rem(680);
+  }
 
   @media (min-width: map_get($grid-breakpoints, xl)) {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: rem(144) 0;
-    min-height: rem(680);
   }
 }
 
 .about-intro-bg {
   img {
-    @extend %absolute;
-    @extend %obj-cover;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    @media (min-width: map_get($grid-breakpoints, xl)) {
+      left: 0;
+      top: 0;
+      right: auto;
+      bottom: auto;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center center;
+    }
   }
 }
 
