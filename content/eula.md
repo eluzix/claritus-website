@@ -7,6 +7,7 @@ content_class: privacy
 type: privacy
 content_class: terms
 header_class: white-header
+update_date: "March, 2020"
 ---
 Claritus Financial Solutions, Inc., ("Claritus", "we", "us" or "our") operates a platform,
 accessible at (https://claritus.io) (the "Site") and through any app that we make available
@@ -301,5 +302,3 @@ OTHERWISE, SUCH CAUSE OF ACTION IS PERMANENTLY BARRED.
         To the extent that the foregoing is not permitted, you agree to be bound by the standard
         Apple Licensed Application End User License Agreement which is part of the Apple App Store Terms of Service,
         at www.apple.com/legal/itunes/us/terms.html#SERVICE  (as amended from time to time).
-
-{{< rawhtml >}} <p class="update-date"><strong>Last updated:  March, 2020</strong></p> {{< /rawhtml >}}
