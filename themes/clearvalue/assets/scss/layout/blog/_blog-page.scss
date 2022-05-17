@@ -72,6 +72,10 @@ section.blog-intro-section {
     @media (min-width: map_get($grid-breakpoints, xl)) {
       height: 100%;
       object-fit: cover;
+      object-position: center center;
+    }
+
+    @media (min-width: 1600px) {
       object-position: top right;
     }
   }
