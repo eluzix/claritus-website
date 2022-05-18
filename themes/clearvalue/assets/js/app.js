@@ -494,7 +494,7 @@ function initScrollTopHandler() {
 
 function initInstitutionsAnimation() {
   const selector = '.financials-slider';
-  const interval = 5;
+  const interval = 3;
   let step = 1;
   
   let groupBy = window.innerWidth < 744 ? 3 : 6;
