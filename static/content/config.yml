@@ -22,21 +22,21 @@ collections:
           - { label: "Hero Text", name: "heroText", widget: "string" }
           - { label: "Hero Image", name: "heroImg", widget: "image" }
           - label: "Hero overview"
-              name: "homeOverview"
-              widget: list
-              fields:
-                - { label: "Icon", name: "icon", widget: string }
-                - { label: "Title", name: "title", widget: string }
-                - { label: "Text", name: "text", widget: string }
-                - { label: "Popup info text", name: "popupText", widget: string, required: false }
+            name: "homeOverview"
+            widget: list
+            fields:
+              - { label: "Icon", name: "icon", widget: string }
+              - { label: "Title", name: "title", widget: string }
+              - { label: "Text", name: "text", widget: string }
+              - { label: "Popup info text", name: "popupText", widget: string, required: false }
 
           - { label: "Section 1 Title", name: "financialsTitle", widget: "string" }
           - label: "Section 1 images"
-              name: "financialInstitutes"
-              widget: list,
-              fields:
-                - { label: "Institute image desk", name: "imageUrlDesk", widget: image }
-                - { label: "Institute image tablet", name: "imageUrlTablet", widget: image }
+            name: "financialInstitutes"
+            widget: list,
+            fields:
+              - { label: "Institute image desk", name: "imageUrlDesk", widget: image }
+              - { label: "Institute image tablet", name: "imageUrlTablet", widget: image }
 
 
           - { label: "Section 2 Title", name: "secureTitle", widget: "string" }
@@ -50,28 +50,28 @@ collections:
 
           - { label: "Testimonials title", name: "feedbackTitle", widget: "string" }
           - label: "Testimonials"
-              name: "feedbacks"
-              widget: list
-              fields:
-                - { label: "Feedback", name: "feedbackText", widget: string }
-                - { label: "Author", name: "feedbackName", widget: string }
+            name: "feedbacks"
+            widget: list
+            fields:
+              - { label: "Feedback", name: "feedbackText", widget: string }
+              - { label: "Author", name: "feedbackName", widget: string }
 
           - { label: "Section 6 Title", name: "historyTitle", widget: "string" }
           - { label: "Section 6 text", name: "historyText", widget: "string" }
 
           - { label: "FAQ Title", name: "faqTitle", widget: "string" }
           - label: "FAQ left column"
-              name: "faqFirstColumn"
-              widget: list
-              fields:
-                - { label: "Question text", name: "question", widget: string }
-                - { label: "Answer text", name: "answer", widget: string }
+            name: "faqFirstColumn"
+            widget: list
+            fields:
+              - { label: "Question text", name: "question", widget: string }
+              - { label: "Answer text", name: "answer", widget: string }
           - label: "FAQ right column"
-              name: "faqFirstColumn"
-              widget: list
-              fields:
-                - { label: "Question text", name: "question", widget: string }
-                - { label: "Answer text", name: "answer", widget: string }
+            name: "faqSecondColumn"
+            widget: list
+            fields:
+              - { label: "Question text", name: "question", widget: string }
+              - { label: "Answer text", name: "answer", widget: string }
 
           - { label: "Section Simple pricing", name: "pricingTitle", widget: "string" }
           - { label: "Section Simple pricing", name: "pricingText", widget: "string" }
@@ -108,190 +108,169 @@ collections:
           - { label: "Team Title", name: "teamTitle", widget: "string" }
           - { label: "Team Text", name: "teamText", widget: "string" }
           - label: "Team members"
-              name: "teamMembers"
-              widget: list
-              fields:
-                - { label: "Teammate name", name: "name", widget: string }
-                - { label: "Teammate position", name: "position", widget: string }
-                - { label: "Teammate linkedIn", name: "linkedIn", widget: string }
-                - { label: "Teammate photo", name: "photo", widget: image }
+            name: "teamMembers"
+            widget: list
+            fields:
+              - { label: "Teammate name", name: "name", widget: string }
+              - { label: "Teammate position", name: "position", widget: string }
+              - { label: "Teammate linkedIn", name: "linkedIn", widget: string }
+              - { label: "Teammate photo", name: "photo", widget: image }
 
 
       - label: "Security"
-          name: "security"
-          file: "content/security.md"
-          fields:
-            - { label: "Title", name: "title", widget: "string" }
-            - { label: "Meta Title", name: "metaTitle", widget: "string" }
-            - { label: "Meta Description", name: "description", widget: "string" }
-            - { label: "Publish Date", name: "date", widget: "datetime" }
-            - { label: "Update Date", name: "lastmod", widget: "datetime" }
-
-            - { label: "Section 1 Title", name: "protectedTitle", widget: "string" }
-            - { label: "Section 1 Text", name: "protectedText", widget: "string" }
-            - { label: "Section 1 Content", name: "protectedContent", widget: "string" }
-            - { label: "Section 1 Image", name: "protectedImg", widget: image }
-
-            - { label: "Section 2 Title", name: "respectTitle", widget: "string" }
-            - { label: "Section 2 Text", name: "respectText", widget: "string" }
-            - { label: "Section 2 Content", name: "respectContent", widget: "string" }
-            - { label: "Section 2 Image", name: "respectImg", widget: image }
-
-            - { label: "Disclaimer", name: "securityDisclaimer", widget: "string" }
-
-
-      - label: "Pricing"
-          name: "pricing"
-          file: "content/pricing.md"
-          fields:
-            - { label: "Title", name: "title", widget: "string" }
-            - { label: "Meta Title", name: "metaTitle", widget: "string" }
-            - { label: "Meta Description", name: "description", widget: "string" }
-            - { label: "Publish Date", name: "date", widget: "datetime" }
-            - { label: "Update Date", name: "lastmod", widget: "datetime" }
-
-            - { label: "Monthly plan title", name: "monthlyPlanTitle", widget: "string" }
-            - { label: "Monthly plan price", name: "monthlyPlanPrice", widget: "string" }
-            - label: "Monthly plan list"
-                name: "monthlyPlanList"
-                widget: list
-                field: { label: "List item", name: "listItem", widget: "string" }
-
-            - { label: "Yearly plan title", name: "yearlyPlanTitle", widget: "string" }
-            - { label: "Yearly plan old price", name: "oldYearlyPlanPrice", widget: "string" }
-            - { label: "Yearly plan price", name: "yearlyPlanPrice", widget: "string" }
-            - label: "Yearly plan list"
-                name: "yearlyPlanList"
-                widget: list
-                field: { label: "List item", name: "listItem", widget: "string" }
-
-            - { label: "Price FAQ title", name: "priceFaqTitle", widget: "string" }
-            - label: "Price FAQ"
-                name: "priceFaq"
-                widget: list
-                fields:
-                  - { label: "Question text", name: "question", widget: "string" }
-                  - { label: "Answer text", name: "answer", widget: "string" }
-
-
-      - label: "Contact us"
-          name: "contact-us"
-          file: "content/contact-us.md"
-          fields:
-            - { label: "Title", name: "title", widget: "string" }
-            - { label: "Meta Title", name: "metaTitle", widget: "string" }
-            - { label: "Meta Description", name: "description", widget: "string" }
-            - { label: "Subtitle", name: "subTitle", widget: "string" }
-
-            - { label: "Successful message title", name: "successfulTitle", widget: "string" }
-            - { label: "Successful message text", name: "successfulMessage", widget: "string" }
-
-
-      - label: "Terms"
-          name: "terms"
-          file: "content/eula.md"
-          fields:
-            - { label: "Title", name: "title", widget: "string" }
-            - { label: "Content class", name: "content_class", widget: "hidden" }
-            - { label: "Publish Date", name: "date", widget: "datetime" }
-            - { label: "Update Date", name: "lastmod", widget: "datetime" }
-            - { label: "Custom Update Date", name: "update_date", widget: "string" }
-
-            - { label: "Body", name: "body", widget: "markdown" }
-
-      - label: "How Claritus works"
-          name: "how-it-work"
-          file: "content/how-it-work.md"
-          fields:
-            - { label: "Title", name: "title", widget: "string" }
-            - { label: "Meta Title", name: "metaTitle", widget: "string" }
-            - { label: "Content class", name: "content_class", widget: "hidden" }
-            - { label: "Publish Date", name: "date", widget: "datetime" }
-
-            - { label: "Body", name: "body", widget: "markdown" }
-
-
-      - label: "How Claritus works"
-          name: "why-claritus"
-          file: "content/why-claritus.md"
-          fields:
-            - { label: "Title", name: "title", widget: "string" }
-            - { label: "Meta Title", name: "metaTitle", widget: "string" }
-            - { label: "Meta Description", name: "description", widget: "string" }
-            - { label: "Publish Date", name: "date", widget: "datetime" }
-            - { label: "Update Date", name: "lastmod", widget: "datetime" }
-            - { label: "Subtitle", name: "whySubtitle", widget: "string" }
-
-            - { label: "Section 2 title", name: "whyExcellenceMainTitle", widget: "string" }
-            - { label: "Section 2 text", name: "whyExcellenceMainDescription", widget: "string" }
-            - label: "Section 2 list"
-                name: "whyExcellenceMainList"
-                widget: list
-                field: { label: "List item", name: "listItem", widget: "string" }
-
-            - label: "Why excellence"
-                name: "whyExcellence"
-                widget: list
-                fields:
-                  - { label: "Title", name: "title", widget: "string" }
-                  - { label: "Description", name: "description", widget: "string" }
-                  - { label: "Image", name: "img", widget: image }
-
-      - label: "We reward our ambassadors"
-          name: "ambassadors"
-          file: "content/ambassadors.md"
-          fields:
-            - { label: "Title", name: "title", widget: "string" }
-            - { label: "Meta Title", name: "metaTitle", widget: "string" }
-            - { label: "Meta Description", name: "description", widget: "string" }
-            - { label: "Publish Date", name: "date", widget: "datetime" }
-            - { label: "Update Date", name: "lastmod", widget: "datetime" }
-
-            - { label: "Body", name: "body", widget: "markdown" }
-
-
-      #      - label: "Core Values"
-      #        name: "core-values"
-      #        file: "content/core-values.md"
-      #        fields:
-      #          - {label: "Content", name: "content_class", widget: "hidden", default: "core-values"}
-      #          - {label: "Header", name: "header_class", widget: "hidden", default: ""}
-      #          - {label: "Title", name: "title", widget: "string"}
-      #          - {label: "Meta Title", name: "metaTitle", widget: "string"}
-      #          - {label: "Meta Description", name: "description", widget: "string"}
-      #          - {label: "Publish Date", name: "date", widget: "datetime"}
-      #          - {label: "Update Date", name: "lastmod", widget: "datetime"}
-      #
-      #          - {label: "Hero Text", name: "hero_text", widget: "string"}
-      #
-      #          - label: "Core Values"
-      #            name: values_list
-      #            widget: list
-      #            fields:
-      #              - { label: "Title", name: "title", widget: string }
-      #              - { label: "Body", name: "body", widget: string }
-      #
-      #          - {label: "Body", name: "body", widget: "markdown"}
-
-
-      - name: "blog" # Used in routes, e.g., /admin/collections/blog
-        label: "Blog" # Used in the UI
-        folder: "content/blog" # The path to the folder where the documents are stored
-        create: true # Allow users to create new documents in this collection
-        slug: "{{slug}}"
-        fields: # The fields for each document, usually in front matter
+        name: "security"
+        file: "content/security.md"
+        fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Meta Title", name: "metaTitle", widget: "string" }
           - { label: "Meta Description", name: "description", widget: "string" }
-
           - { label: "Publish Date", name: "date", widget: "datetime" }
           - { label: "Update Date", name: "lastmod", widget: "datetime" }
-          - { label: "Hidden", name: "hidden", widget: "boolean", default: "false" }
-          - { label: "Disclaimer", name: "disclaimer", widget: "boolean", default: "false" }
 
-          - { label: "Summary", name: "summary", widget: "text" }
-          - { label: "Custom Summary", name: "custom_summary", widget: "text", required: false }
+          - { label: "Section 1 Title", name: "protectedTitle", widget: "string" }
+          - { label: "Section 1 Text", name: "protectedText", widget: "string" }
+          - { label: "Section 1 Content", name: "protectedContent", widget: "string" }
+          - { label: "Section 1 Image", name: "protectedImg", widget: image }
 
-          - { label: "Featured Image", name: "thumbnail", widget: "image", required: false }
+          - { label: "Section 2 Title", name: "respectTitle", widget: "string" }
+          - { label: "Section 2 Text", name: "respectText", widget: "string" }
+          - { label: "Section 2 Content", name: "respectContent", widget: "string" }
+          - { label: "Section 2 Image", name: "respectImg", widget: image }
+
+          - { label: "Disclaimer", name: "securityDisclaimer", widget: "string" }
+
+
+      - label: "Pricing"
+        name: "pricing"
+        file: "content/pricing.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Meta Title", name: "metaTitle", widget: "string" }
+          - { label: "Meta Description", name: "description", widget: "string" }
+          - { label: "Publish Date", name: "date", widget: "datetime" }
+          - { label: "Update Date", name: "lastmod", widget: "datetime" }
+
+          - { label: "Monthly plan title", name: "monthlyPlanTitle", widget: "string" }
+          - { label: "Monthly plan price", name: "monthlyPlanPrice", widget: "string" }
+          - label: "Monthly plan list"
+            name: "monthlyPlanList"
+            widget: list
+            field: { label: "List item", name: "listItem", widget: "string" }
+
+          - { label: "Yearly plan title", name: "yearlyPlanTitle", widget: "string" }
+          - { label: "Yearly plan old price", name: "oldYearlyPlanPrice", widget: "string" }
+          - { label: "Yearly plan price", name: "yearlyPlanPrice", widget: "string" }
+          - label: "Yearly plan list"
+            name: "yearlyPlanList"
+            widget: list
+            field: { label: "List item", name: "listItem", widget: "string" }
+
+          - { label: "Price FAQ title", name: "priceFaqTitle", widget: "string" }
+          - label: "Price FAQ"
+            name: "priceFaq"
+            widget: list
+            fields:
+              - { label: "Question text", name: "question", widget: "string" }
+              - { label: "Answer text", name: "answer", widget: "string" }
+
+
+      - label: "Contact us"
+        name: "contact-us"
+        file: "content/contact-us.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Meta Title", name: "metaTitle", widget: "string" }
+          - { label: "Meta Description", name: "description", widget: "string" }
+          - { label: "Subtitle", name: "subTitle", widget: "string" }
+
+          - { label: "Successful message title", name: "successfulTitle", widget: "string" }
+          - { label: "Successful message text", name: "successfulMessage", widget: "string" }
+
+
+      - label: "Terms"
+        name: "terms"
+        file: "content/eula.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Content class", name: "content_class", widget: "hidden" }
+          - { label: "Publish Date", name: "date", widget: "datetime" }
+          - { label: "Update Date", name: "lastmod", widget: "datetime" }
+          - { label: "Custom Update Date", name: "update_date", widget: "string" }
+
           - { label: "Body", name: "body", widget: "markdown" }
+
+
+      - label: "How Claritus works"
+        name: "how-it-work"
+        file: "content/how-it-work.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Meta Title", name: "metaTitle", widget: "string" }
+          - { label: "Content class", name: "content_class", widget: "hidden" }
+          - { label: "Publish Date", name: "date", widget: "datetime" }
+
+          - { label: "Body", name: "body", widget: "markdown" }
+
+
+      - label: "How Claritus works"
+        name: "why-claritus"
+        file: "content/why-claritus.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Meta Title", name: "metaTitle", widget: "string" }
+          - { label: "Meta Description", name: "description", widget: "string" }
+          - { label: "Publish Date", name: "date", widget: "datetime" }
+          - { label: "Update Date", name: "lastmod", widget: "datetime" }
+          - { label: "Subtitle", name: "whySubtitle", widget: "string" }
+
+          - { label: "Section 2 title", name: "whyExcellenceMainTitle", widget: "string" }
+          - { label: "Section 2 text", name: "whyExcellenceMainDescription", widget: "string" }
+          - label: "Section 2 list"
+            name: "whyExcellenceMainList"
+            widget: list
+            field: { label: "List item", name: "listItem", widget: "string" }
+
+          - label: "Why excellence"
+            name: "whyExcellence"
+            widget: list
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "string" }
+              - { label: "Image", name: "img", widget: image }
+
+
+      - label: "We reward our ambassadors"
+        name: "ambassadors"
+        file: "content/ambassadors.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Meta Title", name: "metaTitle", widget: "string" }
+          - { label: "Meta Description", name: "description", widget: "string" }
+          - { label: "Publish Date", name: "date", widget: "datetime" }
+          - { label: "Update Date", name: "lastmod", widget: "datetime" }
+
+          - { label: "Body", name: "body", widget: "markdown" }
+
+
+  - name: "blog" # Used in routes, e.g., /admin/collections/blog
+    label: "Blog"
+    folder: "content/blog"
+    create: true
+    identifier_field: title
+    slug: "{{slug}}"
+    fields: # The fields for each document, usually in front matter
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Meta Title", name: "metaTitle", widget: "string" }
+      - { label: "Meta Description", name: "description", widget: "string" }
+
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Update Date", name: "lastmod", widget: "datetime" }
+      - { label: "Hidden", name: "hidden", widget: "boolean", default: "false" }
+      - { label: "Disclaimer", name: "disclaimer", widget: "boolean", default: "false" }
+
+      - { label: "Summary", name: "summary", widget: "text" }
+      - { label: "Custom Summary", name: "custom_summary", widget: "text", required: false }
+
+      - { label: "Featured Image", name: "thumbnail", widget: "image", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
 
