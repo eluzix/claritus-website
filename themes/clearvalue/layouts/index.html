@@ -78,13 +78,15 @@
 <section class="financials-institutes-section">
     <h2 class="financials-title">{{ .Params.financialsTitle }}</h2>
 
-    <div class="financials ">
-        {{ range .Params.financialInstitutes }}
-        <figure class="financials__item">
-            <img data-src="/images/financials/{{ . }}.png" alt="" class="lozad d-none d-xl-flex"/>
-            <img data-src="/images/financials/{{ . }}-tablet.png" alt="" class="lozad d-xl-none"/>
-        </figure>
-        {{ end }}
+    <div class="financials-slider-wrap">
+        <div class="financials-slider">
+            {{ range .Params.financialInstitutes }}
+            <figure class="financials-slider__item">
+                <img data-src="/images/financials/{{ . }}.png" alt="" class="lozad d-none d-xl-flex"/>
+                <img data-src="/images/financials/{{ . }}-tablet.png" alt="" class="lozad d-xl-none"/>
+            </figure>
+            {{ end }}
+        </div>
     </div>
 </section>
 

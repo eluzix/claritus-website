@@ -31,6 +31,16 @@ financialInstitutes:
 - financial-4
 - financial-5
 - financial-6
+- financial-7
+- financial-8
+- financial-9
+- financial-10
+- financial-11
+- financial-12
+- financial-13
+- financial-14
+- financial-15
+- financial-16
 
 
 ##Assets 

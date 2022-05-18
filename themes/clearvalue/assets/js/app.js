@@ -153,12 +153,8 @@ function initHeaderScroll() {
   window.addEventListener("scroll", onScroll);
 }
 
-// Init slider
-function initSlider() {
-  const slider = document.querySelector(".feedback-slider");
-
-  if (!slider) return;
-
+// Init sliders
+function initSliders() {
   // load slider js
   const script = document.createElement("script");
   script.setAttribute("type", "text/javascript");
@@ -172,6 +168,17 @@ function initSlider() {
   head.appendChild(script);
 
   script.addEventListener("load", function () {
+    initFeedbacksSlider();
+    initFinancialsSlider();
+  });
+
+  function initFeedbacksSlider() {
+    const slider = document.querySelector(".feedback-slider");
+    
+    if (!slider) {
+      return;
+    }
+
     const flkty = new Flickity(slider, {
       // options
       wrapAround: true,
@@ -196,7 +203,29 @@ function initSlider() {
       });
 
     slider.classList.add("feedback-slider--initialized");
-  });
+  }
+
+  function initFinancialsSlider() {
+    const slider = document.querySelector(".financials-slider");
+    
+    if (!slider) {
+      return;
+    }
+
+    new Flickity(slider, {
+      // options
+      wrapAround: true,
+      prevNextButtons: false,
+      cellAlign: "left",
+      autoPlay: true,
+      draggable: false,
+      pageDots: false,
+      contain: true,
+      adaptiveHeight: false,
+    });
+
+    slider.classList.add("financials-slider--initialized");
+  }
 }
 
 // Init lazy load
@@ -498,8 +527,8 @@ window.addEventListener("load", function (event) {
   // Lazy load
   initMissingLazyLoad();
 
-  // Slider
-  initSlider();
+  // Sliders
+  initSliders();
 
   // Burger
   initBurgerMenu();

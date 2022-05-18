@@ -25,21 +25,34 @@ section.financials-institutes-section {
   }
 }
 
-.financials {
+.financials-slider-wrap {
+  position: relative;
+  width: 100%;
+  max-width: rem(1190);
+  margin: 0 auto;
+}
+
+.financials-slider {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
+  max-width: 100%;
+  overflow: hidden;
+  outline: none;
+
+  &--initialized {
+    display: block;
+  }
 
   &__item {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 33.333%;
-    margin-bottom: rem(10);
+    min-height: 100%;
     padding: 0 rem(16);
 
     @media (min-width: map_get($grid-breakpoints, md)) {
-      width: auto;
-      justify-content: center;
-      margin-bottom: 0;
+      width: 16.666%;
       padding: 0 rem(20);
     }
 
@@ -50,16 +63,6 @@ section.financials-institutes-section {
     img {
       width: auto;
       max-width: 100%;
-
-      @media (min-width: map_get($grid-breakpoints, md)) {
-        max-width: rem(100);
-        max-height: rem(30);
-      }
-
-      @media (min-width: map_get($grid-breakpoints, xl)) {
-        max-height: rem(50);
-        max-width: none;
-      }
     }
   }
 }
