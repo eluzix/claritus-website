@@ -43,7 +43,11 @@
         </div>
 
         <div class="why-content">
-            {{ .Content }}
+            <ul class="why-content-list">
+                {{ range .Params.whyExcellenceMainList }}
+                <li class="why-content-list__item">{{ .listItem }}</li>
+                {{ end }}
+            </ul>
         </div>
 
         <figure class="why-content-img">

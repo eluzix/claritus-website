@@ -25,12 +25,18 @@ financialsTitle: Trusted by over 17k financial institutions
 
 ##Institutes icons. IMPORTANT: if icon will change don't forget to update tablet version for it
 financialInstitutes:
-- financial-1
-- financial-2
-- financial-3
-- financial-4
-- financial-5
-- financial-6
+- imageUrlDesk: /images/financials/financial-1.png
+  imageUrlTablet: /images/financials/financial-1-tablet.png
+- imageUrlDesk: /images/financials/financial-2.png
+  imageUrlTablet: /images/financials/financial-2-tablet.png
+- imageUrlDesk: /images/financials/financial-3.png
+  imageUrlTablet: /images/financials/financial-3-tablet.png
+- imageUrlDesk: /images/financials/financial-4.png
+  imageUrlTablet: /images/financials/financial-4-tablet.png
+- imageUrlDesk: /images/financials/financial-5.png
+  imageUrlTablet: /images/financials/financial-5-tablet.png
+- imageUrlDesk: /images/financials/financial-6.png
+  imageUrlTablet: /images/financials/financial-6-tablet.png
 
 
 ##Assets 

@@ -7,4 +7,7 @@ subTitle: If you have any questions, inquiries, or any feedback, please send us 
 
 url: "/contact-us"
 
+successfulTitle: Thank you!
+successfulMessage: Your email has been successfully sent!
+
 ---

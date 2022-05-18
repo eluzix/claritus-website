@@ -13,6 +13,15 @@ whyExcellenceMainTitle: Not Just Another Networth Tracker
 whyExcellenceMainDescription: "To make good and informed decisions, you need to be able to see the big picture and evaluate your overall situation. With Claritus you will get:"
 
 
+whyExcellenceMainList: 
+- listItem: A comprehensive view that includes all of your assets
+- listItem: A complete history of each investment, so you can follow trends, seasonality, and other factors
+- listItem: "Benchmarking: how your investments, both individually and overall, are performing versus the industry averages"
+- listItem: Automatic and instantaneous value updates to save you time
+- listItem: Comparisons between different asset types to help you make informed decisions
+- listItem: As simple as any spreadsheet yet 10x more powerful and useful
+
+
 whyExcellence:
 - title: See Your Wealth Your Way
   description: We know everyone  is unique and has a unique financial situation. We know personal finance is not only numbers and returns; it’s not only aggregating financial data and manipulating financial calculations.
@@ -31,9 +40,3 @@ whyExcellence:
 
 ---
 
-- A comprehensive view that includes all of your assets
-- A complete history of each investment, so you can follow trends, seasonality, and other factors
-- Benchmarking: how your investments, both individually and overall, are performing versus the industry averages
-- Automatic and instantaneous value updates to save you time
-- Comparisons between different asset types to help you make informed decisions
-- As simple as any spreadsheet yet 10x more powerful and useful

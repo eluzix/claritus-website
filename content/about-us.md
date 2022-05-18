@@ -4,10 +4,8 @@ type: about-us
 title: Our mission is your financial peace of mind
 metaTitle: About us - Our mission is your financial peace of mind
 description: Investors today live in a constant fog by not having visibility of their entire wealth. Claritus combines past insights and today's portfolio, so investors are always in the know.
-lastmod: 2022-05-16T06:30:01.000+00:00
-
-##config
-type: about-us
+date: 2020-10-11T10:30:01.000+03:00
+lastmod: 2022-01-03T20:38:33.374Z
 
 
 ##intro
