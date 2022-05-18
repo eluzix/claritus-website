@@ -4,7 +4,7 @@ metaTitle: "See how Claritus works"
 
 date: 2020-04-27T09:30:01+03:00
 
-url: /how-it-work
+url: /how-it-works
 
 type: how-it-work
 
