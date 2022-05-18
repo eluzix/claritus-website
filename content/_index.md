@@ -41,6 +41,8 @@ financialInstitutes:
 - financial-14
 - financial-15
 - financial-16
+- financial-1
+- financial-2
 
 
 ##Assets 
