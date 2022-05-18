@@ -154,7 +154,13 @@ function initHeaderScroll() {
 }
 
 // Init sliders
-function initSliders() {
+function initSlider() {
+  const slider = document.querySelector(".feedback-slider");
+  
+  if (!slider) {
+    return;
+  }
+
   // load slider js
   const script = document.createElement("script");
   script.setAttribute("type", "text/javascript");
@@ -168,17 +174,6 @@ function initSliders() {
   head.appendChild(script);
 
   script.addEventListener("load", function () {
-    initFeedbacksSlider();
-    initFinancialsSlider();
-  });
-
-  function initFeedbacksSlider() {
-    const slider = document.querySelector(".feedback-slider");
-    
-    if (!slider) {
-      return;
-    }
-
     const flkty = new Flickity(slider, {
       // options
       wrapAround: true,
@@ -203,29 +198,7 @@ function initSliders() {
       });
 
     slider.classList.add("feedback-slider--initialized");
-  }
-
-  function initFinancialsSlider() {
-    const slider = document.querySelector(".financials-slider");
-    
-    if (!slider) {
-      return;
-    }
-
-    new Flickity(slider, {
-      // options
-      wrapAround: true,
-      prevNextButtons: false,
-      cellAlign: "left",
-      autoPlay: true,
-      draggable: false,
-      pageDots: false,
-      contain: true,
-      adaptiveHeight: false,
-    });
-
-    slider.classList.add("financials-slider--initialized");
-  }
+  });
 }
 
 // Init lazy load
@@ -527,8 +500,8 @@ window.addEventListener("load", function (event) {
   // Lazy load
   initMissingLazyLoad();
 
-  // Sliders
-  initSliders();
+  // Slider
+  initSlider();
 
   // Burger
   initBurgerMenu();
