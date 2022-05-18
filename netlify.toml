@@ -68,6 +68,12 @@ status = 301
 force = true
 
 [[redirects]]
+from = "https://claritus.io/how-it-work/"
+to = "https://claritus.io/how-it-works/"
+status = 301
+force = true
+
+[[redirects]]
 from = "https://clearvalue.io/*"
 to = "https://claritus.io/:splat"
 status = 301
