@@ -1,135 +1,175 @@
 /*========== Home page*/
 .home-overview {
-  display: flex;
+    display: flex;
 }
 
 .home-overview .home-overview__item {
-  width: auto;
-  border-right: 1px solid #ccc;
-  padding: 15px 40px 15px 0;
+    width: auto;
+    border-right: 1px solid #ccc;
+    padding: 15px 40px 15px 0;
 }
 
 .home-overview .home-overview__item:last-child {
-  border-right: none;
-  padding: 15px 0 15px 40px;
+    border-right: none;
+    padding: 15px 0 15px 40px;
 }
 
 .home-overview .home-overview__item {
-  margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 .home-overview .home-overview__item p,
 .home-overview .home-overview__item h6 {
-  margin: 0;
-  font-size: 14px;
-  display: block;
+    margin: 0;
+    font-size: 14px;
+    display: block;
 }
 
 .home-overview .home-overview__item h6 {
-  font-size: 16px;
-  margin-bottom: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
 }
 
 .financial-institutes {
-  display: flex;
-  flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .financial-institutes .financial-institutes__item {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 0 10px 15px 10px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px 15px 10px;
 }
 
 .financial-institutes .financial-institutes__item img {
-  max-height: 40px;
-  width: auto;
-  margin-bottom: 5px;
+    max-height: 40px;
+    width: auto;
+    margin-bottom: 5px;
 }
 
 .feedbacks {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -10px;
-  margin-right: -10px;
-  margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-top: 20px;
 }
 
 .feedbacks .feedbacks__item {
-  padding: 0 10px 20px 10px;
-  width: 20%;
+    padding: 0 10px 20px 10px;
+    width: 20%;
 }
 
 .feedbacks .feedbacks__item .feedback {
-  padding: 15px;
-  display: flex;
-  flex-direction: column;
-  box-shadow: 0 10px 20px rgb(5 13 66 / 12%);
-  height: 100%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 10px 20px rgb(5 13 66 / 12%);
+    height: 100%;
 }
 
 .feedbacks .feedbacks__item .feedback p,
 .feedbacks .feedbacks__item .feedback h6 {
-  font-size: 14px;
-  margin: 0;
+    font-size: 14px;
+    margin: 0;
 }
 
 .feedbacks .feedbacks__item .feedback p {
-  flex-grow: 1;
+    flex-grow: 1;
 }
 
 .feedbacks .feedbacks__item .feedback h6 {
-  margin-top: 20px;
+    margin-top: 20px;
 }
 
 .faq-item {
-  box-shadow: 0 10px 20px rgb(5 13 66 / 12%);
-  margin-bottom: 30px;
-  padding: 20px;
+    box-shadow: 0 10px 20px rgb(5 13 66 / 12%);
+    margin-bottom: 30px;
+    padding: 20px;
 }
 
 .faq-item p {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 /*============= About us ============*/
 
 .team-text {
-  column-count: 2;
-  column-gap: 30px;
+    column-count: 2;
+    column-gap: 30px;
 }
 
 .team {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
 }
 
 .team .teammate {
-  width: 30%;
-  text-align: center;
+    width: 30%;
+    text-align: center;
 }
 
 .team .teammate img {
-  width: 120px;
-  height: auto;
-  display: inline-flex;
+    width: 120px;
+    height: auto;
+    display: inline-flex;
 }
 
-
-/*========= Security =========*/ 
+/*========= Security =========*/
 
 .disclaimer {
-  padding: 20px;
-  border-radius: 16px;
-  background-color: #ccc;
+    padding: 20px;
+    border-radius: 16px;
+    background-color: #ccc;
 }
 
 .disclaimer p {
-  text-align: center;
-  margin: 0;
-  font-weight: 500;
-  font-size: 18px;
+    text-align: center;
+    margin: 0;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+/*=========== Pricing ===========*/
+
+.plan {
+    background-color: #fff;
+    box-shadow: 0 16px 32px rgb(126 130 158 / 16%);
+    border: 1px solid #e3e5ed;
+    border-radius: 16px;
+    padding: 15px;
+}
+
+.plan-title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+.plan-old-price {
+    color: #7e829e;
+    text-decoration: line-through;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.plan-price {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 0;
+}
+
+.plan-price span {
+    font-size: 16px;
+    font-weight: 400;
+    color: #ccc;
+}
+
+.plan-list li {
+    margin-bottom: 10px;
+    font-size: 14px;
 }

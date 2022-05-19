@@ -217,5 +217,148 @@ const SecurityPreview = createClass({
   },
 });
 
+const PricingPreview = createClass({
+  render: function () {
+    const { entry, widgetFor, widgetsFor } = this.props;
+
+    return h(
+      "div",
+      { className: "container" },
+
+      h(
+        "section",
+        {},
+
+        h(
+          "div",
+          { className: "row justify-center" },
+          h(
+            "div",
+            { className: "col-8" },
+            h(
+              "h1",
+              { className: "text-center" },
+              entry.getIn(["data", "title"])
+            ),
+            h(
+              "p",
+              { className: "text-center" },
+              entry.getIn(["data", "description"])
+            )
+          )
+        )
+      ),
+
+      h(
+        "section",
+        {},
+
+        h(
+          "div",
+          { className: "row " },
+          h(
+            "div",
+            { className: "col-6" },
+            h(
+              "div",
+              { className: "plan" },
+
+              h(
+                "h2",
+                { className: "plan-title" },
+                entry.getIn(["data", "monthlyPlanTitle"])
+              ),
+
+              h(
+                "h2",
+                { className: "plan-price" },
+                `$${entry.getIn(["data", "monthlyPlanPrice"])}`,
+
+                h("span", {}, `/per year`)
+              ),
+
+              h(
+                "ul",
+                { className: "plan-list" },
+
+                widgetsFor("monthlyPlanList").map(function (item) {
+                  return h("li", {}, item.getIn(["data", "listItem"]));
+                })
+              )
+            )
+          ),
+
+          h(
+            "div",
+            { className: "col-6" },
+            h(
+              "div",
+              { className: "plan" },
+
+              h(
+                "h2",
+                { className: "plan-title" },
+                entry.getIn(["data", "yearlyPlanTitle"])
+              ),
+
+              h(
+                "h4",
+                { className: "plan-old-price" },
+                entry.getIn(["data", "oldYearlyPlanPrice"])
+              ),
+
+              h(
+                "h2",
+                { className: "plan-price" },
+                `$${entry.getIn(["data", "yearlyPlanPrice"])}`,
+
+                h("span", {}, `/per year`)
+              ),
+
+              h(
+                "ul",
+                { className: "plan-list" },
+
+                widgetsFor("yearlyPlanList").map(function (item) {
+                  return h("li", {}, item.getIn(["data", "listItem"]));
+                })
+              )
+            )
+          )
+        )
+      ),
+
+      h(
+        "section",
+        {},
+
+        h("h2", {}, entry.getIn(["data", "priceFaqTitle"])),
+
+        h(
+          "div",
+          { className: "row" },
+
+          widgetsFor("priceFaq").map(function (item) {
+            return h(
+              "div",
+              { className: "col-6" },
+              h(
+                "div",
+                { className: "faq-item" },
+                h("h4", {}, item.getIn(["data", "question"])),
+
+                h("p", {}, item.getIn(["data", "answer"]))
+              )
+            );
+          })
+        )
+      )
+
+      // ================
+    );
+  },
+});
+
 CMS.registerPreviewTemplate("about-us", AboutPreview);
 CMS.registerPreviewTemplate("security", SecurityPreview);
+CMS.registerPreviewTemplate("pricing", PricingPreview);
