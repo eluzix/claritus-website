@@ -69,6 +69,13 @@ section.home-intro-section {
       margin-bottom: rem(40);
     }
   }
+
+  &__caption {
+    font-size: rem(16);
+    line-height: rem(21);
+    color: #e3e5ed;
+    margin-top: rem(20);
+  }
 }
 
 .home-intro-picture {
@@ -119,15 +126,10 @@ section.home-intro-section {
 
   @media (min-width: map_get($grid-breakpoints, md)) {
     flex-direction: row;
-    margin-top: rem(40);
-  }
-
-  @media (min-width: map_get($grid-breakpoints, xl)) {
-    margin-top: rem(54);
   }
 
   @media (min-width: map_get($grid-breakpoints, xxl)) {
-    margin-top: rem(108);
+    margin-top: rem(67);
   }
 
   .intro-overview {
