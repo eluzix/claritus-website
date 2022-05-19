@@ -278,13 +278,13 @@ const HomePreview = createClass({
 
         h(
           "div",
-          { className: "row" },
+          { className: "row align-center" },
 
           h(
             "div",
             { className: "col-6" },
 
-            h("img", { src: entry.getIn(["data", "coverFinancialsImgFullHd"]) })
+            h("img", { src: entry.getIn(["data", "pricingImgFullHd"]) })
           ),
 
           h(
