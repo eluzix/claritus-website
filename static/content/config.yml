@@ -97,8 +97,8 @@ collections:
           - { label: "Publish Date", name: "date", widget: "datetime" }
           - { label: "Update Date", name: "lastmod", widget: "datetime" }
 
-          - { label: "Summary", name: "summary", widget: "string" }
-          - { label: "Body", name: "body", widget: "markdown" }
+#          - { label: "Summary", name: "summary", widget: "string" }
+#          - { label: "Body", name: "body", widget: "markdown" }
 
 
       - label: "About Us"
@@ -206,6 +206,18 @@ collections:
           - { label: "Publish Date", name: "date", widget: "datetime" }
           - { label: "Update Date", name: "lastmod", widget: "datetime" }
           - { label: "Custom Update Date", name: "update_date", widget: "string" }
+
+          - { label: "Body", name: "body", widget: "markdown" }
+
+
+      - label: "Privacy"
+        name: "privacy"
+        file: "content/privacy.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Content class", name: "content_class", widget: "hidden" }
+          - { label: "Publish Date", name: "date", widget: "datetime" }
+          - { label: "Update Date", name: "lastmod", widget: "datetime" }
 
           - { label: "Body", name: "body", widget: "markdown" }
 

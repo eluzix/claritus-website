@@ -483,8 +483,8 @@ const TypicalPreview = createClass({
           { className: "row justify-center" },
           h(
             "div",
-            { className: "col-7" },
-            h("h1", {}, entry.getIn(["data", "title"])),
+            { className: "col-8" },
+            h("h1", {className: "text-center"}, entry.getIn(["data", "title"])),
             h("div", { className: "text" }, this.props.widgetFor("body"))
           )
         )
@@ -500,3 +500,6 @@ CMS.registerPreviewTemplate("security", SecurityPreview);
 CMS.registerPreviewTemplate("pricing", PricingPreview);
 CMS.registerPreviewTemplate("why-claritus", WhyPreview);
 CMS.registerPreviewTemplate("terms", TypicalPreview);
+CMS.registerPreviewTemplate("privacy", TypicalPreview);
+CMS.registerPreviewTemplate("how-it-work", TypicalPreview);
+CMS.registerPreviewTemplate("ambassadors", TypicalPreview);
