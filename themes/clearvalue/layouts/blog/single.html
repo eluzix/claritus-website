@@ -37,6 +37,7 @@
 	<div class="container">
 		<div class="row justify-content-center">
 			<div class="col-xl-7">
+				{{ if not .Params.Thumbnail }}
 				<a href="/blog" class="post-back-link">
 					<svg width="6" height="11">
 						<use xlink:href="#arrow-icon"></use>
@@ -46,6 +47,7 @@
 				<div class="blog-intro-title">
 					{{ .Title }}
 				</div>
+				{{ end }}
 				<div class="post-content">
 					{{ .Content | safeHTML }}
 				</div>
