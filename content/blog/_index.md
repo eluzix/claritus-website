@@ -7,8 +7,10 @@ content_class: blog
 header_class: white-header
 lastmod: 2022-01-02T06:30:01.000+00:00
 metaTitle: Claritus updates and a view of personal wealth management | Claritus Blog
-summary: Learn what's new with Claritus, how it can help you track your portfolio,
-  and articles on wealth management, personal finance, investments, and more.
+summary: Learn what's new with Claritus, how it can help you track your portfolio, and articles on wealth management, personal finance, investments, and more.
+
+thumbnail: "/uploads/strategies-in-volatile-market.jpg"
+disclaimer: true
 
 ---
 
