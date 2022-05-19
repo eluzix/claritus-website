@@ -6,7 +6,7 @@ description: Claritus gives you a complete overview of your money and investment
 date: 2020-01-01T09:30:01+03:00
 lastmod: 2022-05-16T06:30:01.000+00:00
 
-heroText: Track, analyze, and be in complete control of all of your assets and investments - all in one place!
+heroText: Claritus is the platform every investor needs to make decisions with clarity and confidence. Track, analyze, and be in full control of all of your assets and investments - all in one place!
 
 heroImgFullHd: /images/home-intro-fullhd.png
 heroImgMobile: /images/home-intro-mob.png
@@ -50,7 +50,7 @@ financialInstitutes:
 
 assetsTitle: All Your Assets in One Place
 
-assetsText: It’s time to take control of your assets and with Claritus you can easily track ALL of your assets and investments! You will have an automatic and clear view of your holdings, without using spreadsheets and without needing a degree in finance!!
+assetsText: Claritus helps you track ALL of your assets & investments in one place! See your holdings clearly and easily, without spreadsheets or needing a finance degree!
 
 assetsImgFullHd: /images/assets-bg-fullhd.png
 assetsImgDesktop: /images/assets-bg-desktop.png
@@ -61,7 +61,7 @@ assetsImgMob: /images/assets-bg-mob.png
 
 secureTitle: Private & Secure
 
-secureText: Your privacy, security and anonymity are our top priorities. All of your information is secure and encrypted at all times. We really mean at all times! Your data is fully encrypted at rest and in- transit. All of your information and credentials are always safe with Claritus!
+secureText: We keep your privacy and security in mind at all times. Claritus is designed to meet the highest bank-grade security standards. With Claritus, all of your information is secure and encrypted at all times.
 
 secureImgFullHd: /images/secure-bg-fullhd.svg
 secureImgTablet: /images/secure-bg-tablet.svg
@@ -159,8 +159,7 @@ faqSecondColumn:
 
 pricingTitle: Transparent & Simple Pricing
 
-pricingText: Claritus offers our customers an exceptional solution for a fair, and low subscription cost. There will never be hidden fees or costs. We believe in being transparent and up front with our customers at all times.
-  <br/><br/>Try Claritus free for 14 days - no credit card required
+pricingText: Claritus offers our customers an exceptional solution for a fair, and low subscription cost. There will never be hidden fees or costs. We believe in being transparent and up front with our customers at all times.<br/><br/><b>Try Claritus free for 14 days - No credit card required</b>
 
 pricingImgFullHd: /images/pricing-fullhd.png
 pricingImgMob: /images/pricing-mob.png

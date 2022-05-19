@@ -33,6 +33,8 @@
                        class="btn btn--primary"> Start Your 14 Days Free Trial </a>
                 </div>
 
+                <p class="home-intro__caption">No credit card required</p>
+
                 <div class="intro-overview-wrap">
                     {{ range .Params.homeOverview }}
                     <div class="intro-overview">
@@ -77,13 +79,15 @@
 <section class="financials-institutes-section">
     <h2 class="financials-title">{{ .Params.financialsTitle }}</h2>
 
-    <div class="financials ">
-        {{ range .Params.financialInstitutes }}
-        <figure class="financials__item">
-            <img data-src="{{ .imageUrlDesk }}" alt="" class="lozad d-none d-xl-flex"/>
-            <img data-src="{{ .imageUrlTablet }}" alt="" class="lozad d-xl-none"/>
-        </figure>
-        {{ end }}
+    <div class="financials-slider-wrap">
+        <div class="financials-slider">
+            {{ range .Params.financialInstitutes }}
+            <figure class="financials-slider__item">
+                <img data-src="{{ .imageUrlDesk }}" alt="" class="lozad d-none d-xl-flex"/>
+                <img data-src="{{ .imageUrlTablet }}" alt="" class="lozad d-xl-none"/>
+            </figure>
+            {{ end }}
+        </div>
     </div>
 </section>
 
