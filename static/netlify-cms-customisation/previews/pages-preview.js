@@ -109,39 +109,62 @@ const AboutPreview = createClass({
 });
 
 const SecurityPreview = createClass({
-    render: function () {
-        const { entry, widgetFor, widgetsFor } = this.props;
+  render: function () {
+    const { entry, widgetFor, widgetsFor } = this.props;
 
-        return h(
+    return h(
+      "div",
+      { className: "container" },
+
+      h(
+        "section",
+        {},
+
+        h(
           "div",
-          { className: "container" },
-
+          { className: "row align-center" },
           h(
-            "section",
-            {},
-
-            h(
-              "div",
-              { className: "row align-center" },
-              h(
-                "div",
-                { className: "col-5" },
-                h("h1", {}, entry.getIn(["data", "title"])),
-                h("p", {}, entry.getIn(["data", "description"]))
-              ),
-
-              h(
-                "div",
-                { className: "col-7" },
-                h("img", { src: entry.getIn(["data", "heroImgFullHd"]) })
-              )
-            )
+            "div",
+            { className: "col-5" },
+            h("h1", {}, entry.getIn(["data", "title"])),
+            h("p", {}, entry.getIn(["data", "description"]))
           ),
 
+          h(
+            "div",
+            { className: "col-7" },
+            h("img", { src: entry.getIn(["data", "heroImgFullHd"]) })
+          )
+        )
+      ),
 
-        );
-    },
+      h(
+        "section",
+        {},
+
+        h(
+          "div",
+          { className: "row" },
+
+          h(
+            "div",
+            { className: "col-6" },
+
+            h("img", { src: entry.getIn(["data", "protectedImg"]) })
+          ),
+
+          h(
+            "div",
+            { className: "col-6" },
+            h("h2", {}, entry.getIn(["data", "protectedTitle"])),
+
+            h("p", {}, entry.getIn(["data", "protectedText"]))
+          )
+        )
+      )
+    );
+  },
 });
 
 CMS.registerPreviewTemplate("about-us", AboutPreview);
-CMS.registerPreviewTemplate("about-us", SecurityPreview);
+CMS.registerPreviewTemplate("security", SecurityPreview);
