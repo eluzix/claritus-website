@@ -1,0 +1,50 @@
+/*========== Home page*/
+.home-overview {
+  display: flex;
+}
+
+.home-overview .home-overview__item {
+  width: 50%;
+  border-right: 1px solid #ccc;
+  padding: 15px 40px 15px 0;
+}
+
+.home-overview .home-overview__item:last-child {
+  border-right: none;
+  padding: 15px 0 15px 40px;
+}
+
+.home-overview .home-overview__item {
+  margin-bottom: 10px;
+}
+
+.home-overview .home-overview__item p,
+.home-overview .home-overview__item h6 {
+  margin: 0;
+  font-size: 14px;
+  display: block;
+}
+
+.home-overview .home-overview__item h6 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.financial-institutes {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.financial-institutes .financial-institutes__item {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px 15px 10px;
+}
+
+.financial-institutes .financial-institutes__item img {
+  max-height: 40px;
+  width: auto;
+  margin-bottom: 5px;
+}

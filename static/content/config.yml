@@ -31,14 +31,20 @@ collections:
               - { label: "Text", name: "text", widget: string }
               - { label: "Popup info text", name: "popupText", widget: string, required: false }
 
-          - { label: "Section 1 Title", name: "financialsTitle", widget: "string" }
-          - label: "Section 1 images"
+          - { label: "Financial section title", name: "financialsTitle", widget: "string" }
+          - label: "Financial institute images"
             name: "financialInstitutes"
-            widget: list,
+            widget: list
             fields:
-              - { label: "Institute image desk", name: "imageUrlDesk", widget: image }
-              - { label: "Institute image tablet", name: "imageUrlTablet", widget: image }
+              - { label: "Institute image desk", name: "imageUrlDesk", widget: 'image' }
+              - { label: "Institute image tablet", name: "imageUrlTablet", widget: 'image' }
 
+          - { label: "Asset Text", name: "assetsTitle", widget: "string" }
+          - { label: "Asset Text", name: "assetsText", widget: "string" }
+          - { label: "Asset image full-hd", name: "assetsImgFullHd", widget: "image" }
+          - { label: "Asset image desk", name: "assetsImgDesktop", widget: "image" }
+          - { label: "Asset image tablet", name: "assetsImgTablet", widget: "image" }
+          - { label: "Asset image mobile", name: "assetsImgMob", widget: "image" }
 
           - { label: "Section 2 Title", name: "secureTitle", widget: "string" }
           - { label: "Section 2 Text", name: "secureText", widget: "string" }

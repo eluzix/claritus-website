@@ -28,16 +28,22 @@ financialsTitle: Trusted by over 17k financial institutions
 financialInstitutes:
 - imageUrlDesk: /images/financials/financial-1.png
   imageUrlTablet: /images/financials/financial-1-tablet.png
+
 - imageUrlDesk: /images/financials/financial-2.png
   imageUrlTablet: /images/financials/financial-2-tablet.png
+
 - imageUrlDesk: /images/financials/financial-3.png
   imageUrlTablet: /images/financials/financial-3-tablet.png
+
 - imageUrlDesk: /images/financials/financial-4.png
   imageUrlTablet: /images/financials/financial-4-tablet.png
+
 - imageUrlDesk: /images/financials/financial-5.png
   imageUrlTablet: /images/financials/financial-5-tablet.png
+
 - imageUrlDesk: /images/financials/financial-6.png
   imageUrlTablet: /images/financials/financial-6-tablet.png
+
 
 
 ##Assets 
@@ -46,6 +52,10 @@ assetsTitle: All Your Assets in One Place
 
 assetsText: It’s time to take control of your assets and with Claritus you can easily track ALL of your assets and investments! You will have an automatic and clear view of your holdings, without using spreadsheets and without needing a degree in finance!!
 
+assetsImgFullHd: /images/assets-bg-fullhd.png
+assetsImgDesktop: /images/assets-bg-desktop.png
+assetsImgTablet: /images/assets-bg-tablet.png
+assetsImgMob: /images/assets-bg-mob.png
 
 ##Private secure
 

@@ -1,0 +1,58 @@
+/*========== Layouts ==========*/
+
+.container {
+    max-width: 100%;
+    padding: 0 45px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.col,
+.col-6,
+.col-4,
+.col-5,
+.col-7,
+.col-8 {
+    padding: 0 15px;
+}
+
+.col {
+    width: 100%;
+}
+
+.col-4 {
+    width: 33.3333%;
+}
+
+.col-5 {
+    width: 41.6666%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.3333%;
+}
+
+.col-8 {
+    width: 66%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}

@@ -1,31 +1,20 @@
 <!doctype html>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Content Manager</title>
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
 <!-- Include the script that builds the page and powers Netlify CMS -->
 <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
-<script>
-    CMS.registerPreviewStyle("/cms-style.css");
 
-    // var PostPreview = createClass({
-    //     render: function() {
-    //         var entry = this.props.entry;
-    //         var image = entry.getIn(['data', 'thumbnail']);
-    //         var bg = this.props.getAsset(image);
-    //         return h('div', {},
-    //           h('h1', {}, entry.getIn(['data', 'title'])),
-    //           h('img', {src: bg.toString()}),
-    //           h('div', {"className": "text"}, this.props.widgetFor('body'))
-    //         );
-    //     }
-    // });
-    //
-    // CMS.registerPreviewTemplate("posts", PostPreview);
+<script src="/netlify-cms-customisation/previews/home-preview.js"></script>
+<script>
+    CMS.registerPreviewStyle("/netlify-cms-customisation/style/base.css");
+    CMS.registerPreviewStyle("/netlify-cms-customisation/style/layout.css");
+    CMS.registerPreviewStyle("/netlify-cms-customisation/style/pages.css");
 </script>
 </body>
 </html>
