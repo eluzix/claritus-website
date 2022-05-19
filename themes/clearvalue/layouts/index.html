@@ -67,9 +67,9 @@
         </div>
     </div>
 
-    <picture data-iesrc="/images/home-intro-fullhd.png" class="home-intro-picture lozad">
-        <source srcset="/images/home-intro-fullhd.png" media="(min-width: 744px)"/>
-        <source srcset="/images/home-intro-mob.png" media="(min-width: 300px)"/>
+    <picture data-iesrc="{{ .Params.heroImgFullHd }}" class="home-intro-picture lozad">
+        <source srcset="{{ .Params.heroImgFullHd }}" media="(min-width: 744px)"/>
+        <source srcset="{{ .Params.heroImgMobile }}" media="(min-width: 300px)"/>
     </picture>
 </section>
 
