@@ -153,11 +153,13 @@ function initHeaderScroll() {
   window.addEventListener("scroll", onScroll);
 }
 
-// Init slider
+// Init sliders
 function initSlider() {
   const slider = document.querySelector(".feedback-slider");
-
-  if (!slider) return;
+  
+  if (!slider) {
+    return;
+  }
 
   // load slider js
   const script = document.createElement("script");
@@ -490,6 +492,48 @@ function initScrollTopHandler() {
   });
 }
 
+function initInstitutionsAnimation() {
+  const selector = '.financials-slider';
+  const interval = 3;
+  let step = 1;
+  
+  let groupBy = window.innerWidth < 744 ? 3 : 6;
+  const count = document.querySelector(selector).childElementCount;
+  
+  function hideAll() {
+    for (let i = 1; i <= count; i++) {
+      let slide = document.querySelector(selector).children[i - 1];
+      slide.classList.add('is-hidden');
+    }
+  }
+  
+  function show(step, groupBy) {
+    hideAll();
+
+    const start = (step - 1) * groupBy
+    const end = step * groupBy
+
+    for (let i = start; i < end; i++) {
+      let slide = document.querySelector(selector).children[i];
+      slide.classList.remove('is-hidden');
+    }
+  }
+  
+  show(step, groupBy);
+  
+  setInterval(function auto() {
+    groupBy = window.innerWidth < 744 ? 3 : 6;
+
+    if (step >= Math.floor(count / groupBy)) {
+      step = 1;
+    } else {
+      step++;
+    }
+
+    show(step, groupBy);
+  }, (1000 * interval));
+}
+
 // Trigering functions
 window.addEventListener("load", function (event) {
   // header
@@ -531,4 +575,6 @@ window.addEventListener("load", function (event) {
 
   // newsletter
   initNewsletter();
+
+  initInstitutionsAnimation();
 });
