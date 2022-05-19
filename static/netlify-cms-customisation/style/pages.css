@@ -173,3 +173,19 @@
     margin-bottom: 10px;
     font-size: 14px;
 }
+
+/*======= Why Claritus ==========*/
+
+.excellence-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.excellence-list li {
+    width: 50%;
+    padding-right: 20px;
+}
+
+.excellence-wrap .row:nth-of-type(odd) {
+    flex-direction: row-reverse;
+}

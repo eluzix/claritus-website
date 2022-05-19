@@ -389,6 +389,105 @@ const WhyPreview = createClass({
             h("img", { src: entry.getIn(["data", "whyHeroImg"]) })
           )
         )
+      ),
+
+      h(
+        "section",
+        {},
+
+        h(
+          "div",
+          { className: "row justify-center" },
+          h(
+            "div",
+            { className: "col-8" },
+            h(
+              "h2",
+              { className: "text-center" },
+              entry.getIn(["data", "whyExcellenceMainTitle"])
+            ),
+            h(
+              "p",
+              { className: "text-center" },
+              entry.getIn(["data", "whyExcellenceMainDescription"])
+            )
+          ),
+
+          h(
+            "ul",
+            { className: "excellence-list" },
+
+            widgetsFor("whyExcellenceMainList").map(function (item) {
+              return h("li", {}, item.getIn(["data", "listItem"]));
+            })
+          ),
+
+          h(
+            "div",
+            { className: "col-8" },
+            h("img", { src: entry.getIn(["data", "whyExcellenceImg"]) })
+          )
+        )
+      ),
+
+      h(
+        "section",
+        {},
+
+        h(
+          "div",
+          { className: "excellence-wrap" },
+
+          widgetsFor("whyExcellence").map(function (item) {
+            return h(
+              "div",
+              { className: "row align-center" },
+              h(
+                "div",
+                { className: "col-7" },
+
+                h("h2", {}, item.getIn(["data", "title"])),
+
+                h("p", {}, item.getIn(["data", "description"]))
+              ),
+
+              h(
+                "div",
+                { className: "col-5" },
+                h("img", { src: item.getIn(["data", "img"]) })
+              )
+            );
+          })
+        )
+      )
+
+      // ================
+    );
+  },
+});
+
+const TypicalPreview = createClass({
+  render: function () {
+    const { entry, widgetFor, widgetsFor } = this.props;
+
+    return h(
+      "div",
+      { className: "container" },
+
+      h(
+        "section",
+        {},
+
+        h(
+          "div",
+          { className: "row justify-center" },
+          h(
+            "div",
+            { className: "col-7" },
+            h("h1", {}, entry.getIn(["data", "title"])),
+            h("div", { className: "text" }, this.props.widgetFor("body"))
+          )
+        )
       )
 
       // ================
@@ -400,3 +499,4 @@ CMS.registerPreviewTemplate("about-us", AboutPreview);
 CMS.registerPreviewTemplate("security", SecurityPreview);
 CMS.registerPreviewTemplate("pricing", PricingPreview);
 CMS.registerPreviewTemplate("why-claritus", WhyPreview);
+CMS.registerPreviewTemplate("terms", TypicalPreview);
