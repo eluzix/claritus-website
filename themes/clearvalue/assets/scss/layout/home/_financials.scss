@@ -29,6 +29,7 @@ section.financials-institutes-section {
   display: flex;
   width: 100%;
   max-width: rem(1190);
+  min-height: rem(48);
   margin: 0 auto;
   overflow: hidden;
 
@@ -40,10 +41,11 @@ section.financials-institutes-section {
     width: 33.333%;
     min-height: 100%;
     padding: 0 rem(16);
-    animation: fadeIn 1s;
+    animation: fadeIn 0.85s;
 
     &.is-hidden {
-      display: none;
+      opacity: 0;
+      transition: opacity 0.85s linear;
     }
 
     @media (min-width: map_get($grid-breakpoints, md)) {
@@ -64,9 +66,9 @@ section.financials-institutes-section {
 
 @keyframes fadeIn {
   0% {
-      opacity: 0;
+    opacity: 0;
   }
   100% {
-      opacity: 1;
+    opacity: 1;
   }
 }
