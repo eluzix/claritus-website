@@ -20,8 +20,8 @@ collections:
           - { label: "Update Date", name: "lastmod", widget: "datetime" }
 
           - { label: "Hero Text", name: "heroText", widget: "string" }
-          - { label: "Hero image full-hd", name: "heroImgFullHd", widget: "image" }
-          - { label: "Hero image mobile", name: "heroImgMobile", widget: "image" }
+          #          - { label: "Hero image full-hd", name: "heroImgFullHd", widget: "image" }
+          #          - { label: "Hero image mobile", name: "heroImgMobile", widget: "image" }
           - label: "Hero overview"
             name: "homeOverview"
             widget: list
@@ -41,19 +41,22 @@ collections:
 
           - { label: "Asset Text", name: "assetsTitle", widget: "string" }
           - { label: "Asset Text", name: "assetsText", widget: "string" }
-          - { label: "Asset image full-hd", name: "assetsImgFullHd", widget: "image" }
-          - { label: "Asset image desk", name: "assetsImgDesktop", widget: "image" }
-          - { label: "Asset image tablet", name: "assetsImgTablet", widget: "image" }
-          - { label: "Asset image mobile", name: "assetsImgMob", widget: "image" }
+          #          - { label: "Asset image full-hd", name: "assetsImgFullHd", widget: "image" }
+          #          - { label: "Asset image desk", name: "assetsImgDesktop", widget: "image" }
+          #          - { label: "Asset image tablet", name: "assetsImgTablet", widget: "image" }
+          #          - { label: "Asset image mobile", name: "assetsImgMob", widget: "image" }
 
-          - { label: "Section 2 Title", name: "secureTitle", widget: "string" }
-          - { label: "Section 2 Text", name: "secureText", widget: "string" }
+          - { label: "Secure Title", name: "secureTitle", widget: "string" }
+          - { label: "Secure Text", name: "secureText", widget: "string" }
+          #          - { label: "Secure image full-hd", name: "secureImgFullHd", widget: "image" }
+          #          - { label: "Secure image tablet", name: "secureImgTablet", widget: "image" }
+          #          - { label: "Secure image mobile", name: "secureImgMob", widget: "image" }
 
-          - { label: "Section 3 Title", name: "coverFinancialsTitle", widget: "string" }
-          - { label: "Section 3 Text", name: "coverFinancialsText", widget: "string" }
+          - { label: "Financial cover Title", name: "coverFinancialsTitle", widget: "string" }
+          - { label: "Financial cover Text", name: "coverFinancialsText", widget: "string" }
 
-          - { label: "Section 4 Title", name: "benchmarkTitle", widget: "string" }
-          - { label: "Section 4 Text", name: "benchmarkText", widget: "string" }
+          - { label: "Clearing the Investment Title", name: "benchmarkTitle", widget: "string" }
+          - { label: "Clearing the Investment Text", name: "benchmarkText", widget: "string" }
 
           - { label: "Testimonials title", name: "feedbackTitle", widget: "string" }
           - label: "Testimonials"
@@ -63,8 +66,8 @@ collections:
               - { label: "Feedback", name: "feedbackText", widget: string }
               - { label: "Author", name: "feedbackName", widget: string }
 
-          - { label: "Section 6 Title", name: "historyTitle", widget: "string" }
-          - { label: "Section 6 text", name: "historyText", widget: "string" }
+          - { label: "History Title", name: "historyTitle", widget: "string" }
+          - { label: "History text", name: "historyText", widget: "string" }
 
           - { label: "FAQ Title", name: "faqTitle", widget: "string" }
           - label: "FAQ left column"

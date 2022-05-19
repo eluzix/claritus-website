@@ -84,10 +84,218 @@ const HomePreview = createClass({
         "section",
         {},
 
-        h("h2", {}, entry.getIn(["data", "secureTitle"])),
+        h(
+          "div",
+          { className: "row" },
 
-        h("p", {}, entry.getIn(["data", "secureText"]))
-      )
+          h(
+            "div",
+            { className: "col-6" },
+            h("h2", {}, entry.getIn(["data", "secureTitle"])),
+
+            h("p", {}, entry.getIn(["data", "secureText"]))
+          ),
+
+          h(
+            "div",
+            { className: "col-6" },
+
+            h("img", { src: entry.getIn(["data", "secureImgFullHd"]) })
+          )
+        )
+      ),
+
+      h(
+        "section",
+        {},
+
+        h(
+          "div",
+          { className: "row" },
+
+          h(
+            "div",
+            { className: "col-6" },
+
+            h("img", { src: entry.getIn(["data", "coverFinancialsImgFullHd"]) })
+          ),
+
+          h(
+            "div",
+            { className: "col-6" },
+            h("h2", {}, entry.getIn(["data", "coverFinancialsTitle"])),
+
+            h("p", {}, entry.getIn(["data", "coverFinancialsText"]))
+          )
+        )
+      ),
+
+      h(
+        "section",
+        {},
+
+        h(
+          "div",
+          { className: "row align-center flex-col" },
+
+          h(
+            "div",
+            { className: "col-6" },
+            h(
+              "h2",
+              { className: "text-center" },
+              entry.getIn(["data", "benchmarkTitle"])
+            ),
+
+            h(
+              "p",
+              { className: "text-center" },
+              entry.getIn(["data", "benchmarkText"])
+            )
+          ),
+
+          h(
+            "div",
+            { className: "col-7" },
+
+            h("img", { src: entry.getIn(["data", "benchmarkImgFullHd"]) })
+          )
+        )
+      ),
+
+      h(
+        "section",
+        {},
+
+        h(
+          "h2",
+          { className: "text-center" },
+          entry.getIn(["data", "feedbackTitle"])
+        ),
+
+        h(
+          "div",
+          { className: "feedbacks" },
+
+          widgetsFor("feedbacks").map(function (item) {
+            return h(
+              "div",
+              { className: "feedbacks__item" },
+
+              h(
+                "div",
+                { className: "feedback" },
+
+                h("p", {}, `${item.getIn(["data", "feedbackText"])}`),
+                h("h6", {}, `${item.getIn(["data", "feedbackName"])}`)
+              )
+            );
+          })
+        )
+      ),
+
+      h(
+        "section",
+        {},
+
+        h(
+          "div",
+          { className: "row align-center flex-col" },
+
+          h(
+            "div",
+            { className: "col-6" },
+            h(
+              "h2",
+              { className: "text-center" },
+              entry.getIn(["data", "historyTitle"])
+            ),
+
+            h(
+              "p",
+              { className: "text-center" },
+              entry.getIn(["data", "historyText"])
+            )
+          ),
+
+          h(
+            "div",
+            { className: "col-7" },
+
+            h("video", {
+              src: entry.getIn(["data", "historyVideo"]),
+              poster: entry.getIn(["data", "historyVideoPoster"]),
+            })
+          )
+        )
+      ),
+
+      h(
+        "section",
+        {},
+
+        h("h2", {}, entry.getIn(["data", "faqTitle"])),
+
+        h(
+          "div",
+          { className: "row" },
+
+          h(
+            "div",
+            { className: "col-6" },
+
+            widgetsFor("faqFirstColumn").map(function (item) {
+              return h(
+                "div",
+                { className: "faq-item" },
+                h("h4", {}, item.getIn(["data", "question"])),
+
+                h("p", {}, item.getIn(["data", "answer"]))
+              );
+            })
+          ),
+
+          h(
+            "div",
+            { className: "col-6" },
+
+            widgetsFor("faqSecondColumn").map(function (item) {
+              return h(
+                "div",
+                { className: "faq-item" },
+                h("h4", {}, item.getIn(["data", "question"])),
+
+                h("p", {}, item.getIn(["data", "answer"]))
+              );
+            })
+          )
+        )
+      ),
+
+      h(
+        "section",
+        {},
+
+        h(
+          "div",
+          { className: "row" },
+
+          h(
+            "div",
+            { className: "col-6" },
+
+            h("img", { src: entry.getIn(["data", "coverFinancialsImgFullHd"]) })
+          ),
+
+          h(
+            "div",
+            { className: "col-6" },
+            h("h2", {}, entry.getIn(["data", "pricingTitle"])),
+
+            h("p", {}, entry.getIn(["data", "pricingText"]))
+          )
+        )
+      ),
 
       // h(
       //   "div",

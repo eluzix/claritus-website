@@ -63,6 +63,9 @@ secureTitle: Private & Secure
 
 secureText: Your privacy, security and anonymity are our top priorities. All of your information is secure and encrypted at all times. We really mean at all times! Your data is fully encrypted at rest and in- transit. All of your information and credentials are always safe with Claritus!
 
+secureImgFullHd: /images/secure-bg-fullhd.svg
+secureImgTablet: /images/secure-bg-tablet.svg
+secureImgMob: /images/secure-bg-mob.svg
 
 ##Cover financials
 
@@ -70,12 +73,18 @@ coverFinancialsTitle: Covers More Than 17,000 Financial Institutions
 
 coverFinancialsText: Claritus supports more than 17,000 global financial institutions, brokerages, and other financial organizations to provide automatic and up-to-date data.
 
+coverFinancialsImgFullHd: /images/institutions-fullhd.png
+coverFinancialsImgMob: /images/institutions-mob.png
+
 
 ##Benchmark
 
 benchmarkTitle: Clearing the Investment Fog
 
 benchmarkText: Investors live in a constant fog today by not having visibility of their entire wealth. Claritus combines past insights and today's portfolio, so you always know that you know. Claritus is the platform every investor needs to make decisions with clarity and confidence.
+
+benchmarkImgFullHd: /images/all-assets-fullhd.png
+benchmarkImgMob: /images/all-assets-mob.png
 
 
 ##Feedbacks
@@ -117,6 +126,9 @@ historyTitle: Your History Matters
 historyText: With Claritus, you can measure your portfolio's performance over time easily and accurately. Use Claritus' dynamic analytics and portfolio cross-asset comparisons to make intelligent and informed financial decisions.
   <br/></br>Your holding history has huge value
 
+historyVideoPoster: https://d35c20tx62tmpd.cloudfront.net/website/videos/your-history-matters.jpg
+historyVideo: https://d35c20tx62tmpd.cloudfront.net/website/videos/your-history-matters.mp4
+
 
 ##FAQ
 faqTitle: Frequently Asked Questions
@@ -149,6 +161,9 @@ pricingTitle: Transparent & Simple Pricing
 
 pricingText: Claritus offers our customers an exceptional solution for a fair, and low subscription cost. There will never be hidden fees or costs. We believe in being transparent and up front with our customers at all times.
   <br/><br/>Try Claritus free for 14 days - no credit card required
+
+pricingImgFullHd: /images/pricing-fullhd.png
+pricingImgMob: /images/pricing-mob.png
 
 ---
 

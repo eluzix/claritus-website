@@ -48,3 +48,48 @@
   width: auto;
   margin-bottom: 5px;
 }
+
+.feedbacks {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -10px;
+  margin-right: -10px;
+  margin-top: 20px;
+}
+
+.feedbacks .feedbacks__item {
+  padding: 0 10px 20px 10px;
+  width: 20%;
+}
+
+.feedbacks .feedbacks__item .feedback {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 10px 20px rgb(5 13 66 / 12%);
+  height: 100%;
+}
+
+.feedbacks .feedbacks__item .feedback p,
+.feedbacks .feedbacks__item .feedback h6 {
+  font-size: 14px;
+  margin: 0;
+}
+
+.feedbacks .feedbacks__item .feedback p {
+  flex-grow: 1;
+}
+
+.feedbacks .feedbacks__item .feedback h6 {
+  margin-top: 20px;
+}
+
+.faq-item {
+  box-shadow: 0 10px 20px rgb(5 13 66 / 12%);
+  margin-bottom: 30px;
+  padding: 20px;
+}
+
+.faq-item p {
+  margin-bottom: 0;
+}
