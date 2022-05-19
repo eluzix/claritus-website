@@ -8,6 +8,8 @@ lastmod: 2022-05-16T06:30:01.000+00:00
 
 whySubtitle: Our mission is your financial peace of mind.
 
+whyHeroImg: /images/why-images/why-intro-img.png
+
 whyExcellenceMainTitle: Not Just Another Networth Tracker
 
 whyExcellenceMainDescription: "To make good and informed decisions, you need to be able to see the big picture and evaluate your overall situation. With Claritus you will get:"
@@ -20,6 +22,8 @@ whyExcellenceMainList:
 - listItem: Automatic and instantaneous value updates to save you time
 - listItem: Comparisons between different asset types to help you make informed decisions
 - listItem: As simple as any spreadsheet yet 10x more powerful and useful
+
+whyExcellenceImg: /images/why-images/why-graph-img.png
 
 
 whyExcellence:

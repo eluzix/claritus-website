@@ -222,7 +222,7 @@ collections:
           - { label: "Body", name: "body", widget: "markdown" }
 
 
-      - label: "How Claritus works"
+      - label: "Why Claritus"
         name: "why-claritus"
         file: "content/why-claritus.md"
         fields:
