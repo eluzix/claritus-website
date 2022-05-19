@@ -1,9 +1,9 @@
 backend:
   name: git-gateway
-  #  repo: Clear-Value/claritus-website
+  repo: Clear-Value/claritus-website
   branch: feature/netlify-cms-fields
 
-media_folder: "static/images" # Media files will be stored in the repo under static/images/uploads
+media_folder: "static/uploads" # Media files will be stored in the repo under static/images/uploads
 public_folder: "/images" # The src attribute for uploaded media will begin with /images/uploads
 
 collections:
@@ -19,10 +19,6 @@ collections:
           - { label: "Publish Date", name: "date", widget: "datetime" }
           - { label: "Update Date", name: "lastmod", widget: "datetime" }
 
-#          - label: "Hero section (Section 1)"
-#            name: "section-1"
-#            widget: "object"
-#            fields:
           - { label: "Hero Text", name: "heroText", widget: "string" }
           - { label: "Hero image full-hd", name: "heroImgFullHd", widget: "image" }
           - { label: "Hero image mobile", name: "heroImgMobile", widget: "image" }
