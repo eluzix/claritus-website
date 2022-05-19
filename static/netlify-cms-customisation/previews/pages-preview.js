@@ -484,8 +484,73 @@ const TypicalPreview = createClass({
           h(
             "div",
             { className: "col-8" },
-            h("h1", {className: "text-center"}, entry.getIn(["data", "title"])),
+            h(
+              "h1",
+              { className: "text-center" },
+              entry.getIn(["data", "title"])
+            ),
             h("div", { className: "text" }, this.props.widgetFor("body"))
+          )
+        )
+      )
+
+      // ================
+    );
+  },
+});
+
+const ContactPreview = createClass({
+  render: function () {
+    const { entry, widgetFor, widgetsFor } = this.props;
+
+    return h(
+      "div",
+      { className: "container" },
+
+      h(
+        "section",
+        {},
+
+        h(
+          "div",
+          { className: "row justify-center" },
+          h(
+            "div",
+            { className: "col-8" },
+            h(
+              "h1",
+              { className: "text-center" },
+              entry.getIn(["data", "title"])
+            ),
+            h(
+              "p",
+              { className: "text-center" },
+              entry.getIn(["data", "subTitle"])
+            )
+          )
+        )
+      ),
+
+      h(
+        "section",
+        {},
+
+        h(
+          "div",
+          { className: "row justify-center" },
+          h(
+            "div",
+            { className: "col-8" },
+            h(
+              "h2",
+              { className: "text-center" },
+              entry.getIn(["data", "successfulTitle"])
+            ),
+            h(
+              "p",
+              { className: "text-center" },
+              entry.getIn(["data", "successfulMessage"])
+            )
           )
         )
       )
@@ -503,3 +568,4 @@ CMS.registerPreviewTemplate("terms", TypicalPreview);
 CMS.registerPreviewTemplate("privacy", TypicalPreview);
 CMS.registerPreviewTemplate("how-it-work", TypicalPreview);
 CMS.registerPreviewTemplate("ambassadors", TypicalPreview);
+CMS.registerPreviewTemplate("contact-us", ContactPreview);
