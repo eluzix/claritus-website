@@ -14,25 +14,28 @@ summary: Trust is something built with time, and it’s our obligation to gain y
 
 ---
 
-Investment into any market comes with risk, but in a year where stocks have started on [their worst footing since 2016](https://www.nytimes.com/2022/01/21/business/economy/stock-markets-down-inflation.html) in light of recent pullbacks from the Central Bank, many investors are finding themselves staring down the barrel of bear markets that make investment losses look a lot more likely.
+We know when talking about your wealth and private financial state that trust plays a major role for you.
 
-Characterized as a market that experiences prolonged price declines during which security [prices fall by 20% or more](https://www.investopedia.com/terms/b/bearmarket.asp), the general volatility of a bear market isn’t something that any investor embraces. However, with stocks already struggling in the wake of the pandemic, and with current conflicts in Ukraine quickly sending risk assets like stocks tumbling even further, dealing in volatile markets is becoming increasingly common across even promising investor portfolios.
+Well, trust is something built with time, and it’s our obligation to gain yours and prove to you from the very beginning and all along the way that you can trust us.
 
-While this doesn’t necessarily mean that losses are inevitable even as markets continue to struggle, it does mean that investors need to put strategies in place to handle the volatility of markets overall. Here, we consider some of the most viable options for immediate action.
+We understand the fundamentals that must be on Claritus’ platform from the very beginning in order to even be able to start gaining your trust.
 
-### **Holding position**
-Holding a position in a volatile market can be daunting, but there are equal risks of loss involved in pulling money out of a market that could still rally. This is especially true considering that high volatility in most markets is short-lived, and can even be followed by periods of growth. Investors who hold their positions during these periods will generally look past short-term market fluctuations, instead focusing on the longer-term of their investment prospects, and the bigger picture of markets overall.
+When envisioning Claritus, we knew that your privacy, information security and having a discreet relationship with us was a basic, and entry requirement.
 
-### **Hiding in high-dividend stocks**
-According to authorities like Forbes, high-dividend stocks provide an effective place to hide from volatile markets because they act as a cushion that ensures a steady dividend income. Dividend stocks that pay investors a set amount each quarter regardless of market fall or volatility can especially provide the overall security necessary to either deal with market losses by pulling volatile investments or buying time to wait for market-wide turnarounds.
+When designing Claritus we placed it as a main subject that we need to take EXTRA care of. We know that this is the foundation for building our long term relationship.
 
-### **Looking into liquidation**
-Liquidation involves the selling of assets before company closure to avoid investment losses that may occur otherwise. While this can still result in some losses on the part of investors, it can still be a viable option for reducing risk if a market has taken significant hits, or if company mergers or acquisitions have been hinted at. In generally volatile markets, turning to assets that they can liquidate quickly can especially help investors to rebalance equities that have taken a hit elsewhere.
+Claritus was designed technically to be bank-level security. We use best-standards to protect your privacy and security.
 
-### **Taking a risk with leverage**
-Leverage is a trading mechanism that investors can use to increase market exposure by paying less than the full amount for an investment using capital borrowed from a broker. Options trading, futures contracts, and buying on margin are all examples and, when done well, this can be a viable way to magnify gains relatively quickly in even volatile markets. That said, there is also a higher level of risk involved, with the equally fast possibility of losses here holding the potential to wipe out entire investment profiles.
+We only keep the information we need to provide you with the best service and nothing more. There is a strict deletion policy so information deleted by you is periodically purged from our database.
 
-### **Making good decisions**
-When you take each of these strategies into account, it is clear that dealing with volatile markets always comes back to one thing – your understanding of what’s happening across your investment portfolio, and what that means for your prospects overall. By providing a simple way to track and control your wealth, the Claritus app is therefore an invaluable tool for helping you to make good decisions during the most volatile of periods. For investors worried about current market changes, [signing up for what Claritus has to offer](https://app.claritus.io/on-boarding) today is an especially wise way to provide some much-needed investment peace-of-mind that keeps losses at bay once and for all.
+All your information is kept encrypted with AES-256-GCM encryption while in transit and in rest for maximum security.
 
-![](/uploads/claritus_device-1.png)
+When linking your financial institutions we use Yodlee, a global leader in financial data aggregation. Your credentials are stored with Yodlee and are not visible to anyone at Claritus. Our access to your linked accounts is read only, we can’t perform any action on your behalf.
+
+internally at Claritus, no one has access to your private wealth details except a very small team that must work on the pit of the service. All the rest of the team can only see the metadata of your portfolio, and this is only to be able to serve you in the best possible way, without interfering with your privacy.
+
+We take data security very seriously and welcome feedback of every kind. If you discover a vulnerability or security issue while using our service or are even just concerned about security we encourage you to contact us at [help@claritus.io](mailto:help@claritus.io).
+
+We know this is our basic obligation and we are committed to your safety.
+
+**Your financial peace of mind is our mission.**

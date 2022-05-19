@@ -264,8 +264,8 @@ collections:
       - { label: "Meta Title", name: "metaTitle", widget: "string" }
       - { label: "Meta Description", name: "description", widget: "string" }
 
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Update Date", name: "lastmod", widget: "datetime" }
+      - { label: "Publish Date", name: "publishDate", widget: "datetime" }
+      - { label: "Update Date", name: "date", widget: "datetime" }
       - { label: "Hidden", name: "hidden", widget: "boolean", default: "false" }
       - { label: "Disclaimer", name: "disclaimer", widget: "boolean", default: "false" }
 
@@ -273,5 +273,6 @@ collections:
       - { label: "Custom Summary", name: "custom_summary", widget: "text", required: false }
 
       - { label: "Featured Image", name: "thumbnail", widget: "image", required: false }
+
       - { label: "Body", name: "body", widget: "markdown" }
 
