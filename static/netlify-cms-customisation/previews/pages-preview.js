@@ -15,14 +15,14 @@ const AboutPreview = createClass({
           { className: "row align-center" },
           h(
             "div",
-            { className: "col-7" },
+            { className: "col-5" },
             h("h1", {}, entry.getIn(["data", "introTitle"])),
             h("p", {}, entry.getIn(["data", "introDescription"]))
           ),
 
           h(
             "div",
-            { className: "col-5" },
+            { className: "col-7" },
             h("img", { src: entry.getIn(["data", "introImgDesktop"]) })
           )
         )
