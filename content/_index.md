@@ -6,7 +6,7 @@ description: Claritus gives you a complete overview of your money and investment
 date: 2020-01-01T09:30:01+03:00
 lastmod: 2022-05-16T06:30:01.000+00:00
 
-heroText: Track, analyze, and be in complete control of all of your assets and investments - all in one place!
+heroText: Claritus is the platform every investor needs to make decisions with clarity and confidence. Track, analyze, and be in full control of all of your assets and investments - all in one place!
 
 heroImg: /images/section-hero.png
 
@@ -31,20 +31,32 @@ financialInstitutes:
 - financial-4
 - financial-5
 - financial-6
+- financial-7
+- financial-8
+- financial-9
+- financial-10
+- financial-11
+- financial-12
+- financial-13
+- financial-14
+- financial-15
+- financial-16
+- financial-1
+- financial-2
 
 
 ##Assets 
 
 assetsTitle: All Your Assets in One Place
 
-assetsText: It’s time to take control of your assets and with Claritus you can easily track ALL of your assets and investments! You will have an automatic and clear view of your holdings, without using spreadsheets and without needing a degree in finance!!
+assetsText: Claritus helps you track ALL of your assets & investments in one place! See your holdings clearly and easily, without spreadsheets or needing a finance degree!
 
 
 ##Private secure
 
 secureTitle: Private & Secure
 
-secureText: Your privacy, security and anonymity are our top priorities. All of your information is secure and encrypted at all times. We really mean at all times! Your data is fully encrypted at rest and in- transit. All of your information and credentials are always safe with Claritus!
+secureText: We keep your privacy and security in mind at all times. Claritus is designed to meet the highest bank-grade security standards. With Claritus, all of your information is secure and encrypted at all times.
 
 
 ##Cover financials
@@ -108,11 +120,11 @@ faqFirstColumn:
 
 - question: Why Claritus?
 
-  answer: Keeping track of your wealth can be a difficult task, but Claritus makes it easier than ever before! It doesn’t matter if you have one asset or several assets scattered over numerous accounts, with Claritus everything can be organized and tracked in one convenient place.
+  answer: To make good and informed decisions, you need to be able to see the big picture and evaluate your overall situation. Claritus is a powerful yet easy to use, trustworthy and discreet companion to assist you in growing your wealth.
 
 - question: Is my privacy protected?
 
-  answer: The privacy, security, and anonymity of our customers is our top priority! Claritus prides itself on their highest level of security, so much so that we do not even have access to your data!
+  answer: Your privacy and anonymity are extremely important to us. Our loyalty is first and foremost to you - no hidden agendas, no dual loyalty, no matter what.
 
 
 faqSecondColumn:
@@ -123,15 +135,14 @@ faqSecondColumn:
 
 - question: Will Claritus ever sell my data?
 
-  answer: No. Never.
+  answer: Claritus will never sell or share your data or personal information to a third party! Our loyalty stands with you, our customer and your trust in us is our top priority.
 
 
 ##Simple pricing
 
 pricingTitle: Transparent & Simple Pricing
 
-pricingText: Claritus offers our customers an exceptional solution for a fair, and low subscription cost. There will never be hidden fees or costs. We believe in being transparent and up front with our customers at all times.
-  <br/><br/>Try Claritus free for 14 days - no credit card required
+pricingText: Claritus offers our customers an exceptional solution for a fair, and low subscription cost. There will never be hidden fees or costs. We believe in being transparent and up front with our customers at all times.<br/><br/><b>Try Claritus free for 14 days - No credit card required</b>
 
 ---
 
