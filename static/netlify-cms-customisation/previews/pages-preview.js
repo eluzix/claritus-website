@@ -144,21 +144,72 @@ const SecurityPreview = createClass({
 
         h(
           "div",
-          { className: "row" },
+          { className: "row align-center" },
 
           h(
             "div",
-            { className: "col-6" },
+            { className: "col-7" },
+            h("h2", {}, entry.getIn(["data", "protectedTitle"])),
 
-            h("img", { src: entry.getIn(["data", "protectedImg"]) })
+            h("p", {}, entry.getIn(["data", "protectedText"])),
+
+            h("p", {}, entry.getIn(["data", "protectedContent"]))
           ),
 
           h(
             "div",
-            { className: "col-6" },
-            h("h2", {}, entry.getIn(["data", "protectedTitle"])),
+            { className: "col-5" },
 
-            h("p", {}, entry.getIn(["data", "protectedText"]))
+            h("img", { src: entry.getIn(["data", "protectedImg"]) })
+          )
+        )
+      ),
+
+      h(
+        "section",
+        {},
+
+        h(
+          "div",
+          { className: "row align-center" },
+
+          h(
+            "div",
+            { className: "col-5" },
+
+            h("img", { src: entry.getIn(["data", "respectImg"]) })
+          ),
+
+          h(
+            "div",
+            { className: "col-7" },
+            h("h2", {}, entry.getIn(["data", "respectTitle"])),
+
+            h("p", {}, entry.getIn(["data", "respectText"])),
+
+            h("p", {}, entry.getIn(["data", "respectContent"]))
+          )
+        )
+      ),
+
+      h(
+        "section",
+        {},
+
+        h(
+          "div",
+          { className: "row justify-center" },
+
+          h(
+            "div",
+            { className: "col-8" },
+
+            h(
+              "div",
+              { className: "disclaimer" },
+
+              h("p", {}, entry.getIn(["data", "securityDisclaimer"]))
+            )
           )
         )
       )

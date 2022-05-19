@@ -117,3 +117,19 @@
   height: auto;
   display: inline-flex;
 }
+
+
+/*========= Security =========*/ 
+
+.disclaimer {
+  padding: 20px;
+  border-radius: 16px;
+  background-color: #ccc;
+}
+
+.disclaimer p {
+  text-align: center;
+  margin: 0;
+  font-weight: 500;
+  font-size: 18px;
+}
