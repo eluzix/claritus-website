@@ -93,3 +93,27 @@
 .faq-item p {
   margin-bottom: 0;
 }
+
+/*============= About us ============*/
+
+.team-text {
+  column-count: 2;
+  column-gap: 30px;
+}
+
+.team {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.team .teammate {
+  width: 30%;
+  text-align: center;
+}
+
+.team .teammate img {
+  width: 120px;
+  height: auto;
+  display: inline-flex;
+}

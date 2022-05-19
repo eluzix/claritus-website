@@ -8,9 +8,9 @@
 
 <section class="about-intro-section">
     <picture class="about-intro-bg">
-        <source srcset="/images/about-intro-bg-desktop.png" media="(min-width: 1220px)"/>
-        <source srcset="/images/about-intro-bg-tablet.png" media="(min-width: 744px)"/>
-        <img src="/images/about-intro-bg-mob.png" alt=""/>
+        <source srcset="{{ .Params.introImgDesktop }}" media="(min-width: 1220px)"/>
+        <source srcset="{{ .Params.introImgTablet }}" media="(min-width: 744px)"/>
+        <img src="{{ .Params.introImgMob }}" alt=""/>
     </picture>
 
     <div class="container">

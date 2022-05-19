@@ -13,6 +13,10 @@ introTitle: Our mission is your financial peace of mind
 
 introDescription: Claritus is a simple-to-use, personal portfolio management solution.
 
+introImgDesktop: /images/about-intro-bg-desktop.png
+introImgTablet: /images/about-intro-bg-tablet.png
+introImgMob: /images/about-intro-bg-mob.png
+
 
 ##Team
 
