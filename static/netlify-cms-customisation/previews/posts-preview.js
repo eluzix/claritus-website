@@ -1,6 +1,4 @@
-
-
-const PostPreview = createClass({
+var PostPreview = createClass({
   render: function () {
     const { entry, widgetFor, widgetsFor } = this.props;
 
@@ -14,22 +12,30 @@ const PostPreview = createClass({
 
         h(
           "div",
-          { className: "row" },
+          { className: "row align-center" },
           h(
             "div",
-            { className: "col-5" },
+            { className: "col-6" },
             h("h1", {}, entry.getIn(["data", "title"])),
             h("p", {}, entry.getIn(["data", "description"]))
           ),
 
           h(
             "div",
-            { className: "col-7" },
+            { className: "col-6" },
             h("img", { src: entry.getIn(["data", "thumbnail"]) })
           )
         ),
 
-        h('div', {"className": "text"}, this.props.widgetFor('body'))
+        h(
+          "div",
+          { className: "row justify-center" },
+          h(
+            "div",
+            { className: "col-8" },
+            h("div", { className: "article-content" }, widgetFor("body"))
+          )
+        )
       )
 
       // ================
@@ -37,4 +43,4 @@ const PostPreview = createClass({
   },
 });
 
-CMS.registerPreviewTemplate("posts", PostPreview);
+CMS.registerPreviewTemplate("blog", PostPreview);
