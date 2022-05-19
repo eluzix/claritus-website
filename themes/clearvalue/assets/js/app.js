@@ -494,29 +494,36 @@ function initScrollTopHandler() {
 
 function initInstitutionsAnimation() {
   const selector = '.financials-slider';
-  const interval = 3;
+  const interval = 5;
+  const delay = 0.85;
   let step = 1;
   
   let groupBy = window.innerWidth < 744 ? 3 : 6;
   const count = document.querySelector(selector).childElementCount;
   
-  function hideAll() {
+  function hideAll(delay) {
     for (let i = 1; i <= count; i++) {
       let slide = document.querySelector(selector).children[i - 1];
       slide.classList.add('is-hidden');
+      setTimeout(() => {
+        slide.style.display = 'none';
+      }, (1000 * delay))
     }
   }
   
-  function show(step, groupBy) {
-    hideAll();
+  function show(step, groupBy, delay = 0) {
+    hideAll(delay);
 
     const start = (step - 1) * groupBy
     const end = step * groupBy
 
-    for (let i = start; i < end; i++) {
-      let slide = document.querySelector(selector).children[i];
-      slide.classList.remove('is-hidden');
-    }
+    setTimeout(() => {
+      for (let i = start; i < end; i++) {
+        let slide = document.querySelector(selector).children[i];
+        slide.classList.remove('is-hidden');
+        slide.style.display = 'flex';
+      }
+    }, (1000 * delay))
   }
   
   show(step, groupBy);
@@ -530,7 +537,7 @@ function initInstitutionsAnimation() {
       step++;
     }
 
-    show(step, groupBy);
+    show(step, groupBy, delay);
   }, (1000 * interval));
 }
 
