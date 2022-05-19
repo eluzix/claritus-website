@@ -1,24 +1,21 @@
 ---
-title: Strategies in Volatile Market
-
-metaTitle: Strategies in Volatile Market
-
-description: The right strategy is key to avoiding loss when trading in a volatile market. Here, we discuss the best options for investors looking to reduce volatility risks.
-
-date: 2021-02-14T10:30:01.000+03:00
-
-publishDate: 2021-02-14T10:30:01.000+03:00
-
 content_class: blog-post
-
 header_class: white-header
-
-summary: Investment into any market comes with risk, but in a year where stocks have started on their worst footing since 2016 in light of recent pullbacks from the Central Bank, many investors are finding themselves staring down the barrel of bear markets that make investment losses look a lot more likely.
-
-custom_summary: In a year where stocks have started on their worst footing since 2016, many investors are finding themselves staring down the barrel of bear markets that make investment losses look a lot more likely.
-
+title: Strategies in Volatile Market
+metaTitle: Strategies in Volatile Market
+description: The right strategy is key to avoiding loss when trading in a volatile
+  market. Here, we discuss the best options for investors looking to reduce volatility
+  risks.
+date: 2022-02-25T11:02:21.718+00:00
+lastmod: 2022-02-25T11:02:21.729+00:00
+summary: Investment into any market comes with risk, but in a year where stocks have
+  started on their worst footing since 2016 in light of recent pullbacks from the
+  Central Bank, many investors are finding themselves staring down the barrel of bear
+  markets that make investment losses look a lot more likely.
+custom_summary: In a year where stocks have started on their worst footing since 2016,
+  many investors are finding themselves staring down the barrel of bear markets that
+  make investment losses look a lot more likely.
 thumbnail: "/uploads/strategies-in-volatile-market.jpg"
-
 disclaimer: true
 
 ---
