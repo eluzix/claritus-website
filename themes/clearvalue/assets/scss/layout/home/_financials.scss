@@ -41,11 +41,11 @@ section.financials-institutes-section {
     width: 33.333%;
     min-height: 100%;
     padding: 0 rem(16);
-    animation: fadeIn 1s;
+    animation: fadeIn 0.85s;
 
     &.is-hidden {
       opacity: 0;
-      transition: opacity 1s linear;
+      transition: opacity 0.85s linear;
     }
 
     @media (min-width: map_get($grid-breakpoints, md)) {
