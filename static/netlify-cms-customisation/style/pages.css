@@ -4,7 +4,7 @@
 }
 
 .home-overview .home-overview__item {
-  width: 50%;
+  width: auto;
   border-right: 1px solid #ccc;
   padding: 15px 40px 15px 0;
 }
