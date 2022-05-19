@@ -44,6 +44,38 @@ financialInstitutes:
 - imageUrlDesk: /images/financials/financial-6.png
   imageUrlTablet: /images/financials/financial-6-tablet.png
 
+- imageUrlDesk: /images/financials/financial-7.png
+  imageUrlTablet: /images/financials/financial-7-tablet.png
+
+- imageUrlDesk: /images/financials/financial-8.png
+  imageUrlTablet: /images/financials/financial-8-tablet.png
+
+- imageUrlDesk: /images/financials/financial-9.png
+  imageUrlTablet: /images/financials/financial-9-tablet.png
+
+- imageUrlDesk: /images/financials/financial-10.png
+  imageUrlTablet: /images/financials/financial-10-tablet.png
+
+- imageUrlDesk: /images/financials/financial-11.png
+  imageUrlTablet: /images/financials/financial-11-tablet.png
+
+- imageUrlDesk: /images/financials/financial-12.png
+  imageUrlTablet: /images/financials/financial-12-tablet.png
+
+- imageUrlDesk: /images/financials/financial-13.png
+  imageUrlTablet: /images/financials/financial-13-tablet.png
+
+- imageUrlDesk: /images/financials/financial-14.png
+  imageUrlTablet: /images/financials/financial-14-tablet.png
+
+- imageUrlDesk: /images/financials/financial-15.png
+  imageUrlTablet: /images/financials/financial-15-tablet.png
+
+- imageUrlDesk: /images/financials/financial-16.png
+  imageUrlTablet: /images/financials/financial-16-tablet.png
+
+
+
 
 
 ##Assets 
