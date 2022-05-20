@@ -11,7 +11,12 @@ const HomePreview = createClass({
         h(
           "div",
           { className: "col-7" },
-          h("h1", {}, entry.getIn(["data", "title"]), h("span", {}, entry.getIn(["data", "heroTypedWord"])) ),
+          h(
+            "h1",
+            { className: "hero-title" },
+            entry.getIn(["data", "title"]),
+            h("span", {}, entry.getIn(["data", "heroTypedWord"]))
+          ),
           h("p", {}, entry.getIn(["data", "heroText"])),
 
           h(
@@ -295,7 +300,7 @@ const HomePreview = createClass({
             h("p", {}, entry.getIn(["data", "pricingText"]))
           )
         )
-      ),
+      )
 
       // h(
       //   "div",
