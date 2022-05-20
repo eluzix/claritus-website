@@ -16,6 +16,7 @@ collections:
         file: "content/_index.md"
         fields:
           - { label: "Title", name: "title", widget: "string" }
+          - { label: "Title typed word", name: "heroTypedWord", widget: "string" }
           - { label: "Publish Date", name: "date", widget: "datetime" }
           - { label: "Update Date", name: "lastmod", widget: "datetime" }
 

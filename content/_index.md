@@ -8,6 +8,8 @@ lastmod: 2022-05-16T06:30:01.000+00:00
 
 heroText: Claritus is the platform every investor needs to make decisions with clarity and confidence. Track, analyze, and be in full control of all of your assets and investments - all in one place!
 
+heroTypedWord: Simply
+
 heroImgFullHd: /images/home-intro-fullhd.png
 heroImgMobile: /images/home-intro-mob.png
 
