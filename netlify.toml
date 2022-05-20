@@ -2,6 +2,11 @@
 publish = "public"
 command = "npm install && hugo --gc --minify"
 
+[[headers]]
+    for = "/*"
+    [headers.values]
+        X-Frame-Options = "DENY"
+        
 #[[headers]]
 #    for = "/images/*"
 #    [headers.values]
