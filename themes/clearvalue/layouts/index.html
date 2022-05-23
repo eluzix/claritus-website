@@ -21,15 +21,16 @@
                 <h1 class="home-intro__title">
                     {{ .Title | safeHTML }}
                     <span class="typed-text">
-                        <span class="typed-text__filler">Simply</span>
-                        <span class="typed-text__content" data-typed="Simply"></span>
+                        <span class="typed-text__filler">{{ .Params.heroTypedWord }}</span>
+                        <span class="typed-text__content" data-typed="{{ .Params.heroTypedWord }}"></span>
                     </span>
                 </h1>
 
                 <p class="home-intro__text">{{ .Params.heroText | safeHTML }}</p>
 
                 <div class="home-intro__btn">
-                    <a href="https://app.claritus.io/on-boarding" title="Start Your 14 Days Free Trial" class="btn btn--primary"> Start Your 14 Days Free Trial </a>
+                    <a href="https://app.claritus.io/on-boarding" title="Start Your 14 Days Free Trial"
+                       class="btn btn--primary"> Start Your 14 Days Free Trial </a>
                 </div>
 
                 <p class="home-intro__caption">No credit card required</p>
@@ -69,9 +70,9 @@
         </div>
     </div>
 
-    <picture data-iesrc="/images/home-intro-fullhd.png" class="home-intro-picture lozad">
-        <source srcset="/images/home-intro-fullhd.png" media="(min-width: 744px)"/>
-        <source srcset="/images/home-intro-mob.png" media="(min-width: 300px)"/>
+    <picture data-iesrc="{{ .Params.heroImgFullHd }}" class="home-intro-picture lozad">
+        <source srcset="{{ .Params.heroImgFullHd }}" media="(min-width: 744px)"/>
+        <source srcset="{{ .Params.heroImgMobile }}" media="(min-width: 300px)"/>
     </picture>
 </section>
 
@@ -82,8 +83,8 @@
         <div class="financials-slider">
             {{ range .Params.financialInstitutes }}
             <figure class="financials-slider__item">
-                <img data-src="/images/financials/{{ . }}.png" alt="" class="lozad d-none d-xl-flex"/>
-                <img data-src="/images/financials/{{ . }}-tablet.png" alt="" class="lozad d-xl-none"/>
+                <img data-src="{{ .imageUrlDesk }}" alt="" class="lozad d-none d-xl-flex"/>
+                <img data-src="{{ .imageUrlTablet }}" alt="" class="lozad d-xl-none"/>
             </figure>
             {{ end }}
         </div>
@@ -98,16 +99,17 @@
 
                 <p class="assets__text">{{ .Params.assetsText }}</p>
 
-                <a href="https://app.claritus.io/on-boarding" title="Start Your 14 Days Free Trial" class="btn btn--primary"> Try Claritus for Free </a>
+                <a href="https://app.claritus.io/on-boarding" title="Start Your 14 Days Free Trial"
+                   class="btn btn--primary"> Try Claritus for Free </a>
             </div>
         </div>
     </div>
 
-    <picture data-iesrc="/images/assets-bg-fullhd.png" class="assets-picture lozad">
-        <source srcset="/images/assets-bg-fullhd.png" media="(min-width: 1400px)"/>
-        <source srcset="/images/assets-bg-desktop.png" media="(min-width: 1220px)"/>
-        <source srcset="/images/assets-bg-tablet.png" media="(min-width: 744px)"/>
-        <source srcset="/images/assets-bg-mob.png" media="(min-width: 300px)"/>
+    <picture data-iesrc="{{ .Params.assetsImgFullHd }}" class="assets-picture lozad">
+        <source srcset="{{ .Params.assetsImgFullHd }}" media="(min-width: 1400px)"/>
+        <source srcset="{{ .Params.assetsImgDesktop }}" media="(min-width: 1220px)"/>
+        <source srcset="{{ .Params.assetsImgTablet }}" media="(min-width: 744px)"/>
+        <source srcset="{{ .Params.assetsImgMob }}" media="(min-width: 300px)"/>
     </picture>
 </section>
 
@@ -128,10 +130,10 @@
         </div>
     </div>
 
-    <picture data-iesrc="/images/secure-bg-fullhd.svg" class="secure-picture lozad">
-        <source srcset="/images/secure-bg-fullhd.svg" media="(min-width: 1220px)"/>
-        <source srcset="/images/secure-bg-tablet.svg" media="(min-width: 744px)"/>
-        <source srcset="/images/secure-bg-mob.svg" media="(min-width: 300px)"/>
+    <picture data-iesrc="{{ .Params.secureImgFullHd }}" class="secure-picture lozad">
+        <source srcset="{{ .Params.secureImgFullHd }}" media="(min-width: 1220px)"/>
+        <source srcset="{{ .Params.secureImgTablet }}" media="(min-width: 744px)"/>
+        <source srcset="{{ .Params.secureImgMob }}" media="(min-width: 300px)"/>
     </picture>
 </section>
 
@@ -154,9 +156,9 @@
         </div>
     </div>
 
-    <picture data-iesrc="/images/institutions-fullhd.png" class="financial-cover-picture lozad">
-        <source srcset="/images/institutions-fullhd.png" media="(min-width: 744px)"/>
-        <source srcset="/images/institutions-mob.png" media="(min-width: 300px)"/>
+    <picture data-iesrc="{{ .Params.coverFinancialsImgFullHd }}" class="financial-cover-picture lozad">
+        <source srcset="{{ .Params.coverFinancialsImgFullHd }}" media="(min-width: 744px)"/>
+        <source srcset="{{ .Params.coverFinancialsImgMob }}" media="(min-width: 300px)"/>
     </picture>
 </section>
 
@@ -171,9 +173,9 @@
         </div>
     </div>
 
-    <picture data-iesrc="/images/all-assets-fullhd.png" class="benchmark-picture lozad">
-        <source srcset="/images/all-assets-fullhd.png" media="(min-width: 744px)"/>
-        <source srcset="/images/all-assets-mob.png" media="(min-width: 300px)"/>
+    <picture data-iesrc="{{ .Params.benchmarkImgFullHd }}" class="benchmark-picture lozad">
+        <source srcset="{{ .Params.benchmarkImgFullHd }}" media="(min-width: 744px)"/>
+        <source srcset="{{ .Params.benchmarkImgMob }}" media="(min-width: 300px)"/>
     </picture>
 </section>
 
@@ -219,8 +221,11 @@
 
             </div>
             <div class="history-video">
-                <video class="lozad" data-poster="https://d35c20tx62tmpd.cloudfront.net/website/videos/your-history-matters.jpg" width="100%" autoplay muted loop playsinline>
-                    <source data-src="https://d35c20tx62tmpd.cloudfront.net/website/videos/your-history-matters.mp4" type="video/mp4">
+                <video class="lozad"
+                       data-poster="{{ .Params.historyVideoPoster }}"
+                       width="100%" autoplay muted loop playsinline>
+                    <source data-src="{{ .Params.historyVideo }}"
+                            type="video/mp4">
                 </video>
             </div>
         </div>
@@ -279,7 +284,7 @@
                     <a href="https://app.claritus.io/on-boarding" title="Start Your 14 Days Free Trial"
                        class="btn btn--primary simple-pricing__btn">Try Claritus for Free</a>
 
-                    <a href="/pricing/" class="btn btn--secondary simple-pricing__btn"> 
+                    <a href="/pricing/" class="btn btn--secondary simple-pricing__btn">
                         <span class="btn__first-layer"></span>
                         <span class="btn__second-layer"></span>
                         <span class="btn__text">Learn more</span>
@@ -289,9 +294,9 @@
         </div>
     </div>
 
-    <picture data-iesrc="/images/pricing-fullhd.png" class="simple-pricing-picture lozad">
-        <source srcset="/images/pricing-fullhd.png" media="(min-width: 744px)"/>
-        <source srcset="/images/pricing-mob.png" media="(min-width: 300px)"/>
+    <picture data-iesrc="{{ .Params.pricingImgFullHd }}" class="simple-pricing-picture lozad">
+        <source srcset="{{ .Params.pricingImgFullHd }}" media="(min-width: 744px)"/>
+        <source srcset="{{ .Params.pricingImgMob }}" media="(min-width: 300px)"/>
     </picture>
 </section>
 

@@ -20,10 +20,10 @@
     </div>
 
     <picture class="security-intro-bg">
-        <source srcset="/images/security/security-intro-bg-desk-fullhd.svg" media="(min-width: 1400px)">
-        <source srcset="/images/security/security-intro-bg-desk-hd.svg" media="(min-width: 1200px)">
-        <source srcset="/images/security/security-intro-bg-tablet.svg" media="(min-width: 744px)">
-        <img src="/images/security/security-intro-bg-mob.svg" alt="Security Claritus">
+        <source srcset="{{ .Params.heroImgFullHd }}" media="(min-width: 1400px)">
+        <source srcset="{{ .Params.heroImgDesktop }}" media="(min-width: 1200px)">
+        <source srcset="{{ .Params.heroImgTablet }}" media="(min-width: 744px)">
+        <img src="{{ .Params.heroImgMob }}" alt="Security Claritus">
     </picture>
 </section>
 

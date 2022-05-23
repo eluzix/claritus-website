@@ -9,11 +9,15 @@ lastmod: 2022-05-16T06:30:01.000+00:00
 
 url: "/security"
 
+heroImgFullHd: /images/security/security-intro-bg-desk-fullhd.svg
+heroImgDesktop: /images/security/security-intro-bg-desk-hd.svg
+heroImgTablet: /images/security/security-intro-bg-tablet.svg
+heroImgMob: /images/security/security-intro-bg-mob.svg
+
+
 protectedTitle: Your information is protected.
 protectedText: We are fully committed to providing the highest level of security to our customers.
-protectedContent: <h3>Encryption</h3><p>All your information is encrypted with AES-256-GCM encryption while in transit and in rest for maximum security.</p>
-    <h3>Credentials</h3><p>No one have access to your credentials. We use Amazon AWS Cognito for authentication.</p>
-    <h3>Linking accounts</h3><p>We use Yodlee, one of the leading global financial data aggregators. Your credentials are kept with Yodlee and aren't visible to anyone at Claritus. Our access to your linked accounts is read-only, so we cannot take any action on your behalf.</p>
+protectedContent: <h3>Encryption</h3><p>All your information is encrypted with AES-256-GCM encryption while in transit and in rest for maximum security.</p> <h3>Credentials</h3><p>No one have access to your credentials. We use Amazon AWS Cognito for authentication.</p> <h3>Linking accounts</h3><p>We use Yodlee, one of the leading global financial data aggregators. Your credentials are kept with Yodlee and aren't visible to anyone at Claritus. Our access to your linked accounts is read-only, so we cannot take any action on your behalf.</p>
 protectedImg: /images/security/security-content-img-1.svg
 
 

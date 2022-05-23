@@ -1,8 +1,8 @@
 ---
 title: "Privacy Policy"
 date: 2020-04-27T09:30:01+03:00
+lastmod: 2020-12-04T06:30:01.000+00:00
 url: /privacy
-content_class: privacy
 type: privacy
 content_class: privacy
 header_class: white-header

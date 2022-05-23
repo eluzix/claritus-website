@@ -95,6 +95,7 @@ section.typical-section {
 
   a {
     color: $green-dark;
+    word-wrap: break-word;
 
     &.bold-link {
       font-weight: 700;

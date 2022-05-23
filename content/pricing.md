@@ -17,15 +17,15 @@ header_class: white-header
 monthlyPlanTitle: Monthly plan
 monthlyPlanPrice: 15
 monthlyPlanList: 
-- Automatic connections though Secured read-only APIs
-- Wealth Financial Dynamic Reporting
-- Universe of Investments, Assets, Liabilities
-- Financial Calculations
-- Personalized Monthly & weekly Digest Reports
-- Manual Investments, Assets, Liabilities Tracking
-- Tags
-- Documents Storage
-- Online personalized enrichment
+- listItem: Automatic connections though Secured read-only APIs
+- listItem: Wealth Financial Dynamic Reporting
+- listItem: Universe of Investments, Assets, Liabilities
+- listItem: Financial Calculations
+- listItem: Personalized Monthly & weekly Digest Reports
+- listItem: Manual Investments, Assets, Liabilities Tracking
+- listItem: Tags
+- listItem: Documents Storage
+- listItem: Online personalized enrichment
 
 
 ##Yearly 
@@ -34,15 +34,15 @@ yearlyPlanTitle: Annual plan
 oldYearlyPlanPrice: 180
 yearlyPlanPrice: 150
 yearlyPlanList:
-- Automatic connections though Secured read-only APIs
-- Wealth Financial Dynamic Reporting
-- Universe of Investments, Assets, Liabilities
-- Financial Calculations
-- Personalized Monthly & weekly Digest Reports
-- Manual Investments, Assets, Liabilities Tracking
-- Tags
-- Documents Storage
-- Online personalized enrichment
+- listItem: Automatic connections though Secured read-only APIs
+- listItem: Wealth Financial Dynamic Reporting
+- listItem: Universe of Investments, Assets, Liabilities
+- listItem: Financial Calculations
+- listItem: Personalized Monthly & weekly Digest Reports
+- listItem: Manual Investments, Assets, Liabilities Tracking
+- listItem: Tags
+- listItem: Documents Storage
+- listItem: Online personalized enrichment
 
 
 ##Faq 

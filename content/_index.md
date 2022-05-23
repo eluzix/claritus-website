@@ -8,7 +8,10 @@ lastmod: 2022-05-16T06:30:01.000+00:00
 
 heroText: Claritus is the platform every investor needs to make decisions with clarity and confidence. Track, analyze, and be in full control of all of your assets and investments - all in one place!
 
-heroImg: /images/section-hero.png
+heroTypedWord: Simply
+
+heroImgFullHd: /images/home-intro-fullhd.png
+heroImgMobile: /images/home-intro-mob.png
 
 homeOverview: 
 - icon: wallet-icon
@@ -25,24 +28,56 @@ financialsTitle: Trusted by over 17k financial institutions
 
 ##Institutes icons. IMPORTANT: if icon will change don't forget to update tablet version for it
 financialInstitutes:
-- financial-1
-- financial-2
-- financial-3
-- financial-4
-- financial-5
-- financial-6
-- financial-7
-- financial-8
-- financial-9
-- financial-10
-- financial-11
-- financial-12
-- financial-13
-- financial-14
-- financial-15
-- financial-16
-- financial-1
-- financial-2
+- imageUrlDesk: /images/financials/financial-1.png
+  imageUrlTablet: /images/financials/financial-1-tablet.png
+
+- imageUrlDesk: /images/financials/financial-2.png
+  imageUrlTablet: /images/financials/financial-2-tablet.png
+
+- imageUrlDesk: /images/financials/financial-3.png
+  imageUrlTablet: /images/financials/financial-3-tablet.png
+
+- imageUrlDesk: /images/financials/financial-4.png
+  imageUrlTablet: /images/financials/financial-4-tablet.png
+
+- imageUrlDesk: /images/financials/financial-5.png
+  imageUrlTablet: /images/financials/financial-5-tablet.png
+
+- imageUrlDesk: /images/financials/financial-6.png
+  imageUrlTablet: /images/financials/financial-6-tablet.png
+
+- imageUrlDesk: /images/financials/financial-7.png
+  imageUrlTablet: /images/financials/financial-7-tablet.png
+
+- imageUrlDesk: /images/financials/financial-8.png
+  imageUrlTablet: /images/financials/financial-8-tablet.png
+
+- imageUrlDesk: /images/financials/financial-9.png
+  imageUrlTablet: /images/financials/financial-9-tablet.png
+
+- imageUrlDesk: /images/financials/financial-10.png
+  imageUrlTablet: /images/financials/financial-10-tablet.png
+
+- imageUrlDesk: /images/financials/financial-11.png
+  imageUrlTablet: /images/financials/financial-11-tablet.png
+
+- imageUrlDesk: /images/financials/financial-12.png
+  imageUrlTablet: /images/financials/financial-12-tablet.png
+
+- imageUrlDesk: /images/financials/financial-13.png
+  imageUrlTablet: /images/financials/financial-13-tablet.png
+
+- imageUrlDesk: /images/financials/financial-14.png
+  imageUrlTablet: /images/financials/financial-14-tablet.png
+
+- imageUrlDesk: /images/financials/financial-15.png
+  imageUrlTablet: /images/financials/financial-15-tablet.png
+
+- imageUrlDesk: /images/financials/financial-16.png
+  imageUrlTablet: /images/financials/financial-16-tablet.png
+
+
+
 
 
 ##Assets 
@@ -51,6 +86,10 @@ assetsTitle: All Your Assets in One Place
 
 assetsText: Claritus helps you track ALL of your assets & investments in one place! See your holdings clearly and easily, without spreadsheets or needing a finance degree!
 
+assetsImgFullHd: /images/assets-bg-fullhd.png
+assetsImgDesktop: /images/assets-bg-desktop.png
+assetsImgTablet: /images/assets-bg-tablet.png
+assetsImgMob: /images/assets-bg-mob.png
 
 ##Private secure
 
@@ -58,6 +97,9 @@ secureTitle: Private & Secure
 
 secureText: We keep your privacy and security in mind at all times. Claritus is designed to meet the highest bank-grade security standards. With Claritus, all of your information is secure and encrypted at all times.
 
+secureImgFullHd: /images/secure-bg-fullhd.svg
+secureImgTablet: /images/secure-bg-tablet.svg
+secureImgMob: /images/secure-bg-mob.svg
 
 ##Cover financials
 
@@ -65,12 +107,18 @@ coverFinancialsTitle: Covers More Than 17,000 Financial Institutions
 
 coverFinancialsText: Claritus supports more than 17,000 global financial institutions, brokerages, and other financial organizations to provide automatic and up-to-date data.
 
+coverFinancialsImgFullHd: /images/institutions-fullhd.png
+coverFinancialsImgMob: /images/institutions-mob.png
+
 
 ##Benchmark
 
 benchmarkTitle: Clearing the Investment Fog
 
 benchmarkText: Investors live in a constant fog today by not having visibility of their entire wealth. Claritus combines past insights and today's portfolio, so you always know that you know. Claritus is the platform every investor needs to make decisions with clarity and confidence.
+
+benchmarkImgFullHd: /images/all-assets-fullhd.png
+benchmarkImgMob: /images/all-assets-mob.png
 
 
 ##Feedbacks
@@ -112,6 +160,9 @@ historyTitle: Your History Matters
 historyText: With Claritus, you can measure your portfolio's performance over time easily and accurately. Use Claritus' dynamic analytics and portfolio cross-asset comparisons to make intelligent and informed financial decisions.
   <br/></br>Your holding history has huge value
 
+historyVideoPoster: https://d35c20tx62tmpd.cloudfront.net/website/videos/your-history-matters.jpg
+historyVideo: https://d35c20tx62tmpd.cloudfront.net/website/videos/your-history-matters.mp4
+
 
 ##FAQ
 faqTitle: Frequently Asked Questions
@@ -143,6 +194,9 @@ faqSecondColumn:
 pricingTitle: Transparent & Simple Pricing
 
 pricingText: Claritus offers our customers an exceptional solution for a fair, and low subscription cost. There will never be hidden fees or costs. We believe in being transparent and up front with our customers at all times.<br/><br/><b>Try Claritus free for 14 days - No credit card required</b>
+
+pricingImgFullHd: /images/pricing-fullhd.png
+pricingImgMob: /images/pricing-mob.png
 
 ---
 

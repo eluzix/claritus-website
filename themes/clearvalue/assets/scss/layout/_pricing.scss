@@ -91,6 +91,10 @@ section.pricing-section {
     position: relative;
     transition: all 0.5s ease;
 
+    &:hover {
+      box-shadow: 0 3px 16px rgba(5, 13, 66, 0.08);
+    }
+
     &:before {
       content: "";
       position: absolute;

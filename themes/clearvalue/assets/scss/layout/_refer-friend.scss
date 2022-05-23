@@ -34,12 +34,17 @@ section.refer-friend-section {
 }
 
 .refer-friend__title {
-  text-align: center;
   font-weight: 700;
-  font-size: rem(50);
+  font-size: rem(32);
   line-height: 130%;
   color: $dark-9;
   margin-bottom: rem(32);
+
+  @media (min-width: map_get($grid-breakpoints, md)) {
+    font-size: rem(50);
+    text-align: center;
+    margin-bottom: rem(48);
+  }
 }
 
 .refer-friend__content {

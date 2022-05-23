@@ -63,8 +63,8 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-7 col-xl-5">
-                    <h2 class="submit-message-title">Thank you!</h2>
-                    <p class="submit-message-text">Your email has been successfully sent! </p>
+                    <h2 class="submit-message-title">{{ .Params.successfulTitle }}</h2>
+                    <p class="submit-message-text">{{ .Params.successfulMessage }}</p>
                     <a href="/" class="btn btn--primary btn--small w-100">Go back to home</a>
                 </div>
             </div>

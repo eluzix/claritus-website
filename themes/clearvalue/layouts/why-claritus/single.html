@@ -7,7 +7,7 @@
 
 <section class="why-intro-section">
     <div class="container">
-        <div class="row">
+        <div class="row align-center">
             <div class="col-lg-6 col-xl-5">
                 <h1 class="why-intro-title">{{ .Title }}</h1>
                 <p class="why-intro-subtitle">
@@ -24,7 +24,7 @@
         </div>
     </div>
 
-    <img data-src="/images/why-images/why-intro-img.png" alt="" class="why-intro-img lozad"/>
+    <img data-src="{{ .Params.whyHeroImg }}" alt="" class="why-intro-img lozad"/>
 </section>
 
 <section class="why-content-section">
@@ -43,11 +43,15 @@
         </div>
 
         <div class="why-content">
-            {{ .Content }}
+            <ul class="why-content-list">
+                {{ range .Params.whyExcellenceMainList }}
+                <li class="why-content-list__item">{{ .listItem }}</li>
+                {{ end }}
+            </ul>
         </div>
 
         <figure class="why-content-img">
-            <img data-src="/images/why-images/why-graph-img.png" alt="" class="lozad"/>
+            <img data-src="{{ .Params.whyExcellenceImg }}" alt="" class="lozad"/>
         </figure>
     </div>
 </section>
