@@ -60,10 +60,6 @@
     <link rel="preload" as="image" href="/images/secure-bg-mob.svg">
     {{ end }}
 
-    {{ if .Params.is_404 }}
-    <link rel="preload" as="image" href="/images/404.png">
-    {{ end }}
-
     {{ $sass := resources.Get "scss/app.scss" }}
     {{ $style := $sass | resources.ToCSS | resources.Minify | fingerprint }}
 
@@ -81,7 +77,6 @@
     {{ $mainJs := resources.Get "js/app.js" }}
     {{ $js := $mainJs | resources.Minify | fingerprint }}
 
-    {{ if (not .Params.is_404) }}
     <script>
         function initLazyLoad() {
             const script = document.createElement("script");
@@ -127,7 +122,6 @@
         }
         initLazyLoad()
     </script>
-    {{ end }}
 
     <script src="{{ $js.Permalink }}"></script>
 
