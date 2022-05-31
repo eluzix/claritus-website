@@ -3,6 +3,10 @@ function initNewsletter() {
     ".footer-subscribe button.footer-subscribe__btn"
   );
 
+  if (!button) {
+    return;
+  }
+
   button.onclick = (e) => {
     e.preventDefault();
     let email = document.getElementById("footer-newsletter-email");
@@ -203,11 +207,11 @@ function initSlider() {
 
 // Init lazy load
 function initMissingLazyLoad() {
-  if (!lozad) {
+  if (!window.lozad) {
     return;
   }
 
-  const observer = lozad();
+  const observer = window.lozad();
   observer.observe();
 
   const lazyImages = document.querySelectorAll(
@@ -494,12 +498,18 @@ function initScrollTopHandler() {
 
 function initInstitutionsAnimation() {
   const selector = '.financials-slider';
+  const slider = document.querySelector(selector);
+
+  if (!slider) {
+    return;
+  }
+
   const interval = 5;
   const delay = 0.85;
   let step = 1;
-  
   let groupBy = window.innerWidth < 744 ? 3 : 6;
-  const count = document.querySelector(selector).childElementCount;
+
+  const count = slider.childElementCount;
   
   function hideAll(delay) {
     for (let i = 1; i <= count; i++) {
