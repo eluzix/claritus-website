@@ -17,6 +17,7 @@
     display: block;
     width: 100%;
     max-width: rem(778);
+    transform: translateX(4vw);
 
     @media (min-width: map_get($grid-breakpoints, md)) {
         transform: translateX(26px);
