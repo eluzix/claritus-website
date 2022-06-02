@@ -1,0 +1,21 @@
+{{ define "content" }}
+
+<header class="header-section header-section--white">
+    {{ partial "header.html" }}
+
+    {{ partial "header-nav-menu.html" }}
+</header>
+
+<section class="not-found-section">
+    <img src="/images/404.png" class="not-found-image">
+
+    <div class="not-found">
+        <h1 class="not-found__title">{{ .Params.title }}</h1>
+
+        <p class="not-found__subtitle">{{ .Params.subtitle }}</p>
+
+        <a href="/" class="btn btn--primary not-found__button">Go Back Home</a>
+    </div>
+</section>
+
+{{ end }}

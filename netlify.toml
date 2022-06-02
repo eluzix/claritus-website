@@ -101,3 +101,8 @@ from = "https://www.clearvalue.io/*"
 to = "https://claritus.io/:splat"
 status = 301
 force = true
+
+[[redirects]]
+from = "/*"
+to = "/404/"
+status = 404
