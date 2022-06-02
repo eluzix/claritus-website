@@ -306,14 +306,12 @@
 
 {{ define "StructData" }}
 <script type="application/ld+json">
-    {
+    [{
         "@context": "https://schema.org",
         "@type": "Organization",
         "url": "https://claritus.io",
         "logo": "https://claritus.io/images/logo-black.svg"
-    }
-</script>
-<script type="application/ld+json">
+    },
     {
         "@context":"http://schema.org/",
         "@type":"FAQPage",
@@ -342,5 +340,6 @@
             {{ end }}
         ]
     }
+    ]
 </script>
 {{ end }}
