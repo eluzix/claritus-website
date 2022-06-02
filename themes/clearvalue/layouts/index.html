@@ -313,4 +313,34 @@
         "logo": "https://claritus.io/images/logo-black.svg"
     }
 </script>
+<script type="application/ld+json">
+    {
+        "@context":"http://schema.org/",
+        "@type":"FAQPage",
+        "name": "{{ .Params.metaTitle }}",
+        "description": "Claritus FAQ",
+        "mainEntity": [
+            {{ range .Params.faqFirstColumn }}
+            {
+                "@type":"Question",
+                "name":"{{ .question }}",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "{{ .answer | safeHTML}}"
+                }
+            },
+            {{ end }}
+            {{ range .Params.faqSecondColumn }}
+            {
+                "@type":"Question",
+                "name":"{{ .question }}",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "{{ .answer | safeHTML}}"
+                }
+            },
+            {{ end }}
+        ]
+    }
+</script>
 {{ end }}
