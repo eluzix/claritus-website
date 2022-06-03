@@ -507,7 +507,7 @@ function initInstitutionsAnimation() {
   const interval = 5;
   const delay = 0.85;
   let step = 1;
-  let groupBy = window.innerWidth < 744 ? 3 : 6;
+  let groupBy = window.innerWidth < 744 ? 2 : 4;
 
   const count = slider.childElementCount;
   

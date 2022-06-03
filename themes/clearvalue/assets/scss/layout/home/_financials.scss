@@ -38,7 +38,7 @@ section.financials-institutes-section {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 33.333%;
+    width: 50%;
     min-height: 100%;
     padding: 0 rem(16);
     animation: fadeIn 0.85s;
@@ -49,7 +49,7 @@ section.financials-institutes-section {
     }
 
     @media (min-width: map_get($grid-breakpoints, md)) {
-      width: 16.666%;
+      width: 25%;
       padding: 0 rem(20);
     }
 
