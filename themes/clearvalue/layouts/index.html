@@ -81,8 +81,9 @@
     <div class="financials-institutes">
         {{ range .Params.financialInstitutes }}
         <figure class="financials-institutes__item">
-            <img data-src="{{ .imageUrlDesk }}" alt="" class="lozad d-none d-xl-flex"/>
-            <img data-src="{{ .imageUrlTablet }}" alt="" class="lozad d-xl-none"/>
+            <img data-src="{{ .imageUrlDesk }}" alt="" class="lozad financials-institutes__image financials-institutes__image--desktop"/>
+            <img data-src="{{ .imageUrlTablet }}" alt="" class="lozad financials-institutes__image financials-institutes__image--tablet"/>
+            <img data-src="{{ .imageUrlMobile }}" alt="" class="lozad financials-institutes__image financials-institutes__image--mobile"/>
         </figure>
         {{ end }}
     </div>

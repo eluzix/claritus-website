@@ -29,53 +29,65 @@ section.financials-institutes-section {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  min-height: rem(48);
+  margin-top: rem(-24);
+  padding: 0 rem(16);
+
+  @media (min-width: map_get($grid-breakpoints, md)) {
+    justify-content: center;
+  }
+
+  @media (min-width: map_get($grid-breakpoints, xl)) {
+    min-height: rem(64);
+  }
 }
 
-// .financials-slider {
-//   display: flex;
-//   width: 100%;
-//   max-width: rem(1190);
-//   min-height: rem(48);
-//   margin: 0 auto;
-//   overflow: hidden;
+.financials-institutes__item {
+  flex-grow: 1;
+  margin-top: rem(24);
 
-//   &__item {
-//     flex-shrink: 0;
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     width: 50%;
-//     min-height: 100%;
-//     padding: 0 rem(16);
-//     animation: fadeIn 0.85s;
-
-//     &.is-hidden {
-//       opacity: 0;
-//       transition: opacity 0.85s linear;
-//     }
-
-//     @media (min-width: map_get($grid-breakpoints, md)) {
-//       width: 25%;
-//       padding: 0 rem(20);
-//     }
-
-//     @media (min-width: map_get($grid-breakpoints, xl)) {
-//       padding: 0 rem(35);
-//     }
-
-//     img {
-//       width: auto;
-//       max-width: 100%;
-//     }
-//   }
-// }
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
+  &:not(:last-child) {
+    margin-right: rem(24);
   }
-  100% {
-    opacity: 1;
+
+  @media (min-width: map_get($grid-breakpoints, md)) {
+    flex-grow: 0;
+  }
+
+  @media (min-width: map_get($grid-breakpoints, xl)) {
+    &:not(:last-child) {
+      margin-right: rem(64);
+    }
+  }
+}
+
+.financials-institutes__image {
+  &--desktop {
+    display: none;
+
+    @media (min-width: map_get($grid-breakpoints, xl)) {
+      display: block;
+    }
+  }
+
+  &--tablet {
+    display: none;
+
+    @media (min-width: map_get($grid-breakpoints, md)) {
+      display: block;
+    }
+
+    @media (min-width: map_get($grid-breakpoints, xl)) {
+      display: none;
+    }
+  }
+
+  &--mobile {
+    display: block;
+
+    @media (min-width: map_get($grid-breakpoints, md)) {
+      display: none;
+    }
   }
 }
