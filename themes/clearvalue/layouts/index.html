@@ -79,11 +79,11 @@
     <h2 class="financials-title">{{ .Params.financialsTitle }}</h2>
 
     <div class="financials-institutes">
-        {{ range .Params.financialInstitutes }}
+        {{ range $index, $element := .Params.financialInstitutes }}
         <figure class="financials-institutes__item">
-            <img data-src="{{ .imageUrlDesk }}" alt="" class="lozad financials-institutes__image financials-institutes__image--desktop"/>
-            <img data-src="{{ .imageUrlTablet }}" alt="" class="lozad financials-institutes__image financials-institutes__image--tablet"/>
-            <img data-src="{{ .imageUrlMobile }}" alt="" class="lozad financials-institutes__image financials-institutes__image--mobile"/>
+            <img data-src="{{ .imageUrlDesk }}" alt="" class="lozad financials-institutes__image financials-institutes__image--desktop financials-institutes__image--desktop-{{$index}}"/>
+            <img data-src="{{ .imageUrlTablet }}" alt="" class="lozad financials-institutes__image financials-institutes__image--tablet financials-institutes__image--tablet-{{$index}}"/>
+            <img data-src="{{ .imageUrlMobile }}" alt="" class="lozad financials-institutes__image financials-institutes__image--mobile financials-institutes__image--mobile-{{$index}}"/>
         </figure>
         {{ end }}
     </div>

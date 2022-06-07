@@ -45,6 +45,7 @@ section.financials-institutes-section {
 
 .financials-institutes__item {
   flex-grow: 1;
+  flex-shrink: 0;
   margin-top: rem(24);
 
   &:not(:last-child) {
@@ -69,6 +70,22 @@ section.financials-institutes-section {
     @media (min-width: map_get($grid-breakpoints, xl)) {
       display: block;
     }
+
+    &-0 {
+      width: rem(109);
+    }
+
+    &-1 {
+      width: rem(151);
+    }
+
+    &-2 {
+      width: rem(163);
+    }
+
+    &-3 {
+      width: rem(142);
+    }
   }
 
   &--tablet {
@@ -81,6 +98,22 @@ section.financials-institutes-section {
     @media (min-width: map_get($grid-breakpoints, xl)) {
       display: none;
     }
+
+    &-0 {
+      width: rem(90);
+    }
+
+    &-1 {
+      width: rem(141);
+    }
+
+    &-2 {
+      width: rem(145);
+    }
+
+    &-3 {
+      width: rem(104);
+    }
   }
 
   &--mobile {
@@ -88,6 +121,22 @@ section.financials-institutes-section {
 
     @media (min-width: map_get($grid-breakpoints, md)) {
       display: none;
+    }
+
+    &-0 {
+      width: rem(103);
+    }
+
+    &-1 {
+      width: rem(138);
+    }
+
+    &-2 {
+      width: rem(131);
+    }
+
+    &-3 {
+      width: rem(144);
     }
   }
 }
