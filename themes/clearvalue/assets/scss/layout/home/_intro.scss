@@ -243,46 +243,6 @@ section.home-intro-section {
 }
 
 .typed-text {
-  position: relative;
-  display: inline-block;
-
-  & > span {
-    display:inline-block;
-    -webkit-transform:skewX(-10deg);
-    transform: skewX(-10deg);
-  }
-}
-
-.typed-text__filler {
-  color: transparent;
-}
-
-.typed-text__content {
-  position: absolute;
-  top: 0;
-  left: 0;
   color: $green-dark;
-
-  &:after {
-    display: block;
-    position: absolute;
-    content: "";
-    top: 0;
-    right: rem(-8);
-    height: 100%;
-    width: 2px;
-    background-color: $green-dark;
-    -webkit-transform:skewX(10deg);
-    transform: skewX(10deg);
-    //animation: flashing 1s linear infinite;
-  }
+  font-style: italic;
 }
-
-//@keyframes flashing {
-//  0% {
-//    opacity: 1;
-//  }
-//  100% {
-//    opacity: 0;
-//  }
-//}

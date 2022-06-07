@@ -24,61 +24,25 @@ homeOverview:
   popupText: We know your privacy and security are of the utmost importance to you, which is why we are committed to the highest standards of data security and encryption. With Claritus, you know your data is for your eyes only.
 
 ##Financials institutes
-financialsTitle: Trusted by over 17k financial institutions
+financialsTitle: Featured in
 
 ##Institutes icons. IMPORTANT: if icon will change don't forget to update tablet version for it
 financialInstitutes:
 - imageUrlDesk: /images/financials/financial-1.png
   imageUrlTablet: /images/financials/financial-1-tablet.png
+  imageUrlMobile: /images/financials/financial-1-mob.png
 
 - imageUrlDesk: /images/financials/financial-2.png
   imageUrlTablet: /images/financials/financial-2-tablet.png
+  imageUrlMobile: /images/financials/financial-2-mob.png
 
 - imageUrlDesk: /images/financials/financial-3.png
   imageUrlTablet: /images/financials/financial-3-tablet.png
+  imageUrlMobile: /images/financials/financial-3-mob.png
 
 - imageUrlDesk: /images/financials/financial-4.png
   imageUrlTablet: /images/financials/financial-4-tablet.png
-
-- imageUrlDesk: /images/financials/financial-5.png
-  imageUrlTablet: /images/financials/financial-5-tablet.png
-
-- imageUrlDesk: /images/financials/financial-6.png
-  imageUrlTablet: /images/financials/financial-6-tablet.png
-
-- imageUrlDesk: /images/financials/financial-7.png
-  imageUrlTablet: /images/financials/financial-7-tablet.png
-
-- imageUrlDesk: /images/financials/financial-8.png
-  imageUrlTablet: /images/financials/financial-8-tablet.png
-
-- imageUrlDesk: /images/financials/financial-9.png
-  imageUrlTablet: /images/financials/financial-9-tablet.png
-
-- imageUrlDesk: /images/financials/financial-10.png
-  imageUrlTablet: /images/financials/financial-10-tablet.png
-
-- imageUrlDesk: /images/financials/financial-11.png
-  imageUrlTablet: /images/financials/financial-11-tablet.png
-
-- imageUrlDesk: /images/financials/financial-12.png
-  imageUrlTablet: /images/financials/financial-12-tablet.png
-
-- imageUrlDesk: /images/financials/financial-13.png
-  imageUrlTablet: /images/financials/financial-13-tablet.png
-
-- imageUrlDesk: /images/financials/financial-14.png
-  imageUrlTablet: /images/financials/financial-14-tablet.png
-
-- imageUrlDesk: /images/financials/financial-15.png
-  imageUrlTablet: /images/financials/financial-15-tablet.png
-
-- imageUrlDesk: /images/financials/financial-16.png
-  imageUrlTablet: /images/financials/financial-16-tablet.png
-
-
-
-
+  imageUrlMobile: /images/financials/financial-4-mob.png
 
 ##Assets 
 

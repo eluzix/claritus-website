@@ -21,8 +21,7 @@
                 <h1 class="home-intro__title">
                     {{ .Title | safeHTML }}
                     <span class="typed-text">
-                        <span class="typed-text__filler">{{ .Params.heroTypedWord }}</span>
-                        <span class="typed-text__content" data-typed="{{ .Params.heroTypedWord }}"></span>
+                        {{ .Params.heroTypedWord }}
                     </span>
                 </h1>
 
@@ -79,15 +78,14 @@
 <section class="financials-institutes-section">
     <h2 class="financials-title">{{ .Params.financialsTitle }}</h2>
 
-    <div class="financials-slider-wrap">
-        <div class="financials-slider">
-            {{ range .Params.financialInstitutes }}
-            <figure class="financials-slider__item">
-                <img data-src="{{ .imageUrlDesk }}" alt="" class="lozad d-none d-xl-flex"/>
-                <img data-src="{{ .imageUrlTablet }}" alt="" class="lozad d-xl-none"/>
-            </figure>
-            {{ end }}
-        </div>
+    <div class="financials-institutes">
+        {{ range .Params.financialInstitutes }}
+        <figure class="financials-institutes__item">
+            <img data-src="{{ .imageUrlDesk }}" alt="" class="lozad financials-institutes__image financials-institutes__image--desktop"/>
+            <img data-src="{{ .imageUrlTablet }}" alt="" class="lozad financials-institutes__image financials-institutes__image--tablet"/>
+            <img data-src="{{ .imageUrlMobile }}" alt="" class="lozad financials-institutes__image financials-institutes__image--mobile"/>
+        </figure>
+        {{ end }}
     </div>
 </section>
 

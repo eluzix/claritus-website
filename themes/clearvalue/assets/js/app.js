@@ -430,48 +430,6 @@ function validateEmail(mail) {
   );
 }
 
-// Init typed text
-function initTypedText() {
-  const element = document.querySelector(".typed-text__content");
-
-  if (!element) return;
-
-  typeText(element);
-
-  function typeText(element) {
-    let txt = element.dataset.typed;
-    let iteratorIncrement = 0;
-    let iteratorDecrement = txt.length;
-    let speed = 125;
-
-    typeWriterIncrement();
-
-    function typeWriterIncrement() {
-      if (iteratorIncrement < txt.length) {
-        element.innerHTML += txt.charAt(iteratorIncrement);
-        iteratorIncrement++;
-        setTimeout(typeWriterIncrement, speed);
-      } else {
-        setTimeout(() => {
-          iteratorDecrement = txt.length;
-          typeWriterDecrement();
-        }, 3000);
-      }
-    }
-
-    function typeWriterDecrement() {
-      if (iteratorDecrement >= 0) {
-        element.innerHTML = txt.slice(0, iteratorDecrement);
-        iteratorDecrement--;
-        setTimeout(typeWriterDecrement, speed * 0.5);
-      } else {
-        iteratorIncrement = 0;
-        typeWriterIncrement();
-      }
-    }
-  }
-}
-
 // Init header active link
 function initHeaderActiveLink() {
   const rout = window.location.pathname.split("/")[1];
@@ -494,61 +452,6 @@ function initScrollTopHandler() {
   anchor.addEventListener("click", () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
-}
-
-function initInstitutionsAnimation() {
-  const selector = '.financials-slider';
-  const slider = document.querySelector(selector);
-
-  if (!slider) {
-    return;
-  }
-
-  const interval = 5;
-  const delay = 0.85;
-  let step = 1;
-  let groupBy = window.innerWidth < 744 ? 3 : 6;
-
-  const count = slider.childElementCount;
-  
-  function hideAll(delay) {
-    for (let i = 1; i <= count; i++) {
-      let slide = document.querySelector(selector).children[i - 1];
-      slide.classList.add('is-hidden');
-      setTimeout(() => {
-        slide.style.display = 'none';
-      }, (1000 * delay))
-    }
-  }
-  
-  function show(step, groupBy, delay = 0) {
-    hideAll(delay);
-
-    const start = (step - 1) * groupBy
-    const end = step * groupBy
-
-    setTimeout(() => {
-      for (let i = start; i < end; i++) {
-        let slide = document.querySelector(selector).children[i];
-        slide.classList.remove('is-hidden');
-        slide.style.display = 'flex';
-      }
-    }, (1000 * delay))
-  }
-  
-  show(step, groupBy);
-  
-  setInterval(function auto() {
-    groupBy = window.innerWidth < 744 ? 3 : 6;
-
-    if (step >= Math.floor(count / groupBy)) {
-      step = 1;
-    } else {
-      step++;
-    }
-
-    show(step, groupBy, delay);
-  }, (1000 * interval));
 }
 
 // Trigering functions
@@ -580,9 +483,6 @@ window.addEventListener("load", function (event) {
   // Set active link
   initHeaderActiveLink();
 
-  // Typed text
-  initTypedText();
-
   //cookies
   try {
     utmCookie();
@@ -592,6 +492,4 @@ window.addEventListener("load", function (event) {
 
   // newsletter
   initNewsletter();
-
-  initInstitutionsAnimation();
 });
