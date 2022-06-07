@@ -430,48 +430,6 @@ function validateEmail(mail) {
   );
 }
 
-// Init typed text
-function initTypedText() {
-  const element = document.querySelector(".typed-text__content");
-
-  if (!element) return;
-
-  typeText(element);
-
-  function typeText(element) {
-    let txt = element.dataset.typed;
-    let iteratorIncrement = 0;
-    let iteratorDecrement = txt.length;
-    let speed = 125;
-
-    typeWriterIncrement();
-
-    function typeWriterIncrement() {
-      if (iteratorIncrement < txt.length) {
-        element.innerHTML += txt.charAt(iteratorIncrement);
-        iteratorIncrement++;
-        setTimeout(typeWriterIncrement, speed);
-      } else {
-        setTimeout(() => {
-          iteratorDecrement = txt.length;
-          typeWriterDecrement();
-        }, 3000);
-      }
-    }
-
-    function typeWriterDecrement() {
-      if (iteratorDecrement >= 0) {
-        element.innerHTML = txt.slice(0, iteratorDecrement);
-        iteratorDecrement--;
-        setTimeout(typeWriterDecrement, speed * 0.5);
-      } else {
-        iteratorIncrement = 0;
-        typeWriterIncrement();
-      }
-    }
-  }
-}
-
 // Init header active link
 function initHeaderActiveLink() {
   const rout = window.location.pathname.split("/")[1];
@@ -579,9 +537,6 @@ window.addEventListener("load", function (event) {
 
   // Set active link
   initHeaderActiveLink();
-
-  // Typed text
-  initTypedText();
 
   //cookies
   try {
