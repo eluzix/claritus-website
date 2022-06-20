@@ -328,8 +328,7 @@ function initContactFormSubmit() {
         .then(function (token) {
           const submittedForm = document.querySelector(".contact-form");
 
-          let url =
-            "https://nkm2iod3hf.execute-api.us-east-1.amazonaws.com/prod/contact-us";
+          let url = "https://6sdobm19id.execute-api.us-east-1.amazonaws.com/contact-us";
 
           // let url = "https://jsonplaceholder.typicode.com/posts";
 
