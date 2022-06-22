@@ -73,6 +73,16 @@ section.business-intro-section {
     }
 }
 
+.business-intro__btn {
+    font-size: rem(14);
+    line-height: rem(18);
+    padding: rem(11) rem(32);
+
+    @media (min-width: map_get($grid-breakpoints, xl)) {
+        padding: rem(19) rem(32);
+    }
+}
+
 .business-intro-picture {
     img {
         display: block;
@@ -447,7 +457,7 @@ section.request-demo-section {
 
         @media (min-width: map_get($grid-breakpoints, xxl)) {
             max-width: rem(1172);
-            top: rem(-14);
+            top: rem(-8);
             left: 50%;
             transform: translateX(-124px);
         }
