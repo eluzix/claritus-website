@@ -60,6 +60,14 @@
     <link rel="preload" as="image" href="/images/secure-bg-mob.svg">
     {{ end }}
 
+    {{ if .Params.is_advisors }}
+    <link rel="preload" as="image" href="/images/business-intro-bg.png">
+    <link rel="preload" as="image" href="/images/business-intro-fullhd.png">
+    <link rel="preload" as="image" href="/images/business-intro-tablet.png">
+    <link rel="preload" as="image" href="/images/experience-fullhd.png">
+    <link rel="preload" as="image" href="/images/experience-tablet.png">
+    {{ end }}
+
     {{ $sass := resources.Get "scss/app.scss" }}
     {{ $style := $sass | resources.ToCSS | resources.Minify | fingerprint }}
 
