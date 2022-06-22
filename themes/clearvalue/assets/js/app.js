@@ -537,6 +537,26 @@ function initCustomSelects() {
   document.addEventListener("click", closeAllSelect);
 }
 
+function initRequestDemoLink() {
+  const link = document.getElementById('request-demo-link');
+
+  if (!link) {
+    return;
+  }
+
+  link.addEventListener("click", (event) => {
+    event.preventDefault();
+
+    const form = document.getElementById('request-demo-form');
+    
+    if (!form) {
+      return;
+    }
+
+    form.querySelector('input').focus();
+  });
+}
+
 // Trigering functions
 window.addEventListener("load", function (event) {
   // header
@@ -577,4 +597,6 @@ window.addEventListener("load", function (event) {
   initNewsletter();
 
   initCustomSelects();
+
+  initRequestDemoLink();
 });
