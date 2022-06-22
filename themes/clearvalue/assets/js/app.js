@@ -309,7 +309,9 @@ function initContactFormSubmit() {
     form.onsubmit = function (e) {
       e.preventDefault();
 
-      if (!validateForm()) return;
+      if (!validateContactForm()) {
+        return;
+      }
 
       submitContactForm();
     };
@@ -402,7 +404,7 @@ function initContactFormSubmit() {
     });
   }
 
-  function validateForm() {
+  function validateContactForm() {
     let isValidForm = true;
 
     const fields = form.querySelectorAll(".field__input");
@@ -557,6 +559,63 @@ function initRequestDemoLink() {
   });
 }
 
+function initDemoFormSubmit() {
+  const form = document.getElementById("request-demo-form");
+
+  if (form) {
+    form.onsubmit = function (e) {
+      e.preventDefault();
+
+      if (!validateDemoForm()) {
+        return;
+      }
+
+      submitDemoForm();
+    };
+  }
+
+  function submitDemoForm() {
+    const submitBtn = form.querySelector("button[type=submit]");
+    submitBtn.classList.add("btn--loading");
+    submitBtn.disabled = true;
+
+    let data = {
+      name: form.querySelector("[name=name]").value,
+      email: form.querySelector("[name=email]").value,
+      website: form.querySelector("[name=website]").value,
+      userType: form.querySelector("[name=user-type]").selectedIndex,
+      portfolios: form.querySelector("[name=portfolios]").value,
+    };
+
+    console.log('SUBMIT: ', data)
+
+    setTimeout(() => {
+      submitBtn.classList.remove("btn--loading");
+      submitBtn.disabled = false;
+    }, 3000)
+  }
+
+  function validateDemoForm() {
+    let isValidForm = true;
+
+    const fields = form.querySelectorAll(".field__input");
+
+    fields.forEach((input) => {
+      if (
+        !input.value ||
+        (input.type === "email" && !validateEmail(input.value))
+      ) {
+        isValidForm = false;
+        input.closest(".field").classList.add("field--error");
+      } else {
+        input.closest(".field").classList.remove("field--error");
+      }
+    });
+
+    return isValidForm;
+  }
+}
+
 // Trigering functions
 window.addEventListener("load", function (event) {
   // header
@@ -599,4 +658,6 @@ window.addEventListener("load", function (event) {
   initCustomSelects();
 
   initRequestDemoLink();
+
+  initDemoFormSubmit();
 });
