@@ -4,16 +4,16 @@ type: claritus-for-advisors
 ## metaTitle: Track, analyze, and be in complete control of all of your assets and investments - all in one place!
 ## description: Claritus gives you a complete overview of your money and investments, offering accurate insight and assessments
 
-title: Make your work <span class="is-green">easy</span>, your clients will thank you
+title: Make your work <span class="is-green">easy</span>, <br/> your clients will thank you
 heroText: Claritus for Advisor - turnkey, integrated and unified low-cost solution.
 
 heroImgFullHd: /images/business-intro-fullhd.png
-heroImgMobile: /images/business-intro-mob.png
+heroImgTablet: /images/business-intro-tablet.png
 
-##Financials institutes
+## Financials institutes
 financialsTitle: Featured in
 
-##Institutes icons. IMPORTANT: if icon will change don't forget to update tablet version for it
+## Institutes icons. IMPORTANT: if icon will change don't forget to update tablet version for it
 financialInstitutes:
 - imageUrlDesk: /images/financials/financial-1.png
   imageUrlTablet: /images/financials/financial-1-tablet.png
@@ -40,13 +40,13 @@ experienceText: Create a modern client experience that is tailored to your brand
 experienceAfter: Schedule a demo today to learn more about Claritus for Advisor
 
 experienceImgFullHd: /images/experience-fullhd.png
-experienceImgMob: /images/experience-mob.png
+experienceImgTablet: /images/experience-tablet.png
 
 ## Request a demo
 
 requestDemoTitle: Request a Demo
 
 requestDemoImgFullHd: /images/request-demo-fullhd.png
-requestDemoImgMob: /images/request-demo-mob.png
+requestDemoImgTablet: /images/request-demo-tablet.png
 ---
 

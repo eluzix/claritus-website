@@ -27,7 +27,16 @@
                     <a href="#" title="Request a Demo" class="btn btn--primary business-intro__btn">Request a Demo</a>
                 </div>
             </div>
+        </div>
+    </div>
 
+    <picture data-iesrc="{{ .Params.heroImgFullHd }}" class="business-intro-picture lozad">
+        <source srcset="{{ .Params.heroImgFullHd }}" media="(min-width: 1152px)"/>
+        <source srcset="{{ .Params.heroImgTablet }}" media="(min-width: 300px)"/>
+    </picture>
+
+    <div class="container">
+        <div class="row no-gutters">
             <div class="business-institutes">
                 <h2 class="business-institutes__title">{{ .Params.financialsTitle }}</h2>
             
@@ -43,11 +52,6 @@
             </div>
         </div>
     </div>
-
-    <picture data-iesrc="{{ .Params.heroImgFullHd }}" class="business-intro-picture lozad">
-        <source srcset="{{ .Params.heroImgFullHd }}" media="(min-width: 744px)"/>
-        <source srcset="{{ .Params.heroImgMobile }}" media="(min-width: 300px)"/>
-    </picture>
 </section>
 
 <section class="experience-section">
@@ -64,8 +68,8 @@
     </div>
 
     <picture data-iesrc="{{ .Params.experienceImgFullHd }}" class="experience-picture lozad">
-        <source srcset="{{ .Params.experienceImgFullHd }}" media="(min-width: 744px)"/>
-        <source srcset="{{ .Params.experienceImgMob }}" media="(min-width: 300px)"/>
+        <source srcset="{{ .Params.experienceImgFullHd }}" media="(min-width: 1152px)"/>
+        <source srcset="{{ .Params.experienceImgTablet }}" media="(min-width: 300px)"/>
     </picture>
 </section>
 
@@ -124,8 +128,8 @@
     </div>
 
     <picture data-iesrc="{{ .Params.requestDemoImgFullHd }}" class="request-demo-picture lozad">
-        <source srcset="{{ .Params.requestDemoImgFullHd }}" media="(min-width: 744px)"/>
-        <source srcset="{{ .Params.requestDemoImgMob }}" media="(min-width: 300px)"/>
+        <source srcset="{{ .Params.requestDemoImgFullHd }}" media="(min-width: 1152px)"/>
+        <source srcset="{{ .Params.requestDemoImgTablet }}" media="(min-width: 300px)"/>
     </picture>
 </section>
 
