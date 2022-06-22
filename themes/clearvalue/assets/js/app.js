@@ -477,6 +477,7 @@ function initCustomSelects() {
       create a new DIV that will act as an option item: */
       c = document.createElement("DIV");
       c.innerHTML = selElmnt.options[j].innerHTML;
+      c.dataset.value = selElmnt.options[j].value;
       c.addEventListener("click", function(e) {
           /* When an item is clicked, update the original select box,
           and the selected item: */
@@ -575,6 +576,8 @@ function initDemoFormSubmit() {
   }
 
   function submitDemoForm() {
+    const url = "https://6sdobm19id.execute-api.us-east-1.amazonaws.com/request-demo";
+    
     const submitBtn = form.querySelector("button[type=submit]");
     submitBtn.classList.add("btn--loading");
     submitBtn.disabled = true;
@@ -583,16 +586,45 @@ function initDemoFormSubmit() {
       name: form.querySelector("[name=name]").value,
       email: form.querySelector("[name=email]").value,
       website: form.querySelector("[name=website]").value,
-      userType: form.querySelector("[name=user-type]").selectedIndex,
+      userType: form.querySelector("[name=user-type]").value,
       portfolios: form.querySelector("[name=portfolios]").value,
     };
+    
+    let urlEncodedData = "",
+      urlEncodedDataPairs = [],
+      name;
 
-    console.log('SUBMIT: ', data)
+    for (name in data) {
+      urlEncodedDataPairs.push(
+        encodeURIComponent(name) + "=" + encodeURIComponent(data[name])
+      );
+    }
 
-    setTimeout(() => {
-      submitBtn.classList.remove("btn--loading");
-      submitBtn.disabled = false;
-    }, 3000)
+    urlEncodedData = urlEncodedDataPairs.join("&").replace(/%20/g, "+");
+
+    fetch(url, {
+      method: "POST",
+      mode: "no-cors",
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded",
+      },
+      body: urlEncodedData,
+    })
+      .then(() => {
+        // reset form
+        form.querySelector("[name=name]").value = "";
+        form.querySelector("[name=email]").value = "";
+        form.querySelector("[name=website]").value = "";
+        form.querySelector("[name=portfolios]").value = "";
+        form.querySelector(".select-items [data-value=investment-advisor]").click();
+      })
+      .catch((e) => {
+        console.log("request demo error: ", e);
+      })
+      .finally(() => {
+        submitBtn.classList.remove("btn--loading");
+        submitBtn.disabled = false;
+      });
   }
 
   function validateDemoForm() {
