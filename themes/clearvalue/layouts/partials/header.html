@@ -1,6 +1,7 @@
 <div class="container">
+    {{ .test }}
     <div class="row no-gutters align-items-center">
-        <div class="col-auto col-xl-3">
+        <div class="col-auto col-xl-2 col-xxl-3">
             <a href="/" class="header-logo">
                 <img src="/images/logo-white.svg" alt="Claritus logo"
                      class="header-logo__img header-logo__img--white d-none d-md-block">
@@ -35,6 +36,12 @@
         </div>
         <div class="col col-xl-3">
             <div class="header-auth">
+                {{if .showAdvisorsLoginLink}}
+                    <div class="advisors-login">
+                        <a href="#" class="advisors-login__link">Advisors Log in</a>
+                    </div>
+                {{ end }}
+                
                 <a href="https://app.claritus.io/login" class="header-auth__btn btn btn--secondary">
                     <span class="btn__first-layer"></span>
                     <span class="btn__second-layer"></span>
