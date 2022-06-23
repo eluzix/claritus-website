@@ -162,5 +162,14 @@ pricingText: Claritus offers our customers an exceptional solution for a fair, a
 pricingImgFullHd: /images/pricing-fullhd.png
 pricingImgMob: /images/pricing-mob.png
 
+##Claritus for Advisor
+
+advisorsTitle: Claritus for Advisor
+
+advisorsText: Create a modern client experience that is tailored to your brand. We do it all for you so you can get up and running with a complete tech stack built on top of the industry's most sophisticated trading custodian, Interactive Brokers. Our white-label onboarding module lets your clients apply for brokerage accounts within minutes.
+
+advisorsImgFullHd: /images/claritus-for-advisors-fullhd.png
+advisorsImgMob: /images/claritus-for-advisors-mob.png
+
 ---
 

@@ -300,6 +300,29 @@
 
 {{ partial "sign-up.html" (dict "hideScrollTop" true) }}
 
+<section class="advisors-section">
+    <div class="container">
+        <div class="row no-gutters">
+            <div class="advisors home-block">
+                <h2 class="advisors__title">{{ .Params.advisorsTitle }}</h2>
+
+                <p class="advisors__text">{{ .Params.advisorsText }}</p>
+
+                <a href="/claritus-for-advisors/" class="btn btn--secondary">
+                    <span class="btn__first-layer"></span>
+                    <span class="btn__second-layer"></span>
+                    <span class="btn__text">Learn more</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <picture data-iesrc="{{ .Params.advisorsImgFullHd }}" class="advisors-picture lozad">
+        <source srcset="{{ .Params.advisorsImgFullHd }}" media="(min-width: 744px)"/>
+        <source srcset="{{ .Params.advisorsImgMob }}" media="(min-width: 300px)"/>
+    </picture>
+</section>
+
 {{ end }}
 
 {{ define "StructData" }}
