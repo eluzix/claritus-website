@@ -341,11 +341,10 @@ function initContactFormSubmit() {
 
           fetch(url, {
             method: "POST",
-            mode: "no-cors",
             headers: {
-              "Content-Type": "application/x-www-form-urlencoded",
+              "Content-Type": "application/json",
             },
-            body: urlEncodeData(data),
+            body: JSON.stringify(data),
           }).then(() => {
             console.log("[email sent]");
           });
@@ -392,18 +391,6 @@ function validateEmail(mail) {
   return /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(
     mail
   );
-}
-
-function urlEncodeData(data) {
-  let urlEncodedDataPairs = [];
-
-  for (let name in data) {
-    urlEncodedDataPairs.push(
-      encodeURIComponent(name) + "=" + encodeURIComponent(data[name])
-    );
-  }
-
-  return urlEncodedDataPairs.join("&").replace(/%20/g, "+");
 }
 
 // Init header active link
@@ -566,11 +553,10 @@ function initDemoFormSubmit() {
 
     fetch(url, {
       method: "POST",
-      mode: "no-cors",
       headers: {
-        "Content-Type": "application/x-www-form-urlencoded",
+        "Content-Type": "application/json",
       },
-      body: urlEncodeData(data),
+      body: JSON.stringify(data),
     })
       .then(() => {
         // reset form
