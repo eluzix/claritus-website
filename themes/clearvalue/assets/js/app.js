@@ -332,8 +332,6 @@ function initContactFormSubmit() {
 
           let url = "https://6sdobm19id.execute-api.us-east-1.amazonaws.com/contact-us";
 
-          // let url = "https://jsonplaceholder.typicode.com/posts";
-
           let data = {
             token: token,
             name: submittedForm.querySelector("[name=name]").value,
@@ -341,48 +339,13 @@ function initContactFormSubmit() {
             msg: submittedForm.querySelector("[name=message]").value,
           };
 
-          let urlEncodedData = "",
-            urlEncodedDataPairs = [],
-            name;
-
-          for (name in data) {
-            urlEncodedDataPairs.push(
-              encodeURIComponent(name) + "=" + encodeURIComponent(data[name])
-            );
-          }
-
-          urlEncodedData = urlEncodedDataPairs.join("&").replace(/%20/g, "+");
-
-          // try {
-          //   const response = await fetch(url, {
-          //     method: "POST",
-          //     mode: "no-cors",
-          //     headers: {
-          //       "Content-Type": "application/x-www-form-urlencoded",
-          //     },
-          //     body: urlEncodedData,
-          //   });
-          //
-          //   console.log(response)
-          //
-          //   if (!response?.ok) {
-          //     throw new Error();
-          //   }
-          //
-          //   document
-          //     .querySelector(".contact-section")
-          //     .classList.add("contact-section--submitted");
-          // } catch (e) {
-          //   console.log("error sending mail", e);
-          // }
-
           fetch(url, {
             method: "POST",
             mode: "no-cors",
             headers: {
               "Content-Type": "application/x-www-form-urlencoded",
             },
-            body: urlEncodedData,
+            body: urlEncodeData(data),
           }).then(() => {
             console.log("[email sent]");
           });
@@ -429,6 +392,18 @@ function validateEmail(mail) {
   return /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(
     mail
   );
+}
+
+function urlEncodeData(data) {
+  let urlEncodedDataPairs = [];
+
+  for (let name in data) {
+    urlEncodedDataPairs.push(
+      encodeURIComponent(name) + "=" + encodeURIComponent(data[name])
+    );
+  }
+
+  return urlEncodedDataPairs.join("&").replace(/%20/g, "+");
 }
 
 // Init header active link
@@ -585,22 +560,9 @@ function initDemoFormSubmit() {
     let data = {
       name: form.querySelector("[name=name]").value,
       email: form.querySelector("[name=email]").value,
-      website: form.querySelector("[name=website]").value,
       userType: form.querySelector("[name=user-type]").value,
       portfolios: form.querySelector("[name=portfolios]").value,
     };
-    
-    let urlEncodedData = "",
-      urlEncodedDataPairs = [],
-      name;
-
-    for (name in data) {
-      urlEncodedDataPairs.push(
-        encodeURIComponent(name) + "=" + encodeURIComponent(data[name])
-      );
-    }
-
-    urlEncodedData = urlEncodedDataPairs.join("&").replace(/%20/g, "+");
 
     fetch(url, {
       method: "POST",
@@ -608,13 +570,12 @@ function initDemoFormSubmit() {
       headers: {
         "Content-Type": "application/x-www-form-urlencoded",
       },
-      body: urlEncodedData,
+      body: urlEncodeData(data),
     })
       .then(() => {
         // reset form
         form.querySelector("[name=name]").value = "";
         form.querySelector("[name=email]").value = "";
-        form.querySelector("[name=website]").value = "";
         form.querySelector("[name=portfolios]").value = "";
         form.querySelector(".select-items [data-value=investment-advisor]").click();
       })
