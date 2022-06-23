@@ -1,0 +1,130 @@
+{{ define "content" }}
+
+
+<header class="header-section">
+    {{ partial "header.html" (dict "showAdvisorsLoginLink" true) }}
+
+    {{ partial "header-nav-menu.html" }}
+</header>
+
+
+<!--Intro section -->
+<section class="business-intro-section">
+    <figure class="business-intro-bg">
+        <img src="/images/business-intro-bg.png" alt=""/>
+    </figure>
+
+    <div class="container">
+        <div class="row no-gutters">
+            <div class="business-intro">
+                <h1 class="business-intro__title">
+                    {{ .Title | safeHTML }}
+                </h1>
+
+                <p class="business-intro__text">{{ .Params.heroText | safeHTML }}</p>
+
+                <div class="business-intro__btn-wrapper">
+                    <a href="#" title="Request a Demo" class="btn btn--primary business-intro__btn" id="request-demo-link">Request a Demo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <picture data-iesrc="{{ .Params.heroImgFullHd }}" class="business-intro-picture lozad">
+        <source srcset="{{ .Params.heroImgFullHd }}" media="(min-width: 1152px)"/>
+        <source srcset="{{ .Params.heroImgTablet }}" media="(min-width: 300px)"/>
+    </picture>
+
+    <div class="container">
+        <div class="row no-gutters">
+            <div class="business-institutes">
+                <h2 class="business-institutes__title">{{ .Params.financialsTitle }}</h2>
+            
+                <div class="business-institutes__list">
+                    {{ range $index, $element := .Params.financialInstitutes }}
+                    <figure class="business-institutes__item">
+                        <img data-src="{{ .imageUrlDesk }}" alt="" class="lozad business-institutes__image business-institutes__image--desktop business-institutes__image--desktop-{{$index}}"/>
+                        <img data-src="{{ .imageUrlTablet }}" alt="" class="lozad business-institutes__image business-institutes__image--tablet business-institutes__image--tablet-{{$index}}"/>
+                        <img data-src="{{ .imageUrlMobile }}" alt="" class="lozad business-institutes__image business-institutes__image--mobile business-institutes__image--mobile-{{$index}}"/>
+                    </figure>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="experience-section">
+    <div class="container">
+        <div class="row no-gutters">
+            <div class="experience">
+                <h2 class="experience__title">{{ .Params.experienceTitle }}</h2>
+                
+                <p class="experience__text experience__before"><b>{{ .Params.experienceBefore }}</b></p>
+                <p class="experience__text">{{ .Params.experienceText }}</p>
+                <p class="experience__text experience__after"><b>{{ .Params.experienceAfter }}</b></p>
+            </div>
+        </div>
+    </div>
+
+    <picture data-iesrc="{{ .Params.experienceImgFullHd }}" class="experience-picture lozad">
+        <source srcset="{{ .Params.experienceImgFullHd }}" media="(min-width: 1152px)"/>
+        <source srcset="{{ .Params.experienceImgTablet }}" media="(min-width: 300px)"/>
+    </picture>
+</section>
+
+<section class="request-demo-section">
+    <div class="container">
+        <div class="row no-gutters">
+            <div class="request-demo">
+                <h2 class="request-demo__title">{{ .Params.requestDemoTitle }}</h2>
+
+                <form id="request-demo-form" class="request-demo__form" novalidate>
+                    <div class="field request-demo__field">
+                        <label>Name</label>
+                        <input type="text" placeholder="Enter your Name" name="name" class="field__input"/>
+                        <p class="error-message">Please enter your name</p>
+                    </div>
+
+                    <div class="field request-demo__field">
+                        <label>Email</label>
+                        <input type="email" placeholder="Enter your Email" name="email" class="field__input"/>
+                        <p class="error-message">Please enter a valid email address</p>
+                    </div>
+
+                    <div class="field request-demo__field">
+                        <label>You are</label>
+                        <div class="custom-select">
+                            <select name="user-type">
+                                <option value="-1">Select</option>
+                                <option value="investment-advisor" selected>Investment Advisor</option>
+                                <option value="ria">RIA</option>
+                                <option value="family-office">Family Office</option>
+                                <option value="wealth-management">Wealth Management</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="field request-demo__field">
+                        <label>How many client portfolios are you looking to manage?</label>
+                        <input type="text" placeholder="Type Website" name="portfolios" class="field__input"/>
+                    </div>
+
+                    <button class="btn btn--primary btn--small w-100" type="submit">
+                        <span class="btn__text">Submit</span>
+
+                        <div class="loader"></div>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <picture data-iesrc="{{ .Params.requestDemoImgFullHd }}" class="request-demo-picture lozad">
+        <source srcset="{{ .Params.requestDemoImgFullHd }}" media="(min-width: 1152px)"/>
+        <source srcset="{{ .Params.requestDemoImgTablet }}" media="(min-width: 300px)"/>
+    </picture>
+</section>
+
+{{ end }}

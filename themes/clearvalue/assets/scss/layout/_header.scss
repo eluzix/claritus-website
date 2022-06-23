@@ -83,6 +83,7 @@ header.header-section {
 }
 
 .header-auth {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -125,6 +126,46 @@ header.header-section {
         }
       }
     }
+  }
+}
+
+.advisors-login {
+  display: none;
+  position: absolute;
+  right: 246px;
+  padding-right: rem(16);
+
+  @media (min-width: map_get($grid-breakpoints, md)) {
+    display: block;
+  }
+
+  @media (min-width: map_get($grid-breakpoints, xxl)) {
+    right: 260px;
+  }
+
+  &:before {
+    display: block;
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: rem(40);
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: $gray-100;
+  }
+}
+
+.advisors-login__link {
+  font-weight: 700;
+  font-size: rem(16);
+  line-height: rem(22);
+  color: $green-dark;
+  white-space: nowrap;
+  transition: opacity 0.2s;
+
+  &:hover {
+    opacity: 0.8;
   }
 }
 

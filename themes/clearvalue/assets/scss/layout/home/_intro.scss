@@ -70,6 +70,16 @@ section.home-intro-section {
     }
   }
 
+  &__btn {
+    font-size: rem(14);
+    line-height: rem(18);
+    padding: rem(11) rem(32);
+
+    @media (min-width: map_get($grid-breakpoints, xl)) {
+      padding: rem(19) rem(32);
+    }
+  }
+
   &__caption {
     font-size: rem(16);
     line-height: rem(21);
