@@ -72,7 +72,8 @@ section.sign-up-section {
   bottom: 0;
   margin-left: rem(100);
   font-weight: 400;
-  font-size: 0.875rem;
+  font-size: rem(14);
+  line-height: 150%;
   color: $gray-600;
   white-space: nowrap;
 
@@ -84,7 +85,6 @@ section.sign-up-section {
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    transform: rotate(90deg);
     margin-bottom: 6px;
   }
 

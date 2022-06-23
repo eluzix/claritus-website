@@ -6,14 +6,14 @@
                     class="sign-up lozad"
                     data-background-image="/images/sign-up-bg.jpg"
                 >
-                    <button type="button" class="scroll-top d-none d-xl-flex">
-                        <figure class="scroll-top__icon">
-                            <svg width="15" height="15">
-                                <use xlink:href="#arrow-long-icon"></use>
-                            </svg>
-                        </figure>
-                        Go Up
-                    </button>
+                    {{if (not .hideScrollTop) }}
+                        <button type="button" class="scroll-top d-none d-xl-flex">
+                            <figure class="scroll-top__icon">
+                                <img src="/images/arrow-up.svg" alt="Arrow up">
+                            </figure>
+                            Go Up
+                        </button>
+                    {{ end }}
 
                     <h2 class="sign-up__title">Keep Track of Your Wealth, <span class="sign-up__title-point">Simply</span></h2>
 
