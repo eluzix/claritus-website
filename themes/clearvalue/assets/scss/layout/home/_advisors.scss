@@ -35,6 +35,18 @@ section.advisors-section {
   margin-bottom: rem(40);
 }
 
+.advisors__btn {
+  padding: rem(11) rem(15);
+
+  @media (min-width: map_get($grid-breakpoints, md)) {
+    padding: rem(11) rem(24);
+  }
+
+  @media (min-width: map_get($grid-breakpoints, xl)) {
+    padding: rem(18) 2rem rem(17);
+  }
+}
+
 .advisors-picture {
   img {
     display: block;
@@ -59,5 +71,14 @@ section.advisors-section {
       width: rem(788);
       bottom: rem(-6);
     }
+  }
+}
+
+.advisors-scroll-top {
+  left: 82%;
+  bottom: rem(78);
+
+  @media (min-width: map_get($grid-breakpoints, xxl)) {
+    left: 80.5%;
   }
 }

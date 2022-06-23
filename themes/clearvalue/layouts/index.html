@@ -105,7 +105,7 @@
 
     <picture data-iesrc="{{ .Params.assetsImgFullHd }}" class="assets-picture lozad">
         <source srcset="{{ .Params.assetsImgFullHd }}" media="(min-width: 1400px)"/>
-        <source srcset="{{ .Params.assetsImgDesktop }}" media="(min-width: 1220px)"/>
+        <source srcset="{{ .Params.assetsImgDesktop }}" media="(min-width: 1152px)"/>
         <source srcset="{{ .Params.assetsImgTablet }}" media="(min-width: 744px)"/>
         <source srcset="{{ .Params.assetsImgMob }}" media="(min-width: 300px)"/>
     </picture>
@@ -129,7 +129,7 @@
     </div>
 
     <picture data-iesrc="{{ .Params.secureImgFullHd }}" class="secure-picture lozad">
-        <source srcset="{{ .Params.secureImgFullHd }}" media="(min-width: 1220px)"/>
+        <source srcset="{{ .Params.secureImgFullHd }}" media="(min-width: 1152px)"/>
         <source srcset="{{ .Params.secureImgTablet }}" media="(min-width: 744px)"/>
         <source srcset="{{ .Params.secureImgMob }}" media="(min-width: 300px)"/>
     </picture>
@@ -308,7 +308,7 @@
 
                 <p class="advisors__text">{{ .Params.advisorsText }}</p>
 
-                <a href="/claritus-for-advisors/" class="btn btn--secondary">
+                <a href="/claritus-for-advisors/" class="btn btn--secondary advisors__btn">
                     <span class="btn__first-layer"></span>
                     <span class="btn__second-layer"></span>
                     <span class="btn__text">Learn more</span>
@@ -321,6 +321,13 @@
         <source srcset="{{ .Params.advisorsImgFullHd }}" media="(min-width: 744px)"/>
         <source srcset="{{ .Params.advisorsImgMob }}" media="(min-width: 300px)"/>
     </picture>
+
+    <button type="button" class="scroll-top d-none d-xl-flex advisors-scroll-top">
+        <figure class="scroll-top__icon">
+            <img src="/images/arrow-up.svg" alt="Arrow up">
+        </figure>
+        Go Up
+    </button>
 </section>
 
 {{ end }}

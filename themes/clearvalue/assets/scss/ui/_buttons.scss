@@ -8,7 +8,7 @@
   padding: rem(11) rem(24);
   border-radius: 0.5rem;
   font-weight: 500;
-  font-size: 1rem;
+  font-size: rem(14);
   line-height: rem(18);
   transition: none;
 
@@ -33,7 +33,7 @@
   &:focus {
     box-shadow: none;
   }
-
+  
   @media (min-width: map_get($grid-breakpoints, xl)) {
     padding: rem(18) 2rem rem(17);
     font-size: 1rem;
