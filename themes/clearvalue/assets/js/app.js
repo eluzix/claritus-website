@@ -577,19 +577,22 @@ function initDemoFormSubmit() {
   function validateDemoForm() {
     let isValidForm = true;
 
-    const fields = form.querySelectorAll(".field__input");
+    const nameField = form.querySelector("[name=name]");
+    const emailField = form.querySelector("[name=email]");
 
-    fields.forEach((input) => {
-      if (
-        !input.value ||
-        (input.type === "email" && !validateEmail(input.value))
-      ) {
-        isValidForm = false;
-        input.closest(".field").classList.add("field--error");
-      } else {
-        input.closest(".field").classList.remove("field--error");
-      }
-    });
+    if (!nameField.value) {
+      isValidForm = false;
+      nameField.closest(".field").classList.add("field--error");
+    } else {
+      nameField.closest(".field").classList.remove("field--error");
+    }
+
+    if (!emailField.value || !validateEmail(emailField.value)) {
+      isValidForm = false;
+      emailField.closest(".field").classList.add("field--error");
+    } else {
+      emailField.closest(".field").classList.remove("field--error");
+    }
 
     return isValidForm;
   }
