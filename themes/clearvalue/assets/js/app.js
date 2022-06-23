@@ -408,13 +408,13 @@ function initHeaderActiveLink() {
 
 // Init scroll top
 function initScrollTopHandler() {
-  const anchor = document.querySelector(".scroll-top");
+  const anchors = document.querySelectorAll(".scroll-top");
 
-  if (!anchor) return;
-
-  anchor.addEventListener("click", () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  });
+  for (let i = 0; i < anchors.length; ++i) {
+    anchors[i].addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  }
 }
 
 // custom select

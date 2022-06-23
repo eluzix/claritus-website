@@ -93,3 +93,21 @@ section.sign-up-section {
   //   right: rem(300);
   // }
 }
+
+.home-sign-up {
+  .scroll-top {
+    display: none !important;
+  }
+
+  &.sign-up-section {
+    padding-bottom: rem(32);
+  
+    @media (min-width: map_get($grid-breakpoints, md)) {
+      padding-bottom: rem(48);
+    }
+  
+    @media (min-width: map_get($grid-breakpoints, xl)) {
+      padding-bottom: rem(46);
+    }
+  }
+}

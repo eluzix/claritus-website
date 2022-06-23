@@ -1,4 +1,4 @@
-<section class="sign-up-section">
+<section class="sign-up-section {{ .sectionClass }}">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-10">
@@ -6,14 +6,12 @@
                     class="sign-up lozad"
                     data-background-image="/images/sign-up-bg.jpg"
                 >
-                    {{if (not .hideScrollTop) }}
-                        <button type="button" class="scroll-top d-none d-xl-flex">
-                            <figure class="scroll-top__icon">
-                                <img src="/images/arrow-up.svg" alt="Arrow up">
-                            </figure>
-                            Go Up
-                        </button>
-                    {{ end }}
+                    <button type="button" class="scroll-top d-none d-xl-flex">
+                        <figure class="scroll-top__icon">
+                            <img src="/images/arrow-up.svg" alt="Arrow up">
+                        </figure>
+                        Go Up
+                    </button>
 
                     <h2 class="sign-up__title">Keep Track of Your Wealth, <span class="sign-up__title-point">Simply</span></h2>
 
