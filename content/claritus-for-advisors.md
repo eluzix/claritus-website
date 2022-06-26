@@ -5,8 +5,8 @@ is_advisors: true
 ## metaTitle: Track, analyze, and be in complete control of all of your assets and investments - all in one place!
 ## description: Claritus gives you a complete overview of your money and investments, offering accurate insight and assessments
 
-title: Make your work <span class="is-green">easy</span>, <br/> your clients will thank you
-heroText: Claritus for Advisor - turnkey, integrated and unified low-cost solution.
+title: Claritus for Advisors
+heroText: Make your work easy, your clients will thank you. <br/>Claritus' benefits are now adjusted for professionals.
 
 heroImgFullHd: /images/business-intro-fullhd.png
 heroImgTablet: /images/business-intro-tablet.png
@@ -34,10 +34,10 @@ financialInstitutes:
 
 ## Experience
 
-experienceTitle: Client experience that fits your brand
+experienceTitle: Modern client experience for your brand.
 
-experienceBefore: Announcing Claritus for Advisor - our turnkey, integrated and unified low-cost solution.
-experienceText: Create a modern client experience that is tailored to your brand. We do it all for you so you can get up and running with a complete tech stack built on top of the industry's most sophisticated trading custodian, Interactive Brokers. Our white-label onboarding module lets your clients apply for brokerage accounts within minutes.
+experienceBefore: An integrated, affordable solution for financial advisors.
+experienceText: Claritus for Advisors is designed to provide financial advisors (like CPAs, RIAs, and family offices) with the ability to manage and share client portfolios in a simple, dynamic, and rich way.
 experienceAfter: Schedule a demo today to learn more about Claritus for Advisor
 
 experienceImgFullHd: /images/experience-fullhd.png
