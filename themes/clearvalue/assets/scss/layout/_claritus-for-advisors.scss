@@ -121,11 +121,11 @@ section.business-intro-section {
     }
     
     @media (min-width: map_get($grid-breakpoints, xl)) {
-        padding-top: rem(56);
+        padding-top: rem(168);
     }
 
     @media (min-width: map_get($grid-breakpoints, xxl)) {
-        padding-top: rem(162);
+        padding-top: rem(210);
     }
 }
 
