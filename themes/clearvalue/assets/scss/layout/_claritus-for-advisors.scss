@@ -451,13 +451,13 @@ section.request-demo-section {
         @media (min-width: map_get($grid-breakpoints, xl)) {
             max-width: rem(1172);
             position: absolute;
-            top: rem(-14);
+            top: rem(-104);
             left: 41%;
         }
 
         @media (min-width: map_get($grid-breakpoints, xxl)) {
             max-width: rem(1172);
-            top: rem(-8);
+            top: rem(-104);
             left: 50%;
             transform: translateX(-124px);
         }
