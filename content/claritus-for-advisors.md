@@ -41,6 +41,7 @@ experienceText: Claritus for Advisors is designed to provide financial advisors 
 experienceAfter: Schedule a demo today to learn more about Claritus for Advisor
 
 experienceImgFullHd: /images/experience-fullhd.png
+experienceImgDesktop: /images/experience-desktop.png
 experienceImgTablet: /images/experience-tablet.png
 
 ## Request a demo
