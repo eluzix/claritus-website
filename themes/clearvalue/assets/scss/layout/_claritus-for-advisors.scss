@@ -472,3 +472,27 @@ section.request-demo-section {
 
   }
 }
+
+.request-demo__success {
+  display: none;
+  text-align: center;
+  color: #ffffff;
+  max-width: rem(400);
+  background: linear-gradient(90.36deg, #2FAE71 -0.66%, #23D3AB 101.59%, #0C9F85 101.59%);
+  border-radius: rem(12);
+  padding: 24px 32px;
+  gap: 10px;
+
+  .request-demo__title {
+    text-align: center;
+    font-weight: 700;
+    font-size: rem(32);
+    line-height: rem(42);
+  }
+
+  .request-demo__subtitle {
+    font-weight: 400;
+    font-size: rem(18);
+    line-height: 170%;
+  }
+}
