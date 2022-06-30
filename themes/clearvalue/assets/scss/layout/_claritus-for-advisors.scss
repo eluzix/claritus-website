@@ -335,14 +335,14 @@ section.experience-section {
     @media (min-width: map_get($grid-breakpoints, xl)) {
       max-width: rem(1056);
       position: absolute;
-      top: rem(-14);
+      top: rem(60);
       right: 43%;
       margin-top: 0;
     }
 
     @media (min-width: map_get($grid-breakpoints, xxl)) {
       max-width: rem(1056);
-      top: rem(24);
+      top: rem(96);
       right: 50%;
       transform: translateX(96px);
     }
