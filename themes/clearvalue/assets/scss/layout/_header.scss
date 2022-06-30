@@ -139,9 +139,9 @@ header.header-section {
     display: block;
   }
 
-  @media (min-width: map_get($grid-breakpoints, xxl)) {
-    right: 260px;
-  }
+  //@media (min-width: map_get($grid-breakpoints, xxl)) {
+  //  right: 260px;
+  //}
 
   &:before {
     display: block;
