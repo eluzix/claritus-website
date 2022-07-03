@@ -6,7 +6,7 @@ is_advisors: true
 ## description: Claritus gives you a complete overview of your money and investments, offering accurate insight and assessments
 
 title: Claritus for Advisors
-heroText: Make your work easy, your clients will thank you. <br/>Claritus' benefits are now adjusted for professionals.
+heroText: Enhance your client's experience with a modern and friendly dynamic client portal.
 
 heroImgFullHd: /images/business-intro-fullhd.png
 heroImgTablet: /images/business-intro-tablet.png
