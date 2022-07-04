@@ -572,8 +572,9 @@ function initDemoFormSubmit() {
         submitBtn.classList.remove("btn--loading");
         submitBtn.disabled = false;
 
-        document.getElementById('request-demo-form').style.display = 'none'
-        document.querySelector('.request-demo__success').style.display = 'block'
+        document.getElementById('request-demo-form').style.display = 'none';
+        document.querySelector('.request-demo__success').style.display = 'block';
+        document.querySelector('.request-demo-section').classList.add('request-demo-section--submitted');
       });
   }
 
