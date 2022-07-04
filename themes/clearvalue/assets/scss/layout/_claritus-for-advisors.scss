@@ -363,6 +363,16 @@ section.request-demo-section {
   @media (min-width: map_get($grid-breakpoints, xxl)) {
     padding: rem(76) 0 rem(264);
   }
+
+  &--submitted {
+    @media (min-width: map_get($grid-breakpoints, xl)) {
+      padding: rem(70) 0 rem(460);
+    }
+  
+    @media (min-width: map_get($grid-breakpoints, xxl)) {
+      padding: rem(76) 0 rem(480);
+    }
+  }
 }
 
 .request-demo {
