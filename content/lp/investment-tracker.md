@@ -2,7 +2,6 @@
 date: 2020-01-01T09:30:01+03:00
 url: /lp/keep-track-of-your-investments-portfolio
 type: lp
-layout: investment-tracker
 content_class: landing-page
 # sitemapExclude: true
 

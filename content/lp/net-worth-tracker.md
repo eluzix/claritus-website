@@ -2,7 +2,6 @@
 date: 2020-01-01T09:30:01+03:00
 url: /lp/keep-track-of-your-net-worth
 type: lp
-layout: net-worth-tracker
 content_class: landing-page
 # sitemapExclude: true
 
