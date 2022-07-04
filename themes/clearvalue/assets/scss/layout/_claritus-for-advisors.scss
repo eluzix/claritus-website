@@ -350,19 +350,18 @@ section.experience-section {
 }
 
 section.request-demo-section {
-  padding: 0 0 rem(10);
-  margin-bottom: rem(60);
+  padding: 0 0 rem(70);
 
   @media (min-width: map_get($grid-breakpoints, md)) {
-    padding: 0 0 0;
+    padding: 0 0 rem(60);
   }
 
   @media (min-width: map_get($grid-breakpoints, xl)) {
-    padding: rem(70) 0 rem(174);
+    padding: rem(70) 0 rem(244);
   }
 
   @media (min-width: map_get($grid-breakpoints, xxl)) {
-    padding: rem(76) 0 rem(194);
+    padding: rem(76) 0 rem(264);
   }
 }
 
@@ -482,6 +481,14 @@ section.request-demo-section {
   border-radius: rem(12);
   padding: 24px 32px;
   gap: 10px;
+
+  @media (min-width: map_get($grid-breakpoints, md)) {
+    margin: 0 auto;
+  }
+
+  @media (min-width: map_get($grid-breakpoints, xl)) {
+    margin: 0;
+  }
 
   .request-demo__title {
     text-align: center;
