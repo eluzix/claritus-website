@@ -7,7 +7,7 @@ sitemapExclude: true
 
 # ----- Content -----
 
-title: Keep Track of Your Net worth, 
+title: Keep Track of Your <br/> Net worth, 
 metaTitle: Track, analyze, and be in complete control of all of your assets and investments - all in one place!
 description: Claritus gives you a complete overview of your money and investments, offering accurate insight and assessments
 
