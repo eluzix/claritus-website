@@ -3,11 +3,11 @@ date: 2020-01-01T09:30:01+03:00
 url: /lp2/keep-track-of-your-investments-portfolio
 type: lp
 content_class: landing-page
-# sitemapExclude: true
+sitemapExclude: true
 
 # ----- Content -----
 
-title: Keep Track of Your investments portfolio, 
+title: Keep Track of Your investments, 
 metaTitle: Track, analyze, and be in complete control of all of your assets and investments - all in one place!
 description: Claritus gives you a complete overview of your money and investments, offering accurate insight and assessments
 
@@ -53,7 +53,7 @@ financialInstitutes:
 
 assetsTitle: All Your Investments in One Place
 
-assetsText: Claritus helps you track ALL of your assets & investments in one place! See your holdings clearly and easily, without spreadsheets or needing a finance degree!
+assetsText: Claritus investment tracker helps you track ALL of your assets & investments in one place! See your holdings clearly and easily, without spreadsheets or needing a finance degree!
 
 assetsImgFullHd: /images/assets-bg-fullhd.png
 assetsImgDesktop: /images/assets-bg-desktop.png

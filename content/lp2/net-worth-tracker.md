@@ -3,11 +3,11 @@ date: 2020-01-01T09:30:01+03:00
 url: /lp2/keep-track-of-your-net-worth
 type: lp
 content_class: landing-page
-# sitemapExclude: true
+sitemapExclude: true
 
 # ----- Content -----
 
-title: Keep Track of Your Net worth, 
+title: Keep Track of Your Networth, 
 metaTitle: Track, analyze, and be in complete control of all of your assets and investments - all in one place!
 description: Claritus gives you a complete overview of your money and investments, offering accurate insight and assessments
 
