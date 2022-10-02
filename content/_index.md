@@ -157,7 +157,7 @@ faqSecondColumn:
 
 pricingTitle: Transparent & Simple Pricing
 
-pricingText: Claritus offers our customers an exceptional solution for a fair, and low subscription cost. There will never be hidden fees or costs. We believe in being transparent and up front with our customers at all times.<br/><br/><b>Try Claritus free for 14 days - No credit card required</b>
+pricingText: Claritus offers our customers an exceptional solution for a fair, and low subscription cost. There will never be hidden fees or costs. We believe in being transparent and up front with our customers at all times.
 
 pricingImgFullHd: /images/pricing-fullhd.png
 pricingImgMob: /images/pricing-mob.png
