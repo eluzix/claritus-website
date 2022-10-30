@@ -18,7 +18,7 @@ lastmod = ["lastmod", ":git", "date", "publishDate"]
 [params]
     description = "Finally, a 360° view of your portfolio that lets you track, understand, and be in complete control of all of your assets and investments - all in one place!"
     gtagConfig = 'UA-159218662-2'
-    appUrl = "https://app.claritus.io"
+    appUrl = "https://claritus-prod.netlify.app"
     cookieDomain = 'localhost'
     noTrailingBaseURL = "https://claritus-website.netlify.app"
 
