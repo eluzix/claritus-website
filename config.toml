@@ -1,4 +1,4 @@
-baseURL = "https://claritus.io/"
+baseURL = "https://claritus-website.netlify.app/"
 languageCode = "en-us"
 title = "Claritus - A Simple Way to Keep Track of Your Portfolio"
 
@@ -20,7 +20,7 @@ lastmod = ["lastmod", ":git", "date", "publishDate"]
     gtagConfig = 'UA-159218662-2'
     appUrl = "https://app.claritus.io"
     cookieDomain = 'localhost'
-    noTrailingBaseURL = "https://claritus.io"
+    noTrailingBaseURL = "https://claritus-website.netlify.app"
 
 [permalinks]
   posts = "blog/:title"
